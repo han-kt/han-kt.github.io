@@ -8,14 +8,10 @@ body{
   font-family: Arial;
 }
 
-
 hr {
   margin: 0;
 }
-/* 
-h2 {
-  text-decoration: underline;}
-   */
+
 p {
     font-size: 16px;
 }
@@ -25,8 +21,9 @@ section h2{
 hr {
   width:98%;
 }
+
 html {
-    scroll-padding-top: 3rem;
+    scroll-padding-top: 2rem;
 }
 
 header{
@@ -78,7 +75,7 @@ nav{
     max-width: 1200px;
     margin: 0;
     text-align: center;
-    padding: 0;
+    padding: 6px;
   }
   nav li{
     width: 18%;
