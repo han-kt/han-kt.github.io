@@ -12,7 +12,9 @@ li {
   margin: 10px 0; 
 }
 
-
+hr {
+  margin: 0;
+}
 /* 
 h2 {
   text-decoration: underline;}
@@ -20,7 +22,12 @@ h2 {
 p {
     font-size: 16px;
 }
-
+section h2{
+  margin: 0;
+}
+hr {
+  width:98%;
+}
 html {
     scroll-padding-top: 3rem;
 }
@@ -64,7 +71,7 @@ header{
 
 nav{
     background: #F4F4F4;
-    padding: 0.1rem;
+    /* padding: 0.1rem; */
     position: sticky;
     top: 0px;
     /* z-index: 1; */
@@ -72,11 +79,12 @@ nav{
   nav ul{
     white-space: nowrap;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0;
     text-align: center;
+    padding: 0;
   }
   nav li{
-    width: 20%;
+    width: 18%;
     display: inline-block;
     font-size: 16px;
   }
@@ -104,4 +112,24 @@ nav{
     content: "";
     display: table;
     clear: both;
+}
+
+
+
+/* responsive styles */
+
+@media screen and (max-width: 640px){
+  main article img{
+    float: none;
+  }
+  .column_img{
+    float:none;
+  }
+  nav li{
+    font-size: 14px;
+  }
+
+  .banner .welcome{
+    font-size: 12px;
+  }
 }
