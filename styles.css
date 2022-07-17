@@ -143,6 +143,9 @@ ul, ol {
   }
 
   .banner .welcome{
-    font-size: 10px;
+    font-size: 12px;
   }
 }
+
+
+#more {display: none;}
