@@ -1,16 +1,13 @@
-/* body, ul, li, h1, h2, a{
+ /* body, ul, li, h1, h2, a{
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-} */
+}  */
 
 body{
   font-family: Arial;
 }
 
-li {
-  margin: 10px 0; 
-}
 
 hr {
   margin: 0;
@@ -114,7 +111,9 @@ nav{
     clear: both;
 }
 
-
+ul, ol {
+  padding-inline-start: 30px;
+}
 
 /* responsive styles */
 
@@ -131,5 +130,22 @@ nav{
 
   .banner .welcome{
     font-size: 12px;
+  }
+}
+
+
+@media screen and (max-width: 400px){
+  main article img{
+    float: none;
+  }
+  .column_img{
+    float:none;
+  }
+  nav li{
+    font-size: 12px;
+  }
+
+  .banner .welcome{
+    font-size: 10px;
   }
 }
