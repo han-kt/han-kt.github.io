@@ -4,26 +4,20 @@
     font-family: Arial, Helvetica, sans-serif;
 }  */
 
-body{
+/* body{
   font-family: Arial;
-}
+} */
 
-hr {
-  margin: 0;
-}
 
-p {
+/* p {
     font-size: 16px;
-}
-section h2{
-  margin: 0;
-}
-hr {
-  width:98%;
-}
+} */
+
 
 html {
     scroll-padding-top: 2rem;
+    /* font-family: Arimo, Helvetica, Arial;   */
+    font-family: Georgia, sans-serif;  
 }
 
 header{
@@ -63,6 +57,7 @@ header{
 }
 
 
+
 nav{
     background: #F4F4F4;
     /* padding: 0.1rem; */
@@ -72,7 +67,7 @@ nav{
   }
   nav ul{
     white-space: nowrap;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 0;
     text-align: center;
     padding: 6px;
@@ -108,9 +103,31 @@ nav{
     clear: both;
 }
 
-ul, ol {
-  padding-inline-start: 30px;
+main {
+  line-height: 1.5em;
 }
+
+section h2{
+  margin: 0;
+}
+
+section hr {
+  margin: 0;
+}
+
+section hr {
+  width:98%;
+}
+
+
+/* section li { margin: 0.3em 0; } */
+
+section {
+  line-height: 1.6;
+}
+/* ul, ol {
+  padding-inline-start: 30px;
+} */
 
 /* responsive styles */
 
