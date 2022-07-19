@@ -25,9 +25,10 @@ body {
   margin-right: auto;
   font-family: Helvetica, Verdana, Tahoma, Arial, Sans-serif;
   font-size: 1em;
-  width: 820px;
+  max-width: 820px;
   padding:0px;
 }
+
 
 
 /* .banner{
@@ -154,30 +155,55 @@ li.journal:nth-of-type(n+10)::before {
   padding-inline-start: 30px;
 } */
 
-
-/* Book */
-section.publications td {
+/* Publications */
+section.publications td, section.patents td {
+  vertical-align:top;
   line-height: 1.4em;
   padding-left: 0.3em;
+  padding-bottom:0.6em;
 } 
-/* body > section.publications > table > tbody > tr > td:nth-child(2) > b */
-section.publications td{
-  vertical-align:top;
+
+/* Journal  */
+table.journal {
+  counter-reset: journalcount 12;           /* Set the counter to 0 */
+}
+.journalcount:before{
+  counter-increment: journalcount -1;      /* Increment the counter */
+  content: "J" counter(journalcount) "."; /* Display the counter */
 }
 
-.backwards {
-  unicode-bidi: bidi-override;
-  direction: rtl;
+/* Conference  */
+table.conference {
+  counter-reset: confcount 34;           /* Set the counter to 0 */
+}
+.confcount:before{
+  counter-increment: confcount -1;      /* Increment the counter */
+  content: "C" counter(confcount) "."; /* Display the counter */
 }
 
- /* Counters  */
-body {
+/* Book */
+table.book {
   counter-reset: bookcount;           /* Set the counter to 0 */
 }
 .bookcount:before{
   counter-increment: bookcount;      /* Increment the counter */
   content: "B" counter(bookcount) "."; /* Display the counter */
 }
+
+/* Patents  */
+table.patent {
+  counter-reset: patentcount 52;           /* Set the counter to 0 */
+}
+.patentcount:before{
+  counter-increment: patentcount -1;      /* Increment the counter */
+  content: "P" counter(patentcount) "."; /* Display the counter */
+}
+
+.backwards {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+ 
 
 /* responsive styles */
 @media screen and (max-width: 800px){
