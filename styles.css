@@ -31,20 +31,19 @@ header{
     z-index: 1;
     visibility: hidden;
 }
-.banner{
+/* .banner{
     position: relative;
-    margin: 0 0;
- }
- .banner div h2{
-    margin: 0;
- }
-.banner img{
+ } */
+ /* .banner div h2{ */
+    /* margin: 0; */
+ /* } */
+/* .banner img{
     max-width: 100%;
-}
+} */
   .banner .welcome{
     background:#FEB614;
     color: white;
-    padding: 0px;
+    padding: 1em;
     font-size: 20px;
     text-align: center;
     /* position: absolute; */
@@ -88,25 +87,17 @@ nav{
     color: #F63232;
   }
 
-  main article img{
-      float: right;
-  }
-
-  .column_img{
-      float: right;
-      width: 50%;
-  }
-  /* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
+/* Main section  */
 main {
   line-height: 1.5em;
 }
+main td{
+  padding-left: 2em;
+}
 
+section td{
+  padding-left: 1em;
+}
 section h2{
   margin: 0;
 }
@@ -119,25 +110,68 @@ section hr {
   width:98%;
 }
 
-
-/* section li { margin: 0.3em 0; } */
-
 section {
-  line-height: 1.6;
+  line-height: 1.6em;
 }
+
+section ol li{
+  line-height: 1.4em;
+  margin: 1em auto; 
+}
+
+/* Adding "J" 
+section.publications ol {
+  counter-reset: item;
+
+}
+
+section.publications li.journal {
+  display: block; 
+  margin-bottom: .5em;
+  margin-left: 0em;
+  line-height: 1.2em;
+}
+
+li.journal::before {
+  display: inline-block;
+  content: "[J" counter(item) "]";
+  counter-increment: item;
+  width: 0em;
+  white-space: pre;
+  text-indent: -2em;
+}
+
+li.journal:nth-of-type(n+10)::before {
+  display: inline-block;
+  content: "[J" counter(item) "]";
+  counter-increment: item;
+  width: 0.3em;
+  white-space: pre;
+  text-indent: -2em;
+
+} */
+
 /* ul, ol {
   padding-inline-start: 30px;
 } */
 
 /* responsive styles */
+@media screen and (max-width: 800px){
+  section.Research td {
+    display:inline-block;
+  }
 
+}
 @media screen and (max-width: 640px){
-  main article img{
+  main td {
+    display:inline-block;
+  }
+  /* main article img{
     float: none;
   }
   .column_img{
     float:none;
-  }
+  } */
   nav li{
     font-size: 14px;
   }
