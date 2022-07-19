@@ -1,23 +1,8 @@
- /* body, ul, li, h1, h2, a{
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}  */
-
-/* body{
-  font-family: Arial;
-} */
-
-
-/* p {
-    font-size: 16px;
-} */
-
-
 html {
     scroll-padding-top: 2rem;
+    font-family: Helvetica, Verdana, Tahoma, Arial, Sans-serif;
+    /* font-family: Georgia, sans-serif;   */
     /* font-family: Arimo, Helvetica, Arial;   */
-    font-family: Georgia, sans-serif;  
 }
 
 header{
@@ -31,6 +16,20 @@ header{
     z-index: 1;
     visibility: hidden;
 }
+
+
+body {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 50px;
+  margin-right: auto;
+  font-family: Helvetica, Verdana, Tahoma, Arial, Sans-serif;
+  font-size: 1em;
+  width: 820px;
+  padding:0px;
+}
+
+
 /* .banner{
     position: relative;
  } */
@@ -154,6 +153,31 @@ li.journal:nth-of-type(n+10)::before {
 /* ul, ol {
   padding-inline-start: 30px;
 } */
+
+
+/* Book */
+section.publications td {
+  line-height: 1.4em;
+  padding-left: 0.3em;
+} 
+/* body > section.publications > table > tbody > tr > td:nth-child(2) > b */
+section.publications td{
+  vertical-align:top;
+}
+
+.backwards {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+
+ /* Counters  */
+body {
+  counter-reset: bookcount;           /* Set the counter to 0 */
+}
+.bookcount:before{
+  counter-increment: bookcount;      /* Increment the counter */
+  content: "B" counter(bookcount) "."; /* Display the counter */
+}
 
 /* responsive styles */
 @media screen and (max-width: 800px){
