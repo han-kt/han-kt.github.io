@@ -191,7 +191,7 @@ section.publications td, section.patents td {
 
 /* Journal  */
 table.journal {
-  counter-reset: journalcount 12;           /* Set the counter to 0 */
+  counter-reset: journalcount 12;           /* Set the counter to max + 1 */
 }
 .journalcount:before{
   counter-increment: journalcount -1;      /* Increment the counter */
@@ -200,7 +200,7 @@ table.journal {
 
 /* Conference  */
 table.conference {
-  counter-reset: confcount 34;           /* Set the counter to 0 */
+  counter-reset: confcount 35;           /* Set the counter to Max + 1 */
 }
 .confcount:before{
   counter-increment: confcount -1;      /* Increment the counter */
@@ -209,7 +209,7 @@ table.conference {
 
 /* Book */
 table.book {
-  counter-reset: bookcount;           /* Set the counter to 0 */
+  counter-reset: bookcount;           /* Set the counter to max + 1 */
   margin-bottom: 0em;
 }
 .bookcount:before{
@@ -219,7 +219,7 @@ table.book {
 
 /* Patents  */
 table.patent {
-  counter-reset: patentcount 52;           /* Set the counter to 0 */
+  counter-reset: patentcount 52;           /* Set the counter to max + 1 */
 }
 .patentcount:before{
   counter-increment: patentcount -1;      /* Increment the counter */
