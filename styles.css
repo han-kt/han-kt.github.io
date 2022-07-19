@@ -155,6 +155,11 @@ li.journal:nth-of-type(n+10)::before {
   padding-inline-start: 30px;
 } */
 
+/* News */
+section.news li{
+  line-height: 1.4em;
+  margin: 1em 0;
+}
 /* Publications */
 section.publications td, section.patents td {
   vertical-align:top;
