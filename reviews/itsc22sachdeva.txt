@@ -1,0 +1,30 @@
+
+Reviewer 13 of ITSC 2022 submission 839
+
+Comments to the author
+======================
+
+This study proposed GAPFORMER which combines the
+Transformer and RNN architectures to better model and
+personalize driver trajectory. In my view, there are a few
+problems the authors should address. The specific comments
+are provided as follows:
+1. The first time the â€œMSEâ€ and â€œSGDâ€ appears in the
+manuscript in P4, they should be marked with full name.
+2. The font in the figures should be enlarged to make the
+information clearer, such as in Figures 4, 5, 6.
+
+
+
+
+Reviewer 14 of ITSC 2022 submission 839
+
+Comments to the author
+======================
+
+This paper proposed GAPFORMER which combines the
+Transformer and RNN architectures for the personalized
+driver trajectory modeling. The content of the abstract is
+all about the contribution of this study and lacks a
+description of the research method. The abstract should be
+improved. 

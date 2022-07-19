@@ -1,0 +1,167 @@
+Comments to author (Associate Editor)
+=====================================
+
+The authors proposed a method to learn personalized driving
+styles for drivers with limited data. Besides comments from
+individual reviewers, major concerns are listed as below:
+ï Environment impact Vs Driver's own driving styles, it is
+not very clear how to differentiate the driver's action is
+related to the driving styles or due to some other
+environment changes, Some explanation can be added for
+clarification. 
+ï ACC systems variations: Some details can be added to
+describe the differences on ACC systems involved. And will
+that affect driver's decision?
+
+
+Reviewer 6 of ITSC 2022 submission 428
+
+Comments to the author
+======================
+
+The paper proposes a method for learning personalized
+adaptive cruise control models based on observations of a
+particular driver's behavior on a small number of instances
+of following a leading vehicle. The driver's preferences
+are discovered through inverse reinforcement learning in a
+discretized POMDP, which considers the speed and distance
+to leading vehicle as observations and acceleration as the
+action.
+
+Overall, the paper goes into great detail explaining what
+the authors did, but it doesn't explain why they made those
+particular choices and how the results compare to state of
+the art. I don't quite understand the evaluation metrics
+used, but it seems that reported accuracy is evaluated with
+respect to the outputs of some other custom model rather
+than real observations. There are no baselines so I have no
+way of judging how this method performs compared to
+existing alternatives. Unfortunately, I'm not familiar with
+the literature in this area, so I can not suggest suitable
+baselines here. The contributions stated in Section I are
+phrased in terms of what methods the authors used, rather
+than what performance they accomplished or what hypotheses
+they validated. The paper reads like a system description
+lacking proper evaluation or statements of concrete
+findings.
+
+Other comments and questions:
+1. The authors elect to use a model-free IRL method,
+indicating that model-based approaches require knowing the
+transition dynamics, but it seems to me that those are
+available in this simplified driving simulation.
+2. Related work lists existing papers in the area, but it
+doesn't provide a synthesis that would allow the reader to
+see the big picture.
+3. It seems that the setting is very simplified, in
+particular regarding discretization into a small number of
+bins. This is not necessarily bad, but I would appreciate
+some discussion about how far the system is form being
+practical.
+4. The writing could use some improvement. There are a lot
+of sentences I couldn't make sense of, such as "In order to
+evaluate that which cluster of drivers that
+the driver in the target set is most similar to, we
+compared
+the KL-divergence".
+
+
+
+Reviewer 9 of ITSC 2022 submission 428
+
+Comments to the author
+======================
+
+This paper develops a method to learn a driver's personal
+driving style from limited data for personalized adaptive
+cruise control. The method is based on combination of
+inverse reinforcement learning and other techniques. I
+think it is appropriate for the conference. 
+
+The state space is discrete with large discretization
+widths for the driving phenomenon. For example,
+vehicle-to-vehicle distances from 24 m to 48 m are
+indistinguishable. Is this safe? What will happen if the
+discretization width are decreased?
+
+
+
+Reviewer 11 of ITSC 2022 submission 428
+
+Comments to the author
+======================
+
+The paper is concerned with the method to learn and
+simulate individual driving styles so that the driver's
+preferences can be appropriately taken into account. The
+method is interesting and the simulation results are
+convincing. Therefore I 
+recommend the paper for publication, after correcting some
+small typos, e.g. "can be learn" --> "can be learned" in
+Introduction.
+
+A small question to the authors:
+In Conclusion you wrote "adapt the personalized model to a
+more complex driving situaion". Could you explain about it
+a bit more? (It does not need to be included in the paper
+itself.) Is it also possible to consider how to avoid an
+obstacle? With an obstacke we can also observe many
+different reactions/preferences by drivers.
+
+
+Reviewer 13 of ITSC 2022 submission 428
+
+Comments to the author
+======================
+
+This paper addresses a method to adapt ACC parameters based
+on driving style of a driver. They combined clustering
+method, IRL-based reward learning, and POMDP solver to
+adapt the parameters to the driver. They used dataset and
+evaluated the performance using the drivers which have
+enough number of events. 
+While I believe this is a solid result, I have several
+concerns. 
+
+Major points:
+>The model-based experimental driving trajectories
+demonstrate that the P-ACC system can 
+> provide a personalized driving experience.
+I think this claim is not supported enough by the results. 
+1. Gap between how drivers would like to drive and how they
+would like to be driven [1,2] ñ Studies suggested there is
+a gap between how they drive and how they prefer to be
+driven by automation. E.g., [1] indicated that 30%
+preferred opposite driving style to theirs. 
+2. Study still not complete: They demonstrate the user can
+be adapted to (clustering-based) types. However, it does
+not mean adaptation to individual is achieved. User study
+will help understand the effectiveness of the approach.  
+3. Very simple parameterization for ACC ñ as the authors
+describe in the conclusions section, only speed and
+following distance. ACC should include maximum
+acceleration/deacceleration and behavior when cut-in events
+happened. 
+Overall, solid study but could be improved with more
+follow-up studies.  
+
+[1] Stefan Griesche Bosch, Mandy Dotzauer, Stefan Griesche,
+Eric Nicolay, Dirk Assmann, and David K‰thner. 2016. Should
+my car drive as I do? What kind of driving style do drivers
+prefer for the design of automated driving functions?
+Should my car drive as I do? What kind of driving style do
+drivers prefer for the design of automated driving
+functions? Soll mein Aut. raunschweiger Symposium 10, 11
+(2016), 185ñ204.
+[2] Franziska Hartwich, Matthias Beggiato, and Josef F
+Krems. 2018. Driving Comfort , Enjoyment , and Acceptance
+of Automated Driving - Effects of Drivers í Age and Driving
+Style Familiarity. Ergonomics 0139 (2018), 0ñ1.
+
+
+
+
+
+
+
+
