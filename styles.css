@@ -26,7 +26,9 @@ body {
   margin-right: 0em;
   font-family: Helvetica, Verdana, Tahoma, Arial, Sans-serif;
   font-size: 1em;
-  max-width: 820px;
+  /* max-width: 1024px; */
+  /* max-width: 820px; */
+  max-width: 813px;
   padding:0px;
 }
 
@@ -43,7 +45,7 @@ body {
  .banner img{
     max-width: 100%;
     /* margin:0; */
-    display:inline-block; 
+    /* display:inline-block;  */
     vertical-align: bottom;
     font-size: 0;
     line-height: 0;
@@ -72,7 +74,7 @@ nav{
     /* padding: 0.1rem; */
     position: sticky;
     top: 0px;
-    margin-right: 0.9%;
+    /* margin-right: 0.9%; */
     /* z-index: 1; */
   }
   nav ul{
@@ -268,7 +270,7 @@ table.patent {
 @media screen and (max-width: 640px){
 
   body {
-    margin-left: 1.5em;
+    /* margin-left: 1em; */
   }
   main td {
     display:inline-block;
