@@ -21,8 +21,8 @@ header{
 body {
   margin-top: 0px;
   margin-bottom: 0px;
-  margin-left: 2em;
-  margin-right: auto;
+  margin-left: 0em;
+  margin-right: 0em;
   font-family: Helvetica, Verdana, Tahoma, Arial, Sans-serif;
   font-size: 1em;
   max-width: 820px;
@@ -34,6 +34,7 @@ body {
 /* body > section.banner > div > h2 > span */
 .banner{
     position: relative;
+    margin: 0;
  }
  /* .banner div h2{ 
     margin: 0;
@@ -85,26 +86,28 @@ nav{
   nav li a:hover{
     text-decoration: underline;
   }
-  nav li a.join{
-    color: #F63232;
-  }
 
 /* Main section  */
 main {
   line-height: 1.5em;
+  margin: 0 2em 
 }
 main td{
   padding-left: 2em;
 }
 
-
-h3{
-  margin:0.5em;
+section h2 {
+  margin:0 1.5em;
 }
 
-ul,  ol{
-  margin:0.3em;
+section h3{
+  margin:0.5em 2em;
+}
+
+section ul,  ol{
+  margin:0 2em;
   padding-left:0.3em;
+  padding-bottom:0.5em;
 }
 table {
   margin-bottom: 1em;
@@ -112,12 +115,9 @@ table {
 section td{
   padding-left: 1em;
 }
-section h2{
-  margin: 0;
-}
 
 section hr {
-  margin: 0;
+  margin-bottom: 0.5em;
 }
 
 section hr {
@@ -182,12 +182,23 @@ section.research td{
     display:inline-block;
 }
 /* Publications */
+section.publications table, section.patents table{ 
+  margin:0 1em;
+}
 section.publications td, section.patents td {
   vertical-align:top;
   line-height: 1.4em;
-  padding-left: 0.3em;
+  margin-left: 0em;
+  padding-left: 0.0em;
   padding-bottom:0.6em;
+  border-spacing: 0;
 } 
+
+/* item number align to right */
+section.publications  td:nth-child(1),  section.patents td:nth-child(1) {
+  text-align: right ;
+  vertical-align:top;
+}
 
 /* Journal  */
 table.journal {
@@ -219,7 +230,7 @@ table.book {
 
 /* Patents  */
 table.patent {
-  counter-reset: patentcount 52;           /* Set the counter to max + 1 */
+  counter-reset: patentcount 53;           /* Set the counter to max + 1 */
 }
 .patentcount:before{
   counter-increment: patentcount -1;      /* Increment the counter */
