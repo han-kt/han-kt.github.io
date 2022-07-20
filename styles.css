@@ -42,7 +42,11 @@ body {
   */
  .banner img{
     max-width: 100%;
-    margin:0;
+    /* margin:0; */
+    display:inline-block; 
+    vertical-align: bottom;
+    font-size: 0;
+    line-height: 0;
 } 
   .banner .welcome{
     background:#FEB614;
@@ -58,11 +62,6 @@ body {
     -webkit-text-stroke: 0.7px #291381; 
 } 
 
-.welcome {
-  /* border: 8px solid white; */
-  border-radius:10px;
-}
-
 .banner .welcome span{
     font-size: 1.1em;
 }
@@ -73,6 +72,7 @@ nav{
     /* padding: 0.1rem; */
     position: sticky;
     top: 0px;
+    margin-right: 0.9%;
     /* z-index: 1; */
   }
   nav ul{
