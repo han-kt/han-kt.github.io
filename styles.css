@@ -105,7 +105,9 @@ main td{
 }
 
 section h2 {
-  margin:0 1.5em;
+  margin-top:0.5em;
+  margin-bottom:0em;
+  margin-left: 1.5em;
 }
 
 section h3{
@@ -116,6 +118,11 @@ section ul,  ol{
   margin:0 2em;
   padding-left:0.3em;
   padding-bottom:0.5em;
+}
+
+section hr{
+ margin-top:0.3em;
+ margin-bottom: 0em;
 }
 table {
   margin-bottom: 1em;
