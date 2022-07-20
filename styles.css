@@ -18,6 +18,7 @@ header{
 }
 
 
+
 body {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -34,7 +35,6 @@ body {
 /* body > section.banner > div > h2 > span */
 .banner{
     position: relative;
-    margin: 0;
  }
  /* .banner div h2{ 
     margin: 0;
@@ -42,18 +42,26 @@ body {
   */
  .banner img{
     max-width: 100%;
+    margin:0;
 } 
   .banner .welcome{
     background:#FEB614;
+    background-color: transparent;
     color: white;
-    padding: 1em;
+    padding: 0.5em;
     font-size: 20px;
     text-align: left;
     line-height: 1.8em;
     position: absolute;
     left: 0;
     top: 20%;
+    -webkit-text-stroke: 0.7px #291381; 
 } 
+
+.welcome {
+  /* border: 8px solid white; */
+  border-radius:10px;
+}
 
 .banner .welcome span{
     font-size: 1.1em;
