@@ -215,11 +215,18 @@ section.publications td, section.patents td {
 section.publications  td:nth-child(1),  section.patents td:nth-child(1) {
   text-align: right ;
   vertical-align:top;
+  width:5%;
 }
 
-section.publications  td:nth-child(3),  section.patents td:nth-child(1) {
+section.publications  td:nth-child(2),  section.patents td:nth-child(2) {
+  text-align: left ;
+  vertical-align:top;
+  width:80%;
+}
+section.publications  td:nth-child(3),  section.patents td:nth-child(3) {
   text-align: right ;
   vertical-align:top;
+  width:15%;
 }
 
 /* Journal  */
