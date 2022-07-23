@@ -217,6 +217,11 @@ section.publications  td:nth-child(1),  section.patents td:nth-child(1) {
   vertical-align:top;
 }
 
+section.publications  td:nth-child(3),  section.patents td:nth-child(1) {
+  text-align: right ;
+  vertical-align:top;
+}
+
 /* Journal  */
 table.journal {
   counter-reset: journalcount 12;           /* Set the counter to max + 1 */
