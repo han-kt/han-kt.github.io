@@ -252,10 +252,13 @@ section.publications  td:nth-child(3),  section.patents td:nth-child(3) {
   width: 100%;
   height: auto;
   transform: scale(1);
+  border-radius: 5px;
+  border: 1px solid #ddd;
 }
 
 .image-box:hover img {
   transform: scale(1.1);
+  border: 1px solid #ddd; 
 }
 
 
