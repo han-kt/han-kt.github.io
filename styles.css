@@ -187,12 +187,26 @@ li.journal:nth-of-type(n+10)::before {
 } */
 
 /* News */
+/* section.news > ul { */
+  /* list-style: none; */
+  /* height: 100px; */
+  /* overflow-x: hidden; */
+  /* overflow-y: scroll;  */
+/* } */
+
+ul#newslist
 section.news li{
   line-height: 1.4em;
   margin: 1em 0;
 }
 
 /* Research */
+
+/* body > section.publications > table { */
+/* #table-scroll{
+  height:35em;
+  overflow:auto;
+} */
 
 /* body > section.research > table > tbody > tr > td:nth-child(1) > span > img */
 section.research td{
@@ -292,7 +306,7 @@ table.book {
 
 /* Patents  */
 table.patent {
-  counter-reset: patentcount 55;           /* Set the counter to max + 1 */
+  counter-reset: patentcount 56;           /* Set the counter to max + 1 */
 }
 .patentcount:before{
   counter-increment: patentcount -1;      /* Increment the counter */
