@@ -278,7 +278,7 @@ section.publications  td:nth-child(3),  section.patents td:nth-child(3) {
 
 /* Journal  */
 table.journal {
-  counter-reset: journalcount 12;           /* Set the counter to max + 1 */
+  counter-reset: journalcount 14;           /* Set the counter to max + 1 */
 }
 .journalcount:before{
   counter-increment: journalcount -1;      /* Increment the counter */
@@ -287,7 +287,7 @@ table.journal {
 
 /* Conference  */
 table.conference {
-  counter-reset: confcount 35;           /* Set the counter to Max + 1 */
+  counter-reset: confcount 36;           /* Set the counter to Max + 1 */
 }
 .confcount:before{
   counter-increment: confcount -1;      /* Increment the counter */
