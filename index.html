@@ -8,13 +8,14 @@
 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="kt.js"></script>
 </head>
 
-<body>
+<body onload="init();">
 	<section class="banner">
 		<img src="images/toyota_itl2.png" alt="KT Han welcome banner">
 		<div class="welcome">
-			<h2>Welcome to <br> <span>Kyungtae (KT) Han's<br> Homepage</span></h2>
+			<h2>Welcome to <br> <span>Kyungtae "KT" Han's<br> Homepage</span></h2>
 		</div>
 	</section>
 	<nav class="main-nav">
@@ -38,7 +39,7 @@
 								alt="KyungtaeHan Image" /> </span>
 					</td>
 					<td style="vertical-align:center">
-						<h1>Kyungtae (KT) Han</h1>
+						<h1>Kyungtae "KT" Han</h1>
 						<strong> Sr. Principal Scientist </strong><br>
 						Toyota Motor North America R&D <br>
 						<a href="https://amrd.toyota.com/division/itl/">Toyota InfoTech Labs</a>
@@ -110,8 +111,6 @@
 				 <a href="https://www.icra2022.org/">IEEE International Conference on Robotics and Automation (ICRA)</a>
 				on "Personalized Car Following for Autonomous Driving with Inverse Reinforcement Learning" 
 				and "Online Prediction of Lane Change with a Hierarchical Learning-Based Approach" </li>
-		</ul>
-
 		</ul>
 	</section>
 
@@ -210,7 +209,7 @@
 				</td>
 				<td> 
 					<div class="image-box">
-					<a href="publications/22_TCPS/FigMap_annotated.png"> </a>
+					<a href="publications/22_TCPS/FigMap_annotated.png"> 
 					<img src="publications/22_TCPS/FigMap_annotated_320.png" alt="22_TCPS" style="width:8em"> </a> 
 					</div>
 				</td>
@@ -754,9 +753,17 @@
 	</section>
 <td></td>
 	<section class="patents">
-		<h2 id="patents"> Patents </h2>
+		<h2 id="patents"> Patents 
+			<!-- <span id="patentsbuttonholder">
+				[
+				<span class="button" id="patentsbutton" title="Show all" onclick="togglePatents()">show all</span>
+				]
+			</span> -->
+		</h2>
 		<hr>
-		<table class="patent" style="width:100%"> 
+		<div id="patents">
+		<!-- <table class="patent" id="patentslist" style="width:100%">  -->
+		<table class="patent" id="patentslist" style> 
 			<tr>
 				<td><span class="patentcount"></span> </td>
 				<td> <b>Systems and methods for long-term prediction of lane change maneuver </b>
@@ -1181,6 +1188,8 @@
 				</td>
 			</tr> 
 		</table>
+		<!-- <div class="fade" id="patentfade" style="display: block;"></div> -->
+		</div>
 	</section>
 	<hr>
 	<footer id="footer">

@@ -317,6 +317,55 @@ table.patent {
   unicode-bidi: bidi-override;
   direction: rtl;
 }
+
+div#patens {
+  position:relative;
+}
+
+/* div#patents {
+  height:35em;
+  overflow:auto;
+} */
+
+
+.hidePatents{
+  height:35em;
+  overflow:auto;
+
+}
+
+.showPatents{
+   /* height:35em; */ 
+  overflow:auto;
+}
+
+#patentsbuttonholder {
+	font-size:0.6em;
+	font-weight:normal;
+	color:#777777;
+	margin-left:0.3em;
+}
+
+
+span.button {
+	text-decoration:none; 
+}
+
+span.button:hover {
+	text-decoration:underline; 
+	cursor:pointer;
+}
+
+div.fade {
+	width:95%;
+	/* height:75px; */
+	height:100px;
+	background-image:url("images/fade.png");
+	bottom:0px;
+	left:0px;
+	position:absolute;
+}
+
  
 
 /* responsive styles */
