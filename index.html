@@ -3,8 +3,9 @@
 
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="/styles.css">
+	<link rel="stylesheet" href="styles.css">
 	<title>Kyungtae (KT) Han's Homepage</title>
+	<script src="https://kit.fontawesome.com/19148a1b21.js" crossorigin="anonymous"></script>
 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -12,41 +13,74 @@
 </head>
 
 <body onload="init();">
-	<section class="banner">
-		<img src="images/toyota_itl2.png" alt="KT Han welcome banner">
-		<div class="welcome">
-			<h2>Welcome to <br> <span>Kyungtae "KT" Han's<br> Homepage</span></h2>
-		</div>
-	</section>
-	<nav class="main-nav">
+
+	
+	<!-- <nav class="main-nav">
 		<ul>
 			<li><a class="anchor" id="top" href="index.html">Home</a></li>
 			<li><a class="anchor" id="top" href="#news"> News</a></li>
 			<li><a class="anchor" id="top" href="#research">Research</a></li>
 			<li><a class="anchor" id="top" href="#publications">Publications</a></li>
-			<li><a class="anchor" id="top" href="#patents">Patents</a></li>
+			<li><a class="anchor" id="top" href="#patents">Patents</a></li> -->
 			<!-- <li><a href="/contact.html">Contact</a></li> -->
-		</ul>
-	</nav>
-	</nav>
+		<!-- </ul>
+	</nav>	 -->
 
+	<!-- https://www.youtube.com/watch?v=Fx_NpAPM-iU -->
+	<div class="left-side">
+		<div class="side-nav">
+			<!-- <a href="#" class="logo">
+				<img src="log.png" alt="">
+			</a> -->
+			<ul class="nav-links">
+				<li><a href="index.html"><i class="fa-regular fa-house-user"></i><p>Home</p></a></li>
+				<!-- <li><a class="anchor" id="top" href="#news"> <i class="fa-solid fa-lightbulb-exclamation-on"></i>News</a></li> -->
+				<!-- <li><a href="#news"><i class="fa-regular fa-flask"></i><p>News</p></a></li> -->
+				<li><a href="#research"><i class="fa-regular fa-flask"></i><p>Research</p></a></li>
+				<li><a href="#publications"><i class="fa-solid fa-book"></i><p>Publications</p></a></li>
+				<li><a href="#patents"><i class="fa-solid fa-copyright"></i><p>Patents</p></a></li>
+				<!-- <li><a class="anchor" id="top" href="#patents">Patents</a></li>  -->
+				<!-- <li><a href="/contact.html">Contact</a></li> -->
+				<div class="active">
+				</div>
+			</ul>
+		</div>
+
+	</div>
+
+
+		<!-- <div class="home_content"> -->
 	<main>
-		<article>
+
+			<div class="banner">
+				<img src="images/toyota_itl2.png" alt="KT Han welcome banner">
+				<div class="welcome">
+					<h2>Welcome to <br> <span>Kyungtae "KT" Han's<br> Homepage</span></h2>
+				</div>
+			</div>
+
+		<div class="intro">
 			<table>
 				<tr>
-					<td style="vertical-align:bottom;">
-						<span class="image object"> <img style="width:250px;" src="images/KyungtaeHan_1280.jpeg"
+					<!-- <td style="vertical-align:bottom;">
+						<span class="image object"> <img style="width:150px;" src="images/KyungtaeHan_1280.jpeg"
 								alt="KyungtaeHan Image" /> </span>
+					</td> -->
+					<td class="selfimage">
+						<img class="selfimage" src="images/KyungtaeHan_1280.jpeg"
+								alt="KyungtaeHan Image"> 
 					</td>
-					<td style="vertical-align:center">
-						<h1>Kyungtae "KT" Han</h1>
+					<td class="namecard" style="vertical-align:center">
+						<h2>Kyungtae "KT" Han</h2>
+						<br>
 						<strong> Sr. Principal Scientist </strong><br>
 						Toyota Motor North America R&D <br>
 						<a href="https://amrd.toyota.com/division/itl/">Toyota InfoTech Labs</a>
 						<br>
-						<b>Office</b>: 465 N Bernardo Ave., Mountain View, CA 94043 
+						<!-- <b>Office</b>:  -->
+						465 N Bernardo Ave., Mountain View, CA 
 						<br>	
-						<b>E-mail</b>: 
+						<!-- <b>E-mail</b>:  -->
 
 						<span class="backwards">
 							<a href="#" onclick="JavaScript:window.location='ma'+'ilto:'+'kyung'+'tae'+'.han'+'@'+'toyota'+'.com'">moc.atoyot@nah.eatgnuyk</a>
@@ -64,6 +98,7 @@
 							<i class="ai ai-google-scholar" style="font-size:20px"></i>
 						</a>
 					</td>
+
 				</tr>
 				<th></th>
 			</table>
@@ -72,8 +107,7 @@
 			Intel Labs. His research interests include cyber-physical systems, connected and automated
 			vehicles, personalized mobility services, and Digital Twin. He is a Senior Member of IEEE
 			and a member of ACM and SAE. </p>
-		</article>
-	</main>
+		</div>
 
 	<section class="news">
 		<h2 id="news"> Recent News </h2>
@@ -113,6 +147,7 @@
 				and "Online Prediction of Lane Change with a Hierarchical Learning-Based Approach" </li>
 		</ul>
 	</section>
+	</div>
 
 
 	<section class="research">
@@ -173,7 +208,6 @@
 
 
 		<h3> Journal Articles (Peer Reviewed) </h3>
-		<div id="table-scroll">
 		<table class="journal" style="width:100%">
 			<tr>
 				<td><span class="journalcount"></span> </td>
@@ -1191,11 +1225,10 @@
 		<!-- <div class="fade" id="patentfade" style="display: block;"></div> -->
 		</div>
 	</section>
-	<hr>
 	<footer id="footer">
 		<!-- <p> Last motification of this page: July, 2022</p> -->
 		<!-- <a href="https://info.flagcounter.com/oEoK"> <img src="https://s11.flagcounter.com/count2/oEoK/bg_F5F5F5/txt_7A7A7A/border_F5F5F5/columns_3/maxflags_255/viewers_Visitors+to+this+page/labels_0/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0"></a> -->
-		<a href="https://info.flagcounter.com/oEoK"> <img src="https://s11.flagcounter.com/count2/oEoK/bg_F5F5F5/txt_7A7A7A/border_F5F5F5/columns_3/maxflags_255/viewers_Visitors+to+this+page/labels_0/pageviews_0/flags_0/percent_1/" alt="Flag Counter" border="0"></a>
+		<a href="https://info.flagcounter.com/oEoK"> <img src="https://s11.flagcounter.com/count2/oEoK/bg_F5F5F5/txt_7A7A7A/border_F5F5F5/columns_2/maxflags_255/viewers_Visitors/labels_0/pageviews_0/flags_0/percent_1/" alt="Flag Counter" border="0"></a>
 		<!-- Flag count color is F5F5F5 -->
 	</footer>
 </body>

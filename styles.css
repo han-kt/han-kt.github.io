@@ -5,20 +5,6 @@ html {
     /* font-family: Arimo, Helvetica, Arial;   */
 }
 
-header{
-    background-color: #F63232;
-    padding: 10px 0;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    visibility: hidden;
-}
-
-
-
 body {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -32,78 +18,119 @@ body {
   padding:0px;
 }
 
+.left-side{
+  height: 100%;
+  width: 200px;
+  background:#0d74f5; 
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  overflow-x: hidden;
+}
+/* ### Side Navigation ### */
+.side-nav{
+  /* padding: 20px 30px; */
+  /* top: 215px; */
+  /* z-index:1 */
+}
+.nav-links{
+  list-style: none;
+  position: relative;
+}
+.nav-links li{
+  padding: 10px 0;
+}
+.nav-links li a{
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+}
+.nav-links li a i{
+  font-size: 22px;
+  margin-right: 20px;
+}
+.nav-links li:hover a{
+  color: #f6ee14;
+  transition: 0.3s;
+}
+
+footer{
+  vertical-align: bottom;
+  margin-left: 20px; 
+  bottom: 5px;
+}
+main{
+  margin-left: 200px;
+  /* padding-left: 20px; */
+  /* position: absolute; */
+  /* height: 100%; */
+  /* width: calc(100% - 240px); */
+  /* left: 240px; */
+}
+
+/* Main section  */
+/* main {
+  position: absolute;
+  height: 100%;
+  width: calc(100% - 240px);
+  left: 240px;
+} */
+/* main { */
+  /* line-height: 1.5em; */
+  /* margin: 0 2em;  */
+/* } */
+/* main td{ */
+  /* padding-left: 2em; */
+/* } */
 /* Banner Bar */
 
 /* body > section.banner > div > h2 > span */
 .banner{
-    position: relative;
- }
- /* .banner div h2{ 
-    margin: 0;
- }
-  */
- .banner img{
-    max-width: 100%;
-    /* margin:0; */
-    /* display:inline-block;  */
-    vertical-align: bottom;
-    font-size: 0;
-    line-height: 0;
+  position: relative;
+}
+.banner div h2{ 
+  margin-left: 20px; 
+}
+.banner img{
+  max-width: 100%;
+  /* margin:0; */
+  /* display:inline-block;  */
+  vertical-align: bottom;
+  font-size: 0;
+  line-height: 0;
 } 
-  .banner .welcome{
-    background:#FEB614;
-    background-color: transparent;
-    color: white;
-    padding: 0.5em;
-    font-size: 20px;
-    text-align: left;
-    line-height: 1.8em;
-    position: absolute;
-    left: 0;
-    top: 20%;
-    -webkit-text-stroke: 0.7px #291381; 
+.banner .welcome{
+  background:#FEB614;
+  background-color: transparent;
+  color: white;
+  padding: 0.5em;
+  font-size: 20px;
+  text-align: left;
+  line-height: 1.8em;
+  position: absolute;
+  left: 0;
+  top: 20%;
+  -webkit-text-stroke: 0.7px #291381; 
 } 
-
 .banner .welcome span{
-    font-size: 1.1em;
+  font-size: 1.1em;
 }
 
-/* Navication Bar */
-nav{
-    background: #F4F4F4;
-    /* padding: 0.1rem; */
-    position: sticky;
-    top: 0px;
-    /* margin-right: 0.9%; */
-    /* z-index: 1; */
-  }
-  nav ul{
-    white-space: nowrap;
-    /* max-width: 1200px; */
-    margin: 0;
-    text-align: center;
-    padding: 6px;
-  }
-  nav li{
-    width: 18%;
-    display: inline-block;
-    font-size: 16px;
-  }
-  nav li a{
-    text-decoration: none;
-    color: #4B4B4B;
-  }
-  nav li a:hover{
-    text-decoration: underline;
-  }
 
-/* Main section  */
-main {
+.intro {
+  margin-left: 20px;
+  margin-top: 20px;
   line-height: 1.5em;
-  margin: 0 2em 
 }
-main td{
-  padding-left: 2em;
+.selfimage{
+  width:200px;
+  vertical-align: top;
+}
+.namecard{
+  padding: 10px;
+  padding-left: 30px;
 }
 
 section h2 {
@@ -396,6 +423,28 @@ div.fade {
   .banner .welcome{
     font-size: 12px;
   }
+}
+
+
+/* Side navation adjustment */
+@media only screen and (max-width: 600px){
+  .left-side{
+    width: 50px;
+  }
+  .nav-links li a p{
+    display: none;
+  }
+  .nav-links li a i{
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .nav-links li a{
+    justify-content: center;
+  }
+
+  main{
+    margin-left: 50px;
+
 }
 
 
