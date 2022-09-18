@@ -4,6 +4,14 @@ html {
     /* font-family: Georgia, sans-serif;   */
     /* font-family: Arimo, Helvetica, Arial;   */
 }
+*{
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
 
 body {
   margin-top: 0px;
@@ -21,24 +29,72 @@ body {
 .left-side{
   height: 100%;
   width: 200px;
-  background:#0d74f5; 
+  background: rgb(33, 44, 121);
   position: fixed;
+  padding: 20px 0;
   left: 0;
   bottom: 0;
   overflow-x: hidden;
+  transition: all 0.5s ease; 
 }
-/* ### Side Navigation ### */
-.side-nav{
-  /* padding: 20px 30px; */
-  /* top: 215px; */
-  /* z-index:1 */
+
+
+.left-side .profile{
+  margin-bottom: 30px;
+  text-align: center;
 }
+
+.left-side .profile img{
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.left-side .profile h3{
+color: #ffffff;
+margin: 10px 0 5px;
+}
+.left-side .profile p{
+color: rgb(206, 240, 253);
+font-size: 14px;
+}
+.left-side .profile h4{
+color: rgb(206, 240, 253);
+font-size: 14px;
+}
+.left-side .profile h4 a{
+  text-decoration: none;
+  color: rgb(206, 240, 253);
+}
+
+.contact{
+  list-style: none;
+}
+
+.contact a{
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 2px;
+  /* display: flex; */
+  align-items: center;
+}
+.contact a i{
+  font-size: 18px;
+  padding: 5px 4px;
+  /* margin-right: 20px; */
+}
+.contact a:hover{
+  color: #f6ee14;
+  transition: 0.3s;
+}
+
 .nav-links{
   list-style: none;
   position: relative;
 }
 .nav-links li{
-  padding: 10px 0;
+  padding: 1px 0;
 }
 .nav-links li a{
   color: #fff;
@@ -47,6 +103,16 @@ body {
   display: flex;
   align-items: center;
 }
+
+.nav-links li a{
+  /* display: block; */
+  /* padding: 13px 30px; */
+  border-bottom: 1px solid #10558d;
+  color: rgb(241, 237, 237);
+  font-size: 16px;
+  position: relative;
+}
+
 .nav-links li a i{
   font-size: 22px;
   margin-right: 20px;
@@ -431,6 +497,14 @@ div.fade {
   .left-side{
     width: 50px;
   }
+  .left-side .profile img{
+    width: 20px;
+    height: 20px;
+  } 
+  .affilation{
+    display: none;
+  }
+
   .nav-links li a p{
     display: none;
   }
@@ -441,6 +515,7 @@ div.fade {
   .nav-links li a{
     justify-content: center;
   }
+
 
   main{
     margin-left: 50px;
