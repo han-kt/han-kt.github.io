@@ -20,9 +20,9 @@ body {
   margin-right: 0em;
   font-family: Helvetica, Verdana, Tahoma, Arial, Sans-serif;
   font-size: 1em;
-  /* max-width: 1024px; */
+  max-width: 1024px;
   /* max-width: 820px; */
-  max-width: 813px;
+  /* max-width: 813px; */
   padding:0px;
 }
 
