@@ -403,7 +403,7 @@ table.book {
 
 /* Patents  */
 table.patent {
-  counter-reset: patentcount 57;           /* Set the counter to max + 1 */
+  counter-reset: patentcount 58;           /* Set the counter to max + 1 */
 }
 .patentcount:before{
   counter-increment: patentcount -1;      /* Increment the counter */
