@@ -384,7 +384,7 @@ table.journal {
 
 /* Conference  */
 table.conference {
-  counter-reset: confcount 36;           /* Set the counter to Max + 1 */
+  counter-reset: confcount 37;           /* Set the counter to Max + 1 */
 }
 .confcount:before{
   counter-increment: confcount -1;      /* Increment the counter */
@@ -403,7 +403,7 @@ table.book {
 
 /* Patents  */
 table.patent {
-  counter-reset: patentcount 58;           /* Set the counter to max + 1 */
+  counter-reset: patentcount 59;           /* Set the counter to max + 1 */
 }
 .patentcount:before{
   counter-increment: patentcount -1;      /* Increment the counter */
