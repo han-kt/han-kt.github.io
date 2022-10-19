@@ -1,0 +1,17 @@
+Reivew #4A
+
+Paper summary
+This paper proposes an end-to-end system framework for high-fidelity and real-time digital twin model construction for connected and automated vehicles. This framework tries to utilize the onboard processing unit on vehicle and edge computing server to jointly build the DT models.
+
+Comments for authors
+1. The DT framework did not specify the networking components that connects the vehicles and edge servers.
+2. It is not clear in the preliminary results about how three components in the DT pipeline are distributed among the vehicle and edge server
+
+
+Review #4B
+
+Paper summary
+The authors proposed an end-to-end adaptive digital twin model construction framework with edge computing to facilitate the high-fidelity and real-time mobility digital twin.
+
+Comments for authors
+The novelty of the proposal is limited. The authors conducted the experiments with separate steps and independent datasets, not in an end-to-end manner. The KITTI and ShapeNet datasets do not quite fit the purpose of MDT. Also, I am skeptical about the results shown in Table I, especially the accuracy.
