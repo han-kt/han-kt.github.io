@@ -297,7 +297,43 @@ section.news li{
   margin: 1em 0;
 }
 
+section.news li {
+  list-style: inside;
+
+}
 /* Research */
+
+div.research {
+  margin: 1em 1.4em;
+}
+div.research h3{
+  list-style: circle;
+  margin: 1em 0em 0.5em;
+}
+div.research p {
+  margin : 0em 1em;
+  line-height: 1.4em;
+}
+div.research h4 {
+  list-style: circle;
+  margin: 0.5em 1em 0.5em;
+}
+
+div.research ul {
+  margin-left: 1em;
+}
+
+div.research  li {
+  /* list-style: circle; */
+  list-style: inside;  
+  line-height: 1.4em;
+  margin: 0em 0.3em 0em ; 
+}
+
+div.research td{
+  display:inline-block;
+  padding-left: 0.8em;
+}
 
 /* body > section.publications > table { */
 /* #table-scroll{
@@ -307,8 +343,10 @@ section.news li{
 
 /* body > section.research > table > tbody > tr > td:nth-child(1) > span > img */
 section.research td{
-    display:inline-block;
+    display: inline-block;
+    /* padding: 5px; */
 }
+
 /* Publications */
 section.publications table, section.patents table{ 
   margin:0 1em;
@@ -483,7 +521,6 @@ div.fade {
 
 }
 @media screen and (max-width: 640px){
-
   body {
     /* margin-left: 1em; */
   }
@@ -533,8 +570,10 @@ div.fade {
 
   main{
     margin-left: 50px;
+  }
 
 }
+
 
 
 @media screen and (max-width: 400px){
@@ -556,4 +595,6 @@ div.fade {
 }
 
 
-#more {display: none;}
+#more {
+  display: none;
+}

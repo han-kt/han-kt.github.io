@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 	<script type="text/javascript" src="kt.js"></script>
+	<script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
 </head>
 
 <body onload="init();">
@@ -51,6 +52,11 @@
 					<!-- <p>Google Scholar</p> -->
 					</a>
 					<!-- </p> -->
+				<a href="https://dblp.org/pid/67/4400.html"
+					target="_blank" rel="noopener" title="DBLP">
+					<i class="fa fa-dblp" style="font-size:20px"></i>
+					<!-- <p>Google Scholar</p> -->
+					</a>
 
 			</div>
 						<!-- <b>Office</b>:  -->
@@ -176,42 +182,187 @@
 	</section>
 
 	<section class="research">
-		<h2 id="research"> Recent Research </h2>
+		<h2 id="research">
+			Recent Research
+		</h2>
 		<hr>
-		<!--
-		<h3> Research Areas</h3>
-		<ul>
-			<li> Connected and Automated Vehicle </li>
-			<li> Personalized Intelligent Systems </li> 
-			<li> Cyber-Physical Systems </li>
-			<li> Digital Twin </li>
-			<li> Edge Computing </li>
-			<li> Artificial Intelligent </li>
-			<li> Mobile Augumented Reality (AR) </li>
-			<li> Intelligent Transportation</li> 
-			<li> Human Factor</li> 
-		</ul>  -->
-		<h3> Academia Research Partners</h3>
-		<table>
-			<tr>
-				<td><span class="image object"> <img src="images/Purdue_logo.png" alt="Purdue" style="width:120px" />
-				</span></td>
-				<td><span class="image object"> <img src="images/GSU_logo.png" alt="GSU" style="width:200px" />
+		<div class="research">
+
+
+<!-- 
+			<h2>
+				Recent Research
+			</h2>
+			<hr> -->
+			<!-- <p>To build future cloud and edge computing systems for a smart, secure, and connected society. 
+			Potential application areas include healthcare and transportation.  -->
+			<!-- and communications, transportation, finance, and scientific computing. -->
+			<!-- </p> -->
+	
+			
+			
+			<h3> Predictive Intelligence (Predictive Models of the World)</h3>
+			<!-- <p>Achieve mutually beneficial outcomes with connected AI agents or between AI agents and humans </p> -->
+			<p> 
+				Behavior prediction in the automotive domain benefits road safety. Predicting the surrounding
+vehicle’s actions gives the ego vehicle room to avoid accidents and provides a smooth driving
+experience. However, predicting behavior is challenging due to limited observed data and the
+uncertainty of behaviors. The goal of this topic is to build predictive models of the world. Data-
+driven AI and ML techniques have been applied to utilize the data and models inside Digital
+Twin to predict driving behavior. Car-following behavior was modeled with the Gaussian
+Process. The gap between the preceding and ego vehicles has been predicted through
+deep learning, including the multilayer perceptron, graph convolution networks, and
+transformer techniques. Recent research results show the prediction of driving behavior
+from 3 to 10 seconds before. The research impacts mobility systems’ safety improvement
+through anomaly detection, scene analysis, and risk analysis.
+				
+	
+			</p>
+	
+			<h4> Publications </h4>
+			<ul>
+				<li> Neural Network: Multi-layer Perceptron 
+					<a href="https://ieeexplore.ieee.org/abstract/document/9304587">[IV 2020] </a></li>
+				<li> Deep Learning: LSTM 
+					<a href="https://ieeexplore.ieee.org/document/8814063">[IV 2019]</a>, 
+					Transformers 
+					<a href="https://ieeexplore.ieee.org/document/9922275">[ITSC 2022]</a> </li>
+				<li> Graph Network: Graph Convolution Neural Network 
+					<a href="https://ieeexplore.ieee.org/document/9294294">[ITSC 2020]</a> </li>
+				<li> Hybrid Learning: 
+						IRL+LSTM <a href="https://ieeexplore.ieee.org/document/9812269">[ICRA 2022]</a>,  
+						IRL+GMM <a href="https://ieeexplore.ieee.org/document/9922548">[ITSC 2022]</a>
+				<li> Non-parametric Learning: Gaussian Process 
+					<a href="https://ieeexplore.ieee.org/document/9774935">[T-ITS 2022]</a> </li>
+			</ul>
+
+			<h3> Personalized Intelligence </h3>
+			<!-- <p> Learn personal emotions and preferences from implicit and explicit feedback </p> -->
+			<p> 
+				People have different preferences in almost everything, and understanding personal preferences
+provide an opportunity for better services to meet their needs. However, learning personal
+preferences is difficult due to human preference’s uncertain and dynamic nature and limited
+explicit feedback dataset from individuals. This research has modeled the human’s emotional
+state and preference and studied how to utilize the individuals’ implicit reactions or feedback to
+learn personal preferences. Human trust in autonomous vehicle driving has been investigated
+by observing the dynamic change in trust through a driving simulator and planning trust-
+based routes based on POMDP and reinforcement learning. Inverse Reinforcement
+Learning has been studied for Personalized gap preference and lane change prediction. 
+The Augmented Reality (AR) technique has been adopted to overlay the lane
+change warning messages from surrounding vehicles with different driving styles. Personalized
+gap preference between cars has also been proposed and demonstrated in a real car. This
+personalized intelligence research opens the door to enriching personalized services with Digital
+Twin.
+	</p>
+	
+			<h4> Publications </h4>
+			<ul>
+				<li> Augmented Reality: Driver Assistance System 
+					<a href="https://ieeexplore.ieee.org/document/9283462">[SMC 2020]</a></li>
+				<li> Partially Observable MDP: Dynamic Trust for Route Planning 
+					<a href="https://dl.acm.org/doi/10.1145/3561059">[T-CPS 2022]</a> </li>
+				<li> Inverse Reinforcement Learning: Car Following 
+					<a href="https://ieeexplore.ieee.org/document/9812446">[ICRA 2022]</a>
+				<!-- </li>,
+					Lane Change <a href="https://ieeexplore.ieee.org/document/9812269"> [ICRA 2022b]</a> -->
+				</li>
+				<!-- <li> Recommender Engine: On-going </li>
+				<li> Event-Driven Approach: On-going project</li> -->
+			</ul>
+
+	
+			<h3> 
+				Cooperative Intelligence 
+			</h3>
+			<!-- <p> Achieve mutually beneficial outcomes with connected AI agents or between AI agents and humans </p> -->
+			<p> 
+				Artificial intelligence techniques started from a stand-alone intelligent system that works alone
+and can be expanded to cooperative tasks with connected AIs or between AI and humans.
+Cooperative intelligence with Digital Twin is the skill of taking joint action to achieve mutually 
+beneficial outcomes utilizing the Digital Twin concept. The physical space has constraints
+in space and communication for cooperation. However, the digital space has less affected by
+these constraints and can efficiently provide cooperative intelligence.
+This research topic highlights the communication among digital copies for cooperation in 
+physical space. Cooperative intelligence with Digital Twin has applied to the non-signalized 
+intersections and the highway on-ramp merging with the consensus algorithm and
+game theory. In this application, a digital copy communicates with other digital copies
+of the surrounding vehicles, negotiates the driving trajectory for the optimum trajectory with
+algorithms or simulations, and provides speed and acceleration guidance to the users in
+physical space. Recent results demonstrate that connected intelligence improves driving safety
+with real-time guidance. This application and demonstration were recognized with the best paper
+and best application awards.
+	
+			</p>
+			<h4> Publications </h4>
+			<ul>
+				<li> Consensus algorithm: 
+					<a href="https://saemobilus.sae.org/content/12-05-04-0025/">[J-CAV 2019]</a>, 
+					<a href="https://ieeexplore.ieee.org/document/8815239">[ACC 2019]</a></li>
+				<li> Game theory: <a href="https://ieeexplore.ieee.org/document/9646262">[T-SMC 2021]</a> </li>
+				<li> Non-signalized Intersection: 
+					<a href="https://ieeexplore.ieee.org/document/9497693">[T-IV 2022]</a></li>
+				<li> Highway on-ramp merging: <a href="https://ieeexplore.ieee.org/document/9502522">[T-ITS 2021]</a> </li>
+				<li> Human-in-the-loop simulation environment: 
+					<a href="https://ieeexplore.ieee.org/document/9084240">[T-IV2020]</a> </li>
+				<li> Simulation framework: Unity 
+					<a href="https://ieeexplore.ieee.org/document/9540074">[DTPI 2021]</a></li>
+				<!-- <li> Simulation-assist guidance: On-going project </li> -->
+			<!-- Related Referece: 
+			[J2], [J4], [J5], [J6],  [C17], [C20], [C27], [C15] -->
+			</ul>
+
+	
+			<!-- <h3> 
+				Digital Twin Platform for  
+				Connected Automated Vehicle (CAV)
+			</h3> -->	
+
+			<!-- <h3> 
+				Digital Twin Platform for  
+				Connected Automated Vehicle (CAV)
+			</h3> -->
+	
+			<!-- Related Referece: 
+			[J3], [J9], [J10], [C21], [C22], [C25], [C30], [C35]  -->
+	
+	
+	<!-- 
+			<h3> 
+				Edge Computing 
+			</h3>
+			Related Referece: 
+			[J14], [C35] -->
+	
+			<!-- <h3> Energy Efficient Platform </h3>
+			Related Referece: 
+			[C8], [C9], [C10], [C11], [C12], [C13], [C14]
+			<h3> Wordlength Optimization </h3>
+			Related Referece: 
+			[J1], [C1], [C2], [C3], [C4], [C5], [C6], [C7] -->
+	
+			<h3> Academia Research Partners</h3>
+			<table>
+				<tr>
+					<td><span class="image object"> <img src="images/Purdue_logo.png" alt="Purdue" style="width:120px" />
 					</span></td>
-				<td><span class="image object"> <img src="images/UNL_logo.png" alt="UNL" style="width:120px" /> </span>
-				</td>
-				<td><span class="image object"> <img src="images/UCSD_logo.png" alt="UCSD" style="width:120px" />
-					</span></td>
-				<td><span class="image object"> <img src="images/UCR_logo.png" alt="UCR" style="width:120px"> </span>
-				</td>
-				<td><span class="image object"> <img src="images/UVA_logo.png" alt="UVA" style="width:120px" /> </span>
-				</td>
-				<td><span class="image object"> <img src="images/UH_logo.png" alt="UH" style="width:120px" /> </span>
-				</td>
-				<td><span class="image object"> <img src="images/UNCC_logo.png" alt="UNCC" style="width:120px" />
-					</span></td>
-			</tr>
-		</table>
+					<td><span class="image object"> <img src="images/GSU_logo.png" alt="GSU" style="width:200px" />
+						</span></td>
+					<td><span class="image object"> <img src="images/UNL_logo.png" alt="UNL" style="width:120px" /> </span>
+					</td>
+					<td><span class="image object"> <img src="images/UCSD_logo.png" alt="UCSD" style="width:120px" />
+						</span></td>
+					<td><span class="image object"> <img src="images/UCR_logo.png" alt="UCR" style="width:120px"> </span>
+					</td>
+					<td><span class="image object"> <img src="images/UVA_logo.png" alt="UVA" style="width:120px" /> </span>
+					</td>
+					<td><span class="image object"> <img src="images/UH_logo.png" alt="UH" style="width:120px" /> </span>
+					</td>
+					<td><span class="image object"> <img src="images/UNCC_logo.png" alt="UNCC" style="width:120px" />
+						</span></td>
+				</tr>
+			</table>
+	
+		</div>
 
 
 		<!-- <p> Research Interest: Cyber-Physical Systems, Digital Twin, Artificial Interlligence, Machine Leaning, Intelligent Transportation, Personalization, Edge/Cloud Computing </p> -->
@@ -378,7 +529,7 @@
 				<td><b>Digital twin-assisted cooperative driving at non-signalized intersections </b>
 					<br> Ziran Wang, Kyungtae Han, and Prashant Tiwari
 					<br> <em>IEEE Transactions on Intelligent Vehicles (T-IV),</em> 7(2):198–209, June 2022
-					<br> <a href="https://ieeexplore.ieee.org/document/9497693?denied=">Link</a>
+					<br> <a href="https://ieeexplore.ieee.org/document/9497693">Link</a>
 					| <a href="https://www.researchgate.net/publication/351076216_Digital_Twin-Assisted_Cooperative_Driving_at_Non-Signalized_Intersections">PDF</a>
 				</td>
 				<td> 
@@ -407,7 +558,7 @@
 				<td><span class="journalcount"></span> </td>
 				<td><b>Cooperative ramp merging design and field implementation: A digital twin approach based on vehicle-to-cloud communication </b>
 					<br> Xishun Liao, Ziran Wang, Xuanpeng Zhao, Kyungtae Han, Prashant Tiwari, Matthew J. Barth, and Guoyuan Wu
-					<br> <em>IEEE Transactions on Intelligent Transportation Systems,</em> pages 1-11, 2021
+					<br> <em>IEEE Transactions on Intelligent Transportation Systems (T-ITS),</em> pages 1-11, 2021
 					<br> <a href="https://ieeexplore.ieee.org/document/9502522">Link</a> 
 					| <a href="https://www.researchgate.net/publication/346693247_Cooperative_Ramp_Merging_Design_and_Field_Implementation_A_Digital_Twin_Approach_Based_on_Vehicle-to-Cloud_Communication">PDF</a>
 				</td>
@@ -554,6 +705,7 @@
 				<br> Shili Sheng, Erfan Pakdamanian, Kyungtae Han, Ziran Wang, and Lu Feng
 				<br> <em>IEEE International Conference on Intelligent Transportation Systems (ITSC),</em> Oct. 2022
 				<br> <a href="reviews/itsc22sheng.txt">Reviews</a>
+					| <a href="https://ieeexplore.ieee.org/document/9922548">Link</a>
 					| <a href="publications/22_ITSC/sheng22itsc.pdf">PDF</a>
 			</tr>
 			<tr>
@@ -587,8 +739,7 @@
 				<br> Ziran Wang, Kyungtae Han, and Prashant Tiwari
 				<br> <em>IEEE International Conference on Digital Twin and Parallel Intelligence,</em> 2021
 				(<b>Best Application Award</b>)
-				<br> <a
-					href="https://ieeexplore.ieee.org/document/9540074">Link</a>
+				<br> <a href="https://ieeexplore.ieee.org/document/9540074">Link</a>
 				| <a
 					href="https://www.researchgate.net/publication/351589066_Digital_Twin_Simulation_of_Connected_and_Automated_Vehicles_with_the_Unity_Game_Engine?">PDF</a>
 				</td>
@@ -642,8 +793,7 @@
 				<td><b>Augmented reality-based advanced driver-assistance system for connected vehicles </b>
 				<br> Ziran Wang, Kyungtae Han, and Prashant Tiwari
 				<br> <em>IEEE Internation Conference on Systems, Man, and Cybernetics, </em> Oct. 2020
-				<br> <a
-					href="https://ieeexplore.ieee.org/document/9283462">Link</a>
+				<br> <a href="https://ieeexplore.ieee.org/document/9283462">Link</a>
 				| <a
 					href="https://www.researchgate.net/publication/343808584_Augmented_Reality-Based_Advanced_Driver-Assistance_System_for_Connected_Vehicles">PDF</a>
 				</td>
