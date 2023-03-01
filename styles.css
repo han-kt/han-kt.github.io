@@ -422,7 +422,7 @@ table.journal {
 
 /* Conference  */
 table.conference {
-  counter-reset: confcount 40;           /* Set the counter to Max + 1 */
+  counter-reset: confcount 39;           /* Set the counter to Max + 1 */
 }
 .confcount:before{
   counter-increment: confcount -1;      /* Increment the counter */
