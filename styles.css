@@ -431,11 +431,11 @@ table.conference {
 
 /* Book */
 table.book {
-  counter-reset: bookcount;           /* Set the counter to max + 1 */
-  margin-bottom: 0em;
+  counter-reset: bookcount 3;           /* Set the counter to max + 1 */
+  /* margin-bottom: 0em; */
 }
 .bookcount:before{
-  counter-increment: bookcount;      /* Increment the counter */
+  counter-increment: bookcount -1;      /* Increment the counter */
   content: "B" counter(bookcount) "."; /* Display the counter */
 }
 
