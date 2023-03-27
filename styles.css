@@ -451,7 +451,7 @@ table.presentation {
 
 /* Patents  */
 table.patent {
-  counter-reset: patentcount 66;           /* Set the counter to max + 1 */
+  counter-reset: patentcount 68;           /* Set the counter to max + 1 */
 }
 .patentcount:before{
   counter-increment: patentcount -1;      /* Increment the counter */
