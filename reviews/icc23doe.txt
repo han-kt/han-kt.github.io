@@ -1,0 +1,114 @@
+------- Review Reports ------
+
+ICC 2023-review 1
+
+Relevance and timeliness: Rate the importance and timeliness of the topic addressed in the paper within its area of research.
+
+Good (4)
+
+Technical content and scientific rigour: Rate the technical content of the paper (e.g.: completeness of the analysis or simulation study, thoroughness of the treatise, accuracy of the models, etc.), its soundness and scientific rigour.
+
+Valid work but limited contribution. (3)
+
+Novelty and originality: Rate the novelty and originality of the ideas or results presented in the paper.
+
+Some interesting ideas and results on a subject well investigated. (3)
+
+Quality of presentation: Rate the paper organization, the clearness of text and figures, the completeness and accuracy of references.
+
+Readable, but revision is needed in some parts. (3)
+
+Strong aspects: Comments to the author: what are the strong aspects of the paper
+
+Problem is clearly defined and motivated.
+Figures are clear.
+Mathematical derivation is clear.
+Weak aspects: Comments to the author: what are the weak aspects of the paper?
+
+Major:
+
+A more detailed discussion of the related work is needed. What are the limitations/shortcomings of previous works? What is the research gap that this work aims to fill? This needs to be elaborated on.
+The contributions mentioned are not real contribution. Using a simulator such as CARLA is not a contribution by itself, but rather a means to a goal. The authors are advised to revise their contributions written at the end of Section I.
+What is the nature of the optimization problem presented in Eqs. (7a) - (7f)? Why is it not being solved to optimality? This needs to be elaborated on.
+What is the computational complexity of the proposed algorithm shown in Algorithm 1? This needs to be explicitly discussed.
+The results of the compression rate comparison are misleading. The authors claim that 98.55% more compression. However, this represents the relative ratio and not the actual compression rate. Accordingly, this seems to be an attempt to over-glorify their results.
+A similar observation can be made about the latency results. Overall, the results achieved by the proposed scheme seem to be exaggerated, particularly given that they have not been compared to the latest state-of-the-art work from the literature.
+More recent works from the literature need to be included. Almost 50% of the references are more than 5 years old. Minor:
+Paper needs proofreading. There are some grammatical and typing errors.
+Recommended changes: Please indicate any changes that should be made to the paper if accepted.
+
+Revise contributions.
+Elaborate more on optimization problem.
+Discuss computational complexity.
+Revise results discussion.
+Submission Policy: Does the paper list the same author(s), title and abstract (minor wording differences in the abstract are okay) in its PDF file and EDAS registration? (yes/no)
+
+Yes.
+
+ICC 2023-review 2
+
+Relevance and timeliness: Rate the importance and timeliness of the topic addressed in the paper within its area of research.
+
+Good (4)
+
+Technical content and scientific rigour: Rate the technical content of the paper (e.g.: completeness of the analysis or simulation study, thoroughness of the treatise, accuracy of the models, etc.), its soundness and scientific rigour.
+
+Solid work of notable importance. (4)
+
+Novelty and originality: Rate the novelty and originality of the ideas or results presented in the paper.
+
+Some interesting ideas and results on a subject well investigated. (3)
+
+Quality of presentation: Rate the paper organization, the clearness of text and figures, the completeness and accuracy of references.
+
+Well written. (4)
+
+Strong aspects: Comments to the author: what are the strong aspects of the paper
+
+WELL WRITTEN AND THE DIAGRAMS ARE WELL ARRANGED, A GOOD NUMBER OF REFERENCES ARE GIVEN, THE ALGORITHM WAS WELL EXPLAINED MATHEMATICAL MODELLING HAS BEEN DONE.
+
+Weak aspects: Comments to the author: what are the weak aspects of the paper?
+
+SOMETIMES FONT SIZE VARIES TIMES DIFFERENT FONT STYLES ARE USED
+
+Recommended changes: Please indicate any changes that should be made to the paper if accepted.
+
+LEGENDS OF THE GRAPH MUST BE CHANGED AND IMPROVEMENT IS NEEDED IN THE FONT SIZE AND STYLE OF THE HEADING III
+
+Submission Policy: Does the paper list the same author(s), title and abstract (minor wording differences in the abstract are okay) in its PDF file and EDAS registration? (yes/no)
+
+YES
+
+ICC 2023-review 3
+
+Relevance and timeliness: Rate the importance and timeliness of the topic addressed in the paper within its area of research.
+
+Good (4)
+
+Technical content and scientific rigour: Rate the technical content of the paper (e.g.: completeness of the analysis or simulation study, thoroughness of the treatise, accuracy of the models, etc.), its soundness and scientific rigour.
+
+Solid work of notable importance. (4)
+
+Novelty and originality: Rate the novelty and originality of the ideas or results presented in the paper.
+
+Significant original work and novel results. (4)
+
+Quality of presentation: Rate the paper organization, the clearness of text and figures, the completeness and accuracy of references.
+
+Excellent. (5)
+
+Strong aspects: Comments to the author: what are the strong aspects of the paper
+
+The article presents an optimization scheme for effective HD map updates in vehicular named data networking (NDN) scenarios. System and networking models are well described, which is helpful for other researchers who want to use them or compare their results. The optimization algorithm and the simulation parameters are also well-detailed. The results show a decrease in the transmission time using the proposed scheme compared to RLSS, Loss-based Approach, and Pro-RTT, as well as low transmission time as the number of vehicles increases.
+
+Weak aspects: Comments to the author: what are the weak aspects of the paper?
+
+It would be interesting to include a comparison of the achieved compression rate and the detection error rate to see the algorithm's effect on recognizing the map's relevant information.
+
+Recommended changes: Please indicate any changes that should be made to the paper if accepted.
+
+Review the paragraph after Eq. 6 to be sure that the order of symbols and meanings are correct.
+
+Submission Policy: Does the paper list the same author(s), title and abstract (minor wording differences in the abstract are okay) in its PDF file and EDAS registration? (yes/no)
+
+Yes

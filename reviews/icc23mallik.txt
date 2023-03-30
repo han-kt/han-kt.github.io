@@ -1,0 +1,158 @@
+------- Review Reports ------
+
+ICC 2023-review 1
+
+Relevance and timeliness: Rate the importance and timeliness of the topic addressed in the paper within its area of research.
+
+Good (4)
+
+Technical content and scientific rigour: Rate the technical content of the paper (e.g.: completeness of the analysis or simulation study, thoroughness of the treatise, accuracy of the models, etc.), its soundness and scientific rigour.
+
+Solid work of notable importance. (4)
+
+Novelty and originality: Rate the novelty and originality of the ideas or results presented in the paper.
+
+Significant original work and novel results. (4)
+
+Quality of presentation: Rate the paper organization, the clearness of text and figures, the completeness and accuracy of references.
+
+Well written. (4)
+
+Strong aspects: Comments to the author: what are the strong aspects of the paper
+
+This paper proposes a new problem setting (energy prediction for mobile AI) and the solution. The idea is novel and the proposed predictive model is effective. The paper is also well-written and easy to understand.
+
+Weak aspects: Comments to the author: what are the weak aspects of the paper?
+
+There is no comparison between the proposed prediction model with other prediction methods.
+It is better to describe why models 2, 4, and 6 do not support GPU processing and model 7 only allows single-thread CPU processing.
+Recommended changes: Please indicate any changes that should be made to the paper if accepted.
+
+Please solve the weak aspects mentioned above.
+
+Submission Policy: Does the paper list the same author(s), title and abstract (minor wording differences in the abstract are okay) in its PDF file and EDAS registration? (yes/no)
+
+yes
+
+ICC 2023-review 2
+
+Relevance and timeliness: Rate the importance and timeliness of the topic addressed in the paper within its area of research.
+
+Good (4)
+
+Technical content and scientific rigour: Rate the technical content of the paper (e.g.: completeness of the analysis or simulation study, thoroughness of the treatise, accuracy of the models, etc.), its soundness and scientific rigour.
+
+Solid work of notable importance. (4)
+
+Novelty and originality: Rate the novelty and originality of the ideas or results presented in the paper.
+
+Significant original work and novel results. (4)
+
+Quality of presentation: Rate the paper organization, the clearness of text and figures, the completeness and accuracy of references.
+
+Well written. (4)
+
+Strong aspects: Comments to the author: what are the strong aspects of the paper
+
+The authors presented a comprehensive study of mobile AI applications with different processing sources and AI models. They conducted experiments to assess their performance and provided different takeaways and directions. In addition, they also design a Gaussian process regression-based general predictive energy model for mobile AI. The paper tackles interesting research which is a timely topic nowadays.
+
+Weak aspects: Comments to the author: what are the weak aspects of the paper?
+
+The introduction is a bit long and condensed.
+
+Section III which is the pillar part of the contribution is very small and requires more work to be technically expressive.
+
+The model and assumptions are required before diving into the proposed model.
+
+It is not that clear to reproduce the results, the authors need to provide more details about the testbed.
+
+The paper needs careful proofreading.
+
+Recommended changes: Please indicate any changes that should be made to the paper if accepted.
+
+Please refer to my comments in the "Weak aspects" section.
+
+Submission Policy: Does the paper list the same author(s), title and abstract (minor wording differences in the abstract are okay) in its PDF file and EDAS registration? (yes/no)
+
+Yes
+
+ICC 2023-review 3
+
+Relevance and timeliness: Rate the importance and timeliness of the topic addressed in the paper within its area of research.
+
+Good (4)
+
+Technical content and scientific rigour: Rate the technical content of the paper (e.g.: completeness of the analysis or simulation study, thoroughness of the treatise, accuracy of the models, etc.), its soundness and scientific rigour.
+
+Solid work of notable importance. (4)
+
+Novelty and originality: Rate the novelty and originality of the ideas or results presented in the paper.
+
+Significant original work and novel results. (4)
+
+Quality of presentation: Rate the paper organization, the clearness of text and figures, the completeness and accuracy of references.
+
+Well written. (4)
+
+Strong aspects: Comments to the author: what are the strong aspects of the paper
+
+The authors explored how AI models consumed energy in a mobile device. For this purpose, the authors proposed a Gaussian process regression-based general predictive energy model, which can predict the consumed energy for each kind of application executed in a device.
+
+The authors have proposed an excellent work and validated it with experiments.
+
+Weak aspects: Comments to the author: what are the weak aspects of the paper?
+
+None, except the following modifications:
+
+Including an explanatory figure to show how your scheme work to predict the consumed energy.
+
+Some old references need to be updated.
+
+Some typos, in terms of punctuation and spelling, need to be corrected.
+
+Recommended changes: Please indicate any changes that should be made to the paper if accepted.
+
+The authors should make the required modifications based on the aforementioned weak aspects.
+
+Submission Policy: Does the paper list the same author(s), title and abstract (minor wording differences in the abstract are okay) in its PDF file and EDAS registration? (yes/no)
+
+Yes
+
+ICC 2023-review 4
+
+Relevance and timeliness: Rate the importance and timeliness of the topic addressed in the paper within its area of research.
+
+Good (4)
+
+Technical content and scientific rigour: Rate the technical content of the paper (e.g.: completeness of the analysis or simulation study, thoroughness of the treatise, accuracy of the models, etc.), its soundness and scientific rigour.
+
+Valid work but limited contribution. (3)
+
+Novelty and originality: Rate the novelty and originality of the ideas or results presented in the paper.
+
+Some interesting ideas and results on a subject well investigated. (3)
+
+Quality of presentation: Rate the paper organization, the clearness of text and figures, the completeness and accuracy of references.
+
+Readable, but revision is needed in some parts. (3)
+
+Strong aspects: Comments to the author: what are the strong aspects of the paper
+
+Experimental work appears robust and thorough and results on AI models and Energy analysis/forecasting are presented in a comprehensive manner. The authors shed significant light into the Energy behavior/profiling of interesting clusters of mobile AI applications, which is particularly timely with the emergence of distributed and Edge Computing paradigms for AI systems. Furthermore, the prediction accuracy of the introduced model is impressively high, especially considering the model's inclusive nature.
+
+Weak aspects: Comments to the author: what are the weak aspects of the paper?
+
+Despite solid contribution on AI model analysis and Energy profiling for different models and HW setups, the paper lacks clear positioning with respect to its value proposition. It is stated several times that "accurate Energy consumtion prediction of mobile AI applications shall contribute to improving the overall performance and user experience", but this statement is completely un-backed and the reader is left without any clue about the causality between the two. In other words, it is unclear how prediction (accuracy) could be used by developers or app operators to improve their applications.
+
+Furthermore, the delta to related work is not well justified, as it is not straightforward why we need a one-size-fits-all predictive model (i.e., for vision and non-vision AI apps, as the authors refer to them), nor how the introduced predictive model (EPAM) compares to baseline models or related work models.
+
+Another weak aspect of this paper is the ambiquity regarding model prediction parameters, such as the prediction horizon (is the accuracy measured for 1 step ahead? 2 steps? N steps?), the EPAM model overhead (how long does it take for EPAM to make predictions? If it is longer than the prediction horizon, then the prediction is useless) etc. The same applies for model training times/resources used, which should be adequately presented.
+
+Recommended changes: Please indicate any changes that should be made to the paper if accepted.
+
+Related to my comments above, I would suggest significant re-writing of the introduction section, where the positioning of the work is stated, and correspondingly, the conclusing remarks. The authors should either describe explicitly how they envision their work to be used as actionable insights for performance/UX improvements, or they should drop this claim and be consistent with the experiments they present, which IMO are significant contribution by themselves. The contributions "Experimental research..." and "Finally, we evaluate the performance..." are not distinct contributions and should be mentioned within the same bullet.
+
+More minor "mass people" --> "masses" (?) "What brings it (AI) closer to mass people is its involvement with mobile devices...": this is not accurate, AI can run on the backend and be 100% user-centered; this needs re-writing
+Submission Policy: Does the paper list the same author(s), title and abstract (minor wording differences in the abstract are okay) in its PDF file and EDAS registration? (yes/no)
+
+yes

@@ -1,0 +1,128 @@
+------- Review Reports ------
+
+ICC 2023-review 1
+
+Relevance and timeliness: Rate the importance and timeliness of the topic addressed in the paper within its area of research.
+
+Excellent (5)
+
+Technical content and scientific rigour: Rate the technical content of the paper (e.g.: completeness of the analysis or simulation study, thoroughness of the treatise, accuracy of the models, etc.), its soundness and scientific rigour.
+
+Solid work of notable importance. (4)
+
+Novelty and originality: Rate the novelty and originality of the ideas or results presented in the paper.
+
+A pioneering piece of work. Striking novel ideas or results. (5)
+
+Quality of presentation: Rate the paper organization, the clearness of text and figures, the completeness and accuracy of references.
+
+Well written. (4)
+
+Strong aspects: Comments to the author: what are the strong aspects of the paper
+
+The authors address the problem of latency and the high monetary cost of network resource usage in crowdsourcing data from connected and automated vehicles (CAVs). They propose CoMap, a new HD crowdsourcing map as a solution.
+
+This proposal allows for the temporary and proactive allocation of network resources to vehicle offloading.
+
+The paper's objectives are given. It is clear and easy to follow.
+
+Weak aspects: Comments to the author: what are the weak aspects of the paper?
+
+The limitations of the proposed solution in terms of implementation and complexity of the simulation scenario are low (e.g., the number of CAVs and the simulation time step).
+
+Recommended changes: Please indicate any changes that should be made to the paper if accepted.
+
+It would be very useful to add a figure to explain the overall architecture and thus facilitate the understanding of the proposal.
+
+The paper is clearly and concisely written, I would suggest to the authors proofread it once more to correct some minor grammatical errors.
+
+Submission Policy: Does the paper list the same author(s), title and abstract (minor wording differences in the abstract are okay) in its PDF file and EDAS registration? (yes/no)
+
+yes
+
+ICC 2023-review 2
+
+Relevance and timeliness: Rate the importance and timeliness of the topic addressed in the paper within its area of research.
+
+Excellent (5)
+
+Technical content and scientific rigour: Rate the technical content of the paper (e.g.: completeness of the analysis or simulation study, thoroughness of the treatise, accuracy of the models, etc.), its soundness and scientific rigour.
+
+Solid work of notable importance. (4)
+
+Novelty and originality: Rate the novelty and originality of the ideas or results presented in the paper.
+
+Significant original work and novel results. (4)
+
+Quality of presentation: Rate the paper organization, the clearness of text and figures, the completeness and accuracy of references.
+
+Well written. (4)
+
+Strong aspects: Comments to the author: what are the strong aspects of the paper
+
+The proposal of CoMap, a crowdsourcing HD map via vehicle offloading from connected vehicles to edge servers, is of value and is well documented in the paper, with regard to the algorithm description and simulation results. According to the simulation results, CoMap is well ahead of other algorithms regarding reduction of resource usage and, in my view, it deserves a next step of implementing it in a trial pilot (not mentioned by the authors).
+
+Weak aspects: Comments to the author: what are the weak aspects of the paper?
+
+No mention of trial pilot to test the algorithm in real time condition. Conclusion is poor, it is only a very short summary of the paper sections.
+
+Recommended changes: Please indicate any changes that should be made to the paper if accepted.
+
+Conclusion should be rewritten as now they are only a summary of the paper sections.
+
+Submission Policy: Does the paper list the same author(s), title and abstract (minor wording differences in the abstract are okay) in its PDF file and EDAS registration? (yes/no)
+
+Yes.
+
+ICC 2023-review 3
+
+Relevance and timeliness: Rate the importance and timeliness of the topic addressed in the paper within its area of research.
+
+Acceptable (3)
+
+Technical content and scientific rigour: Rate the technical content of the paper (e.g.: completeness of the analysis or simulation study, thoroughness of the treatise, accuracy of the models, etc.), its soundness and scientific rigour.
+
+Valid work but limited contribution. (3)
+
+Novelty and originality: Rate the novelty and originality of the ideas or results presented in the paper.
+
+Some interesting ideas and results on a subject well investigated. (3)
+
+Quality of presentation: Rate the paper organization, the clearness of text and figures, the completeness and accuracy of references.
+
+Readable, but revision is needed in some parts. (3)
+
+Strong aspects: Comments to the author: what are the strong aspects of the paper
+
+The paper is quite well-written (but see the "weak aspects" part for more details).
+The methodology appears to be sound.
+Results are promising.
+Weak aspects: Comments to the author: what are the weak aspects of the paper?
+
+Presentation quality could be improved. Even if this article is readable, there are some parts that require a revision for the sake of clarity. For instance:
+Figure 7: it is not clear what exactly are the values in the y axis.
+Section 5: it is not clear which "offloading decisions" are shown in Figure 7. Some typos and minor issues:
+Abstract: "update-to-date"?
+Abstract: acronym HD is not defined.
+Abstract: authors stated that CoMap is able to reduce the average resource usage up 80.4% with respect to existing solutions; however, this reduction is achieved with respect to the Equality approach, for which no bibliographic reference has been reported by authors; therefore, I am not sure that Equality can be considered an existing solution.
+Section 3: in problem P0, I think that "max" should be replaced with "min".
+Section 4.B: the meaning of "transitions" is not clear. Consequently, the meaning of the set "D" is not clear as well.
+Technical quality could be improved. In particular:
+Assumptions should be supported either by more convincing arguments or by a stronger evidence of their validity.
+Also, some parts of the proposed approach are not well discussed. For instance, the balancing of resource utilization is described too superficially; therefore, it is not very clear if it is effective in every real-world scenario.
+Experimental evaluation is not fully reproducible. For instance, parameters "f(a_n)" and "D_n" are missing.
+
+Experimental evaluation could be improved.
+
+In particular, it would be helpful to experimentally compare the proposed approach with the optimal to understand how far (or close) is the proposed approach with respect to the optimum.
+Also, the impact of "eta" on the performance of CoMap is not discussed.
+Moreover, since CoMap, in some scenarios, (slightly) exceeds the target 90th percentile value of the latency (e.g., as reported in Fig. 5), it would be useful to understand the statistical significance of the latency results by reporting the confidence intervals or at least the standard errors (e.g., as error bars in the plots); the same would apply also to the results of the other approaches so as to ease the comparison of the performance of the various approaches.
+Novelty is not fully clear since the problem tackled by this paper is already well studied in literature and an in-depth experimental comparison with some state-of-the-art approaches is missing.
+Recommended changes: Please indicate any changes that should be made to the paper if accepted.
+
+To improve presentation quality, I suggest addressing the issues I reported in the "weak aspects" section.
+To improve technical quality, I recommend addressing the issues I reported in the "weak aspects" section.
+To improve the experimental evaluation, among the issues I reported in the "weak aspects" section, I suggest addressing at least the one related to statistical significance of results by adding errors bars to the plots.
+Submission Policy: Does the paper list the same author(s), title and abstract (minor wording differences in the abstract are okay) in its PDF file and EDAS registration? (yes/no)
+
+yes

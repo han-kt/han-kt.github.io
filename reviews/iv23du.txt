@@ -1,0 +1,21 @@
+Review #1
+This paper investigates the prediction of lane-change by monitoring the behivior of the driver with a personalized federated learning framework. The topic is novel and timely. However, it is suggested to add the simulation results on the training cost and the communication overhead of the proposed framework.
+This paper investigates the prediction of lane-change by monitoring the behivior of the driver with a personalized federated learning framework. The topic is novel and timely. However, it is suggested to add the simulation results on the training cost and the communication overhead of the proposed framework.
+
+
+Review #2
+1. In the forth paragraph of the INTRODUCTION, whether the research methods of clustering in FL that you proposed have more papers basis.
+2. I think the author need to highlight this paper's innovative contributions in INTRODUCTION not PROBLEM FORMULATION.
+3. The author needs to add the SYSTEM MODEL to introduce the model, scene and the proposed federated learning structure.
+4. In PROBLEM FORMULATION, the author needs to add a mathematical description of the optimization problem to make readers more clearly understand the author 's intention,and move the contribution to the first section.
+
+1. The author has less introduction to the model of this paper.
+2. The introduction of the parameters optimized in the article is not intuitive enough.
+
+
+Review #3
+This paper proposes a clustering-based personalized federated learning framework to predict lane-change maneuvers considering driving behaviors from various drivers under various situations. The authors illustrate the detailed training processes of CPFL, such as clustering process, LSTM prediction model, and FL in each cluster. This work is well organized, and the idea is interesting. Here are more detailed comments:
+1) It is a little difficult to understand Fig. 1. Please elaborate it in the text more clearly.
+2) The result of Fig. 4. needs future explanation.
+3) It is not clear how to update global weights in line 14 in Algorithm 1. Please clarify.
+4) Some typos that exist in the paper should be modified. Please double-check.
