@@ -249,12 +249,12 @@ section ol li{
 
 
 .cutoff-list {
-  --max-lines: 22; 
-  --line-height: 1.4;
+  --max-lines: 23; 
+  --line-height: 1.5;
   /* display: flex; */
 
   /* THIS KT */
-  /* max-height: calc(var(--max-lines) * 1em * var(--line-height)); */
+  max-height: calc(var(--max-lines) * 1em * var(--line-height));
 
   line-height: var(--line-height);
 
@@ -281,7 +281,10 @@ section ol li{
   border-radius: .25em;
   cursor: pointer;
   /* margin-top: 1rem; */
-  margin-left: 3em;
+  /* margin-left: 3em; */
+  /* float: left; */
+  position: relative;
+  left: 50%;
 }
 
 .expand-btn:hover{
