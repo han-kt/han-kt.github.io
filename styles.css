@@ -247,6 +247,62 @@ section ol li{
   margin: 1em auto; 
 }
 
+
+.cutoff-list {
+  --max-lines: 22; 
+  --line-height: 1.4;
+  /* display: flex; */
+
+  /* THIS KT */
+  /* max-height: calc(var(--max-lines) * 1em * var(--line-height)); */
+
+  line-height: var(--line-height);
+
+  overflow: hidden;
+  position: relative;
+}
+
+.cutoff-list:has(+ .expand-btn:not(:checked))::before {
+/* .cutoff-list::before { */
+  /* content: "           saaaaaaaaaa"; */
+  content: ""; 
+  position: absolute;
+  height: clac(1em * var(--line-height));
+  width: 100%;
+  bottom: 0em;
+  pointer-events: none;
+  background: linear-gradient(to bottom, transparent, white);
+}
+
+.expand-btn {
+  appearance: none;
+  border: 1px solid black;
+  padding: .5em;
+  border-radius: .25em;
+  cursor: pointer;
+  /* margin-top: 1rem; */
+  margin-left: 3em;
+}
+
+.expand-btn:hover{
+  background-color: #CCC;
+}
+
+.expand-btn:before{
+  content: "Show all";
+}
+
+.expand-btn:checked::before {
+  content: "Show less";
+  /* background-color: #ACC; */
+}
+
+.cutoff-list:has(+ .expand-btn:checked) {
+  max-height: none;
+}
+
+
+
 /* Adding "J" 
 section.publications ol {
   counter-reset: item;
