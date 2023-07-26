@@ -1,0 +1,49 @@
+======= MainReview 1 =======
+
+> *** Recommendation: Your overall rating.
+Strong Accept (top 10%) (5)
+
+> *** Contributions: What are the major issues addressed in the paper? Do you consider them important? (Pls. comment explicitly on the relevance of the paper to MASS topics, the technical depth and the importance of the problem addressed.) [Be brief]
+
+This paper introduces the visualization of mobility digital twin, where the high-fidelity and manipulable geometry representations for physical mobility entities in connected and autonomous vehicles are created in the digital space. To implement the visualization of mobility digital twin, the authors propose an end-to-end system framework, including image data crowdsourcing, preprocessing, offloading, and edge-assisted
+3D geometry reconstruction, and conduct a case study with a prototype of image sampling, preprocessing, offloading, and processing to study the performance of this idea. The authors also pointed out some future challenges. Overall, this is an excellent position paper.
+
+> *** Strengths: What are the major reasons to accept the paper? [Be brief]
+
++ The concept of visualization of mobility digital twin is interesting, especially for the CAV applications.
++ The case study and performance evaluation part provides a nice prototype of the concept and shows the importance of the concept.
++ The paper is well-written.
+
+> *** Weaknesses: What are the most important reasons NOT to accept the paper? [Be brief]
+
+This is a nice concept and position paper, thus there is no experiment or theoretical results on the proposed framework.
+
+> *** Detailed comments: Please provide detailed comments that will be helpful to the TPC for assessing the paper, as well as feedback to the authors.
+
+Overall, the paper is well-written and I enjoyed reading it. One small thing is that CAV is used without definition.
+
+======= MainReview 2 =======
+
+> *** Recommendation: Your overall rating.
+Strong Accept (top 10%) (5)
+
+> *** Contributions: What are the major issues addressed in the paper? Do you consider them important? (Pls. comment explicitly on the relevance of the paper to MASS topics, the technical depth and the importance of the problem addressed.) [Be brief]
+
+This paper applied edge clouding system for the visualization of mobility digital twins, which improved the perception accuracy through modeling the geometry representation of mobility entities in physical world into digital space.
+
+> *** Strengths: What are the major reasons to accept the paper? [Be brief]
+
+This paper applied edge clouding system for the visualization of mobility digital twins, which improved the perception accuracy through modeling the geometry representation of mobility entities in physical world into digital space. This study included these components: data collection with crowdsourcing, data processing and offloading, and 3D geometry model reconstruction. Overall, this work is a comprehensive and promising work in good written.
+
+> *** Weaknesses: What are the most important reasons NOT to accept the paper? [Be brief]
+
+See the detailed comments.
+
+> *** Detailed comments: Please provide detailed comments that will be helpful to the TPC for assessing the paper, as well as feedback to the authors.
+
+The paper could be improved if these following points have been resolved:
+1.	What is the extra mask being added to the background object in section 4A – 1) Edge-Assisted 3D Geometry Model Reconstruction on page 4?
+2.	On page 5, there is a typo, radii.
+3.	It would be perfect if the scenario in figure 1 (car in the intersection) could be analyzed in the simulation.
+4.	In the figure 5, whose accuracy is being presented?
+5.	I enjoy reading through the paper, especially the discussion on the future challenges, which is inspiring.

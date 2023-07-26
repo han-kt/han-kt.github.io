@@ -1,0 +1,189 @@
+Comments to author (Associate Editor)
+=====================================
+
+The paper is well-written and discusses an important topic
+about a Personal ACC system description based on
+cloud-vehicle collaboration. It integrates real-time driver
+feedback adaptation to improve learning and match the
+driverís preference. The paper is presented clearly and
+organised, introducing a unique approach. However, the
+authors should address the questions raised in the reviews. 
+
+
+
+Reviewer 8 of ITSC 2023 submission 1571
+
+Comments to the author
+======================
+
+This paper proposed an IRL and GPR-based framework for
+personalized adatpive control. The main advantage is that
+the drivers' real-time feedback is considered using GPR
+compared to a traditional IRL-based framework. There are
+some problems, 
+
+1. The authors should specify the advantage of using a
+discrete table DGPT instead of using the trained reward
+machine by IRL. I think it is available since the action
+space U of MDP is discrete. Besides, what is the defect if
+using the possible acceleration as output of DGPT model? Is
+it for computation cost concern, or to reduce the potential
+dangerous action or rapid action change with similar state
+by the methoned low-pass-filter? 
+
+2. Please provide a detailed explanation of Algorithm 1
+design. Besides, there are some typo errors in Alg.1, e.g.,
+in line 14, f should be a subscript. Some defined Functions
+and Parameters are not used. 
+
+
+
+Reviewer 9 of ITSC 2023 submission 1571
+
+Comments to the author
+======================
+
+This is an interesting study and the authors have extended
+their previous work on the off-line module with an online
+module to adapt to the driverís real-time feedback. The
+off-line module is designed with the aid of inverse
+reinforcement learning to learn the reward function of the
+driver and MDP is well formulated. Then, to better match
+the driverís preferences, the authors have proposed a new
+online module using Gaussian process regression to update
+the driving gap preference in real time. Numerical
+experiments have been conducted to evaluate the performance
+of the proposed framework. However, in my opinion, the
+manuscript has some places that need to be further revised
+and clarified.
+ï	Section Introduction, Line 5: Please explain what
+ìADASî stands for. I know it is ìAdvanced Driver Assistance
+Systemsî, but it should be added in the context.
+ï	Section Problem Formulation/A. System Architecture:
+Please briefly introduce how the table is discretized. 
+ï	Section Problem Formulation/B. Assumptions and
+Specifications: Please clarify whether the action space is
+discrete or continuous.
+o	If the action space is discrete, please enumerate
+them (either a list or a range plus steps is fine).
+o	If the action space is continuous, please describe
+the range.
+ï	Section Methodology/B Online DGPT Adaption/ 1)
+Feedback data preprocessing:
+o	In this part, the authors express the worry about
+the abnormal update and the need to filter necessary
+update. Several criteria are designed, and one algorithm
+pseudo code is provided. However, I feel a little confused
+when comparing the pseudo code and text description. It
+would be very helpful that the authors provide further
+explanations to link the criteria with the code. e.g. some
+notations in the text pointing out which lines in pseudo
+code correspond to or comments in pseudo code explaining
+the purpose of each line.
+o	In pseudo code line 14, please explain whether g is
+a multiplier or a function? If g is a function, please
+define it.
+ï	Section Methodology/C Controller Design: 
+o	The connection between this section and the last
+section confused me. Please clarify how the algorithm in
+this section handle the output of GPR
+o	There are several variables ìKî not defined in Eq.
+(7). Please provide their definitions.
+o	In the sentence of Line 7, ìThis approach has been
+widely used in car-following models and has shown good
+performance in various scenariosî. Why Equation (7) can
+maintain a stable and safe distance. Please justify the
+claim or add some references to it.
+ï	Section Experiments and Results:
+o	In A. Experiment Setup using HuiL Simulation
+paragraph 3, the authors introduced a heuristic algorithm.
+What is the purpose of this algorithm? Is this algorithm a
+simple baseline or another proposed algorithm? If it is
+another proposed algorithm that should be seen as the
+contribution of this paper, please include it in
+Methodology Section.
+o	There are a number of hyperparameters in the
+proposed model. It would be very helpful if the authors
+list the value of hyperparameters.
+o	For the results, it would be very helpful if the
+author could provide detailed numerical data corresponding
+to each scenario corresponding to different speed profiles.
+o	In B. Results and Analysis paragraph 2, the authors
+claim that ìThis advantage is observed in both seen and
+unseen driving scenarios, Ö.î. However, it is not easy to
+observe this advantage in the table. It would be very
+helpful if the performance in both seen and unseen
+scenarios is concluded and listed separately.
+o	The authors utilize IRL to recover the reward based
+on the trajectory data, but no data description can be
+found. 
+o	In equation (3), it seems that the product of alpha
+and Phi(s) is dependent on t, please add such index in the
+paper.
+o	The ìequationî or ìEquationî should be unified. 
+
+
+
+
+Reviewer 13 of ITSC 2023 submission 1571
+
+Comments to the author
+======================
+
+1. Overview: IRL is exactly the tool to learn driver's
+behavior; Offline training plus online adaptation are
+sufficient to keep good systematic performance
+theoretically.
+2. Related work: good and thorough analysis of the domain!
+3. GPR is the right method when facing the regression
+tasks.
+4. Experiment: the authors have sincerely explained why
+IRL+Online GPR wins in PoI while IRL+Online Heuristic wins
+in NIM.
+5. Advice: if there remains enough space, please explain
+more on training phrase: how much data / how much time /
+how many episodes you have spent on training the IRL agent?
+Maybe details are listed in your previous work, but adding
+some explanation will do no harm.
+
+
+Reviewer 23 of ITSC 2023 submission 1571
+
+Comments to the author
+======================
+
+In this paper, the authors present a framework for adaptive
+cruise control. The proposed framework consists of an
+offline learning module and an online adaptation module.
+The offline learning module collects the human driving data
+and feeds it to the inverse reinforcement learning
+algorithm to learn individual driving styles, while the
+online module uses the learning results and Gaussian
+Process Regression for car speed control. Finally, they set
+up simulation environments to evaluate their framework. 
+
+The paper is well-structured and easy to follow. Here are
+some concerns:
+1. Since humans make decisions mainly based on the
+surrounding traffic environment rather than just car speeds
+and space gaps, I am afraid that the inputs for the
+learning model are insufficient.
+
+2. It would be better to show how difference between the
+seen data and unseen data in the experiments to demonstrate
+the generalization of the proposed method.
+
+
+Reviewer 24 of ITSC 2023 submission 1571
+
+Comments to the author
+======================
+
+This paper is well written and clear structured. From my
+perspective, the methodology is clear. However, the result
+analysis might be a little bit simple. Since this novel
+methods have different components, authors might need to
+run more experiments to prove the effectiveness of
+different components; hence, the result analysis is not
+very solid. 
+

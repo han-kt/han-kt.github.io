@@ -1,0 +1,77 @@
+Comments to author (Associate Editor)
+=====================================
+
+Please follow the reviewers' suggestions in correcting and
+improving your contribution.
+
+
+Reviewer 6 of ITSC 2023 submission 773
+
+Comments to the author
+======================
+
+This paper study an important problem in ITS, and the
+approach is valid. The results are convincing.
+
+Reviewer 7 of ITSC 2023 submission 773
+
+Comments to the author
+======================
+
+Accurate prediction of vehicle trajectories is vital for
+advanced driver assistance systems and autonomous vehicles.
+This paper propose an approach for interaction-aware
+personalized vehicle trajectory prediction that
+incorporates temporal graph neural networks., in which it
+utilizes Graph Convolution Networks (GCN) and Long
+Short-Term Memory (LSTM) to model the spatio-temporal
+interactions between target vehicles and their surrounding
+traffic. Human-in-the-loop simulation is employed to
+collect personalized naturalistic driving trajectories and
+corresponding surrounding vehicle trajectories. I think the
+topic is interesting.
+
+(1) The comparisons of trajectory prediction error (RMSE)
+between the proposed methods and other vehicle trajectories
+models, such as physics-based motion models and
+maneuver-based motion models is concluded in TABLE I.
+However, I think the computation time is also a key
+parameter to be considered. It may be cost more times
+compared with other vehicle trajectories models, as
+calculating the relationship between multiple cars requires
+a considerable amount of computation. This paper should
+show more computation time cusumpation result to show the
+innovation clearly.
+
+
+
+
+Reviewer 11 of ITSC 2023 submission 773
+
+Comments to the author
+======================
+
+This paper is well-presented and technically sound.
+However, it suffers from the following issues:
+1, The study fails to introduce the impact of learning
+personalized driving trajectory, which lays the foundation
+for this study. It would be helpful for readers to
+understand the impactfulness of the study
+
+2, The objective of the study is a bit ill-formed, if not
+misleading. My first question is how to measure the
+characteristics of a driving trajectory. Without
+establishing a comprehensive set of metrics that evaluate
+the quality of personalization, it is hard to understand
+the quality of the learned strategy. The only
+personalization metric used in the paper is the MSE of
+driving trajectories, which is insufficient to evaluate the
+characteristics learned by the model in my opinion. In
+addition, a driver possesses different driving styles,
+which might be taken into consideration if the objective is
+to learn a personalized trajectory.
+
+3, The benchmark should be more inclusive. It will be
+interesting to see how the proposed framework perform
+against IRL.
+

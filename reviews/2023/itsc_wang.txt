@@ -1,0 +1,189 @@
+Comments to author (Associate Editor)
+=====================================
+
+I ask you to take the comments from the reviewers,
+especially those from reviewer n. 5, into consideration in
+revising your paper.
+
+Reviewer 5 of ITSC 2023 submission 347
+
+Comments to the author
+======================
+
+The paper considers the task of predicting lane changes and
+turning at intersections by combining incabin and outside
+pictures.
+
+Compared to other methods, the main differences seem to be
+the addition of temporal integration, in the form of a
+recursive neural network and the exploitation of context
+during training, the context being the current lane the
+vehicle is in and whether or not it
+is close to an intersection. The first novelty is clearly
+explained, but the second is not.
+
+
+The idea of temporal integration is a logical one and it is
+implemented in a straight forward fashion. It is however
+not clear how much the benefits of this approach are due to
+simply having more
+observations versus really exploiting temporal scene
+changes. For instance, detecting the current lane the
+vehicle is in becomes easier if analysis of multiple
+pictures is combined, but this could also be
+done in postprocessing, i.e., by first independently
+processing each image and then aggregating the output
+activations in a simple manner (e.g., averaging over 1
+second). The question then is: how much better does the
+more complicated proposed approach perform compared to this
+naive approach. If the answer is "a lot" then this
+would indicate that the network is truly exploiting the
+time dimension, e.g., by inferring internally the
+current speed of the vehicle, which obviously has a
+predictive potential.
+
+Also, it is not clear what is the benefit of fusing outside
+and in-cabin information at a very early stage.
+How would the results of the paper compare to fusing at a
+later stage.
+
+The results indicate a small but barely significant
+improvement over state of the art methods.
+For instance, the accuracy score in table I is better by
+0.02 compared to [7], whereas the standard deviation
+is also 0.02 on that performance number.
+
+The results in the paper for the proposed method also seem
+to indicate that the outside observations
+contribute little to the overall performance (e.g.,
+difference in accuracy below tolerance).
+
+
+The paper would be clearer if "traffic context" and "driver
+intent" would be concretely defined in the
+introduction. Now they only become clear much later.
+
+
+Recursive approaches like in this paper are appropriate for
+predictable situations, but may react poorly to
+unexpected scene changes, e.g., when driving first in a
+narrow street and suddenly entering a main road. The
+longer the historic memory, the longer the network might
+take to recover from an incorrect assessment of the
+current scene. On the other hand, the shorter the memory,
+the less the network will have predictive capabilities.
+It would be useful to look into this balance.
+
+Also, probably the network is fed with data at a fixed rate
+(related to the camera framerate), but in
+real-life information flows at different rates,
+proportional to the speed of the vehicle for outside data,
+but with
+a much more complex dependency on that speed for indoor
+data.  How does the system adapt to vehicle speed?
+How would it react if trained for data from a standard
+speed, but then evaluated in sequences with slower
+traffic?
+
+Section D "Context-consistency loss" is very poorly
+explained. Also the error criterion seems rather ad hoc.
+Is it correct that the only way this context is taken into
+account is at training time? Then it is not really
+exploiting context.
+
+
+Detailed comments
+
+Several pieces of criticism in the paper are so vague as to
+become meaningless. For example:
+" This strategy may lead to suboptimal performance, as the
+individual processing steps might not be
+specifically designed for optimal integration of
+information
+from both sources."
+This is not convincing. Any method may have weaknesses, but
+such generic criticism does not belong in
+a scientific paper. Instead, the authors should provide
+more concrete arguments for this perceived weakness
+(or experimental evidence)
+
+Or: " Directly optimizing the standard cross-entropy loss
+lce can lead to incorrect predictions of some
+scenarios into categories that conflict with the traffic
+context".
+Indeed it "can", but just writing that does not make it
+true. Also what is "a category that conflicts
+with a traffic context" (the whole section D should be
+improved. It is not clear).
+
+
+
+The statement " Furthermore, we observe that CEMFormer
+surpasses the other two methods in terms of the number
+of parameters. " is confusing as the number of parameters
+in CEMFormer is smaller and does NOT surpass
+the other methods in that respect (which is a good thing).
+
+The statement "These results indicate that the proper use
+of
+an episodic memory-guided architecture allows the model
+to learn complex spatial-temporal relationships from both
+in-cabin and external driving views." is also misleading:
+the results show that the proposed method works better, but
+this could
+also be due to "multi-observation" integration without
+exploiting the time sequence of
+scene events. While it is possible or even likely that this
+time sequence of events has indeed
+been exploited, I do not think the paper actually provides
+evidence on that.
+
+
+"This is in contrast
+to previous work such as [6], which claimed that outside
+views were not helpful for driver intention prediction
+tasks."
+True, but [7] show the opposite. Why not mention that?
+
+
+Model latency: Latency should not be confused with
+throughput. For example a network may take
+longer than desired to react to a new context because the
+recursive processing remembers the old context
+for to long. This "decision" latency could be long compared
+to the frame rate and is at least
+as important to study.
+
+
+Why is the standard deviation on accuracy for the "in-cabin
+& external" case  much larger
+for your method? Does this mean that it is much more
+sensitive to small variations in the
+training set, despite the smaller number of parameters?
+
+
+
+Reviewer 14 of ITSC 2023 submission 347
+
+Comments to the author
+======================
+
+In this work, the authors propose a technique to predict
+driver intention with a spatial-temporal transformer that
+takes in-cabin and external images as input. Furthermore,
+they implement a novel loss function and evaluate their
+approach on a publicly available dataset.
+
+The manuscript is well-written, and the overall discussion
+is quite clear.
+The authors compare their approach with other
+state-of-the-art methods and report an ablation study
+demonstrating the effectiveness of episodic memory and
+context consistency loss.
+In particular, their approach shows superior performance
+than the other methods considered.
+It would be appreciated if the authors could improve Fig. 1
+by reporting also more details of the encoder part.
+
+
+

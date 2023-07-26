@@ -1,0 +1,32 @@
+#1
+Strong aspects
+This article discusses the key technologies of in-vehicle network data retrieval for real-time content delivery in AR/VR-enabled autonomous vehicles, while considering possible issues in actual application scenarios, and proposes a feasible real-time data search solution. The paper has a clear overall structure, correct logic, and is useful for the study of real-time content delivery in AR/VR-enabled autonomous vehicles.
+
+Recommended changes
+1)Some paragraphs in the paper lack spaces at the beginning.
+2) Captions do not require colons, and corrections are needed for both Fig. 1 and Fig. 2.
+3) The text refers to the wrong image(s).
+4) The labels in Fig. 2 partially cover important content in the image.
+5)There are issues with some of the content, such as “Section X.”
+
+
+#2
+Strong aspects
+The authors propose a hierarchical search framework for real-time data retrieval in vehicular networks addressing the AR/VR applications in autonomous vehicles. The authors uses fluent and articulate English, presenting a clear flow of ideas. Descriptions are detailed and lucid, making complex concepts accessible to readers. The completeness of the modeling is impressive, reflecting a high level of academic rigor.
+
+Weak aspects
+1.The descriptions of specific AR/VR applications in the paper currently lack sufficient detail, which can make it challenging for readers to fully comprehend the context of the study. Typically, AR/VR applications are associated with entertainment. Therefore, could you please clarify which (or what kind of ) specific AR/VR applications are being displayed in the HTC Vive headset in your study? Also, could you elaborate on the relationship between these applications and the simulation environment? Lastly, the AR/VR data size involved in real-time content delivery needs clarification. 
+2.The clarity of parameter definitions in the experiments section could be improved. Specifically, on page 4, the author states "where ˆFQk, ˆΓQk, ˆRv,n, ˆRn,m, and T represent the maximum allowed values for freshness loss and search space size," but fails to provide a clear, scientific explanation of how these maximum allowed values are defined in either Section 3 or Section 4.u
+
+Recommended changes
+The author should futher explain the questiones mentioned in "Weak aspects".
+
+#3
+
+Strong aspects
+This paper proposed a hierarchical search framework for real-time data retrieval in vehicular networks. The proposed system architecture includes a cloud server that quickly forwards and searches queries from indexed edges when the local edge search fails. Both the technical work and the presentation are well. Very nice work.
+
+
+
+
+

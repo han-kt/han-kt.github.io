@@ -1,0 +1,324 @@
+Comments to author (Associate Editor)
+=====================================
+
+Seven reviews have been gathered, generally highlighting
+the soundness of the proposed approach and its quality. As
+it can be seen from the Reviewers' comments, some Reviewers
+suggests to check for (important) details, e.g., some on
+the experimental setting, that seem to be left out and
+reduce the clarity/impact of the work. Another Reviewer
+also suggests to comment on the limitations of the proposed
+approach. These suggestions, along with the other comments
+of the Reviewers, should be taken into account to improve
+the quality of the paper.
+
+
+Reviewer 1 of SMC 2023 submission 1342
+
+Comments to the author
+======================
+
+The paper introduces a cloud-vehicle collaborative
+framework for personalized adaptive cruise control. It
+addresses the issue of pre-defined settings not aligning
+with driver preferences. The framework incorporates offline
+training using naturalistic driving data and online
+adaptation based on driver feedback. HuiL simulation
+experiments show significant reductions in driver
+interventions. Overall, the paper is well written and
+presents valuable contributions to personalized ADAS.
+
+Reviewer 2 of SMC 2023 submission 1342
+
+Comments to the author
+======================
+
+Strengths:
+
+The paper addresses a significant issue in Advanced Driver
+Assistance Systems (ADAS) research by proposing a
+personalized ACC framework that considers driver
+preferences and habits, which has the potential to improve
+driver trust and comfort in the system.
+
+The proposed framework incorporates real-time driver
+feedback, which is an improvement over existing approaches
+that rely solely on historical data. This aspect ensures
+that the algorithm is continuously adapting to the driver's
+preferences, which could lead to better performance in
+unexpected situations.
+
+The use of human-in-the-loop (HuiL) simulation experiments
+provides strong evidence for the effectiveness of the
+proposed method in reducing driver intervention in
+automatic control systems. The HuiL simulation also
+provides a safe and controlled environment for testing the
+proposed algorithm, which could be a more practical
+approach than real-world experiments.
+
+The stochastic scenario generation approach used to
+generate speed profiles for the experiments is a notable
+strength of the study. The approach meets multiple
+requirements, such as avoiding driver fatigue, making the
+scenarios realistic and unpredictable, and covering a wide
+range of speeds. This approach ensures that the experiments
+represent real-world driving scenarios and provides more
+accurate results.
+
+The study tests and compares four different control
+strategies, which provides a comprehensive evaluation of
+the proposed algorithm's performance. This approach allows
+the authors to determine the most effective algorithm for
+the given scenarios and to understand the strengths and
+weaknesses of each approach.
+
+The IRL-based offline personalized DGPT learning and online
+DGPT adaptation algorithms used in the study have been
+extensively validated in previous works. This aspect
+strengthens the validity of the study's results and ensures
+that the proposed algorithm is built upon existing and
+reliable algorithms.
+
+Weaknesses:
+
+The study only includes five test drivers, which may limit
+the generalizability of the results. A larger and more
+diverse sample size could provide more robust and
+generalizable results.
+
+The study does not consider the effects of weather and road
+conditions on the proposed algorithm's performance, which
+may affect the algorithm's applicability in real-world
+situations. Future studies could consider incorporating
+weather and road conditions into the experiment design to
+ensure the algorithm's reliability in various environments.
+
+The heuristic algorithm used in the online DGPT adaptation
+module is a simplified version of the proposed framework,
+which may limit the algorithm's performance and robustness.
+A more complex and optimized algorithm could provide more
+accurate and reliable results.
+
+Finally, more discussion and analysis of the limitations of
+the results compared to related literature are necessary to
+understand the proposed algorithm's contribution to the
+existing body of research. This aspect could provide
+valuable insights for future studies in the field.
+
+
+
+Reviewer 3 of SMC 2023 submission 1342
+
+Comments to the author
+======================
+
+Strengths:
+
+Proposes a personalized ACC framework that considers driver
+preferences and habits to improve driver trust and comfort
+in the system
+Incorporates real-time driver feedback, continuously
+adapting to the driver's preferences and potentially
+leading to better performance in unexpected situations
+Uses human-in-the-loop (HuiL) simulation experiments to
+provide strong evidence for the effectiveness of the
+proposed method in reducing driver intervention in
+automatic control systems
+Uses a stochastic scenario generation approach to generate
+realistic and unpredictable speed profiles for experiments,
+ensuring more accurate results
+Tests and compares four different control strategies,
+providing a comprehensive evaluation of the proposed
+algorithm's performance
+Uses validated offline personalized DGPT learning and
+online DGPT adaptation algorithms to strengthen the
+validity of the study's results
+
+Weaknesses:
+
+Only includes a small sample size of five test drivers,
+limiting the generalizability of the results
+Does not consider the effects of weather and road
+conditions on the proposed algorithm's performance, which
+may affect its applicability in real-world situations
+Uses a simplified heuristic algorithm in the online DGPT
+adaptation module, potentially limiting the algorithm's
+performance and robustness
+Lacks sufficient discussion and analysis of the limitations
+of the results compared to related literature, which could
+provide valuable insights for future studies in the field.
+†
+
+
+Reviewer 4 of SMC 2023 submission 1342
+
+Comments to the author
+======================
+
+In this paper authors propose z Personalized ACC system,
+which learns from offline and online data, acquired during
+driving vehicles.
+The nethod uses Inverse Reinforcement Learning in offline
+part and a custom heuristic approach in online learning.
+All processing is proceeded in cloud in Digital Twin
+approach.
+The system learns how to set speed of the car to
+effectively control car-following maneuvers.
+
+The paper is well written. Language is clear and text flow
+is understandable.
+
+Minor notices:
+- in algorithm 1 lines 3-8 can be shortened to a single
+line "update_flag = (v_f-v)>= V_D or p_t<=P_t"
+
+
+
+Reviewer 5 of SMC 2023 submission 1342
+
+Comments to the author
+======================
+
+Good job overall! However, it would be even better if you
+could provide more information on how the system handles
+aggressive driving behaviors. This would help to provide a
+more complete understanding of how the technology works in
+real-world situations. As we know, not all drivers are good
+drivers
+
+
+
+Reviewer 6 of SMC 2023 submission 1342
+
+Comments to the author
+======================
+
+This paper is about a new approach to autonomous driving,
+and I believe the idea presented in the paper is excellent.
+However, the experimental conditions are unclear, resulting
+in a reduced reliability of the experimental results.
+Please consider revising the following aspects:
+
+1.When using abbreviations for the first time in the main
+text, it is necessary to include the full name alongside
+the abbreviation.
+2.Based on the images of the experiment, it does not seem
+that the experimental apparatus accurately replicates
+driving conditions. As a result, the overall reliability of
+the experimental results is compromised. It is necessary to
+provide a detailed description of the reliability of the
+experimental conditions. For example, it is suggested that
+the use of head-mounted displays or similar devices may be
+necessary to improve the reproducibility of the driving
+conditions.
+3.It is necessary to provide details for Scenario A and
+Scenario B.
+4.There is no explanation regarding the attributes of the
+subjects. Without this information, it is unclear whether
+the experiment was conducted appropriately.
+5.The statement "offline learning may fail when there are
+significant changes in driving scenarios or driver mood"
+lacks a clear basis.
+
+
+
+Reviewer 10 of SMC 2023 submission 1342
+
+Comments to the author
+======================
+
+Overall, great paper! I have a few comments from different
+sections in the paper for improvement.
+
+Section I:
+- I'm not sure that the third contribution (running tests
+with a HuiL driving sim) should be considered a unique
+contribution, as this method is widely used to
+validate/demonstrate ADAS. Also, I would be careful stating
+"multiple drivers with diverse styles" unless you back up
+the fact that their driving styles are diverse in the
+results section
+
+Section II:
+- Please clarify what is meant by "optimize the behavior of
+the human driver" in subsection A or remove this phrase. In
+my mind, these models replicate how a driver follows
+vehicles on the road, but doesn't "optimize" or improve on
+humans' driving behavior
+- Could you more precisely define which "prior knowledge"
+is needed to design ODE car following models? This would
+help clarify why ODE models are insufficient for the
+proposed ACC system
+- In subsection B, what is meant by "high-level driving
+style"? I'm not sure I understand what high-level vs
+non-high-level driving attributes are
+
+Section III:
+- A main confusion of mine is what exactly "takeover"
+means. Does it mean the ACC is OFF and the driver is fully
+in control of throttle+brake or ACC is ON but the driver is
+modifying its behavior online by pressing on the throttle
+or brake? 
+- If ACC is still ON during the takeover segments, could
+you clarify how the incremental learning works? It seems
+that the IRL process primarily uses manually driven
+trajectories. When you send trajectories to the IRL process
+taken during the takeover segments, does the IRL algorithm
+treat these trajectories the same as the manual
+trajectories? Or are they handled differently, since they
+come from an ACC system vs from a human driver. And how are
+trajectories during incremental learning weighted relative
+to the manual trajectories? I would imagine there is much
+more manual data than takeover segment data, but those
+interventions by the driver are really important to
+capture, as they show a clear desire by the driver for the
+ACC to behave differently
+
+Section IV:
+- The other major question that should be addressed more
+clearly: how exactly do the driver's pedal commands during
+takeover segments affect the DGPT online? The exact online
+modification of the DGPT seems to occur in line 14 of
+Algorithm 1, but this line doesn't incorporate the driver's
+command or specify how the gap would increase with a brake
+pedal press and vice versa for pressing on the throttle
+- Could you clarify how the safety time gaps are computed?
+I'm not sure what a maximum safety time gap means -- don't
+you only need a minimum time gap to prevent collision with
+the vehicle ahead? My intuition is that these safety time
+gaps should depend on the lead vehicle speed and the
+distance to the lead vehicle, but it seems they are fixed
+parameters set online
+- One small formatting comment: some of the variables in
+this section have inconsistent underscore formatting (ie
+g_{desired} in equation (4) doesn't match g\_desire in line
+14 of Algorithm 1). Cleaning this up would help a bit
+
+Section V:
+- In Table 1, several of the data entries are bolded but
+it's unclear why those specific entries are bold.
+Clarification of what the bold font indicates or removal of
+bold font would make the results more straightforward to
+interpret
+- Additionally, a plot showing data from a representative
+test indicating time gaps to lead vehicle, DGPT
+modification through online learning, vehicle acceleration
+command vs gap to lead vehicle, etc would be helpful. Table
+1 shows good overall data, but it's hard to understand the
+different components of the proposed system without an
+example from a driving test. If space constraints make this
+difficult, some of the experimental setup in subsection A
+could be made more concise
+
+Section VI:
+- It is stated that "the model gradually becomes more
+consistent with the driver's driving preferences" through
+incremental learning. Is there a way to show this with a
+plot or chart? I'm very curious how much differences in the
+DGPT are influenced by incremental learning between
+instances where ACC is ON vs online adaptation within one
+instance when ACC is ON
+
+
+
+
