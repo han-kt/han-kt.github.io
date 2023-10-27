@@ -1,0 +1,75 @@
+Meta-Review
+
+1. Please enter your meta-review here.
+This paper was reviewed by 4 experts in the field. The paper received mixed recommendations, i.e., 2 strong accept and 2 weak reject. The reviewers expressed major concerns around various experimental details. Considering the nature of the reviewers' comments, it is felt that such concerns can be addressed in a revision of the paper. The decision is to ask the authors to make a revision and resubmit the paper in the 2nd round. The revised paper will then be reconsidered by the reviewers.
+2. Recommendation
+Revise and Resubmit
+__________________
+
+Reviews
+
+Reviewer #4
+1. Paper Summary
+The paper concerns the explainibility of automated systems through concept bottleneck model. The paper mainly concentrate on teh interpretable prediction of control commands in automated vehicles. They used Longformer to capture the long term dependency. They reported detailed results on two benchmark datasets with ablation study and multiple standard backbone architecture.
+2. Strengths
+Explanibility is an important research area for teh CV community. As ADSs are gaining more prominence, a focused analysis of Explanibility based research are more demanded. Hence this is an important topic.
+The paper is well written and reported detailed experimental results.
+The reported accuracy surpasses human performance.
+The authors have reported ablation study.
+3. Weaknesses
+The paper suggested that change in bottleneck size changes the error. The error increases after feature size of 100. What is the reason for that increase. Also, does the number 100 vary by other factors in the model? If so, what are they?
+The lane change example is not very clear. It is suggested that the authors highlight the vehicles.
+4. Recommendation
+Strong Accept
+5. Justification
+The paper discusses an important aspect of ADS. The paper is well written and performed detailed experiments with different architectures.
+
+Reviewer #5
+Questions
+1. Paper Summary
+The proposed approach utilizes concept bottleneck models to encode human-predefined concepts, enabling visual features for driving control command predictions and explanations. This method achieves competitive performance to latent visual features while providing interpretability within the model.
+2. Strengths
+Very well written and exciting idea to introduce explanability with the driving scenarios by leveraging concept bottleneck models and transformers. Provided extensive ablation on attention and size of the feature set in bottleneck models.
+3. Weaknesses
+-
+4. Recommendation
+Strong Accept
+5. Justification
+Very well written and exciting idea to introduce explanability with the driving scenarios by leveraging concept bottleneck models and transformers. Provided extensive ablation on attention and size of the feature set in bottleneck models.
+
+Reviewer #6
+Questions
+1. Paper Summary
+The work leverages a concept bottleneck model and a Longformer network to perform sequential control command prediction while explaining driving behavior through linguistic interpretations. The approach can be used to determine if a change in an output command was caused by an external stimulus or a change in preferences, leading to safer and more reliable driving.
+2. Strengths
+- The writing is clear and easy to follow
+- The model obtains on-par performances when compared to regular approaches executing the same task, while adding an extra linguistic explainability thanks to the explicit concepts
+3. Weaknesses
+- The only novelty seems to be the application of a well-known explainability model to the autonomous driving scenario
+- It is not clear if image and text encoders are pretrained or are jointly trained with the Longformer. If so, how we can obtain a reasonable feature similarity, i.e. explainability, with only the RMSE loss on driving commands?
+- The qualitative evaluation on only 3 scenes (which could be cherry-picked) is not enough to demonstrate the model achieved linguistic explainability. Is it possible to design an explainability quantitative evaluation as well?
+- The best results are obtained with a bottleneck size of 100 (100 concepts). This is in contrast with the intuition that more concepts, i.e. richer interpretability, should result in better performances. Furthermore, the concepts are chosen at random, while it may be more reasonable to human-curate the concepts by selecting the more general ones
+-It would be interesting to see some test-time interventions (as in the seminal concept bottlenecks paper [21]) to show the driving predictions change as a function of manipulated concepts. This could serve as a possible evaluation of the interpretability level attained by the model
+4. Recommendation
+Weak Reject
+5. Justification
+Overall, the results are not very robust. Furthermore, the novelty seems weak. More discussion on the weaknesses might change my rating.
+
+Reviewer #8
+Questions
+1. Paper Summary
+This paper provides a method for using concept bottleneck modules for explainable machine learning for human-assisted or autonomous driving. The paper uses common concepts or scenarios that happen in real world driving as text and the correspond visual features into in similarity score and attempts to learn the patterns via a longformer architecture.
+2. Strengths
+This paper aims to predict the steering angle and distance while also aiming to gain reasoning capabilities for the prediction. The paper gives an insight on the explanation capabilities of the model on the main factors influencing the a particular driving decision. The paper achieves competitive error for both the distance and angle prediction over two datasets. Overall, this work highlights the fact that concept bottleneck models can be used to interpret, as well as act as effective feature extractors for downstream tasks in autonomous driving scenarios.
+3. Weaknesses
+The authors might want to explain how each user defined concepts/explanation interact with each other. It is not clear if multiple concepts happen simultaneously, how will the attention mechanism of the longformer work in this case.
+
+Given this work is applicable to autonomous driving domain, it is important to discuss about performance in-terms of system latency, throughput. I would request the author to provide more insight on those aspect.
+
+This paper does perform interesting experiments, however there is a lacking of benchmark/baseline. It would be nice to have some publicly available benchmark baselines for reference/comparison for the task of translation/rotation estimation for autonomous driving task . Also I would encourage the authors to think if they can apply the concept blocks to the baseline research methods and investigate explainability for distance and angle prediction tasks.
+
+Regarding the concept curation, some more details on the human study will be desirable, e,g, while mentioning MAE, what is it being compared with, any examples will be better to understand this experiment. The authors might want to mention the MAE for nuscene dataset too (they mentioned only for comma2k19 dataset)
+4. Recommendation
+Weak Reject
+5. Justification
+On the basis on the weakness, I would recommend Weak Reject for this work. This is an interesting work, but some more experiments and explanation will make the work more relevant and long lasting.
