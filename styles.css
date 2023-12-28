@@ -248,31 +248,7 @@ section ol li{
 }
 
 
-.cutoff-list {
-  --max-lines: 23; 
-  --line-height: 1.5;
-  /* display: flex; */
 
-  /* THIS KT */
-  max-height: calc(var(--max-lines) * 1em * var(--line-height));
-
-  line-height: var(--line-height);
-
-  overflow: hidden;
-  position: relative;
-}
-
-.cutoff-list:has(+ .expand-btn:not(:checked))::before {
-/* .cutoff-list::before { */
-  /* content: "           saaaaaaaaaa"; */
-  content: ""; 
-  position: absolute;
-  height: clac(1em * var(--line-height));
-  width: 100%;
-  bottom: 0em;
-  pointer-events: none;
-  background: linear-gradient(to bottom, transparent, white);
-}
 
 .expand-btn {
   appearance: none;
@@ -301,11 +277,6 @@ section ol li{
   content: "Show less";
   /* background-color: #ACC; */
 }
-
-.cutoff-list:has(+ .expand-btn:checked) {
-  max-height: none;
-}
-
 
 
 /* Adding "J" 
@@ -572,7 +543,31 @@ div.fade {
 	position:absolute;
 }
 
- 
+/* Toggle button  */
+.hidden {
+  display: none;
+}
+.button-container {
+  text-align: center; /* Center the buttons */
+  margin-top: -5px;
+  margin-bottom: 20px;
+}
+.button-container button {
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 15px; /* This makes the corners round */
+  /* Optional: add more styles for better appearance */
+  border: 1px solid #007BFF; /* Example border */
+  background-color: #007BFF; /* Example background color */
+  color: white; /* Example text color */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+.button-container button:hover {
+  background-color: #0056b3; /* Darker background on hover */
+  color: #ddd; /* Lighter text on hover */
+}
+
 
 /* responsive styles */
 @media screen and (max-width: 800px){
