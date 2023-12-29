@@ -247,7 +247,12 @@ section ol li{
   margin: 1em auto; 
 }
 
-
+.partial-line {
+  height: 1px; /* Thickness of the line */
+  width: 93%; /* Length of the line */
+  background-color: black; /* Color of the line */
+  margin-left: 5%; /* Pushes the line to start at 20% from the left, making it only appear on the right 80% */
+}
 
 
 .expand-btn {
