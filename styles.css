@@ -450,7 +450,7 @@ section.publications  td:nth-child(3),  section.patents td:nth-child(3) {
 
 /* Journal  */
 table.journal {
-  counter-reset: journalcount 15;           /* Set the counter to max + 1 */
+  counter-reset: journalcount 16;           /* Set the counter to max + 1 */
 }
 .journalcount:before{
   counter-increment: journalcount -1;      /* Increment the counter */
@@ -595,11 +595,11 @@ div.fade {
     float:none;
   } */
   nav li{
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .banner .welcome{
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 
@@ -639,11 +639,11 @@ div.fade {
 
 @media screen and (max-width: 400px){
   .banner .welcome{
-    font-size: 10px;
+    font-size: 9px;
   }
   
   nav li{
-    font-size: 12px;
+    font-size: 10px;
   }
 
   main article img{
