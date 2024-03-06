@@ -1,0 +1,70 @@
+Paper Summary:
+The paper proposes a benchamrk for language guided autonomous driving — specifically they collect 4.5k human annotated (language, scene, goal-conditions), design a library of APIs useful for driving, add additional support to an existing simulator to better support LLM driving and come up with heuristics to avoid collisions . They study several LLMs in this benchmark under the settings of zero-shot, few-shot (3 exemplars) and human-guidance and find that a) several LLMs can achieve decent completion success, especially the newer ones like GPT4 b) still they can cause collisions in about ~1% of the cases that can be investigated further c) human guidance can significantly help in getting better successful completions.
+
+Paper Strengths:
+The proposed benchmark for LLM-Driving will be very useful for the research community
+The paper does a good job in studying various LLMs under several settings and unearth interesting conclusions (as also summarized in the summary)
+The paper is well-written and easy to follow.
+Paper Weaknesses:
+Use of training set: A significant portion of the data (3.9k out of a total of 4.5k instructions) are held out as training set. However, I am unsure where this is actually used? Since a) zero-shot baselines, don’t use any labeled data. b) Few-shot baselines need about 3 examplers and the use of validation set to check the implementation makes sense but still does not really justify for me the need of tis huge training set. c) I am unsure about how human feedback interacts with the training set (as asked below) but if the training set is used there, does it really help to use 3.9k training examples for that? I think using more examples for validating the results might be a much better use of the collected data and would make the benchmark more stronger and statistically reliable. (If the training set is used for training vision APIs, I would imagine that those can be trained on separate data already out there, and would not really need language-aligned data).
+Human feedback:
+Does the human feedback added on the training set or it is also there while evaluating?
+What does the human feedback look like? Is it a natural language command as is briefly mentioned in the paper: “be more assertive during an unprotected left turn”? And the LLM takes that as input and regenerates its program?
+My understanding is that the internal APIs have collision avoidance heuristics incorporated — given that IDM has 0 collision rate, I would expect the collision rate of the evaluated models to be also 0 (since it can potentially use similar heuristics as IDM which is working well to avoid any collisions). Am I missing something?
+Autopilot: After a potential collision event is detected and the system goes into autopilot, what happens next? When does it relay the control back to the LLM? Is the information about a potential security issue also relayed to the LLM, and if the authors tried it — does it not work well?
+(Not a weakness but a question): While this benchmark is very useful, I would have hoped for a more extensive dataset consisting of more samples than the available 4.5k. Given that Nuscenes and other driving benchmarks contain lots of driving scenarios, wouldn’t annotating an existing scene-driving trajectory with language instructions be more scalable? (And since we have the driving trajectory — we have the goal state as well)
+Overall Recommendation: 4: weak accept
+Justification For Recommendation And Suggestions For Rebuttal:
+My current rating for this paper is Weak Accept. I think this paper proposes a useful benchmark in a growing field of LLM guided driving and offers useful experimental insights — this should be interesting for the community and hence I am voting for accepting. I am unclear with some details like why a large portion of the dataset is held out as a training set when none of the methods actually need it, details of human feedback experiments and how the introduced safety APIs actually work once they move the system to autopilot.
+
+Based on the authors response and other reviewers comments, I would be happy to raise my score further.
+
+Confidence Level: 4: The reviewer is confident but not absolutely certain that the evaluation is correct.
+Final Rating: 4: Weak Accept
+Final Rating Justification:
+The rebuttal answers most of my questions adequately. I still think that since atmost only 100 training examples are getting used out of the collected 3.9k training examples, it might be more useful to have a bigger validation set by merging a subset of training set into validation.
+
+That said, I still feel positive about this paper and recommend acceptance.
+
+
+Paper Summary:
+This paper explores the application of Large Language Models (LLM) in the context of autonomous driving. The authors introduce LaMPilot, a framework that leverages LLM to convert human instructions into code for vehicle control. To achieve this, they have designed a set of APIs and prompts within the framework. When confronted with a new instruction, LLM must decide which API to execute. Furthermore, they introduce a novel benchmark for LLM-based Autonomous Driving (AD) agents using the HighwayEnv simulator, which includes an extension comprising 4,900 human-annotated driving scenarios. They evaluate several LLM models on this benchmark using various metrics. The results indicate that GPT-4, with human feedback, yields the best performance, although a gap between human and GPT-4 performance still exists.
+
+Paper Strengths:
+This work studies a novel problem that bridges the gap between Large Language Models (LLM) and autonomous driving agents. It is also interesting to consider generating codes for vehicle control instead of predicting control signals directly.
+The introduction of a new benchmark for assessing LLM-based Autonomous Driving (AD) agents is a contribution that can serve as a valuable resource for future research in this area.
+Paper Weaknesses:
+As depicted in Figure 2, HighwayEnv appears to be relatively simple. However, as indicated in Table 1, there are 1,000 turning scenarios. Could you clarify the differences between these scenarios? Is there any randomness introduced into the simulations?
+In reference to lines 303-304, the similarity between the instruction "make a right lane change" and the API "change lane right" raises questions about whether LLM simply identifies word associations instead of engaging in reasoning. For instance, how does the agent respond when approaching an intersection with a right turn instruction, but it is not in the right turn lane?
+As stated in lines 182-183, once a policy is invoked, a series of state-action pairs is generated. Does this imply that the agent only needs to call the API once for each traffic scenario? Additionally, since the agent only needs to invoke the APIs without actually controlling the vehicle, is it possible that the metrics are more reliant on the algorithm implemented in the APIs rather than the agent's capabilities?
+The experimental setup seems rather simplistic. Please consider adding more visualizations of the benchmark scenarios and conducting a more thorough analysis of failure cases and improvements among different models, especially in comparison to human performance.
+Please explain why Llama2, PaLM2, ChatGPT get lower Completion Rate with human feedback.
+Overall Recommendation: 2: weak reject
+Justification For Recommendation And Suggestions For Rebuttal:
+This work appears to have a critical deficiency in terms of the analysis of results, which leaves it incomplete at this stage. Therefore, I recommend a weak rejection for this paper. In terms of suggestions for improvement, please refer to the specific points raised in the weaknesses section.
+
+Confidence Level: 4: The reviewer is confident but not absolutely certain that the evaluation is correct.
+
+
+
+Paper Summary:
+The paper presents a new benchmark for autonomous driving with LLMs. The benchmark consists of interfaces through which the LLM can query the world and take actions. LLMs can be connected with these interfaces via structured prompts. The LLM will write code to interact with the interfaces. Various high performing recent LLMs are compared in the framework. Clearly there is a trade off between route completion and collisions. In fact, the naive baselines have lower completion and lower collisions than the LLMs.
+
+Overall a very interesting and novel paper.
+
+Paper Strengths:
+Clearly highly topical - this is the subject on everyone's minds in AV at the moment. Seems to be a genuinely novel contribution with few flaws. Open code and dataset. Well written.
+
+Paper Weaknesses:
+This is surely not the only way to evaluate LLMs on these tasks, e.g. perhaps you could use the vision modality of multimodal LLMs to improve performance. Clearly there is much more work to be done. It might be interesting to have some more competitive baselines for the tasks, e.g. evaluate a SOTA Imitation Learning approach on the tasks.
+
+Overall Recommendation: 5: accept
+Justification For Recommendation And Suggestions For Rebuttal:
+No obligatory suggestions, though you may consider the weaknesses above. Simply put, I think the paper is strong enough to be accepted as is.
+
+Confidence Level: 5: The reviewer is absolutely certain that the evaluation is correct and very familiar with the relevant literature.
+Final Rating: 5: Accept
+Final Rating Justification:
+Thank you for the rebuttal. Although I agree with the comments of the other reviewers that further datasets and benchmarks would be a useful addition, I don't find these problems sufficient to change my decision. I believe the authors' conclusions are supported by the experiments, but of course this could be improved in future work. Therefore I still recommend that the paper is accepted because I believe the contribution is a useful first step towards such a task.
+
+
