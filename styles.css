@@ -450,7 +450,7 @@ section.publications  td:nth-child(3),  section.patents td:nth-child(3) {
 
 /* Journal  */
 table.journal {
-  counter-reset: journalcount 19;           /* Set the counter to max + 1 */
+  counter-reset: journalcount 20;           /* Set the counter to max + 1 */
 }
 .journalcount:before{
   counter-increment: journalcount -1;      /* Increment the counter */
