@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kyungtae 'KT' Han - Academic Homepage</title>
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
+            darkMode: 'class',
             theme: {
                 extend: {
                     fontFamily: {
@@ -22,23 +24,28 @@
         body { font-family: 'Inter', system-ui, sans-serif; }
         .dark { color-scheme: dark; }
         
+        /* Smooth transitions for dark mode */
+        * {
+            transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+        }
+        
         /* Navigation styles */
         .nav-link {
-            @apply text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors;
+            @apply text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-colors;
         }
         
         .mobile-nav-link {
-            @apply text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium transition-colors;
+            @apply text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium transition-colors;
         }
         
         /* Social link styles */
         .social-link {
-            @apply inline-flex items-center gap-2 px-4 py-2 bg-white/90 backdrop-blur-sm border border-gray-200 rounded-lg text-gray-700 hover:text-blue-600 hover:bg-white transition-all duration-200 shadow-sm;
+            @apply inline-flex items-center gap-2 px-4 py-2 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm border border-gray-200 dark:border-gray-700 rounded-lg text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-white dark:hover:bg-gray-800 transition-all duration-200 shadow-sm;
         }
         
         /* Research card styles */
         .research-card {
-            @apply bg-gray-50 rounded-lg p-6 border border-gray-200 hover:shadow-md transition-shadow;
+            @apply bg-gray-50 dark:bg-gray-800 rounded-lg p-6 border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow;
         }
         
         .research-icon {
@@ -47,7 +54,7 @@
         
         /* Project card styles */
         .project-card {
-            @apply bg-gray-50 rounded-lg p-6 border border-gray-200 hover:shadow-md transition-shadow;
+            @apply bg-gray-50 dark:bg-gray-800 rounded-lg p-6 border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow;
         }
         
         .project-icon {
@@ -60,7 +67,7 @@
         
         /* Contact card styles */
         .contact-card {
-            @apply bg-white rounded-lg p-6 border border-gray-200 hover:shadow-md transition-shadow text-center;
+            @apply bg-white dark:bg-gray-800 rounded-lg p-6 border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow text-center;
         }
         
         .contact-icon {
@@ -68,13 +75,13 @@
         }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-900 transition-colors duration-200">
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-200">
     <!-- Header Navigation -->
-    <header id="header" class="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50 transition-all duration-200">
+    <header id="header" class="fixed top-0 w-full bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-700 z-50 transition-all duration-200">
         <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="flex-shrink-0">
-                    <h1 class="text-xl font-bold text-gray-900">Kyungtae Han</h1>
+                    <h1 class="text-xl font-bold text-gray-900 dark:text-white">Kyungtae Han</h1>
                 </div>
                 
                 <!-- Desktop Navigation -->
@@ -90,19 +97,19 @@
 
                 <!-- Theme Toggle & Mobile Menu Button -->
                 <div class="flex items-center space-x-4">
-                    <button id="theme-toggle" class="p-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors">
-                        <i class="fas fa-moon text-gray-600"></i>
+                    <button id="theme-toggle" class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+                        <i class="fas fa-moon text-gray-600 dark:text-gray-300"></i>
                     </button>
                     
-                    <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors">
-                        <i class="fas fa-bars text-gray-600"></i>
+                    <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+                        <i class="fas fa-bars text-gray-600 dark:text-gray-300"></i>
                     </button>
                 </div>
             </div>
 
             <!-- Mobile Navigation -->
             <div id="mobile-menu" class="hidden md:hidden">
-                <div class="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-gray-200">
+                <div class="px-2 pt-2 pb-3 space-y-1 bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
                     <a href="#home" class="mobile-nav-link">Home</a>
                     <a href="#research" class="mobile-nav-link">Research</a>
                     <a href="#projects" class="mobile-nav-link">Projects</a>
@@ -116,7 +123,7 @@
     <!-- Main Content -->
     <main class="pt-16">
         <!-- Hero Section -->
-        <section id="home" class="pt-20 pb-16 bg-gradient-to-br from-blue-50 to-indigo-100">
+        <section id="home" class="pt-20 pb-16 bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-800 dark:to-gray-900">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
                     <!-- Profile Image -->
@@ -129,42 +136,42 @@
 
                     <!-- Content -->
                     <div class="lg:col-span-2">
-                        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
                             Kyungtae 'KT' Han
                         </h1>
-                        <h2 class="text-xl md:text-2xl text-blue-600 font-semibold mb-2">
+                        <h2 class="text-xl md:text-2xl text-blue-600 dark:text-blue-400 font-semibold mb-2">
                             Senior Principal Researcher
                         </h2>
-                        <p class="text-lg text-gray-600 mb-4">
+                        <p class="text-lg text-gray-600 dark:text-gray-300 mb-4">
                             Toyota Motor North America
                         </p>
                         
-                        <p class="text-gray-700 text-lg leading-relaxed mb-8 max-w-3xl">
+                        <p class="text-gray-700 dark:text-gray-300 text-lg leading-relaxed mb-8 max-w-3xl">
                             Kyungtae (KT) Han is a Senior Principal Researcher at Toyota InfoTech Labs, where he leads pioneering work in AI-powered connected mobility, including Generative AI for Advanced Driver Assistance Systems, Automated Driving, and Vehicle-to-Everything safety technologies. He holds a Ph.D. from The University of Texas at Austin and an AI Graduate Certificate from Stanford University. With over 80 publications and more than 100 patents across communication systems, machine learning, and vehicular technologies, Dr. Han bridges academic excellence with industrial innovation. He has received the SAE Vincent Bendix Award, IEEE Best Application Award, and the Intel Achievement Award. A senior member of IEEE and an active member of ACM and SAE, he also serves as Associate Editor for the SAE Journal of Connected and Automated Vehicles. His research advances the future of intelligent, connected transportation.
 
                         </p>
 
                         <!-- Stats -->
                         <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
-                            <div class="text-center p-4 bg-white rounded-lg shadow-sm border border-gray-100">
+                            <div class="text-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700">
                                 <div class="text-3xl font-bold text-blue-600 mb-1">192</div>
-                                <div class="text-sm text-gray-600 font-medium">Total Research Outputs</div>
+                                <div class="text-sm text-gray-600 dark:text-gray-300 font-medium">Total Research Outputs</div>
                             </div>
-                            <div class="text-center p-4 bg-white rounded-lg shadow-sm border border-gray-100">
+                            <div class="text-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700">
                                 <div class="text-3xl font-bold text-green-600 mb-1">19</div>
-                                <div class="text-sm text-gray-600 font-medium">Journal Papers</div>
+                                <div class="text-sm text-gray-600 dark:text-gray-300 font-medium">Journal Papers</div>
                             </div>
-                            <div class="text-center p-4 bg-white rounded-lg shadow-sm border border-gray-100">
+                            <div class="text-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700">
                                 <div class="text-3xl font-bold text-purple-600 mb-1">69</div>
-                                <div class="text-sm text-gray-600 font-medium">Conference Papers</div>
+                                <div class="text-sm text-gray-600 dark:text-gray-300 font-medium">Conference Papers</div>
                             </div>
-                            <div class="text-center p-4 bg-white rounded-lg shadow-sm border border-gray-100">
+                            <div class="text-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700">
                                 <div class="text-3xl font-bold text-orange-600 mb-1">102</div>
-                                <div class="text-sm text-gray-600 font-medium">Patents</div>
+                                <div class="text-sm text-gray-600 dark:text-gray-300 font-medium">Patents</div>
                             </div>
                         </div>
                         <div class="text-center mb-8">
-                            <div class="text-sm text-gray-500">Also including 2 books and other research contributions</div>
+                            <div class="text-sm text-gray-500 dark:text-gray-400">Also including 2 books and other research contributions</div>
                         </div>
 
                         <!-- Social Links -->
@@ -192,13 +199,13 @@
         </section>
 
         <!-- About/Research Section -->
-        <section id="research" class="py-16 bg-white">
+        <section id="research" class="py-16 bg-white dark:bg-gray-900">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
                         Research Interests
                     </h2>
-                    <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    <p class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
                         My research focuses on cutting-edge technologies in intelligent transportation systems, 
                         cyber-physical systems, and artificial intelligence applications.
                     </p>
@@ -235,14 +242,14 @@
             </div>
         </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="py-16 bg-white">
+                                <!-- Projects Section -->
+        <section id="projects" class="py-16 bg-white dark:bg-gray-900">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
                         Key Projects
                     </h2>
-                    <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    <p class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
                         Selected research projects and initiatives in intelligent transportation and AI systems.
                     </p>
                 </div>
@@ -308,13 +315,13 @@
         </section>
 
         <!-- Publications Section -->
-        <section id="publications" class="py-16 bg-gray-50">
+        <section id="publications" class="py-16 bg-gray-50 dark:bg-gray-800">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
                         Publications
                     </h2>
-                    <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    <p class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
                         Complete publication list with 90 total publications including 69 conference papers, 
                         19 journal articles, 102 patents, and 2 books in intelligent transportation systems, 
                         cyber-physical systems, artificial intelligence, and edge computing.
@@ -324,18 +331,18 @@
                 <!-- Search and Filter -->
                 <div class="mb-8 flex flex-col sm:flex-row gap-4">
                     <div class="relative flex-1">
-                        <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                        <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 dark:text-gray-500"></i>
                         <input type="text" id="search-input" placeholder="Search publications..." 
-                               class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                               class="w-full pl-10 pr-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400">
                     </div>
                     <div class="relative">
-                        <i class="fas fa-filter absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
-                        <select id="filter-select" class="pl-10 pr-8 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent appearance-none bg-white">
-                            <option value="all">All Publications</option>
-                            <option value="journal">Journal Papers</option>
-                            <option value="conference">Conference Papers</option>
-                            <option value="patent">Patents</option>
-                            <option value="book">Books</option>
+                        <i class="fas fa-filter absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 dark:text-gray-500"></i>
+                        <select id="filter-select" class="pl-10 pr-8 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent appearance-none bg-white dark:bg-gray-800 text-gray-900 dark:text-white">
+                            <option value="all" class="bg-white dark:bg-gray-800 text-gray-900 dark:text-white">All Publications</option>
+                            <option value="journal" class="bg-white dark:bg-gray-800 text-gray-900 dark:text-white">Journal Papers</option>
+                            <option value="conference" class="bg-white dark:bg-gray-800 text-gray-900 dark:text-white">Conference Papers</option>
+                            <option value="patent" class="bg-white dark:bg-gray-800 text-gray-900 dark:text-white">Patents</option>
+                            <option value="book" class="bg-white dark:bg-gray-800 text-gray-900 dark:text-white">Books</option>
                         </select>
                     </div>
                 </div>
@@ -357,13 +364,13 @@
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="py-16 bg-gray-50">
+        <section id="contact" class="py-16 bg-gray-50 dark:bg-gray-800">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
                         Contact
                     </h2>
-                    <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    <p class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
                         Get in touch for collaborations, research opportunities, or questions about my work.
                     </p>
                 </div>
@@ -434,7 +441,7 @@
                 </div>
             </div>
             <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; 2025 Kyungtae 'KT' Han. All rights reserved. | Last updated: July 30, 2025</p>
+                <p>&copy; 2025 Kyungtae 'KT' Han. All rights reserved. | Last updated: <span id="last-updated">July 30, 2025</span></p>
             </div>
         </div>
     </footer>

@@ -9,14 +9,8 @@
 let fuse;
 let filteredPublications = [];
 
-// DOM elements
-const themeToggle = document.getElementById('theme-toggle');
-const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-const mobileMenu = document.getElementById('mobile-menu');
-const searchInput = document.getElementById('search-input');
-const filterSelect = document.getElementById('filter-select');
-const publicationsList = document.getElementById('publications-list');
-const lastUpdated = document.getElementById('last-updated');
+// DOM elements - will be initialized after DOM loads
+let themeToggle, mobileMenuBtn, mobileMenu, searchInput, filterSelect, publicationsList, lastUpdated;
 
 // Check if publications data is loaded
 function checkPublicationsData() {
@@ -42,6 +36,7 @@ function toggleTheme() {
 }
 
 function updateThemeIcon(theme) {
+    if (!themeToggle) return;
     const icon = themeToggle.querySelector('i');
     if (theme === 'dark') {
         icon.className = 'fas fa-sun text-yellow-500';
@@ -52,6 +47,7 @@ function updateThemeIcon(theme) {
 
 // Mobile menu
 function toggleMobileMenu() {
+    if (!mobileMenu) return;
     mobileMenu.classList.toggle('hidden');
 }
 
@@ -67,7 +63,9 @@ function initSmoothScrolling() {
                     block: 'start'
                 });
                 // Close mobile menu if open
-                mobileMenu.classList.add('hidden');
+                if (mobileMenu) {
+                    mobileMenu.classList.add('hidden');
+                }
             }
         });
     });
@@ -96,6 +94,12 @@ function initPublications() {
     // Check if publications data is loaded
     if (!checkPublicationsData()) {
         console.error('Cannot initialize publications - data not available');
+        return;
+    }
+    
+    // Check if required elements exist
+    if (!searchInput || !filterSelect || !publicationsList) {
+        console.error('Required publication elements not found');
         return;
     }
     
@@ -148,31 +152,46 @@ function filterPublications() {
     renderPublications();
 }
 
+
+
+function getTypeLabel(type) {
+    switch (type) {
+        case 'conference': return 'Conference';
+        case 'journal': return 'Journal';
+        case 'patent': return 'Patent';
+        case 'book': return 'Book';
+        default: return 'Venue';
+    }
+}
+
 function renderPublications() {
     if (!publicationsList) {
         console.error('Publications list element not found!');
         return;
     }
     
+
+    
     if (filteredPublications.length === 0) {
         publicationsList.innerHTML = '<p class="text-gray-500 text-center py-8">No publications found.</p>';
         return;
     }
     
-    // Count publications by type first
-    const typeCounts = {
+    // Calculate original reference numbers based on full publications list
+    const originalTypeCounts = {
         conference: 0,
         journal: 0,
         patent: 0,
         book: 0
     };
     
-    // Count total publications of each type
-    filteredPublications.forEach(pub => {
-        typeCounts[pub.type]++;
+    // Count total publications of each type in the full list
+    publications.forEach(pub => {
+        originalTypeCounts[pub.type]++;
     });
     
-    // Track current count for each type (for reverse numbering)
+    // Create a map to store original reference numbers for each publication
+    const originalRefNumbers = new Map();
     const currentCounts = {
         conference: 0,
         journal: 0,
@@ -180,10 +199,15 @@ function renderPublications() {
         book: 0
     };
     
-    publicationsList.innerHTML = filteredPublications.map((pub, index) => {
-        // Increment count for this type
+    // Calculate original reference numbers for all publications
+    publications.forEach(pub => {
         currentCounts[pub.type]++;
-        
+        const reverseNumber = originalTypeCounts[pub.type] - currentCounts[pub.type] + 1;
+        const refNumber = `[${pub.type.charAt(0).toUpperCase()}${String(reverseNumber).padStart(2, '0')}]`;
+        originalRefNumbers.set(pub.id, refNumber);
+    });
+    
+    publicationsList.innerHTML = filteredPublications.map((pub, index) => {
         // Generate publication type prefix
         let typePrefix = '';
         switch(pub.type) {
@@ -203,9 +227,8 @@ function renderPublications() {
                 typePrefix = '📚';
         }
         
-        // Generate reference number in reverse order within each type
-        const reverseNumber = typeCounts[pub.type] - currentCounts[pub.type] + 1;
-        const refNumber = `[${pub.type.charAt(0).toUpperCase()}${String(reverseNumber).padStart(2, '0')}]`;
+        // Use the original reference number for this publication
+        const refNumber = originalRefNumbers.get(pub.id) || `[${pub.type.charAt(0).toUpperCase()}${String(pub.id).padStart(2, '0')}]`;
         
         // Generate venue abbreviation
         let venueAbbr = pub.venue;
@@ -221,10 +244,12 @@ function renderPublications() {
             venueAbbr = 'IEEE IV';
         } else if (pub.venue.includes('IEEE International Conference on Intelligent Transportation Systems')) {
             venueAbbr = 'IEEE ITSC';
-        } else if (pub.venue.includes('US Patent')) {
-            venueAbbr = 'US Patent';
         } else if (pub.venue.includes('US Patent Application')) {
-            venueAbbr = 'US Patent App';
+            // Keep the full patent application number for clarity
+            venueAbbr = pub.venue;
+        } else if (pub.venue.includes('US Patent')) {
+            // Keep the full patent number for clarity
+            venueAbbr = pub.venue;
         }
         
         return `
@@ -241,7 +266,7 @@ function renderPublications() {
                         
                         <div class="ml-6 text-sm text-gray-600 dark:text-gray-300">
                             <p class="mb-1"><strong>Authors:</strong> ${pub.authors}</p>
-                            <p class="mb-1"><strong>Venue:</strong> ${venueAbbr}, ${pub.year}</p>
+                            <p class="mb-1"><strong>${pub.type_label || getTypeLabel(pub.type)}:</strong> ${venueAbbr}, ${pub.year}</p>
                         </div>
                         
                         <div class="ml-6 mt-2 flex flex-wrap gap-2">
@@ -253,7 +278,7 @@ function renderPublications() {
                             ` : ''}
                             ${pub.pdf ? `
                                 <a href="${pub.pdf}" target="_blank" rel="noopener noreferrer" 
-                                   class="inline-flex items-center px-2 py-1 text-xs font-medium text-red-600 bg-red-50 rounded hover:bg-red-100 transition-colors">
+                                   class="inline-flex items-center px-2 py-1 text-xs font-medium text-green-600 bg-green-50 rounded hover:bg-green-100 transition-colors">
                                     <i class="fas fa-file-pdf mr-1"></i>PDF
                                 </a>
                             ` : ''}
@@ -296,6 +321,19 @@ function toggleAbstract(id) {
     }
 }
 
+// Format authors for BibTeX (convert commas to 'and')
+function formatAuthorsForBibTeX(authorsStr) {
+    if (!authorsStr) return '';
+    
+    // Replace ", and " with " and "
+    let formatted = authorsStr.replace(/,\s*and\s+/g, ' and ');
+    
+    // Replace remaining commas with " and "
+    formatted = formatted.replace(/,\s*/g, ' and ');
+    
+    return formatted;
+}
+
 function copyBibTeX(id, event) {
     const pub = publications.find(p => p.id === id);
     if (!pub) return;
@@ -304,10 +342,13 @@ function copyBibTeX(id, event) {
     let bibtex = '';
     const key = `${pub.authors.split(',')[0].split(' ').pop()}${pub.year}${pub.title.split(' ').slice(0, 2).join('').replace(/[^a-zA-Z]/g, '')}`;
     
+    // Format authors properly for BibTeX
+    const formattedAuthors = formatAuthorsForBibTeX(pub.authors);
+    
     if (pub.type === 'journal') {
         bibtex = `@article{${key},
   title={${pub.title}},
-  author={${pub.authors}},
+  author={${formattedAuthors}},
   journal={${pub.venue}},
   year={${pub.year}},
   publisher={IEEE}
@@ -315,7 +356,7 @@ function copyBibTeX(id, event) {
     } else if (pub.type === 'conference') {
         bibtex = `@inproceedings{${key},
   title={${pub.title}},
-  author={${pub.authors}},
+  author={${formattedAuthors}},
   booktitle={${pub.venue}},
   year={${pub.year}},
   organization={IEEE}
@@ -323,7 +364,7 @@ function copyBibTeX(id, event) {
     } else if (pub.type === 'patent') {
         bibtex = `@patent{${key},
   title={${pub.title}},
-  author={${pub.authors}},
+  author={${formattedAuthors}},
   number={${pub.venue}},
   year={${pub.year}},
   assignee={Toyota Motor North America}
@@ -331,7 +372,7 @@ function copyBibTeX(id, event) {
     } else if (pub.type === 'book') {
         bibtex = `@book{${key},
   title={${pub.title}},
-  author={${pub.authors}},
+  author={${formattedAuthors}},
   publisher={${pub.venue}},
   year={${pub.year}}
 }`;
@@ -359,6 +400,7 @@ function copyBibTeX(id, event) {
 
 // Update last modified date
 function updateLastModified() {
+    if (!lastUpdated) return;
     const lastModified = new Date(document.lastModified);
     lastUpdated.textContent = lastModified.toLocaleDateString('en-US', {
         year: 'numeric',
@@ -388,8 +430,31 @@ function initAnimations() {
     });
 }
 
+// Initialize DOM elements
+function initDOMElements() {
+    themeToggle = document.getElementById('theme-toggle');
+    mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    mobileMenu = document.getElementById('mobile-menu');
+    searchInput = document.getElementById('search-input');
+    filterSelect = document.getElementById('filter-select');
+    publicationsList = document.getElementById('publications-list');
+    lastUpdated = document.getElementById('last-updated');
+    
+    // Check if elements were found
+    if (!themeToggle) console.warn('Theme toggle button not found');
+    if (!mobileMenuBtn) console.warn('Mobile menu button not found');
+    if (!mobileMenu) console.warn('Mobile menu not found');
+    if (!searchInput) console.warn('Search input not found');
+    if (!filterSelect) console.warn('Filter select not found');
+    if (!publicationsList) console.warn('Publications list not found');
+    if (!lastUpdated) console.warn('Last updated element not found');
+}
+
 // Initialize everything when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
+    // Initialize DOM elements first
+    initDOMElements();
+    
     initTheme();
     initSmoothScrolling();
     initHeaderScroll();
@@ -398,12 +463,16 @@ document.addEventListener('DOMContentLoaded', function() {
     updateLastModified();
     
     // Event listeners
-    themeToggle.addEventListener('click', toggleTheme);
-    mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+    if (themeToggle) {
+        themeToggle.addEventListener('click', toggleTheme);
+    }
+    if (mobileMenuBtn) {
+        mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+    }
     
     // Close mobile menu when clicking outside
     document.addEventListener('click', (e) => {
-        if (!mobileMenuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+        if (mobileMenuBtn && mobileMenu && !mobileMenuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
             mobileMenu.classList.add('hidden');
         }
     });
@@ -411,13 +480,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // Keyboard shortcuts
     document.addEventListener('keydown', (e) => {
         // Ctrl/Cmd + K for search
-        if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+        if ((e.ctrlKey || e.metaKey) && e.key === 'k' && searchInput) {
             e.preventDefault();
             searchInput.focus();
         }
         
         // Escape to close mobile menu
-        if (e.key === 'Escape') {
+        if (e.key === 'Escape' && mobileMenu) {
             mobileMenu.classList.add('hidden');
         }
     });
