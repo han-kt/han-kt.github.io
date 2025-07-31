@@ -1,5 +1,5 @@
 // Modern Academic Homepage JavaScript
-// Generated on 2025-07-30 01:19:24
+// Generated on 2025-07-30 21:08:17
 // Total publications: 192
 // Breakdown: 69 conferences, 19 journals, 102 patents
 
@@ -131,6 +131,14 @@ const publications = [
     },
     {
         id: 15,
+        title: "Omnidirectional Collision Avoidance",
+        authors: "Amr Abdelraouf and Rohit Gupta and Hazem Abdelkawy and Kyungtae Han",
+        venue: "US Patent 12361829",
+        year: 2025,
+        type: "patent"
+    },
+    {
+        id: 16,
         title: "CAVE: Crowdsourcing passing-by vehicles for reliable in-vehicle edge computing",
         authors: "Jiahe Cao, Qiang Liu, Dawei Chen, and Kyungtae Han",
         venue: "IEEE Global Communications Conference: Mobile and Wireless Networks",
@@ -140,7 +148,7 @@ const publications = [
         url: "https://arxiv.org/pdf/2408.00621"
     },
     {
-        id: 16,
+        id: 17,
         title: "Enhancing AR/VR performance via optimized edge-based object detection for connected autonomous vehicles",
         authors: "Daniel Doe, Dawei Chen, Kyungtae Han, Linda Xie, and Zhu Han",
         venue: "Conference on IEEE Intelligent Vehicles Symposium (IV), Jeju Island, Korea",
@@ -150,7 +158,7 @@ const publications = [
         url: "publications/24_IV/AR_VR.pdf"
     },
     {
-        id: 17,
+        id: 18,
         title: "KI-GAN: Knowledge-Informed Generative Adversarial Networks for Enhanced Multi-Vehicle Trajectory Forecasting at Signalized Intersections",
         authors: "Chuheng Wei, Guoyuan Wu, Matthew J. Barth, Amr Abdelraouf, Rohit Gupta, and Kyungtae Han",
         venue: "Conference on Computer Vision and Pattern Recognition (CVPR) Workshops - AI City Challenges",
@@ -160,7 +168,7 @@ const publications = [
         url: "https://openaccess.thecvf.com/content/CVPR2024W/AICity/papers/Wei_KI-GAN_Knowledge-Informed_Generative_Adversarial_Networks_for_Enhanced_Multi-Vehicle_Trajectory_Forecasting_CVPRW_2024_paper.pdf"
     },
     {
-        id: 18,
+        id: 19,
         title: "LaMPilot: An open benchmark dataset for autonomous driving with language model programs",
         authors: "Yunsheng Ma, Can Cui, Xu Cao, Wenqian Ye, Peiran Liu, Juanwu Lu, Amr Abdelraouf, Rohit 					Gupta, Kyungtae Han, Aniket Bera, James Matthew Rehg, and Ziran Wang",
         venue: "Conference on Computer Vision and Pattern Recognition (CVPR)",
@@ -170,7 +178,7 @@ const publications = [
         url: "https://openaccess.thecvf.com/content/CVPR2024/papers/Ma_LaMPilot_An_Open_Benchmark_Dataset_for_Autonomous_Driving_with_Language_CVPR_2024_paper.pdf"
     },
     {
-        id: 19,
+        id: 20,
         title: "Unleashing the true power of age-of-information: Service aggregation in connected and autonomous vehicles",
         authors: "Anik Mallik, Dawei Chen, Kyungtae Han, Linda Jiang, and Zhu Hang",
         venue: "IEEE International Conference on Communications (ICC): Mobile and Wireless Networks Symposium,",
@@ -180,7 +188,7 @@ const publications = [
         url: "https://arxiv.org/pdf/2403.08931"
     },
     {
-        id: 20,
+        id: 21,
         title: "Digital Twin-Based Cooperative Driving at Roundabouts for Connected and Automated Vehicles",
         authors: "Zihao Li, Shuaijie Li, Amr Abdelraouf, Rohit Gupta, Kyungtae Han, Onur Altintas, and Ziran Wang",
         venue: "IEEE Forum on Integrated and Sustainable Transportation Systems (FISTS),",
@@ -190,7 +198,7 @@ const publications = [
         url: "https://ieeexplore.ieee.org/document/10485543"
     },
     {
-        id: 21,
+        id: 22,
         title: "Dilemma Zone: A Comprehensive Study of Influential Factors and Behavior Analysis",
         authors: "Chuheng Wei, Ziye Qin, Guoyuan Wu, Matthew Barth, Amr Abdelraouf, Rohit Gupta, and Kyungtae Han",
         venue: "IEEE Forum on Integrated and Sustainable Transportation Systems (FISTS),",
@@ -200,7 +208,7 @@ const publications = [
         url: "https://ieeexplore.ieee.org/document/10485546"
     },
     {
-        id: 22,
+        id: 23,
         title: "Driving through the Concept Gridlock: Unraveling Explainability Bottlenecks in Automated Driving",
         authors: "Jessica Echterhoff, An Yan, Kyungtae Han, 					 Amr Abdelraouf, Rohit Gupta, and Julian McAuley",
         venue: "IEEE/CVF Winter Conference on Applications of Computer Vision (WACV),",
@@ -210,7 +218,7 @@ const publications = [
         url: "https://arxiv.org/abs/2310.16639"
     },
     {
-        id: 23,
+        id: 24,
         title: "Edge-Assisted Indexing for Highly Dynamic and Static Data in Mixed Reality Connected Autonomous Vehicles",
         authors: "Doe, Daniel Mawunyo and Chen, Dawei and Han, Kyungtae and Wang, Haoxin and Xie, Jiang and Han, Zhu",
         venue: "Intelligent and Converged Networks (Vol. 5, No. 2, pp. 167-179)",
@@ -220,7 +228,7 @@ const publications = [
         url: "https://ieeexplore.ieee.org/document/10601661"
     },
     {
-        id: 24,
+        id: 25,
         title: "A Review of Personalization in Driving Behavior: Dataset, Modeling, and Validation",
         authors: "Liao, Xishun and Zhao, Zhouqiao and Barth, Matthew and Abdelraouf, Amr and Gupta, Rohit and Han, Kyungtae and Ma, Jiaqi and Wu, Guoyuan",
         venue: "IEEE Transactions on Intelligent Vehicles",
@@ -230,7 +238,7 @@ const publications = [
         url: "https://ieeexplore.ieee.org/document/10591381"
     },
     {
-        id: 25,
+        id: 26,
         title: "Crowdsourcing Live High Definition Map via Collaborative Computation in Automotive Edge Computing",
         authors: "Zhang, Yuru and Liu, Qiang and Wang, Haoxin and Chen, Dawei and Han, Kyungtae",
         venue: "IEEE Transactions on Vehicular Technology (Vol. 73, No. 9, pp. 13569-13583)",
@@ -240,7 +248,7 @@ const publications = [
         url: "https://ieeexplore.ieee.org/document/10508471"
     },
     {
-        id: 26,
+        id: 27,
         title: "Driver Digital Twin for Online Recognition of Distracted Driving Behaviors",
         authors: "Ma, Yunsheng and Du, Runjia and Abdelraouf, Amr and Han, Kyungtae and Gupta, Rohit and Wang, Ziran",
         venue: "IEEE Transactions on Intelligent Vehicle",
@@ -250,7 +258,7 @@ const publications = [
         url: "https://ieeexplore.ieee.org/document/10398504"
     },
     {
-        id: 27,
+        id: 28,
         title: "Adaptive Road Sign Interpretation and Vehicle Response System",
         authors: "Rohit Gupta and Yunsheng Max and Amr Abdelraouf and Kyungtae Han",
         venue: "US Patent Application 19/004,333",
@@ -258,7 +266,7 @@ const publications = [
         type: "patent"
     },
     {
-        id: 28,
+        id: 29,
         title: "Context-Aware External Object Detection and Vehicle Guidance",
         authors: "Rohit Gupta and Yunsheng Max and Amr Abdelraouf and Kyungtae Han",
         venue: "US Patent Application 19/004,331",
@@ -266,7 +274,7 @@ const publications = [
         type: "patent"
     },
     {
-        id: 29,
+        id: 30,
         title: "Computing a Multi-Dimensional Personalized Adaptive Cruise Control Parameter",
         authors: "Rohit Gupta and Ahmadreza Moradipari and Amr Abdelraouf and Kyungtae Han",
         venue: "US Patent Application 18/988,587",
@@ -274,7 +282,7 @@ const publications = [
         type: "patent"
     },
     {
-        id: 30,
+        id: 31,
         title: "Advanced Driver Focus Tracking for Approaching Hazard",
         authors: "Rohit Gupta and Qi Chen and Yunsheng Max and Amr Abdelraouf and Kyungtae Han",
         venue: "US Patent Application 18/977,280",
@@ -282,7 +290,7 @@ const publications = [
         type: "patent"
     },
     {
-        id: 31,
+        id: 32,
         title: "Audio-Based Driver Assistance System for Enhanced Vehicle Safety",
         authors: "Rohit Gupta and Qi Chen and Yunsheng Max and Amr Abdelraouf and Kyungtae Han",
         venue: "US Patent Application 18/977,353",
@@ -290,7 +298,7 @@ const publications = [
         type: "patent"
     },
     {
-        id: 32,
+        id: 33,
         title: "Real-Time Risk Reasoning",
         authors: "Amr Abdelraouf and Rohit Gupta and Kyungtae Han",
         venue: "US Patent Application 18/964,886",
@@ -298,7 +306,7 @@ const publications = [
         type: "patent"
     },
     {
-        id: 33,
+        id: 34,
         title: "Systems and Methods for Adaptive Cruise Control Based on Online Learning Preference",
         authors: "Ahmadreza Moradipari Rohit Gupta and Amr Abdelraouf and Kyungtae Han and Sergei Avedisov and Onur Altintas and John Kenney",
         venue: "US Patent Application 18/944,774",
@@ -306,7 +314,7 @@ const publications = [
         type: "patent"
     },
     {
-        id: 34,
+        id: 35,
         title: "Proactive Message Transmitter Identification System",
         authors: "Hiromitsu Kobayashi and Kyungtae Han",
         venue: "US Patent 12091006",
@@ -314,7 +322,7 @@ const publications = [
         type: "patent"
     },
     {
-        id: 35,
+        id: 36,
         title: "Systems and Methods for Computation Offloading Determination Using Multi-Modal User Input",
         authors: "Daniel Doe and Dawei Chen and Kyungtae Han",
         venue: "US Patent Application 18/883,664",
@@ -322,7 +330,7 @@ const publications = [
         type: "patent"
     },
     {
-        id: 36,
+        id: 37,
         title: "Method and System for Personalized Car Following with Transformers",
         authors: "Ziran Wang and Zhouqiao Zhao and Rohit Gupta and Kyungtae Han and Prashant Tiwari",
         venue: "US Patent 12083883",
@@ -330,7 +338,7 @@ const publications = [
         type: "patent"
     },
     {
-        id: 37,
+        id: 38,
         title: "Systems and Methods for Edge-Driven Object Detection for Resource Optimization",
         authors: "Daniel Doe and Dawei Chen and Kyungtae Han",
         venue: "US Patent Application 18/825,745",
@@ -338,7 +346,7 @@ const publications = [
         type: "patent"
     },
     {
-        id: 38,
+        id: 39,
         title: "Detection, Classification, and Prediction of Bacteria Colony Growth in Vehicle Passenger Cabin",
         authors: "Rohit Gupta and Ziran Wang and Yanbing Wang and Kyungtae Han and Prashant Tiwari",
         venue: "US Patent 12080080",
@@ -346,7 +354,7 @@ const publications = [
         type: "patent"
     },
     {
-        id: 39,
+        id: 40,
         title: "Cannabis Impairment Detection and Safety System for Vehicles",
         authors: "Rohit Gupta and Hazem Abdelkawy and Amr Abdelraouf and Kyungtae Han",
         venue: "US Patent 12071141",
@@ -354,7 +362,7 @@ const publications = [
         type: "patent"
     },
     {
-        id: 40,
+        id: 41,
         title: "Rest Stop Recommendation System",
         authors: "Zhenyu Shou and Ziran Wang and Kyungtae Han and Yongkang Liu and Prashant Tiwari",
         venue: "US Patent 12073332A",
@@ -362,7 +370,7 @@ const publications = [
         type: "patent"
     },
     {
-        id: 41,
+        id: 42,
         title: "Systems and Methods for Mixed Reality Applications with Selective Frame Transmission",
         authors: "Daniel Doe and Dawei Chen and Kyungtae Han",
         venue: "US Patent Application 18/818,052",
@@ -370,7 +378,7 @@ const publications = [
         type: "patent"
     },
     {
-        id: 42,
+        id: 43,
         title: "Systems and Methods for Resource-optimized Mixed Reality Using User-Centric Adaptive Object Detection",
         authors: "Daniel Doe and Dawei Chen and Kyungtae Han",
         venue: "US Patent Application 18/809,564",
@@ -378,7 +386,7 @@ const publications = [
         type: "patent"
     },
     {
-        id: 43,
+        id: 44,
         title: "Edge-Assisted Occlusion Mitigation",
         authors: "Yitao Chen and Dawei Chen and Kyungtae Han and Onur Altintas",
         venue: "US Patent Application 18/793,646",
@@ -386,7 +394,7 @@ const publications = [
         type: "patent"
     },
     {
-        id: 44,
+        id: 45,
         title: "Student-T Process Personalized Adaptive Cruise Control",
         authors: "Rohit Gupta and Ziran Wang and Yanbing Wang and Kyungtae Han and Prashant Tiwari",
         venue: "US Patent 12036987",
@@ -394,7 +402,7 @@ const publications = [
         type: "patent"
     },
     {
-        id: 45,
+        id: 46,
         title: "Systems and Methods for Generating Personalized Advanced Driver Assistance Systems",
         authors: "Amr Abdelraouf and Rohit Gupta and Kyungtae Han",
         venue: "US Patent Application 18/664,946",
@@ -402,7 +410,7 @@ const publications = [
         type: "patent"
     },
     {
-        id: 46,
+        id: 47,
         title: "Vehicle Communication Sender Identification via Hyper-Graph Matching",
         authors: "Rui Guo and Sergei Avedisov and Kyungtae Han and Hongsheng Lu and Prashant Tiwari",
         venue: "US Patent 11948453",
@@ -410,7 +418,7 @@ const publications = [
         type: "patent"
     },
     {
-        id: 47,
+        id: 48,
         title: "Controlling An Adaptive Cruise Control System",
         authors: "Amr Abdelraouf and Rohit Gupta and Kyungtae Han and Tomohiro Matusda and Nick Merkel and Matt Hill and Samanthule Nola and Onur Altintas and John Kenney",
         venue: "US Patent Application 18/613,323",
@@ -418,7 +426,7 @@ const publications = [
         type: "patent"
     },
     {
-        id: 48,
+        id: 49,
         title: "Hybrid Deterministic Override of Probabilistic Advanced Driving Assistance Systems (ADAS)",
         authors: "Rohit Gupta and Ziran Wang and Kyungtae Han and Prashant Tiwari",
         venue: "US Patent 11926322",
@@ -426,7 +434,7 @@ const publications = [
         type: "patent"
     },
     {
-        id: 49,
+        id: 50,
         title: "Cooperative Driving System and Method",
         authors: "Sergei Avedisov and Ziran Wang and Ahmed Sakr and Kyungtae Han and Rui Guo and Onur Altintas",
         venue: "US Patent 11904855",
@@ -434,7 +442,7 @@ const publications = [
         type: "patent"
     },
     {
-        id: 50,
+        id: 51,
         title: "Trigger Event Personalized Adaptive Cruise Control (P-ACC)",
         authors: "Rohit Gupta and Amr Abdelraouf and Kyungtae Han",
         venue: "US Patent Application 18/438,129",
@@ -442,7 +450,7 @@ const publications = [
         type: "patent"
     },
     {
-        id: 51,
+        id: 52,
         title: "Signal-Based Auto Gap Personalized Adaptive Cruise Control",
         authors: "Rohit Gupta and Amr Abdelraouf and Kyungtae Han and Shili Sheng",
         venue: "US Patent Application 18/437,060",
@@ -450,7 +458,7 @@ const publications = [
         type: "patent"
     },
     {
-        id: 52,
+        id: 53,
         title: "Systems and Methods for Selecting Edge Nodes For Task Performance",
         authors: "Dawei Chen and Qi Chen and Rohit Gupta and Kyungtae Han and",
         venue: "US Patent Application 18/433,759",
@@ -458,7 +466,7 @@ const publications = [
         type: "patent"
     },
     {
-        id: 53,
+        id: 54,
         title: "Edge-Assisted Personalized High-Definition Map Delivery Based on Drivers' Interests",
         authors: "Dawei Chen and Qi Chen and Rohit Gupta and Kyungtae Han",
         venue: "US Patent Application 18/432,307",
@@ -466,7 +474,7 @@ const publications = [
         type: "patent"
     },
     {
-        id: 54,
+        id: 55,
         title: "Edge-Assisted Energy-Aware and Communication-Aware Dynamic Computational Task Offloading Strategy",
         authors: "Dawei Chen and Qi Chen and Rohit Gupta and Kyungtae Han",
         venue: "US Patent Application 18/431,723",
@@ -474,7 +482,7 @@ const publications = [
         type: "patent"
     },
     {
-        id: 55,
+        id: 56,
         title: "Systems and Methods for Personalized Gap Preference Prediction",
         authors: "Amr Abdelraouf and Rohit Gupta and Kyungtae Han and Hazem Abdelkawy and Jakob Knapp",
         venue: "US Patent Application 18/431,230",
@@ -482,7 +490,7 @@ const publications = [
         type: "patent"
     },
     {
-        id: 56,
+        id: 57,
         title: "Systems and Methods for Obtaining Video Analytic Output",
         authors: "Yitao Chen and Dawei Chen and Kyungtae Han",
         venue: "US Patent Application 18/430,242",
@@ -490,7 +498,7 @@ const publications = [
         type: "patent"
     },
     {
-        id: 57,
+        id: 58,
         title: "Systems and Methods for Controlling a Vehicle Using Physiological Data of a Driver of the Vehicle",
         authors: "Rohit Gupta and Amr Abdelraouf and Kyungtae Han and Shili Sheng",
         venue: "US Patent Application 18/424,131",
@@ -498,7 +506,7 @@ const publications = [
         type: "patent"
     },
     {
-        id: 58,
+        id: 59,
         title: "Subconscious Big Picture Macro and Split Second Micro Decisions {ADAS}",
         authors: "Rohit Gupta and Ziran Wang and Kyungtae Han and Prashant Tiwari",
         venue: "US Patent 11878709",
@@ -506,7 +514,7 @@ const publications = [
         type: "patent"
     },
     {
-        id: 59,
+        id: 60,
         title: "Determining a Setting for a Cruise Control",
         authors: "Kyungtae Han and Ziran Wang and Prashant Tiwari and John Lenneman and Esaka Toshinori and Miles Johnson and Chase Violetta",
         venue: "US Patent 11872985",
@@ -514,7 +522,7 @@ const publications = [
         type: "patent"
     },
     {
-        id: 60,
+        id: 61,
         title: "Vehicular Topple Risk notification",
         authors: "Rohit Gupta and Ziran Wang and Yanbing Wang and Kyungtae Han and Prashant Tiwari",
         venue: "US Patent 11869353",
@@ -522,7 +530,7 @@ const publications = [
         type: "patent"
     },
     {
-        id: 61,
+        id: 62,
         title: "Driver Behavior-Aware Cooperative Ramp Merging for Intelligent Vehicles",
         authors: "Xishun Liao and Ziran Wang, Kyungtae Han and Xuanpeng Zhao and Matthew Barth and Guoyuan Wu",
         venue: "De Gruyter (pp. 193-209)",
@@ -530,7 +538,7 @@ const publications = [
         type: "book"
     },
     {
-        id: 62,
+        id: 63,
         title: "Personalized Trajectory Prediction for Driving Behavior Modeling in Ramp-Merging Scenarios",
         authors: "Siyan Li, Chuheng Wei, Xishun Liao, Xuanpeng Zhao, Ziye Qin, Guoyuan Wu, Matthew J. Barth, Amr Abdelraouf, Rohit Gupta, and Kyungtae Han",
         venue: "IEEE International Conference on Robotic Computing (IRC),",
@@ -540,7 +548,7 @@ const publications = [
         url: "https://ieeexplore.ieee.org/document/10473585"
     },
     {
-        id: 63,
+        id: 64,
         title: "Adamap: High-scalable real- time cooperative perception at the edge",
         authors: "Qiang Liu, Yongjie Xue, Yuru Zhang, Dawei Chen, and Kyungtae Han",
         venue: "ACM/IEEE Symposium on Edge Computing (SEC)",
@@ -550,7 +558,7 @@ const publications = [
         url: "https://www.computer.org/csdl/proceedings-article/sec/2023/012300a014/1UlmLjQvl8k"
     },
     {
-        id: 64,
+        id: 65,
         title: "Unveiling energy efficiency in deep learning: Measurement, prediction, and scoring across edge devices",
         authors: "Xiaolong Tu, Anik Mallik, Dawei Chen, Kyungtae Han, Onur Altintas, Haoxin Wang, and Jiang 					Xie",
         venue: "ACM/IEEE Symposium on Edge Computing (SEC)",
@@ -560,7 +568,7 @@ const publications = [
         url: "https://www.computer.org/csdl/proceedings-article/sec/2023/012300a080/1UlmKXGENA4"
     },
     {
-        id: 65,
+        id: 66,
         title: "Poster: Efficient video instance segmentation with early exit. In ACM/IEEE Symposium on Edge Computing",
         authors: "Yitao Chen, Dawei Chen, Kyungtae Han, John Kenney, and Ming Zhao",
         venue: "ACM/IEEE Symposium on Edge Computing (SEC)",
@@ -570,7 +578,7 @@ const publications = [
         url: "https://dl.acm.org/doi/10.1145/3583740.3626630"
     },
     {
-        id: 66,
+        id: 67,
         title: "CEMFormer: Learning to Predict Driver Intentions from In-Cabin and External Cameras via Spatial-Temporal Transformers",
         authors: "Yunsheng Ma, Wenqian Ye, Xu Cao, Amr Abdelraouf, Kyungtae Han, Rohit Gupta, and Ziran Wang",
         venue: "IEEE International Conference on Intelligent Transportation Systems (ITSC)",
@@ -580,7 +588,7 @@ const publications = [
         url: "https://arxiv.org/pdf/2305.07840.pdf"
     },
     {
-        id: 67,
+        id: 68,
         title: "Interaction-Aware Personalized Vehicle Trajectory Prediction Using Temporal Graph Neural Networks",
         authors: "Amr Abdelraouf, Rohit Gupta, and Kyungtae Han",
         venue: "IEEE International Conference on Intelligent Transportation Systems (ITSC)",
@@ -590,7 +598,7 @@ const publications = [
         url: "https://arxiv.org/pdf/2308.07439.pdf"
     },
     {
-        id: 68,
+        id: 69,
         title: "Inverse Reinforcement Learning and Gaussian Process Regression-based Real-time Framework for Personalized Adaptive Cruise Control",
         authors: "Zhouqiao Zhao, Xishun Liao, Amr Abdelraouf, Kyungtae Han, Rohit Gupta, Matthew Barth, and Guoyuan Wu",
         venue: "IEEE International Conference on Intelligent Transportation Systems (ITSC)",
@@ -600,7 +608,7 @@ const publications = [
         url: "publications/23_ITSC/PACC_GP_ON_IRL.pdf"
     },
     {
-        id: 69,
+        id: 70,
         title: "Real-time search-driven content delivery in vehicular networks for AR/VR-enabled autonomous vehicles",
         authors: "Daniel Doe, Dawei Chen, Kyungtae Han, Yanpeng Dai, Linda Xie, and Zhu Han",
         venue: "IEEE/CIC International Conference on Communications in China (ICCC)",
@@ -610,7 +618,7 @@ const publications = [
         url: "https://openaccess.thecvf.com/content/CVPR2023W/AICity/papers/Ma_M2DAR_Multi-View_Multi-Scale_Driver_Action_Recognition_With_Vision_Transformer_CVPRW_2023_paper.pdf"
     },
     {
-        id: 70,
+        id: 71,
         title: "Visualization of mobility digital twin: Framework design, case study, and future challenges",
         authors: "Yueyang Liu, Xiaolong Tu, Dawei Chen, Kyungtae Han, Onur Altinas, and Haoxin Wang",
         venue: "IEEE International Conference on Mobile Ad Hoc and Smart Systems (MASS)",
@@ -620,7 +628,7 @@ const publications = [
         url: "https://openaccess.thecvf.com/content/CVPR2023W/AICity/papers/Ma_M2DAR_Multi-View_Multi-Scale_Driver_Action_Recognition_With_Vision_Transformer_CVPRW_2023_paper.pdf"
     },
     {
-        id: 71,
+        id: 72,
         title: "Real-Time Learning of Driving Gap Preference for Personalized Adaptive Cruise Control",
         authors: "Zhouqiao Zhao, Xishun Liao, Amr Abdelraouf, Kyungtae Han, Rohit Gupta, Guoyuan Wu, and Matthew Barth",
         venue: "IEEE International Conference on Systems, Man, and Cybernetics (SMC)",
@@ -630,7 +638,7 @@ const publications = [
         url: "https://openaccess.thecvf.com/content/CVPR2023W/AICity/papers/Ma_M2DAR_Multi-View_Multi-Scale_Driver_Action_Recognition_With_Vision_Transformer_CVPRW_2023_paper.pdf"
     },
     {
-        id: 72,
+        id: 73,
         title: "M2DAR: Multi-view multi-scale driver action recognition with vision transformer",
         authors: "Yunsheng Ma, Liangqi Yuan, Amr Abdelraouf, Kyungtae Han, Rohit Gupta, Zihao Li, and Ziran Wang",
         venue: "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops",
@@ -640,7 +648,7 @@ const publications = [
         url: "https://openaccess.thecvf.com/content/CVPR2023W/AICity/papers/Ma_M2DAR_Multi-View_Multi-Scale_Driver_Action_Recognition_With_Vision_Transformer_CVPRW_2023_paper.pdf"
     },
     {
-        id: 73,
+        id: 74,
         title: "Driver monitoring-based lane-change prediction: A personalized federated learning framework",
         authors: "Runjia Du, Kyungtae Han, Rohit Gupta, Sikai Chen, Samuel Labi, and Ziran Wan",
         venue: "Intelligent Vehicles Symposium (IV)",
@@ -650,7 +658,7 @@ const publications = [
         url: "https://ieeexplore.ieee.org/document/10186757"
     },
     {
-        id: 74,
+        id: 75,
         title: "Exploring vehicular interaction from trajectories based on granger causality",
         authors: "Xishun Liao, Guoyuan Wu, Matthew J. Barth, Rohit Gupta, and Kyungtae Han",
         venue: "Intelligent Vehicles Symposium (IV)",
@@ -660,7 +668,7 @@ const publications = [
         url: "https://ieeexplore.ieee.org/document/10186803"
     },
     {
-        id: 75,
+        id: 76,
         title: "Confidence-based federated distillation for vision-base lane-centering",
         authors: "Yitao Chen, Dawei Chen, Haoxin Wang, Kyungtae Han, and Ming Zhao",
         venue: "IEEE IEEE International Conference on Acoustics, Speech, Signal Processing (ICASSP) Workshop",
@@ -670,7 +678,7 @@ const publications = [
         url: "publications/23_ICASSP_W/7005.pdf"
     },
     {
-        id: 76,
+        id: 77,
         title: "EPAM: A Predictive Energy Model for Mobile AI",
         authors: "Anik Mallik, Haoxin Wang, Linda Xie, Dawei Chen, and Kyungtae Han",
         venue: "IEEE International Conference on Communications (ICC)",
@@ -680,7 +688,7 @@ const publications = [
         url: "publications/23_ICC/p960-mallik.pdf"
     },
     {
-        id: 77,
+        id: 78,
         title: "High definition map data optimization for autonomous driving in vehicular named data networks",
         authors: "Daniel Doe, Dawei Chen, Haoxin Wang, Kyungtae Han, Linda Xie, and Zhu Han",
         venue: "IEEE International Conference on Communications (ICC)",
@@ -690,7 +698,7 @@ const publications = [
         url: "publications/23_ICC/p4044-doe.pdf"
     },
     {
-        id: 78,
+        id: 79,
         title: "COMAP: Proactive provision for crowdsourcing map in automotive edge computing",
         authors: "Yongjie Xue, Yuru Zhang, Qiang Liu, Dawei Chen, and Kyungtae Han",
         venue: "IEEE International Conference on Communications (ICC)",
@@ -700,7 +708,7 @@ const publications = [
         url: "publications/23_ICC/p3277-xue.pdf"
     },
     {
-        id: 79,
+        id: 80,
         title: "Adaptive delivery for high definition map using a multi-arm bandit approach",
         authors: "Yitao Chen, Dawei Chen, Haoxin Wang, Kyungtae Han, and Ming Zhao",
         venue: "Wireless and Optical Communications Conference (WOCC)",
@@ -710,7 +718,7 @@ const publications = [
         url: "publications/23_WOCC/A_Multi_Arm_Bandit_Approach_for_Adaptive_HD_Map.pdf"
     },
     {
-        id: 80,
+        id: 81,
         title: "Driver Digital Twin for Online Prediction of Personalized Lane Change Behavior and Field Implementation",
         authors: "Xuanpeng Zhao, Ziran Wang, Zhouqiao Zhao, Kyungtae Han, Rohit Gupta, Matthew J Barth, and 					Guoyuan Wu",
         venue: "Transportation Research Board (TRB) 2023 Annual Meeting",
@@ -718,7 +726,7 @@ const publications = [
         type: "conference"
     },
     {
-        id: 81,
+        id: 82,
         title: "DSORL: Data Source Optimization with Reinforcement Learning Scheme for Vehicular Named Data Networks",
         authors: "Doe, Daniel and Chen, Dawei and Han, Kyungtae and Wang, Haoxin and Xie, Jiang and Han, Zhu",
         venue: "IEEE Transactions on Intelligent Transportation Systems (Vol. 24, No. 10, pp. 11225-11237)",
@@ -728,7 +736,7 @@ const publications = [
         url: "https://ieeexplore.ieee.org/document/10201378"
     },
     {
-        id: 82,
+        id: 83,
         title: "Driver Digital Twin for Online Prediction of Personalized Lane-Change Behavior",
         authors: "Xishun Liao and Xuanpeng Zhao and Ziran Wang and Zhouqiao Zhao and Kyungtae Han and Rohit Gupta and Matthew J. Barth and Guoyuan Wu",
         venue: "IEEE Internet of Things Journal (Vol. 10, No. 15, pp. 13235-13246)",
@@ -738,7 +746,7 @@ const publications = [
         url: "https://arxiv.org/abs/2211.01294"
     },
     {
-        id: 83,
+        id: 84,
         title: "Metamobility: Connecting Future Mobility with Metaverse",
         authors: "Wang, Haoxin and Wang, Ziran and Chen, Dawei and Liu, Qiang and Ke, Hongyu and Han, Kyungtae",
         venue: "IEEE Vehicular Technology Magazine  (Vol. 18, No. 3, pp. 69-79)",
@@ -748,7 +756,7 @@ const publications = [
         url: "https://arxiv.org/abs/2301.06991"
     },
     {
-        id: 84,
+        id: 85,
         title: "Systems and Methods for Protecting a Vehicle at an Intersection",
         authors: "Rohit Gupta and Ziran Wang and Yanging Wang and Kyungtae Han and Prashant Tiwari",
         venue: "US Patent 11851063",
@@ -756,7 +764,7 @@ const publications = [
         type: "patent"
     },
     {
-        id: 85,
+        id: 86,
         title: "System and Method for Estimating Motion of an Automated Vehicle for Cooperative Driving",
         authors: "Ziran Wang and Kyungtae Han and Prashant Tiwari",
         venue: "US Patent 11827245",
@@ -764,7 +772,7 @@ const publications = [
         type: "patent"
     },
     {
-        id: 86,
+        id: 87,
         title: "Systems and Methods for Estimating Remaining Range of a Vehicle",
         authors: "Dawei Chen and Qi Chen and Kyungtae Han",
         venue: "US Patent Application 18/491,290",
@@ -772,7 +780,7 @@ const publications = [
         type: "patent"
     },
     {
-        id: 87,
+        id: 88,
         title: "Systems and Methods for Personalizing Adaptive Cruise Control in a Vehicle",
         authors: "Yanbing Wang and Ziran Wang and Kyungtae Han and Rohit Gupta and Prashant Tiwari",
         venue: "US Patent 11787404",
@@ -780,7 +788,7 @@ const publications = [
         type: "patent"
     },
     {
-        id: 88,
+        id: 89,
         title: "Driver Classification Systems and Methods for Obtaining an Insurance Rate for a Vehicle",
         authors: "Rohit Gupta and Ziran Wang and Kyungtae Han and Prashant Tiwari",
         venue: "US Patent 11776064",
@@ -788,7 +796,7 @@ const publications = [
         type: "patent"
     },
     {
-        id: 89,
+        id: 90,
         title: "Methods and Systems for Collision Control of Moving Vehicles Surrounded By Vehicles",
         authors: "Rohit Gupta and Amr Abdelraouf and Kyungtae Han",
         venue: "US Patent Application 18/455,020",
@@ -796,7 +804,7 @@ const publications = [
         type: "patent"
     },
     {
-        id: 90,
+        id: 91,
         title: "Personalized Takeover Prediction with Driver Tactile Inputs",
         authors: "Ziran Wang and Rohit Gupta and Kyungtae Han and Runjia Du",
         venue: "US Patent Application 18/363,671",
@@ -804,7 +812,7 @@ const publications = [
         type: "patent"
     },
     {
-        id: 91,
+        id: 92,
         title: "Systems and Methods for Efficient Video Instance Segmentation for Vehicles Using Edge",
         authors: "Yitao Chen and Dawei Chen and Kyungtae Han",
         venue: "US Patent Application 18/227,453",
@@ -812,7 +820,7 @@ const publications = [
         type: "patent"
     },
     {
-        id: 92,
+        id: 93,
         title: "Systems and Methods to Reduce Audio Distraction for a Vehicle Driver",
         authors: "Rohit Gupta and Ziran Wang and Kyungtae Han and Prashant Tiwari",
         venue: "US Patent 11705141",
@@ -820,7 +828,7 @@ const publications = [
         type: "patent"
     },
     {
-        id: 93,
+        id: 94,
         title: "Vehicle-to-everything Communication-based Lane Change Collision Avoidance Warning",
         authors: "Ziran Wang and Kyungtae Han and BaekGyu Kim",
         venue: "US Patent 11697410",
@@ -828,7 +836,7 @@ const publications = [
         type: "patent"
     },
     {
-        id: 94,
+        id: 95,
         title: "Vehicular Modifications Based on Occupant Health",
         authors: "Rohit Gupta and Hideki Hada and Kyungtae Han",
         venue: "US Patent Application 18/217,505",
@@ -836,7 +844,7 @@ const publications = [
         type: "patent"
     },
     {
-        id: 95,
+        id: 96,
         title: "System and Method for Scheduling Connected Vehicles to Cross Non-Signalized Intersections",
         authors: "Ziran Wang and Kyungtae Han and Prashant Tiwari",
         venue: "US Patent 11661088",
@@ -844,18 +852,10 @@ const publications = [
         type: "patent"
     },
     {
-        id: 96,
+        id: 97,
         title: "Producing, For An Autonomous Vehicle, A Route From An Origination To A Destination",
         authors: "Ziran Wang and Kyungtae Han and Prashant Tiwari",
         venue: "US Patent 11634163",
-        year: 2023,
-        type: "patent"
-    },
-    {
-        id: 97,
-        title: "Omnidirectional Collision Avoidance",
-        authors: "Amr Abdelraouf and Rohit Gupta and Hazem Abdelkawy and Kyungtae Han",
-        venue: "US Patent Application 18/137,959",
         year: 2023,
         type: "patent"
     },
