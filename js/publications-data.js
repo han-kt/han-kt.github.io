@@ -1,5 +1,5 @@
 // Modern Academic Homepage JavaScript
-// Generated on 2025-07-31 10:41:30
+// Generated on 2025-07-31 23:57:53
 // Total publications: 192
 // Breakdown: 69 conferences, 19 journals, 102 patents
 
@@ -106,6 +106,8 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
+        url: "https://patents.google.com/patent/US12337867B2/en"
+,
         patent_number: "12337867"
 ,
         patent_type: "granted"
@@ -114,12 +116,14 @@ const publications = [
         id: 10,
         title: "Personalized Speed Limiter",
         authors: "Rohit Gupta and Ziran Wang and Runjia Du and Kyungtae Han",
-        venue: "US Patent 12337859B2",
+        venue: "US Patent 123378592",
         year: 2025,
         type: "patent",
         type_label: "Patent"
 ,
-        patent_number: "12337859B2"
+        url: "https://patents.google.com/patent/US12337859B2/en"
+,
+        patent_number: "123378592"
 ,
         patent_type: "granted"
     },
@@ -131,6 +135,8 @@ const publications = [
         year: 2025,
         type: "patent",
         type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US19174032A1/en"
 ,
         application_number: "19/174,032"
 ,
@@ -145,6 +151,8 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
+        url: "https://patents.google.com/patent/US12263869B2/en"
+,
         patent_number: "12263869"
 ,
         patent_type: "granted"
@@ -157,6 +165,8 @@ const publications = [
         year: 2025,
         type: "patent",
         type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US19055566A1/en"
 ,
         application_number: "19/055,566"
 ,
@@ -171,6 +181,8 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
+        url: "https://patents.google.com/patent/US12187279B2/en"
+,
         patent_number: "12187279"
 ,
         patent_type: "granted"
@@ -183,6 +195,8 @@ const publications = [
         year: 2025,
         type: "patent",
         type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US12361829B2/en"
 ,
         patent_number: "12361829"
 ,
@@ -335,6 +349,8 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
+        url: "https://patents.google.com/patent/US19004333A1/en"
+,
         application_number: "19/004,333"
 ,
         patent_type: "application"
@@ -347,6 +363,8 @@ const publications = [
         year: 2024,
         type: "patent",
         type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US19004331A1/en"
 ,
         application_number: "19/004,331"
 ,
@@ -361,6 +379,8 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
+        url: "https://patents.google.com/patent/US18988587A1/en"
+,
         application_number: "18/988,587"
 ,
         patent_type: "application"
@@ -373,6 +393,8 @@ const publications = [
         year: 2024,
         type: "patent",
         type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US18977280A1/en"
 ,
         application_number: "18/977,280"
 ,
@@ -387,6 +409,8 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
+        url: "https://patents.google.com/patent/US18977353A1/en"
+,
         application_number: "18/977,353"
 ,
         patent_type: "application"
@@ -399,6 +423,8 @@ const publications = [
         year: 2024,
         type: "patent",
         type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US18964886A1/en"
 ,
         application_number: "18/964,886"
 ,
@@ -413,6 +439,8 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
+        url: "https://patents.google.com/patent/US18944774A1/en"
+,
         application_number: "18/944,774"
 ,
         patent_type: "application"
@@ -425,6 +453,8 @@ const publications = [
         year: 2024,
         type: "patent",
         type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US12091006B2/en"
 ,
         patent_number: "12091006"
 ,
@@ -439,6 +469,8 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
+        url: "https://patents.google.com/patent/US18883664A1/en"
+,
         application_number: "18/883,664"
 ,
         patent_type: "application"
@@ -451,6 +483,8 @@ const publications = [
         year: 2024,
         type: "patent",
         type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US12083883B2/en"
 ,
         patent_number: "12083883"
 ,
@@ -465,6 +499,8 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
+        url: "https://patents.google.com/patent/US18825745A1/en"
+,
         application_number: "18/825,745"
 ,
         patent_type: "application"
@@ -477,6 +513,8 @@ const publications = [
         year: 2024,
         type: "patent",
         type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US12080080B2/en"
 ,
         patent_number: "12080080"
 ,
@@ -491,6 +529,8 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
+        url: "https://patents.google.com/patent/US12071141B2/en"
+,
         patent_number: "12071141"
 ,
         patent_type: "granted"
@@ -499,12 +539,14 @@ const publications = [
         id: 41,
         title: "Rest Stop Recommendation System",
         authors: "Zhenyu Shou and Ziran Wang and Kyungtae Han and Yongkang Liu and Prashant Tiwari",
-        venue: "US Patent 12073332A",
+        venue: "US Patent 12073332",
         year: 2024,
         type: "patent",
         type_label: "Patent"
 ,
-        patent_number: "12073332A"
+        url: "https://patents.google.com/patent/US12073332A/en"
+,
+        patent_number: "12073332"
 ,
         patent_type: "granted"
     },
@@ -516,6 +558,8 @@ const publications = [
         year: 2024,
         type: "patent",
         type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US18818052A1/en"
 ,
         application_number: "18/818,052"
 ,
@@ -530,6 +574,8 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
+        url: "https://patents.google.com/patent/US18809564A1/en"
+,
         application_number: "18/809,564"
 ,
         patent_type: "application"
@@ -542,6 +588,8 @@ const publications = [
         year: 2024,
         type: "patent",
         type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US18793646A1/en"
 ,
         application_number: "18/793,646"
 ,
@@ -556,6 +604,8 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
+        url: "https://patents.google.com/patent/US12036987B2/en"
+,
         patent_number: "12036987"
 ,
         patent_type: "granted"
@@ -568,6 +618,8 @@ const publications = [
         year: 2024,
         type: "patent",
         type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US18664946A1/en"
 ,
         application_number: "18/664,946"
 ,
@@ -582,6 +634,8 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
+        url: "https://patents.google.com/patent/US11948453B2/en"
+,
         patent_number: "11948453"
 ,
         patent_type: "granted"
@@ -594,6 +648,8 @@ const publications = [
         year: 2024,
         type: "patent",
         type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US18613323A1/en"
 ,
         application_number: "18/613,323"
 ,
@@ -608,6 +664,8 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
+        url: "https://patents.google.com/patent/US11926322B2/en"
+,
         patent_number: "11926322"
 ,
         patent_type: "granted"
@@ -620,6 +678,8 @@ const publications = [
         year: 2024,
         type: "patent",
         type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US11904855B2/en"
 ,
         patent_number: "11904855"
 ,
@@ -634,6 +694,8 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
+        url: "https://patents.google.com/patent/US18438129A1/en"
+,
         application_number: "18/438,129"
 ,
         patent_type: "application"
@@ -646,6 +708,8 @@ const publications = [
         year: 2024,
         type: "patent",
         type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US18437060A1/en"
 ,
         application_number: "18/437,060"
 ,
@@ -660,6 +724,8 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
+        url: "https://patents.google.com/patent/US18433759A1/en"
+,
         application_number: "18/433,759"
 ,
         patent_type: "application"
@@ -672,6 +738,8 @@ const publications = [
         year: 2024,
         type: "patent",
         type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US18432307A1/en"
 ,
         application_number: "18/432,307"
 ,
@@ -686,6 +754,8 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
+        url: "https://patents.google.com/patent/US18431723A1/en"
+,
         application_number: "18/431,723"
 ,
         patent_type: "application"
@@ -698,6 +768,8 @@ const publications = [
         year: 2024,
         type: "patent",
         type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US18431230A1/en"
 ,
         application_number: "18/431,230"
 ,
@@ -712,6 +784,8 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
+        url: "https://patents.google.com/patent/US18430242A1/en"
+,
         application_number: "18/430,242"
 ,
         patent_type: "application"
@@ -724,6 +798,8 @@ const publications = [
         year: 2024,
         type: "patent",
         type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US18424131A1/en"
 ,
         application_number: "18/424,131"
 ,
@@ -738,6 +814,8 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
+        url: "https://patents.google.com/patent/US11878709B2/en"
+,
         patent_number: "11878709"
 ,
         patent_type: "granted"
@@ -750,6 +828,8 @@ const publications = [
         year: 2024,
         type: "patent",
         type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US11872985B2/en"
 ,
         patent_number: "11872985"
 ,
@@ -764,6 +844,8 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
+        url: "https://patents.google.com/patent/US11869353B2/en"
+,
         patent_number: "11869353"
 ,
         patent_type: "granted"
@@ -776,6 +858,8 @@ const publications = [
         year: 2023,
         type: "book",
         type_label: "Book"
+,
+        pdf: "books/DriverBehavior-AwareCooperativeRampMergingforIntelligentVehicles.pdf"
     },
     {
         id: 63,
@@ -1032,6 +1116,8 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
+        url: "https://patents.google.com/patent/US11851063B2/en"
+,
         patent_number: "11851063"
 ,
         patent_type: "granted"
@@ -1044,6 +1130,8 @@ const publications = [
         year: 2023,
         type: "patent",
         type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US11827245B2/en"
 ,
         patent_number: "11827245"
 ,
@@ -1058,6 +1146,8 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
+        url: "https://patents.google.com/patent/US18491290A1/en"
+,
         application_number: "18/491,290"
 ,
         patent_type: "application"
@@ -1070,6 +1160,8 @@ const publications = [
         year: 2023,
         type: "patent",
         type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US11787404B2/en"
 ,
         patent_number: "11787404"
 ,
@@ -1084,6 +1176,8 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
+        url: "https://patents.google.com/patent/US11776064B2/en"
+,
         patent_number: "11776064"
 ,
         patent_type: "granted"
@@ -1096,6 +1190,8 @@ const publications = [
         year: 2023,
         type: "patent",
         type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US18455020A1/en"
 ,
         application_number: "18/455,020"
 ,
@@ -1110,6 +1206,8 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
+        url: "https://patents.google.com/patent/US18363671A1/en"
+,
         application_number: "18/363,671"
 ,
         patent_type: "application"
@@ -1122,6 +1220,8 @@ const publications = [
         year: 2023,
         type: "patent",
         type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US18227453A1/en"
 ,
         application_number: "18/227,453"
 ,
@@ -1136,6 +1236,8 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
+        url: "https://patents.google.com/patent/US11705141B2/en"
+,
         patent_number: "11705141"
 ,
         patent_type: "granted"
@@ -1148,6 +1250,8 @@ const publications = [
         year: 2023,
         type: "patent",
         type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US11697410B2/en"
 ,
         patent_number: "11697410"
 ,
@@ -1162,6 +1266,8 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
+        url: "https://patents.google.com/patent/US18217505A1/en"
+,
         application_number: "18/217,505"
 ,
         patent_type: "application"
@@ -1174,6 +1280,8 @@ const publications = [
         year: 2023,
         type: "patent",
         type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US11661088B2/en"
 ,
         patent_number: "11661088"
 ,
@@ -1188,6 +1296,8 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
+        url: "https://patents.google.com/patent/US11634163B2/en"
+,
         patent_number: "11634163"
 ,
         patent_type: "granted"
@@ -1200,6 +1310,8 @@ const publications = [
         year: 2023,
         type: "patent",
         type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US18299111A1/en"
 ,
         application_number: "18/299,111"
 ,
@@ -1214,6 +1326,8 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
+        url: "https://patents.google.com/patent/US18191902A1/en"
+,
         application_number: "18/191,902"
 ,
         patent_type: "application"
@@ -1226,6 +1340,8 @@ const publications = [
         year: 2023,
         type: "patent",
         type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US18190178A1/en"
 ,
         application_number: "18/190,178"
 ,
@@ -1240,6 +1356,8 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
+        url: "https://patents.google.com/patent/US18185397A1/en"
+,
         application_number: "18/185,397"
 ,
         patent_type: "application"
@@ -1252,6 +1370,8 @@ const publications = [
         year: 2023,
         type: "patent",
         type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US18185384A1/en"
 ,
         application_number: "18/185,384"
 ,
@@ -1266,6 +1386,8 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
+        url: "https://patents.google.com/patent/US11597388B2/en"
+,
         patent_number: "11597388"
 ,
         patent_type: "granted"
@@ -1279,6 +1401,8 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
+        url: "https://patents.google.com/patent/US18173867A1/en"
+,
         application_number: "18/173,867"
 ,
         patent_type: "application"
@@ -1291,6 +1415,8 @@ const publications = [
         year: 2023,
         type: "patent",
         type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US18108553A1/en"
 ,
         application_number: "18/108,553"
 ,
@@ -1306,6 +1432,8 @@ const publications = [
         type_label: "Conference"
 ,
         url: "https://ieeexplore.ieee.org/document/9996947"
+,
+        pdf: "publications/22_SEC/Poster_Enabling_High-Fidelity_and_Real-Time_Mobility_Digital_Twin_with_Edge_Computing.pdf"
     },
     {
         id: 107,
@@ -1453,6 +1581,8 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
+        url: "https://patents.google.com/patent/US18073839A1/en"
+,
         application_number: "18/073,839"
 ,
         patent_type: "application"
@@ -1465,6 +1595,8 @@ const publications = [
         year: 2022,
         type: "patent",
         type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US17992364A1/en"
 ,
         application_number: "17/992,364"
 ,
@@ -1479,6 +1611,8 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
+        url: "https://patents.google.com/patent/US17992026A1/en"
+,
         application_number: "17/992,026"
 ,
         patent_type: "application"
@@ -1491,6 +1625,8 @@ const publications = [
         year: 2022,
         type: "patent",
         type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US17965138A1/en"
 ,
         application_number: "17/965,138"
 ,
@@ -1505,6 +1641,8 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
+        url: "https://patents.google.com/patent/US17936459A1/en"
+,
         application_number: "17/936,459"
 ,
         patent_type: "application"
@@ -1517,6 +1655,8 @@ const publications = [
         year: 2022,
         type: "patent",
         type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US11433923B2/en"
 ,
         patent_number: "11433923"
 ,
@@ -1531,6 +1671,8 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
+        url: "https://patents.google.com/patent/US17896396A1/en"
+,
         application_number: "17/896,396"
 ,
         patent_type: "application"
@@ -1543,6 +1685,8 @@ const publications = [
         year: 2022,
         type: "patent",
         type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US17877104A1/en"
 ,
         application_number: "17/877,104"
 ,
@@ -1557,6 +1701,8 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
+        url: "https://patents.google.com/patent/US11398156B2/en"
+,
         patent_number: "11398156"
 ,
         patent_type: "granted"
@@ -1569,6 +1715,8 @@ const publications = [
         year: 2022,
         type: "patent",
         type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US17872469A1/en"
 ,
         application_number: "17/872,469"
 ,
@@ -1583,6 +1731,8 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
+        url: "https://patents.google.com/patent/US17744452A1/en"
+,
         application_number: "17/744,452"
 ,
         patent_type: "application"
@@ -1595,6 +1745,8 @@ const publications = [
         year: 2022,
         type: "patent",
         type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US11328605B2/en"
 ,
         patent_number: "11328605"
 ,
@@ -1609,6 +1761,8 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
+        url: "https://patents.google.com/patent/US11315421B2/en"
+,
         patent_number: "11315421"
 ,
         patent_type: "granted"
@@ -1621,6 +1775,8 @@ const publications = [
         year: 2022,
         type: "patent",
         type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US17715011A1/en"
 ,
         application_number: "17/715,011"
 ,
@@ -1635,6 +1791,8 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
+        url: "https://patents.google.com/patent/US11284234B2/en"
+,
         patent_number: "11284234"
 ,
         patent_type: "granted"
@@ -1647,6 +1805,8 @@ const publications = [
         year: 2022,
         type: "patent",
         type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US11257363B2/en"
 ,
         patent_number: "11257363"
 ,
@@ -1661,6 +1821,8 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
+        url: "https://patents.google.com/patent/US17586593A1/en"
+,
         application_number: "17/586,593"
 ,
         patent_type: "application"
@@ -1673,6 +1835,8 @@ const publications = [
         year: 2022,
         type: "patent",
         type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US11234160B2/en"
 ,
         patent_number: "11234160"
 ,
@@ -1687,6 +1851,8 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
+        url: "https://patents.google.com/patent/US17578330A1/en"
+,
         application_number: "17/578,330"
 ,
         patent_type: "application"
@@ -1699,6 +1865,8 @@ const publications = [
         year: 2022,
         type: "patent",
         type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US11222215B2/en"
 ,
         patent_number: "11222215"
 ,
@@ -1713,6 +1881,8 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
+        url: "https://patents.google.com/patent/US17572486A1/en"
+,
         application_number: "17/572,486"
 ,
         patent_type: "application"
@@ -1725,6 +1895,8 @@ const publications = [
         year: 2022,
         type: "patent",
         type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US11214253B2/en"
 ,
         patent_number: "11214253"
 ,
@@ -1741,6 +1913,8 @@ const publications = [
 ,
         url: "https://www.researchgate.net/publication/351589066_Digital_Twin_Simulation_of_Connected_and_Automated_Vehicles_with_the_Unity_Game_Engine?"
 ,
+        pdf: "publications/21_DTPI/Digital_Twin_DTPI2021.pdf"
+,
         note: "Best Application Award"
     },
     {
@@ -1753,6 +1927,8 @@ const publications = [
         type_label: "Conference"
 ,
         url: "https://www.google.com/url?q=https%3A%2F%2Fwww.researchgate.net%2Fpublication%2F355638783_Personalized_Adaptive_Cruise_Control_via_Gaussian_Process_Regression&amp;sa=D&amp;sntz=1&amp;usg=AOvVaw3VfoKwUSBnwOf-3cKftfQV"
+,
+        pdf: "publications/21_ITSC/ITSC_Published.pdf"
     },
     {
         id: 142,
@@ -1764,6 +1940,8 @@ const publications = [
         type_label: "Conference"
 ,
         url: "https://www.google.com/url?q=https%3A%2F%2Fwww.researchgate.net%2Fpublication%2F348136366_Trust-Based_Route_Planning_for_Automated_Vehicles&amp;sa=D&amp;sntz=1&amp;usg=AOvVaw3-ycwWhxq-0Dd_XUaLe8kN"
+,
+        pdf: "publications/21_ICCPS/Trust_Based_Route_Planning_for_Automated.pdf"
     },
     {
         id: 143,
@@ -1786,6 +1964,8 @@ const publications = [
         type_label: "Conference"
 ,
         url: "https://www.google.com/url?q=https%3A%2F%2Fwww.researchgate.net%2Fpublication%2F348430322_Motion_Estimation_of_Connected_and_Automated_Vehicles_under_Communication_Delay_and_Packet_Loss_of_V2X_Communications&amp;sa=D&amp;sntz=1&amp;usg=AOvVaw2PC9CSYR_cFbVIoSCxf7Qa"
+,
+        pdf: "publications/21_SAE_WC/2021-01-0107.pdf"
     },
     {
         id: 145,
@@ -1809,6 +1989,8 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
+        url: "https://patents.google.com/patent/US11151880B2/en"
+,
         patent_number: "11151880"
 ,
         patent_type: "granted"
@@ -1821,6 +2003,8 @@ const publications = [
         year: 2021,
         type: "patent",
         type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US11087623B2/en"
 ,
         patent_number: "11087623"
 ,
@@ -1835,6 +2019,8 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
+        url: "https://patents.google.com/patent/US17217358A1/en"
+,
         application_number: "17/217,358"
 ,
         patent_type: "application"
@@ -1847,6 +2033,8 @@ const publications = [
         year: 2021,
         type: "patent",
         type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US17206706A1/en"
 ,
         application_number: "17/206,706"
 ,
@@ -1861,6 +2049,8 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
+        url: "https://patents.google.com/patent/US10932135B2/en"
+,
         patent_number: "10932135"
 ,
         patent_type: "granted"
@@ -1873,6 +2063,8 @@ const publications = [
         year: 2021,
         type: "patent",
         type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US10893555B2/en"
 ,
         patent_number: "10893555"
 ,
@@ -1888,6 +2080,8 @@ const publications = [
         type_label: "Conference"
 ,
         url: "https://www.researchgate.net/publication/343808584_Augmented_Reality-Based_Advanced_Driver-Assistance_System_for_Connected_Vehicles"
+,
+        pdf: "publications/20_SMC/SMC20_Published.pdf"
     },
     {
         id: 153,
@@ -1910,6 +2104,8 @@ const publications = [
         type_label: "Conference"
 ,
         url: "https://www.researchgate.net/publication/342282219_Long-Term_Prediction_of_Lane_Change_Maneuver_Through_a_Multilayer_Perceptron"
+,
+        pdf: "publications/20_IV/IV2020_0517_FI-2.pdf"
     },
     {
         id: 155,
@@ -1921,6 +2117,8 @@ const publications = [
         type_label: "Conference"
 ,
         url: "https://www.researchgate.net/publication/342787214_Sensor_Fusion_of_Camera_and_Cloud_Digital_Twin_Information_for_Intelligent_Vehicles"
+,
+        pdf: "publications/20_IV/IV2020_0516_FI.pdf"
     },
     {
         id: 156,
@@ -1932,6 +2130,8 @@ const publications = [
         type_label: "Conference"
 ,
         url: "https://www.researchgate.net/publication/338608141_A_Digital_Twin_Paradigm_Vehicle-to-Cloud_Based_Advanced_Driver_Assistance_Systems"
+,
+        pdf: "publications/20_VTC_Spring/VTC_Digital_Twin_Published.pdf"
     },
     {
         id: 157,
@@ -2053,6 +2253,8 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
+        url: "https://patents.google.com/patent/US9269121B2/en"
+,
         patent_number: "9269121"
 ,
         patent_type: "granted"
@@ -2065,6 +2267,8 @@ const publications = [
         year: 2016,
         type: "patent",
         type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US9244551B2/en"
 ,
         patent_number: "9244551"
 ,
@@ -2118,6 +2322,8 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
+        url: "https://patents.google.com/patent/US9177534B2/en"
+,
         patent_number: "9177534"
 ,
         patent_type: "granted"
@@ -2130,6 +2336,8 @@ const publications = [
         year: 2015,
         type: "patent",
         type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US9058422B2/en"
 ,
         patent_number: "9058422"
 ,
@@ -2144,6 +2352,8 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
+        url: "https://patents.google.com/patent/US9030482B2/en"
+,
         patent_number: "9030482"
 ,
         patent_type: "granted"
@@ -2157,6 +2367,8 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
+        url: "https://patents.google.com/patent/US8643658B2/en"
+,
         patent_number: "8643658"
 ,
         patent_type: "granted"
@@ -2169,6 +2381,8 @@ const publications = [
         year: 2014,
         type: "patent",
         type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US8643658B2/en"
 ,
         patent_number: "8643658"
 ,
@@ -2196,6 +2410,8 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
+        url: "https://patents.google.com/patent/US8525844B2/en"
+,
         patent_number: "8525844"
 ,
         patent_type: "granted"
@@ -2208,6 +2424,8 @@ const publications = [
         year: 2012,
         type: "patent",
         type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US8290439B2/en"
 ,
         patent_number: "8290439"
 ,
@@ -2222,6 +2440,8 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
+        url: "https://patents.google.com/patent/US7734434B2/en"
+,
         patent_number: "7734434"
 ,
         patent_type: "granted"
@@ -2234,6 +2454,8 @@ const publications = [
         year: 2009,
         type: "book",
         type_label: "Book"
+,
+        pdf: "books/kt_book_fl2fx.pdf"
     },
     {
         id: 181,
@@ -2267,6 +2489,8 @@ const publications = [
         year: 2007,
         type: "patent",
         type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US7194018B2/en"
 ,
         patent_number: "7194018"
 ,
@@ -2306,6 +2530,8 @@ const publications = [
         year: 2006,
         type: "patent",
         type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US7127012B2/en"
 ,
         patent_number: "7127012"
 ,
@@ -2360,6 +2586,8 @@ const publications = [
         type_label: "Conference"
 ,
         url: "https://www.researchgate.net/publication/3896104_Numerical_word-length_optimization_for_CDMA_demodulator"
+,
+        pdf: "publications/01_ISCAS/iscas2001.pdf"
     },
     {
         id: 191,
