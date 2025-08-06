@@ -227,17 +227,17 @@ function renderPublications() {
         }
         
         if (pub.venue.includes('IEEE Transactions on Intelligent Vehicles')) {
-            venueAbbr = 'IEEE T-IV';
+            venueAbbr = 'IEEE Transactions on Intelligent Vehicles (T-IV)';
         } else if (pub.venue.includes('IEEE Transactions on Intelligent Transportation Systems')) {
-            venueAbbr = 'IEEE T-ITS';
+            venueAbbr = 'IEEE Transactions on Intelligent Transportation Systems (T-ITS)';
         } else if (pub.venue.includes('IEEE Internet of Things Journal')) {
-            venueAbbr = 'IEEE IoT-J';
+            venueAbbr = 'IEEE Internet of Things Journal (IoT-J)';
         } else if (pub.venue.includes('IEEE Transactions on Vehicular Technology')) {
-            venueAbbr = 'IEEE TVT';
+            venueAbbr = 'IEEE Transactions on Vehicular Technology (TVT)';
         } else if (pub.venue.includes('IEEE Intelligent Vehicles Symposium')) {
-            venueAbbr = 'IEEE IV';
+            venueAbbr = 'IEEE Intelligent Vehicles Symposium (IV)';
         } else if (pub.venue.includes('IEEE International Conference on Intelligent Transportation Systems')) {
-            venueAbbr = 'IEEE ITSC';
+            venueAbbr = 'IEEE International Conference on Intelligent Transportation Systems (ITSC)';
         } else if (pub.venue.includes('US Patent Application')) {
             venueAbbr = pub.venue; // Keep full patent application number
         } else if (pub.venue.includes('US Patent')) {
