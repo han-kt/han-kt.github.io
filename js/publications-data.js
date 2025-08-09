@@ -1,7 +1,7 @@
 // Modern Academic Homepage JavaScript
-// Generated on 2025-08-05 18:24:30
-// Total publications: 192
-// Breakdown: 69 conferences, 19 journals, 102 patents
+// Generated on 2025-08-09 14:51:40
+// Total publications: 194
+// Breakdown: 66 conferences, 5 presentations, 19 journals, 102 patents
 
 // Comprehensive publications data from YAML files
 const publications = [
@@ -54,6 +54,10 @@ const publications = [
         year: 2025,
         type: "conference",
         type_label: "Conference"
+,
+        url: "https://arxiv.org/abs/2508.00384"
+,
+        pdf: "https://arxiv.org/pdf/2508.00384v1"
 ,
         note: "Accepted"
     },
@@ -333,6 +337,8 @@ const publications = [
         type_label: "Journal"
 ,
         url: "https://ieeexplore.ieee.org/document/10591381"
+,
+        pdf: "publications/24_TIV/Liao2024TIV.pdf"
     },
     {
         id: 26,
@@ -1083,15 +1089,6 @@ const publications = [
     },
     {
         id: 81,
-        title: "Driver Digital Twin for Online Prediction of Personalized Lane Change Behavior and Field Implementation",
-        authors: "Xuanpeng Zhao, Ziran Wang, Zhouqiao Zhao, Kyungtae Han, Rohit Gupta, Matthew J Barth, and Guoyuan Wu",
-        venue: "Transportation Research Board (TRB) 2023 Annual Meeting",
-        year: 2023,
-        type: "conference",
-        type_label: "Conference"
-    },
-    {
-        id: 82,
         title: "DSORL: Data Source Optimization with Reinforcement Learning Scheme for Vehicular Named Data Networks",
         authors: "Daniel Doe, Dawei Chen, Kyungtae Han, Haoxin Wang, Jiang Xie, and Zhu Han",
         venue: "IEEE Transactions on Intelligent Transportation Systems (Vol. 24, No. 10, pp. 11225-11237)",
@@ -1104,7 +1101,7 @@ const publications = [
         pdf: "assets/publications/23_TITS/2023_DSORL.pdf"
     },
     {
-        id: 83,
+        id: 82,
         title: "Driver Digital Twin for Online Prediction of Personalized Lane-Change Behavior",
         authors: "Xishun Liao, Xuanpeng Zhao, Ziran Wang, Zhouqiao Zhao, Kyungtae Han, Rohit Gupta, Matthew J. Barth, and Guoyuan Wu",
         venue: "IEEE Internet of Things Journal (Vol. 10, No. 15, pp. 13235-13246)",
@@ -1117,7 +1114,7 @@ const publications = [
         pdf: "https://arxiv.org/pdf/2211.01294.pdf"
     },
     {
-        id: 84,
+        id: 83,
         title: "Metamobility: Connecting Future Mobility with Metaverse",
         authors: "Haoxin Wang, Ziran Wang, Dawei Chen, Qiang Liu, Hongyu Ke, and Kyungtae Han",
         venue: "IEEE Vehicular Technology Magazine  (Vol. 18, No. 3, pp. 69-79)",
@@ -1130,7 +1127,7 @@ const publications = [
         pdf: "https://arxiv.org/pdf/2301.06991.pdf"
     },
     {
-        id: 85,
+        id: 84,
         title: "Systems and Methods for Protecting a Vehicle at an Intersection",
         authors: "Rohit Gupta, Ziran Wang, Yanging Wang, Kyungtae Han, and Prashant Tiwari",
         venue: "US Patent 11851063",
@@ -1145,7 +1142,7 @@ const publications = [
         patent_type: "granted"
     },
     {
-        id: 86,
+        id: 85,
         title: "System and Method for Estimating Motion of an Automated Vehicle for Cooperative Driving",
         authors: "Ziran Wang, Kyungtae Han, and Prashant Tiwari",
         venue: "US Patent 11827245",
@@ -1160,7 +1157,7 @@ const publications = [
         patent_type: "granted"
     },
     {
-        id: 87,
+        id: 86,
         title: "Systems and Methods for Estimating Remaining Range of a Vehicle",
         authors: "Dawei Chen, Qi Chen, and Kyungtae Han",
         venue: "US Patent Application 18/491,290",
@@ -1175,7 +1172,7 @@ const publications = [
         patent_type: "application"
     },
     {
-        id: 88,
+        id: 87,
         title: "Systems and Methods for Personalizing Adaptive Cruise Control in a Vehicle",
         authors: "Yanbing Wang, Ziran Wang, Kyungtae Han, Rohit Gupta, and Prashant Tiwari",
         venue: "US Patent 11787404",
@@ -1190,7 +1187,7 @@ const publications = [
         patent_type: "granted"
     },
     {
-        id: 89,
+        id: 88,
         title: "Driver Classification Systems and Methods for Obtaining an Insurance Rate for a Vehicle",
         authors: "Rohit Gupta, Ziran Wang, Kyungtae Han, and Prashant Tiwari",
         venue: "US Patent 11776064",
@@ -1205,7 +1202,7 @@ const publications = [
         patent_type: "granted"
     },
     {
-        id: 90,
+        id: 89,
         title: "Methods and Systems for Collision Control of Moving Vehicles Surrounded By Vehicles",
         authors: "Rohit Gupta, Amr Abdelraouf, and Kyungtae Han",
         venue: "US Patent Application 18/455,020",
@@ -1220,7 +1217,7 @@ const publications = [
         patent_type: "application"
     },
     {
-        id: 91,
+        id: 90,
         title: "Personalized Takeover Prediction with Driver Tactile Inputs",
         authors: "Ziran Wang, Rohit Gupta, Kyungtae Han, and Runjia Du",
         venue: "US Patent Application 18/363,671",
@@ -1235,7 +1232,7 @@ const publications = [
         patent_type: "application"
     },
     {
-        id: 92,
+        id: 91,
         title: "Systems and Methods for Efficient Video Instance Segmentation for Vehicles Using Edge",
         authors: "Yitao Chen, Dawei Chen, and Kyungtae Han",
         venue: "US Patent Application 18/227,453",
@@ -1250,7 +1247,7 @@ const publications = [
         patent_type: "application"
     },
     {
-        id: 93,
+        id: 92,
         title: "Systems and Methods to Reduce Audio Distraction for a Vehicle Driver",
         authors: "Rohit Gupta, Ziran Wang, Kyungtae Han, and Prashant Tiwari",
         venue: "US Patent 11705141",
@@ -1265,7 +1262,7 @@ const publications = [
         patent_type: "granted"
     },
     {
-        id: 94,
+        id: 93,
         title: "Vehicle-to-everything Communication-based Lane Change Collision Avoidance Warning",
         authors: "Ziran Wang, Kyungtae Han, and BaekGyu Kim",
         venue: "US Patent 11697410",
@@ -1280,7 +1277,7 @@ const publications = [
         patent_type: "granted"
     },
     {
-        id: 95,
+        id: 94,
         title: "Vehicular Modifications Based on Occupant Health",
         authors: "Rohit Gupta, Hideki Hada, and Kyungtae Han",
         venue: "US Patent Application 18/217,505",
@@ -1295,7 +1292,7 @@ const publications = [
         patent_type: "application"
     },
     {
-        id: 96,
+        id: 95,
         title: "System and Method for Scheduling Connected Vehicles to Cross Non-Signalized Intersections",
         authors: "Ziran Wang, Kyungtae Han, and Prashant Tiwari",
         venue: "US Patent 11661088",
@@ -1310,7 +1307,7 @@ const publications = [
         patent_type: "granted"
     },
     {
-        id: 97,
+        id: 96,
         title: "Producing, For An Autonomous Vehicle, A Route From An Origination To A Destination",
         authors: "Ziran Wang, Kyungtae Han, and Prashant Tiwari",
         venue: "US Patent 11634163",
@@ -1325,7 +1322,7 @@ const publications = [
         patent_type: "granted"
     },
     {
-        id: 98,
+        id: 97,
         title: "ADHD Detection and Safety System for Vehicles",
         authors: "Rohit Gupta, Hazem Abdelkawy, Amr Abdelraouf, and Kyungtae Han",
         venue: "US Patent Application 18/299,111",
@@ -1340,7 +1337,7 @@ const publications = [
         patent_type: "application"
     },
     {
-        id: 99,
+        id: 98,
         title: "Remote Control of Distance Between Transports",
         authors: "Rohit Gupta, Amr Abdelraouf, and Kyungtae Han",
         venue: "US Patent Application 18/191,902",
@@ -1355,7 +1352,7 @@ const publications = [
         patent_type: "application"
     },
     {
-        id: 100,
+        id: 99,
         title: "Lane Change Assist for Inexperienced Driver",
         authors: "Rohit Gupta, Amr Abdelraouf, and Kyungtae Han",
         venue: "US Patent Application 18/190,178",
@@ -1370,7 +1367,7 @@ const publications = [
         patent_type: "application"
     },
     {
-        id: 101,
+        id: 100,
         title: "Inverse Reinforcement Learning for Adaptive Cruise Control",
         authors: "Rohit Gupta, Amr Abdelraouf, and Kyungtae Han",
         venue: "US Patent Application 18/185,397",
@@ -1385,7 +1382,7 @@ const publications = [
         patent_type: "application"
     },
     {
-        id: 102,
+        id: 101,
         title: "Recommended Following Gap Distance Based on Context",
         authors: "Rohit Gupta, Amr Abdelraouf, and Kyungtae Han",
         venue: "US Patent Application 18/185,384",
@@ -1400,7 +1397,7 @@ const publications = [
         patent_type: "application"
     },
     {
-        id: 103,
+        id: 102,
         title: "System and Method for Connected Vehicle Lane Merge",
         authors: "Ziran Wang, Kyungtae Han, and Prashant Tiwari",
         venue: "US Patent 11597388",
@@ -1415,7 +1412,7 @@ const publications = [
         patent_type: "granted"
     },
     {
-        id: 104,
+        id: 103,
         title: "System Framework for Software and Hardware Configuration Determination for Vehicle Applications with Cloud and Edge Computing",
         authors: "Haoxin Wang, Dawei Chen, Rohit Gupta, and Kyungtae Han",
         venue: "US Patent Application 18/173,867",
@@ -1430,7 +1427,7 @@ const publications = [
         patent_type: "application"
     },
     {
-        id: 105,
+        id: 104,
         title: "Vehicle OTA Security Validation",
         authors: "Rohit Gupta, Haoxin Wang, Dawei Chen, and Kyungtae Han",
         venue: "US Patent Application 18/108,553",
@@ -1443,6 +1440,15 @@ const publications = [
         application_number: "18/108,553"
 ,
         patent_type: "application"
+    },
+    {
+        id: 105,
+        title: "Driver Digital Twin for Online Prediction of Personalized Lane Change Behavior and Field Implementation",
+        authors: "Xuanpeng Zhao, Ziran Wang, Zhouqiao Zhao, Kyungtae Han, Rohit Gupta, Matthew J Barth, and Guoyuan Wu",
+        venue: "Transportation Research Board (TRB) 2023 Annual Meeting",
+        year: 2023,
+        type: "presentation",
+        type_label: "Presentation"
     },
     {
         id: 106,
@@ -1967,17 +1973,6 @@ const publications = [
     },
     {
         id: 143,
-        title: "A game theory based ramp merging strategy for connected and automated vehicles in the mixed traffic: A unity-SUMO integrated platform",
-        authors: "Xishun Liao, Ziran Wang, Xuanpeng Zhao, Kyungtae Han, Prashant Tiwari, Matthew J. Barth, and Guoyuan Wu",
-        venue: "Transportation Research Board (TRB) 100th Annual Meeting",
-        year: 2021,
-        type: "conference",
-        type_label: "Conference"
-,
-        url: "https://www.google.com/url?q=https%3A%2F%2Fwww.researchgate.net%2Fpublication%2F348137663_Game_Theory-Based_Ramp_Merging_for_Mixed_Traffic_With_Unity-SUMO_Co-Simulation&amp;sa=D&amp;sntz=1&amp;usg=AOvVaw37JMk0zmwPG2Aqxf4m37rN"
-    },
-    {
-        id: 144,
         title: "Motion estimation of connected and automated vehicles under communication delay and packet loss of V2X communications",
         authors: "Ziran Wang, Kyungtae Han, and Prashant Tiwari",
         venue: "SAE World Congress (WC)",
@@ -1990,7 +1985,7 @@ const publications = [
         pdf: "publications/21_SAE_WC/2021-01-0107.pdf"
     },
     {
-        id: 145,
+        id: 144,
         title: "Cooperative Ramp Merging Design and Field Implementation: A Digital Twin Approach Based on Vehicle-to-Cloud Communication",
         authors: "Xishun Liao, Ziran Wang, Xuanpeng Zhao, Kyungtae Han, Prashant Tiwari, Matthew J. Barth, and Guoyuan Wu",
         venue: "IEEE Transactions on Intelligent Transportation Systems (pp. 1-11)",
@@ -2003,7 +1998,7 @@ const publications = [
         pdf: "https://www.researchgate.net/publication/346693247_Cooperative_Ramp_Merging_Design_and_Field_Implementation_A_Digital_Twin_Approach_Based_on_Vehicle-to-Cloud_Communication"
     },
     {
-        id: 146,
+        id: 145,
         title: "Systems and Methods for Providing Guidance to Vehicle Drivers Regarding predicted Lane-Change Behavior of Other Vehicle Drivers",
         authors: "Zhenyu Shou, Kyungtae Han, Ziran Wang, Yongkang Liu, and Prashant Tiwari",
         venue: "US Patent 11151880",
@@ -2018,7 +2013,7 @@ const publications = [
         patent_type: "granted"
     },
     {
-        id: 147,
+        id: 146,
         title: "Systems and Methods for Compensating for Driver Speed-Tracking Error",
         authors: "Ziran Wang, Kyungtae Han, and Prashant Tiwari",
         venue: "US Patent 11087623",
@@ -2033,7 +2028,7 @@ const publications = [
         patent_type: "granted"
     },
     {
-        id: 148,
+        id: 147,
         title: "Methods and Systems for Rideshare Implicit Needs and Explicit Needs Personalization",
         authors: "Rohit Gupta, Ziran Wang, Kyungtae Han, and Prashant Tiwari",
         venue: "US Patent Application 17/217,358",
@@ -2048,7 +2043,7 @@ const publications = [
         patent_type: "application"
     },
     {
-        id: 149,
+        id: 148,
         title: "Vehicle Guard Rail System",
         authors: "Rohit Gupta, Ziran Wang, Kyungtae Han, and Prashant Tiwari",
         venue: "US Patent Application 17/206,706",
@@ -2063,7 +2058,7 @@ const publications = [
         patent_type: "application"
     },
     {
-        id: 150,
+        id: 149,
         title: "Context System for Providing Cyber Security for Connected Vehicles",
         authors: "Hiromitsu Kobayashi, Kyungtae Han, and Xiaowen Jiang",
         venue: "US Patent 10932135",
@@ -2078,7 +2073,7 @@ const publications = [
         patent_type: "granted"
     },
     {
-        id: 151,
+        id: 150,
         title: "Vehicles and methods identifying a service device in communication with a vehicle",
         authors: "Kyungtae Han and Katsumi Nagata",
         venue: "US Patent 10893555",
@@ -2091,6 +2086,17 @@ const publications = [
         patent_number: "10893555"
 ,
         patent_type: "granted"
+    },
+    {
+        id: 151,
+        title: "A game theory based ramp merging strategy for connected and automated vehicles in the mixed traffic: A unity-SUMO integrated platform",
+        authors: "Xishun Liao, Ziran Wang, Xuanpeng Zhao, Kyungtae Han, Prashant Tiwari, Matthew J. Barth, and Guoyuan Wu",
+        venue: "Transportation Research Board (TRB) 100th Annual Meeting",
+        year: 2021,
+        type: "presentation",
+        type_label: "Presentation"
+,
+        url: "https://www.google.com/url?q=https%3A%2F%2Fwww.researchgate.net%2Fpublication%2F348137663_Game_Theory-Based_Ramp_Merging_for_Mixed_Traffic_With_Unity-SUMO_Co-Simulation&amp;sa=D&amp;sntz=1&amp;usg=AOvVaw37JMk0zmwPG2Aqxf4m37rN"
     },
     {
         id: 152,
@@ -2159,17 +2165,6 @@ const publications = [
     },
     {
         id: 157,
-        title: "Cooperative ramp merging with vehicle-to-cloud communications: A field experiment",
-        authors: "Xishun Liao, David Oswald, Ziran Wang, Guoyuan Wu, Kanok Boriboonsomsin, Mattew J. Barth, Kyungtae Han, Baekgyu Kim, and Prashant Tiwari",
-        venue: "Transportation Research Board (TRB) 99th Annual Meeting",
-        year: 2020,
-        type: "conference",
-        type_label: "Conference"
-,
-        url: "https://www.researchgate.net/publication/338739469_Cooperative_Ramp_Merging_with_Vehicle-to-Cloud_Communications_A_Field_Experiment"
-    },
-    {
-        id: 158,
         title: "Driver Behavior Modeling Using Game Engine and Real Vehicle: A Learning-Based Approach",
         authors: "Ziran Wang, Xishun Liao, Chao Wang, David Oswald, Guoyuan Wu, Kanok Boriboonsomsin, Matthew J. Barth, Kyungtae Han, BaekGyu Kim, and Prashant Tiwari",
         venue: "IEEE Transactions on Intelligent Vehicles (Vol. 5, No. 4, pp. 738-749)",
@@ -2182,7 +2177,36 @@ const publications = [
         pdf: "https://www.researchgate.net/publication/340511322_Driver_Behavior_Modeling_Using_Game_Engine_and_Real_Vehicle_A_Learning-Based_Approach"
     },
     {
+        id: 158,
+        title: "Cooperative ramp merging with vehicle-to-cloud communications: A field experiment",
+        authors: "Xishun Liao, David Oswald, Ziran Wang, Guoyuan Wu, Kanok Boriboonsomsin, Mattew J. Barth, Kyungtae Han, Baekgyu Kim, and Prashant Tiwari",
+        venue: "Transportation Research Board (TRB) 99th Annual Meeting",
+        year: 2020,
+        type: "presentation",
+        type_label: "Presentation"
+,
+        url: "https://www.google.com/url?q=https%3A%2F%2Fwww.researchgate.net%2Fpublication%2F338739469_Cooperative_Ramp_Merging_with_Vehicle-to-Cloud_Communications_A_Field_Experiment"
+    },
+    {
         id: 159,
+        title: "Cooperative Ramp Merging Experimental Evaluation: A Vehicle-to-Cloud Digital Twin Approach",
+        authors: "Ziran Wang, Kyungtae Han, Xishun Liao, Xuanpeng Zhao, and Guoyuan Wu",
+        venue: "27th ITS World Congress",
+        year: 2020,
+        type: "presentation",
+        type_label: "Presentation"
+    },
+    {
+        id: 160,
+        title: "Driving Acceleration Prediction with Graph Convolution Networks",
+        authors: "Jianyu Su, Peter Beling, Rui Guo, Kyungtae Han, and Prashant Tiwari",
+        venue: "27th ITS World Congress",
+        year: 2020,
+        type: "presentation",
+        type_label: "Presentation"
+    },
+    {
+        id: 161,
         title: "Edge assisted misbehavior detection for platoons",
         authors: "Xinyue Kan, Akila Ganlath, Seyhan Ucar, Kyungtae Han, Prashant Tiwari, and Konstantinos Karydis",
         venue: "IEEE Vehicular Network Conference (VNC)",
@@ -2195,7 +2219,7 @@ const publications = [
         pdf: "publications/19_VNC/kan19vnc.pdf"
     },
     {
-        id: 160,
+        id: 162,
         title: "A case study of trust on autonomous driving",
         authors: "Shili Sheng, Erfan Pakdamanian, Kyungtae Han, BaekGyu Kim, Prashant Tiwari, Inki Kim, and Lu Feng",
         venue: "IEEE Intelligent Transportation Systems Conference",
@@ -2208,7 +2232,7 @@ const publications = [
         pdf: "https://arxiv.org/pdf/1904.11007.pdf"
     },
     {
-        id: 161,
+        id: 163,
         title: "Lookup table-based consensus algorithm for real-time longitudinal motion control of connected and automated vehicles",
         authors: "Ziran Wang, Kyungtae Han, Baekgyu Kim, Guoyuan Wu, and Matthew J. Barth",
         venue: "American Control Conference (ACC)",
@@ -2219,7 +2243,7 @@ const publications = [
         url: "https://www.researchgate.net/publication/331273853_Lookup_Table-Based_Consensus_Algorithm_for_Real-Time_Longitudinal_Motion_Control_of_Connected_and_Automated_Vehicles"
     },
     {
-        id: 162,
+        id: 164,
         title: "Probabilistic modeling of vehicle acceleration and state propagation with long short-term memory neural networks",
         authors: "Ian Jones and Kyungtae Han",
         venue: "IEEE Intelligent Vehicles Symposium (IV)",
@@ -2232,7 +2256,7 @@ const publications = [
         pdf: "assets/publications/19_IV/jones19iv.pdf"
     },
     {
-        id: 163,
+        id: 165,
         title: "Vehicle-to-vehicle message sender identification for co-operative driver assistance systems",
         authors: "Hiromitsu Kobayashi, Kyungtae Han, and BaekGyu Kim",
         venue: "IEEE Vehicular Technology Conference (VTC2019-Spring)",
@@ -2245,7 +2269,7 @@ const publications = [
         pdf: "publications/19_VTC_spring/kobayashi19vtc.pdf"
     },
     {
-        id: 164,
+        id: 166,
         title: "Cooperative Ramp Merging System: Agent-Based Modeling and Simulation Using Game Engine",
         authors: "Ziran Wang, Xishun Liao, Chao Wang, David Oswald, Guoyuan Wu, Kanok Boriboonsomsin, Matthew J. Barth, Kyungtae Han, BaekGyu Kim, and Prashant Tiwari",
         venue: "SAE International Journal of Connected and Automated Vehicles",
@@ -2258,7 +2282,7 @@ const publications = [
         pdf: "https://www.researchgate.net/publication/333300521_Cooperative_Ramp_Merging_System_Agent-Based_Modeling_and_Simulation_Using_Game_Engine"
     },
     {
-        id: 165,
+        id: 167,
         title: "Statistical quality modeling of approximate hardware",
         authors: "Seogoo Lee, Dongwook Lee, Kyungtae Han, Emily Shriver, Lizy K. John, and Andreas Gerstlauer",
         venue: "International Symposium on Quality Electronic Design (ISQED)",
@@ -2269,7 +2293,7 @@ const publications = [
         url: "https://ieeexplore.ieee.org/document/7479194"
     },
     {
-        id: 166,
+        id: 168,
         title: "Techniques For Managing System Power Using Deferred Graphics Rendering",
         authors: "Nithyananda Jeganathan, Rajesh Poornachandran, Paul Diefenbaugh, and Kyungtae Han",
         venue: "US Patent 9269121",
@@ -2284,7 +2308,7 @@ const publications = [
         patent_type: "granted"
     },
     {
-        id: 167,
+        id: 169,
         title: "Adaptive Touch Scanning",
         authors: "Kyungtae Han, Dongho Hong, Alexander W. Min, Yong-joon Park, and Mohamed A. Abdelmoneum",
         venue: "US Patent 9244551",
@@ -2299,7 +2323,7 @@ const publications = [
         patent_type: "granted"
     },
     {
-        id: 168,
+        id: 170,
         title: "A polyhedral-based systemc modeling and generation framework for effective low-power design space exploration",
         authors: "Wei Zuo, Warren Kemmerer, Jong B. Lim, Louis-Noel Pouchet, Andrey Ayupov, Taemin Kim, Kyungtae Han, and Deming Chen",
         venue: "IEEE/ACM International Conference on Computer-Aided Design (ICCAD)",
@@ -2312,7 +2336,7 @@ const publications = [
         note: "Best Paper Award"
     },
     {
-        id: 169,
+        id: 171,
         title: "Learning-based power modeling of system-level black-box IPs",
         authors: "Dongwook Lee, Taemin Kim, Kyungtae Han, Yatin Hoskote, Lizy K. John, and Andreas Gerstlauer",
         venue: "IEEE/ACM International Conference on Computer-Aided Design (ICCAD)",
@@ -2325,7 +2349,7 @@ const publications = [
         pdf: "https://slam.ece.utexas.edu/pubs/iccad15.pm.pdf"
     },
     {
-        id: 170,
+        id: 172,
         title: "Adaptive touch sampling for energy-efficient mobile platforms",
         authors: "Alexander W. Min, Kyungtae Han, DongHo Hong, and Yong-Joon Park",
         venue: "IEEE Systems Conference (SysCon) Proceedings",
@@ -2338,7 +2362,7 @@ const publications = [
         pdf: "https://signal.ece.utexas.edu/~khan/paper/2015SysCon/han.pdf"
     },
     {
-        id: 171,
+        id: 173,
         title: "Data Transmission for Display Partial Update",
         authors: "Nithyananda Jeganathan, Kyungtae Han, and Paul Diefenbaugh",
         venue: "US Patent 9177534",
@@ -2353,7 +2377,7 @@ const publications = [
         patent_type: "granted"
     },
     {
-        id: 172,
+        id: 174,
         title: "Polling Determination",
         authors: "Kyungtae Han, Paul Diefenbaugh, and Sarah Sharp",
         venue: "US Patent 9058422",
@@ -2368,7 +2392,7 @@ const publications = [
         patent_type: "granted"
     },
     {
-        id: 173,
+        id: 175,
         title: "Hybrid Display Frame Buffer for Display Subsystem",
         authors: "Kyungtae Han, Paul Diefenbaugh, Sameer Abhinkar, Taemin Kim, and Siva Jeganathan",
         venue: "US Patent 9030482",
@@ -2383,7 +2407,7 @@ const publications = [
         patent_type: "granted"
     },
     {
-        id: 174,
+        id: 176,
         title: "Control of Platform Power Consumption Using Coordination of Platform Power Management and Display Power Management",
         authors: "Siva Jeganathan, Paul Diefenbaugh, Kyungtae Han, Jinjun Liu, James A. Bish, and Paul C. Drews",
         venue: "US Patent 8643658",
@@ -2398,7 +2422,7 @@ const publications = [
         patent_type: "granted"
     },
     {
-        id: 175,
+        id: 177,
         title: "Techniques for Aligning Frame Data",
         authors: "Maximino Vasquez, Ravi Ranganathan, Seh Kwa, Todd M. Witter, Kyungtae Han, and Paul S. Diefenbaugh",
         venue: "US Patent 8643658",
@@ -2413,7 +2437,7 @@ const publications = [
         patent_type: "granted"
     },
     {
-        id: 176,
+        id: 178,
         title: "A hybrid display frame buffer architecture for energy efficient display subsystems",
         authors: "Kyungtae Han, Alexander W. Min, Nithyananda S. Jeganathan, and Paul Diefenbaugh",
         venue: "International Symposium on Low Power Electronics and Design (ISLPED)",
@@ -2426,7 +2450,7 @@ const publications = [
         pdf: "https://signal.ece.utexas.edu/~khan/paper/2013ISLPED/han.pdf"
     },
     {
-        id: 177,
+        id: 179,
         title: "Display Update for a Wireless Display Device",
         authors: "Kyungtae Han, Guoqing C. Li, and Sumit K. Singh",
         venue: "US Patent 8525844",
@@ -2441,7 +2465,7 @@ const publications = [
         patent_type: "granted"
     },
     {
-        id: 178,
+        id: 180,
         title: "Systems and Methods for Cross-Platform Radio Frequency Interference Mitigation",
         authors: "Kyungtae Han and Keith R. Tinsley",
         venue: "US Patent 8290439",
@@ -2456,7 +2480,7 @@ const publications = [
         patent_type: "granted"
     },
     {
-        id: 179,
+        id: 181,
         title: "High Speed Digital Waveform Identification Using Higher Order Statistical Signal Processing",
         authors: "Kyungtae Han and Keith R. Tinsley",
         venue: "US Patent 7734434",
@@ -2471,7 +2495,7 @@ const publications = [
         patent_type: "granted"
     },
     {
-        id: 180,
+        id: 182,
         title: "Transforming Floating-Point Algorithms to Fixed-Point Implementations",
         authors: "Kyungtae Han and Brian L. Evans",
         venue: "VDM Verlag Publishing",
@@ -2482,7 +2506,7 @@ const publications = [
         pdf: "books/kt_book_fl2fx.pdf"
     },
     {
-        id: 181,
+        id: 183,
         title: "Using checksum to reduce power consumption of display systems for low-motion content",
         authors: "Kyungtae Han, Zen Fang, Paul Diefenbaugh, Rick Forand, Ravi R. Iyer, and Donald Newell",
         venue: "IEEE International Conference on Computer Design (ICCD)",
@@ -2493,7 +2517,7 @@ const publications = [
         pdf: "publications/09_ICCD/han19iccd.pdf"
     },
     {
-        id: 182,
+        id: 184,
         title: "Identification of high speed jittered digital interconnects using bicoherence spectra",
         authors: "Kyungtae Han, Keith R. Tinsley, and Jorge Aguilar-Torrentera",
         venue: "International Caribbean Conference on Devices, Circuits and Systems (ICCDCS)",
@@ -2506,7 +2530,7 @@ const publications = [
         pdf: "https://signal.ece.utexas.edu/~khan/paper/2008ICCDCS/han.pdf"
     },
     {
-        id: 183,
+        id: 185,
         title: "Apparatus for Searching Multipath in Spread Spectrum Communications System and Method",
         authors: "Ik-Soo Eo, Kyungtae Han, Hae-Bum Jung, and Kyung-Soo Kim",
         venue: "US Patent 7194018",
@@ -2521,7 +2545,7 @@ const publications = [
         patent_type: "granted"
     },
     {
-        id: 184,
+        id: 186,
         title: "Automatic floating-point to fixed-point transformations",
         authors: "Kyungtae Han, Alex G. Olson, and Brian L. Evans",
         venue: "Asilomar Conference on Signals, Systems and Computers",
@@ -2534,7 +2558,7 @@ const publications = [
         pdf: "http://users.ece.utexas.edu/~bevans/papers/2006/flp2fxp/AutoFloatToFixedTransAsil2006Paper.pdf"
     },
     {
-        id: 185,
+        id: 187,
         title: "Optimum Wordlength Search Using Sensitivity Information",
         authors: "Kyungtae Han and Brian L. Evans",
         venue: "EURASIP Journal on Advances in Signal Processing (Vol. 2006, No. 1, pp. 1-14)",
@@ -2547,7 +2571,7 @@ const publications = [
         pdf: "https://dl.acm.org/doi/pdf/10.1155/ASP/2006/92849"
     },
     {
-        id: 186,
+        id: 188,
         title: "Apparatus and Method for Separating Carrier of Multicarrier Wireless Communication Receiver System",
         authors: "Kyungtae Han, In-Gi Lim, Ik-Soo Eo, Hye-Ju Seo, Kyung-Soo Kim, Hee-Bum Jung, and Han-Jin Cho",
         venue: "US Patent 7127012",
@@ -2562,7 +2586,7 @@ const publications = [
         patent_type: "granted"
     },
     {
-        id: 187,
+        id: 189,
         title: "Low-power multipliers with data wordlength reduction",
         authors: "Kyungtae Han, Brian L. Evans, Earl E. Swartzlander, and Jr.",
         venue: "Asilomar Conference on Signals, Systems and Computers",
@@ -2575,7 +2599,7 @@ const publications = [
         pdf: "http://users.ece.utexas.edu/~bevans/papers/2005/lowPower/LowPowerMultAsilomar2005Paper.pdf"
     },
     {
-        id: 188,
+        id: 190,
         title: "Data wordlength reduction for low-power signal processing software",
         authors: "Kyungtae Han, Brian L. Evans, Earl E. Swartzlander, and Jr.",
         venue: "IEEE Workshop on Signal Processing Systems (SiPS)",
@@ -2588,7 +2612,7 @@ const publications = [
         pdf: "https://signal.ece.utexas.edu/~khan/paper/2004SiPS/hanSIPS2004.pdf"
     },
     {
-        id: 189,
+        id: 191,
         title: "Wordlength optimization with complexity-and-distortion measure and its application to broadband wireless demodulator design",
         authors: "Kyungtae Han and Brian L. Evans",
         venue: "IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)",
@@ -2601,7 +2625,7 @@ const publications = [
         pdf: "publications/04_ICASSP/han04icassp.pdf"
     },
     {
-        id: 190,
+        id: 192,
         title: "Numerical word-length optimization for CDMA demodulator",
         authors: "Kyungtae Han, Iksu Eo, Kyungsu Kim, and Hanjin Cho",
         venue: "IEEE International Symposium on Circuits and Systems (ISCAS)",
@@ -2614,7 +2638,7 @@ const publications = [
         pdf: "publications/01_ISCAS/iscas2001.pdf"
     },
     {
-        id: 191,
+        id: 193,
         title: "Bit constraint parameter decision method for CDMA digital demodulator",
         authors: "Kyungtae Han, Iksu Eo, Kyungsu Kim, and Hanjin Cho",
         venue: "The 5th CDMA International Conference and Exhibition (CIC)",
@@ -2627,7 +2651,7 @@ const publications = [
         pdf: "publications/00_cic/han00cic.pdf"
     },
     {
-        id: 192,
+        id: 194,
         title: "A CORDIC-based digital quadrature mixer: comparison with a ROM-based architecture",
         authors: "Seunghyeon Nahm, Kyungtae Han, and Wonyong Sung",
         venue: "IEEE International Symposium on Circuits and Systems (ISCAS)",

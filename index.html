@@ -20,6 +20,29 @@
     </script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GEG5GDGV8P"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        
+        gtag('js', new Date());
+        
+        // Analytics enabled immediately with privacy settings
+        
+        // Respect Do Not Track
+        if (navigator.doNotTrack == "1" || window.doNotTrack == "1" || navigator.msDoNotTrack == "1") {
+            window['ga-disable-G-GEG5GDGV8P'] = true;
+            gtag('consent', 'update', {
+                'analytics_storage': 'denied'
+            });
+        }
+        
+        gtag('config', 'G-GEG5GDGV8P', {'anonymize_ip': true});
+    </script>
+
     <style>
         body { font-family: 'Inter', system-ui, sans-serif; }
         .dark { color-scheme: dark; }
@@ -154,7 +177,7 @@
                         <!-- Stats -->
                         <div class="grid grid-cols-2 md:grid-cols-5 gap-6 mb-8">
                             <div class="text-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700">
-                                <div class="text-3xl font-bold text-blue-600 mb-1">192</div>
+                                <div class="text-3xl font-bold text-blue-600 mb-1">189</div>
                                 <div class="text-sm text-gray-600 dark:text-gray-300 font-medium">Total Research Outputs</div>
                             </div>
                             <div class="text-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700">
@@ -162,7 +185,7 @@
                                 <div class="text-sm text-gray-600 dark:text-gray-300 font-medium">Journal Papers</div>
                             </div>
                             <div class="text-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700">
-                                <div class="text-3xl font-bold text-purple-600 mb-1">69</div>
+                                <div class="text-3xl font-bold text-purple-600 mb-1">66</div>
                                 <div class="text-sm text-gray-600 dark:text-gray-300 font-medium">Conference Papers</div>
                             </div>
                             <div class="text-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700">
@@ -310,7 +333,7 @@
                         Publications
                     </h2>
                     <p class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-                        Complete publication list with 192 total publications including 69 conference papers, 
+                        Complete publication list with 189 total publications including 66 conference papers, 
                         19 journal articles, 102 patents, and 2 books in intelligent transportation systems, 
                         cyber-physical systems, artificial intelligence, and edge computing.
                     </p>
@@ -429,14 +452,17 @@
                 </div>
             </div>
             <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; 2025 Kyungtae 'KT' Han. All rights reserved. | Last updated: <span id="last-updated">August 05, 2025</span></p>
+                <p>&copy; 2025 Kyungtae 'KT' Han. All rights reserved. | Last updated: <span id="last-updated">August 09, 2025</span></p>
             </div>
         </div>
     </footer>
 
+
+
     <!-- JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
-    <script src="js/publications-data.js?v=1754443968"></script>
-    <script src="js/modern-homepage.js?v=1754443968"></script>
+    <script src="js/publications-data.js?v=1754776300"></script>
+    <script src="js/modern-homepage.js?v=1754776300"></script>
+
 </body>
 </html> 
