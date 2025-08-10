@@ -118,6 +118,36 @@ function initPublications() {
     renderPublications();
 }
 
+// Function to filter publications and scroll to publications section
+function filterAndScrollToPublications(filterType) {
+    // Set the filter dropdown value
+    if (filterSelect) {
+        filterSelect.value = filterType;
+    }
+    
+    // Clear search input
+    if (searchInput) {
+        searchInput.value = '';
+    }
+    
+    // Apply the filter
+    filterPublications();
+    
+    // Scroll to publications section
+    const publicationsSection = document.getElementById('publications');
+    if (publicationsSection) {
+        publicationsSection.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    }
+    
+    // Close mobile menu if open
+    if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+        mobileMenu.classList.add('hidden');
+    }
+}
+
 function filterPublications() {
     const searchTerm = searchInput.value.trim();
     const filterType = filterSelect.value;
