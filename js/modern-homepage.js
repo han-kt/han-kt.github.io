@@ -42,17 +42,21 @@ function toggleTheme() {
 }
 
 function updateThemeIcon(theme) {
-    const icon = themeToggle.querySelector('i');
-    if (theme === 'dark') {
-        icon.className = 'fas fa-sun text-yellow-500';
-    } else {
-        icon.className = 'fas fa-moon text-gray-600';
+    if (themeToggle) {
+        const icon = themeToggle.querySelector('i');
+        if (theme === 'dark') {
+            icon.className = 'fas fa-sun text-yellow-500';
+        } else {
+            icon.className = 'fas fa-moon text-gray-600';
+        }
     }
 }
 
 // Mobile menu
 function toggleMobileMenu() {
-    mobileMenu.classList.toggle('hidden');
+    if (mobileMenu) {
+        mobileMenu.classList.toggle('hidden');
+    }
 }
 
 // Smooth scrolling for navigation links
@@ -406,12 +410,14 @@ function copyBibTeX(id, event) {
 
 // Update last modified date
 function updateLastModified() {
-    const lastModified = new Date(document.lastModified);
-    lastUpdated.textContent = lastModified.toLocaleDateString('en-US', {
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric'
-    });
+    if (lastUpdated) {
+        const lastModified = new Date(document.lastModified);
+        lastUpdated.textContent = lastModified.toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+    }
 }
 
 // Intersection Observer for animations
@@ -445,26 +451,34 @@ document.addEventListener('DOMContentLoaded', function() {
     updateLastModified();
     
     // Event listeners
-    themeToggle.addEventListener('click', toggleTheme);
-    mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+    if (themeToggle) {
+        themeToggle.addEventListener('click', toggleTheme);
+    }
+    if (mobileMenuBtn) {
+        mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+    }
     
     // Close mobile menu when clicking outside
-    document.addEventListener('click', (e) => {
-        if (!mobileMenuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
-            mobileMenu.classList.add('hidden');
-        }
-    });
+    if (mobileMenuBtn && mobileMenu) {
+        document.addEventListener('click', (e) => {
+            if (!mobileMenuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+    }
     
     // Keyboard shortcuts
     document.addEventListener('keydown', (e) => {
         // Ctrl/Cmd + K for search
         if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
             e.preventDefault();
-            searchInput.focus();
+            if (searchInput) {
+                searchInput.focus();
+            }
         }
         
         // Escape to close mobile menu
-        if (e.key === 'Escape') {
+        if (e.key === 'Escape' && mobileMenu) {
             mobileMenu.classList.add('hidden');
         }
     });
