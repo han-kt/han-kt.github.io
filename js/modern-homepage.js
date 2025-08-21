@@ -178,6 +178,9 @@ function filterPublications() {
         results = searchResults.map(result => result.item);
     }
     
+    // Sort by year (descending) to ensure proper chronological order
+    results.sort((a, b) => b.year - a.year);
+    
     filteredPublications = results;
     renderPublications();
 }
