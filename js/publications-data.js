@@ -1,5 +1,5 @@
 // Modern Academic Homepage JavaScript
-// Generated on 2025-08-20 20:14:39
+// Generated on 2025-08-20 20:33:40
 // Total publications: 194
 // Breakdown: 66 conferences, 5 presentations, 19 journals, 102 patents
 
@@ -205,6 +205,23 @@ const publications = [
     },
     {
         id: 15,
+        title: "Systems and Methods for Resource-optimized Mixed Reality Using User-Centric Adaptive Object Detection",
+        authors: "Daniel Doe, Dawei Chen, and Kyungtae Han",
+        venue: "US Patent 12387489",
+        year: 2025,
+        type: "patent",
+        type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US12387489B2/en"
+,
+        patent_number: "12387489"
+,
+        application_number: "IP-A-6910"
+,
+        patent_type: "granted"
+    },
+    {
+        id: 16,
         title: "Omnidirectional Collision Avoidance",
         authors: "Amr Abdelraouf, Rohit Gupta, Hazem Abdelkawy, and Kyungtae Han",
         venue: "US Patent 12361829",
@@ -221,7 +238,7 @@ const publications = [
         patent_type: "granted"
     },
     {
-        id: 16,
+        id: 17,
         title: "CAVE: Crowdsourcing passing-by vehicles for reliable in-vehicle edge computing",
         authors: "Jiahe Cao, Qiang Liu, Dawei Chen, and Kyungtae Han",
         venue: "IEEE Global Communications Conference: Mobile and Wireless Networks (GLOBECOM)",
@@ -234,7 +251,7 @@ const publications = [
         pdf: "https://arxiv.org/pdf/2408.00621"
     },
     {
-        id: 17,
+        id: 18,
         title: "Enhancing AR/VR performance via optimized edge-based object detection for connected autonomous vehicles",
         authors: "Daniel Doe, Dawei Chen, Kyungtae Han, Linda Xie, and Zhu Han",
         venue: "Conference on IEEE Intelligent Vehicles Symposium (IV), Jeju Island, Korea",
@@ -245,7 +262,7 @@ const publications = [
         pdf: "publications/24_IV/AR_VR.pdf"
     },
     {
-        id: 18,
+        id: 19,
         title: "KI-GAN: Knowledge-Informed Generative Adversarial Networks for Enhanced Multi-Vehicle Trajectory Forecasting at Signalized Intersections",
         authors: "Chuheng Wei, Guoyuan Wu, Matthew J. Barth, Amr Abdelraouf, Rohit Gupta, and Kyungtae Han",
         venue: "Conference on Computer Vision and Pattern Recognition (CVPR) Workshops - AI City Challenges",
@@ -256,7 +273,7 @@ const publications = [
         pdf: "https://openaccess.thecvf.com/content/CVPR2024W/AICity/papers/Wei_KI-GAN_Knowledge-Informed_Generative_Adversarial_Networks_for_Enhanced_Multi-Vehicle_Trajectory_Forecasting_CVPRW_2024_paper.pdf"
     },
     {
-        id: 19,
+        id: 20,
         title: "LaMPilot: An open benchmark dataset for autonomous driving with language model programs",
         authors: "Yunsheng Ma, Can Cui, Xu Cao, Wenqian Ye, Peiran Liu, Juanwu Lu, Amr Abdelraouf, Rohit Gupta, Kyungtae Han, Aniket Bera, James Matthew Rehg, and Ziran Wang",
         venue: "Conference on Computer Vision and Pattern Recognition (CVPR)",
@@ -267,7 +284,7 @@ const publications = [
         pdf: "https://openaccess.thecvf.com/content/CVPR2024/papers/Ma_LaMPilot_An_Open_Benchmark_Dataset_for_Autonomous_Driving_with_Language_CVPR_2024_paper.pdf"
     },
     {
-        id: 20,
+        id: 21,
         title: "Unleashing the true power of age-of-information: Service aggregation in connected and autonomous vehicles",
         authors: "Anik Mallik, Dawei Chen, Kyungtae Han, Linda Jiang, and Zhu Hang",
         venue: "IEEE International Conference on Communications (ICC): Mobile and Wireless Networks Symposium",
@@ -280,7 +297,7 @@ const publications = [
         pdf: "https://arxiv.org/pdf/2403.08931"
     },
     {
-        id: 21,
+        id: 22,
         title: "Digital Twin-Based Cooperative Driving at Roundabouts for Connected and Automated Vehicles",
         authors: "Zihao Li, Shuaijie Li, Amr Abdelraouf, Rohit Gupta, Kyungtae Han, Onur Altintas, and Ziran Wang",
         venue: "IEEE Forum on Integrated and Sustainable Transportation Systems (FISTS)",
@@ -291,7 +308,7 @@ const publications = [
         url: "https://ieeexplore.ieee.org/document/10485543"
     },
     {
-        id: 22,
+        id: 23,
         title: "Dilemma Zone: A Comprehensive Study of Influential Factors and Behavior Analysis",
         authors: "Chuheng Wei, Ziye Qin, Guoyuan Wu, Matthew Barth, Amr Abdelraouf, Rohit Gupta, and Kyungtae Han",
         venue: "IEEE Forum on Integrated and Sustainable Transportation Systems (FISTS)",
@@ -302,7 +319,7 @@ const publications = [
         url: "https://ieeexplore.ieee.org/document/10485546"
     },
     {
-        id: 23,
+        id: 24,
         title: "Driving through the Concept Gridlock: Unraveling Explainability Bottlenecks in Automated Driving",
         authors: "Jessica Echterhoff, An Yan, Kyungtae Han, Amr Abdelraouf, Rohit Gupta, and Julian McAuley",
         venue: "IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)",
@@ -315,7 +332,7 @@ const publications = [
         pdf: "https://arxiv.org/pdf/2310.16639.pdf"
     },
     {
-        id: 24,
+        id: 25,
         title: "Edge-Assisted Indexing for Highly Dynamic and Static Data in Mixed Reality Connected Autonomous Vehicles",
         authors: "Daniel Mawunyo Doe, Dawei Chen, Kyungtae Han, Haoxin Wang, Jiang Xie, and Zhu Han",
         venue: "Intelligent and Converged Networks (Vol. 5, No. 2, pp. 167-179)",
@@ -328,7 +345,7 @@ const publications = [
         pdf: "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10601661"
     },
     {
-        id: 25,
+        id: 26,
         title: "A Review of Personalization in Driving Behavior: Dataset, Modeling, and Validation",
         authors: "Xishun Liao, Zhouqiao Zhao, Matthew Barth, Amr Abdelraouf, Rohit Gupta, Kyungtae Han, Jiaqi Ma, and Guoyuan Wu",
         venue: "IEEE Transactions on Intelligent Vehicles",
@@ -341,7 +358,7 @@ const publications = [
         pdf: "publications/24_TIV/Liao2024TIV.pdf"
     },
     {
-        id: 26,
+        id: 27,
         title: "Crowdsourcing Live High Definition Map via Collaborative Computation in Automotive Edge Computing",
         authors: "Yuru Zhang, Qiang Liu, Haoxin Wang, Dawei Chen, and Kyungtae Han",
         venue: "IEEE Transactions on Vehicular Technology (Vol. 73, No. 9, pp. 13569-13583)",
@@ -352,7 +369,7 @@ const publications = [
         url: "https://ieeexplore.ieee.org/document/10508471"
     },
     {
-        id: 27,
+        id: 28,
         title: "Driver Digital Twin for Online Recognition of Distracted Driving Behaviors",
         authors: "Yunsheng Ma, Runjia Du, Amr Abdelraouf, Kyungtae Han, Rohit Gupta, and Ziran Wang",
         venue: "IEEE Transactions on Intelligent Vehicle",
@@ -363,7 +380,7 @@ const publications = [
         url: "https://ieeexplore.ieee.org/document/10398504"
     },
     {
-        id: 28,
+        id: 29,
         title: "Adaptive Road Sign Interpretation and Vehicle Response System",
         authors: "Rohit Gupta, Yunsheng Max, Amr Abdelraouf, and Kyungtae Han",
         venue: "US Patent Application 19/004,333",
@@ -378,7 +395,7 @@ const publications = [
         patent_type: "application"
     },
     {
-        id: 29,
+        id: 30,
         title: "Context-Aware External Object Detection and Vehicle Guidance",
         authors: "Rohit Gupta, Yunsheng Max, Amr Abdelraouf, and Kyungtae Han",
         venue: "US Patent Application 19/004,331",
@@ -393,7 +410,7 @@ const publications = [
         patent_type: "application"
     },
     {
-        id: 30,
+        id: 31,
         title: "Computing a Multi-Dimensional Personalized Adaptive Cruise Control Parameter",
         authors: "Rohit Gupta, Ahmadreza Moradipari, Amr Abdelraouf, and Kyungtae Han",
         venue: "US Patent Application 18/988,587",
@@ -408,7 +425,7 @@ const publications = [
         patent_type: "application"
     },
     {
-        id: 31,
+        id: 32,
         title: "Advanced Driver Focus Tracking for Approaching Hazard",
         authors: "Rohit Gupta, Qi Chen, Yunsheng Max, Amr Abdelraouf, and Kyungtae Han",
         venue: "US Patent Application 18/977,280",
@@ -423,7 +440,7 @@ const publications = [
         patent_type: "application"
     },
     {
-        id: 32,
+        id: 33,
         title: "Audio-Based Driver Assistance System for Enhanced Vehicle Safety",
         authors: "Rohit Gupta, Qi Chen, Yunsheng Max, Amr Abdelraouf, and Kyungtae Han",
         venue: "US Patent Application 18/977,353",
@@ -438,7 +455,7 @@ const publications = [
         patent_type: "application"
     },
     {
-        id: 33,
+        id: 34,
         title: "Real-Time Risk Reasoning",
         authors: "Amr Abdelraouf, Rohit Gupta, and Kyungtae Han",
         venue: "US Patent Application 18/964,886",
@@ -453,7 +470,7 @@ const publications = [
         patent_type: "application"
     },
     {
-        id: 34,
+        id: 35,
         title: "Systems and Methods for Adaptive Cruise Control Based on Online Learning Preference",
         authors: "Ahmadreza Moradipari Rohit Gupta, Amr Abdelraouf, Kyungtae Han, Sergei Avedisov, Onur Altintas, and John Kenney",
         venue: "US Patent Application 18/944,774",
@@ -468,7 +485,7 @@ const publications = [
         patent_type: "application"
     },
     {
-        id: 35,
+        id: 36,
         title: "Proactive Message Transmitter Identification System",
         authors: "Hiromitsu Kobayashi and Kyungtae Han",
         venue: "US Patent 12091006",
@@ -483,7 +500,7 @@ const publications = [
         patent_type: "granted"
     },
     {
-        id: 36,
+        id: 37,
         title: "Systems and Methods for Computation Offloading Determination Using Multi-Modal User Input",
         authors: "Daniel Doe, Dawei Chen, and Kyungtae Han",
         venue: "US Patent Application 18/883,664",
@@ -498,7 +515,7 @@ const publications = [
         patent_type: "application"
     },
     {
-        id: 37,
+        id: 38,
         title: "Method and System for Personalized Car Following with Transformers",
         authors: "Ziran Wang, Zhouqiao Zhao, Rohit Gupta, Kyungtae Han, and Prashant Tiwari",
         venue: "US Patent 12083883",
@@ -513,7 +530,7 @@ const publications = [
         patent_type: "granted"
     },
     {
-        id: 38,
+        id: 39,
         title: "Systems and Methods for Edge-Driven Object Detection for Resource Optimization",
         authors: "Daniel Doe, Dawei Chen, and Kyungtae Han",
         venue: "US Patent Application 18/825,745",
@@ -528,7 +545,7 @@ const publications = [
         patent_type: "application"
     },
     {
-        id: 39,
+        id: 40,
         title: "Detection, Classification, and Prediction of Bacteria Colony Growth in Vehicle Passenger Cabin",
         authors: "Rohit Gupta, Ziran Wang, Yanbing Wang, Kyungtae Han, and Prashant Tiwari",
         venue: "US Patent 12080080",
@@ -543,7 +560,7 @@ const publications = [
         patent_type: "granted"
     },
     {
-        id: 40,
+        id: 41,
         title: "Cannabis Impairment Detection and Safety System for Vehicles",
         authors: "Rohit Gupta, Hazem Abdelkawy, Amr Abdelraouf, and Kyungtae Han",
         venue: "US Patent 12071141",
@@ -558,7 +575,7 @@ const publications = [
         patent_type: "granted"
     },
     {
-        id: 41,
+        id: 42,
         title: "Rest Stop Recommendation System",
         authors: "Zhenyu Shou, Ziran Wang, Kyungtae Han, Yongkang Liu, and Prashant Tiwari",
         venue: "US Patent 12073332",
@@ -573,7 +590,7 @@ const publications = [
         patent_type: "granted"
     },
     {
-        id: 42,
+        id: 43,
         title: "Systems and Methods for Mixed Reality Applications with Selective Frame Transmission",
         authors: "Daniel Doe, Dawei Chen, and Kyungtae Han",
         venue: "US Patent Application 18/818,052",
@@ -584,21 +601,6 @@ const publications = [
         url: "https://patents.google.com/patent/US18818052A1/en"
 ,
         application_number: "18/818,052"
-,
-        patent_type: "application"
-    },
-    {
-        id: 43,
-        title: "Systems and Methods for Resource-optimized Mixed Reality Using User-Centric Adaptive Object Detection",
-        authors: "Daniel Doe, Dawei Chen, and Kyungtae Han",
-        venue: "US Patent Application 18/809,564",
-        year: 2024,
-        type: "patent",
-        type_label: "Patent"
-,
-        url: "https://patents.google.com/patent/US18809564A1/en"
-,
-        application_number: "18/809,564"
 ,
         patent_type: "application"
     },
