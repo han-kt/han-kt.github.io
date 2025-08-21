@@ -209,14 +209,16 @@ function getDisplayDate(pub) {
     if (pub.type === 'patent') {
         if (pub.grant_date) {
             // Format grant date in standard academic format
-            const date = new Date(pub.grant_date);
+            const [year, month, day] = pub.grant_date.split('-').map(Number);
+            const date = new Date(year, month - 1, day); // month is 0-indexed
             return `${date.getFullYear()} (${date.toLocaleDateString('en-US', { 
                 month: 'short', 
                 day: 'numeric' 
             })})`;
         } else if (pub.filing_date) {
             // Format filing date in standard academic format
-            const date = new Date(pub.filing_date);
+            const [year, month, day] = pub.filing_date.split('-').map(Number);
+            const date = new Date(year, month - 1, day); // month is 0-indexed
             return `${date.getFullYear()} (${date.toLocaleDateString('en-US', { 
                 month: 'short', 
                 day: 'numeric' 
@@ -231,7 +233,9 @@ function getPatentVenue(pub) {
     // Construct patent venue in standard academic format
     if (pub.patent_type === 'granted' && pub.patent_number) {
         if (pub.grant_date) {
-            const date = new Date(pub.grant_date);
+            // Parse date explicitly to avoid timezone issues
+            const [year, month, day] = pub.grant_date.split('-').map(Number);
+            const date = new Date(year, month - 1, day); // month is 0-indexed
             const formattedDate = date.toLocaleDateString('en-US', { 
                 month: 'short', 
                 day: 'numeric',
@@ -243,7 +247,9 @@ function getPatentVenue(pub) {
         }
     } else if (pub.patent_type === 'application' && pub.application_number) {
         if (pub.filing_date) {
-            const date = new Date(pub.filing_date);
+            // Parse date explicitly to avoid timezone issues
+            const [year, month, day] = pub.filing_date.split('-').map(Number);
+            const date = new Date(year, month - 1, day); // month is 0-indexed
             const formattedDate = date.toLocaleDateString('en-US', { 
                 month: 'short', 
                 day: 'numeric',
