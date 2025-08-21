@@ -1,5 +1,5 @@
 // Modern Academic Homepage JavaScript
-// Generated on 2025-08-20 21:26:41
+// Generated on 2025-08-20 23:39:08
 // Total publications: 194
 // Breakdown: 66 conferences, 5 presentations, 19 journals, 102 patents
 
@@ -1325,8 +1325,6 @@ const publications = [
         type_label: "Book Chapter"
 ,
         url: "https://doi.org/10.1515/9783110981223"
-,
-        pdf: "books/DriverBehavior-AwareCooperativeRampMergingforIntelligentVehicles.pdf"
     },
     {
         id: 84,
@@ -2706,8 +2704,6 @@ const publications = [
         year: 2009,
         type: "book",
         type_label: "Book"
-,
-        pdf: "books/kt_book_fl2fx.pdf"
     },
     {
         id: 183,

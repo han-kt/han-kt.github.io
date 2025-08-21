@@ -178,91 +178,11 @@ function filterPublications() {
         results = searchResults.map(result => result.item);
     }
     
-    // Sort by effective date (descending) to ensure proper chronological order
-    // Use actual dates when available, fall back to year
-    results.sort((a, b) => {
-        // For patents, prefer grant_date over filing_date
-        const getEffectiveDate = (pub) => {
-            if (pub.type === 'patent') {
-                if (pub.grant_date) {
-                    return new Date(pub.grant_date);
-                } else if (pub.filing_date) {
-                    return new Date(pub.filing_date);
-                }
-            }
-            // For other publications, use year
-            return new Date(pub.year, 0, 1); // January 1st of the year
-        };
-        
-        const dateA = getEffectiveDate(a);
-        const dateB = getEffectiveDate(b);
-        
-        return dateB - dateA; // Descending order (newest first)
-    });
+    // Sort by year (descending) to ensure proper chronological order
+    results.sort((a, b) => b.year - a.year);
     
     filteredPublications = results;
     renderPublications();
-}
-
-function getDisplayDate(pub) {
-    // Get the appropriate date for display
-    if (pub.type === 'patent') {
-        if (pub.grant_date) {
-            // Format grant date in standard academic format
-            const [year, month, day] = pub.grant_date.split('-').map(Number);
-            const date = new Date(year, month - 1, day); // month is 0-indexed
-            return `${date.getFullYear()} (${date.toLocaleDateString('en-US', { 
-                month: 'short', 
-                day: 'numeric' 
-            })})`;
-        } else if (pub.filing_date) {
-            // Format filing date in standard academic format
-            const [year, month, day] = pub.filing_date.split('-').map(Number);
-            const date = new Date(year, month - 1, day); // month is 0-indexed
-            return `${date.getFullYear()} (${date.toLocaleDateString('en-US', { 
-                month: 'short', 
-                day: 'numeric' 
-            })})`;
-        }
-    }
-    // For other publications, just show the year
-    return pub.year;
-}
-
-function getPatentVenue(pub) {
-    // Construct patent venue in standard academic format
-    if (pub.patent_type === 'granted' && pub.patent_number) {
-        if (pub.grant_date) {
-            // Parse date explicitly to avoid timezone issues
-            const [year, month, day] = pub.grant_date.split('-').map(Number);
-            const date = new Date(year, month - 1, day); // month is 0-indexed
-            const formattedDate = date.toLocaleDateString('en-US', { 
-                month: 'short', 
-                day: 'numeric',
-                year: 'numeric'
-            });
-            return `US Patent No. ${pub.patent_number}, ${formattedDate}`;
-        } else {
-            return `US Patent No. ${pub.patent_number}`;
-        }
-    } else if (pub.patent_type === 'application' && pub.application_number) {
-        if (pub.filing_date) {
-            // Parse date explicitly to avoid timezone issues
-            const [year, month, day] = pub.filing_date.split('-').map(Number);
-            const date = new Date(year, month - 1, day); // month is 0-indexed
-            const formattedDate = date.toLocaleDateString('en-US', { 
-                month: 'short', 
-                day: 'numeric',
-                year: 'numeric'
-            });
-            return `US Patent App. No. ${pub.application_number}, filed on ${formattedDate}`;
-        } else {
-            return `US Patent App. No. ${pub.application_number}`;
-        }
-    } else {
-        // Fallback
-        return pub.venue;
-    }
 }
 
 function renderPublications() {
@@ -375,7 +295,7 @@ function renderPublications() {
                         
                         <div class="ml-6 text-sm text-gray-600 dark:text-gray-300">
                             <p class="mb-1"><strong>Authors:</strong> ${pub.authors}</p>
-                            <p class="mb-1"><strong>${venueLabel}:</strong> ${pub.type === 'patent' ? getPatentVenue(pub) : `${venueAbbr}, ${getDisplayDate(pub)}`}${pub.note ? ` (${pub.note})` : ''}</p>
+                            <p class="mb-1"><strong>${venueLabel}:</strong> ${venueAbbr}, ${pub.year}${pub.note ? ` (${pub.note})` : ''}</p>
                         </div>
                         
                         <div class="ml-6 mt-2 flex flex-wrap gap-2">
