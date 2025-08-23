@@ -38,7 +38,7 @@
         }
         
         .workshop-card {
-            @apply bg-white dark:bg-gray-800 rounded-lg p-6 border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow;
+            @apply ccnc-card rounded-lg p-6 hover:shadow-md transition-shadow;
         }
         
         .date-card {
@@ -48,15 +48,43 @@
         .organizer-card {
             @apply bg-gray-50 dark:bg-gray-700 rounded-lg p-4 border border-gray-200 dark:border-gray-600;
         }
+        
+        /* CCNC-style theme - dark header, light content */
+        .ccnc-header {
+            background-color: #1a1a1a;
+            color: #ffffff;
+        }
+        
+        .ccnc-content {
+            background-color: #ffffff;
+            color: #333333;
+        }
+        
+        .ccnc-card {
+            background-color: #ffffff;
+            border: 1px solid #e5e5e5;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .ccnc-section {
+            background-color: #f8f9fa;
+        }
     </style>
 </head>
-<body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-200">
+<body class="ccnc-content transition-colors duration-200">
     <!-- Workshop Header -->
-    <header id="header" class="bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-700">
+    <header id="header" class="ccnc-header backdrop-blur-sm border-b border-gray-600">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
             <div class="text-center">
-                <h1 class="text-2xl font-bold text-gray-900 dark:text-white">ACM'26</h1>
-                <p class="text-gray-600 dark:text-gray-400 mt-1">January 9, 2026 • Las Vegas, USA</p>
+                <h1 class="text-2xl font-bold text-white">ACM'26</h1>
+                <p class="text-gray-300 mt-1">January 9, 2026 • Las Vegas, USA</p>
+                
+                <div class="mt-3">
+                    <a href="https://ccnc2026.ieee-ccnc.org/call-workshop-papers" target="_blank" class="text-orange-400 hover:text-orange-300 underline text-sm">
+                        📋 View Workshop Call for Papers
+                    </a>
+                </div>
+                
             </div>
         </div>
     </header>
@@ -64,33 +92,50 @@
     <!-- Main Content -->
     <main>
         <!-- Hero Section -->
-        <section class="bg-gradient-to-br from-blue-600 to-purple-700 text-white py-20">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section class="text-white py-16 relative overflow-hidden" style="background-color: #003366;">
+            <!-- Las Vegas Background Image -->
+            <div class="absolute inset-0 bg-black/20 z-0"></div>
+            <div class="absolute inset-0 z-0" style="background-color: #003366; opacity: 0.95;"></div>
+            <div class="absolute inset-0 z-0">
+                <img src="assets/images/las_vegas.webp" alt="Las Vegas skyline" class="w-full h-full object-cover opacity-30">
+            </div>
+            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center">
                     <h1 class="text-4xl md:text-6xl font-bold mb-6">International Workshop on AI-Native Connected Mobility (ACM'26)</h1>
                     <p class="text-xl md:text-2xl mb-4 opacity-90">January 9, 2026 • Las Vegas, USA</p>
                     
-                    <p class="text-lg md:text-xl mb-8 opacity-80">
-                        Co-located with <a href="https://ccnc2026.ieee-ccnc.org/group/71" class="underline hover:text-blue-200" target="_blank">IEEE Consumer Communications & Networking Conference (CCNC)</a> (January 9-12, 2026)
+                    <p class="text-lg md:text-xl mb-4 opacity-80">
+                        Collaboratively organized with IEEE Consumer Communications & Networking Conference (CCNC) (January 9-12, 2026)
+                    </p>
+                    <p class="text-base mb-8 opacity-70">
+                        <a href="https://ccnc2026.ieee-ccnc.org/group/71" class="underline hover:text-orange-200" target="_blank">
+                            🌐 Visit IEEE CCNC 2026 Conference Website
+                        </a>
                     </p>
                     
                     <div class="flex flex-wrap justify-center gap-4 items-center">
                         
-                        <a href="https://edas.info/newPaper.php?c=33771&track=133238" target="_blank" class="bg-yellow-500 hover:bg-yellow-400 text-black px-8 py-3 rounded-lg font-bold text-lg transition-colors shadow-lg flex items-center">
+                        <a href="https://edas.info/newPaper.php?c=33771&track=133238" target="_blank" class="text-white px-8 py-3 rounded-lg font-bold text-lg transition-colors shadow-lg flex items-center" style="background-color: #d4851a;" onmouseover="this.style.backgroundColor='#b8741a'" onmouseout="this.style.backgroundColor='#d4851a'">
                             📝 Submit Paper Now
                         </a>
                         
-                        <a href="#important-dates" class="bg-white/20 hover:bg-white/30 text-white px-6 py-3 rounded-lg font-medium transition-colors flex items-center">
+                        <a href="#important-dates" class="text-white px-6 py-3 rounded-lg font-medium transition-colors flex items-center" style="background-color: #495057;" onmouseover="this.style.backgroundColor='#343a40'" onmouseout="this.style.backgroundColor='#495057'">
                             Important Dates
                         </a>
-                        <a href="#submission" class="bg-white/20 hover:bg-white/30 text-white px-6 py-3 rounded-lg font-medium transition-colors flex items-center">
+                        <a href="#submission" class="text-white px-6 py-3 rounded-lg font-medium transition-colors flex items-center" style="background-color: #6c757d;" onmouseover="this.style.backgroundColor='#545b62'" onmouseout="this.style.backgroundColor='#6c757d'">
                             Submission Guidelines
                         </a>
-                        <a href="#organizers" class="bg-white/20 hover:bg-white/30 text-white px-6 py-3 rounded-lg font-medium transition-colors flex items-center">
+                        <a href="#organizers" class="text-white px-6 py-3 rounded-lg font-medium transition-colors flex items-center" style="background-color: #495057;" onmouseover="this.style.backgroundColor='#343a40'" onmouseout="this.style.backgroundColor='#495057'">
                             Organizers
                         </a>
                     </div>
                 </div>
+            </div>
+            <!-- Photo Credit -->
+            <div class="absolute bottom-2 right-4 z-20">
+                <p class="text-xs text-white/70 bg-black/30 px-2 py-1 rounded">
+                    Photo by Y2kcrazyjoker4, licensed under CC BY 4.0 via Wikimedia Commons
+                </p>
             </div>
         </section>
 
@@ -98,7 +143,7 @@
         <section class="py-16">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="workshop-card">
-                    <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-white">About the Workshop</h2>
+                    <h2 class="text-3xl font-bold mb-6 text-gray-900">About the Workshop</h2>
                     <div class="prose prose-lg dark:prose-invert max-w-none">
                         The AI-Native Connected Mobility (ACM) workshop addresses the co-evolution of artificial 
 intelligence and communication systems in the context of next-generation connected vehicles 
@@ -122,24 +167,24 @@ co-designed to support safe, cooperative, and scalable transportation systems.
         </section>
 
         <!-- Important Dates -->
-        <section id="important-dates" class="py-16 bg-gray-100 dark:bg-gray-800">
+        <section id="important-dates" class="py-16 ccnc-section">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl font-bold mb-8 text-center text-gray-900 dark:text-white">Important Dates</h2>
+                <h2 class="text-3xl font-bold mb-8 text-center text-gray-900">Important Dates</h2>
                 <div class="grid md:grid-cols-2 gap-6">
                     
                     <div class="date-card">
-                        <h3 class="font-semibold text-blue-900 dark:text-blue-300 mb-2">Workshop Papers Due</h3>
-                        <p class="text-lg font-medium text-blue-700 dark:text-blue-200">October 5, 2025</p>
+                        <h3 class="font-semibold text-orange-900 dark:text-orange-300 mb-2">Workshop Papers Due</h3>
+                        <p class="text-lg font-medium text-orange-700 dark:text-orange-200">October 5, 2025</p>
                     </div>
                     
                     <div class="date-card">
-                        <h3 class="font-semibold text-blue-900 dark:text-blue-300 mb-2">Acceptance Notification</h3>
-                        <p class="text-lg font-medium text-blue-700 dark:text-blue-200">November 3, 2025</p>
+                        <h3 class="font-semibold text-orange-900 dark:text-orange-300 mb-2">Acceptance Notification</h3>
+                        <p class="text-lg font-medium text-orange-700 dark:text-orange-200">November 3, 2025</p>
                     </div>
                     
                     <div class="date-card">
-                        <h3 class="font-semibold text-blue-900 dark:text-blue-300 mb-2">Final Camera Ready</h3>
-                        <p class="text-lg font-medium text-blue-700 dark:text-blue-200">November 16, 2025</p>
+                        <h3 class="font-semibold text-orange-900 dark:text-orange-300 mb-2">Final Camera Ready</h3>
+                        <p class="text-lg font-medium text-orange-700 dark:text-orange-200">November 16, 2025</p>
                     </div>
                     
                 </div>
@@ -150,7 +195,7 @@ co-designed to support safe, cooperative, and scalable transportation systems.
         <section class="py-16">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="workshop-card">
-                    <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-white">Topics of Interest</h2>
+                    <h2 class="text-3xl font-bold mb-6 text-gray-900">Topics of Interest</h2>
                     <p class="text-lg text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
                         We welcome contributions that explore the design, deployment, and optimization of AI-native 
                         systems for connected mobility, with a focus on how communication and intelligence are 
@@ -160,7 +205,7 @@ co-designed to support safe, cooperative, and scalable transportation systems.
                     <div class="space-y-8">
                         
                         <div>
-                            <h3 class="text-xl font-semibold text-blue-600 dark:text-blue-400 mb-4">1. Generative AI and Foundation Models for Connected Mobility</h3>
+                            <h3 class="text-xl font-semibold text-orange-600 dark:text-orange-400 mb-4">1. Generative AI and Foundation Models for Connected Mobility</h3>
                             <ul class="space-y-3 ml-4">
                                 
                                 <li class="flex items-start">
@@ -187,7 +232,7 @@ co-designed to support safe, cooperative, and scalable transportation systems.
                         </div>
                         
                         <div>
-                            <h3 class="text-xl font-semibold text-blue-600 dark:text-blue-400 mb-4">2. Collaborative Perception and Decision Making in Networked Mobility</h3>
+                            <h3 class="text-xl font-semibold text-orange-600 dark:text-orange-400 mb-4">2. Collaborative Perception and Decision Making in Networked Mobility</h3>
                             <ul class="space-y-3 ml-4">
                                 
                                 <li class="flex items-start">
@@ -214,7 +259,7 @@ co-designed to support safe, cooperative, and scalable transportation systems.
                         </div>
                         
                         <div>
-                            <h3 class="text-xl font-semibold text-blue-600 dark:text-blue-400 mb-4">3. Infrastructure and Protocols for Scalable Intelligent Mobility</h3>
+                            <h3 class="text-xl font-semibold text-orange-600 dark:text-orange-400 mb-4">3. Infrastructure and Protocols for Scalable Intelligent Mobility</h3>
                             <ul class="space-y-3 ml-4">
                                 
                                 <li class="flex items-start">
@@ -246,10 +291,10 @@ co-designed to support safe, cooperative, and scalable transportation systems.
         </section>
 
         <!-- Submission Guidelines -->
-        <section id="submission" class="py-16 bg-gray-100 dark:bg-gray-800">
+        <section id="submission" class="py-16 ccnc-section">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="workshop-card">
-                    <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-white">Submission Guidelines</h2>
+                    <h2 class="text-3xl font-bold mb-6 text-gray-900">Submission Guidelines</h2>
                     <div class="prose prose-lg dark:prose-invert max-w-none">
                         Workshops constitute an essential part of the technical program of IEEE CCNC 2026. They focus on and 
 introduce topics of particular interest to the community of the consumer technology industry and encourage 
@@ -272,14 +317,14 @@ charge of USD100 if accepted. Papers exceeding nine (9) pages will not be accept
         <!-- Organizers -->
         <section id="organizers" class="py-16">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl font-bold mb-8 text-center text-gray-900 dark:text-white">Workshop Organizers</h2>
+                <h2 class="text-3xl font-bold mb-8 text-center text-gray-900">Workshop Organizers</h2>
                 <div class="grid md:grid-cols-2 gap-6">
                     
                     <div class="organizer-card">
                         <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-2">Kyungtae (KT) Han</h3>
                         <p class="text-gray-600 dark:text-gray-400 mb-1">Toyota Motor North America, USA</p>
-                        <p class="text-blue-600 dark:text-blue-400 mb-2">General Chair</p>
-                        <a href="mailto:kt.han@toyota.com" class="text-blue-600 dark:text-blue-400 hover:underline">
+                        <p class="text-orange-600 dark:text-orange-400 mb-2">General Chair</p>
+                        <a href="mailto:kt.han@toyota.com" class="text-orange-600 dark:text-orange-400 hover:underline">
                             kt.han@toyota.com
                         </a>
                     </div>
@@ -287,8 +332,8 @@ charge of USD100 if accepted. Papers exceeding nine (9) pages will not be accept
                     <div class="organizer-card">
                         <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-2">Qiang Liu</h3>
                         <p class="text-gray-600 dark:text-gray-400 mb-1">University of Nebraska–Lincoln, USA</p>
-                        <p class="text-blue-600 dark:text-blue-400 mb-2">Program Chair</p>
-                        <a href="mailto:qiang.liu@unl.edu" class="text-blue-600 dark:text-blue-400 hover:underline">
+                        <p class="text-orange-600 dark:text-orange-400 mb-2">Program Chair</p>
+                        <a href="mailto:qiang.liu@unl.edu" class="text-orange-600 dark:text-orange-400 hover:underline">
                             qiang.liu@unl.edu
                         </a>
                     </div>
@@ -296,8 +341,8 @@ charge of USD100 if accepted. Papers exceeding nine (9) pages will not be accept
                     <div class="organizer-card">
                         <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-2">Sanjeewa Herath</h3>
                         <p class="text-gray-600 dark:text-gray-400 mb-1">Toyota Motor North America, USA</p>
-                        <p class="text-blue-600 dark:text-blue-400 mb-2">Publicity Chair</p>
-                        <a href="mailto:sanjeewa.herath@toyota.com" class="text-blue-600 dark:text-blue-400 hover:underline">
+                        <p class="text-orange-600 dark:text-orange-400 mb-2">Publicity Chair</p>
+                        <a href="mailto:sanjeewa.herath@toyota.com" class="text-orange-600 dark:text-orange-400 hover:underline">
                             sanjeewa.herath@toyota.com
                         </a>
                     </div>
@@ -311,9 +356,9 @@ charge of USD100 if accepted. Papers exceeding nine (9) pages will not be accept
 
         <!-- Program Committee -->
         
-        <section class="py-16 bg-gray-100 dark:bg-gray-800">
+        <section class="py-16 ccnc-section">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl font-bold mb-8 text-center text-gray-900 dark:text-white">Program Committee</h2>
+                <h2 class="text-3xl font-bold mb-8 text-center text-gray-900">Program Committee</h2>
                 <div class="grid md:grid-cols-2 gap-4">
                     
                     <div class="bg-white dark:bg-gray-700 rounded-lg p-4 border border-gray-200 dark:border-gray-600">
@@ -340,18 +385,18 @@ charge of USD100 if accepted. Papers exceeding nine (9) pages will not be accept
         <section class="py-16">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <div class="workshop-card">
-                    <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-white">Contact</h2>
+                    <h2 class="text-3xl font-bold mb-6 text-gray-900">Contact</h2>
                     <div class="space-y-4">
                         <p class="text-lg text-gray-700 dark:text-gray-300">
                             <i class="fas fa-envelope mr-2"></i>
-                            <a href="mailto:kt.han@toyota.com" class="text-blue-600 dark:text-blue-400 hover:underline">
+                            <a href="mailto:kt.han@toyota.com" class="text-orange-600 dark:text-orange-400 hover:underline">
                                 kt.han@toyota.com
                             </a>
                         </p>
                         
                         <p class="text-lg text-gray-700 dark:text-gray-300">
                             <i class="fas fa-globe mr-2"></i>
-                            <a href="https://han-kt.github.io/acm2026" class="text-blue-600 dark:text-blue-400 hover:underline" target="_blank">
+                            <a href="https://han-kt.github.io/acm2026" class="text-orange-600 dark:text-orange-400 hover:underline" target="_blank">
                                 Workshop Website
                             </a>
                         </p>
