@@ -295,7 +295,7 @@ function renderPublications() {
                         
                         <div class="ml-6 text-sm text-gray-600 dark:text-gray-300">
                             <p class="mb-1"><strong>Authors:</strong> ${pub.authors}</p>
-                            <p class="mb-1"><strong>${venueLabel}:</strong> ${venueAbbr}, ${pub.year}${pub.note ? ` (${pub.note})` : ''}</p>
+                            <p class="mb-1"><strong>${venueLabel}:</strong> ${venueAbbr}${pub.type !== 'patent' ? `, ${pub.year}` : ''}${pub.note ? ` (${pub.note})` : ''}</p>
                         </div>
                         
                         <div class="ml-6 mt-2 flex flex-wrap gap-2">

@@ -1,5 +1,5 @@
 // Modern Academic Homepage JavaScript
-// Generated on 2025-08-22 21:42:28
+// Generated on 2025-08-25 21:33:11
 // Total publications: 194
 // Breakdown: 66 conferences, 5 presentations, 19 journals, 102 patents
 
@@ -7,9 +7,30 @@
 const publications = [
     {
         id: 1,
+        title: "Systems and Methods for Selecting Edge Nodes For Task Performance",
+        authors: "Dawei Chen, Qi Chen, Rohit Gupta, and Kyungtae Han",
+        venue: "US Patent No. 12395411, Aug. 19, 2025",
+        year: 2025,
+        type: "patent",
+        type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US12395411B2/en"
+,
+        patent_number: "12395411"
+,
+        application_number: "IP-A-6776"
+,
+        patent_type: "granted"
+,
+        grant_date: "2025-08-19"
+,
+        filing_date: "2024-02-06"
+    },
+    {
+        id: 2,
         title: "Systems and Methods for Resource-optimized Mixed Reality Using User-Centric Adaptive Object Detection",
         authors: "Daniel Doe, Dawei Chen, and Kyungtae Han",
-        venue: "US Patent No. 12387489",
+        venue: "US Patent No. 12387489, Aug. 12, 2025",
         year: 2025,
         type: "patent",
         type_label: "Patent"
@@ -25,10 +46,10 @@ const publications = [
         grant_date: "2025-08-12"
     },
     {
-        id: 2,
+        id: 3,
         title: "Omnidirectional Collision Avoidance",
         authors: "Amr Abdelraouf, Rohit Gupta, Hazem Abdelkawy, and Kyungtae Han",
-        venue: "US Patent No. 12361829",
+        venue: "US Patent No. 12361829, Jul. 15, 2025",
         year: 2025,
         type: "patent",
         type_label: "Patent"
@@ -46,10 +67,10 @@ const publications = [
         filing_date: "2023-04-21"
     },
     {
-        id: 3,
+        id: 4,
         title: "Systems and Methods for Communication-Aware Federated Learning",
         authors: "Yitao Chan, Dawei Chen, Haoxin Wang, and Kyungtae Han",
-        venue: "US Patent No. 12337867",
+        venue: "US Patent No. 12337867, Jun. 24, 2025",
         year: 2025,
         type: "patent",
         type_label: "Patent"
@@ -63,10 +84,10 @@ const publications = [
         grant_date: "2025-06-24"
     },
     {
-        id: 4,
+        id: 5,
         title: "Personalized Speed Limiter",
         authors: "Rohit Gupta, Ziran Wang, Runjia Du, and Kyungtae Han",
-        venue: "US Patent No. 123378592",
+        venue: "US Patent No. 123378592, Jun. 24, 2025",
         year: 2025,
         type: "patent",
         type_label: "Patent"
@@ -80,10 +101,10 @@ const publications = [
         grant_date: "2025-06-24"
     },
     {
-        id: 5,
+        id: 6,
         title: "Generating Artificial Intelligence (AI) Content Based on Predicted Handover Time",
         authors: "Dawei Chen, Yitao Chen, Qi Chen, and Kyungtae Han",
-        venue: "US Patent App. No. 19/174,032",
+        venue: "US Patent App. No. 19/174,032, filed on Apr. 09, 2025",
         year: 2025,
         type: "patent",
         type_label: "Patent"
@@ -97,10 +118,10 @@ const publications = [
         filing_date: "2025-04-09"
     },
     {
-        id: 6,
+        id: 7,
         title: "Medical Emergency Detection In-Vehicle Caretaker",
         authors: "Akila C. Ganlath, Rohit Gupta, Paul Li, Ziran Wang, Kyungtae Han, Nejib Ammar, and Satoshi Nagashima",
-        venue: "US Patent No. 12263869",
+        venue: "US Patent No. 12263869, Apr. 01, 2025",
         year: 2025,
         type: "patent",
         type_label: "Patent"
@@ -114,10 +135,10 @@ const publications = [
         grant_date: "2025-04-01"
     },
     {
-        id: 7,
+        id: 8,
         title: "Optimum Model Deployment Based on Energy Consumption",
         authors: "Dawei Chen, Kyungtae Han, and Onur Altintas",
-        venue: "US Patent App. No. 19/055,566",
+        venue: "US Patent App. No. 19/055,566, filed on Feb. 18, 2025",
         year: 2025,
         type: "patent",
         type_label: "Patent"
@@ -131,10 +152,10 @@ const publications = [
         filing_date: "2025-02-18"
     },
     {
-        id: 8,
+        id: 9,
         title: "Method and System for Personalized Car Following with Transformers and RNNs",
         authors: "Ziran Wang, Kyungtae Han, and Rohit Gupta",
-        venue: "US Patent No. 12187279",
+        venue: "US Patent No. 12187279, Jan. 07, 2025",
         year: 2025,
         type: "patent",
         type_label: "Patent"
@@ -148,7 +169,7 @@ const publications = [
         grant_date: "2025-01-07"
     },
     {
-        id: 9,
+        id: 10,
         title: "Scene-Aware Conversational ADAS with Generative AI for Real-Time Driver Assistance",
         authors: "Kyungtae Han, Yitao Chen, Rohit Gupta, and Onur Altintas",
         venue: "2025 IEEE 28th International Conference on Intelligent Transportation Systems (ITSC)",
@@ -163,7 +184,7 @@ const publications = [
         note: "Accepted"
     },
     {
-        id: 10,
+        id: 11,
         title: "Real-Time Gap and Acceleration Adaptation in Adaptive Cruise Control Based on Driver Overrides",
         authors: "Yitao Chen, Kyungtae Han, Ahmadreza Moradipari, Sergei Avedisov, Shatadal Mishra, Rohit Gupta, and Onur Altintas",
         venue: "2025 IEEE 28th International Conference on Intelligent Transportation Systems (ITSC)",
@@ -174,7 +195,7 @@ const publications = [
         note: "Accepted"
     },
     {
-        id: 11,
+        id: 12,
         title: "NuPlanQA: A Large-Scale Dataset and Benchmark for Multi-View Driving Scene Understanding in Multi-Modal Large Language Models",
         authors: "Sung-Yeon Park, Can Cui, Yunsheng Ma, Ahmadreza Moradipari, Rohit Gupta, Kyungtae Han, and Ziran Wang",
         venue: "Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)",
@@ -189,7 +210,7 @@ const publications = [
         note: "Accepted"
     },
     {
-        id: 12,
+        id: 13,
         title: "On Learning Closed-Loop Probabilistic Multi-Agent Simulator",
         authors: "Juanwu Lu, Rohit Gupta, Ahmadreza Moradipari, Kyungtae Han, Ruqi Zhang, and Ziran Wang",
         venue: "2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
@@ -204,7 +225,7 @@ const publications = [
         note: "Accepted"
     },
     {
-        id: 13,
+        id: 14,
         title: "Video Token Sparsification for Efficient Multimodal LLMs in Driving Visual Question Answering",
         authors: "Yunsheng Ma, Amr Abdelraouf, Rohit Gupta, Ahmadreza Moradipari, Ziran Wang, and Kyungtae Han",
         venue: "2025 IEEE Intelligent Vehicles Symposium (IV)",
@@ -217,7 +238,7 @@ const publications = [
         pdf: "https://arxiv.org/pdf/2409.11182.pdf"
     },
     {
-        id: 14,
+        id: 15,
         title: "PDB-Eval: An Evaluation of Large Multimodal Models for Description and Explanation of Personalized Driving Behavior",
         authors: "Junda Wu, Jessica Echterhoff, Kyungtae Han, Amr Abdelraouf, Rohit Gupta, and Julian McAuley",
         venue: "2025 IEEE Intelligent Vehicles Symposium (IV)",
@@ -230,7 +251,7 @@ const publications = [
         pdf: "https://arxiv.org/pdf/2507.18447"
     },
     {
-        id: 15,
+        id: 16,
         title: "GreenAuto: An Automated Platform for Sustainable AI Model Design on Edge Devices",
         authors: "Xiaolong Tu, Dawei Chen, Kyungtae Han, Onur Altintas, and Haoxin Wang",
         venue: "The 26th International Workshop on Mobile Computing Systems and Applications (HotMobile)",
@@ -243,7 +264,7 @@ const publications = [
         pdf: "https://arxiv.org/pdf/2501.14995"
     },
     {
-        id: 16,
+        id: 17,
         title: "Investigating Personalized Driving Behaviors in Dilemma Zones: Analysis and Prediction of Stop-or-Go Decisions",
         authors: "Ziye Qin, Siyan Li, Chuheng Wei, Guoyuan Wu, Matthew Barth, Amr Abdelraouf, Rohit Gupta, and Kyungtae Han",
         venue: "IEEE Robotics and Automation Letters",
@@ -256,10 +277,10 @@ const publications = [
         pdf: "https://arxiv.org/pdf/2405.03873.pdf"
     },
     {
-        id: 17,
+        id: 18,
         title: "Adaptive Road Sign Interpretation and Vehicle Response System",
         authors: "Rohit Gupta, Yunsheng Max, Amr Abdelraouf, and Kyungtae Han",
-        venue: "US Patent App. No. 19/004,333",
+        venue: "US Patent App. No. 19/004,333, filed on Dec. 29, 2024",
         year: 2024,
         type: "patent",
         type_label: "Patent"
@@ -273,10 +294,10 @@ const publications = [
         filing_date: "2024-12-29"
     },
     {
-        id: 18,
+        id: 19,
         title: "Context-Aware External Object Detection and Vehicle Guidance",
         authors: "Rohit Gupta, Yunsheng Max, Amr Abdelraouf, and Kyungtae Han",
-        venue: "US Patent App. No. 19/004,331",
+        venue: "US Patent App. No. 19/004,331, filed on Dec. 29, 2024",
         year: 2024,
         type: "patent",
         type_label: "Patent"
@@ -290,10 +311,10 @@ const publications = [
         filing_date: "2024-12-29"
     },
     {
-        id: 19,
+        id: 20,
         title: "Computing a Multi-Dimensional Personalized Adaptive Cruise Control Parameter",
         authors: "Rohit Gupta, Ahmadreza Moradipari, Amr Abdelraouf, and Kyungtae Han",
-        venue: "US Patent App. No. 18/988,587",
+        venue: "US Patent App. No. 18/988,587, filed on Dec. 19, 2024",
         year: 2024,
         type: "patent",
         type_label: "Patent"
@@ -307,10 +328,10 @@ const publications = [
         filing_date: "2024-12-19"
     },
     {
-        id: 20,
+        id: 21,
         title: "Advanced Driver Focus Tracking for Approaching Hazard",
         authors: "Rohit Gupta, Qi Chen, Yunsheng Max, Amr Abdelraouf, and Kyungtae Han",
-        venue: "US Patent App. No. 18/977,280",
+        venue: "US Patent App. No. 18/977,280, filed on Dec. 11, 2024",
         year: 2024,
         type: "patent",
         type_label: "Patent"
@@ -324,10 +345,10 @@ const publications = [
         filing_date: "2024-12-11"
     },
     {
-        id: 21,
+        id: 22,
         title: "Audio-Based Driver Assistance System for Enhanced Vehicle Safety",
         authors: "Rohit Gupta, Qi Chen, Yunsheng Max, Amr Abdelraouf, and Kyungtae Han",
-        venue: "US Patent App. No. 18/977,353",
+        venue: "US Patent App. No. 18/977,353, filed on Dec. 11, 2024",
         year: 2024,
         type: "patent",
         type_label: "Patent"
@@ -341,10 +362,10 @@ const publications = [
         filing_date: "2024-12-11"
     },
     {
-        id: 22,
+        id: 23,
         title: "Real-Time Risk Reasoning",
         authors: "Amr Abdelraouf, Rohit Gupta, and Kyungtae Han",
-        venue: "US Patent App. No. 18/964,886",
+        venue: "US Patent App. No. 18/964,886, filed on Dec. 02, 2024",
         year: 2024,
         type: "patent",
         type_label: "Patent"
@@ -358,10 +379,10 @@ const publications = [
         filing_date: "2024-12-02"
     },
     {
-        id: 23,
+        id: 24,
         title: "Systems and Methods for Adaptive Cruise Control Based on Online Learning Preference",
         authors: "Ahmadreza Moradipari Rohit Gupta, Amr Abdelraouf, Kyungtae Han, Sergei Avedisov, Onur Altintas, and John Kenney",
-        venue: "US Patent App. No. 18/944,774",
+        venue: "US Patent App. No. 18/944,774, filed on Nov. 12, 2024",
         year: 2024,
         type: "patent",
         type_label: "Patent"
@@ -375,10 +396,10 @@ const publications = [
         filing_date: "2024-11-12"
     },
     {
-        id: 24,
+        id: 25,
         title: "Systems and Methods for Mixed Reality Applications with Selective Frame Transmission",
         authors: "Daniel Doe, Dawei Chen, and Kyungtae Han",
-        venue: "US Patent App. No. 18/818,052",
+        venue: "US Patent App. No. 18/818,052, filed on Aug. 28, 2024",
         year: 2024,
         type: "patent",
         type_label: "Patent"
@@ -392,10 +413,10 @@ const publications = [
         filing_date: "2024-08-28"
     },
     {
-        id: 25,
+        id: 26,
         title: "Cannabis Impairment Detection and Safety System for Vehicles",
         authors: "Rohit Gupta, Hazem Abdelkawy, Amr Abdelraouf, and Kyungtae Han",
-        venue: "US Patent No. 12071141",
+        venue: "US Patent No. 12071141, Aug. 27, 2024",
         year: 2024,
         type: "patent",
         type_label: "Patent"
@@ -409,10 +430,10 @@ const publications = [
         grant_date: "2024-08-27"
     },
     {
-        id: 26,
+        id: 27,
         title: "Rest Stop Recommendation System",
         authors: "Zhenyu Shou, Ziran Wang, Kyungtae Han, Yongkang Liu, and Prashant Tiwari",
-        venue: "US Patent No. 12073332",
+        venue: "US Patent No. 12073332, Aug. 27, 2024",
         year: 2024,
         type: "patent",
         type_label: "Patent"
@@ -426,10 +447,10 @@ const publications = [
         grant_date: "2024-08-27"
     },
     {
-        id: 27,
+        id: 28,
         title: "Edge-Assisted Occlusion Mitigation",
         authors: "Yitao Chen, Dawei Chen, Kyungtae Han, and Onur Altintas",
-        venue: "US Patent App. No. 18/793,646",
+        venue: "US Patent App. No. 18/793,646, filed on Aug. 02, 2024",
         year: 2024,
         type: "patent",
         type_label: "Patent"
@@ -443,10 +464,10 @@ const publications = [
         filing_date: "2024-08-02"
     },
     {
-        id: 28,
+        id: 29,
         title: "Student-T Process Personalized Adaptive Cruise Control",
         authors: "Rohit Gupta, Ziran Wang, Yanbing Wang, Kyungtae Han, and Prashant Tiwari",
-        venue: "US Patent No. 12036987",
+        venue: "US Patent No. 12036987, Jul. 16, 2024",
         year: 2024,
         type: "patent",
         type_label: "Patent"
@@ -460,10 +481,10 @@ const publications = [
         grant_date: "2024-07-16"
     },
     {
-        id: 29,
+        id: 30,
         title: "Systems and Methods for Generating Personalized Advanced Driver Assistance Systems",
         authors: "Amr Abdelraouf, Rohit Gupta, and Kyungtae Han",
-        venue: "US Patent App. No. 18/664,946",
+        venue: "US Patent App. No. 18/664,946, filed on May. 15, 2024",
         year: 2024,
         type: "patent",
         type_label: "Patent"
@@ -477,10 +498,10 @@ const publications = [
         filing_date: "2024-05-15"
     },
     {
-        id: 30,
+        id: 31,
         title: "Vehicle Communication Sender Identification via Hyper-Graph Matching",
         authors: "Rui Guo, Sergei Avedisov, Kyungtae Han, Hongsheng Lu, and Prashant Tiwari",
-        venue: "US Patent No. 11948453",
+        venue: "US Patent No. 11948453, Apr. 02, 2024",
         year: 2024,
         type: "patent",
         type_label: "Patent"
@@ -494,10 +515,10 @@ const publications = [
         grant_date: "2024-04-02"
     },
     {
-        id: 31,
+        id: 32,
         title: "Controlling An Adaptive Cruise Control System",
         authors: "Amr Abdelraouf, Rohit Gupta, Kyungtae Han, Tomohiro Matusda, Nick Merkel, Matt Hill, Samanthule Nola, Onur Altintas, and John Kenney",
-        venue: "US Patent App. No. 18/613,323",
+        venue: "US Patent App. No. 18/613,323, filed on Mar. 22, 2024",
         year: 2024,
         type: "patent",
         type_label: "Patent"
@@ -511,10 +532,10 @@ const publications = [
         filing_date: "2024-03-22"
     },
     {
-        id: 32,
+        id: 33,
         title: "Hybrid Deterministic Override of Probabilistic Advanced Driving Assistance Systems (ADAS)",
         authors: "Rohit Gupta, Ziran Wang, Kyungtae Han, and Prashant Tiwari",
-        venue: "US Patent No. 11926322",
+        venue: "US Patent No. 11926322, Mar. 12, 2024",
         year: 2024,
         type: "patent",
         type_label: "Patent"
@@ -528,10 +549,10 @@ const publications = [
         grant_date: "2024-03-12"
     },
     {
-        id: 33,
+        id: 34,
         title: "Cooperative Driving System and Method",
         authors: "Sergei Avedisov, Ziran Wang, Ahmed Sakr, Kyungtae Han, Rui Guo, and Onur Altintas",
-        venue: "US Patent No. 11904855",
+        venue: "US Patent No. 11904855, Feb. 20, 2024",
         year: 2024,
         type: "patent",
         type_label: "Patent"
@@ -545,10 +566,10 @@ const publications = [
         grant_date: "2024-02-20"
     },
     {
-        id: 34,
+        id: 35,
         title: "Trigger Event Personalized Adaptive Cruise Control (P-ACC)",
         authors: "Rohit Gupta, Amr Abdelraouf, and Kyungtae Han",
-        venue: "US Patent App. No. 18/438,129",
+        venue: "US Patent App. No. 18/438,129, filed on Feb. 09, 2024",
         year: 2024,
         type: "patent",
         type_label: "Patent"
@@ -562,10 +583,10 @@ const publications = [
         filing_date: "2024-02-09"
     },
     {
-        id: 35,
+        id: 36,
         title: "Signal-Based Auto Gap Personalized Adaptive Cruise Control",
         authors: "Rohit Gupta, Amr Abdelraouf, Kyungtae Han, and Shili Sheng",
-        venue: "US Patent App. No. 18/437,060",
+        venue: "US Patent App. No. 18/437,060, filed on Feb. 08, 2024",
         year: 2024,
         type: "patent",
         type_label: "Patent"
@@ -579,27 +600,10 @@ const publications = [
         filing_date: "2024-02-08"
     },
     {
-        id: 36,
-        title: "Systems and Methods for Selecting Edge Nodes For Task Performance",
-        authors: "Dawei Chen, Qi Chen, Rohit Gupta, and Kyungtae Han and",
-        venue: "US Patent App. No. 18/433,759",
-        year: 2024,
-        type: "patent",
-        type_label: "Patent"
-,
-        url: "https://patents.google.com/patent/US18433759A1/en"
-,
-        application_number: "18/433,759"
-,
-        patent_type: "application"
-,
-        filing_date: "2024-02-06"
-    },
-    {
         id: 37,
         title: "Edge-Assisted Personalized High-Definition Map Delivery Based on Drivers' Interests",
         authors: "Dawei Chen, Qi Chen, Rohit Gupta, and Kyungtae Han",
-        venue: "US Patent App. No. 18/432,307",
+        venue: "US Patent App. No. 18/432,307, filed on Feb. 02, 2024",
         year: 2024,
         type: "patent",
         type_label: "Patent"
@@ -616,7 +620,7 @@ const publications = [
         id: 38,
         title: "Edge-Assisted Energy-Aware and Communication-Aware Dynamic Computational Task Offloading Strategy",
         authors: "Dawei Chen, Qi Chen, Rohit Gupta, and Kyungtae Han",
-        venue: "US Patent App. No. 18/431,723",
+        venue: "US Patent App. No. 18/431,723, filed on Feb. 02, 2024",
         year: 2024,
         type: "patent",
         type_label: "Patent"
@@ -633,7 +637,7 @@ const publications = [
         id: 39,
         title: "Systems and Methods for Personalized Gap Preference Prediction",
         authors: "Amr Abdelraouf, Rohit Gupta, Kyungtae Han, Hazem Abdelkawy, and Jakob Knapp",
-        venue: "US Patent App. No. 18/431,230",
+        venue: "US Patent App. No. 18/431,230, filed on Feb. 02, 2024",
         year: 2024,
         type: "patent",
         type_label: "Patent"
@@ -650,7 +654,7 @@ const publications = [
         id: 40,
         title: "Systems and Methods for Obtaining Video Analytic Output",
         authors: "Yitao Chen, Dawei Chen, and Kyungtae Han",
-        venue: "US Patent App. No. 18/430,242",
+        venue: "US Patent App. No. 18/430,242, filed on Feb. 01, 2024",
         year: 2024,
         type: "patent",
         type_label: "Patent"
@@ -667,7 +671,7 @@ const publications = [
         id: 41,
         title: "Systems and Methods for Controlling a Vehicle Using Physiological Data of a Driver of the Vehicle",
         authors: "Rohit Gupta, Amr Abdelraouf, Kyungtae Han, and Shili Sheng",
-        venue: "US Patent App. No. 18/424,131",
+        venue: "US Patent App. No. 18/424,131, filed on Jan. 26, 2024",
         year: 2024,
         type: "patent",
         type_label: "Patent"
@@ -684,7 +688,7 @@ const publications = [
         id: 42,
         title: "Subconscious Big Picture Macro and Split Second Micro Decisions {ADAS}",
         authors: "Rohit Gupta, Ziran Wang, Kyungtae Han, and Prashant Tiwari",
-        venue: "US Patent No. 11878709",
+        venue: "US Patent No. 11878709, Jan. 23, 2024",
         year: 2024,
         type: "patent",
         type_label: "Patent"
@@ -701,7 +705,7 @@ const publications = [
         id: 43,
         title: "Proactive Message Transmitter Identification System",
         authors: "Hiromitsu Kobayashi and Kyungtae Han",
-        venue: "US Patent No. 12091006",
+        venue: "US Patent No. 12091006, Jan. 17, 2024",
         year: 2024,
         type: "patent",
         type_label: "Patent"
@@ -718,7 +722,7 @@ const publications = [
         id: 44,
         title: "Determining a Setting for a Cruise Control",
         authors: "Kyungtae Han, Ziran Wang, Prashant Tiwari, John Lenneman, Esaka Toshinori, Miles Johnson, and Chase Violetta",
-        venue: "US Patent No. 11872985",
+        venue: "US Patent No. 11872985, Jan. 16, 2024",
         year: 2024,
         type: "patent",
         type_label: "Patent"
@@ -735,7 +739,7 @@ const publications = [
         id: 45,
         title: "Systems and Methods for Computation Offloading Determination Using Multi-Modal User Input",
         authors: "Daniel Doe, Dawei Chen, and Kyungtae Han",
-        venue: "US Patent App. No. 18/883,664",
+        venue: "US Patent App. No. 18/883,664, filed on Jan. 12, 2024",
         year: 2024,
         type: "patent",
         type_label: "Patent"
@@ -752,7 +756,7 @@ const publications = [
         id: 46,
         title: "Method and System for Personalized Car Following with Transformers",
         authors: "Ziran Wang, Zhouqiao Zhao, Rohit Gupta, Kyungtae Han, and Prashant Tiwari",
-        venue: "US Patent No. 12083883",
+        venue: "US Patent No. 12083883, Jan. 10, 2024",
         year: 2024,
         type: "patent",
         type_label: "Patent"
@@ -769,7 +773,7 @@ const publications = [
         id: 47,
         title: "Vehicular Topple Risk notification",
         authors: "Rohit Gupta, Ziran Wang, Yanbing Wang, Kyungtae Han, and Prashant Tiwari",
-        venue: "US Patent No. 11869353",
+        venue: "US Patent No. 11869353, Jan. 09, 2024",
         year: 2024,
         type: "patent",
         type_label: "Patent"
@@ -786,7 +790,7 @@ const publications = [
         id: 48,
         title: "Systems and Methods for Edge-Driven Object Detection for Resource Optimization",
         authors: "Daniel Doe, Dawei Chen, and Kyungtae Han",
-        venue: "US Patent App. No. 18/825,745",
+        venue: "US Patent App. No. 18/825,745, filed on Jan. 05, 2024",
         year: 2024,
         type: "patent",
         type_label: "Patent"
@@ -803,7 +807,7 @@ const publications = [
         id: 49,
         title: "Detection, Classification, and Prediction of Bacteria Colony Growth in Vehicle Passenger Cabin",
         authors: "Rohit Gupta, Ziran Wang, Yanbing Wang, Kyungtae Han, and Prashant Tiwari",
-        venue: "US Patent No. 12080080",
+        venue: "US Patent No. 12080080, Jan. 03, 2024",
         year: 2024,
         type: "patent",
         type_label: "Patent"
@@ -962,7 +966,7 @@ const publications = [
         id: 62,
         title: "Systems and Methods for Protecting a Vehicle at an Intersection",
         authors: "Rohit Gupta, Ziran Wang, Yanging Wang, Kyungtae Han, and Prashant Tiwari",
-        venue: "US Patent No. 11851063",
+        venue: "US Patent No. 11851063, Dec. 26, 2023",
         year: 2023,
         type: "patent",
         type_label: "Patent"
@@ -979,7 +983,7 @@ const publications = [
         id: 63,
         title: "System and Method for Estimating Motion of an Automated Vehicle for Cooperative Driving",
         authors: "Ziran Wang, Kyungtae Han, and Prashant Tiwari",
-        venue: "US Patent No. 11827245",
+        venue: "US Patent No. 11827245, Nov. 28, 2023",
         year: 2023,
         type: "patent",
         type_label: "Patent"
@@ -996,7 +1000,7 @@ const publications = [
         id: 64,
         title: "Systems and Methods for Estimating Remaining Range of a Vehicle",
         authors: "Dawei Chen, Qi Chen, and Kyungtae Han",
-        venue: "US Patent App. No. 18/491,290",
+        venue: "US Patent App. No. 18/491,290, filed on Oct. 20, 2023",
         year: 2023,
         type: "patent",
         type_label: "Patent"
@@ -1013,7 +1017,7 @@ const publications = [
         id: 65,
         title: "Systems and Methods for Personalizing Adaptive Cruise Control in a Vehicle",
         authors: "Yanbing Wang, Ziran Wang, Kyungtae Han, Rohit Gupta, and Prashant Tiwari",
-        venue: "US Patent No. 11787404",
+        venue: "US Patent No. 11787404, Oct. 17, 2023",
         year: 2023,
         type: "patent",
         type_label: "Patent"
@@ -1030,7 +1034,7 @@ const publications = [
         id: 66,
         title: "Driver Classification Systems and Methods for Obtaining an Insurance Rate for a Vehicle",
         authors: "Rohit Gupta, Ziran Wang, Kyungtae Han, and Prashant Tiwari",
-        venue: "US Patent No. 11776064",
+        venue: "US Patent No. 11776064, Oct. 03, 2023",
         year: 2023,
         type: "patent",
         type_label: "Patent"
@@ -1047,7 +1051,7 @@ const publications = [
         id: 67,
         title: "Methods and Systems for Collision Control of Moving Vehicles Surrounded By Vehicles",
         authors: "Rohit Gupta, Amr Abdelraouf, and Kyungtae Han",
-        venue: "US Patent App. No. 18/455,020",
+        venue: "US Patent App. No. 18/455,020, filed on Aug. 24, 2023",
         year: 2023,
         type: "patent",
         type_label: "Patent"
@@ -1064,7 +1068,7 @@ const publications = [
         id: 68,
         title: "Personalized Takeover Prediction with Driver Tactile Inputs",
         authors: "Ziran Wang, Rohit Gupta, Kyungtae Han, and Runjia Du",
-        venue: "US Patent App. No. 18/363,671",
+        venue: "US Patent App. No. 18/363,671, filed on Aug. 01, 2023",
         year: 2023,
         type: "patent",
         type_label: "Patent"
@@ -1081,7 +1085,7 @@ const publications = [
         id: 69,
         title: "Systems and Methods for Efficient Video Instance Segmentation for Vehicles Using Edge",
         authors: "Yitao Chen, Dawei Chen, and Kyungtae Han",
-        venue: "US Patent App. No. 18/227,453",
+        venue: "US Patent App. No. 18/227,453, filed on Jul. 28, 2023",
         year: 2023,
         type: "patent",
         type_label: "Patent"
@@ -1098,7 +1102,7 @@ const publications = [
         id: 70,
         title: "Systems and Methods to Reduce Audio Distraction for a Vehicle Driver",
         authors: "Rohit Gupta, Ziran Wang, Kyungtae Han, and Prashant Tiwari",
-        venue: "US Patent No. 11705141",
+        venue: "US Patent No. 11705141, Jul. 18, 2023",
         year: 2023,
         type: "patent",
         type_label: "Patent"
@@ -1115,7 +1119,7 @@ const publications = [
         id: 71,
         title: "Vehicle-to-everything Communication-based Lane Change Collision Avoidance Warning",
         authors: "Ziran Wang, Kyungtae Han, and BaekGyu Kim",
-        venue: "US Patent No. 11697410",
+        venue: "US Patent No. 11697410, Jul. 11, 2023",
         year: 2023,
         type: "patent",
         type_label: "Patent"
@@ -1132,7 +1136,7 @@ const publications = [
         id: 72,
         title: "Vehicular Modifications Based on Occupant Health",
         authors: "Rohit Gupta, Hideki Hada, and Kyungtae Han",
-        venue: "US Patent App. No. 18/217,505",
+        venue: "US Patent App. No. 18/217,505, filed on Jun. 30, 2023",
         year: 2023,
         type: "patent",
         type_label: "Patent"
@@ -1149,7 +1153,7 @@ const publications = [
         id: 73,
         title: "System and Method for Scheduling Connected Vehicles to Cross Non-Signalized Intersections",
         authors: "Ziran Wang, Kyungtae Han, and Prashant Tiwari",
-        venue: "US Patent No. 11661088",
+        venue: "US Patent No. 11661088, May. 30, 2023",
         year: 2023,
         type: "patent",
         type_label: "Patent"
@@ -1166,7 +1170,7 @@ const publications = [
         id: 74,
         title: "Producing, For An Autonomous Vehicle, A Route From An Origination To A Destination",
         authors: "Ziran Wang, Kyungtae Han, and Prashant Tiwari",
-        venue: "US Patent No. 11634163",
+        venue: "US Patent No. 11634163, Apr. 25, 2023",
         year: 2023,
         type: "patent",
         type_label: "Patent"
@@ -1183,7 +1187,7 @@ const publications = [
         id: 75,
         title: "ADHD Detection and Safety System for Vehicles",
         authors: "Rohit Gupta, Hazem Abdelkawy, Amr Abdelraouf, and Kyungtae Han",
-        venue: "US Patent App. No. 18/299,111",
+        venue: "US Patent App. No. 18/299,111, filed on Apr. 12, 2023",
         year: 2023,
         type: "patent",
         type_label: "Patent"
@@ -1200,7 +1204,7 @@ const publications = [
         id: 76,
         title: "Remote Control of Distance Between Transports",
         authors: "Rohit Gupta, Amr Abdelraouf, and Kyungtae Han",
-        venue: "US Patent App. No. 18/191,902",
+        venue: "US Patent App. No. 18/191,902, filed on Mar. 29, 2023",
         year: 2023,
         type: "patent",
         type_label: "Patent"
@@ -1217,7 +1221,7 @@ const publications = [
         id: 77,
         title: "Lane Change Assist for Inexperienced Driver",
         authors: "Rohit Gupta, Amr Abdelraouf, and Kyungtae Han",
-        venue: "US Patent App. No. 18/190,178",
+        venue: "US Patent App. No. 18/190,178, filed on Mar. 27, 2023",
         year: 2023,
         type: "patent",
         type_label: "Patent"
@@ -1234,7 +1238,7 @@ const publications = [
         id: 78,
         title: "Inverse Reinforcement Learning for Adaptive Cruise Control",
         authors: "Rohit Gupta, Amr Abdelraouf, and Kyungtae Han",
-        venue: "US Patent App. No. 18/185,397",
+        venue: "US Patent App. No. 18/185,397, filed on Mar. 17, 2023",
         year: 2023,
         type: "patent",
         type_label: "Patent"
@@ -1251,7 +1255,7 @@ const publications = [
         id: 79,
         title: "Recommended Following Gap Distance Based on Context",
         authors: "Rohit Gupta, Amr Abdelraouf, and Kyungtae Han",
-        venue: "US Patent App. No. 18/185,384",
+        venue: "US Patent App. No. 18/185,384, filed on Mar. 17, 2023",
         year: 2023,
         type: "patent",
         type_label: "Patent"
@@ -1268,7 +1272,7 @@ const publications = [
         id: 80,
         title: "System and Method for Connected Vehicle Lane Merge",
         authors: "Ziran Wang, Kyungtae Han, and Prashant Tiwari",
-        venue: "US Patent No. 11597388",
+        venue: "US Patent No. 11597388, Mar. 07, 2023",
         year: 2023,
         type: "patent",
         type_label: "Patent"
@@ -1285,7 +1289,7 @@ const publications = [
         id: 81,
         title: "System Framework for Software and Hardware Configuration Determination for Vehicle Applications with Cloud and Edge Computing",
         authors: "Haoxin Wang, Dawei Chen, Rohit Gupta, and Kyungtae Han",
-        venue: "US Patent App. No. 18/173,867",
+        venue: "US Patent App. No. 18/173,867, filed on Feb. 24, 2023",
         year: 2023,
         type: "patent",
         type_label: "Patent"
@@ -1302,7 +1306,7 @@ const publications = [
         id: 82,
         title: "Vehicle OTA Security Validation",
         authors: "Rohit Gupta, Haoxin Wang, Dawei Chen, and Kyungtae Han",
-        venue: "US Patent App. No. 18/108,553",
+        venue: "US Patent App. No. 18/108,553, filed on Feb. 10, 2023",
         year: 2023,
         type: "patent",
         type_label: "Patent"
@@ -1580,7 +1584,7 @@ const publications = [
         id: 106,
         title: "Systems, Methods, and Non-Transitory Computer-Readable Medium For Sharing Camera Views",
         authors: "Yitao Chen, Dawei Chen, Haoxin Wang, and Kyungtae Han",
-        venue: "US Patent App. No. 18/073,839",
+        venue: "US Patent App. No. 18/073,839, filed on Dec. 02, 2022",
         year: 2022,
         type: "patent",
         type_label: "Patent"
@@ -1597,7 +1601,7 @@ const publications = [
         id: 107,
         title: "Systems and Method for Active Road Surface Maintenance with Cloud-Based Mobility Digital Twin",
         authors: "Ziran Wang, Rohit Gupta, and Kyungtae Han",
-        venue: "US Patent App. No. 17/992,364",
+        venue: "US Patent App. No. 17/992,364, filed on Nov. 22, 2022",
         year: 2022,
         type: "patent",
         type_label: "Patent"
@@ -1614,7 +1618,7 @@ const publications = [
         id: 108,
         title: "System and Method for Controlling a Cruise Control System of a Vehicle Using the Moods of One or More Occupants",
         authors: "Rohit Gupta, Ziran Wang, and Kyungtae Han",
-        venue: "US Patent App. No. 17/992,026",
+        venue: "US Patent App. No. 17/992,026, filed on Nov. 22, 2022",
         year: 2022,
         type: "patent",
         type_label: "Patent"
@@ -1631,7 +1635,7 @@ const publications = [
         id: 109,
         title: "Systems and Methods for Contribution-Aware Federated Learning",
         authors: "Yitao Chen, Haoxin Wang, Dawei Chen, and Kyungtae Han",
-        venue: "US Patent App. No. 17/965,138",
+        venue: "US Patent App. No. 17/965,138, filed on Oct. 13, 2022",
         year: 2022,
         type: "patent",
         type_label: "Patent"
@@ -1648,7 +1652,7 @@ const publications = [
         id: 110,
         title: "Methods and Systems for Distributing High Definition Map Using Edge Device",
         authors: "Dawei Chen, Haoxin Wang, and Kyungtae Han and",
-        venue: "US Patent App. No. 17/896,396",
+        venue: "US Patent App. No. 17/896,396, filed on Aug. 26, 2022",
         year: 2022,
         type: "patent",
         type_label: "Patent"
@@ -1665,7 +1669,7 @@ const publications = [
         id: 111,
         title: "Methods and Systems for Delivering Edge-Assisted Attention-Aware High Definition Map",
         authors: "Dawei Chen, Haoxin Wang, and Kyungtae Han and",
-        venue: "US Patent App. No. 17/877,104",
+        venue: "US Patent App. No. 17/877,104, filed on Jul. 29, 2022",
         year: 2022,
         type: "patent",
         type_label: "Patent"
@@ -1682,7 +1686,7 @@ const publications = [
         id: 112,
         title: "Ramp Merging Assistance",
         authors: "Ziran Wang, Kyungtae Han, and Prashant Tiwari",
-        venue: "US Patent No. 11398156",
+        venue: "US Patent No. 11398156, Jul. 26, 2022",
         year: 2022,
         type: "patent",
         type_label: "Patent"
@@ -1699,7 +1703,7 @@ const publications = [
         id: 113,
         title: "Software Driven User Profile Personalized Adaptive Cruise Control",
         authors: "Rohit Gupta, Ziran Wang, and Kyungtae Han and",
-        venue: "US Patent App. No. 17/872,469",
+        venue: "US Patent App. No. 17/872,469, filed on Jul. 25, 2022",
         year: 2022,
         type: "patent",
         type_label: "Patent"
@@ -1716,7 +1720,7 @@ const publications = [
         id: 114,
         title: "Cloud-Based Mobility Digital Twin for Human, Vehicle, and Traffic",
         authors: "Ziran Wang, Rohit Gupta, Kyungtae Han, and Prashant Tiwari",
-        venue: "US Patent App. No. 17/744,452",
+        venue: "US Patent App. No. 17/744,452, filed on May. 13, 2022",
         year: 2022,
         type: "patent",
         type_label: "Patent"
@@ -1733,7 +1737,7 @@ const publications = [
         id: 115,
         title: "Adjustable Blind Spot Monitor",
         authors: "Ziran Wang, Kyungtae Han, and BaekGyu Kim",
-        venue: "US Patent No. 11328605",
+        venue: "US Patent No. 11328605, May. 10, 2022",
         year: 2022,
         type: "patent",
         type_label: "Patent"
@@ -1750,7 +1754,7 @@ const publications = [
         id: 116,
         title: "Systems and methods for Providing Driving Recommendations",
         authors: "Jianyu Su, Kyungtae Han, Rui Guo, and Roger Melen",
-        venue: "US Patent No. 11315421",
+        venue: "US Patent No. 11315421, Apr. 26, 2022",
         year: 2022,
         type: "patent",
         type_label: "Patent"
@@ -1767,7 +1771,7 @@ const publications = [
         id: 117,
         title: "Personalized Vehicle Lane Change Maneuver Prediction",
         authors: "Ziran Wang, Kyungtae Han, Rohit Gupta, and Prashant Tiwari",
-        venue: "US Patent App. No. 17/715,011",
+        venue: "US Patent App. No. 17/715,011, filed on Apr. 06, 2022",
         year: 2022,
         type: "patent",
         type_label: "Patent"
@@ -1784,7 +1788,7 @@ const publications = [
         id: 118,
         title: "Cloud-assisted Virtual Vehicular communication",
         authors: "Kyungtae Han, Ahmed Sakr, and Prashant Tiwari",
-        venue: "US Patent No. 11284234",
+        venue: "US Patent No. 11284234, Mar. 22, 2022",
         year: 2022,
         type: "patent",
         type_label: "Patent"
@@ -1801,7 +1805,7 @@ const publications = [
         id: 119,
         title: "XR-based Slot Reservation System for Connected Vehicles Traveling Through Intersections",
         authors: "Ziran Wang, Kyungtae Han, and BaekGyu Kim",
-        venue: "US Patent No. 11257363",
+        venue: "US Patent No. 11257363, Feb. 22, 2022",
         year: 2022,
         type: "patent",
         type_label: "Patent"
@@ -1818,7 +1822,7 @@ const publications = [
         id: 120,
         title: "Method and System for Modeling Personalized Car-Following Driving Styles with Model-Free Inverse Reinforcement Learning",
         authors: "Ziran Wang, Kyungtae Han, and Rohit Gupta",
-        venue: "US Patent App. No. 17/936,459",
+        venue: "US Patent App. No. 17/936,459, filed on Jan. 29, 2022",
         year: 2022,
         type: "patent",
         type_label: "Patent"
@@ -1835,7 +1839,7 @@ const publications = [
         id: 121,
         title: "Systems and Method for Predicting Driver Visual Impairment with Artificial Intelligence",
         authors: "Rohit Gupta, Zhouqiao Zhao, Ziran Wang, Kyungtae Han, and Prashant Tiwari",
-        venue: "US Patent App. No. 17/586,593",
+        venue: "US Patent App. No. 17/586,593, filed on Jan. 27, 2022",
         year: 2022,
         type: "patent",
         type_label: "Patent"
@@ -1852,7 +1856,7 @@ const publications = [
         id: 122,
         title: "Digital Twin Simulation-Based Vehicular Communication Planning",
         authors: "Kyungtae Han, Ahmed Sakr, and Prashant Tiwari",
-        venue: "US Patent No. 11234160",
+        venue: "US Patent No. 11234160, Jan. 25, 2022",
         year: 2022,
         type: "patent",
         type_label: "Patent"
@@ -1869,7 +1873,7 @@ const publications = [
         id: 123,
         title: "Personalized Adaptive Cruise Control Based On Steady-State Operation",
         authors: "Zhouqiao Zhao, Ziran Wang, Rohit Gupta, Kyungtae Han, and Prashant Tiwari",
-        venue: "US Patent App. No. 17/578,330",
+        venue: "US Patent App. No. 17/578,330, filed on Jan. 18, 2022",
         year: 2022,
         type: "patent",
         type_label: "Patent"
@@ -1886,7 +1890,7 @@ const publications = [
         id: 124,
         title: "Identifying a Specific Object in a Two-Dimensional Image of Objects",
         authors: "Yongkang Liu, Ziran Wang, Kyungtae Han, Zhenyu Shou, and Prashant Tiwari",
-        venue: "US Patent No. 11222215",
+        venue: "US Patent No. 11222215, Jan. 11, 2022",
         year: 2022,
         type: "patent",
         type_label: "Patent"
@@ -1903,7 +1907,7 @@ const publications = [
         id: 125,
         title: "Personalized Vehicle Operation for Autonomous Driving With Inverse Reinforcement Learning",
         authors: "Zhouqiao Zhao, Ziran Wang, Rohit Gupta, Kyungtae Han, and Prashant Tiwari",
-        venue: "US Patent App. No. 17/572,486",
+        venue: "US Patent App. No. 17/572,486, filed on Jan. 10, 2022",
         year: 2022,
         type: "patent",
         type_label: "Patent"
@@ -1920,7 +1924,7 @@ const publications = [
         id: 126,
         title: "Systems and Methods for Long-Term Prediction of Lane Change Maneuver",
         authors: "Zhenyu Shou, Yongkang Liu, Kyungtae Han, Ziran Wang, and Prashant Tiwari",
-        venue: "US Patent No. 11433923",
+        venue: "US Patent No. 11433923, Jan. 07, 2022",
         year: 2022,
         type: "patent",
         type_label: "Patent"
@@ -1937,7 +1941,7 @@ const publications = [
         id: 127,
         title: "Longitudinal Motion Control of Connected and Automated Vehicles",
         authors: "Hiromitsu Kobayashi, Kyungtae Han, BaekGyu Kim, and Ryan Wang",
-        venue: "US Patent No. 11214253",
+        venue: "US Patent No. 11214253, Jan. 04, 2022",
         year: 2022,
         type: "patent",
         type_label: "Patent"
@@ -2104,7 +2108,7 @@ const publications = [
         id: 140,
         title: "Systems and Methods for Providing Guidance to Vehicle Drivers Regarding predicted Lane-Change Behavior of Other Vehicle Drivers",
         authors: "Zhenyu Shou, Kyungtae Han, Ziran Wang, Yongkang Liu, and Prashant Tiwari",
-        venue: "US Patent No. 11151880",
+        venue: "US Patent No. 11151880, Oct. 19, 2021",
         year: 2021,
         type: "patent",
         type_label: "Patent"
@@ -2121,7 +2125,7 @@ const publications = [
         id: 141,
         title: "Systems and Methods for Compensating for Driver Speed-Tracking Error",
         authors: "Ziran Wang, Kyungtae Han, and Prashant Tiwari",
-        venue: "US Patent No. 11087623",
+        venue: "US Patent No. 11087623, Aug. 10, 2021",
         year: 2021,
         type: "patent",
         type_label: "Patent"
@@ -2138,7 +2142,7 @@ const publications = [
         id: 142,
         title: "Methods and Systems for Rideshare Implicit Needs and Explicit Needs Personalization",
         authors: "Rohit Gupta, Ziran Wang, Kyungtae Han, and Prashant Tiwari",
-        venue: "US Patent App. No. 17/217,358",
+        venue: "US Patent App. No. 17/217,358, filed on Mar. 30, 2021",
         year: 2021,
         type: "patent",
         type_label: "Patent"
@@ -2155,7 +2159,7 @@ const publications = [
         id: 143,
         title: "Vehicle Guard Rail System",
         authors: "Rohit Gupta, Ziran Wang, Kyungtae Han, and Prashant Tiwari",
-        venue: "US Patent App. No. 17/206,706",
+        venue: "US Patent App. No. 17/206,706, filed on Mar. 19, 2021",
         year: 2021,
         type: "patent",
         type_label: "Patent"
@@ -2172,7 +2176,7 @@ const publications = [
         id: 144,
         title: "Context System for Providing Cyber Security for Connected Vehicles",
         authors: "Hiromitsu Kobayashi, Kyungtae Han, and Xiaowen Jiang",
-        venue: "US Patent No. 10932135",
+        venue: "US Patent No. 10932135, Feb. 23, 2021",
         year: 2021,
         type: "patent",
         type_label: "Patent"
@@ -2189,7 +2193,7 @@ const publications = [
         id: 145,
         title: "Vehicles and methods identifying a service device in communication with a vehicle",
         authors: "Kyungtae Han and Katsumi Nagata",
-        venue: "US Patent No. 10893555",
+        venue: "US Patent No. 10893555, Jan. 12, 2021",
         year: 2021,
         type: "patent",
         type_label: "Patent"
@@ -2467,7 +2471,7 @@ const publications = [
         id: 167,
         title: "Techniques For Managing System Power Using Deferred Graphics Rendering",
         authors: "Nithyananda Jeganathan, Rajesh Poornachandran, Paul Diefenbaugh, and Kyungtae Han",
-        venue: "US Patent No. 9269121",
+        venue: "US Patent No. 9269121, Feb. 23, 2016",
         year: 2016,
         type: "patent",
         type_label: "Patent"
@@ -2484,7 +2488,7 @@ const publications = [
         id: 168,
         title: "Adaptive Touch Scanning",
         authors: "Kyungtae Han, Dongho Hong, Alexander W. Min, Yong-joon Park, and Mohamed A. Abdelmoneum",
-        venue: "US Patent No. 9244551",
+        venue: "US Patent No. 9244551, Jan. 26, 2016",
         year: 2016,
         type: "patent",
         type_label: "Patent"
@@ -2512,7 +2516,7 @@ const publications = [
         id: 170,
         title: "Data Transmission for Display Partial Update",
         authors: "Nithyananda Jeganathan, Kyungtae Han, and Paul Diefenbaugh",
-        venue: "US Patent No. 9177534",
+        venue: "US Patent No. 9177534, Nov. 03, 2015",
         year: 2015,
         type: "patent",
         type_label: "Patent"
@@ -2529,7 +2533,7 @@ const publications = [
         id: 171,
         title: "Polling Determination",
         authors: "Kyungtae Han, Paul Diefenbaugh, and Sarah Sharp",
-        venue: "US Patent No. 9058422",
+        venue: "US Patent No. 9058422, Jun. 16, 2015",
         year: 2015,
         type: "patent",
         type_label: "Patent"
@@ -2546,7 +2550,7 @@ const publications = [
         id: 172,
         title: "Hybrid Display Frame Buffer for Display Subsystem",
         authors: "Kyungtae Han, Paul Diefenbaugh, Sameer Abhinkar, Taemin Kim, and Siva Jeganathan",
-        venue: "US Patent No. 9030482",
+        venue: "US Patent No. 9030482, May. 12, 2015",
         year: 2015,
         type: "patent",
         type_label: "Patent"
@@ -2602,7 +2606,7 @@ const publications = [
         id: 176,
         title: "Control of Platform Power Consumption Using Coordination of Platform Power Management and Display Power Management",
         authors: "Siva Jeganathan, Paul Diefenbaugh, Kyungtae Han, Jinjun Liu, James A. Bish, and Paul C. Drews",
-        venue: "US Patent No. 8643658",
+        venue: "US Patent No. 8643658, Feb. 04, 2014",
         year: 2014,
         type: "patent",
         type_label: "Patent"
@@ -2619,7 +2623,7 @@ const publications = [
         id: 177,
         title: "Techniques for Aligning Frame Data",
         authors: "Maximino Vasquez, Ravi Ranganathan, Seh Kwa, Todd M. Witter, Kyungtae Han, and Paul S. Diefenbaugh",
-        venue: "US Patent No. 8643658",
+        venue: "US Patent No. 8643658, Feb. 04, 2014",
         year: 2014,
         type: "patent",
         type_label: "Patent"
@@ -2636,7 +2640,7 @@ const publications = [
         id: 178,
         title: "Display Update for a Wireless Display Device",
         authors: "Kyungtae Han, Guoqing C. Li, and Sumit K. Singh",
-        venue: "US Patent No. 8525844",
+        venue: "US Patent No. 8525844, Jan. 09, 2013",
         year: 2013,
         type: "patent",
         type_label: "Patent"
@@ -2666,7 +2670,7 @@ const publications = [
         id: 180,
         title: "Systems and Methods for Cross-Platform Radio Frequency Interference Mitigation",
         authors: "Kyungtae Han and Keith R. Tinsley",
-        venue: "US Patent No. 8290439",
+        venue: "US Patent No. 8290439, Oct. 16, 2012",
         year: 2012,
         type: "patent",
         type_label: "Patent"
@@ -2683,7 +2687,7 @@ const publications = [
         id: 181,
         title: "High Speed Digital Waveform Identification Using Higher Order Statistical Signal Processing",
         authors: "Kyungtae Han and Keith R. Tinsley",
-        venue: "US Patent No. 7734434",
+        venue: "US Patent No. 7734434, Jun. 08, 2010",
         year: 2010,
         type: "patent",
         type_label: "Patent"
@@ -2733,7 +2737,7 @@ const publications = [
         id: 185,
         title: "Apparatus for Searching Multipath in Spread Spectrum Communications System and Method",
         authors: "Ik-Soo Eo, Kyungtae Han, Hae-Bum Jung, and Kyung-Soo Kim",
-        venue: "US Patent No. 7194018",
+        venue: "US Patent No. 7194018, Mar. 20, 2007",
         year: 2007,
         type: "patent",
         type_label: "Patent"
@@ -2750,7 +2754,7 @@ const publications = [
         id: 186,
         title: "Apparatus and Method for Separating Carrier of Multicarrier Wireless Communication Receiver System",
         authors: "Kyungtae Han, In-Gi Lim, Ik-Soo Eo, Hye-Ju Seo, Kyung-Soo Kim, Hee-Bum Jung, and Han-Jin Cho",
-        venue: "US Patent No. 7127012",
+        venue: "US Patent No. 7127012, Oct. 24, 2006",
         year: 2006,
         type: "patent",
         type_label: "Patent"
