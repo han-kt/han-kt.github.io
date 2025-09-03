@@ -1,5 +1,5 @@
 // Modern Academic Homepage JavaScript
-// Generated on 2025-08-26 20:31:55
+// Generated on 2025-09-03 10:16:39
 // Total publications: 194
 // Breakdown: 66 conferences, 5 presentations, 19 journals, 102 patents
 
@@ -14,7 +14,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US12395411B2/en"
+        url: "https://patents.google.com/patent/US12395411"
 ,
         patent_number: "12395411"
 ,
@@ -35,7 +35,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US12387489B2/en"
+        url: "https://patents.google.com/patent/US12387489"
 ,
         patent_number: "12387489"
 ,
@@ -54,7 +54,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US12361829B2/en"
+        url: "https://patents.google.com/patent/US12361829"
 ,
         patent_number: "12361829"
 ,
@@ -75,7 +75,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US12337867B2/en"
+        url: "https://patents.google.com/patent/US12337867"
 ,
         patent_number: "12337867"
 ,
@@ -92,7 +92,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US12337859B2/en"
+        url: "https://patents.google.com/patent/US12337859"
 ,
         patent_number: "123378592"
 ,
@@ -109,7 +109,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US19174032A1/en"
+        url: "https://patents.google.com/patent/US19174032"
 ,
         application_number: "19/174,032"
 ,
@@ -126,7 +126,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US12263869B2/en"
+        url: "https://patents.google.com/patent/US12263869"
 ,
         patent_number: "12263869"
 ,
@@ -143,7 +143,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US19055566A1/en"
+        url: "https://patents.google.com/patent/US19055566"
 ,
         application_number: "19/055,566"
 ,
@@ -160,7 +160,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US12187279B2/en"
+        url: "https://patents.google.com/patent/US12187279"
 ,
         patent_number: "12187279"
 ,
@@ -285,7 +285,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US19004333A1/en"
+        url: "https://patents.google.com/patent/US19004333"
 ,
         application_number: "19/004,333"
 ,
@@ -302,7 +302,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US19004331A1/en"
+        url: "https://patents.google.com/patent/US19004331"
 ,
         application_number: "19/004,331"
 ,
@@ -319,7 +319,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US18988587A1/en"
+        url: "https://patents.google.com/patent/US18988587"
 ,
         application_number: "18/988,587"
 ,
@@ -336,7 +336,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US18977280A1/en"
+        url: "https://patents.google.com/patent/US18977280"
 ,
         application_number: "18/977,280"
 ,
@@ -353,7 +353,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US18977353A1/en"
+        url: "https://patents.google.com/patent/US18977353"
 ,
         application_number: "18/977,353"
 ,
@@ -370,7 +370,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US18964886A1/en"
+        url: "https://patents.google.com/patent/US18964886"
 ,
         application_number: "18/964,886"
 ,
@@ -387,7 +387,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US18944774A1/en"
+        url: "https://patents.google.com/patent/US18944774"
 ,
         application_number: "18/944,774"
 ,
@@ -404,7 +404,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US18818052A1/en"
+        url: "https://patents.google.com/patent/US18818052"
 ,
         application_number: "18/818,052"
 ,
@@ -421,7 +421,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US12071141B2/en"
+        url: "https://patents.google.com/patent/US12071141"
 ,
         patent_number: "12071141"
 ,
@@ -438,7 +438,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US12073332A/en"
+        url: "https://patents.google.com/patent/US12073332"
 ,
         patent_number: "12073332"
 ,
@@ -455,7 +455,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US18793646A1/en"
+        url: "https://patents.google.com/patent/US18793646"
 ,
         application_number: "18/793,646"
 ,
@@ -472,7 +472,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US12036987B2/en"
+        url: "https://patents.google.com/patent/US12036987"
 ,
         patent_number: "12036987"
 ,
@@ -489,7 +489,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US18664946A1/en"
+        url: "https://patents.google.com/patent/US18664946"
 ,
         application_number: "18/664,946"
 ,
@@ -506,7 +506,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US11948453B2/en"
+        url: "https://patents.google.com/patent/US11948453"
 ,
         patent_number: "11948453"
 ,
@@ -523,7 +523,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US18613323A1/en"
+        url: "https://patents.google.com/patent/US18613323"
 ,
         application_number: "18/613,323"
 ,
@@ -540,7 +540,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US11926322B2/en"
+        url: "https://patents.google.com/patent/US11926322"
 ,
         patent_number: "11926322"
 ,
@@ -557,7 +557,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US11904855B2/en"
+        url: "https://patents.google.com/patent/US11904855"
 ,
         patent_number: "11904855"
 ,
@@ -574,7 +574,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US18438129A1/en"
+        url: "https://patents.google.com/patent/US18438129"
 ,
         application_number: "18/438,129"
 ,
@@ -591,7 +591,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US18437060A1/en"
+        url: "https://patents.google.com/patent/US18437060"
 ,
         application_number: "18/437,060"
 ,
@@ -608,7 +608,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US18432307A1/en"
+        url: "https://patents.google.com/patent/US18432307"
 ,
         application_number: "18/432,307"
 ,
@@ -625,7 +625,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US18431723A1/en"
+        url: "https://patents.google.com/patent/US18431723"
 ,
         application_number: "18/431,723"
 ,
@@ -642,7 +642,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US18431230A1/en"
+        url: "https://patents.google.com/patent/US18431230"
 ,
         application_number: "18/431,230"
 ,
@@ -659,7 +659,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US18430242A1/en"
+        url: "https://patents.google.com/patent/US18430242"
 ,
         application_number: "18/430,242"
 ,
@@ -676,7 +676,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US18424131A1/en"
+        url: "https://patents.google.com/patent/US18424131"
 ,
         application_number: "18/424,131"
 ,
@@ -693,7 +693,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US11878709B2/en"
+        url: "https://patents.google.com/patent/US11878709"
 ,
         patent_number: "11878709"
 ,
@@ -710,7 +710,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US12091006B2/en"
+        url: "https://patents.google.com/patent/US12091006"
 ,
         patent_number: "12091006"
 ,
@@ -727,7 +727,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US11872985B2/en"
+        url: "https://patents.google.com/patent/US11872985"
 ,
         patent_number: "11872985"
 ,
@@ -744,7 +744,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US18883664A1/en"
+        url: "https://patents.google.com/patent/US18883664"
 ,
         application_number: "18/883,664"
 ,
@@ -761,7 +761,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US12083883B2/en"
+        url: "https://patents.google.com/patent/US12083883"
 ,
         patent_number: "12083883"
 ,
@@ -778,7 +778,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US11869353B2/en"
+        url: "https://patents.google.com/patent/US11869353"
 ,
         patent_number: "11869353"
 ,
@@ -795,7 +795,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US18825745A1/en"
+        url: "https://patents.google.com/patent/US18825745"
 ,
         application_number: "18/825,745"
 ,
@@ -812,7 +812,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US12080080B2/en"
+        url: "https://patents.google.com/patent/US12080080"
 ,
         patent_number: "12080080"
 ,
@@ -971,7 +971,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US11851063B2/en"
+        url: "https://patents.google.com/patent/US11851063"
 ,
         patent_number: "11851063"
 ,
@@ -988,7 +988,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US11827245B2/en"
+        url: "https://patents.google.com/patent/US11827245"
 ,
         patent_number: "11827245"
 ,
@@ -1005,7 +1005,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US18491290A1/en"
+        url: "https://patents.google.com/patent/US18491290"
 ,
         application_number: "18/491,290"
 ,
@@ -1022,7 +1022,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US11787404B2/en"
+        url: "https://patents.google.com/patent/US11787404"
 ,
         patent_number: "11787404"
 ,
@@ -1039,7 +1039,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US11776064B2/en"
+        url: "https://patents.google.com/patent/US11776064"
 ,
         patent_number: "11776064"
 ,
@@ -1056,7 +1056,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US18455020A1/en"
+        url: "https://patents.google.com/patent/US18455020"
 ,
         application_number: "18/455,020"
 ,
@@ -1073,7 +1073,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US18363671A1/en"
+        url: "https://patents.google.com/patent/US18363671"
 ,
         application_number: "18/363,671"
 ,
@@ -1090,7 +1090,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US18227453A1/en"
+        url: "https://patents.google.com/patent/US18227453"
 ,
         application_number: "18/227,453"
 ,
@@ -1107,7 +1107,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US11705141B2/en"
+        url: "https://patents.google.com/patent/US11705141"
 ,
         patent_number: "11705141"
 ,
@@ -1124,7 +1124,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US11697410B2/en"
+        url: "https://patents.google.com/patent/US11697410"
 ,
         patent_number: "11697410"
 ,
@@ -1141,7 +1141,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US18217505A1/en"
+        url: "https://patents.google.com/patent/US18217505"
 ,
         application_number: "18/217,505"
 ,
@@ -1158,7 +1158,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US11661088B2/en"
+        url: "https://patents.google.com/patent/US11661088"
 ,
         patent_number: "11661088"
 ,
@@ -1175,7 +1175,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US11634163B2/en"
+        url: "https://patents.google.com/patent/US11634163"
 ,
         patent_number: "11634163"
 ,
@@ -1192,7 +1192,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US18299111A1/en"
+        url: "https://patents.google.com/patent/US18299111"
 ,
         application_number: "18/299,111"
 ,
@@ -1209,7 +1209,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US18191902A1/en"
+        url: "https://patents.google.com/patent/US18191902"
 ,
         application_number: "18/191,902"
 ,
@@ -1226,7 +1226,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US18190178A1/en"
+        url: "https://patents.google.com/patent/US18190178"
 ,
         application_number: "18/190,178"
 ,
@@ -1243,7 +1243,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US18185397A1/en"
+        url: "https://patents.google.com/patent/US18185397"
 ,
         application_number: "18/185,397"
 ,
@@ -1260,7 +1260,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US18185384A1/en"
+        url: "https://patents.google.com/patent/US18185384"
 ,
         application_number: "18/185,384"
 ,
@@ -1277,7 +1277,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US11597388B2/en"
+        url: "https://patents.google.com/patent/US11597388"
 ,
         patent_number: "11597388"
 ,
@@ -1294,7 +1294,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US18173867A1/en"
+        url: "https://patents.google.com/patent/US18173867"
 ,
         application_number: "18/173,867"
 ,
@@ -1311,7 +1311,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US18108553A1/en"
+        url: "https://patents.google.com/patent/US18108553"
 ,
         application_number: "18/108,553"
 ,
@@ -1589,7 +1589,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US18073839A1/en"
+        url: "https://patents.google.com/patent/US18073839"
 ,
         application_number: "18/073,839"
 ,
@@ -1606,7 +1606,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US17992364A1/en"
+        url: "https://patents.google.com/patent/US17992364"
 ,
         application_number: "17/992,364"
 ,
@@ -1623,7 +1623,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US17992026A1/en"
+        url: "https://patents.google.com/patent/US17992026"
 ,
         application_number: "17/992,026"
 ,
@@ -1640,7 +1640,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US17965138A1/en"
+        url: "https://patents.google.com/patent/US17965138"
 ,
         application_number: "17/965,138"
 ,
@@ -1657,7 +1657,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US17896396A1/en"
+        url: "https://patents.google.com/patent/US17896396"
 ,
         application_number: "17/896,396"
 ,
@@ -1674,7 +1674,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US17877104A1/en"
+        url: "https://patents.google.com/patent/US17877104"
 ,
         application_number: "17/877,104"
 ,
@@ -1691,7 +1691,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US11398156B2/en"
+        url: "https://patents.google.com/patent/US11398156"
 ,
         patent_number: "11398156"
 ,
@@ -1708,7 +1708,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US17872469A1/en"
+        url: "https://patents.google.com/patent/US17872469"
 ,
         application_number: "17/872,469"
 ,
@@ -1725,7 +1725,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US17744452A1/en"
+        url: "https://patents.google.com/patent/US17744452"
 ,
         application_number: "17/744,452"
 ,
@@ -1742,7 +1742,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US11328605B2/en"
+        url: "https://patents.google.com/patent/US11328605"
 ,
         patent_number: "11328605"
 ,
@@ -1759,7 +1759,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US11315421B2/en"
+        url: "https://patents.google.com/patent/US11315421"
 ,
         patent_number: "11315421"
 ,
@@ -1776,7 +1776,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US17715011A1/en"
+        url: "https://patents.google.com/patent/US17715011"
 ,
         application_number: "17/715,011"
 ,
@@ -1793,7 +1793,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US11284234B2/en"
+        url: "https://patents.google.com/patent/US11284234"
 ,
         patent_number: "11284234"
 ,
@@ -1810,7 +1810,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US11257363B2/en"
+        url: "https://patents.google.com/patent/US11257363"
 ,
         patent_number: "11257363"
 ,
@@ -1827,7 +1827,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US17936459A1/en"
+        url: "https://patents.google.com/patent/US17936459"
 ,
         application_number: "17/936,459"
 ,
@@ -1844,7 +1844,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US17586593A1/en"
+        url: "https://patents.google.com/patent/US17586593"
 ,
         application_number: "17/586,593"
 ,
@@ -1861,7 +1861,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US11234160B2/en"
+        url: "https://patents.google.com/patent/US11234160"
 ,
         patent_number: "11234160"
 ,
@@ -1878,7 +1878,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US17578330A1/en"
+        url: "https://patents.google.com/patent/US17578330"
 ,
         application_number: "17/578,330"
 ,
@@ -1895,7 +1895,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US11222215B2/en"
+        url: "https://patents.google.com/patent/US11222215"
 ,
         patent_number: "11222215"
 ,
@@ -1912,7 +1912,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US17572486A1/en"
+        url: "https://patents.google.com/patent/US17572486"
 ,
         application_number: "17/572,486"
 ,
@@ -1929,7 +1929,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US11433923B2/en"
+        url: "https://patents.google.com/patent/US11433923"
 ,
         patent_number: "11433923"
 ,
@@ -1946,7 +1946,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US11214253B2/en"
+        url: "https://patents.google.com/patent/US11214253"
 ,
         patent_number: "11214253"
 ,
@@ -2113,7 +2113,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US11151880B2/en"
+        url: "https://patents.google.com/patent/US11151880"
 ,
         patent_number: "11151880"
 ,
@@ -2130,7 +2130,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US11087623B2/en"
+        url: "https://patents.google.com/patent/US11087623"
 ,
         patent_number: "11087623"
 ,
@@ -2147,7 +2147,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US17217358A1/en"
+        url: "https://patents.google.com/patent/US17217358"
 ,
         application_number: "17/217,358"
 ,
@@ -2164,7 +2164,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US17206706A1/en"
+        url: "https://patents.google.com/patent/US17206706"
 ,
         application_number: "17/206,706"
 ,
@@ -2181,7 +2181,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US10932135B2/en"
+        url: "https://patents.google.com/patent/US10932135"
 ,
         patent_number: "10932135"
 ,
@@ -2198,7 +2198,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US10893555B2/en"
+        url: "https://patents.google.com/patent/US10893555"
 ,
         patent_number: "10893555"
 ,
@@ -2476,7 +2476,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US9269121B2/en"
+        url: "https://patents.google.com/patent/US9269121"
 ,
         patent_number: "9269121"
 ,
@@ -2493,7 +2493,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US9244551B2/en"
+        url: "https://patents.google.com/patent/US9244551"
 ,
         patent_number: "9244551"
 ,
@@ -2521,7 +2521,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US9177534B2/en"
+        url: "https://patents.google.com/patent/US9177534"
 ,
         patent_number: "9177534"
 ,
@@ -2538,7 +2538,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US9058422B2/en"
+        url: "https://patents.google.com/patent/US9058422"
 ,
         patent_number: "9058422"
 ,
@@ -2555,7 +2555,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US9030482B2/en"
+        url: "https://patents.google.com/patent/US9030482"
 ,
         patent_number: "9030482"
 ,
@@ -2611,7 +2611,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US8643658B2/en"
+        url: "https://patents.google.com/patent/US8643658"
 ,
         patent_number: "8643658"
 ,
@@ -2628,7 +2628,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US8643658B2/en"
+        url: "https://patents.google.com/patent/US8643658"
 ,
         patent_number: "8643658"
 ,
@@ -2645,7 +2645,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US8525844B2/en"
+        url: "https://patents.google.com/patent/US8525844"
 ,
         patent_number: "8525844"
 ,
@@ -2675,7 +2675,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US8290439B2/en"
+        url: "https://patents.google.com/patent/US8290439"
 ,
         patent_number: "8290439"
 ,
@@ -2692,7 +2692,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US7734434B2/en"
+        url: "https://patents.google.com/patent/US7734434"
 ,
         patent_number: "7734434"
 ,
@@ -2742,7 +2742,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US7194018B2/en"
+        url: "https://patents.google.com/patent/US7194018"
 ,
         patent_number: "7194018"
 ,
@@ -2759,7 +2759,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US7127012B2/en"
+        url: "https://patents.google.com/patent/US7127012"
 ,
         patent_number: "7127012"
 ,
