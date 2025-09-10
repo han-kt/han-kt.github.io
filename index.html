@@ -112,8 +112,7 @@
                     <div class="ml-10 flex items-baseline space-x-4">
                         <a href="#home" class="nav-link">Home</a>
                         <a href="#research" class="nav-link">Research</a>
-                        <a href="#projects" class="nav-link">Projects</a>
-                        <a href="#publications" class="nav-link">Publications</a>
+                        <a href="publications.html" class="nav-link">Publications</a>
                         <a href="#contact" class="nav-link">Contact</a>
                     </div>
                 </div>
@@ -135,8 +134,7 @@
                 <div class="px-2 pt-2 pb-3 space-y-1 bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
                     <a href="#home" class="mobile-nav-link">Home</a>
                     <a href="#research" class="mobile-nav-link">Research</a>
-                    <a href="#projects" class="mobile-nav-link">Projects</a>
-                    <a href="#publications" class="mobile-nav-link">Publications</a>
+                    <a href="publications.html" class="mobile-nav-link">Publications</a>
                     <a href="#contact" class="mobile-nav-link">Contact</a>
                 </div>
             </div>
@@ -174,29 +172,6 @@
 
                         </p>
 
-                        <!-- Stats -->
-                        <div class="grid grid-cols-2 md:grid-cols-5 gap-6 mb-8">
-                            <div class="text-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700 cursor-pointer hover:shadow-md transition-all duration-200" onclick="filterAndScrollToPublications('all')">
-                                <div class="text-3xl font-bold text-blue-600 mb-1">189</div>
-                                <div class="text-sm text-gray-600 dark:text-gray-300 font-medium">Total Research Outputs</div>
-                            </div>
-                            <div class="text-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700 cursor-pointer hover:shadow-md transition-all duration-200" onclick="filterAndScrollToPublications('journal')">
-                                <div class="text-3xl font-bold text-green-600 mb-1">19</div>
-                                <div class="text-sm text-gray-600 dark:text-gray-300 font-medium">Journal Papers</div>
-                            </div>
-                            <div class="text-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700 cursor-pointer hover:shadow-md transition-all duration-200" onclick="filterAndScrollToPublications('conference')">
-                                <div class="text-3xl font-bold text-purple-600 mb-1">66</div>
-                                <div class="text-sm text-gray-600 dark:text-gray-300 font-medium">Conference Papers</div>
-                            </div>
-                            <div class="text-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700 cursor-pointer hover:shadow-md transition-all duration-200" onclick="filterAndScrollToPublications('patent')">
-                                <div class="text-3xl font-bold text-orange-600 mb-1">102</div>
-                                <div class="text-sm text-gray-600 dark:text-gray-300 font-medium">Patents</div>
-                            </div>
-                            <div class="text-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-100 dark:border-gray-700 cursor-pointer hover:shadow-md transition-all duration-200" onclick="filterAndScrollToPublications('book')">
-                                <div class="text-3xl font-bold text-red-600 mb-1">2</div>
-                                <div class="text-sm text-gray-600 dark:text-gray-300 font-medium">Books</div>
-                            </div>
-                        </div>
                         <!-- <div class="text-center mb-8">
                             <div class="text-sm text-gray-500 dark:text-gray-400">Including other research contributions and collaborations</div>
                         </div> -->
@@ -225,100 +200,94 @@
             </div>
         </section>
 
-        <!-- About/Research Section -->
+        <!-- Research Areas Section -->
         <section id="research" class="py-16 bg-white dark:bg-gray-900">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12">
                     <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-                        Research Interests
+                        Research Areas
                     </h2>
                     <p class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-                        My research focuses on cutting-edge technologies in 
-                        artificial intelligence applications, 
-                        cyber-physical systems, 
-                        and intelligent transportation systems.
-                    </p>
-                </div>
-
-                <!-- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {% for interest in research.interests %}
-                    <div class="research-card">
-                        <div class="flex items-start gap-3">
-                            <div class="research-icon flex-shrink-0">{{ loop.index }}</div>
-                            <p class="text-gray-700">{{ interest }}</p>
-                        </div>
-                    </div>
-                    {% endfor %}
-                </div> -->
-            </div>
-        </section>
-
-                                <!-- Projects Section -->
-        <section id="projects" class="py-16 bg-white dark:bg-gray-900">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-                        Key Projects
-                    </h2>
-                    <p class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-                        Selected research projects and initiatives in intelligent transportation and AI systems.
+                        Key research areas and initiatives in intelligent transportation and AI systems.
                     </p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="project-card">
-                        <div class="project-icon">
+                    <div class="research-area-card bg-white dark:bg-gray-800 rounded-lg shadow-sm p-6 border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow cursor-pointer" onclick="window.location.href='research/generative-ai/'">
+                        <div class="research-area-icon w-12 h-12 bg-blue-600 text-white rounded-lg flex items-center justify-center mb-4">
                             <i class="fas fa-brain text-2xl"></i>
                         </div>
-                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Generative AI Applications</h3>
-                        <p class="text-gray-600 mb-4">Exploring generative AI for conversational ADAS and intelligent driver assistance systems.</p>
-                        <div class="flex gap-2">
-                            <span class="project-tag">Generative AI</span><span class="project-tag">ADAS</span>
+                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Generative AI Applications</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">Research on generative AI for conversational ADAS and intelligent driver assistance systems.</p>
+                        <div class="flex gap-2 mb-4">
+                            <span class="research-area-tag px-2 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded">AI</span>
+                            <span class="research-area-tag px-2 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded">Conversational</span>
+                            <span class="research-area-tag px-2 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded">Personalization</span>
                         </div>
-                    </div>                    <div class="project-card">
-                        <div class="project-icon">
+                    </div>
+
+                    <div class="research-area-card bg-white dark:bg-gray-800 rounded-lg shadow-sm p-6 border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow cursor-pointer" onclick="window.location.href='research/connected-autonomous-vehicles/'">
+                        <div class="research-area-icon w-12 h-12 bg-green-600 text-white rounded-lg flex items-center justify-center mb-4">
                             <i class="fas fa-car text-2xl"></i>
                         </div>
-                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Connected Autonomous Vehicles</h3>
-                        <p class="text-gray-600 mb-4">Research on cooperative perception and decision-making for connected autonomous vehicles in complex urban environments.</p>
-                        <div class="flex gap-2">
-                            <span class="project-tag">AI</span><span class="project-tag">Autonomous Driving</span>
+                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Connected Autonomous Vehicles</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">Research on connected and autonomous vehicle systems, V2X communication, and cooperative driving.</p>
+                        <div class="flex gap-2 mb-4">
+                            <span class="research-area-tag px-2 py-1 bg-green-100 text-green-800 text-xs font-medium rounded">Autonomous</span>
+                            <span class="research-area-tag px-2 py-1 bg-green-100 text-green-800 text-xs font-medium rounded">V2X</span>
+                            <span class="research-area-tag px-2 py-1 bg-green-100 text-green-800 text-xs font-medium rounded">Cooperative</span>
                         </div>
-                    </div>                    <div class="project-card">
-                        <div class="project-icon">
-                            <i class="fas fa-network-wired text-2xl"></i>
+                    </div>
+
+                    <div class="research-area-card bg-white dark:bg-gray-800 rounded-lg shadow-sm p-6 border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow cursor-pointer" onclick="window.location.href='research/edge-computing/'">
+                        <div class="research-area-icon w-12 h-12 bg-purple-600 text-white rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-microchip text-2xl"></i>
                         </div>
-                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Edge Computing Systems</h3>
-                        <p class="text-gray-600 mb-4">Development of energy-efficient edge computing platforms for real-time processing in intelligent transportation systems.</p>
-                        <div class="flex gap-2">
-                            <span class="project-tag">Edge Computing</span><span class="project-tag">IoT</span>
+                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Edge Computing</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">Research on edge computing systems, resource optimization, and distributed computing for intelligent transportation.</p>
+                        <div class="flex gap-2 mb-4">
+                            <span class="research-area-tag px-2 py-1 bg-purple-100 text-purple-800 text-xs font-medium rounded">Edge</span>
+                            <span class="research-area-tag px-2 py-1 bg-purple-100 text-purple-800 text-xs font-medium rounded">Optimization</span>
+                            <span class="research-area-tag px-2 py-1 bg-purple-100 text-purple-800 text-xs font-medium rounded">Distributed</span>
                         </div>
-                    </div>                    <div class="project-card">
-                        <div class="project-icon">
-                            <i class="fas fa-cogs text-2xl"></i>
+                    </div>
+
+                    <div class="research-area-card bg-white dark:bg-gray-800 rounded-lg shadow-sm p-6 border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow cursor-pointer" onclick="window.location.href='research/digital-twin/'">
+                        <div class="research-area-icon w-12 h-12 bg-orange-600 text-white rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-cube text-2xl"></i>
                         </div>
-                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Digital Twin Technologies</h3>
-                        <p class="text-gray-600 mb-4">Implementation of digital twin frameworks for cyber-physical systems in transportation infrastructure.</p>
-                        <div class="flex gap-2">
-                            <span class="project-tag">Digital Twin</span><span class="project-tag">Cyber-Physical</span>
+                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Digital Twin</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">Research on digital twin technology for real-time simulation and prediction in transportation systems.</p>
+                        <div class="flex gap-2 mb-4">
+                            <span class="research-area-tag px-2 py-1 bg-orange-100 text-orange-800 text-xs font-medium rounded">Digital Twin</span>
+                            <span class="research-area-tag px-2 py-1 bg-orange-100 text-orange-800 text-xs font-medium rounded">Simulation</span>
+                            <span class="research-area-tag px-2 py-1 bg-orange-100 text-orange-800 text-xs font-medium rounded">Prediction</span>
                         </div>
-                    </div>                    <div class="project-card">
-                        <div class="project-icon">
-                            <i class="fas fa-chart-line text-2xl"></i>
+                    </div>
+
+                    <div class="research-area-card bg-white dark:bg-gray-800 rounded-lg shadow-sm p-6 border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow cursor-pointer" onclick="window.location.href='research/energy-efficient-computing/'">
+                        <div class="research-area-icon w-12 h-12 bg-teal-600 text-white rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-battery-half text-2xl"></i>
                         </div>
-                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Energy-Efficient Computing</h3>
-                        <p class="text-gray-600 mb-4">Research on low-power techniques and software power estimation for mobile and embedded systems.</p>
-                        <div class="flex gap-2">
-                            <span class="project-tag">Power Optimization</span><span class="project-tag">Embedded</span>
+                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Energy Efficient Computing</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">Research on energy-efficient computing systems and optimization for sustainable transportation technologies.</p>
+                        <div class="flex gap-2 mb-4">
+                            <span class="research-area-tag px-2 py-1 bg-teal-100 text-teal-800 text-xs font-medium rounded">Energy</span>
+                            <span class="research-area-tag px-2 py-1 bg-teal-100 text-teal-800 text-xs font-medium rounded">Efficiency</span>
+                            <span class="research-area-tag px-2 py-1 bg-teal-100 text-teal-800 text-xs font-medium rounded">Optimization</span>
                         </div>
-                    </div>                    <div class="project-card">
-                        <div class="project-icon">
-                            <i class="fas fa-road text-2xl"></i>
+                    </div>
+
+                    <div class="research-area-card bg-white dark:bg-gray-800 rounded-lg shadow-sm p-6 border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow cursor-pointer" onclick="window.location.href='research/intelligent-transportation/'">
+                        <div class="research-area-icon w-12 h-12 bg-red-600 text-white rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-traffic-light text-2xl"></i>
                         </div>
-                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Intelligent Transportation</h3>
-                        <p class="text-gray-600 mb-4">Development of cooperative perception and communication systems for intelligent transportation networks.</p>
-                        <div class="flex gap-2">
-                            <span class="project-tag">ITS</span><span class="project-tag">Cooperative</span>
+                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Intelligent Transportation</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">Research on intelligent transportation systems, traffic management, and smart city applications.</p>
+                        <div class="flex gap-2 mb-4">
+                            <span class="research-area-tag px-2 py-1 bg-red-100 text-red-800 text-xs font-medium rounded">ITS</span>
+                            <span class="research-area-tag px-2 py-1 bg-red-100 text-red-800 text-xs font-medium rounded">Traffic</span>
+                            <span class="research-area-tag px-2 py-1 bg-red-100 text-red-800 text-xs font-medium rounded">Smart City</span>
                         </div>
                     </div>
                 </div>
@@ -332,43 +301,38 @@
                     <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
                         Publications
                     </h2>
-                    <p class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+                    <p class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-8">
                         Complete publication list with 189 total publications including 66 conference papers, 
                         19 journal articles, 102 patents, and 2 books in intelligent transportation systems, 
                         cyber-physical systems, artificial intelligence, and edge computing.
                     </p>
-                </div>
-
-                <!-- Search and Filter -->
-                <div class="mb-8 flex flex-col sm:flex-row gap-4">
-                    <div class="relative flex-1">
-                        <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 dark:text-gray-500"></i>
-                        <input type="text" id="search-input" placeholder="Search publications..." 
-                               class="w-full pl-10 pr-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400">
+                    
+                    <!-- Quick Stats -->
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-green-600 dark:text-green-400 mb-1">19</div>
+                            <div class="text-sm text-gray-600 dark:text-gray-300 font-medium">Journals</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-1">66</div>
+                            <div class="text-sm text-gray-600 dark:text-gray-300 font-medium">Conferences</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-orange-600 dark:text-orange-400 mb-1">102</div>
+                            <div class="text-sm text-gray-600 dark:text-gray-300 font-medium">Patents</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-1">2</div>
+                            <div class="text-sm text-gray-600 dark:text-gray-300 font-medium">Books</div>
+                        </div>
                     </div>
-                    <div class="relative">
-                        <i class="fas fa-filter absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 dark:text-gray-500"></i>
-                        <select id="filter-select" class="pl-10 pr-8 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent appearance-none bg-white dark:bg-gray-800 text-gray-900 dark:text-white">
-                            <option value="all" class="bg-white dark:bg-gray-800 text-gray-900 dark:text-white">All Publications</option>
-                            <option value="journal" class="bg-white dark:bg-gray-800 text-gray-900 dark:text-white">Journal Papers</option>
-                            <option value="conference" class="bg-white dark:bg-gray-800 text-gray-900 dark:text-white">Conference Papers</option>
-                            <option value="patent" class="bg-white dark:bg-gray-800 text-gray-900 dark:text-white">Patents</option>
-                            <option value="book" class="bg-white dark:bg-gray-800 text-gray-900 dark:text-white">Books</option>
-                        </select>
-                    </div>
                 </div>
 
-                <!-- Publications List -->
-                <div id="publications-list" class="space-y-6">
-                    <!-- Publications will be loaded here via JavaScript -->
-                </div>
-
-                <!-- View All Publications Button -->
-                <div class="text-center mt-12">
-                    <a href="https://scholar.google.com/citations?hl=en&user=MejLLHgAAAAJ&view_op=list_works&sortby=pubdate" 
-                       target="_blank" class="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
-                        <i class="fas fa-external-link-alt"></i>
-                        View All Publications on Google Scholar
+                <!-- View Publications Button -->
+                <div class="text-center">
+                    <a href="publications.html" class="inline-flex items-center gap-2 px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-lg font-medium">
+                        <i class="fas fa-book-open"></i>
+                        View All Publications
                     </a>
                 </div>
             </div>
@@ -453,7 +417,7 @@
             </div>
             <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
                 <p>&copy; 2025 Kyungtae 'KT' Han. All rights reserved. 
-                    <!-- | Last updated: <span id="last-updated">September 04, 2025</span> -->
+                    <!-- | Last updated: <span id="last-updated">September 09, 2025</span> -->
                 </p>
             </div>
         </div>
@@ -462,9 +426,7 @@
 
 
     <!-- JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
-    <script src="js/publications-data.js?v=1757027332"></script>
-    <script src="js/modern-homepage.js?v=1757027332"></script>
+    <script src="js/modern-homepage.js?v=1757473876"></script>
 
 </body>
 </html> 

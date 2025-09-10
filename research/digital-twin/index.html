@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Twin Technologies - Kyungtae Han</title>
+    <meta name="description" content="Research on digital twin frameworks for cyber-physical systems in transportation infrastructure.">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <style>
+        body { font-family: 'Inter', system-ui, sans-serif; }
+        .dark { color-scheme: dark; }
+        
+        /* Smooth transitions for dark mode */
+        * {
+            transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.6s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .publication-abstract {
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="h-full bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white">
+    <!-- Navigation -->
+    <nav class="bg-white dark:bg-gray-800 shadow-sm border-b border-gray-200 dark:border-gray-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="../../index.html" class="text-xl font-bold text-gray-900 dark:text-white">
+                        Kyungtae Han
+                    </a>
+                </div>
+                
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="../../index.html#home" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="../../index.html#research" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium">Research Areas</a>
+                        <a href="../../index.html#publications" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium">Publications</a>
+                        <a href="../../index.html#contact" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                    </div>
+                </div>
+                
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
+                <a href="../../index.html#home" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="../../index.html#research" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium">Research Areas</a>
+                <a href="../../index.html#publications" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium">Publications</a>
+                <a href="../../index.html#contact" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-1">
+        <!-- Hero Section -->
+        <section class="py-16 bg-white dark:bg-gray-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <div class="research-area-icon w-20 h-20 bg-blue-600 text-white rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-cogs text-3xl"></i>
+                    </div>
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+                        Digital Twin Technologies
+                    </h1>
+                    <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-8">
+                        Research on digital twin frameworks for cyber-physical systems in transportation infrastructure.
+                    </p>
+                    
+                    <!-- Stats (click to filter within this page) -->
+                    <div class="flex justify-center gap-8 mb-8">
+                        <button type="button" onclick="handleStatClick('conference')" class="text-center hover:opacity-90">
+                            <div id="conferences-count" class="text-3xl font-bold text-blue-600 mb-1">-</div>
+                            <div class="text-sm text-gray-600 dark:text-gray-300 font-medium">Conferences</div>
+                        </button>
+                        <button type="button" onclick="handleStatClick('journal')" class="text-center hover:opacity-90">
+                            <div id="journals-count" class="text-3xl font-bold text-green-600 mb-1">-</div>
+                            <div class="text-sm text-gray-600 dark:text-gray-300 font-medium">Journals</div>
+                        </button>
+                        <button type="button" onclick="handleStatClick('patent')" class="text-center hover:opacity-90">
+                            <div id="patents-count" class="text-3xl font-bold text-orange-600 mb-1">-</div>
+                            <div class="text-sm text-gray-600 dark:text-gray-300 font-medium">Patents</div>
+                        </button>
+                        <button type="button" onclick="handleStatClick('book')" class="text-center hover:opacity-90">
+                            <div id="books-count" class="text-3xl font-bold text-purple-600 mb-1">-</div>
+                            <div class="text-sm text-gray-600 dark:text-gray-300 font-medium">Books</div>
+                        </button>
+                    </div>
+                    
+                    <!-- Tags -->
+                    <div class="flex flex-wrap justify-center gap-2 mb-8">
+                        <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">Digital Twin</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">Cyber-Physical</span>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section class="py-16 bg-gray-50 dark:bg-gray-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+                        Related Publications
+                    </h2>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+                        Publications related to Digital Twin Technologies research area.
+                    </p>
+                </div>
+
+                <!-- Publications List -->
+                <div id="publications-list" class="space-y-6">
+                    <!-- Publications will be loaded here via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Patents Section -->
+        <section class="py-16 bg-white dark:bg-gray-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+                        Related Patents
+                    </h2>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+                        Patents related to Digital Twin Technologies research area.
+                    </p>
+                </div>
+
+                <!-- Patents List -->
+                <div id="patents-list" class="space-y-6">
+                    <!-- Patents will be loaded here via JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p>&copy; 2025 Kyungtae Han. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Load publications data -->
+    <script src="../../js/publications-data.js"></script>
+    
+    <!-- Load AI classifications -->
+    <script src="../../js/ai-classifications.js"></script>
+    
+    <!-- Research area filtering script -->
+    <script>
+        // Research area configuration
+        const researchArea = {
+            id: "digital-twin",
+            title: "Digital Twin Technologies",
+            keywords: ["digital twin", "cyber-physical", "simulation", "modeling", "infrastructure", "mixed reality"],
+            specialKeywords: ["digital twin", "simulation", "modeling", "virtual", "cyber-physical"]
+        };
+
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Filter publications for this research area using manual assignments
+        function filterPublicationsForResearchArea() {
+            console.log('filterPublicationsForResearchArea called');
+            console.log('researchArea.id:', researchArea.id);
+            if (typeof publications === 'undefined') {
+                console.error('Publications data not loaded!');
+                return;
+            }
+            console.log('Publications loaded:', publications.length);
+            console.log('First publication:', publications[0]);
+
+            const relatedConferences = [];
+            const relatedJournals = [];
+            const relatedPatents = [];
+            const relatedBooks = [];
+
+            // Filter publications based on manual research_area assignments
+            publications.forEach(pub => {
+                // Check if this publication has manual research area assignments
+                if (pub.research_area && pub.research_area.includes(researchArea.id)) {
+                    if (pub.type === 'patent') {
+                        relatedPatents.push(pub);
+                    } else if (pub.type === 'conference') {
+                        relatedConferences.push(pub);
+                    } else if (pub.type === 'journal') {
+                        relatedJournals.push(pub);
+                    } else if (pub.type === 'book') {
+                        relatedBooks.push(pub);
+                    }
+                }
+            });
+
+            // Update counts and hide sections with zero counts
+            console.log('Related conferences:', relatedConferences.length);
+            console.log('Related journals:', relatedJournals.length);
+            console.log('Related patents:', relatedPatents.length);
+            console.log('Related books:', relatedBooks.length);
+            
+            // Update counts and show/hide based on content
+            const conferencesCountEl = document.getElementById('conferences-count');
+            const journalsCountEl = document.getElementById('journals-count');
+            const patentsCountEl = document.getElementById('patents-count');
+            const booksCountEl = document.getElementById('books-count');
+            
+            conferencesCountEl.textContent = relatedConferences.length;
+            journalsCountEl.textContent = relatedJournals.length;
+            patentsCountEl.textContent = relatedPatents.length;
+            booksCountEl.textContent = relatedBooks.length;
+            
+            // Hide count sections that are zero
+            conferencesCountEl.parentElement.style.display = relatedConferences.length > 0 ? 'block' : 'none';
+            journalsCountEl.parentElement.style.display = relatedJournals.length > 0 ? 'block' : 'none';
+            patentsCountEl.parentElement.style.display = relatedPatents.length > 0 ? 'block' : 'none';
+            booksCountEl.parentElement.style.display = relatedBooks.length > 0 ? 'block' : 'none';
+
+            // Sort each category by year (descending - newest first)
+            relatedConferences.sort((a, b) => b.year - a.year);
+            relatedJournals.sort((a, b) => b.year - a.year);
+            relatedPatents.sort((a, b) => b.year - a.year);
+            relatedBooks.sort((a, b) => b.year - a.year);
+
+            // Expose filtered arrays for stat click handler
+            window.__areaRelated = {
+                conferences: relatedConferences,
+                journals: relatedJournals,
+                patents: relatedPatents,
+                books: relatedBooks
+            };
+
+            // Combine conferences, journals, and books for the publications list (default view)
+            const allPublications = [...relatedConferences, ...relatedJournals, ...relatedBooks];
+
+            // Render publications
+            renderPublications(allPublications, 'publications-list');
+            renderPublications(relatedPatents, 'patents-list');
+        }
+
+        // Handle stat clicks: filter lists within the page
+        function handleStatClick(kind) {
+            if (!window.__areaRelated) return;
+            let pubs = [];
+            if (kind === 'conference') pubs = window.__areaRelated.conferences;
+            else if (kind === 'journal') pubs = window.__areaRelated.journals;
+            else if (kind === 'patent') pubs = window.__areaRelated.patents;
+            else if (kind === 'book') pubs = window.__areaRelated.books;
+            else pubs = [...window.__areaRelated.conferences, ...window.__areaRelated.journals, ...window.__areaRelated.books];
+
+            // Render filtered publications
+            renderPublications(pubs, 'publications-list');
+
+            // Scroll to list
+            const list = document.getElementById('publications-list');
+            if (list) list.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        // Render publications (same as homepage)
+        function renderPublications(filteredPublications, containerId) {
+            const container = document.getElementById(containerId);
+            if (!container) return;
+
+            // Use global publication order for numbering
+            // Get all publications from the global array, sorted by year (descending)
+            const allPublicationsSorted = [...publications].sort((a, b) => b.year - a.year);
+            
+            // Create a map of publication ID to its global position for numbering
+            const globalPositionMap = new Map();
+            const typeCounts = { conference: 0, journal: 0, patent: 0, book: 0 };
+            
+            // Count total publications per type first
+            allPublicationsSorted.forEach(pub => {
+                typeCounts[pub.type]++;
+            });
+            
+            // Assign reverse numbers (newest gets highest number)
+            const reverseCounts = { conference: typeCounts.conference, journal: typeCounts.journal, patent: typeCounts.patent, book: typeCounts.book };
+            
+            allPublicationsSorted.forEach(pub => {
+                globalPositionMap.set(pub.id, reverseCounts[pub.type]);
+                reverseCounts[pub.type]--;
+            });
+            
+            container.innerHTML = filteredPublications.map((pub, index) => {
+                // Generate publication type prefix
+                let typePrefix = '';
+                switch(pub.type) {
+                    case 'journal':
+                        typePrefix = '📘';
+                        break;
+                    case 'conference':
+                        typePrefix = '📄';
+                        break;
+                    case 'patent':
+                        typePrefix = '⚡';
+                        break;
+                    case 'book':
+                        typePrefix = '📚';
+                        break;
+                    default:
+                        typePrefix = '📚';
+                }
+                
+                // Generate reference number using global position
+                const globalPosition = globalPositionMap.get(pub.id) || 1;
+                const refNumber = `[${pub.type.charAt(0).toUpperCase()}${String(globalPosition).padStart(2, '0')}]`;
+                
+                // Generate venue abbreviation and appropriate label
+                let venueAbbr = pub.venue;
+                let venueLabel = 'Venue';
+                
+                if (pub.type === 'conference') {
+                    venueLabel = 'Conference';
+                } else if (pub.type === 'journal') {
+                    venueLabel = 'Journal';
+                } else if (pub.type === 'patent') {
+                    venueLabel = 'Patent';
+                } else if (pub.type === 'book') {
+                    // Check if this is a book chapter (has pages) or a full book
+                    if (pub.venue.includes('pp.') || pub.venue.includes('(pp.')) {
+                        venueLabel = 'Book Chapter';
+                    } else {
+                        venueLabel = 'Book';
+                    }
+                }
+                
+                if (pub.venue.includes('IEEE Transactions on Intelligent Vehicles')) {
+                    venueAbbr = 'IEEE Transactions on Intelligent Vehicles (T-IV)';
+                } else if (pub.venue.includes('IEEE Transactions on Intelligent Transportation Systems')) {
+                    venueAbbr = 'IEEE Transactions on Intelligent Transportation Systems (T-ITS)';
+                } else if (pub.venue.includes('IEEE Internet of Things Journal')) {
+                    venueAbbr = 'IEEE Internet of Things Journal (IoT-J)';
+                } else if (pub.venue.includes('IEEE Transactions on Vehicular Technology')) {
+                    venueAbbr = 'IEEE Transactions on Vehicular Technology (TVT)';
+                } else if (pub.venue.includes('IEEE Intelligent Vehicles Symposium')) {
+                    venueAbbr = 'IEEE Intelligent Vehicles Symposium (IV)';
+                } else if (pub.venue.includes('IEEE International Conference on Intelligent Transportation Systems')) {
+                    venueAbbr = 'IEEE International Conference on Intelligent Transportation Systems (ITSC)';
+                } else if (pub.venue.includes('US Patent Application')) {
+                    venueAbbr = pub.venue; // Keep full patent application number
+                } else if (pub.venue.includes('US Patent')) {
+                    venueAbbr = pub.venue; // Keep full patent number
+                }
+                
+                return `
+                    <div class="publication-item bg-white dark:bg-gray-800 rounded-lg shadow-sm p-4 mb-3 hover:shadow-md transition-shadow border-l-4 border-blue-500">
+                        <div class="flex items-start justify-between">
+                            <div class="flex-1">
+                                <div class="flex items-start gap-2 mb-2">
+                                    <span class="text-lg">${typePrefix}</span>
+                                    <span class="font-mono text-sm text-gray-500 dark:text-gray-400">${refNumber}</span>
+                                    <h3 class="publication-title text-base font-semibold text-gray-900 dark:text-white flex-1">
+                                        "${pub.title}"
+                                    </h3>
+                                </div>
+                                
+                                <div class="ml-6 text-sm text-gray-600 dark:text-gray-300">
+                                    <p class="mb-1"><strong>Authors:</strong> ${pub.authors}</p>
+                                    <p class="mb-1"><strong>${venueLabel}:</strong> ${venueAbbr}, ${pub.year}${pub.note ? ` (${pub.note})` : ''}</p>
+                                </div>
+                                
+                                <div class="ml-6 mt-2 flex flex-wrap gap-2">
+                                    ${pub.url ? `
+                                        <a href="${pub.url}" target="_blank" rel="noopener noreferrer" 
+                                           class="inline-flex items-center px-2 py-1 text-xs font-medium text-blue-600 bg-blue-50 rounded hover:bg-blue-100 transition-colors">
+                                            <i class="fas fa-external-link-alt mr-1"></i>Link
+                                        </a>
+                                    ` : ''}
+                                    ${pub.pdf ? `
+                                        <a href="${pub.pdf}" target="_blank" rel="noopener noreferrer" 
+                                           class="inline-flex items-center px-2 py-1 text-xs font-medium text-green-600 bg-green-50 rounded hover:bg-green-100 transition-colors">
+                                            <i class="fas fa-file-pdf mr-1"></i>PDF
+                                        </a>
+                                    ` : ''}
+                                    ${pub.abstract && pub.abstract.trim() !== '' ? `
+                                        <button onclick="toggleAbstract(${pub.id})" 
+                                                class="inline-flex items-center px-2 py-1 text-xs font-medium text-green-600 bg-green-50 rounded hover:bg-green-100 transition-colors">
+                                            <i class="fas fa-eye mr-1"></i>Abstract
+                                        </button>
+                                    ` : ''}
+                                    <button onclick="copyBibTeX(${pub.id}, event)" 
+                                            class="inline-flex items-center px-2 py-1 text-xs font-medium text-purple-600 bg-purple-50 rounded hover:bg-purple-100 transition-colors">
+                                        <i class="fas fa-code mr-1"></i>BibTeX
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        ${pub.abstract && pub.abstract.trim() !== '' ? `
+                            <div id="abstract-${pub.id}" class="publication-abstract hidden mt-3 ml-6 p-3 bg-gray-50 dark:bg-gray-700 rounded">
+                                <h4 class="font-semibold text-gray-900 dark:text-white mb-2 text-sm">Abstract</h4>
+                                <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">${pub.abstract}</p>
+                            </div>
+                        ` : ''}
+                        
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // Toggle abstract visibility
+        function toggleAbstract(id) {
+            const abstract = document.getElementById(`abstract-${id}`);
+            if (!abstract) {
+                console.warn(`Abstract element not found for publication ${id}`);
+                return;
+            }
+            
+            if (abstract.classList.contains('hidden')) {
+                abstract.classList.remove('hidden');
+            } else {
+                abstract.classList.add('hidden');
+            }
+        }
+
+        // Copy BibTeX to clipboard
+        function copyBibTeX(id, event) {
+            event.preventDefault();
+            
+            // Find the publication data
+            const pub = publications.find(p => p.id === id);
+            if (!pub) {
+                console.error(`Publication with id ${id} not found`);
+                return;
+            }
+            
+            // Generate BibTeX entry
+            let bibtex = '';
+            if (pub.type === 'conference') {
+                bibtex = `@inproceedings{${pub.id},\n  title={${pub.title}},\n  author={${pub.authors}},\n  booktitle={${pub.venue}},\n  year={${pub.year}}\n}`;
+            } else if (pub.type === 'journal') {
+                bibtex = `@article{${pub.id},\n  title={${pub.title}},\n  author={${pub.authors}},\n  journal={${pub.venue}},\n  year={${pub.year}}\n}`;
+            } else if (pub.type === 'patent') {
+                bibtex = `@misc{${pub.id},\n  title={${pub.title}},\n  author={${pub.authors}},\n  howpublished={${pub.venue}},\n  year={${pub.year}}\n}`;
+            } else {
+                bibtex = `@misc{${pub.id},\n  title={${pub.title}},\n  author={${pub.authors}},\n  howpublished={${pub.venue}},\n  year={${pub.year}}\n}`;
+            }
+            
+            navigator.clipboard.writeText(bibtex).then(() => {
+                const button = event.target.closest('button');
+                const originalText = button.innerHTML;
+                button.innerHTML = '<i class="fas fa-check mr-1"></i>Copied!';
+                button.classList.remove('text-purple-600', 'bg-purple-50', 'hover:bg-purple-100');
+                button.classList.add('text-green-600', 'bg-green-50');
+                
+                setTimeout(() => {
+                    button.innerHTML = originalText;
+                    button.classList.remove('text-green-600', 'bg-green-50');
+                    button.classList.add('text-purple-600', 'bg-purple-50', 'hover:bg-purple-100');
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy BibTeX:', err);
+                alert('Failed to copy BibTeX to clipboard');
+            });
+        }
+
+        // Initialize when DOM is loaded and publications data is available
+        function initializeResearchArea() {
+            console.log('Initializing research area...');
+            console.log('Publications available:', typeof publications !== 'undefined');
+            
+            if (typeof publications !== 'undefined' && publications.length > 0) {
+                console.log('Publications data loaded, filtering publications...');
+                filterPublicationsForResearchArea();
+            } else {
+                console.log('Publications data not ready, waiting...');
+                setTimeout(initializeResearchArea, 500);
+            }
+        }
+
+        // Start initialization when DOM is ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initializeResearchArea);
+        } else {
+            initializeResearchArea();
+        }
+    </script>
+</body>
+</html>

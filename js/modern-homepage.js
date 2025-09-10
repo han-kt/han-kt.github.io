@@ -209,6 +209,12 @@ function renderPublications() {
         typeCounts[pub.type]++;
     });
     
+    // Sort publications by year (descending) within each type - newest first for display
+    const sortedPublications = [...filteredPublications].sort((a, b) => {
+        if (a.type !== b.type) return 0; // Don't change order between types
+        return b.year - a.year; // Sort by year descending within each type (newest first)
+    });
+    
     // Track current count for each type (for reverse numbering)
     const currentCounts = {
         conference: 0,
@@ -217,7 +223,7 @@ function renderPublications() {
         book: 0
     };
     
-    publicationsList.innerHTML = filteredPublications.map((pub, index) => {
+    publicationsList.innerHTML = sortedPublications.map((pub, index) => {
         // Increment count for this type
         currentCounts[pub.type]++;
         
@@ -240,7 +246,7 @@ function renderPublications() {
                 typePrefix = '📚';
         }
         
-        // Generate reference number in reverse order within each type
+        // Generate reference number in reverse order within each type (oldest gets B01, newest gets B02)
         const reverseNumber = typeCounts[pub.type] - currentCounts[pub.type] + 1;
         const refNumber = `[${pub.type.charAt(0).toUpperCase()}${String(reverseNumber).padStart(2, '0')}]`;
         
@@ -486,6 +492,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
 
 // Export functions for global access
 window.toggleAbstract = toggleAbstract;

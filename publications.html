@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications - Kyungtae Han</title>
+    <meta name="description" content="Complete publication list including conference papers, journal articles, patents, and books.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Fuse.js for search -->
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+    
+    <style>
+        /* Custom styles */
+        .publication-item {
+            transition: all 0.2s ease;
+        }
+        
+        .publication-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .abstract-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        
+        .abstract-content.expanded {
+            max-height: 500px;
+        }
+        
+        .copy-success {
+            background-color: #10b981;
+            color: white;
+        }
+    </style>
+</head>
+<body class="h-full bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white">
+    <!-- Navigation -->
+    <nav class="bg-white dark:bg-gray-800 shadow-sm border-b border-gray-200 dark:border-gray-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="../index.html" class="text-xl font-bold text-gray-900 dark:text-white">
+                        Kyungtae Han
+                    </a>
+                </div>
+                
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="../index.html#home" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="../index.html#research" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium">Research</a>
+                        <a href="publications.html" class="text-blue-600 dark:text-blue-400 px-3 py-2 rounded-md text-sm font-medium">Publications</a>
+                        <a href="../index.html#contact" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                    </div>
+                </div>
+                
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
+                <a href="../index.html#home" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="../index.html#research" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium">Research</a>
+                <a href="publications.html" class="text-blue-600 dark:text-blue-400 block px-3 py-2 rounded-md text-base font-medium">Publications</a>
+                <a href="../index.html#contact" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-1">
+        <!-- Hero Section -->
+        <section class="py-16 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                    Publications
+                </h1>
+                <p class="text-xl text-blue-100 max-w-3xl mx-auto mb-8">
+                    Complete publication list with conference papers, journal articles, patents, and books in intelligent transportation systems, cyber-physical systems, artificial intelligence, and edge computing.
+                </p>
+                
+                <!-- Stats -->
+                <div class="flex justify-center gap-8 mb-8">
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-green-200 mb-1">19</div>
+                        <div class="text-sm text-blue-100 font-medium">Journals</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-blue-200 mb-1">66</div>
+                        <div class="text-sm text-blue-100 font-medium">Conferences</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-orange-200 mb-1">102</div>
+                        <div class="text-sm text-blue-100 font-medium">Patents</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-purple-200 mb-1">2</div>
+                        <div class="text-sm text-blue-100 font-medium">Books</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Search and Filter Section -->
+        <section class="py-8 bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row gap-4 items-center justify-between">
+                    <!-- Search -->
+                    <div class="flex-1 max-w-md">
+                        <div class="relative">
+                            <input type="text" id="search-input" placeholder="Search publications..." 
+                                   class="w-full pl-10 pr-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+                        </div>
+                    </div>
+                    
+                    <!-- Filter -->
+                    <div class="flex gap-4">
+                        <select id="filter-select" class="px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            <option value="all" class="bg-white dark:bg-gray-800 text-gray-900 dark:text-white">All Publications</option>
+                            <option value="journal" class="bg-white dark:bg-gray-800 text-gray-900 dark:text-white">Journal Papers</option>
+                            <option value="conference" class="bg-white dark:bg-gray-800 text-gray-900 dark:text-white">Conference Papers</option>
+                            <option value="patent" class="bg-white dark:bg-gray-800 text-gray-900 dark:text-white">Patents</option>
+                            <option value="book" class="bg-white dark:bg-gray-800 text-gray-900 dark:text-white">Books</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section class="py-16 bg-white dark:bg-gray-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Publications List -->
+                <div id="publications-list" class="space-y-6">
+                    <!-- Publications will be loaded here via JavaScript -->
+                </div>
+
+                <!-- View All Publications Button -->
+                <div class="text-center mt-12">
+                    <a href="https://scholar.google.com/citations?hl=en&user=MejLLHgAAAAJ&view_op=list_works&sortby=pubdate" 
+                       target="_blank" class="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+                        <i class="fas fa-external-link-alt"></i>
+                        View All Publications on Google Scholar
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 dark:bg-gray-900 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-gray-400">&copy; 2024 Kyungtae Han. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Load publications data -->
+    <script src="../js/publications-data.js"></script>
+    
+    <!-- Publications page script -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Global variables
+        let fuse;
+        let filteredPublications = [];
+
+        // DOM elements
+        const searchInput = document.getElementById('search-input');
+        const filterSelect = document.getElementById('filter-select');
+        const publicationsList = document.getElementById('publications-list');
+
+        // Check if publications data is loaded
+        function checkPublicationsData() {
+            if (typeof publications === 'undefined') {
+                console.error('Publications data not loaded!');
+                return false;
+            }
+            return true;
+        }
+
+        // Initialize search
+        function initSearch() {
+            if (!checkPublicationsData()) return;
+
+            const options = {
+                keys: ['title', 'authors', 'venue'],
+                threshold: 0.3,
+                includeScore: true
+            };
+            fuse = new Fuse(publications, options);
+            
+            filteredPublications = [...publications];
+            renderPublications();
+        }
+
+
+        // Filter publications
+        function filterPublications() {
+            if (!checkPublicationsData()) return;
+
+            let results = publications;
+
+            // Apply search filter
+            if (searchInput.value.trim()) {
+                const searchResults = fuse.search(searchInput.value);
+                results = searchResults.map(result => result.item);
+            }
+
+            // Apply type filter
+            const typeFilter = filterSelect.value;
+            if (typeFilter !== 'all') {
+                results = results.filter(pub => pub.type === typeFilter);
+            }
+
+            // Sort by year (descending - newest first)
+            results.sort((a, b) => b.year - a.year);
+            
+            filteredPublications = results;
+            renderPublications();
+        }
+
+        // Render publications (same as homepage)
+        function renderPublications() {
+            if (!checkPublicationsData()) return;
+
+            // Use global publication order for numbering
+            // Get all publications from the global array, sorted by year (descending)
+            const allPublicationsSorted = [...publications].sort((a, b) => b.year - a.year);
+            
+            // Create a map of publication ID to its global position for numbering
+            const globalPositionMap = new Map();
+            const typeCounts = { conference: 0, journal: 0, patent: 0, book: 0 };
+            
+            // Count total publications per type first
+            allPublicationsSorted.forEach(pub => {
+                typeCounts[pub.type]++;
+            });
+            
+            // Assign reverse numbers (newest gets highest number)
+            const reverseCounts = { conference: typeCounts.conference, journal: typeCounts.journal, patent: typeCounts.patent, book: typeCounts.book };
+            
+            allPublicationsSorted.forEach(pub => {
+                globalPositionMap.set(pub.id, reverseCounts[pub.type]);
+                reverseCounts[pub.type]--;
+            });
+            
+            publicationsList.innerHTML = filteredPublications.map((pub, index) => {
+                // Increment count for this type
+                currentCounts[pub.type]++;
+                
+                // Generate publication type prefix
+                let typePrefix = '';
+                let typeColor = '';
+                let typeIcon = '';
+                
+                switch(pub.type) {
+                    case 'journal':
+                        typePrefix = '📘';
+                        break;
+                    case 'conference':
+                        typePrefix = '📄';
+                        break;
+                    case 'patent':
+                        typePrefix = '⚡';
+                        break;
+                    case 'book':
+                        typePrefix = '📚';
+                        break;
+                    default:
+                        typePrefix = '📚';
+                }
+
+                // Generate links HTML
+                let linksHtml = '';
+                if (pub.url) {
+                    linksHtml += `<a href="${pub.url}" target="_blank" class="inline-flex items-center gap-1 px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 rounded-full text-sm hover:bg-blue-200 dark:hover:bg-blue-800 transition-colors">
+                        <i class="fas fa-external-link-alt text-xs"></i>
+                        URL
+                    </a>`;
+                }
+                if (pub.pdf) {
+                    linksHtml += `<a href="${pub.pdf}" target="_blank" class="inline-flex items-center gap-1 px-3 py-1 bg-red-100 dark:bg-red-900 text-red-700 dark:text-red-300 rounded-full text-sm hover:bg-red-200 dark:hover:bg-red-800 transition-colors">
+                        <i class="fas fa-file-pdf text-xs"></i>
+                        PDF
+                    </a>`;
+                }
+                if (pub.abstract) {
+                    linksHtml += `<button onclick="toggleAbstract('${pub.id}')" class="inline-flex items-center gap-1 px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-sm hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
+                        <i class="fas fa-eye text-xs"></i>
+                        Abstract
+                    </button>`;
+                }
+                linksHtml += `<button onclick="copyBibTeX('${pub.id}')" class="inline-flex items-center gap-1 px-3 py-1 bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 rounded-full text-sm hover:bg-green-200 dark:hover:bg-green-800 transition-colors">
+                    <i class="fas fa-copy text-xs"></i>
+                    BibTeX
+                </button>`;
+
+                // Generate reference number using global position
+                const globalPosition = globalPositionMap.get(pub.id) || 1;
+                const refNumber = `[${pub.type.charAt(0).toUpperCase()}${String(globalPosition).padStart(2, '0')}]`;
+                
+                // Determine venue label and abbreviation
+                let venueLabel = 'Venue';
+                let venueAbbr = pub.venue;
+                if (pub.type === 'journal') {
+                    venueLabel = 'Journal';
+                } else if (pub.type === 'conference') {
+                    venueLabel = 'Conference';
+                } else if (pub.type === 'patent') {
+                    venueLabel = 'Patent';
+                } else if (pub.type === 'book') {
+                    venueLabel = 'Publisher';
+                }
+
+                return `
+                    <div class="publication-item bg-white dark:bg-gray-800 rounded-lg shadow-sm p-4 mb-3 hover:shadow-md transition-shadow border-l-4 border-blue-500">
+                        <div class="flex items-start justify-between">
+                            <div class="flex-1">
+                                <div class="flex items-start gap-2 mb-2">
+                                    <span class="text-lg">${typePrefix}</span>
+                                    <span class="font-mono text-sm text-gray-500 dark:text-gray-400">${refNumber}</span>
+                                    <h3 class="publication-title text-base font-semibold text-gray-900 dark:text-white flex-1">
+                                        "${pub.title}"
+                                    </h3>
+                                </div>
+                                
+                                <div class="ml-6 text-sm text-gray-600 dark:text-gray-300">
+                                    <p class="mb-1"><strong>Authors:</strong> ${pub.authors}</p>
+                                    <p class="mb-1"><strong>${venueLabel}:</strong> ${venueAbbr}, ${pub.year}${pub.note ? ` (${pub.note})` : ''}</p>
+                                </div>
+                                
+                                <div class="ml-6 mt-2 flex flex-wrap gap-2">
+                                    ${linksHtml}
+                                    ${pub.abstract && pub.abstract.trim() !== '' ? `
+                                        <button onclick="toggleAbstract(${pub.id})" 
+                                                class="inline-flex items-center px-2 py-1 text-xs font-medium text-purple-600 bg-purple-50 rounded hover:bg-purple-100 transition-colors">
+                                            <i class="fas fa-eye mr-1"></i>Abstract
+                                        </button>
+                                    ` : ''}
+                                    <button onclick="copyBibTeX('${pub.id}')" 
+                                            class="inline-flex items-center px-2 py-1 text-xs font-medium text-gray-600 bg-gray-50 rounded hover:bg-gray-100 transition-colors">
+                                        <i class="fas fa-code mr-1"></i>BibTeX
+                                    </button>
+                                </div>
+                                
+                                ${pub.abstract && pub.abstract.trim() !== '' ? `
+                                    <div id="abstract-${pub.id}" class="abstract-content hidden ml-6 mt-3">
+                                        <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
+                                            <h4 class="font-medium text-gray-900 dark:text-white mb-2">Abstract</h4>
+                                            <p class="text-gray-600 dark:text-gray-300 text-sm">${pub.abstract}</p>
+                                        </div>
+                                    </div>
+                                ` : ''}
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // Toggle abstract
+        function toggleAbstract(pubId) {
+            const abstractDiv = document.getElementById(`abstract-${pubId}`);
+            if (abstractDiv) {
+                abstractDiv.classList.toggle('expanded');
+            }
+        }
+
+        // Copy BibTeX
+        function copyBibTeX(pubId) {
+            const pub = publications.find(p => p.id === pubId);
+            if (!pub) return;
+
+            let bibtex = '';
+            switch(pub.type) {
+                case 'conference':
+                    bibtex = `@inproceedings{${pubId},
+  title={${pub.title}},
+  author={${pub.authors}},
+  booktitle={${pub.venue}},
+  year={${pub.year}}
+}`;
+                    break;
+                case 'journal':
+                    bibtex = `@article{${pubId},
+  title={${pub.title}},
+  author={${pub.authors}},
+  journal={${pub.venue}},
+  year={${pub.year}}
+}`;
+                    break;
+                case 'patent':
+                    bibtex = `@misc{${pubId},
+  title={${pub.title}},
+  author={${pub.authors}},
+  howpublished={Patent ${pub.venue}},
+  year={${pub.year}}
+}`;
+                    break;
+                case 'book':
+                    bibtex = `@book{${pubId},
+  title={${pub.title}},
+  author={${pub.authors}},
+  publisher={${pub.venue}},
+  year={${pub.year}}
+}`;
+                    break;
+            }
+
+            navigator.clipboard.writeText(bibtex).then(() => {
+                // Show success feedback
+                const button = event.target.closest('button');
+                const originalText = button.innerHTML;
+                button.innerHTML = '<i class="fas fa-check text-xs"></i> Copied!';
+                button.classList.add('copy-success');
+                setTimeout(() => {
+                    button.innerHTML = originalText;
+                    button.classList.remove('copy-success');
+                }, 2000);
+            });
+        }
+
+        // Event listeners
+        searchInput.addEventListener('input', filterPublications);
+        filterSelect.addEventListener('change', filterPublications);
+
+        // Initialize when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Wait a bit for publications data to load
+            setTimeout(initSearch, 500);
+        });
+    </script>
+</body>
+</html>
