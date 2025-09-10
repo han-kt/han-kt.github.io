@@ -114,24 +114,24 @@
                     Complete publication list with conference papers, journal articles, patents, and books in intelligent transportation systems, cyber-physical systems, artificial intelligence, and edge computing.
                 </p>
                 
-                <!-- Stats -->
+                <!-- Stats (clickable to filter) -->
                 <div class="flex justify-center gap-8 mb-8">
-                    <div class="text-center">
+                    <button type="button" onclick="handleStatClick('journal')" class="text-center hover:opacity-90 transition-opacity cursor-pointer">
                         <div class="text-3xl font-bold text-green-200 mb-1">19</div>
                         <div class="text-sm text-blue-100 font-medium">Journals</div>
-                    </div>
-                    <div class="text-center">
+                    </button>
+                    <button type="button" onclick="handleStatClick('conference')" class="text-center hover:opacity-90 transition-opacity cursor-pointer">
                         <div class="text-3xl font-bold text-blue-200 mb-1">66</div>
                         <div class="text-sm text-blue-100 font-medium">Conferences</div>
-                    </div>
-                    <div class="text-center">
+                    </button>
+                    <button type="button" onclick="handleStatClick('patent')" class="text-center hover:opacity-90 transition-opacity cursor-pointer">
                         <div class="text-3xl font-bold text-orange-200 mb-1">102</div>
                         <div class="text-sm text-blue-100 font-medium">Patents</div>
-                    </div>
-                    <div class="text-center">
+                    </button>
+                    <button type="button" onclick="handleStatClick('book')" class="text-center hover:opacity-90 transition-opacity cursor-pointer">
                         <div class="text-3xl font-bold text-purple-200 mb-1">2</div>
                         <div class="text-sm text-blue-100 font-medium">Books</div>
-                    </div>
+                    </button>
                 </div>
             </div>
         </section>
@@ -191,7 +191,7 @@
     </footer>
 
     <!-- Load publications data -->
-    <script src="../js/publications-data.js"></script>
+    <script src="js/publications-data.js"></script>
     
     <!-- Publications page script -->
     <script>
@@ -286,9 +286,6 @@
             });
             
             publicationsList.innerHTML = filteredPublications.map((pub, index) => {
-                // Increment count for this type
-                currentCounts[pub.type]++;
-                
                 // Generate publication type prefix
                 let typePrefix = '';
                 let typeColor = '';
@@ -461,14 +458,50 @@
             });
         }
 
+        // Handle stat clicks: filter by publication type
+        function handleStatClick(type) {
+            if (!checkPublicationsData()) return;
+            
+            // Set the filter dropdown to the selected type
+            filterSelect.value = type;
+            
+            // Apply the filter
+            filterPublications();
+            
+            // Scroll to the publications list
+            const publicationsList = document.getElementById('publications-list');
+            if (publicationsList) {
+                publicationsList.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+
         // Event listeners
         searchInput.addEventListener('input', filterPublications);
         filterSelect.addEventListener('change', filterPublications);
+
+        // Handle URL parameters for filtering
+        function handleURLParameters() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const filterParam = urlParams.get('filter');
+            
+            if (filterParam && ['journal', 'conference', 'patent', 'book'].includes(filterParam)) {
+                // Set the filter dropdown to the URL parameter value
+                filterSelect.value = filterParam;
+                
+                // Apply the filter after a short delay to ensure data is loaded
+                setTimeout(() => {
+                    filterPublications();
+                }, 1000);
+            }
+        }
 
         // Initialize when DOM is loaded
         document.addEventListener('DOMContentLoaded', function() {
             // Wait a bit for publications data to load
             setTimeout(initSearch, 500);
+            
+            // Handle URL parameters after initialization
+            setTimeout(handleURLParameters, 1000);
         });
     </script>
 </body>
