@@ -1,5 +1,5 @@
 // AI-Generated Research Area Classifications
-// Generated on: 2025-09-09T20:24:54.642706
+// Generated on: 2025-09-15T00:17:26.752205
 // Total publications: 189
 
 // AI classifications for each publication
@@ -359,7 +359,7 @@ const aiClassifications = {
       ]
     }
   },
-  "Liao2021TSMCS": {
+  "Liao2022TSMCS": {
     "publication_type": "journals",
     "title": "Game Theory-Based Ramp Merging for Mixed Traffic With Unity-SUMO Co-Simulation",
     "year": "2022",
@@ -385,7 +385,7 @@ const aiClassifications = {
       ]
     }
   },
-  "Liao2021TITS": {
+  "Liao2022TITS": {
     "publication_type": "journals",
     "title": "Cooperative Ramp Merging Design and Field Implementation: A Digital Twin Approach Based on Vehicle-to-Cloud Communication",
     "year": "2021",
@@ -4945,7 +4945,7 @@ const researchAreaMappings = {
         "is_secondary": true
       },
       {
-        "id": "Liao2021TSMCS",
+        "id": "Liao2022TSMCS",
         "type": "journals",
         "title": "Game Theory-Based Ramp Merging for Mixed Traffic With Unity-SUMO Co-Simulation",
         "year": "2022",
@@ -4954,7 +4954,7 @@ const researchAreaMappings = {
         "is_secondary": true
       },
       {
-        "id": "Liao2021TITS",
+        "id": "Liao2022TITS",
         "type": "journals",
         "title": "Cooperative Ramp Merging Design and Field Implementation: A Digital Twin Approach Based on Vehicle-to-Cloud Communication",
         "year": "2021",
@@ -6455,7 +6455,7 @@ const researchAreaMappings = {
         "is_secondary": true
       },
       {
-        "id": "Liao2021TSMCS",
+        "id": "Liao2022TSMCS",
         "type": "journals",
         "title": "Game Theory-Based Ramp Merging for Mixed Traffic With Unity-SUMO Co-Simulation",
         "year": "2022",
@@ -6463,7 +6463,7 @@ const researchAreaMappings = {
         "reasoning": "The publication focuses on game theory-based ramp merging for mixed traffic, which is a key component of intelligent transportation systems (ITS). It also involves simulation with Unity-SUMO, suggesting the use of autonomous vehicle models and edge computing for real-time processing."
       },
       {
-        "id": "Liao2021TITS",
+        "id": "Liao2022TITS",
         "type": "journals",
         "title": "Cooperative Ramp Merging Design and Field Implementation: A Digital Twin Approach Based on Vehicle-to-Cloud Communication",
         "year": "2021",
@@ -7657,7 +7657,7 @@ const researchAreaMappings = {
         "is_secondary": true
       },
       {
-        "id": "Liao2021TSMCS",
+        "id": "Liao2022TSMCS",
         "type": "journals",
         "title": "Game Theory-Based Ramp Merging for Mixed Traffic With Unity-SUMO Co-Simulation",
         "year": "2022",
@@ -8903,7 +8903,7 @@ const researchAreaMappings = {
         "reasoning": "The publication focuses on cooperative driving at non-signalized intersections, which aligns with Intelligent Transportation Systems (ITS) research. The use of digital twin technologies further supports the classification under Digital Twin Technologies."
       },
       {
-        "id": "Liao2021TITS",
+        "id": "Liao2022TITS",
         "type": "journals",
         "title": "Cooperative Ramp Merging Design and Field Implementation: A Digital Twin Approach Based on Vehicle-to-Cloud Communication",
         "year": "2021",

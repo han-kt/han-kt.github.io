@@ -317,21 +317,11 @@
                     </a>`;
                 }
                 if (pub.pdf) {
-                    linksHtml += `<a href="${pub.pdf}" target="_blank" class="inline-flex items-center gap-1 px-3 py-1 bg-red-100 dark:bg-red-900 text-red-700 dark:text-red-300 rounded-full text-sm hover:bg-red-200 dark:hover:bg-red-800 transition-colors">
+                    linksHtml += `<a href="${pub.pdf}" target="_blank" class="inline-flex items-center gap-1 px-3 py-1 bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 rounded-full text-sm hover:bg-green-200 dark:hover:bg-green-800 transition-colors">
                         <i class="fas fa-file-pdf text-xs"></i>
                         PDF
                     </a>`;
                 }
-                if (pub.abstract) {
-                    linksHtml += `<button onclick="toggleAbstract('${pub.id}')" class="inline-flex items-center gap-1 px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-sm hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
-                        <i class="fas fa-eye text-xs"></i>
-                        Abstract
-                    </button>`;
-                }
-                linksHtml += `<button onclick="copyBibTeX('${pub.id}')" class="inline-flex items-center gap-1 px-3 py-1 bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 rounded-full text-sm hover:bg-green-200 dark:hover:bg-green-800 transition-colors">
-                    <i class="fas fa-copy text-xs"></i>
-                    BibTeX
-                </button>`;
 
                 // Generate reference number using global position
                 const globalPosition = globalPositionMap.get(pub.id) || 1;
@@ -364,31 +354,17 @@
                                 
                                 <div class="ml-6 text-sm text-gray-600 dark:text-gray-300">
                                     <p class="mb-1"><strong>Authors:</strong> ${pub.authors}</p>
-                                    <p class="mb-1"><strong>${venueLabel}:</strong> ${venueAbbr}, ${pub.year}${pub.note ? ` (${pub.note})` : ''}</p>
+                                    <p class="mb-1"><strong>${venueLabel}:</strong> ${venueAbbr}${pub.type !== 'patent' ? `, ${pub.year}` : ''}${pub.note ? ` (${pub.note})` : ''}</p>
                                 </div>
                                 
                                 <div class="ml-6 mt-2 flex flex-wrap gap-2">
                                     ${linksHtml}
-                                    ${pub.abstract && pub.abstract.trim() !== '' ? `
-                                        <button onclick="toggleAbstract(${pub.id})" 
-                                                class="inline-flex items-center px-2 py-1 text-xs font-medium text-purple-600 bg-purple-50 rounded hover:bg-purple-100 transition-colors">
-                                            <i class="fas fa-eye mr-1"></i>Abstract
-                                        </button>
-                                    ` : ''}
-                                    <button onclick="copyBibTeX('${pub.id}')" 
-                                            class="inline-flex items-center px-2 py-1 text-xs font-medium text-gray-600 bg-gray-50 rounded hover:bg-gray-100 transition-colors">
+                                    <button onclick="copyBibTeX('${pub.yaml_id}')" 
+                                            class="inline-flex items-center px-2 py-1 text-xs font-medium text-yellow-700 bg-yellow-100 rounded hover:bg-yellow-200 transition-colors">
                                         <i class="fas fa-code mr-1"></i>BibTeX
                                     </button>
                                 </div>
                                 
-                                ${pub.abstract && pub.abstract.trim() !== '' ? `
-                                    <div id="abstract-${pub.id}" class="abstract-content hidden ml-6 mt-3">
-                                        <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4">
-                                            <h4 class="font-medium text-gray-900 dark:text-white mb-2">Abstract</h4>
-                                            <p class="text-gray-600 dark:text-gray-300 text-sm">${pub.abstract}</p>
-                                        </div>
-                                    </div>
-                                ` : ''}
                             </div>
                         </div>
                     </div>
@@ -396,18 +372,16 @@
             }).join('');
         }
 
-        // Toggle abstract
-        function toggleAbstract(pubId) {
-            const abstractDiv = document.getElementById(`abstract-${pubId}`);
-            if (abstractDiv) {
-                abstractDiv.classList.toggle('expanded');
-            }
-        }
 
-        // Copy BibTeX
+        // Show BibTeX popup
         function copyBibTeX(pubId) {
-            const pub = publications.find(p => p.id === pubId);
-            if (!pub) return;
+            console.log('copyBibTeX called with ID:', pubId);
+            const pub = publications.find(p => p.yaml_id === pubId);
+            console.log('Found publication:', pub);
+            if (!pub) {
+                console.error('Publication not found for yaml_id:', pubId);
+                return;
+            }
 
             let bibtex = '';
             switch(pub.type) {
@@ -445,16 +419,79 @@
                     break;
             }
 
+            // Create and show popup modal
+            console.log('Calling showBibTeXModal with title:', pub.title, 'and bibtex:', bibtex);
+            showBibTeXModal(pub.title, bibtex);
+        }
+
+        // Show BibTeX modal popup
+        function showBibTeXModal(title, bibtex) {
+            console.log('showBibTeXModal called with title:', title);
+            // Remove existing modal if any
+            const existingModal = document.getElementById('bibtex-modal');
+            if (existingModal) {
+                existingModal.remove();
+            }
+
+            // Create modal HTML
+            const modalHTML = `
+                <div id="bibtex-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+                    <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl max-w-2xl w-full mx-4 max-h-[80vh] overflow-hidden">
+                        <div class="flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-700">
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">BibTeX - ${title}</h3>
+                            <button onclick="closeBibTeXModal()" class="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300">
+                                <i class="fas fa-times text-xl"></i>
+                            </button>
+                        </div>
+                        <div class="p-4">
+                            <div class="bg-gray-100 dark:bg-gray-700 rounded-lg p-4 mb-4 max-h-96 overflow-y-auto">
+                                <pre class="text-sm text-gray-800 dark:text-gray-200 whitespace-pre-wrap font-mono">${bibtex}</pre>
+                            </div>
+                            <div class="flex justify-end gap-2">
+                                <button onclick="closeBibTeXModal()" class="px-4 py-2 text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 transition-colors">
+                                    Close
+                                </button>
+                                <button onclick="copyBibTeXToClipboard()" data-bibtex='${bibtex.replace(/'/g, "&apos;")}' class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+                                    <i class="fas fa-copy mr-2"></i>Copy to Clipboard
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            // Add modal to page
+            document.body.insertAdjacentHTML('beforeend', modalHTML);
+            console.log('Modal added to DOM');
+        }
+
+        // Close BibTeX modal
+        function closeBibTeXModal() {
+            const modal = document.getElementById('bibtex-modal');
+            if (modal) {
+                modal.remove();
+            }
+        }
+
+        // Copy BibTeX to clipboard
+        function copyBibTeXToClipboard() {
+            const button = event.target.closest('button');
+            const bibtex = button.getAttribute('data-bibtex');
+            
             navigator.clipboard.writeText(bibtex).then(() => {
                 // Show success feedback
-                const button = event.target.closest('button');
                 const originalText = button.innerHTML;
-                button.innerHTML = '<i class="fas fa-check text-xs"></i> Copied!';
-                button.classList.add('copy-success');
+                button.innerHTML = '<i class="fas fa-check mr-2"></i>Copied!';
+                button.classList.add('bg-green-600', 'hover:bg-green-700');
+                button.classList.remove('bg-blue-600', 'hover:bg-blue-700');
                 setTimeout(() => {
                     button.innerHTML = originalText;
-                    button.classList.remove('copy-success');
+                    button.classList.remove('bg-green-600', 'hover:bg-green-700');
+                    button.classList.add('bg-blue-600', 'hover:bg-blue-700');
                 }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+                alert('Failed to copy to clipboard');
             });
         }
 
