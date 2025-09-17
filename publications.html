@@ -311,9 +311,18 @@
                 // Generate links HTML
                 let linksHtml = '';
                 if (pub.url) {
-                    linksHtml += `<a href="${pub.url}" target="_blank" class="inline-flex items-center gap-1 px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 rounded-full text-sm hover:bg-blue-200 dark:hover:bg-blue-800 transition-colors">
+                    const patentDataAttrs = pub.type === 'patent' ? 
+                        `data-patent-number="${pub.patent_number || ''}" data-application-number="${pub.application_number || ''}"` : '';
+                    linksHtml += `<a href="${pub.url}" target="_blank" class="inline-flex items-center gap-1 px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 rounded-full text-sm hover:bg-blue-200 dark:hover:bg-blue-800 transition-colors patent-link" ${patentDataAttrs}>
                         <i class="fas fa-external-link-alt text-xs"></i>
                         URL
+                    </a>`;
+                } else if (pub.type === 'patent' && pub.application_number) {
+                    // For patent applications without direct links, provide Google Patents search link
+                    const searchQuery = encodeURIComponent(pub.application_number);
+                    linksHtml += `<a href="https://patents.google.com/?q=${searchQuery}" target="_blank" class="inline-flex items-center gap-1 px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-300 rounded-full text-sm hover:bg-purple-200 dark:hover:bg-purple-800 transition-colors">
+                        <i class="fas fa-search text-xs"></i>
+                        Search
                     </a>`;
                 }
                 if (pub.pdf) {
@@ -359,10 +368,10 @@
                                 
                                 <div class="ml-6 mt-2 flex flex-wrap gap-2">
                                     ${linksHtml}
-                                    <button onclick="copyBibTeX('${pub.yaml_id}')" 
+                                    ${(pub.type !== 'patent' || pub.url) ? `<button onclick="copyBibTeX('${pub.yaml_id}')" 
                                             class="inline-flex items-center px-2 py-1 text-xs font-medium text-yellow-700 bg-yellow-100 rounded hover:bg-yellow-200 transition-colors">
                                         <i class="fas fa-code mr-1"></i>BibTeX
-                                    </button>
+                                    </button>` : ''}
                                 </div>
                                 
                             </div>

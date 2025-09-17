@@ -396,7 +396,9 @@
                 // Generate links HTML
                 let linksHtml = '';
                 if (pub.url) {
-                    linksHtml += `<a href="${pub.url}" target="_blank" class="inline-flex items-center gap-1 px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 rounded-full text-sm hover:bg-blue-200 dark:hover:bg-blue-800 transition-colors">
+                    const patentDataAttrs = pub.type === 'patent' ? 
+                        `data-patent-number="${pub.patent_number || ''}" data-application-number="${pub.application_number || ''}"` : '';
+                    linksHtml += `<a href="${pub.url}" target="_blank" class="inline-flex items-center gap-1 px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 rounded-full text-sm hover:bg-blue-200 dark:hover:bg-blue-800 transition-colors patent-link" ${patentDataAttrs}>
                         <i class="fas fa-external-link-alt text-xs"></i>
                         URL
                     </a>`;
