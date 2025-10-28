@@ -198,10 +198,10 @@ function renderPublications() {
     
     // Count publications by type first
     const typeCounts = {
-        conference: 0,
+        book: 0,
         journal: 0,
-        patent: 0,
-        book: 0
+        conference: 0,
+        patent: 0
     };
     
     // Count total publications of each type
@@ -217,10 +217,10 @@ function renderPublications() {
     
     // Track current count for each type (for reverse numbering)
     const currentCounts = {
-        conference: 0,
+        book: 0,
         journal: 0,
-        patent: 0,
-        book: 0
+        conference: 0,
+        patent: 0
     };
     
     publicationsList.innerHTML = sortedPublications.map((pub, index) => {
@@ -287,6 +287,9 @@ function renderPublications() {
             venueAbbr = pub.venue; // Keep full patent number
         }
         
+        // Check if this is a book chapter (venue starts with "In:")
+        const is_book_chapter = pub.venue && pub.venue.startsWith('In:');
+        
         return `
             <div class="publication-item bg-white dark:bg-gray-800 rounded-lg shadow-sm p-4 mb-3 hover:shadow-md transition-shadow border-l-4 border-blue-500">
                 <div class="flex items-start justify-between">
@@ -301,7 +304,7 @@ function renderPublications() {
                         
                         <div class="ml-6 text-sm text-gray-600 dark:text-gray-300">
                             <p class="mb-1"><strong>Authors:</strong> ${pub.authors}</p>
-                            <p class="mb-1"><strong>${venueLabel}:</strong> ${venueAbbr}${pub.type !== 'patent' ? `, ${pub.year}` : ''}${pub.note ? ` (${pub.note})` : ''}</p>
+                            <p class="mb-1"><strong>${venueLabel}:</strong> ${venueAbbr}${pub.type !== 'patent' && !is_book_chapter ? `, ${pub.year_text || pub.year}` : ''}${pub.note ? ` (${pub.note})` : ''}</p>
                         </div>
                         
                         <div class="ml-6 mt-2 flex flex-wrap gap-2">

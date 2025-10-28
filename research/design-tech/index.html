@@ -131,21 +131,21 @@
                     
                     <!-- Stats (click to filter within this page) -->
                     <div class="flex justify-center gap-8 mb-8">
-                        <button type="button" onclick="handleStatClick('conference')" class="text-center hover:opacity-90">
-                            <div id="conferences-count" class="text-3xl font-bold text-blue-600 mb-1">-</div>
-                            <div class="text-sm text-gray-600 dark:text-gray-300 font-medium">Conferences</div>
+                        <button type="button" onclick="handleStatClick('book')" class="text-center hover:opacity-90">
+                            <div id="books-count" class="text-3xl font-bold text-purple-600 mb-1">-</div>
+                            <div class="text-sm text-gray-600 dark:text-gray-300 font-medium">Books</div>
                         </button>
                         <button type="button" onclick="handleStatClick('journal')" class="text-center hover:opacity-90">
                             <div id="journals-count" class="text-3xl font-bold text-green-600 mb-1">-</div>
                             <div class="text-sm text-gray-600 dark:text-gray-300 font-medium">Journals</div>
                         </button>
+                        <button type="button" onclick="handleStatClick('conference')" class="text-center hover:opacity-90">
+                            <div id="conferences-count" class="text-3xl font-bold text-blue-600 mb-1">-</div>
+                            <div class="text-sm text-gray-600 dark:text-gray-300 font-medium">Conferences</div>
+                        </button>
                         <button type="button" onclick="handleStatClick('patent')" class="text-center hover:opacity-90">
                             <div id="patents-count" class="text-3xl font-bold text-orange-600 mb-1">-</div>
                             <div class="text-sm text-gray-600 dark:text-gray-300 font-medium">Patents</div>
-                        </button>
-                        <button type="button" onclick="handleStatClick('book')" class="text-center hover:opacity-90">
-                            <div id="books-count" class="text-3xl font-bold text-purple-600 mb-1">-</div>
-                            <div class="text-sm text-gray-600 dark:text-gray-300 font-medium">Books</div>
                         </button>
                     </div>
                     
@@ -353,7 +353,7 @@
             
             // Create a map of publication ID to its global position for numbering
             const globalPositionMap = new Map();
-            const typeCounts = { conference: 0, journal: 0, patent: 0, book: 0 };
+            const typeCounts = { book: 0, journal: 0, conference: 0, patent: 0 };
             
             // Count total publications per type first
             allPublicationsSorted.forEach(pub => {
@@ -361,7 +361,7 @@
             });
             
             // Assign reverse numbers (newest gets highest number)
-            const reverseCounts = { conference: typeCounts.conference, journal: typeCounts.journal, patent: typeCounts.patent, book: typeCounts.book };
+            const reverseCounts = { book: typeCounts.book, journal: typeCounts.journal, conference: typeCounts.conference, patent: typeCounts.patent };
             
             allPublicationsSorted.forEach(pub => {
                 globalPositionMap.set(pub.id, reverseCounts[pub.type]);
@@ -440,6 +440,9 @@
                     venueAbbr = 'IEEE International Conference on Intelligent Transportation Systems (ITSC)';
                 }
 
+                // Check if this is a book chapter (venue starts with "In:")
+                const is_book_chapter = pub.venue && pub.venue.startsWith('In:');
+                
                 return `
                     <div class="publication-item bg-white dark:bg-gray-800 rounded-lg shadow-sm p-6 mb-4 hover:shadow-md transition-all duration-200 border-l-4 border-blue-500">
                         <div class="flex items-start justify-between">
@@ -454,7 +457,7 @@
                                 
                                 <div class="ml-8 text-sm text-gray-600 dark:text-gray-300 space-y-1">
                                     <p><strong>Authors:</strong> ${pub.authors}</p>
-                                    <p><strong>${venueLabel}:</strong> ${venueAbbr}${pub.type !== 'patent' ? `, ${pub.year}` : ''}${pub.note ? ` (${pub.note})` : ''}</p>
+                                    <p><strong>${venueLabel}:</strong> ${venueAbbr}${pub.type !== 'patent' && !is_book_chapter ? `, ${pub.year_text || pub.year}` : ''}${pub.note ? ` (${pub.note})` : ''}</p>
                                 </div>
                                 
                                 <div class="ml-8 mt-3 flex flex-wrap gap-2">

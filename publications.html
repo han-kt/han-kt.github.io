@@ -116,6 +116,10 @@
                 
                 <!-- Stats (clickable to filter) -->
                 <div class="flex justify-center gap-8 mb-8">
+                    <button type="button" onclick="handleStatClick('book')" class="text-center hover:opacity-90 transition-opacity cursor-pointer">
+                        <div class="text-3xl font-bold text-purple-200 mb-1">3</div>
+                        <div class="text-sm text-blue-100 font-medium">Books</div>
+                    </button>
                     <button type="button" onclick="handleStatClick('journal')" class="text-center hover:opacity-90 transition-opacity cursor-pointer">
                         <div class="text-3xl font-bold text-green-200 mb-1">19</div>
                         <div class="text-sm text-blue-100 font-medium">Journals</div>
@@ -127,10 +131,6 @@
                     <button type="button" onclick="handleStatClick('patent')" class="text-center hover:opacity-90 transition-opacity cursor-pointer">
                         <div class="text-3xl font-bold text-orange-200 mb-1">102</div>
                         <div class="text-sm text-blue-100 font-medium">Patents</div>
-                    </button>
-                    <button type="button" onclick="handleStatClick('book')" class="text-center hover:opacity-90 transition-opacity cursor-pointer">
-                        <div class="text-3xl font-bold text-purple-200 mb-1">2</div>
-                        <div class="text-sm text-blue-100 font-medium">Books</div>
                     </button>
                 </div>
             </div>
@@ -270,7 +270,7 @@
             
             // Create a map of publication ID to its global position for numbering
             const globalPositionMap = new Map();
-            const typeCounts = { conference: 0, journal: 0, patent: 0, book: 0 };
+            const typeCounts = { book: 0, journal: 0, conference: 0, patent: 0 };
             
             // Count total publications per type first
             allPublicationsSorted.forEach(pub => {
@@ -278,7 +278,7 @@
             });
             
             // Assign reverse numbers (newest gets highest number)
-            const reverseCounts = { conference: typeCounts.conference, journal: typeCounts.journal, patent: typeCounts.patent, book: typeCounts.book };
+            const reverseCounts = { book: typeCounts.book, journal: typeCounts.journal, conference: typeCounts.conference, patent: typeCounts.patent };
             
             allPublicationsSorted.forEach(pub => {
                 globalPositionMap.set(pub.id, reverseCounts[pub.type]);
@@ -349,6 +349,9 @@
                     venueLabel = 'Publisher';
                 }
 
+                // Check if this is a book chapter (venue starts with "In:")
+                const is_book_chapter = pub.venue && pub.venue.startsWith('In:');
+                
                 return `
                     <div class="publication-item bg-white dark:bg-gray-800 rounded-lg shadow-sm p-4 mb-3 hover:shadow-md transition-shadow border-l-4 border-blue-500">
                         <div class="flex items-start justify-between">
@@ -363,7 +366,7 @@
                                 
                                 <div class="ml-6 text-sm text-gray-600 dark:text-gray-300">
                                     <p class="mb-1"><strong>Authors:</strong> ${pub.authors}</p>
-                                    <p class="mb-1"><strong>${venueLabel}:</strong> ${venueAbbr}${pub.type !== 'patent' ? `, ${pub.year}` : ''}${pub.note ? ` (${pub.note})` : ''}</p>
+                                    <p class="mb-1"><strong>${venueLabel}:</strong> ${venueAbbr}${pub.type !== 'patent' && !is_book_chapter ? `, ${pub.year_text || pub.year}` : ''}${pub.note ? ` (${pub.note})` : ''}</p>
                                 </div>
                                 
                                 <div class="ml-6 mt-2 flex flex-wrap gap-2">
