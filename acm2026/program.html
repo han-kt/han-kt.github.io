@@ -85,7 +85,14 @@
         
         .program-item {
             position: relative;
-            margin-bottom: 2rem;
+            margin-bottom: 2.5rem;
+        }
+        
+        .line-clamp-3 {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
         }
         
         .program-item::before {
@@ -168,7 +175,7 @@
                     <div class="program-timeline">
                         
                         <div class="program-item opening">
-                            <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 border-l-4 border-green-500">
+                            <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 border-l-4 shadow-sm hover:shadow-md transition-shadow border-green-500">
                                 <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-3">
                                     <div class="flex items-center mb-2 md:mb-0">
                                         <span class="inline-block px-3 py-1 rounded-full text-sm font-semibold mr-3 bg-green-100 text-green-800">
@@ -176,16 +183,19 @@
                                                 <i class="fas fa-microphone mr-1"></i> Opening
                                             
                                         </span>
-                                        <span class="text-lg font-semibold text-gray-900 dark:text-white">2:00 PM - 2:10 PM</span>
+                                        <span class="text-lg font-semibold text-gray-900 dark:text-white font-mono">2:00 PM - 2:10 PM</span>
                                     </div>
                                 </div>
                                 
                                 
-                                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Opening Remarks</h3>
+                                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Opening Remarks</h3>
                                     
                                     <div class="mt-3">
-                                        <div class="mb-2">
-                                            <span class="font-semibold text-gray-900 dark:text-white">Kyungtae (KT) Han</span><span class="text-gray-600 dark:text-gray-400">, Toyota Motor North America, USA</span>
+                                        <div class="flex items-start">
+                                            <i class="fas fa-microphone mr-2 mt-1 text-green-500 text-sm"></i>
+                                            <div>
+                                                <span class="font-semibold text-gray-900 dark:text-white">Kyungtae (KT) Han</span><span class="text-gray-600 dark:text-gray-400">, Toyota Motor North America, USA</span>
+                                            </div>
                                         </div>
                                     </div>
                                     
@@ -194,7 +204,7 @@
                         </div>
                         
                         <div class="program-item keynote">
-                            <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 border-l-4 border-blue-600">
+                            <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 border-l-4 shadow-sm hover:shadow-md transition-shadow border-blue-600">
                                 <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-3">
                                     <div class="flex items-center mb-2 md:mb-0">
                                         <span class="inline-block px-3 py-1 rounded-full text-sm font-semibold mr-3 bg-blue-100 text-blue-800">
@@ -202,19 +212,25 @@
                                                 <i class="fas fa-star mr-1"></i> Keynote
                                             
                                         </span>
-                                        <span class="text-lg font-semibold text-gray-900 dark:text-white">2:10 PM - 3:00 PM</span>
+                                        <span class="text-lg font-semibold text-gray-900 dark:text-white font-mono">2:10 PM - 3:00 PM</span>
                                     </div>
                                 </div>
                                 
                                 
-                                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">Keynote Talk</h3>
+                                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">Virtualized Edge Computing for Resilient Edge-AI</h3>
                                     
-                                    <div class="mt-4">
-                                        <div class="mb-2">
-                                            <span class="font-semibold text-gray-900 dark:text-white">Falko Dressler</span><span class="text-gray-600 dark:text-gray-400">, Technical University of Berlin, Germany</span>
+                                    <div class="mt-3">
+                                        <div class="mb-3">
+                                            <span class="font-semibold text-lg text-gray-900 dark:text-white">Falko Dressler</span><span class="text-gray-600 dark:text-gray-400">, Technical University of Berlin, Germany</span>
                                         </div>
                                         
-                                        
+                                        <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed line-clamp-3">As we move from 5G to 6G, edge computing is one of the concepts that needs revisiting. Its core idea is still intriguing: Instead of sending all data and tasks from an end user's device to the cloud, edge servers deployed in close proximity to the user serve as proxy for the cloud. This is particularly interesting for upcoming machine learning (ML)-based intelligent services, which require substantial computational and networking performance for continuous model training. At the same time, disruptions and major outages of our communication infrastructure pose a very realistic thread to our mission-critical infrastructure and may also severely impact our daily life. Lessons learned from previous natural disasters helped identifying problems but also solution spaces. In this talk, we discuss a way forward, namely the virtual edge computing (V-Edge) concept. V-Edge helps bridging the gap between cloud, edge, and fog by virtualizing all available resources including the end users' devices and making these resources widely available. Thus, V-Edge acts as an enabler for novel microservices as well as cooperative computing solutions in next-generation networks. We introduce the general V-Edge architecture, and we characterize some of the key research challenges to overcome, to enable wide-spread and intelligent edge services. This is further supported by concepts of turning mobile systems such as cars and trucks of first responders into mobile base stations to provide network coverage even when infrastructure such as the energy grid or the 5G base stations are down.
+</p>
+                                        <div class="mt-3">
+                                            <a href="#keynote-details" class="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 text-sm font-medium inline-flex items-center">
+                                                <i class="fas fa-arrow-down mr-1"></i> View full abstract and biography
+                                            </a>
+                                        </div>
                                         
                                     </div>
                                     
@@ -224,7 +240,7 @@
                         </div>
                         
                         <div class="program-item break">
-                            <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 border-l-4 border-gray-500">
+                            <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 border-l-4 shadow-sm hover:shadow-md transition-shadow border-gray-500">
                                 <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-3">
                                     <div class="flex items-center mb-2 md:mb-0">
                                         <span class="inline-block px-3 py-1 rounded-full text-sm font-semibold mr-3 bg-gray-100 text-gray-800">
@@ -232,19 +248,19 @@
                                                 <i class="fas fa-coffee mr-1"></i> Break
                                             
                                         </span>
-                                        <span class="text-lg font-semibold text-gray-900 dark:text-white">3:00 PM - 3:20 PM</span>
+                                        <span class="text-lg font-semibold text-gray-900 dark:text-white font-mono">3:00 PM - 3:20 PM</span>
                                     </div>
                                 </div>
                                 
                                 
-                                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Break</h3>
+                                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Break</h3>
                                     
                                 
                             </div>
                         </div>
                         
                         <div class="program-item talk">
-                            <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 border-l-4 border-orange-500">
+                            <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 border-l-4 shadow-sm hover:shadow-md transition-shadow border-orange-500">
                                 <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-3">
                                     <div class="flex items-center mb-2 md:mb-0">
                                         <span class="inline-block px-3 py-1 rounded-full text-sm font-semibold mr-3 bg-orange-100 text-orange-800">
@@ -252,56 +268,30 @@
                                                 <i class="fas fa-presentation mr-1"></i> Talk
                                             
                                         </span>
-                                        <span class="text-lg font-semibold text-gray-900 dark:text-white">3:20 PM - 3:40 PM</span>
+                                        <span class="text-lg font-semibold text-gray-900 dark:text-white font-mono">3:20 PM - 3:40 PM</span>
                                     </div>
                                 </div>
                                 
                                 
                                     
                                     
-                                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">CacheFormer: User-Centric Cache Prediction for Personal Vehicles using AutoFormer Network</h3>
-                                    <div class="mt-3">
+                                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">CacheFormer: User-Centric Cache Prediction for Personal Vehicles using AutoFormer Network</h3>
+                                    <div class="mt-3 space-y-2">
                                         
-                                        <div class="mb-2">
-                                            <span class="font-semibold text-gray-900 dark:text-white">Mohammed A Jasim</span><span class="text-gray-600 dark:text-gray-400">, University of Washington Tacoma, USA</span>
+                                        <div class="flex items-start">
+                                            <i class="fas fa-user-circle mr-2 mt-1 text-orange-500 text-sm"></i>
+                                            <div>
+                                                <span class="font-semibold text-gray-900 dark:text-white">Mohammed A Jasim</span>
+                                                <span class="text-gray-600 dark:text-gray-400">, University of Washington Tacoma, USA</span>
+                                            </div>
                                         </div>
                                         
-                                        <div class="mb-2">
-                                            <span class="font-semibold text-gray-900 dark:text-white">Souleymane Dembele</span><span class="text-gray-600 dark:text-gray-400">, University of Washington Tacoma, USA</span>
-                                        </div>
-                                        
-                                    </div>
-                                    
-                                
-                                
-                            </div>
-                        </div>
-                        
-                        <div class="program-item talk">
-                            <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 border-l-4 border-orange-500">
-                                <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-3">
-                                    <div class="flex items-center mb-2 md:mb-0">
-                                        <span class="inline-block px-3 py-1 rounded-full text-sm font-semibold mr-3 bg-orange-100 text-orange-800">
-                                            
-                                                <i class="fas fa-presentation mr-1"></i> Talk
-                                            
-                                        </span>
-                                        <span class="text-lg font-semibold text-gray-900 dark:text-white">3:40 PM - 4:00 PM</span>
-                                    </div>
-                                </div>
-                                
-                                
-                                    
-                                    
-                                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Federated Learning Driven Multi-Modal User Scheduling for 5G Communication Systems</h3>
-                                    <div class="mt-3">
-                                        
-                                        <div class="mb-2">
-                                            <span class="font-semibold text-gray-900 dark:text-white">Ai Kagawa</span><span class="text-gray-600 dark:text-gray-400">, Brookhaven National Lab, USA</span>
-                                        </div>
-                                        
-                                        <div class="mb-2">
-                                            <span class="font-semibold text-gray-900 dark:text-white">Imtiaz Ahmed</span><span class="text-gray-600 dark:text-gray-400">, Howard University, USA</span>
+                                        <div class="flex items-start">
+                                            <i class="fas fa-user-circle mr-2 mt-1 text-orange-500 text-sm"></i>
+                                            <div>
+                                                <span class="font-semibold text-gray-900 dark:text-white">Souleymane Dembele</span>
+                                                <span class="text-gray-600 dark:text-gray-400">, University of Washington Tacoma, USA</span>
+                                            </div>
                                         </div>
                                         
                                     </div>
@@ -312,7 +302,7 @@
                         </div>
                         
                         <div class="program-item talk">
-                            <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 border-l-4 border-orange-500">
+                            <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 border-l-4 shadow-sm hover:shadow-md transition-shadow border-orange-500">
                                 <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-3">
                                     <div class="flex items-center mb-2 md:mb-0">
                                         <span class="inline-block px-3 py-1 rounded-full text-sm font-semibold mr-3 bg-orange-100 text-orange-800">
@@ -320,26 +310,30 @@
                                                 <i class="fas fa-presentation mr-1"></i> Talk
                                             
                                         </span>
-                                        <span class="text-lg font-semibold text-gray-900 dark:text-white">4:00 PM - 4:20 PM</span>
+                                        <span class="text-lg font-semibold text-gray-900 dark:text-white font-mono">3:40 PM - 4:00 PM</span>
                                     </div>
                                 </div>
                                 
                                 
                                     
                                     
-                                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">A Semantic Coding Scheme for Robust Image Transmission over Noisy Channel</h3>
-                                    <div class="mt-3">
+                                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Federated Learning Driven Multi-Modal User Scheduling for 5G Communication Systems</h3>
+                                    <div class="mt-3 space-y-2">
                                         
-                                        <div class="mb-2">
-                                            <span class="font-semibold text-gray-900 dark:text-white">Alp Seyhun Canoglu</span><span class="text-gray-600 dark:text-gray-400">, İstanbul Technical University, Turkey</span>
+                                        <div class="flex items-start">
+                                            <i class="fas fa-user-circle mr-2 mt-1 text-orange-500 text-sm"></i>
+                                            <div>
+                                                <span class="font-semibold text-gray-900 dark:text-white">Ai Kagawa</span>
+                                                <span class="text-gray-600 dark:text-gray-400">, Brookhaven National Lab, USA</span>
+                                            </div>
                                         </div>
                                         
-                                        <div class="mb-2">
-                                            <span class="font-semibold text-gray-900 dark:text-white">Gokhan Secinti</span><span class="text-gray-600 dark:text-gray-400">, Istanbul Technical University, Turkey</span>
-                                        </div>
-                                        
-                                        <div class="mb-2">
-                                            <span class="font-semibold text-gray-900 dark:text-white">Talip Tolga Sari</span><span class="text-gray-600 dark:text-gray-400">, Istanbul Technical University, Turkey</span>
+                                        <div class="flex items-start">
+                                            <i class="fas fa-user-circle mr-2 mt-1 text-orange-500 text-sm"></i>
+                                            <div>
+                                                <span class="font-semibold text-gray-900 dark:text-white">Imtiaz Ahmed</span>
+                                                <span class="text-gray-600 dark:text-gray-400">, Howard University, USA</span>
+                                            </div>
                                         </div>
                                         
                                     </div>
@@ -350,7 +344,7 @@
                         </div>
                         
                         <div class="program-item talk">
-                            <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 border-l-4 border-orange-500">
+                            <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 border-l-4 shadow-sm hover:shadow-md transition-shadow border-orange-500">
                                 <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-3">
                                     <div class="flex items-center mb-2 md:mb-0">
                                         <span class="inline-block px-3 py-1 rounded-full text-sm font-semibold mr-3 bg-orange-100 text-orange-800">
@@ -358,26 +352,88 @@
                                                 <i class="fas fa-presentation mr-1"></i> Talk
                                             
                                         </span>
-                                        <span class="text-lg font-semibold text-gray-900 dark:text-white">4:20 PM - 4:40 PM</span>
+                                        <span class="text-lg font-semibold text-gray-900 dark:text-white font-mono">4:00 PM - 4:20 PM</span>
                                     </div>
                                 </div>
                                 
                                 
                                     
                                     
-                                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Adaptive Neural Gradient Descent Method for Dual Objective Optimization in ISAC Systems</h3>
-                                    <div class="mt-3">
+                                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">A Semantic Coding Scheme for Robust Image Transmission over Noisy Channel</h3>
+                                    <div class="mt-3 space-y-2">
                                         
-                                        <div class="mb-2">
-                                            <span class="font-semibold text-gray-900 dark:text-white">Shayan Zargari</span><span class="text-gray-600 dark:text-gray-400">, University of Alberta, Canada</span>
+                                        <div class="flex items-start">
+                                            <i class="fas fa-user-circle mr-2 mt-1 text-orange-500 text-sm"></i>
+                                            <div>
+                                                <span class="font-semibold text-gray-900 dark:text-white">Alp Seyhun Canoglu</span>
+                                                <span class="text-gray-600 dark:text-gray-400">, İstanbul Technical University, Turkey</span>
+                                            </div>
                                         </div>
                                         
-                                        <div class="mb-2">
-                                            <span class="font-semibold text-gray-900 dark:text-white">Diluka Galappaththige</span><span class="text-gray-600 dark:text-gray-400">, University of Alberta, Canada</span>
+                                        <div class="flex items-start">
+                                            <i class="fas fa-user-circle mr-2 mt-1 text-orange-500 text-sm"></i>
+                                            <div>
+                                                <span class="font-semibold text-gray-900 dark:text-white">Gokhan Secinti</span>
+                                                <span class="text-gray-600 dark:text-gray-400">, Istanbul Technical University, Turkey</span>
+                                            </div>
                                         </div>
                                         
-                                        <div class="mb-2">
-                                            <span class="font-semibold text-gray-900 dark:text-white">Chintha Tellambura</span><span class="text-gray-600 dark:text-gray-400">, The University of Alberta, Canada</span>
+                                        <div class="flex items-start">
+                                            <i class="fas fa-user-circle mr-2 mt-1 text-orange-500 text-sm"></i>
+                                            <div>
+                                                <span class="font-semibold text-gray-900 dark:text-white">Talip Tolga Sari</span>
+                                                <span class="text-gray-600 dark:text-gray-400">, Istanbul Technical University, Turkey</span>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="program-item talk">
+                            <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 border-l-4 shadow-sm hover:shadow-md transition-shadow border-orange-500">
+                                <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-3">
+                                    <div class="flex items-center mb-2 md:mb-0">
+                                        <span class="inline-block px-3 py-1 rounded-full text-sm font-semibold mr-3 bg-orange-100 text-orange-800">
+                                            
+                                                <i class="fas fa-presentation mr-1"></i> Talk
+                                            
+                                        </span>
+                                        <span class="text-lg font-semibold text-gray-900 dark:text-white font-mono">4:20 PM - 4:40 PM</span>
+                                    </div>
+                                </div>
+                                
+                                
+                                    
+                                    
+                                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Adaptive Neural Gradient Descent Method for Dual Objective Optimization in ISAC Systems</h3>
+                                    <div class="mt-3 space-y-2">
+                                        
+                                        <div class="flex items-start">
+                                            <i class="fas fa-user-circle mr-2 mt-1 text-orange-500 text-sm"></i>
+                                            <div>
+                                                <span class="font-semibold text-gray-900 dark:text-white">Shayan Zargari</span>
+                                                <span class="text-gray-600 dark:text-gray-400">, University of Alberta, Canada</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="flex items-start">
+                                            <i class="fas fa-user-circle mr-2 mt-1 text-orange-500 text-sm"></i>
+                                            <div>
+                                                <span class="font-semibold text-gray-900 dark:text-white">Diluka Galappaththige</span>
+                                                <span class="text-gray-600 dark:text-gray-400">, University of Alberta, Canada</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="flex items-start">
+                                            <i class="fas fa-user-circle mr-2 mt-1 text-orange-500 text-sm"></i>
+                                            <div>
+                                                <span class="font-semibold text-gray-900 dark:text-white">Chintha Tellambura</span>
+                                                <span class="text-gray-600 dark:text-gray-400">, The University of Alberta, Canada</span>
+                                            </div>
                                         </div>
                                         
                                     </div>
@@ -393,6 +449,49 @@
         </section>
 
         <!-- Keynote Details (if available) -->
+        
+        <section id="keynote-details" class="py-16 ccnc-section bg-gray-50 dark:bg-gray-900">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="ccnc-card rounded-lg p-8 shadow-lg">
+                    <div class="text-center mb-8 pb-6 border-b border-gray-200 dark:border-gray-700">
+                        <span class="inline-block px-4 py-2 rounded-full text-sm font-semibold mb-4 bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200">
+                            <i class="fas fa-star mr-1"></i> Keynote Speaker
+                        </span>
+                        <h2 class="text-3xl font-bold mb-4 text-gray-900 dark:text-white">Falko Dressler</h2>
+                        
+                        <p class="text-lg text-gray-600 dark:text-gray-400 mb-3">Technical University of Berlin, Germany</p>
+                        
+                        
+                        <p class="text-xl text-gray-700 dark:text-gray-300 italic font-medium">Virtualized Edge Computing for Resilient Edge-AI</p>
+                        
+                    </div>
+                    
+                    <div class="mb-8">
+                        <h3 class="text-2xl font-semibold text-gray-900 dark:text-white mb-4 flex items-center">
+                            <i class="fas fa-file-alt mr-2 text-blue-600 dark:text-blue-400"></i>
+                            Abstract
+                        </h3>
+                        <div class="p-6 bg-blue-50 dark:bg-blue-900/30 rounded-lg border-l-4 border-blue-600">
+                            <p class="text-gray-700 dark:text-gray-300 leading-relaxed text-base">As we move from 5G to 6G, edge computing is one of the concepts that needs revisiting. Its core idea is still intriguing: Instead of sending all data and tasks from an end user's device to the cloud, edge servers deployed in close proximity to the user serve as proxy for the cloud. This is particularly interesting for upcoming machine learning (ML)-based intelligent services, which require substantial computational and networking performance for continuous model training. At the same time, disruptions and major outages of our communication infrastructure pose a very realistic thread to our mission-critical infrastructure and may also severely impact our daily life. Lessons learned from previous natural disasters helped identifying problems but also solution spaces. In this talk, we discuss a way forward, namely the virtual edge computing (V-Edge) concept. V-Edge helps bridging the gap between cloud, edge, and fog by virtualizing all available resources including the end users' devices and making these resources widely available. Thus, V-Edge acts as an enabler for novel microservices as well as cooperative computing solutions in next-generation networks. We introduce the general V-Edge architecture, and we characterize some of the key research challenges to overcome, to enable wide-spread and intelligent edge services. This is further supported by concepts of turning mobile systems such as cars and trucks of first responders into mobile base stations to provide network coverage even when infrastructure such as the energy grid or the 5G base stations are down.
+</p>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="mt-6">
+                        <h3 class="text-2xl font-semibold text-gray-900 dark:text-white mb-4 flex items-center">
+                            <i class="fas fa-user mr-2 text-blue-600 dark:text-blue-400"></i>
+                            Biography
+                        </h3>
+                        <div class="p-6 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                            <p class="text-gray-700 dark:text-gray-300 leading-relaxed text-base">Falko Dressler is full professor and Chair for Telecommunication Networks at the School of Electrical Engineering and Computer Science, TU Berlin. He received his M.Sc. and Ph.D. degrees from the Dept. of Computer Science, University of Erlangen in 1998 and 2003, respectively. Dr. Dressler has been associate editor-in-chief for IEEE Trans. on Network Science and Engineering, IEEE Trans. on Mobile Computing and Elsevier Computer Communications as well as an editor for journals such as IEEE/ACM Trans. on Networking, Elsevier Ad Hoc Networks, and Elsevier Nano Communication Networks. He has been chairing conferences such as IEEE INFOCOM, ACM MobiSys, ACM MobiHoc, IEEE VNC, IEEE GLOBECOM. He authored the textbooks Self-Organization in Sensor and Actor Networks published by Wiley & Sons and Vehicular Networking published by Cambridge University Press. He has been an IEEE Distinguished Lecturer as well as an ACM Distinguished Speaker. Dr. Dressler is an IEEE Fellow, an ACM Fellow, and an AAIA Fellow. He is a member of the German National Academy of Science and Engineering (acatech). He has been serving on the IEEE COMSOC Conference Council and the ACM SIGMOBILE Executive Committee. His research objectives include next generation wireless communication systems in combination with distributed machine learning and edge computing for improved resiliency. Application domains include the internet of things, cyber-physical systems, and the internet of bio-nano-things.
+</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
         
     </main>
 
