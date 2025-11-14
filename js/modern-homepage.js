@@ -9,14 +9,14 @@
 let fuse;
 let filteredPublications = [];
 
-// DOM elements
-const themeToggle = document.getElementById('theme-toggle');
-const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-const mobileMenu = document.getElementById('mobile-menu');
-const searchInput = document.getElementById('search-input');
-const filterSelect = document.getElementById('filter-select');
-const publicationsList = document.getElementById('publications-list');
-const lastUpdated = document.getElementById('last-updated');
+// DOM elements - will be initialized when DOM is ready
+let themeToggle;
+let mobileMenuBtn;
+let mobileMenu;
+let searchInput;
+let filterSelect;
+let publicationsList;
+let lastUpdated;
 
 // Check if publications data is loaded
 function checkPublicationsData() {
@@ -35,20 +35,28 @@ function initTheme() {
 }
 
 function toggleTheme() {
+    console.log('toggleTheme called');
     const isDark = document.documentElement.classList.toggle('dark');
     const theme = isDark ? 'dark' : 'light';
     localStorage.setItem('theme', theme);
     updateThemeIcon(theme);
+    console.log('Theme toggled to:', theme);
 }
 
 function updateThemeIcon(theme) {
     if (themeToggle) {
         const icon = themeToggle.querySelector('i');
-        if (theme === 'dark') {
-            icon.className = 'fas fa-sun text-yellow-500';
+        if (icon) {
+            if (theme === 'dark') {
+                icon.className = 'fas fa-sun text-yellow-500';
+            } else {
+                icon.className = 'fas fa-moon text-gray-600 dark:text-gray-300';
+            }
         } else {
-            icon.className = 'fas fa-moon text-gray-600';
+            console.warn('Icon element not found in theme toggle button');
         }
+    } else {
+        console.warn('Theme toggle button not found when updating icon');
     }
 }
 
@@ -56,6 +64,11 @@ function updateThemeIcon(theme) {
 function toggleMobileMenu() {
     if (mobileMenu) {
         mobileMenu.classList.toggle('hidden');
+        // Update aria-expanded for accessibility
+        if (mobileMenuBtn) {
+            const isHidden = mobileMenu.classList.contains('hidden');
+            mobileMenuBtn.setAttribute('aria-expanded', !isHidden);
+        }
     }
 }
 
@@ -71,7 +84,9 @@ function initSmoothScrolling() {
                     block: 'start'
                 });
                 // Close mobile menu if open
-                mobileMenu.classList.add('hidden');
+                if (mobileMenu) {
+                    mobileMenu.classList.add('hidden');
+                }
             }
         });
     });
@@ -455,20 +470,45 @@ function initAnimations() {
 
 // Initialize everything when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
+    // Initialize DOM element references
+    themeToggle = document.getElementById('theme-toggle');
+    mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    mobileMenu = document.getElementById('mobile-menu');
+    searchInput = document.getElementById('search-input');
+    filterSelect = document.getElementById('filter-select');
+    publicationsList = document.getElementById('publications-list');
+    lastUpdated = document.getElementById('last-updated');
+    
+    // Initialize theme first (before setting up event listeners)
     initTheme();
+    
+    // Set up event listeners
+    if (themeToggle) {
+        themeToggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            toggleTheme();
+        });
+        console.log('Theme toggle button initialized');
+    } else {
+        console.error('Theme toggle button not found!');
+    }
+    
+    if (mobileMenuBtn) {
+        mobileMenuBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            toggleMobileMenu();
+        });
+        console.log('Mobile menu button initialized');
+    } else {
+        console.warn('Mobile menu button not found (this is OK on desktop)');
+    }
+    
+    // Initialize other features
     initSmoothScrolling();
     initHeaderScroll();
     initPublications();
     initAnimations();
     updateLastModified();
-    
-    // Event listeners
-    if (themeToggle) {
-        themeToggle.addEventListener('click', toggleTheme);
-    }
-    if (mobileMenuBtn) {
-        mobileMenuBtn.addEventListener('click', toggleMobileMenu);
-    }
     
     // Close mobile menu when clicking outside
     if (mobileMenuBtn && mobileMenu) {

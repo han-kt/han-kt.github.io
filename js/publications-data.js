@@ -1,5 +1,5 @@
 // Modern Academic Homepage JavaScript
-// Generated on 2025-11-11 19:41:41
+// Generated on 2025-11-13 20:48:33
 // Total publications: 199
 // Breakdown: 68 conferences, 7 presentations, 19 journals, 102 patents, 3 books
 
