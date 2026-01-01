@@ -1,5 +1,5 @@
 // AI-Generated Research Area Classifications
-// Generated on: 2025-11-13T20:48:33.528892
+// Generated on: 2026-01-01T10:25:06.930397
 // Total publications: 189
 
 // AI classifications for each publication
