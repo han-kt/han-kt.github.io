@@ -7,32 +7,63 @@
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
+    <header>
+        <div class="header-container">
             <h1>Generative AI for Connected and Autonomous Vehicles</h1>
-            <p style="color: #666; font-size: 1.1rem; margin-top: 0.5rem;">by Kyungtae Han</p>
-        </header>
+            <p class="subtitle">Companion Website</p>
+            <p class="author">by Kyungtae Han</p>
+        </div>
+    </header>
 
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="#supplementary">Supplementary Materials</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#instructor">Instructor Resources</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
         <section class="welcome">
             <p>Welcome to the companion website for <strong>Generative AI for Connected and Autonomous Vehicles</strong> by <strong>Kyungtae Han</strong>. 
-            This site provides access to supplementary materials, code examples, and instructor resources 
+            This website provides access to supplementary materials, code examples, and instructor resources 
             to support your learning and teaching experience.</p>
         </section>
 
-        <section>
+        <section id="supplementary">
             <h2>Supplementary Materials</h2>
             <p>The appendices from the book are available here as supplementary materials, organized by category:</p>
-            <ul>
-                <li><strong>Mathematical Foundations</strong> - Essential mathematical prerequisites (probability, distributions, softmax, cross-entropy, KL divergence)</li>
-                <li><strong>Domain Background</strong> - Essential background for automotive readers new to AI</li>
-                <li><strong>Method-Specific Background</strong> - Reinforcement learning fundamentals, Bayesian inference and variational methods</li>
-                <li><strong>Reference Materials</strong> - Enhanced glossary and representative large language models comparison</li>
-                <li><strong>Specialized Topics</strong> - Gumbel Top-K trick, Trust Region Policy Optimization (TRPO)</li>
-            </ul>
+            
+            <div class="resource-box">
+                <h3>Mathematical Foundations</h3>
+                <p>Essential mathematical prerequisites (probability, distributions, softmax, cross-entropy, KL divergence)</p>
+            </div>
+            
+            <div class="resource-box">
+                <h3>Domain Background</h3>
+                <p>Essential background for automotive readers new to AI</p>
+            </div>
+            
+            <div class="resource-box">
+                <h3>Method-Specific Background</h3>
+                <p>Reinforcement learning fundamentals, Bayesian inference and variational methods</p>
+            </div>
+            
+            <div class="resource-box">
+                <h3>Reference Materials</h3>
+                <p>Enhanced glossary and representative large language models comparison</p>
+            </div>
+            
+            <div class="resource-box">
+                <h3>Specialized Topics</h3>
+                <p>Gumbel Top-K trick, Trust Region Policy Optimization (TRPO)</p>
+            </div>
+            
             <p><em>Note: Appendices are currently being converted to web format. Links will be available soon.</em></p>
         </section>
 
-        <section>
+        <section id="resources">
             <h2>Downloadable Resources</h2>
             <p>Access code examples used throughout the book:</p>
             <ul>
@@ -40,7 +71,7 @@
             </ul>
         </section>
 
-        <section>
+        <section id="instructor">
             <h2>Instructor Resources</h2>
             <p>Instructors adopting this book can access additional teaching materials, including presentation slides, 
             solutions, test banks, and supplementary content through Wiley's protected instructor portal.</p>
@@ -50,10 +81,10 @@
                 </a>
             </p>
         </section>
-
-        <footer>
-            <p>&copy; 2026 Generative AI for Connected and Autonomous Vehicles by Kyungtae Han. All rights reserved.</p>
-        </footer>
     </div>
+
+    <footer>
+        <p>&copy; 2026 Generative AI for Connected and Autonomous Vehicles by Kyungtae Han. All rights reserved.</p>
+    </footer>
 </body>
 </html>
