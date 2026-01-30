@@ -1,5 +1,5 @@
 // Modern Academic Homepage JavaScript
-// Generated on 2026-01-28 23:16:52
+// Generated on 2026-01-29 22:34:07
 // Total publications: 201
 // Breakdown: 70 conferences, 7 presentations, 19 journals, 102 patents, 3 books
 
@@ -483,6 +483,10 @@ const publications = [
         type: "conference",
         type_label: "Conference"
 ,
+        url: "https://arxiv.org/abs/2510.06126"
+,
+        pdf: "https://arxiv.org/pdf/2510.06126.pdf"
+,
         research_area: [
         "edge-computing",
         "generative-ai",
@@ -498,6 +502,10 @@ const publications = [
         year: 2025,
         type: "conference",
         type_label: "Conference"
+,
+        url: "https://arxiv.org/abs/2510.08993"
+,
+        pdf: "https://arxiv.org/pdf/2510.08993.pdf"
 ,
         research_area: [
         "edge-computing",
@@ -1497,6 +1505,8 @@ const publications = [
         year: 2024,
         type: "conference",
         type_label: "Conference"
+,
+        url: "https://arxiv.org/abs/2404.11181"
 ,
         pdf: "https://openaccess.thecvf.com/content/CVPR2024W/AICity/papers/Wei_KI-GAN_Knowledge-Informed_Generative_Adversarial_Networks_for_Enhanced_Multi-Vehicle_Trajectory_Forecasting_CVPRW_2024_paper.pdf"
 ,
