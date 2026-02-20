@@ -1,7 +1,7 @@
 // Modern Academic Homepage JavaScript
-// Generated on 2026-01-29 22:34:07
-// Total publications: 201
-// Breakdown: 70 conferences, 7 presentations, 19 journals, 102 patents, 3 books
+// Generated on 2026-02-20 11:40:47
+// Total publications: 204
+// Breakdown: 71 conferences, 7 presentations, 19 journals, 104 patents, 3 books
 
 // Comprehensive publications data from YAML files
 const publications = [
@@ -52,6 +52,24 @@ const publications = [
     },
     {
         id: 3,
+        yaml_id: "Sharma2026INFOCOM",
+        title: "Using Intent Communication to Enhance Platooning: Validation with Prototype Vehicles",
+        authors: "S. Sharma, A. Moradipari, S. Avedisov, M. Nour, S. Mishra, K. Han, A. Abdelraouf, T. Shimizu, and O. Altintas",
+        venue: "IEEE INFOCOM 2026",
+        year: 2026,
+        type: "conference",
+        type_label: "Conference"
+,
+        note: "Accepted"
+,
+        research_area: [
+        "connected-autonomous-vehicles",
+        "v2x-communication",
+        "intelligent-transportation"
+]
+    },
+    {
+        id: 4,
         yaml_id: "Chen2026IV",
         title: "Agentic AI for Trip Planning Optimization Application",
         authors: "T. Chen, A. Moradipari, K. Han, H. Wei, and N. Ammar",
@@ -68,7 +86,7 @@ const publications = [
 ]
     },
     {
-        id: 4,
+        id: 5,
         yaml_id: "Yan2026ICC",
         title: "Network-Aware Intelligent Task Distributor for Edge-Assisted Generative AI",
         authors: "J. Yan, M. Talukder, D. Chen, K. Han, and L. Xie",
@@ -85,7 +103,7 @@ const publications = [
 ]
     },
     {
-        id: 5,
+        id: 6,
         yaml_id: "CV_052",
         title: "Systems and Methods for Efficient Video Instance Segmentation for Vehicles Using Edge",
         authors: "Y. Chen, D. Chen, and K. Han",
@@ -113,7 +131,29 @@ const publications = [
         filing_date: "2023-07-28"
     },
     {
-        id: 6,
+        id: 7,
+        yaml_id: "CV_043",
+        title: "Collaborative Vehicle Navigation Using Dynamic and Contextual Message Sets",
+        authors: "K. Han, Y. Chen, R. Gupta, S. Ucar, J. Kenney, and O. Altintas",
+        venue: "U.S. Patent Appl. 19/408,301, Dec. 3, 2025",
+        year: 2025,
+        type: "patent",
+        type_label: "Patent"
+,
+        research_area: [
+        "v2x-communication",
+        "connected-autonomous-vehicles",
+        "intelligent-transportation"
+]
+,
+        application_number: "19/408,301"
+,
+        patent_type: "application"
+,
+        filing_date: "2025-12-03"
+    },
+    {
+        id: 8,
         yaml_id: "CV_075",
         title: "Method and System for Modeling Personalized Car-Following Driving Styles with Model-Free Inverse Reinforcement Learning",
         authors: "Z. Wang, K. Han, and R. Gupta",
@@ -140,7 +180,7 @@ const publications = [
         filing_date: "2022-01-29"
     },
     {
-        id: 7,
+        id: 9,
         yaml_id: "CV_030",
         title: "Trigger Event Personalized Adaptive Cruise Control (P-ACC)",
         authors: "R. Gupta, A. Abdelraouf, and K. Han",
@@ -168,7 +208,7 @@ const publications = [
         filing_date: "2024-02-09"
     },
     {
-        id: 8,
+        id: 10,
         yaml_id: "CV_062",
         title: "Lane Change Assist for Inexperienced Driver",
         authors: "R. Gupta, A. Abdelraouf, and K. Han",
@@ -196,7 +236,7 @@ const publications = [
         filing_date: "2023-03-01"
     },
     {
-        id: 9,
+        id: 11,
         yaml_id: "CV_050",
         title: "Methods and Systems for Collision Control of Moving Vehicles Surrounded By Vehicles",
         authors: "R. Gupta, A. Abdelraouf, and K. Han",
@@ -224,7 +264,7 @@ const publications = [
         filing_date: "2023-08-24"
     },
     {
-        id: 10,
+        id: 12,
         yaml_id: "CV_071",
         title: "Systems and Method for Active Road Surface Maintenance with Cloud-Based Mobility Digital Twin",
         authors: "Z. Wang, R. Gupta, and K. Han",
@@ -252,7 +292,28 @@ const publications = [
         filing_date: "2022-11-22"
     },
     {
-        id: 11,
+        id: 13,
+        yaml_id: "CV_044",
+        title: "Driving Guidance via Context-Aware Inference Mechanism",
+        authors: "Y. Chen, D. Chen, K. Han, and O. Altintas",
+        venue: "U.S. Patent Appl. 19/314,870, Aug. 29, 2025",
+        year: 2025,
+        type: "patent",
+        type_label: "Patent"
+,
+        research_area: [
+        "generative-ai",
+        "connected-autonomous-vehicles"
+]
+,
+        application_number: "19/314,870"
+,
+        patent_type: "application"
+,
+        filing_date: "2025-08-29"
+    },
+    {
+        id: 14,
         yaml_id: "CV_032",
         title: "Systems and Methods for Selecting Edge Nodes For Task Performance",
         authors: "D. Chen, Q. Chen, R. Gupta, and K. Han",
@@ -278,7 +339,7 @@ const publications = [
         filing_date: "2024-02-06"
     },
     {
-        id: 12,
+        id: 15,
         yaml_id: "CV_022",
         title: "Systems and Methods for Resource-optimized Mixed Reality Using User-Centric Adaptive Object Detection",
         authors: "D. Doe, D. Chen, and K. Han",
@@ -302,7 +363,7 @@ const publications = [
         grant_date: "2025-08-12"
     },
     {
-        id: 13,
+        id: 16,
         yaml_id: "CV_058",
         title: "Omnidirectional Collision Avoidance",
         authors: "A. Abdelraouf, R. Gupta, H. Abdelkawy, and K. Han",
@@ -329,7 +390,7 @@ const publications = [
         filing_date: "2023-04-21"
     },
     {
-        id: 14,
+        id: 17,
         yaml_id: "CV_001",
         title: "Systems and Methods for Communication-Aware Federated Learning",
         authors: "Y. Chan, D. Chen, H. Wang, and K. Han",
@@ -354,11 +415,11 @@ const publications = [
         grant_date: "2025-06-24"
     },
     {
-        id: 15,
+        id: 18,
         yaml_id: "CV_002",
         title: "Personalized Speed Limiter",
         authors: "R. Gupta, Z. Wang, R. Du, and K. Han",
-        venue: "U.S. Patent 123 378 592, Jun. 24, 2025",
+        venue: "U.S. Patent 12 337 859, Jun. 24, 2025",
         year: 2025,
         type: "patent",
         type_label: "Patent"
@@ -370,7 +431,7 @@ const publications = [
         "intelligent-transportation"
 ]
 ,
-        patent_number: "123378592"
+        patent_number: "12337859"
 ,
         application_number: ""
 ,
@@ -379,7 +440,7 @@ const publications = [
         grant_date: "2025-06-24"
     },
     {
-        id: 16,
+        id: 19,
         yaml_id: "CV_003",
         title: "Generating Artificial Intelligence (AI) Content Based on Predicted Handover Time",
         authors: "D. Chen, Y. Chen, Q. Chen, and K. Han",
@@ -401,7 +462,7 @@ const publications = [
         filing_date: "2025-04-09"
     },
     {
-        id: 17,
+        id: 20,
         yaml_id: "CV_004",
         title: "Medical Emergency Detection In-Vehicle Caretaker",
         authors: "A. Ganlath, R. Gupta, P. Li, Z. Wang, K. Han, N. Ammar, and S. Nagashima",
@@ -426,10 +487,10 @@ const publications = [
         grant_date: "2025-04-01"
     },
     {
-        id: 18,
+        id: 21,
         yaml_id: "CV_005",
         title: "Optimum Model Deployment Based on Energy Consumption",
-        authors: "D. Chen, K. Han, and O. Altintas",
+        authors: "D. Chen, Y. Chen, K. Han, and O. Altintas",
         venue: "U.S. Patent Appl. 19/055,566, Feb. 18, 2025",
         year: 2025,
         type: "patent",
@@ -448,7 +509,7 @@ const publications = [
         filing_date: "2025-02-18"
     },
     {
-        id: 19,
+        id: 22,
         yaml_id: "CV_006",
         title: "Method and System for Personalized Car Following with Transformers and RNNs",
         authors: "Z. Wang, K. Han, and R. Gupta",
@@ -474,7 +535,7 @@ const publications = [
         grant_date: "2025-01-07"
     },
     {
-        id: 20,
+        id: 23,
         yaml_id: "Wang2025SEC",
         title: "lm-Meter: Unveiling Runtime Inference Latency for On-Device Language Models",
         authors: "H. Wang, X. Tu, H. Ke, H. Chai, D. Chen, and K. Han",
@@ -494,7 +555,7 @@ const publications = [
 ]
     },
     {
-        id: 21,
+        id: 24,
         yaml_id: "Tu2025SEC",
         title: "PlatformX: An End-to-End Transferable Platform for Energy-Efficient Neural Architecture Search",
         authors: "X. Tu, D. Chen, K. Han, O. Altintas, and H. Wang",
@@ -514,7 +575,7 @@ const publications = [
 ]
     },
     {
-        id: 22,
+        id: 25,
         yaml_id: "Han2025ITSC",
         title: "Scene-Aware Conversational ADAS with Generative AI for Real-Time Driver Assistance",
         authors: "K. Han, Y. Chen, R. Gupta, and O. Altintas",
@@ -533,7 +594,7 @@ const publications = [
 ]
     },
     {
-        id: 23,
+        id: 26,
         yaml_id: "Chen2025ITSC",
         title: "Real-Time Gap and Acceleration Adaptation in Adaptive Cruise Control Based on Driver Overrides",
         authors: "Y. Chen, K. Han, A. Moradipari, S. Avedisov, S. Mishra, R. Gupta, and O. Altintas",
@@ -549,7 +610,7 @@ const publications = [
 ]
     },
     {
-        id: 24,
+        id: 27,
         yaml_id: "Park2025ICCV",
         title: "NuPlanQA: A Large-Scale Dataset and Benchmark for Multi-View Driving Scene Understanding in Multi-Modal Large Language Models",
         authors: "S. Park, C. Cui, Y. Ma, A. Moradipari, R. Gupta, K. Han, and Z. Wang",
@@ -569,7 +630,7 @@ const publications = [
 ]
     },
     {
-        id: 25,
+        id: 28,
         yaml_id: "Lu2025IROS",
         title: "On Learning Closed-Loop Probabilistic Multi-Agent Simulator",
         authors: "J. Lu, R. Gupta, A. Moradipari, K. Han, R. Zhang, and Z. Wang",
@@ -589,7 +650,7 @@ const publications = [
 ]
     },
     {
-        id: 26,
+        id: 29,
         yaml_id: "Ma2025IV",
         title: "Video Token Sparsification for Efficient Multimodal LLMs in Driving Visual Question Answering",
         authors: "Y. Ma, A. Abdelraouf, R. Gupta, A. Moradipari, Z. Wang, and K. Han",
@@ -610,7 +671,7 @@ const publications = [
 ]
     },
     {
-        id: 27,
+        id: 30,
         yaml_id: "Wu2025IV",
         title: "PDB-Eval: An Evaluation of Large Multimodal Models for Description and Explanation of Personalized Driving Behavior",
         authors: "J. Wu, J. Echterhoff, K. Han, A. Abdelraouf, R. Gupta, and J. McAuley",
@@ -631,7 +692,7 @@ const publications = [
 ]
     },
     {
-        id: 28,
+        id: 31,
         yaml_id: "Tu2025HotMobile",
         title: "GreenAuto: An Automated Platform for Sustainable AI Model Design on Edge Devices",
         authors: "X. Tu, D. Chen, K. Han, O. Altintas, and H. Wang",
@@ -651,7 +712,7 @@ const publications = [
 ]
     },
     {
-        id: 29,
+        id: 32,
         yaml_id: "Qin2025RAL",
         title: "Investigating Personalized Driving Behaviors in Dilemma Zones: Analysis and Prediction of Stop-or-Go Decisions",
         authors: "Z. Qin, S. Li, C. Wei, G. Wu, M. Barth, A. Abdelraouf, R. Gupta, and K. Han",
@@ -671,7 +732,7 @@ const publications = [
 ]
     },
     {
-        id: 30,
+        id: 33,
         yaml_id: "Liao2024TIV",
         title: "A Review of Personalization in Driving Behavior: Dataset, Modeling, and Validation",
         authors: "X. Liao, Z. Zhao, M. Barth, A. Abdelraouf, R. Gupta, K. Han, J. Ma, and G. Wu",
@@ -692,7 +753,7 @@ const publications = [
 ]
     },
     {
-        id: 31,
+        id: 34,
         yaml_id: "Han2025ITSWC1",
         title: "Real-Time Personalized Adaptive Cruise Control with Dynamic Gap Adjustment",
         authors: "K. Han, A. Abdelraouf, S. Mishra, R. Gupta, and O. Altintas",
@@ -702,7 +763,7 @@ const publications = [
         type_label: "Presentation"
     },
     {
-        id: 32,
+        id: 35,
         yaml_id: "Chen2025ITSWC",
         title: "Vision-based Large Language Model with Extended Reality for Driver Warning",
         authors: "Y. Chen, D. Chen, K. Han, and O. Altintas",
@@ -712,7 +773,7 @@ const publications = [
         type_label: "Presentation"
     },
     {
-        id: 33,
+        id: 36,
         yaml_id: "CV_007",
         title: "Adaptive Road Sign Interpretation and Vehicle Response System",
         authors: "R. Gupta, Y. Max, A. Abdelraouf, and K. Han",
@@ -734,7 +795,7 @@ const publications = [
         filing_date: "2024-12-29"
     },
     {
-        id: 34,
+        id: 37,
         yaml_id: "CV_008",
         title: "Context-Aware External Object Detection and Vehicle Guidance",
         authors: "R. Gupta, Y. Max, A. Abdelraouf, and K. Han",
@@ -757,7 +818,7 @@ const publications = [
         filing_date: "2024-12-29"
     },
     {
-        id: 35,
+        id: 38,
         yaml_id: "CV_009",
         title: "Computing a Multi-Dimensional Personalized Adaptive Cruise Control Parameter",
         authors: "R. Gupta, A. Moradipari, A. Abdelraouf, and K. Han",
@@ -779,7 +840,7 @@ const publications = [
         filing_date: "2024-12-19"
     },
     {
-        id: 36,
+        id: 39,
         yaml_id: "CV_010",
         title: "Advanced Driver Focus Tracking for Approaching Hazard",
         authors: "R. Gupta, Q. Chen, Y. Max, A. Abdelraouf, and K. Han",
@@ -801,7 +862,7 @@ const publications = [
         filing_date: "2024-12-11"
     },
     {
-        id: 37,
+        id: 40,
         yaml_id: "CV_011",
         title: "Audio-Based Driver Assistance System for Enhanced Vehicle Safety",
         authors: "R. Gupta, Q. Chen, Y. Max, A. Abdelraouf, and K. Han",
@@ -823,7 +884,7 @@ const publications = [
         filing_date: "2024-12-11"
     },
     {
-        id: 38,
+        id: 41,
         yaml_id: "CV_012",
         title: "Real-Time Risk Reasoning",
         authors: "A. Abdelraouf, R. Gupta, and K. Han",
@@ -845,7 +906,7 @@ const publications = [
         filing_date: "2024-12-02"
     },
     {
-        id: 39,
+        id: 42,
         yaml_id: "CV_013",
         title: "Systems and Methods for Adaptive Cruise Control Based on Online Learning Preference",
         authors: "A. Moradipari, R. Gupta, A. Abdelraouf, K. Han, S. Avedisov, O. Altintas, and J. Kenney",
@@ -867,7 +928,7 @@ const publications = [
         filing_date: "2024-11-12"
     },
     {
-        id: 40,
+        id: 43,
         yaml_id: "CV_021",
         title: "Systems and Methods for Mixed Reality Applications with Selective Frame Transmission",
         authors: "D. Doe, D. Chen, and K. Han",
@@ -893,7 +954,7 @@ const publications = [
         filing_date: "2024-08-28"
     },
     {
-        id: 41,
+        id: 44,
         yaml_id: "CV_019",
         title: "Cannabis Impairment Detection and Safety System for Vehicles",
         authors: "R. Gupta, H. Abdelkawy, A. Abdelraouf, and K. Han",
@@ -917,7 +978,7 @@ const publications = [
         grant_date: "2024-08-27"
     },
     {
-        id: 42,
+        id: 45,
         yaml_id: "CV_020",
         title: "Rest Stop Recommendation System",
         authors: "Z. Shou, Z. Wang, K. Han, Y. Liu, and P. Tiwari",
@@ -943,7 +1004,7 @@ const publications = [
         grant_date: "2024-08-27"
     },
     {
-        id: 43,
+        id: 46,
         yaml_id: "CV_023",
         title: "Edge-Assisted Occlusion Mitigation",
         authors: "Y. Chen, D. Chen, K. Han, and O. Altintas",
@@ -963,7 +1024,7 @@ const publications = [
         filing_date: "2024-08-02"
     },
     {
-        id: 44,
+        id: 47,
         yaml_id: "CV_024",
         title: "Student-T Process Personalized Adaptive Cruise Control",
         authors: "R. Gupta, Z. Wang, Y. Wang, K. Han, and P. Tiwari",
@@ -989,7 +1050,7 @@ const publications = [
         grant_date: "2024-07-16"
     },
     {
-        id: 45,
+        id: 48,
         yaml_id: "CV_025",
         title: "Systems and Methods for Generating Personalized Advanced Driver Assistance Systems",
         authors: "A. Abdelraouf, R. Gupta, and K. Han",
@@ -1011,7 +1072,7 @@ const publications = [
         filing_date: "2024-05-15"
     },
     {
-        id: 46,
+        id: 49,
         yaml_id: "CV_026",
         title: "Vehicle Communication Sender Identification via Hyper-Graph Matching",
         authors: "R. Guo, S. Avedisov, K. Han, H. Lu, and P. Tiwari",
@@ -1038,7 +1099,7 @@ const publications = [
         grant_date: "2024-04-02"
     },
     {
-        id: 47,
+        id: 50,
         yaml_id: "CV_027",
         title: "Controlling An Adaptive Cruise Control System",
         authors: "A. Abdelraouf, R. Gupta, K. Han, T. Matusda, N. Merkel, M. Hill, S. Nola, O. Altintas, and J. Kenney",
@@ -1063,7 +1124,7 @@ const publications = [
         filing_date: "2024-03-22"
     },
     {
-        id: 48,
+        id: 51,
         yaml_id: "CV_028",
         title: "Hybrid Deterministic Override of Probabilistic Advanced Driving Assistance Systems (ADAS)",
         authors: "R. Gupta, Z. Wang, K. Han, and P. Tiwari",
@@ -1089,7 +1150,7 @@ const publications = [
         grant_date: "2024-03-12"
     },
     {
-        id: 49,
+        id: 52,
         yaml_id: "CV_029",
         title: "Cooperative Driving System and Method",
         authors: "S. Avedisov, Z. Wang, A. Sakr, K. Han, R. Guo, and O. Altintas",
@@ -1115,7 +1176,7 @@ const publications = [
         grant_date: "2024-02-20"
     },
     {
-        id: 50,
+        id: 53,
         yaml_id: "CV_031",
         title: "Signal-Based Auto Gap Personalized Adaptive Cruise Control",
         authors: "R. Gupta, A. Abdelraouf, K. Han, and S. Sheng",
@@ -1140,7 +1201,7 @@ const publications = [
         filing_date: "2024-02-08"
     },
     {
-        id: 51,
+        id: 54,
         yaml_id: "CV_033",
         title: "Edge-Assisted Personalized High-Definition Map Delivery Based on Drivers' Interests",
         authors: "D. Chen, Q. Chen, R. Gupta, and K. Han",
@@ -1167,7 +1228,7 @@ const publications = [
         filing_date: "2024-02-02"
     },
     {
-        id: 52,
+        id: 55,
         yaml_id: "CV_034",
         title: "Edge-Assisted Energy-Aware and Communication-Aware Dynamic Computational Task Offloading Strategy",
         authors: "D. Chen, Q. Chen, R. Gupta, and K. Han",
@@ -1189,7 +1250,7 @@ const publications = [
         filing_date: "2024-02-02"
     },
     {
-        id: 53,
+        id: 56,
         yaml_id: "CV_035",
         title: "Systems and Methods for Personalized Gap Preference Prediction",
         authors: "A. Abdelraouf, R. Gupta, K. Han, H. Abdelkawy, and J. Knapp",
@@ -1214,7 +1275,7 @@ const publications = [
         filing_date: "2024-02-02"
     },
     {
-        id: 54,
+        id: 57,
         yaml_id: "CV_036",
         title: "Systems and Methods for Obtaining Video Analytic Output",
         authors: "Y. Chen, D. Chen, and K. Han",
@@ -1234,7 +1295,7 @@ const publications = [
         filing_date: "2024-02-01"
     },
     {
-        id: 55,
+        id: 58,
         yaml_id: "CV_037",
         title: "Systems and Methods for Controlling a Vehicle Using Physiological Data of a Driver of the Vehicle",
         authors: "R. Gupta, A. Abdelraouf, K. Han, and S. Sheng",
@@ -1258,7 +1319,7 @@ const publications = [
         filing_date: "2024-01-26"
     },
     {
-        id: 56,
+        id: 59,
         yaml_id: "CV_038",
         title: "Subconscious Big Picture Macro and Split Second Micro Decisions {ADAS}",
         authors: "R. Gupta, Z. Wang, K. Han, and P. Tiwari",
@@ -1282,7 +1343,7 @@ const publications = [
         grant_date: "2024-01-23"
     },
     {
-        id: 57,
+        id: 60,
         yaml_id: "CV_014",
         title: "Proactive Message Transmitter Identification System",
         authors: "H. Kobayashi and K. Han",
@@ -1307,7 +1368,7 @@ const publications = [
         grant_date: "2024-01-17"
     },
     {
-        id: 58,
+        id: 61,
         yaml_id: "CV_039",
         title: "Determining a Setting for a Cruise Control",
         authors: "K. Han, Z. Wang, P. Tiwari, J. Lenneman, E. Toshinori, M. Johnson, and C. Violetta",
@@ -1332,7 +1393,7 @@ const publications = [
         grant_date: "2024-01-16"
     },
     {
-        id: 59,
+        id: 62,
         yaml_id: "CV_015",
         title: "Systems and Methods for Computation Offloading Determination Using Multi-Modal User Input",
         authors: "D. Doe, D. Chen, and K. Han",
@@ -1357,7 +1418,7 @@ const publications = [
         filing_date: "2024-01-12"
     },
     {
-        id: 60,
+        id: 63,
         yaml_id: "CV_016",
         title: "Method and System for Personalized Car Following with Transformers",
         authors: "Z. Wang, Z. Zhao, R. Gupta, K. Han, and P. Tiwari",
@@ -1383,7 +1444,7 @@ const publications = [
         grant_date: "2024-01-10"
     },
     {
-        id: 61,
+        id: 64,
         yaml_id: "CV_040",
         title: "Vehicular Topple Risk notification",
         authors: "R. Gupta, Z. Wang, Y. Wang, K. Han, and P. Tiwari",
@@ -1407,7 +1468,7 @@ const publications = [
         grant_date: "2024-01-09"
     },
     {
-        id: 62,
+        id: 65,
         yaml_id: "CV_017",
         title: "Systems and Methods for Edge-Driven Object Detection for Resource Optimization",
         authors: "D. Doe, D. Chen, and K. Han",
@@ -1432,7 +1493,7 @@ const publications = [
         filing_date: "2024-01-05"
     },
     {
-        id: 63,
+        id: 66,
         yaml_id: "CV_018",
         title: "Detection, Classification, and Prediction of Bacteria Colony Growth in Vehicle Passenger Cabin",
         authors: "R. Gupta, Z. Wang, Y. Wang, K. Han, and P. Tiwari",
@@ -1457,7 +1518,7 @@ const publications = [
         grant_date: "2024-01-03"
     },
     {
-        id: 64,
+        id: 67,
         yaml_id: "Cao2024GLOBECOM",
         title: "CAVE: Crowdsourcing passing-by vehicles for reliable in-vehicle edge computing",
         authors: "J. Cao, Q. Liu, D. Chen, and K. Han",
@@ -1477,7 +1538,7 @@ const publications = [
 ]
     },
     {
-        id: 65,
+        id: 68,
         yaml_id: "Doe2024IV",
         title: "Enhancing AR/VR performance via optimized edge-based object detection for connected autonomous vehicles",
         authors: "D. Doe, D. Chen, K. Han, L. Xie, and Z. Han",
@@ -1497,7 +1558,7 @@ const publications = [
 ]
     },
     {
-        id: 66,
+        id: 69,
         yaml_id: "Wei2024CVPR",
         title: "KI-GAN: Knowledge-Informed Generative Adversarial Networks for Enhanced Multi-Vehicle Trajectory Forecasting at Signalized Intersections",
         authors: "C. Wei, G. Wu, M. Barth, A. Abdelraouf, R. Gupta, and K. Han",
@@ -1518,7 +1579,7 @@ const publications = [
 ]
     },
     {
-        id: 67,
+        id: 70,
         yaml_id: "Ma2024CVPR",
         title: "LaMPilot: An Open Benchmark Dataset for Autonomous Driving with Language Model Programs",
         authors: "Y. Ma, C. Cui, X. Cao, W. Ye, P. Liu, J. Lu, A. Abdelraouf, R. Gupta, K. Han, A. Bera, J. Rehg, and Z. Wang",
@@ -1538,7 +1599,7 @@ const publications = [
 ]
     },
     {
-        id: 68,
+        id: 71,
         yaml_id: "Mallik2024ICC",
         title: "Unleashing the true power of age-of-information: Service aggregation in connected and autonomous vehicles",
         authors: "A. Mallik, D. Chen, K. Han, L. Jiang, and Z. Hang",
@@ -1558,7 +1619,7 @@ const publications = [
 ]
     },
     {
-        id: 69,
+        id: 72,
         yaml_id: "Li2024FISTS",
         title: "Digital Twin-Based Cooperative Driving at Roundabouts for Connected and Automated Vehicles",
         authors: "Z. Li, S. Li, A. Abdelraouf, R. Gupta, K. Han, O. Altintas, and Z. Wang",
@@ -1576,7 +1637,7 @@ const publications = [
 ]
     },
     {
-        id: 70,
+        id: 73,
         yaml_id: "Wei2024FISTS",
         title: "Dilemma Zone: A Comprehensive Study of Influential Factors and Behavior Analysis",
         authors: "C. Wei, Z. Qin, G. Wu, M. Barth, A. Abdelraouf, R. Gupta, and K. Han",
@@ -1596,7 +1657,7 @@ const publications = [
 ]
     },
     {
-        id: 71,
+        id: 74,
         yaml_id: "Echterhoff2024WACV",
         title: "Driving through the Concept Gridlock: Unraveling Explainability Bottlenecks in Automated Driving",
         authors: "J. Echterhoff, A. Yan, K. Han, A. Abdelraouf, R. Gupta, and J. McAuley",
@@ -1617,7 +1678,7 @@ const publications = [
 ]
     },
     {
-        id: 72,
+        id: 75,
         yaml_id: "Doe2024ICN",
         title: "Edge-Assisted Indexing for Highly Dynamic and Static Data in Mixed Reality Connected Autonomous Vehicles",
         authors: "D. Doe, D. Chen, K. Han, H. Wang, J. Xie, and Z. Han",
@@ -1637,7 +1698,7 @@ const publications = [
 ]
     },
     {
-        id: 73,
+        id: 76,
         yaml_id: "Yuru2024VT",
         title: "Crowdsourcing Live High Definition Map via Collaborative Computation in Automotive Edge Computing",
         authors: "Y. Zhang, Q. Liu, H. Wang, D. Chen, and K. Han",
@@ -1655,7 +1716,7 @@ const publications = [
 ]
     },
     {
-        id: 74,
+        id: 77,
         yaml_id: "Ma2024TIV",
         title: "Driver Digital Twin for Online Recognition of Distracted Driving Behaviors",
         authors: "Y. Ma, R. Du, A. Abdelraouf, K. Han, R. Gupta, and Z. Wang",
@@ -1674,7 +1735,7 @@ const publications = [
 ]
     },
     {
-        id: 75,
+        id: 78,
         yaml_id: "CV_041",
         title: "Systems and Methods for Protecting a Vehicle at an Intersection",
         authors: "R. Gupta, Z. Wang, Y. Wang, K. Han, and P. Tiwari",
@@ -1700,7 +1761,7 @@ const publications = [
         grant_date: "2023-12-26"
     },
     {
-        id: 76,
+        id: 79,
         yaml_id: "CV_042",
         title: "System and Method for Estimating Motion of an Automated Vehicle for Cooperative Driving",
         authors: "Z. Wang, K. Han, and P. Tiwari",
@@ -1726,7 +1787,7 @@ const publications = [
         grant_date: "2023-11-28"
     },
     {
-        id: 77,
+        id: 80,
         yaml_id: "CV_047",
         title: "Systems and Methods for Estimating Remaining Range of a Vehicle",
         authors: "D. Chen, Q. Chen, and K. Han",
@@ -1753,7 +1814,7 @@ const publications = [
         filing_date: "2023-10-20"
     },
     {
-        id: 78,
+        id: 81,
         yaml_id: "CV_048",
         title: "Systems and Methods for Personalizing Adaptive Cruise Control in a Vehicle",
         authors: "Y. Wang, Z. Wang, K. Han, R. Gupta, and P. Tiwari",
@@ -1778,7 +1839,7 @@ const publications = [
         grant_date: "2023-10-17"
     },
     {
-        id: 79,
+        id: 82,
         yaml_id: "CV_049",
         title: "Driver Classification Systems and Methods for Obtaining an Insurance Rate for a Vehicle",
         authors: "R. Gupta, Z. Wang, K. Han, and P. Tiwari",
@@ -1804,7 +1865,7 @@ const publications = [
         grant_date: "2023-10-03"
     },
     {
-        id: 80,
+        id: 83,
         yaml_id: "CV_051",
         title: "Personalized Takeover Prediction with Driver Tactile Inputs",
         authors: "Z. Wang, R. Gupta, K. Han, and R. Du",
@@ -1829,7 +1890,7 @@ const publications = [
         filing_date: "2023-08-01"
     },
     {
-        id: 81,
+        id: 84,
         yaml_id: "CV_053",
         title: "Systems and Methods to Reduce Audio Distraction for a Vehicle Driver",
         authors: "R. Gupta, Z. Wang, K. Han, and P. Tiwari",
@@ -1854,7 +1915,7 @@ const publications = [
         grant_date: "2023-07-18"
     },
     {
-        id: 82,
+        id: 85,
         yaml_id: "CV_054",
         title: "Vehicle-to-everything Communication-based Lane Change Collision Avoidance Warning",
         authors: "Z. Wang, K. Han, and B. Kim",
@@ -1880,7 +1941,7 @@ const publications = [
         grant_date: "2023-07-11"
     },
     {
-        id: 83,
+        id: 86,
         yaml_id: "CV_055",
         title: "Vehicular Modifications Based on Occupant Health",
         authors: "R. Gupta, H. Hada, and K. Han",
@@ -1906,7 +1967,7 @@ const publications = [
         filing_date: "2023-06-30"
     },
     {
-        id: 84,
+        id: 87,
         yaml_id: "CV_056",
         title: "System and Method for Scheduling Connected Vehicles to Cross Non-Signalized Intersections",
         authors: "Z. Wang, K. Han, and P. Tiwari",
@@ -1932,7 +1993,7 @@ const publications = [
         grant_date: "2023-05-30"
     },
     {
-        id: 85,
+        id: 88,
         yaml_id: "CV_057",
         title: "Producing, For An Autonomous Vehicle, A Route From An Origination To A Destination",
         authors: "Z. Wang, K. Han, and P. Tiwari",
@@ -1958,7 +2019,7 @@ const publications = [
         grant_date: "2023-04-25"
     },
     {
-        id: 86,
+        id: 89,
         yaml_id: "CV_059",
         title: "ADHD Detection and Safety System for Vehicles",
         authors: "R. Gupta, H. Abdelkawy, A. Abdelraouf, and K. Han",
@@ -1983,7 +2044,7 @@ const publications = [
         filing_date: "2023-04-12"
     },
     {
-        id: 87,
+        id: 90,
         yaml_id: "CV_061",
         title: "Remote Control of Distance Between Transports",
         authors: "R. Gupta, A. Abdelraouf, and K. Han",
@@ -2009,7 +2070,7 @@ const publications = [
         filing_date: "2023-03-29"
     },
     {
-        id: 88,
+        id: 91,
         yaml_id: "CV_063",
         title: "Inverse Reinforcement Learning for Adaptive Cruise Control",
         authors: "R. Gupta, A. Abdelraouf, and K. Han",
@@ -2035,7 +2096,7 @@ const publications = [
         filing_date: "2023-03-17"
     },
     {
-        id: 89,
+        id: 92,
         yaml_id: "CV_064",
         title: "Recommended Following Gap Distance Based on Context",
         authors: "R. Gupta, A. Abdelraouf, and K. Han",
@@ -2061,7 +2122,7 @@ const publications = [
         filing_date: "2023-03-17"
     },
     {
-        id: 90,
+        id: 93,
         yaml_id: "CV_065",
         title: "System and Method for Connected Vehicle Lane Merge",
         authors: "Z. Wang, K. Han, and P. Tiwari",
@@ -2087,7 +2148,7 @@ const publications = [
         grant_date: "2023-03-07"
     },
     {
-        id: 91,
+        id: 94,
         yaml_id: "CV_066",
         title: "System Framework for Software and Hardware Configuration Determination for Vehicle Applications with Cloud and Edge Computing",
         authors: "H. Wang, D. Chen, R. Gupta, and K. Han",
@@ -2114,7 +2175,7 @@ const publications = [
         filing_date: "2023-02-24"
     },
     {
-        id: 92,
+        id: 95,
         yaml_id: "CV_067",
         title: "Vehicle OTA Security Validation",
         authors: "R. Gupta, H. Wang, D. Chen, and K. Han",
@@ -2140,7 +2201,7 @@ const publications = [
         filing_date: "2023-02-10"
     },
     {
-        id: 93,
+        id: 96,
         yaml_id: "Liao2023THVH",
         title: "Driver Behavior-Aware Cooperative Ramp Merging for Intelligent Vehicles",
         authors: "X. Liao, Z. Wang, K. Han, X. Zhao, M. Barth, and G. Wu",
@@ -2160,7 +2221,7 @@ const publications = [
 ]
     },
     {
-        id: 94,
+        id: 97,
         yaml_id: "Li2023IRC",
         title: "Personalized Trajectory Prediction for Driving Behavior Modeling in Ramp-Merging Scenarios",
         authors: "S. Li, C. Wei, G. Wu, M. Barth, A. Abdelraouf, R. Gupta, and K. Han",
@@ -2178,7 +2239,7 @@ const publications = [
 ]
     },
     {
-        id: 95,
+        id: 98,
         yaml_id: "Liu2023SEC",
         title: "AdaMap: High-scalable real-time cooperative perception at the edge",
         authors: "Q. Liu, Y. Xue, Y. Zhang, D. Chen, and K. Han",
@@ -2196,7 +2257,7 @@ const publications = [
 ]
     },
     {
-        id: 96,
+        id: 99,
         yaml_id: "Tu2023SEC",
         title: "Unveiling energy efficiency in deep learning: Measurement, prediction, and scoring across edge devices",
         authors: "X. Tu, A. Mallik, D. Chen, K. Han, O. Altintas, H. Wang, and J. Xie",
@@ -2214,7 +2275,7 @@ const publications = [
 ]
     },
     {
-        id: 97,
+        id: 100,
         yaml_id: "Chen2023SEC",
         title: "Poster: Efficient video instance segmentation with early exit",
         authors: "Y. Chen, D. Chen, K. Han, J. Kenney, and M. Zhao",
@@ -2232,7 +2293,7 @@ const publications = [
 ]
     },
     {
-        id: 98,
+        id: 101,
         yaml_id: "Ma2023ITSC",
         title: "CEMFormer: Learning to Predict Driver Intentions from In-Cabin and External Cameras via Spatial-Temporal Transformers",
         authors: "Y. Ma, W. Ye, X. Cao, A. Abdelraouf, K. Han, R. Gupta, and Z. Wang",
@@ -2253,7 +2314,7 @@ const publications = [
 ]
     },
     {
-        id: 99,
+        id: 102,
         yaml_id: "Abdelraouf2023ITSC",
         title: "Interaction-Aware Personalized Vehicle Trajectory Prediction Using Temporal Graph Neural Networks",
         authors: "A. Abdelraouf, R. Gupta, and K. Han",
@@ -2274,7 +2335,7 @@ const publications = [
 ]
     },
     {
-        id: 100,
+        id: 103,
         yaml_id: "Zhao2023ITSC",
         title: "Inverse Reinforcement Learning and Gaussian Process Regression-based Real-time Framework for Personalized Adaptive Cruise Control",
         authors: "Z. Zhao, X. Liao, A. Abdelraouf, K. Han, R. Gupta, M. Barth, and G. Wu",
@@ -2294,7 +2355,7 @@ const publications = [
 ]
     },
     {
-        id: 101,
+        id: 104,
         yaml_id: "Doe2023ICCC",
         title: "Real-time search-driven content delivery in vehicular networks for AR/VR-enabled autonomous vehicles",
         authors: "D. Doe, D. Chen, K. Han, Y. Dai, L. Xie, and Z. Han",
@@ -2313,7 +2374,7 @@ const publications = [
 ]
     },
     {
-        id: 102,
+        id: 105,
         yaml_id: "Liu2023MASS",
         title: "Visualization of mobility digital twin: Framework design, case study, and future challenges",
         authors: "Y. Liu, X. Tu, D. Chen, K. Han, O. Altinas, and H. Wang",
@@ -2333,7 +2394,7 @@ const publications = [
 ]
     },
     {
-        id: 103,
+        id: 106,
         yaml_id: "Zhao2023SMC",
         title: "Real-Time Learning of Driving Gap Preference for Personalized Adaptive Cruise Control",
         authors: "Z. Zhao, X. Liao, A. Abdelraouf, K. Han, R. Gupta, G. Wu, and M. Barth",
@@ -2353,7 +2414,7 @@ const publications = [
 ]
     },
     {
-        id: 104,
+        id: 107,
         yaml_id: "Ma2023CVPR",
         title: "M2DAR: Multi-view multi-scale driver action recognition with vision transformer",
         authors: "Y. Ma, L. Yuan, A. Abdelraouf, K. Han, R. Gupta, Z. Li, and Z. Wang",
@@ -2372,7 +2433,7 @@ const publications = [
 ]
     },
     {
-        id: 105,
+        id: 108,
         yaml_id: "Du2023IV",
         title: "Driver monitoring-based lane-change prediction: A personalized federated learning framework",
         authors: "R. Du, K. Han, R. Gupta, S. Chen, S. Labi, and Z. Wang",
@@ -2391,7 +2452,7 @@ const publications = [
 ]
     },
     {
-        id: 106,
+        id: 109,
         yaml_id: "Liao2023IV",
         title: "Exploring vehicular interaction from trajectories based on granger causality",
         authors: "X. Liao, G. Wu, M. Barth, R. Gupta, and K. Han",
@@ -2409,7 +2470,7 @@ const publications = [
 ]
     },
     {
-        id: 107,
+        id: 110,
         yaml_id: "Chen2023ICASSP",
         title: "Confidence-based federated distillation for vision-base lane-centering",
         authors: "Y. Chen, D. Chen, H. Wang, K. Han, and M. Zhao",
@@ -2430,7 +2491,7 @@ const publications = [
 ]
     },
     {
-        id: 108,
+        id: 111,
         yaml_id: "Mallik2023ICC",
         title: "EPAM: A Predictive Energy Model for Mobile AI",
         authors: "A. Mallik, H. Wang, L. Xie, D. Chen, and K. Han",
@@ -2450,7 +2511,7 @@ const publications = [
 ]
     },
     {
-        id: 109,
+        id: 112,
         yaml_id: "Doe2023ICC",
         title: "High definition map data optimization for autonomous driving in vehicular named data networks",
         authors: "D. Doe, D. Chen, H. Wang, K. Han, L. Xie, and Z. Han",
@@ -2471,7 +2532,7 @@ const publications = [
 ]
     },
     {
-        id: 110,
+        id: 113,
         yaml_id: "Xue2023ICC",
         title: "COMAP: Proactive provision for crowdsourcing map in automotive edge computing",
         authors: "Y. Xue, Y. Zhang, Q. Liu, D. Chen, and K. Han",
@@ -2491,7 +2552,7 @@ const publications = [
 ]
     },
     {
-        id: 111,
+        id: 114,
         yaml_id: "Chen2023WOCC",
         title: "Adaptive delivery for high definition map using a multi-arm bandit approach",
         authors: "Y. Chen, D. Chen, H. Wang, K. Han, and M. Zhao",
@@ -2511,7 +2572,7 @@ const publications = [
 ]
     },
     {
-        id: 112,
+        id: 115,
         yaml_id: "Doe2023TITS",
         title: "DSORL: Data Source Optimization with Reinforcement Learning Scheme for Vehicular Named Data Networks",
         authors: "D. Doe, D. Chen, K. Han, H. Wang, J. Xie, and Z. Han",
@@ -2531,7 +2592,7 @@ const publications = [
 ]
     },
     {
-        id: 113,
+        id: 116,
         yaml_id: "Liao2023IOTJ",
         title: "Driver Digital Twin for Online Prediction of Personalized Lane-Change Behavior",
         authors: "X. Liao, X. Zhao, Z. Wang, Z. Zhao, K. Han, R. Gupta, M. Barth, and G. Wu",
@@ -2551,7 +2612,7 @@ const publications = [
 ]
     },
     {
-        id: 114,
+        id: 117,
         yaml_id: "Wang2023VTM",
         title: "Metamobility: Connecting Future Mobility with Metaverse",
         authors: "H. Wang, Z. Wang, D. Chen, Q. Liu, H. Ke, and K. Han",
@@ -2571,7 +2632,7 @@ const publications = [
 ]
     },
     {
-        id: 115,
+        id: 118,
         yaml_id: "Zhao2023TRB",
         title: "Driver Digital Twin for Online Prediction of Personalized Lane Change Behavior and Field Implementation",
         authors: "X. Zhao, Z. Wang, Z. Zhao, K. Han, R. Gupta, M. Barth, and G. Wu",
@@ -2581,7 +2642,7 @@ const publications = [
         type_label: "Presentation"
     },
     {
-        id: 116,
+        id: 119,
         yaml_id: "CV_069",
         title: "Systems, Methods, and Non-Transitory Computer-Readable Medium For Sharing Camera Views",
         authors: "Y. Chen, D. Chen, H. Wang, and K. Han",
@@ -2605,7 +2666,7 @@ const publications = [
         filing_date: "2022-12-02"
     },
     {
-        id: 117,
+        id: 120,
         yaml_id: "CV_072",
         title: "System and Method for Controlling a Cruise Control System of a Vehicle Using the Moods of One or More Occupants",
         authors: "R. Gupta, Z. Wang, and K. Han",
@@ -2630,7 +2691,7 @@ const publications = [
         filing_date: "2022-11-22"
     },
     {
-        id: 118,
+        id: 121,
         yaml_id: "CV_073",
         title: "Systems and Methods for Contribution-Aware Federated Learning",
         authors: "Y. Chen, H. Wang, D. Chen, and K. Han",
@@ -2655,7 +2716,7 @@ const publications = [
         filing_date: "2022-10-13"
     },
     {
-        id: 119,
+        id: 122,
         yaml_id: "CV_077",
         title: "Methods and Systems for Distributing High Definition Map Using Edge Device",
         authors: "D. Chen, H. Wang, and K. Han",
@@ -2680,7 +2741,7 @@ const publications = [
         filing_date: "2022-08-26"
     },
     {
-        id: 120,
+        id: 123,
         yaml_id: "CV_078",
         title: "Methods and Systems for Delivering Edge-Assisted Attention-Aware High Definition Map",
         authors: "D. Chen, H. Wang, and K. Han",
@@ -2705,7 +2766,7 @@ const publications = [
         filing_date: "2022-07-29"
     },
     {
-        id: 121,
+        id: 124,
         yaml_id: "CV_079",
         title: "Ramp Merging Assistance",
         authors: "Z. Wang, K. Han, and P. Tiwari",
@@ -2731,7 +2792,7 @@ const publications = [
         grant_date: "2022-07-26"
     },
     {
-        id: 122,
+        id: 125,
         yaml_id: "CV_080",
         title: "Software Driven User Profile Personalized Adaptive Cruise Control",
         authors: "R. Gupta, Z. Wang, and K. Han",
@@ -2757,7 +2818,7 @@ const publications = [
         filing_date: "2022-07-25"
     },
     {
-        id: 123,
+        id: 126,
         yaml_id: "CV_081",
         title: "Cloud-Based Mobility Digital Twin for Human, Vehicle, and Traffic",
         authors: "Z. Wang, R. Gupta, K. Han, and P. Tiwari",
@@ -2783,7 +2844,7 @@ const publications = [
         filing_date: "2022-05-13"
     },
     {
-        id: 124,
+        id: 127,
         yaml_id: "CV_082",
         title: "Adjustable Blind Spot Monitor",
         authors: "Z. Wang, K. Han, and B. Kim",
@@ -2808,7 +2869,7 @@ const publications = [
         grant_date: "2022-05-10"
     },
     {
-        id: 125,
+        id: 128,
         yaml_id: "CV_083",
         title: "Systems and methods for Providing Driving Recommendations",
         authors: "J. Su, K. Han, R. Guo, and R. Melen",
@@ -2834,7 +2895,7 @@ const publications = [
         grant_date: "2022-04-26"
     },
     {
-        id: 126,
+        id: 129,
         yaml_id: "CV_086",
         title: "Cloud-assisted Virtual Vehicular communication",
         authors: "K. Han, A. Sakr, and P. Tiwari",
@@ -2860,7 +2921,7 @@ const publications = [
         grant_date: "2022-03-22"
     },
     {
-        id: 127,
+        id: 130,
         yaml_id: "CV_087",
         title: "XR-based Slot Reservation System for Connected Vehicles Traveling Through Intersections",
         authors: "Z. Wang, K. Han, and B. Kim",
@@ -2886,7 +2947,7 @@ const publications = [
         grant_date: "2022-02-22"
     },
     {
-        id: 128,
+        id: 131,
         yaml_id: "CV_088",
         title: "Systems and Method for Predicting Driver Visual Impairment with Artificial Intelligence",
         authors: "R. Gupta, Z. Zhao, Z. Wang, K. Han, and P. Tiwari",
@@ -2910,7 +2971,7 @@ const publications = [
         filing_date: "2022-01-27"
     },
     {
-        id: 129,
+        id: 132,
         yaml_id: "CV_089",
         title: "Digital Twin Simulation-Based Vehicular Communication Planning",
         authors: "K. Han, A. Sakr, and P. Tiwari",
@@ -2936,7 +2997,7 @@ const publications = [
         grant_date: "2022-01-25"
     },
     {
-        id: 130,
+        id: 133,
         yaml_id: "CV_090",
         title: "Personalized Adaptive Cruise Control Based On Steady-State Operation",
         authors: "Z. Zhao, Z. Wang, R. Gupta, K. Han, and P. Tiwari",
@@ -2958,7 +3019,7 @@ const publications = [
         filing_date: "2022-01-18"
     },
     {
-        id: 131,
+        id: 134,
         yaml_id: "CV_091",
         title: "Identifying a Specific Object in a Two-Dimensional Image of Objects",
         authors: "Y. Liu, Z. Wang, K. Han, Z. Shou, and P. Tiwari",
@@ -2982,7 +3043,7 @@ const publications = [
         grant_date: "2022-01-11"
     },
     {
-        id: 132,
+        id: 135,
         yaml_id: "CV_092",
         title: "Personalized Vehicle Operation for Autonomous Driving With Inverse Reinforcement Learning",
         authors: "Z. Zhao, Z. Wang, R. Gupta, K. Han, and P. Tiwari",
@@ -3002,7 +3063,7 @@ const publications = [
         filing_date: "2022-01-10"
     },
     {
-        id: 133,
+        id: 136,
         yaml_id: "CV_076",
         title: "Systems and Methods for Long-Term Prediction of Lane Change Maneuver",
         authors: "Z. Shou, Y. Liu, K. Han, Z. Wang, and P. Tiwari",
@@ -3027,7 +3088,7 @@ const publications = [
         grant_date: "2022-01-07"
     },
     {
-        id: 134,
+        id: 137,
         yaml_id: "CV_093",
         title: "Longitudinal Motion Control of Connected and Automated Vehicles",
         authors: "H. Kobayashi, K. Han, B. Kim, and R. Wang",
@@ -3053,7 +3114,7 @@ const publications = [
         grant_date: "2022-01-04"
     },
     {
-        id: 135,
+        id: 138,
         yaml_id: "Liu2022SEC",
         title: "Poster: Enabling High-Fidelity and Real-Time Mobility Digital Twin with Edge Computing",
         authors: "Y. Liu, H. Wang, Z. Cai, D. Chen, and K. Han",
@@ -3073,7 +3134,7 @@ const publications = [
 ]
     },
     {
-        id: 136,
+        id: 139,
         yaml_id: "Sachdeva2022ITSC",
         title: "Gapformer: Fast autoregressive transformers meet RNNs for personalized adaptive cruise control",
         authors: "N. Sachdeva, Z. Wang, K. Han, R. Gupta, and J. McAuley",
@@ -3095,7 +3156,7 @@ const publications = [
 ]
     },
     {
-        id: 137,
+        id: 140,
         yaml_id: "Sheng2022ITSC",
         title: "A study on learning and simulating personalized car-following driving style",
         authors: "S. Sheng, E. Pakdamanian, K. Han, Z. Wang, and L. Feng",
@@ -3114,7 +3175,7 @@ const publications = [
 ]
     },
     {
-        id: 138,
+        id: 141,
         yaml_id: "Zhao2022ICRA",
         title: "Personalized car following for autonomous driving with inverse reinforcement learning",
         authors: "Z. Zhao, Z. Wang, K. Han, R. Gupta, P. Tiwari, G. Wu, and M. Barth",
@@ -3132,7 +3193,7 @@ const publications = [
 ]
     },
     {
-        id: 139,
+        id: 142,
         yaml_id: "Liao2022ICRA",
         title: "Online lane-change prediction using personalized driving data: A hierarchical learning-based approach",
         authors: "X. Liao, Z. Wang, Z. Zhao, K. Han, P. Tiwari, M. Barth, and G. Wu",
@@ -3150,7 +3211,7 @@ const publications = [
 ]
     },
     {
-        id: 140,
+        id: 143,
         yaml_id: "Sheng2022",
         title: "Planning for Automated Vehicles with Human Trust",
         authors: "S. Sheng, E. Pakdamanian, K. Han, Z. Wang, J. Lenneman, D. Parker, and L. Feng",
@@ -3170,7 +3231,7 @@ const publications = [
 ]
     },
     {
-        id: 141,
+        id: 144,
         yaml_id: "Wang2022IOT",
         title: "Mobility Digital Twin: Concept, Architecture, Case Study, and Future Challenges",
         authors: "Z. Wang, R. Gupta, K. Han, H. Wang, A. Ganlath, N. Ammar, and P. Tiwari",
@@ -3191,7 +3252,7 @@ const publications = [
 ]
     },
     {
-        id: 142,
+        id: 145,
         yaml_id: "Zhao2022SAE",
         title: "Co-Simulation Platform for Modeling and Evaluating Connected and Automated Vehicles in Mixed Traffic",
         authors: "X. Zhao, X. Liao, G. Wu, M. Barth, Z. Wang, K. Han, and P. Tiwari",
@@ -3212,7 +3273,7 @@ const publications = [
 ]
     },
     {
-        id: 143,
+        id: 146,
         yaml_id: "Wang2022TITS",
         title: "Gaussian Process-Based Personalized Adaptive Cruise Control",
         authors: "Y. Wang, Z. Wang, K. Han, P. Tiwari, and D. Work",
@@ -3233,7 +3294,7 @@ const publications = [
 ]
     },
     {
-        id: 144,
+        id: 147,
         yaml_id: "Liu2022TIV",
         title: "Vision-Cloud Data Fusion for ADAS: A Lane Change Prediction Case Study",
         authors: "Y. Liu, Z. Wang, K. Han, Z. Shou, P. Tiwari, and J. Hansen",
@@ -3254,7 +3315,7 @@ const publications = [
 ]
     },
     {
-        id: 145,
+        id: 148,
         yaml_id: "Wang2022TIV_2",
         title: "Digital Twin-Assisted Cooperative Driving at Non-Signalized Intersections",
         authors: "Z. Wang, K. Han, and P. Tiwari",
@@ -3274,7 +3335,7 @@ const publications = [
 ]
     },
     {
-        id: 146,
+        id: 149,
         yaml_id: "Liao2022TSMCS",
         title: "Game Theory-Based Ramp Merging for Mixed Traffic With Unity-SUMO Co-Simulation",
         authors: "X. Liao, X. Zhao, Z. Wang, K. Han, P. Tiwari, M. Barth, and G. Wu",
@@ -3295,7 +3356,7 @@ const publications = [
 ]
     },
     {
-        id: 147,
+        id: 150,
         yaml_id: "Liao2022TITS",
         title: "Cooperative Ramp Merging Design and Field Implementation: A Digital Twin Approach Based on Vehicle-to-Cloud Communication",
         authors: "X. Liao, Z. Wang, X. Zhao, K. Han, P. Tiwari, M. Barth, and G. Wu",
@@ -3316,7 +3377,7 @@ const publications = [
 ]
     },
     {
-        id: 148,
+        id: 151,
         yaml_id: "CV_095",
         title: "Systems and Methods for Providing Guidance to Vehicle Drivers Regarding predicted Lane-Change Behavior of Other Vehicle Drivers",
         authors: "Z. Shou, K. Han, Z. Wang, Y. Liu, and P. Tiwari",
@@ -3342,7 +3403,7 @@ const publications = [
         grant_date: "2021-10-19"
     },
     {
-        id: 149,
+        id: 152,
         yaml_id: "CV_100",
         title: "Systems and Methods for Compensating for Driver Speed-Tracking Error",
         authors: "Z. Wang, K. Han, and P. Tiwari",
@@ -3368,7 +3429,7 @@ const publications = [
         grant_date: "2021-08-10"
     },
     {
-        id: 150,
+        id: 153,
         yaml_id: "CV_107",
         title: "Methods and Systems for Rideshare Implicit Needs and Explicit Needs Personalization",
         authors: "R. Gupta, Z. Wang, K. Han, and P. Tiwari",
@@ -3390,7 +3451,7 @@ const publications = [
         filing_date: "2021-03-30"
     },
     {
-        id: 151,
+        id: 154,
         yaml_id: "CV_108",
         title: "Vehicle Guard Rail System",
         authors: "R. Gupta, Z. Wang, K. Han, and P. Tiwari",
@@ -3412,7 +3473,7 @@ const publications = [
         filing_date: "2021-03-19"
     },
     {
-        id: 152,
+        id: 155,
         yaml_id: "CV_111",
         title: "Context System for Providing Cyber Security for Connected Vehicles",
         authors: "H. Kobayashi, K. Han, and X. Jiang",
@@ -3439,7 +3500,7 @@ const publications = [
         grant_date: "2021-02-23"
     },
     {
-        id: 153,
+        id: 156,
         yaml_id: "CV_114",
         title: "Vehicles and methods identifying a service device in communication with a vehicle",
         authors: "K. Han and K. Nagata",
@@ -3464,7 +3525,7 @@ const publications = [
         grant_date: "2021-01-12"
     },
     {
-        id: 154,
+        id: 157,
         yaml_id: "Wang2021DTPI",
         title: "Digital twin simulation of connected and automated vehicles with the unity game engine",
         authors: "Z. Wang, K. Han, and P. Tiwari",
@@ -3486,7 +3547,7 @@ const publications = [
 ]
     },
     {
-        id: 155,
+        id: 158,
         yaml_id: "Wang2021ITSC",
         title: "Personalized adaptive cruise control via gaussian process regression",
         authors: "Y. Wang, Z. Wang, K. Han, P. Tiwari, and D. Work",
@@ -3506,7 +3567,7 @@ const publications = [
 ]
     },
     {
-        id: 156,
+        id: 159,
         yaml_id: "Sheng2021ICCPS",
         title: "Trust-based route planning for automated vehicles",
         authors: "S. Sheng, E. Pakdamanian, K. Han, Z. Wang, J. Lenneman, and L. Feng",
@@ -3526,7 +3587,7 @@ const publications = [
 ]
     },
     {
-        id: 157,
+        id: 160,
         yaml_id: "Wang2021WC",
         title: "Motion estimation of connected and automated vehicles under communication delay and packet loss of V2X communications",
         authors: "Z. Wang, K. Han, and P. Tiwari",
@@ -3546,7 +3607,7 @@ const publications = [
 ]
     },
     {
-        id: 158,
+        id: 161,
         yaml_id: "Liao2021TRB",
         title: "A game theory based ramp merging strategy for connected and automated vehicles in the mixed traffic: A unity-SUMO integrated platform",
         authors: "X. Liao, Z. Wang, X. Zhao, K. Han, P. Tiwari, M. Barth, and G. Wu",
@@ -3558,7 +3619,7 @@ const publications = [
         url: "https://www.google.com/url?q=https%3A%2F%2Fwww.researchgate.net%2Fpublication%2F348137663_Game_Theory-Based_Ramp_Merging_for_Mixed_Traffic_With_Unity-SUMO_Co-Simulation&amp;sa=D&amp;sntz=1&amp;usg=AOvVaw37JMk0zmwPG2Aqxf4m37rN"
     },
     {
-        id: 159,
+        id: 162,
         yaml_id: "Wang2020SMC",
         title: "Augmented reality-based advanced driver-assistance system for connected vehicles",
         authors: "Z. Wang, K. Han, and P. Tiwari",
@@ -3578,7 +3639,7 @@ const publications = [
 ]
     },
     {
-        id: 160,
+        id: 163,
         yaml_id: "Su2020ITSC",
         title: "Graph convolution networks for probabilistic modeling of driving acceleration",
         authors: "J. Su, P. Beling, R. Guo, and K. Han",
@@ -3598,7 +3659,7 @@ const publications = [
 ]
     },
     {
-        id: 161,
+        id: 164,
         yaml_id: "Shou2020IV",
         title: "Long-Term prediction of lane change maneuver through a multilayer perceptron",
         authors: "Z. Shou, Z. Wang, K. Han, Y. Liu, P. Tiwari, and X. Di",
@@ -3618,7 +3679,7 @@ const publications = [
 ]
     },
     {
-        id: 162,
+        id: 165,
         yaml_id: "Liu2020IV",
         title: "Sensor fusion of camera and cloud digital twin information for intelligent vehicles",
         authors: "Y. Liu, Z. Wang, K. Han, Z. Shou, P. Tiwari, and J. Hansen",
@@ -3638,7 +3699,7 @@ const publications = [
 ]
     },
     {
-        id: 163,
+        id: 166,
         yaml_id: "Wang2020VTC",
         title: "A digital twin paradigm: Vehicle-to-cloud based advanced driver assistance systems",
         authors: "Z. Wang, X. Liao, X. Zhao, K. Han, P. Tiwari, M. Barth, and G. Wu",
@@ -3658,7 +3719,7 @@ const publications = [
 ]
     },
     {
-        id: 164,
+        id: 167,
         yaml_id: "Wang2020TIV",
         title: "Driver Behavior Modeling Using Game Engine and Real Vehicle: A Learning-Based Approach",
         authors: "Z. Wang, X. Liao, C. Wang, D. Oswald, G. Wu, K. Boriboonsomsin, M. Barth, K. Han, B. Kim, and P. Tiwari",
@@ -3679,7 +3740,7 @@ const publications = [
 ]
     },
     {
-        id: 165,
+        id: 168,
         yaml_id: "Liao2020TRB",
         title: "Cooperative ramp merging with vehicle-to-cloud communications: A field experiment",
         authors: "X. Liao, D. Oswald, Z. Wang, G. Wu, K. Boriboonsomsin, M. Barth, K. Han, B. Kim, and P. Tiwari",
@@ -3691,7 +3752,7 @@ const publications = [
         url: "https://www.google.com/url?q=https%3A%2F%2Fwww.researchgate.net%2Fpublication%2F338739469_Cooperative_Ramp_Merging_with_Vehicle-to-Cloud_Communications_A_Field_Experiment"
     },
     {
-        id: 166,
+        id: 169,
         yaml_id: "Kan2019VNC",
         title: "Edge assisted misbehavior detection for platoons",
         authors: "X. Kan, A. Ganlath, S. Ucar, K. Han, P. Tiwari, and K. Karydis",
@@ -3711,7 +3772,7 @@ const publications = [
 ]
     },
     {
-        id: 167,
+        id: 170,
         yaml_id: "Sheng2019IEEE",
         title: "A case study of trust on autonomous driving",
         authors: "S. Sheng, E. Pakdamanian, K. Han, B. Kim, P. Tiwari, I. Kim, and L. Feng",
@@ -3731,7 +3792,7 @@ const publications = [
 ]
     },
     {
-        id: 168,
+        id: 171,
         yaml_id: "Wang2019ACC",
         title: "Lookup table-based consensus algorithm for real-time longitudinal motion control of connected and automated vehicles",
         authors: "Z. Wang, K. Han, B. Kim, G. Wu, and M. Barth",
@@ -3750,7 +3811,7 @@ const publications = [
 ]
     },
     {
-        id: 169,
+        id: 172,
         yaml_id: "Han2019IV",
         title: "Probabilistic modeling of vehicle acceleration and state propagation with long short-term memory neural networks",
         authors: "I. Jones and K. Han",
@@ -3769,7 +3830,7 @@ const publications = [
 ]
     },
     {
-        id: 170,
+        id: 173,
         yaml_id: "Kobayashi2019VTC",
         title: "Vehicle-to-vehicle message sender identification for co-operative driver assistance systems",
         authors: "H. Kobayashi, K. Han, and B. Kim",
@@ -3788,7 +3849,7 @@ const publications = [
 ]
     },
     {
-        id: 171,
+        id: 174,
         yaml_id: "Wang2019JCAV",
         title: "Cooperative Ramp Merging System: Agent-Based Modeling and Simulation Using Game Engine",
         authors: "Z. Wang, X. Liao, C. Wang, D. Oswald, G. Wu, K. Boriboonsomsin, M. Barth, K. Han, B. Kim, and P. Tiwari",
@@ -3809,7 +3870,7 @@ const publications = [
 ]
     },
     {
-        id: 172,
+        id: 175,
         yaml_id: "Wang2019ITSWC",
         title: "Cooperative Ramp Merging Experimental Evaluation: A Vehicle-to-Cloud Digital Twin Approach",
         authors: "Z. Wang, K. Han, X. Liao, X. Zhao, and G. Wu",
@@ -3819,7 +3880,7 @@ const publications = [
         type_label: "Presentation"
     },
     {
-        id: 173,
+        id: 176,
         yaml_id: "Su2019ITSWC",
         title: "Driving Acceleration Prediction with Graph Convolution Networks",
         authors: "J. Su, P. Beling, R. Guo, K. Han, and P. Tiwari",
@@ -3829,7 +3890,7 @@ const publications = [
         type_label: "Presentation"
     },
     {
-        id: 174,
+        id: 177,
         yaml_id: "CV_127",
         title: "Techniques For Managing System Power Using Deferred Graphics Rendering",
         authors: "N. Jeganathan, R. Poornachandran, P. Diefenbaugh, and K. Han",
@@ -3853,7 +3914,7 @@ const publications = [
         grant_date: "2016-02-23"
     },
     {
-        id: 175,
+        id: 178,
         yaml_id: "CV_128",
         title: "Adaptive Touch Scanning",
         authors: "K. Han, D. Hong, A. Min, Y. Park, and M. Abdelmoneum",
@@ -3877,7 +3938,7 @@ const publications = [
         grant_date: "2016-01-26"
     },
     {
-        id: 176,
+        id: 179,
         yaml_id: "Lee2016ISQED",
         title: "Statistical quality modeling of approximate hardware",
         authors: "S. Lee, D. Lee, K. Han, E. Shriver, L. John, and A. Gerstlauer",
@@ -3894,7 +3955,7 @@ const publications = [
 ]
     },
     {
-        id: 177,
+        id: 180,
         yaml_id: "CV_129",
         title: "Data Transmission for Display Partial Update",
         authors: "N. Jeganathan, K. Han, and P. Diefenbaugh",
@@ -3918,7 +3979,7 @@ const publications = [
         grant_date: "2015-11-03"
     },
     {
-        id: 178,
+        id: 181,
         yaml_id: "CV_130",
         title: "Polling Determination",
         authors: "K. Han, P. Diefenbaugh, and S. Sharp",
@@ -3942,7 +4003,7 @@ const publications = [
         grant_date: "2015-06-16"
     },
     {
-        id: 179,
+        id: 182,
         yaml_id: "CV_131",
         title: "Hybrid Display Frame Buffer for Display Subsystem",
         authors: "K. Han, P. Diefenbaugh, S. Abhinkar, T. Kim, and S. Jeganathan",
@@ -3966,7 +4027,7 @@ const publications = [
         grant_date: "2015-05-12"
     },
     {
-        id: 180,
+        id: 183,
         yaml_id: "Zuo2015ICCAD",
         title: "A polyhedral-based systemc modeling and generation framework for effective low-power design space exploration",
         authors: "W. Zuo, W. Kemmerer, J. Lim, L. Pouchet, A. Ayupov, T. Kim, K. Han, and D. Chen",
@@ -3985,7 +4046,7 @@ const publications = [
 ]
     },
     {
-        id: 181,
+        id: 184,
         yaml_id: "Lee2015ICCAD",
         title: "Learning-based power modeling of system-level black-box IPs",
         authors: "D. Lee, T. Kim, K. Han, Y. Hoskote, L. John, and A. Gerstlauer",
@@ -4004,7 +4065,7 @@ const publications = [
 ]
     },
     {
-        id: 182,
+        id: 185,
         yaml_id: "Min2015SysCon",
         title: "Adaptive touch sampling for energy-efficient mobile platforms",
         authors: "A. Min, K. Han, D. Hong, and Y. Park",
@@ -4022,22 +4083,22 @@ const publications = [
 ]
     },
     {
-        id: 183,
+        id: 186,
         yaml_id: "CV_132",
         title: "Control of Platform Power Consumption Using Coordination of Platform Power Management and Display Power Management",
         authors: "S. Jeganathan, P. Diefenbaugh, K. Han, J. Liu, J. Bish, and P. Drews",
-        venue: "U.S. Patent 8 643 658, Feb. 4, 2014",
+        venue: "U.S. Patent 8 862 906, Feb. 4, 2014",
         year: 2014,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US8643658"
+        url: "https://patents.google.com/patent/US8862906"
 ,
         research_area: [
         "energy-efficient-computing"
 ]
 ,
-        patent_number: "8643658"
+        patent_number: "8862906"
 ,
         application_number: ""
 ,
@@ -4046,7 +4107,7 @@ const publications = [
         grant_date: "2014-02-04"
     },
     {
-        id: 184,
+        id: 187,
         yaml_id: "CV_133",
         title: "Techniques for Aligning Frame Data",
         authors: "M. Vasquez, R. Ranganathan, S. Kwa, T. Witter, K. Han, and P. Diefenbaugh",
@@ -4070,7 +4131,7 @@ const publications = [
         grant_date: "2014-02-04"
     },
     {
-        id: 185,
+        id: 188,
         yaml_id: "CV_134",
         title: "Display Update for a Wireless Display Device",
         authors: "K. Han, G. Li, and S. Singh",
@@ -4094,7 +4155,7 @@ const publications = [
         grant_date: "2013-01-09"
     },
     {
-        id: 186,
+        id: 189,
         yaml_id: "Han2013ISLPED",
         title: "A hybrid display frame buffer architecture for energy efficient display subsystems",
         authors: "K. Han, A. Min, N. Jeganathan, and P. Diefenbaugh",
@@ -4112,7 +4173,7 @@ const publications = [
 ]
     },
     {
-        id: 187,
+        id: 190,
         yaml_id: "CV_135",
         title: "Systems and Methods for Cross-Platform Radio Frequency Interference Mitigation",
         authors: "K. Han and K. Tinsley",
@@ -4132,7 +4193,7 @@ const publications = [
         grant_date: "2012-10-16"
     },
     {
-        id: 188,
+        id: 191,
         yaml_id: "CV_136",
         title: "High Speed Digital Waveform Identification Using Higher Order Statistical Signal Processing",
         authors: "K. Han and K. Tinsley",
@@ -4152,7 +4213,7 @@ const publications = [
         grant_date: "2010-06-08"
     },
     {
-        id: 189,
+        id: 192,
         yaml_id: "Han2009TFPA",
         title: "Transforming Floating-Point Algorithms to Fixed-Point Implementations",
         authors: "K. Han and B. Evans",
@@ -4169,7 +4230,7 @@ const publications = [
 ]
     },
     {
-        id: 190,
+        id: 193,
         yaml_id: "Han2009ICCD",
         title: "Using checksum to reduce power consumption of display systems for low-motion content",
         authors: "K. Han, Z. Fang, P. Diefenbaugh, R. Forand, R. Iyer, and D. Newell",
@@ -4187,7 +4248,7 @@ const publications = [
 ]
     },
     {
-        id: 191,
+        id: 194,
         yaml_id: "Han2008ICCDCS",
         title: "Identification of high speed jittered digital interconnects using bicoherence spectra",
         authors: "K. Han, K. Tinsley, and J. Aguilar-Torrentera",
@@ -4201,7 +4262,7 @@ const publications = [
         pdf: "https://signal.ece.utexas.edu/~khan/paper/2008ICCDCS/han.pdf"
     },
     {
-        id: 192,
+        id: 195,
         yaml_id: "CV_137",
         title: "Apparatus for Searching Multipath in Spread Spectrum Communications System and Method",
         authors: "I. Eo, K. Han, H. Jung, and K. Kim",
@@ -4221,7 +4282,7 @@ const publications = [
         grant_date: "2007-03-20"
     },
     {
-        id: 193,
+        id: 196,
         yaml_id: "CV_138",
         title: "Apparatus and Method for Separating Carrier of Multicarrier Wireless Communication Receiver System",
         authors: "K. Han, I. Lim, I. Eo, H. Seo, K. Kim, H. Jung, and H. Cho",
@@ -4241,7 +4302,7 @@ const publications = [
         grant_date: "2006-10-24"
     },
     {
-        id: 194,
+        id: 197,
         yaml_id: "Han2006Asilomar",
         title: "Automatic floating-point to fixed-point transformations",
         authors: "K. Han, A. Olson, and B. Evans",
@@ -4259,7 +4320,7 @@ const publications = [
 ]
     },
     {
-        id: 195,
+        id: 198,
         yaml_id: "Han2006JASP",
         title: "Optimum Wordlength Search Using Sensitivity Information",
         authors: "K. Han and B. Evans",
@@ -4278,7 +4339,7 @@ const publications = [
 ]
     },
     {
-        id: 196,
+        id: 199,
         yaml_id: "Han2005Asilomar",
         title: "Low-power multipliers with data wordlength reduction",
         authors: "K. Han, B. Evans, E. Swartzlander, and Jr.",
@@ -4297,7 +4358,7 @@ const publications = [
 ]
     },
     {
-        id: 197,
+        id: 200,
         yaml_id: "Han2004SiPS",
         title: "Data wordlength reduction for low-power signal processing software",
         authors: "K. Han, B. Evans, E. Swartzlander, and Jr.",
@@ -4317,7 +4378,7 @@ const publications = [
 ]
     },
     {
-        id: 198,
+        id: 201,
         yaml_id: "Evans2004ICASSP",
         title: "Wordlength optimization with complexity-and-distortion measure and its application to broadband wireless demodulator design",
         authors: "K. Han and B. Evans",
@@ -4336,7 +4397,7 @@ const publications = [
 ]
     },
     {
-        id: 199,
+        id: 202,
         yaml_id: "Han2001ISCAS",
         title: "Numerical word-length optimization for CDMA demodulator",
         authors: "K. Han, I. Eo, K. Kim, and H. Cho",
@@ -4355,7 +4416,7 @@ const publications = [
 ]
     },
     {
-        id: 200,
+        id: 203,
         yaml_id: "Han2000CIC",
         title: "Bit constraint parameter decision method for CDMA digital demodulator",
         authors: "K. Han, I. Eo, K. Kim, and H. Cho",
@@ -4374,7 +4435,7 @@ const publications = [
 ]
     },
     {
-        id: 201,
+        id: 204,
         yaml_id: "Nahm1998ISCAS",
         title: "A CORDIC-based digital quadrature mixer: comparison with a ROM-based architecture",
         authors: "S. Nahm, K. Han, and W. Sung",
