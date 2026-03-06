@@ -129,7 +129,7 @@
                         <div class="text-sm text-blue-100 font-medium">Conferences</div>
                     </button>
                     <button type="button" onclick="handleStatClick('patent')" class="text-center hover:opacity-90 transition-opacity cursor-pointer">
-                        <div class="text-3xl font-bold text-orange-200 mb-1">104</div>
+                        <div class="text-3xl font-bold text-orange-200 mb-1">105</div>
                         <div class="text-sm text-blue-100 font-medium">Patents</div>
                     </button>
                 </div>
@@ -281,7 +281,7 @@
             const reverseCounts = { book: typeCounts.book, journal: typeCounts.journal, conference: typeCounts.conference, patent: typeCounts.patent };
             
             allPublicationsSorted.forEach(pub => {
-                globalPositionMap.set(pub.id, reverseCounts[pub.type]);
+                globalPositionMap.set(pub.yaml_id, reverseCounts[pub.type]);
                 reverseCounts[pub.type]--;
             });
             
@@ -333,7 +333,7 @@
                 }
 
                 // Generate reference number using global position
-                const globalPosition = globalPositionMap.get(pub.id) || 1;
+                const globalPosition = globalPositionMap.get(pub.yaml_id) || 1;
                 const refNumber = `[${pub.type.charAt(0).toUpperCase()}${String(globalPosition).padStart(2, '0')}]`;
                 
                 // Determine venue label and abbreviation

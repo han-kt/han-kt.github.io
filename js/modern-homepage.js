@@ -336,12 +336,12 @@ function renderPublications() {
                                 </a>
                             ` : ''}
                             ${pub.abstract && pub.abstract.trim() !== '' ? `
-                                <button onclick="toggleAbstract(${pub.id})" 
+                                <button onclick="toggleAbstract('${pub.yaml_id}')" 
                                         class="inline-flex items-center px-2 py-1 text-xs font-medium text-green-600 bg-green-50 rounded hover:bg-green-100 transition-colors">
                                     <i class="fas fa-eye mr-1"></i>Abstract
                                 </button>
                             ` : ''}
-                            <button onclick="copyBibTeX(${pub.id}, event)" 
+                            <button onclick="copyBibTeX('${pub.yaml_id}', event)" 
                                     class="inline-flex items-center px-2 py-1 text-xs font-medium text-purple-600 bg-purple-50 rounded hover:bg-purple-100 transition-colors">
                                 <i class="fas fa-code mr-1"></i>BibTeX
                             </button>
@@ -350,7 +350,7 @@ function renderPublications() {
                 </div>
                 
                 ${pub.abstract && pub.abstract.trim() !== '' ? `
-                    <div id="abstract-${pub.id}" class="publication-abstract hidden mt-3 ml-6 p-3 bg-gray-50 dark:bg-gray-700 rounded">
+                    <div id="abstract-${pub.yaml_id}" class="publication-abstract hidden mt-3 ml-6 p-3 bg-gray-50 dark:bg-gray-700 rounded">
                         <h4 class="font-semibold text-gray-900 dark:text-white mb-2 text-sm">Abstract</h4>
                         <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">${pub.abstract}</p>
                     </div>
@@ -360,10 +360,10 @@ function renderPublications() {
     }).join('');
 }
 
-function toggleAbstract(id) {
-    const abstract = document.getElementById(`abstract-${id}`);
+function toggleAbstract(yamlId) {
+    const abstract = document.getElementById(`abstract-${yamlId}`);
     if (!abstract) {
-        console.warn(`Abstract element not found for publication ${id}`);
+        console.warn(`Abstract element not found for publication ${yamlId}`);
         return;
     }
     
@@ -374,8 +374,8 @@ function toggleAbstract(id) {
     }
 }
 
-function copyBibTeX(id, event) {
-    const pub = publications.find(p => p.id === id);
+function copyBibTeX(yamlId, event) {
+    const pub = publications.find(p => p.yaml_id === yamlId);
     if (!pub) return;
     
     // Generate BibTeX entry
