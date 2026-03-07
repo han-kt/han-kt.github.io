@@ -1,10 +1,31 @@
 // Modern Academic Homepage JavaScript
-// Generated on 2026-03-05 20:54:11
-// Total publications: 205
-// Breakdown: 71 conferences, 7 presentations, 19 journals, 105 patents, 3 books
+// Generated on 2026-03-06 17:32:37
+// Total publications: 206
+// Breakdown: 71 conferences, 7 presentations, 19 journals, 106 patents, 3 books
 
 // Comprehensive publications data from YAML files
 const publications = [
+    {
+        yaml_id: "CV_140",
+        title: "Systems and Methods for a Hybrid Language Model with Improved Speed and Efficiency",
+        authors: "T. Chen, A. Moradipari, M. Clifford, K. Han, N. Ammar, and O. Altintas",
+        venue: "U.S. Patent Appl. 19/557,554, Mar. 5, 2026",
+        year: 2026,
+        type: "patent",
+        type_label: "Patent"
+,
+        research_area: [
+        "generative-ai",
+        "edge-computing",
+        "connected-autonomous-vehicles"
+]
+,
+        application_number: "19/557,554"
+,
+        patent_type: "application"
+,
+        filing_date: "2026-03-05"
+    },
     {
         yaml_id: "CV_139",
         title: "Systems and Methods for Language-Model-Based Path Planning in a Mobile Autonomous System",
