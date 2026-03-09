@@ -317,13 +317,6 @@
                         <i class="fas fa-external-link-alt text-xs"></i>
                         URL
                     </a>`;
-                } else if (pub.type === 'patent' && pub.application_number) {
-                    // For patent applications without direct links, provide Google Patents search link
-                    const searchQuery = encodeURIComponent(pub.application_number);
-                    linksHtml += `<a href="https://patents.google.com/?q=${searchQuery}" target="_blank" class="inline-flex items-center gap-1 px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-300 rounded-full text-sm hover:bg-purple-200 dark:hover:bg-purple-800 transition-colors">
-                        <i class="fas fa-search text-xs"></i>
-                        Search
-                    </a>`;
                 }
                 if (pub.pdf) {
                     linksHtml += `<a href="${pub.pdf}" target="_blank" class="inline-flex items-center gap-1 px-3 py-1 bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 rounded-full text-sm hover:bg-green-200 dark:hover:bg-green-800 transition-colors">

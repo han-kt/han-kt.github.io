@@ -1,5 +1,5 @@
 // Modern Academic Homepage JavaScript
-// Generated on 2026-03-06 17:32:37
+// Generated on 2026-03-09 14:25:52
 // Total publications: 206
 // Breakdown: 71 conferences, 7 presentations, 19 journals, 106 patents, 3 books
 
@@ -1269,9 +1269,13 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
+        url: "https://patents.google.com/patent/US20250292588A1/en?oq=+U.S.+Patent+Appl.+18%2f430%2c242"
+,
         research_area: [
         "digital-twin"
 ]
+,
+        patent_number: ""
 ,
         application_number: "18/430,242"
 ,
