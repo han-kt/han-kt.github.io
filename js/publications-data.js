@@ -1,10 +1,31 @@
 // Modern Academic Homepage JavaScript
-// Generated on 2026-03-18 12:13:18
-// Total publications: 207
-// Breakdown: 71 conferences, 7 presentations, 19 journals, 107 patents, 3 books
+// Generated on 2026-03-18 15:47:26
+// Total publications: 208
+// Breakdown: 71 conferences, 7 presentations, 19 journals, 108 patents, 3 books
 
 // Comprehensive publications data from YAML files
 const publications = [
+    {
+        yaml_id: "CV_142",
+        title: "Out-of-Distribution Awareness Through Two-Stage Prompt Adaptation in Large Language Models",
+        authors: "S. Bhupathiraju, M. Clifford, and K. Han",
+        venue: "U.S. Patent Appl. 19/571,045, Mar. 18, 2026",
+        year: 2026,
+        type: "patent",
+        type_label: "Patent"
+,
+        research_area: [
+        "generative-ai",
+        "intelligent-transportation",
+        "connected-autonomous-vehicles"
+]
+,
+        application_number: "19/571,045"
+,
+        patent_type: "application"
+,
+        filing_date: "2026-03-18"
+    },
     {
         yaml_id: "CV_141",
         title: "Vehicle Operation Using Chain of Thought Reward Training",
