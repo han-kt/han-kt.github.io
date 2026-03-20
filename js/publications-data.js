@@ -1,10 +1,31 @@
 // Modern Academic Homepage JavaScript
-// Generated on 2026-03-18 21:29:52
-// Total publications: 209
-// Breakdown: 71 conferences, 7 presentations, 19 journals, 109 patents, 3 books
+// Generated on 2026-03-19 19:36:47
+// Total publications: 210
+// Breakdown: 71 conferences, 7 presentations, 19 journals, 110 patents, 3 books
 
 // Comprehensive publications data from YAML files
 const publications = [
+    {
+        yaml_id: "CV_144",
+        title: "Adaptive Temporal Windowing for Remote Processing of Vehicle Event",
+        authors: "A. Moradipari, R. Gupta, K. Han, N. Ammar, and S. Ucar",
+        venue: "U.S. Patent Appl. 19/572,796, Mar. 19, 2026",
+        year: 2026,
+        type: "patent",
+        type_label: "Patent"
+,
+        research_area: [
+        "edge-computing",
+        "intelligent-transportation",
+        "connected-autonomous-vehicles"
+]
+,
+        application_number: "19/572,796"
+,
+        patent_type: "application"
+,
+        filing_date: "2026-03-19"
+    },
     {
         yaml_id: "CV_143",
         title: "Vehicle Operation Using Reward Training Without Ground Truth",
