@@ -1,10 +1,31 @@
 // Modern Academic Homepage JavaScript
-// Generated on 2026-03-19 19:36:47
-// Total publications: 210
-// Breakdown: 71 conferences, 7 presentations, 19 journals, 110 patents, 3 books
+// Generated on 2026-03-20 20:20:37
+// Total publications: 211
+// Breakdown: 71 conferences, 7 presentations, 19 journals, 111 patents, 3 books
 
 // Comprehensive publications data from YAML files
 const publications = [
+    {
+        yaml_id: "CV_145",
+        title: "Memory-Augmented Contextual Annotation Using Persistent Embedding Feedback",
+        authors: "A. Moradipari, R. Gupta, K. Han, and N. Ammar",
+        venue: "U.S. Patent Appl. 19/574,246, Mar. 20, 2026",
+        year: 2026,
+        type: "patent",
+        type_label: "Patent"
+,
+        research_area: [
+        "generative-ai",
+        "edge-computing",
+        "intelligent-transportation"
+]
+,
+        application_number: "19/574,246"
+,
+        patent_type: "application"
+,
+        filing_date: "2026-03-20"
+    },
     {
         yaml_id: "CV_144",
         title: "Adaptive Temporal Windowing for Remote Processing of Vehicle Event",
