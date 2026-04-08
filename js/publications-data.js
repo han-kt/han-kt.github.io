@@ -1,10 +1,30 @@
 // Modern Academic Homepage JavaScript
-// Generated on 2026-03-20 20:20:37
-// Total publications: 211
-// Breakdown: 71 conferences, 7 presentations, 19 journals, 111 patents, 3 books
+// Generated on 2026-04-07 17:21:25
+// Total publications: 212
+// Breakdown: 71 conferences, 7 presentations, 19 journals, 112 patents, 3 books
 
 // Comprehensive publications data from YAML files
 const publications = [
+    {
+        yaml_id: "CV_146",
+        title: "Dynamic Cooperative Vehicle Headlight Systems and Methods",
+        authors: "R. Gupta, S. Avedisov, A. Moradipari, K. Han, T. Shimizu, N. Ammar, and K. Gilleo",
+        venue: "U.S. Patent Appl. 19/640,947, Apr. 7, 2026",
+        year: 2026,
+        type: "patent",
+        type_label: "Patent"
+,
+        research_area: [
+        "intelligent-transportation",
+        "connected-autonomous-vehicles"
+]
+,
+        application_number: "19/640,947"
+,
+        patent_type: "application"
+,
+        filing_date: "2026-04-07"
+    },
     {
         yaml_id: "CV_145",
         title: "Memory-Augmented Contextual Annotation Using Persistent Embedding Feedback",
