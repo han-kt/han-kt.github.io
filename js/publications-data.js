@@ -1,5 +1,5 @@
 // Modern Academic Homepage JavaScript
-// Generated on 2026-04-09 19:53:25
+// Generated on 2026-04-09 19:54:50
 // Total publications: 213
 // Breakdown: 71 conferences, 7 presentations, 20 journals, 112 patents, 3 books
 
@@ -274,6 +274,8 @@ const publications = [
         type_label: "Journal"
 ,
         url: "https://ieeexplore.ieee.org/document/11477881"
+,
+        pdf: "https://arxiv.org/pdf/2410.15281.pdf"
 ,
         research_area: [
         "generative-ai",
