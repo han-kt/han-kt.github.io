@@ -1,7 +1,7 @@
 // Modern Academic Homepage JavaScript
-// Generated on 2026-04-07 17:21:25
-// Total publications: 212
-// Breakdown: 71 conferences, 7 presentations, 19 journals, 112 patents, 3 books
+// Generated on 2026-04-09 19:53:25
+// Total publications: 213
+// Breakdown: 71 conferences, 7 presentations, 20 journals, 112 patents, 3 books
 
 // Comprehensive publications data from YAML files
 const publications = [
@@ -262,6 +262,23 @@ const publications = [
         research_area: [
         "edge-computing",
         "generative-ai"
+]
+    },
+    {
+        yaml_id: "Cui2026JPROC",
+        title: "LLM4AD: Large Language Models for Autonomous Driving—Concept, Review, Benchmark, Experiments, and Future Trends",
+        authors: "C. Cui, Y. Ma, S. Park, Z. Yang, Y. Zhou, P. Liu, J. Lu, J. Peng, J. Zhang, R. Zhang, L. Li, Y. Chen, J. Panchal, A. Abdelraouf, R. Gupta, K. Han, and Z. Wang",
+        venue: "Proceedings of the IEEE, pp. 1–36",
+        year: 2026,
+        type: "journal",
+        type_label: "Journal"
+,
+        url: "https://ieeexplore.ieee.org/document/11477881"
+,
+        research_area: [
+        "generative-ai",
+        "intelligent-transportation",
+        "connected-autonomous-vehicles"
 ]
     },
     {
