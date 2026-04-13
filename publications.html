@@ -270,7 +270,7 @@
             
             // Create a map of publication ID to its global position for numbering
             const globalPositionMap = new Map();
-            const typeCounts = { book: 0, journal: 0, conference: 0, patent: 0 };
+            const typeCounts = { book: 0, journal: 0, conference: 0, presentation: 0, patent: 0 };
             
             // Count total publications per type first
             allPublicationsSorted.forEach(pub => {
@@ -278,7 +278,7 @@
             });
             
             // Assign reverse numbers (newest gets highest number)
-            const reverseCounts = { book: typeCounts.book, journal: typeCounts.journal, conference: typeCounts.conference, patent: typeCounts.patent };
+            const reverseCounts = { book: typeCounts.book, journal: typeCounts.journal, conference: typeCounts.conference, presentation: typeCounts.presentation, patent: typeCounts.patent };
             
             allPublicationsSorted.forEach(pub => {
                 globalPositionMap.set(pub.yaml_id, reverseCounts[pub.type]);
@@ -297,6 +297,9 @@
                         break;
                     case 'conference':
                         typePrefix = '📄';
+                        break;
+                    case 'presentation':
+                        typePrefix = '🎤';
                         break;
                     case 'patent':
                         typePrefix = '⚡';
@@ -327,7 +330,15 @@
 
                 // Generate reference number using global position
                 const globalPosition = globalPositionMap.get(pub.yaml_id) || 1;
-                const refNumber = `[${pub.type.charAt(0).toUpperCase()}${String(globalPosition).padStart(2, '0')}]`;
+                const typeCodeMap = {
+                    journal: 'J',
+                    conference: 'C',
+                    presentation: 'T',
+                    patent: 'P',
+                    book: 'B'
+                };
+                const refTypeCode = typeCodeMap[pub.type] || pub.type.charAt(0).toUpperCase();
+                const refNumber = `[${refTypeCode}${String(globalPosition).padStart(2, '0')}]`;
                 
                 // Determine venue label and abbreviation
                 let venueLabel = 'Venue';
@@ -336,6 +347,8 @@
                     venueLabel = 'Journal';
                 } else if (pub.type === 'conference') {
                     venueLabel = 'Conference';
+                } else if (pub.type === 'presentation') {
+                    venueLabel = 'Presentation';
                 } else if (pub.type === 'patent') {
                     venueLabel = 'Patent';
                 } else if (pub.type === 'book') {

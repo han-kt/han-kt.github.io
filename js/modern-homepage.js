@@ -216,6 +216,7 @@ function renderPublications() {
         book: 0,
         journal: 0,
         conference: 0,
+        presentation: 0,
         patent: 0
     };
     
@@ -235,6 +236,7 @@ function renderPublications() {
         book: 0,
         journal: 0,
         conference: 0,
+        presentation: 0,
         patent: 0
     };
     
@@ -251,6 +253,9 @@ function renderPublications() {
             case 'conference':
                 typePrefix = '📄';
                 break;
+            case 'presentation':
+                typePrefix = '🎤';
+                break;
             case 'patent':
                 typePrefix = '⚡';
                 break;
@@ -263,7 +268,15 @@ function renderPublications() {
         
         // Generate reference number in reverse order within each type (oldest gets B01, newest gets B02)
         const reverseNumber = typeCounts[pub.type] - currentCounts[pub.type] + 1;
-        const refNumber = `[${pub.type.charAt(0).toUpperCase()}${String(reverseNumber).padStart(2, '0')}]`;
+        const typeCodeMap = {
+            journal: 'J',
+            conference: 'C',
+            presentation: 'T',
+            patent: 'P',
+            book: 'B'
+        };
+        const refTypeCode = typeCodeMap[pub.type] || pub.type.charAt(0).toUpperCase();
+        const refNumber = `[${refTypeCode}${String(reverseNumber).padStart(2, '0')}]`;
         
         // Generate venue abbreviation and appropriate label
         let venueAbbr = pub.venue;
@@ -271,6 +284,8 @@ function renderPublications() {
         
         if (pub.type === 'conference') {
             venueLabel = 'Conference';
+        } else if (pub.type === 'presentation') {
+            venueLabel = 'Presentation';
         } else if (pub.type === 'journal') {
             venueLabel = 'Journal';
         } else if (pub.type === 'patent') {

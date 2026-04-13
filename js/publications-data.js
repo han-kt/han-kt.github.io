@@ -1,7 +1,7 @@
 // Modern Academic Homepage JavaScript
-// Generated on 2026-04-09 19:54:50
-// Total publications: 213
-// Breakdown: 71 conferences, 7 presentations, 20 journals, 112 patents, 3 books
+// Generated on 2026-04-13 09:42:04
+// Total publications: 214
+// Breakdown: 71 conferences, 8 presentations, 20 journals, 112 patents, 3 books
 
 // Comprehensive publications data from YAML files
 const publications = [
@@ -282,6 +282,17 @@ const publications = [
         "intelligent-transportation",
         "connected-autonomous-vehicles"
 ]
+    },
+    {
+        yaml_id: "Han2026ITSWC",
+        title: "Connected Scene-Aware Conversational Advanced Driver Assistance Systems",
+        authors: "K. Han, Y. Chen, A. Moradipari, R. Gupta, N. Ammar, and O. Altintas",
+        venue: "2026 ITS World Congress (ITS-WC)",
+        year: 2026,
+        type: "presentation",
+        type_label: "Presentation"
+,
+        note: "Accepted"
     },
     {
         yaml_id: "CV_052",
