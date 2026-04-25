@@ -1,10 +1,31 @@
 // Modern Academic Homepage JavaScript
-// Generated on 2026-04-22 21:41:05
-// Total publications: 216
-// Breakdown: 71 conferences, 8 presentations, 20 journals, 114 patents, 3 books
+// Generated on 2026-04-24 21:04:49
+// Total publications: 217
+// Breakdown: 71 conferences, 8 presentations, 20 journals, 115 patents, 3 books
 
 // Comprehensive publications data from YAML files
 const publications = [
+    {
+        yaml_id: "CV_149",
+        title: "Systems and Methods for Classifying a Prompt Using Requirement Classifiers and Selecting a Learning Model",
+        authors: "T. Chen, A. Moradipari, M. Clifford, K. Han, N. Ammar, and O. Altintas",
+        venue: "U.S. Patent Appl. 19/654,705, Apr. 22, 2026",
+        year: 2026,
+        type: "patent",
+        type_label: "Patent"
+,
+        research_area: [
+        "generative-ai",
+        "edge-computing",
+        "intelligent-transportation"
+]
+,
+        application_number: "19/654,705"
+,
+        patent_type: "application"
+,
+        filing_date: "2026-04-22"
+    },
     {
         yaml_id: "CV_148",
         title: "Systems and Methods for Selecting a Learning Model Using a Bag-of-Attributes Classifier",
