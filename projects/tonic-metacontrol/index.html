@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tonic Meta-Control - Kyungtae Han</title>
+    <meta name="description" content="Tonic Meta-Control for Adaptive Safety-Compute Allocation via Persistent Vigilance Dynamics. Accepted at IEEE ITSC 2026.">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        try {
+            var __t = localStorage.getItem('theme');
+            if (__t === 'dark') document.documentElement.classList.add('dark');
+        } catch (e) {}
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GEG5GDGV8P"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        if (navigator.doNotTrack == "1" || window.doNotTrack == "1" || navigator.msDoNotTrack == "1") {
+            window['ga-disable-G-GEG5GDGV8P'] = true;
+            gtag('consent', 'update', { 'analytics_storage': 'denied' });
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-GEG5GDGV8P', {'anonymize_ip': true});
+    </script>
+
+    <style>
+        body { font-family: 'Inter', system-ui, sans-serif; }
+        .dark { color-scheme: dark; }
+        * { transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease; }
+        .fade-in { animation: fadeIn 0.6s ease-in-out; }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .nav-link {
+            @apply text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-colors;
+        }
+        .mobile-nav-link {
+            @apply text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium transition-colors;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-200">
+    <!-- Header -->
+    <header class="fixed top-0 w-full bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-700 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="../../index.html" class="text-xl font-semibold text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Kyungtae Han</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="../../index.html#home" class="nav-link">Home</a>
+                        <a href="../../index.html#research" class="nav-link">Research</a>
+                        <a href="../../publications.html" class="nav-link">Publications</a>
+                        <a href="../../index.html#teaching" class="nav-link">Teaching</a>
+                        <a href="../../index.html#news" class="nav-link">News</a>
+                        <a href="../../index.html#contact" class="nav-link">Contact</a>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button id="theme-toggle" type="button" class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors" aria-label="Toggle dark mode">
+                        <i class="fas fa-moon text-gray-600 dark:text-gray-300"></i>
+                    </button>
+                    <button id="mobile-menu-btn" type="button" class="block md:hidden p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors" aria-label="Toggle mobile menu">
+                        <i class="fas fa-bars text-gray-600 dark:text-gray-300"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
+                    <a href="../../index.html#home" class="mobile-nav-link">Home</a>
+                    <a href="../../index.html#research" class="mobile-nav-link">Research</a>
+                    <a href="../../publications.html" class="mobile-nav-link">Publications</a>
+                    <a href="../../index.html#teaching" class="mobile-nav-link">Teaching</a>
+                    <a href="../../index.html#news" class="mobile-nav-link">News</a>
+                    <a href="../../index.html#contact" class="mobile-nav-link">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-16">
+        <!-- Hero -->
+        <section class="pt-20 pb-14 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-in">
+                <p class="text-xs font-semibold uppercase tracking-widest text-blue-600 dark:text-blue-400 mb-3">IEEE ITSC 2026</p>
+                <h1 class="text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-4 leading-tight">
+                    Tonic Meta-Control for Adaptive Safety-Compute<br class="hidden sm:inline"> Allocation via Persistent Vigilance Dynamics
+                </h1>
+                <p class="text-base text-gray-600 dark:text-gray-400 mb-6">
+                    Kyungtae Han, Yitao Chen, Nejib Ammar, Onur Altintas
+                </p>
+                <p class="text-sm text-gray-500 dark:text-gray-500 mb-8">
+                    Toyota Motor North America R&amp;D, InfoTech Labs
+                </p>
+
+                <!-- Action buttons -->
+                <div class="flex flex-wrap justify-center gap-3 mb-6">
+                    <a href="https://arxiv.org/abs/XXXX.XXXXX" class="inline-flex items-center px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium rounded-lg transition-colors">
+                        <i class="fas fa-file-alt mr-2"></i> arXiv
+                    </a>
+                    <a href="https://arxiv.org/pdf/XXXX.XXXXX.pdf" class="inline-flex items-center px-5 py-2.5 bg-gray-800 dark:bg-gray-700 hover:bg-gray-900 dark:hover:bg-gray-600 text-white text-sm font-medium rounded-lg transition-colors">
+                        <i class="fas fa-file-pdf mr-2"></i> PDF
+                    </a>
+                </div>
+
+                <!-- Tags -->
+                <div class="flex flex-wrap justify-center gap-2">
+                    <span class="px-3 py-1 text-xs font-medium bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full">Autonomous Driving</span>
+                    <span class="px-3 py-1 text-xs font-medium bg-green-50 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full">Meta-Control</span>
+                    <span class="px-3 py-1 text-xs font-medium bg-purple-50 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full">System 1 / System 2</span>
+                    <span class="px-3 py-1 text-xs font-medium bg-amber-50 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300 rounded-full">Safety-Compute Allocation</span>
+                    <span class="px-3 py-1 text-xs font-medium bg-red-50 dark:bg-red-900/30 text-red-700 dark:text-red-300 rounded-full">Edge Computing</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- TL;DR + Teaser figure -->
+        <section class="py-12 bg-gray-50 dark:bg-gray-800/50">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 fade-in">
+                <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-xl p-6 mb-10">
+                    <h2 class="text-sm font-semibold uppercase tracking-wide text-blue-600 dark:text-blue-400 mb-3">TL;DR</h2>
+                    <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+                        Autonomous vehicles need deep reasoning for safety, but compute is limited on embedded platforms. We introduce a <strong>persistent vigilance signal</strong> (tonic state) that tracks accumulated risk history and decides <em>how much</em> reasoning to allocate (System 1 vs. System 2), while a separate <strong>surprise trigger</strong> (phasic signal) decides <em>when</em> to reason at all. On synthetic benchmarks, this reduces compute 25&ndash;50% vs. phasic-only triggering. In closed-loop highway-env traffic (540 episodes), TM-C remains crash-free in dense scenarios where other methods incur 3&ndash;7% crash rates, using only 6&ndash;15 compute units per episode vs. 400&ndash;800 for static baselines.
+                    </p>
+                </div>
+
+                <!-- Architecture diagram (Figure 1) -->
+                <div class="max-w-md mx-auto mb-10">
+                    <img src="images/fig1_architecture.png" alt="System architecture: tonic (slow) and phasic (fast) pathways from risk model to policy mode"
+                         class="w-full rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 bg-white p-4">
+                    <p class="text-sm text-gray-500 dark:text-gray-400 mt-3 text-center">
+                        System architecture. The tonic pathway (slow) sets deliberation depth; the phasic pathway (fast) triggers reasoning on surprise.
+                    </p>
+                </div>
+
+                <!-- Tonic dynamics (Figure 2) -->
+                <div class="max-w-sm mx-auto">
+                    <img src="images/fig2_tonic_dynamics.png" alt="Tonic meta-control dynamics showing risk signal, surprise, tonic state, and deliberation level over time"
+                         class="w-full rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 bg-white">
+                    <p class="text-sm text-gray-500 dark:text-gray-400 mt-3 text-center">
+                        Tonic dynamics on a regime-shift scenario. The tonic state accumulates vigilance and maps risk regimes to S1/S2 levels.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Abstract (collapsible) -->
+        <section class="py-14 bg-white dark:bg-gray-900">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 fade-in">
+                <button onclick="document.getElementById('full-abstract').classList.toggle('hidden'); this.querySelector('.chevron').classList.toggle('rotate-180')" class="flex items-center gap-2 text-xl font-semibold text-gray-900 dark:text-white mb-5 hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer">
+                    Abstract
+                    <svg class="chevron w-5 h-5 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div id="full-abstract" class="hidden">
+                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                        Autonomous driving systems that incorporate deliberative reasoning modules, such as multi-step planners or large language models, face a fundamental resource allocation problem because safety demands deep inference under risk while embedded automotive platforms impose strict compute and latency budgets. We propose <em>tonic meta-control</em>, a mechanism that maintains a persistent vigilance state (the <em>tonic</em> signal, updated every timestep) via asymmetric piecewise dynamics with dead-band hysteresis. A dead-band guarantees exact state hold during boundary oscillations, providing formal guarantees on boundedness and monotonic transitions without continuous-integrator drift, and maps risk regimes to deliberation levels that govern compute allocation when rapid prediction-error surprise (the <em>phasic</em> signal) fires. On a synthetic testbench spanning five risk scenarios and in the highway-env driving simulator, tonic meta-control achieves 25&ndash;50% compute reduction versus phasic-only triggering, scaling to 46&ndash;52% under superlinear compute cost regimes. A memoryless threshold ablation isolates the contribution of accumulated vigilance history, confirming its advantage on transient and cyclic risk patterns. While reducing computational overhead on interactive traffic, tonic meta-control supports safety-aware autonomous reasoning on resource-constrained embedded platforms.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Results -->
+        <section class="py-14 bg-gray-50 dark:bg-gray-800/50">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 fade-in">
+                <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-8 text-center">Key Results</h2>
+
+                <div class="grid md:grid-cols-3 gap-6 mb-12">
+                    <div class="bg-white dark:bg-gray-800 rounded-xl p-6 border border-gray-200 dark:border-gray-700 text-center">
+                        <div class="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">25&ndash;50%</div>
+                        <div class="text-sm text-gray-600 dark:text-gray-400">Compute reduction vs. phasic-only on synthetic testbench (5 scenarios); scales to 46&ndash;52% under superlinear cost models</div>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 rounded-xl p-6 border border-gray-200 dark:border-gray-700 text-center">
+                        <div class="text-3xl font-bold text-green-600 dark:text-green-400 mb-2">6&ndash;15</div>
+                        <div class="text-sm text-gray-600 dark:text-gray-400">Total compute per episode in highway-env (vs. 400&ndash;800 for static baselines), crash-free in dense traffic where other methods incur 3&ndash;7% crash rates</div>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 rounded-xl p-6 border border-gray-200 dark:border-gray-700 text-center">
+                        <div class="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2">13.0</div>
+                        <div class="text-sm text-gray-600 dark:text-gray-400">Highest safety-efficiency ratio in merge scenario, matching best RSS violation rate (0.211) at &lt;4% of Static-S2 compute</div>
+                    </div>
+                </div>
+
+                <!-- Pareto figure -->
+                <div class="max-w-sm mx-auto">
+                    <img src="images/fig4_pareto.png" alt="Pareto frontier: compute cost vs RSS violation rate across methods"
+                         class="w-full rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 bg-white">
+                    <p class="text-sm text-gray-500 dark:text-gray-400 mt-3 text-center">
+                        Compute vs. RSS violation rate across 3 scenarios and 6 methods. TM-C (stars) achieves low compute with competitive safety.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Method Overview -->
+        <section class="py-14 bg-white dark:bg-gray-900">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 fade-in">
+                <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-5">How It Works</h2>
+                <div class="grid md:grid-cols-2 gap-8 items-start">
+                    <div>
+                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
+                            Tonic meta-control separates the <strong>when</strong> and <strong>how much</strong> of deliberative reasoning:
+                        </p>
+                        <ul class="space-y-3 text-gray-600 dark:text-gray-300">
+                            <li class="flex items-start">
+                                <span class="inline-block w-5 h-5 bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 rounded-full text-xs font-bold flex-shrink-0 flex items-center justify-center mr-3 mt-0.5">1</span>
+                                <span><strong>Tonic state</strong> (slow signal): a persistent vigilance level updated every timestep via piecewise integration with dead-band hysteresis. Determines System 1 vs. System 2 deliberation depth.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="inline-block w-5 h-5 bg-green-100 dark:bg-green-900/40 text-green-600 dark:text-green-400 rounded-full text-xs font-bold flex-shrink-0 flex items-center justify-center mr-3 mt-0.5">2</span>
+                                <span><strong>Phasic trigger</strong> (fast signal): fires when prediction-error surprise exceeds a threshold, after a cooldown period. Controls <em>when</em> to invoke reasoning.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="inline-block w-5 h-5 bg-purple-100 dark:bg-purple-900/40 text-purple-600 dark:text-purple-400 rounded-full text-xs font-bold flex-shrink-0 flex items-center justify-center mr-3 mt-0.5">3</span>
+                                <span><strong>Compute allocation</strong>: when triggered, the tonic-mapped level selects S1 (reactive, cheap) or S2 (deliberative, expensive), yielding Pareto-optimal safety/compute trade-offs.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="images/fig_perception_zones.png" alt="S1 vs S2 perception zones in dense highway traffic"
+                             class="w-full rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 bg-gray-900">
+                        <p class="text-sm text-gray-500 dark:text-gray-400 mt-3 text-center">
+                            S1 vs. S2 perception zones on dense highway. S1 monitors only the longitudinal gap; S2 widens margins and enables lane-change awareness.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Highway Sim figure -->
+        <section class="py-14 bg-gray-50 dark:bg-gray-800/50">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 fade-in">
+                <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-5 text-center">Simulation Results</h2>
+                <div class="max-w-sm mx-auto">
+                    <img src="images/fig8_highway_merge.png" alt="Highway merge scenario timeline showing risk, tonic state, and actions"
+                         class="w-full rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 bg-white">
+                    <p class="text-sm text-gray-500 dark:text-gray-400 mt-3 text-center">
+                        Highway merge scenario. The tonic signal rises during close interactions, escalating to S2 deliberation with wider safety margins.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- BibTeX -->
+        <section class="py-14 bg-white dark:bg-gray-900">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 fade-in">
+                <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-5">Citation</h2>
+                <div class="relative">
+                    <pre class="bg-gray-100 dark:bg-gray-800 rounded-xl p-5 text-sm text-gray-700 dark:text-gray-300 overflow-x-auto border border-gray-200 dark:border-gray-700"><code>@inproceedings{han2026tonic,
+  title     = {Tonic Meta-Control for Adaptive Safety-Compute
+               Allocation via Persistent Vigilance Dynamics},
+  author    = {Han, Kyungtae and Chen, Yitao and
+               Ammar, Nejib and Altintas, Onur},
+  booktitle = {2026 IEEE 29th International Conference on
+               Intelligent Transportation Systems (ITSC)},
+  year      = {2026}
+}</code></pre>
+                    <button onclick="navigator.clipboard.writeText(document.querySelector('pre code').textContent).then(()=>{this.innerHTML='<i class=\'fas fa-check mr-1\'></i>Copied';setTimeout(()=>{this.innerHTML='<i class=\'fas fa-copy mr-1\'></i>Copy'},2000)})" class="absolute top-3 right-3 px-3 py-1.5 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md text-xs text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors">
+                        <i class="fas fa-copy mr-1"></i>Copy
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm text-gray-500 dark:text-gray-400">
+            &copy; 2026 Kyungtae Han. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        // Theme toggle
+        const toggle = document.getElementById('theme-toggle');
+        toggle.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+            localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+            const icon = toggle.querySelector('i');
+            icon.className = document.documentElement.classList.contains('dark') ? 'fas fa-sun text-yellow-400' : 'fas fa-moon text-gray-600';
+        });
+        // Set initial icon
+        if (document.documentElement.classList.contains('dark')) {
+            toggle.querySelector('i').className = 'fas fa-sun text-yellow-400';
+        }
+
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

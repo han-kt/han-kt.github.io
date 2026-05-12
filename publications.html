@@ -1,16 +1,36 @@
 <!DOCTYPE html>
-<html lang="en" class="h-full">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Publications - Kyungtae Han</title>
-    <meta name="description" content="Complete publication list including conference papers, journal articles, patents, and books.">
+    <title>Publications &mdash; Kyungtae Han</title>
+    <meta name="description" content="Complete publication list including conference papers, journal articles, patents, and books in connected and autonomous vehicles, generative AI, and edge computing.">
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        try {
+            var __t = localStorage.getItem('theme');
+            if (__t === 'dark') document.documentElement.classList.add('dark');
+        } catch (e) {}
+    </script>
     
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GEG5GDGV8P"></script>
@@ -37,6 +57,17 @@
     <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
     
     <style>
+        body { font-family: 'Inter', system-ui, sans-serif; }
+        .dark { color-scheme: dark; }
+        * {
+            transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+        }
+        .nav-link {
+            @apply text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-colors;
+        }
+        .mobile-nav-link {
+            @apply text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium transition-colors;
+        }
         /* Custom styles */
         .publication-item {
             transition: all 0.2s ease;
@@ -63,81 +94,86 @@
         }
     </style>
 </head>
-<body class="h-full bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white">
-    <!-- Navigation -->
-    <nav class="bg-white dark:bg-gray-800 shadow-sm border-b border-gray-200 dark:border-gray-700">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-200">
+    <header id="header" class="fixed top-0 w-full bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-700 z-50 transition-all duration-200">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
-                <div class="flex items-center">
-                    <a href="../index.html" class="text-xl font-bold text-gray-900 dark:text-white">
-                        Kyungtae Han
-                    </a>
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-xl font-semibold text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Kyungtae Han</a>
                 </div>
-                
+
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
-                        <a href="../index.html#home" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
-                        <a href="../index.html#research" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium">Research</a>
+                        <a href="index.html#home" class="nav-link">Home</a>
+                        <a href="index.html#research" class="nav-link">Research</a>
                         <a href="publications.html" class="text-blue-600 dark:text-blue-400 px-3 py-2 rounded-md text-sm font-medium">Publications</a>
-                        <a href="../index.html#contact" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                        <a href="index.html#teaching" class="nav-link">Teaching</a>
+                        <a href="index.html#news" class="nav-link">News</a>
+                        <a href="index.html#contact" class="nav-link">Contact</a>
                     </div>
                 </div>
-                
-                <div class="md:hidden">
-                    <button id="mobile-menu-btn" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
-                        <i class="fas fa-bars"></i>
+
+                <div class="flex items-center space-x-4">
+                    <button id="theme-toggle" type="button" class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors" aria-label="Toggle dark mode">
+                        <i class="fas fa-moon text-gray-600 dark:text-gray-300"></i>
+                    </button>
+
+                    <button id="mobile-menu-btn" type="button" class="block md:hidden p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors" aria-label="Toggle mobile menu" aria-expanded="false">
+                        <i class="fas fa-bars text-gray-600 dark:text-gray-300"></i>
                     </button>
                 </div>
             </div>
-        </div>
-        
-        <!-- Mobile menu -->
-        <div id="mobile-menu" class="md:hidden hidden">
-            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
-                <a href="../index.html#home" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
-                <a href="../index.html#research" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium">Research</a>
-                <a href="publications.html" class="text-blue-600 dark:text-blue-400 block px-3 py-2 rounded-md text-base font-medium">Publications</a>
-                <a href="../index.html#contact" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+
+            <div id="mobile-menu" class="hidden md:hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
+                    <a href="index.html#home" class="mobile-nav-link">Home</a>
+                    <a href="index.html#research" class="mobile-nav-link">Research</a>
+                    <a href="publications.html" class="text-blue-600 dark:text-blue-400 block px-3 py-2 rounded-md text-base font-medium">Publications</a>
+                    <a href="index.html#teaching" class="mobile-nav-link">Teaching</a>
+                    <a href="index.html#news" class="mobile-nav-link">News</a>
+                    <a href="index.html#contact" class="mobile-nav-link">Contact</a>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <!-- Main Content -->
-    <main class="flex-1">
+    <main class="pt-16">
         <!-- Hero Section -->
-        <section class="py-16 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+        <section class="pt-14 pb-10 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h1 class="text-4xl md:text-5xl font-bold mb-6">
-                    Publications
+                <p class="text-xs font-semibold uppercase tracking-widest text-blue-600 dark:text-blue-400 mb-2">Publications</p>
+                <h1 class="text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-3">
+                    Complete Publication List
                 </h1>
-                <p class="text-xl text-blue-100 max-w-3xl mx-auto mb-8">
-                    Complete publication list with conference papers, journal articles, patents, and books in intelligent transportation systems, cyber-physical systems, artificial intelligence, and edge computing.
+                <p class="text-base text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-10">
+                    Conference papers, journal articles, patents, and books across intelligent transportation, cyber-physical systems, AI, and edge computing.
                 </p>
-                
+
                 <!-- Stats (clickable to filter) -->
-                <div class="flex justify-center gap-8 mb-8">
-                    <button type="button" onclick="handleStatClick('book')" class="text-center hover:opacity-90 transition-opacity cursor-pointer">
-                        <div class="text-3xl font-bold text-purple-200 mb-1">3</div>
-                        <div class="text-sm text-blue-100 font-medium">Books</div>
+                <div class="flex flex-wrap justify-center gap-x-10 gap-y-4 mb-2">
+                    <button type="button" onclick="handleStatClick('book')" class="text-center hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer">
+                        <div class="text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-1">3</div>
+                        <div class="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400 font-medium">Books</div>
                     </button>
-                    <button type="button" onclick="handleStatClick('journal')" class="text-center hover:opacity-90 transition-opacity cursor-pointer">
-                        <div class="text-3xl font-bold text-green-200 mb-1">20</div>
-                        <div class="text-sm text-blue-100 font-medium">Journals</div>
+                    <button type="button" onclick="handleStatClick('journal')" class="text-center hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer">
+                        <div class="text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-1">20</div>
+                        <div class="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400 font-medium">Journals</div>
                     </button>
-                    <button type="button" onclick="handleStatClick('conference')" class="text-center hover:opacity-90 transition-opacity cursor-pointer">
-                        <div class="text-3xl font-bold text-blue-200 mb-1">71</div>
-                        <div class="text-sm text-blue-100 font-medium">Conferences</div>
+                    <button type="button" onclick="handleStatClick('conference')" class="text-center hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer">
+                        <div class="text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-1">72</div>
+                        <div class="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400 font-medium">Conferences</div>
                     </button>
-                    <button type="button" onclick="handleStatClick('patent')" class="text-center hover:opacity-90 transition-opacity cursor-pointer">
-                        <div class="text-3xl font-bold text-orange-200 mb-1">116</div>
-                        <div class="text-sm text-blue-100 font-medium">Patents</div>
+                    <button type="button" onclick="handleStatClick('patent')" class="text-center hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer">
+                        <div class="text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-1">116</div>
+                        <div class="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400 font-medium">Patents</div>
                     </button>
                 </div>
             </div>
         </section>
 
         <!-- Search and Filter Section -->
-        <section class="py-8 bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">
+        <section class="py-8 bg-gray-50 dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex flex-col md:flex-row gap-4 items-center justify-between">
                     <!-- Search -->
@@ -164,7 +200,7 @@
         </section>
 
         <!-- Publications Section -->
-        <section class="py-16 bg-white dark:bg-gray-800">
+        <section class="py-16 bg-gray-50 dark:bg-gray-800">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <!-- Publications List -->
                 <div id="publications-list" class="space-y-6">
@@ -184,23 +220,82 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 dark:bg-gray-900 text-white py-8">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <p class="text-gray-400">&copy; 2024 Kyungtae Han. All rights reserved.</p>
+    <footer class="bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 text-sm text-gray-600 dark:text-gray-400">
+                <p>&copy; <span id="footer-year"></span> Kyungtae Han</p>
+                <div class="flex items-center gap-5">
+                    <a href="mailto:kt.han@toyota.com" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Email</a>
+                    <a href="https://www.linkedin.com/in/kthan" target="_blank" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">LinkedIn</a>
+                    <a href="https://scholar.google.com/citations?hl=en&user=MejLLHgAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Google Scholar</a>
+                </div>
+            </div>
         </div>
     </footer>
+
+    <script>
+    (function () {
+        function initSiteChrome() {
+            var themeToggle = document.getElementById('theme-toggle');
+            var mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            var mobileMenu = document.getElementById('mobile-menu');
+            function initTheme() {
+                var saved = localStorage.getItem('theme') || 'light';
+                document.documentElement.classList.toggle('dark', saved === 'dark');
+                updateIcon(saved);
+            }
+            function updateIcon(theme) {
+                if (!themeToggle) return;
+                var icon = themeToggle.querySelector('i');
+                if (!icon) return;
+                icon.className = theme === 'dark' ? 'fas fa-sun text-yellow-500' : 'fas fa-moon text-gray-600 dark:text-gray-300';
+            }
+            function toggleTheme() {
+                var dark = document.documentElement.classList.toggle('dark');
+                var t = dark ? 'dark' : 'light';
+                localStorage.setItem('theme', t);
+                updateIcon(t);
+            }
+            initTheme();
+            if (themeToggle) themeToggle.addEventListener('click', function (e) { e.preventDefault(); toggleTheme(); });
+            if (mobileMenuBtn && mobileMenu) {
+                mobileMenuBtn.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    mobileMenu.classList.toggle('hidden');
+                    mobileMenuBtn.setAttribute('aria-expanded', (!mobileMenu.classList.contains('hidden')).toString());
+                });
+            }
+            var header = document.getElementById('header');
+            if (header) {
+                var last = 0;
+                window.addEventListener('scroll', function () {
+                    var cur = window.pageYOffset;
+                    if (cur > last && cur > 100) header.style.transform = 'translateY(-100%)';
+                    else header.style.transform = 'translateY(0)';
+                    last = cur;
+                });
+            }
+            if (mobileMenuBtn && mobileMenu) {
+                document.addEventListener('click', function (e) {
+                    if (!mobileMenuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+                        mobileMenu.classList.add('hidden');
+                        mobileMenuBtn.setAttribute('aria-expanded', 'false');
+                    }
+                });
+            }
+            var fy = document.getElementById('footer-year');
+            if (fy) fy.textContent = new Date().getFullYear();
+        }
+        if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initSiteChrome);
+        else initSiteChrome();
+    })();
+    </script>
 
     <!-- Load publications data -->
     <script src="js/publications-data.js"></script>
     
     <!-- Publications page script -->
     <script>
-        // Mobile menu toggle
-        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
-            const mobileMenu = document.getElementById('mobile-menu');
-            mobileMenu.classList.toggle('hidden');
-        });
-
         // Global variables
         let fuse;
         let filteredPublications = [];
@@ -325,6 +420,12 @@
                     linksHtml += `<a href="${pub.pdf}" target="_blank" class="inline-flex items-center gap-1 px-3 py-1 bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 rounded-full text-sm hover:bg-green-200 dark:hover:bg-green-800 transition-colors">
                         <i class="fas fa-file-pdf text-xs"></i>
                         PDF
+                    </a>`;
+                }
+                if (pub.project) {
+                    linksHtml += `<a href="${pub.project}" class="inline-flex items-center gap-1 px-3 py-1 bg-amber-100 dark:bg-amber-900 text-amber-700 dark:text-amber-300 rounded-full text-sm hover:bg-amber-200 dark:hover:bg-amber-800 transition-colors">
+                        <i class="fas fa-globe text-xs"></i>
+                        Project
                     </a>`;
                 }
 

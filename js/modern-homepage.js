@@ -350,6 +350,12 @@ function renderPublications() {
                                     <i class="fas fa-file-pdf mr-1"></i>PDF
                                 </a>
                             ` : ''}
+                            ${pub.project ? `
+                                <a href="${pub.project}" 
+                                   class="inline-flex items-center px-2 py-1 text-xs font-medium text-amber-600 bg-amber-50 rounded hover:bg-amber-100 transition-colors">
+                                    <i class="fas fa-globe mr-1"></i>Project
+                                </a>
+                            ` : ''}
                             ${pub.abstract && pub.abstract.trim() !== '' ? `
                                 <button onclick="toggleAbstract('${pub.yaml_id}')" 
                                         class="inline-flex items-center px-2 py-1 text-xs font-medium text-green-600 bg-green-50 rounded hover:bg-green-100 transition-colors">

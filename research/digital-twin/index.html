@@ -25,6 +25,13 @@
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        try {
+            var __t = localStorage.getItem('theme');
+            if (__t === 'dark') document.documentElement.classList.add('dark');
+        } catch (e) {}
+    </script>
     
     <!-- Fuse.js for search -->
     <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
@@ -72,80 +79,90 @@
         .publication-abstract {
             transition: all 0.3s ease;
         }
+
+        .nav-link {
+            @apply text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-colors;
+        }
+
+        .mobile-nav-link {
+            @apply text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium transition-colors;
+        }
     </style>
 </head>
-<body class="h-full bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white">
-    <!-- Navigation -->
-    <nav class="bg-white dark:bg-gray-800 shadow-sm border-b border-gray-200 dark:border-gray-700">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-200">
+    <header id="header" class="fixed top-0 w-full bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-700 z-50 transition-all duration-200">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
-                <div class="flex items-center">
-                    <a href="../../index.html" class="text-xl font-bold text-gray-900 dark:text-white">
-                        Kyungtae Han
-                    </a>
+                <div class="flex-shrink-0">
+                    <a href="../../index.html" class="text-xl font-semibold text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Kyungtae Han</a>
                 </div>
-                
+
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
-                        <a href="../../index.html#home" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
-                        <a href="../../index.html#research" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium">Research Areas</a>
-                        <a href="../../index.html#publications" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium">Publications</a>
-                        <a href="../../index.html#contact" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                        <a href="../../index.html#home" class="nav-link">Home</a>
+                        <a href="../../index.html#research" class="nav-link">Research</a>
+                        <a href="../../publications.html" class="nav-link">Publications</a>
+                        <a href="../../index.html#teaching" class="nav-link">Teaching</a>
+                        <a href="../../index.html#news" class="nav-link">News</a>
+                        <a href="../../index.html#contact" class="nav-link">Contact</a>
                     </div>
                 </div>
-                
-                <div class="md:hidden">
-                    <button id="mobile-menu-btn" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
-                        <i class="fas fa-bars"></i>
+
+                <div class="flex items-center space-x-4">
+                    <button id="theme-toggle" type="button" class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors" aria-label="Toggle dark mode">
+                        <i class="fas fa-moon text-gray-600 dark:text-gray-300"></i>
+                    </button>
+
+                    <button id="mobile-menu-btn" type="button" class="block md:hidden p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors" aria-label="Toggle mobile menu" aria-expanded="false">
+                        <i class="fas fa-bars text-gray-600 dark:text-gray-300"></i>
                     </button>
                 </div>
             </div>
-        </div>
-        
-        <!-- Mobile menu -->
-        <div id="mobile-menu" class="md:hidden hidden">
-            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
-                <a href="../../index.html#home" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
-                <a href="../../index.html#research" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium">Research Areas</a>
-                <a href="../../index.html#publications" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium">Publications</a>
-                <a href="../../index.html#contact" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+
+            <div id="mobile-menu" class="hidden md:hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
+                    <a href="../../index.html#home" class="mobile-nav-link">Home</a>
+                    <a href="../../index.html#research" class="mobile-nav-link">Research</a>
+                    <a href="../../publications.html" class="mobile-nav-link">Publications</a>
+                    <a href="../../index.html#teaching" class="mobile-nav-link">Teaching</a>
+                    <a href="../../index.html#news" class="mobile-nav-link">News</a>
+                    <a href="../../index.html#contact" class="mobile-nav-link">Contact</a>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <!-- Main Content -->
-    <main class="flex-1">
+    <main class="pt-16">
         <!-- Hero Section -->
-        <section class="py-16 bg-white dark:bg-gray-800">
+        <section class="pt-20 pb-14 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center">
-                    <div class="research-area-icon w-20 h-20 bg-blue-600 text-white rounded-2xl flex items-center justify-center mx-auto mb-6">
-                        <i class="fas fa-cogs text-3xl"></i>
-                    </div>
-                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+                    <p class="text-xs font-semibold uppercase tracking-widest text-blue-600 dark:text-blue-400 mb-2">Research Area</p>
+                    <h1 class="text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-3">
                         Digital Twin Technologies
                     </h1>
-                    <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-8">
+                    <p class="text-base text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-8">
                         Research on digital twin frameworks for cyber-physical systems in transportation infrastructure.
                     </p>
                     
                     <!-- Stats (click to filter within this page) -->
-                    <div class="flex justify-center gap-8 mb-8">
-                        <button type="button" onclick="handleStatClick('book')" class="text-center hover:opacity-90">
-                            <div id="books-count" class="text-3xl font-bold text-purple-600 mb-1">-</div>
-                            <div class="text-sm text-gray-600 dark:text-gray-300 font-medium">Books</div>
+                    <div class="flex flex-wrap justify-center gap-x-10 gap-y-4 mb-8">
+                        <button type="button" onclick="handleStatClick('book')" class="text-center hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer">
+                            <div id="books-count" class="text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-1">&ndash;</div>
+                            <div class="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400 font-medium">Books</div>
                         </button>
-                        <button type="button" onclick="handleStatClick('journal')" class="text-center hover:opacity-90">
-                            <div id="journals-count" class="text-3xl font-bold text-green-600 mb-1">-</div>
-                            <div class="text-sm text-gray-600 dark:text-gray-300 font-medium">Journals</div>
+                        <button type="button" onclick="handleStatClick('journal')" class="text-center hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer">
+                            <div id="journals-count" class="text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-1">&ndash;</div>
+                            <div class="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400 font-medium">Journals</div>
                         </button>
-                        <button type="button" onclick="handleStatClick('conference')" class="text-center hover:opacity-90">
-                            <div id="conferences-count" class="text-3xl font-bold text-blue-600 mb-1">-</div>
-                            <div class="text-sm text-gray-600 dark:text-gray-300 font-medium">Conferences</div>
+                        <button type="button" onclick="handleStatClick('conference')" class="text-center hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer">
+                            <div id="conferences-count" class="text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-1">&ndash;</div>
+                            <div class="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400 font-medium">Conferences</div>
                         </button>
-                        <button type="button" onclick="handleStatClick('patent')" class="text-center hover:opacity-90">
-                            <div id="patents-count" class="text-3xl font-bold text-orange-600 mb-1">-</div>
-                            <div class="text-sm text-gray-600 dark:text-gray-300 font-medium">Patents</div>
+                        <button type="button" onclick="handleStatClick('patent')" class="text-center hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer">
+                            <div id="patents-count" class="text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-1">&ndash;</div>
+                            <div class="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400 font-medium">Patents</div>
                         </button>
                     </div>
                     
@@ -187,15 +204,12 @@
         </section>
 
         <!-- Publications Section -->
-        <section class="py-16 bg-white dark:bg-gray-800">
+        <section class="py-14 bg-gray-50 dark:bg-gray-800">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-                        Related Publications
-                    </h2>
-                    <p class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-                        Publications related to Digital Twin Technologies research area.
-                    </p>
+                <div class="mb-10">
+                    <p class="text-xs font-semibold uppercase tracking-widest text-blue-600 dark:text-blue-400 mb-2">Publications</p>
+                    <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white">Related Publications</h2>
+                    <p class="mt-2 text-base text-gray-600 dark:text-gray-300 max-w-3xl">Publications tagged with this research area.</p>
                 </div>
 
                 <!-- Publications List -->
@@ -207,13 +221,69 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8">
+    <footer class="bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 py-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center">
-                <p>&copy; 2025 Kyungtae Han. All rights reserved.</p>
-            </div>
+            <p class="text-sm text-center text-gray-600 dark:text-gray-400">&copy; <span id="footer-year"></span> Kyungtae Han</p>
         </div>
     </footer>
+
+    <script>
+    (function () {
+        function initSiteChrome() {
+            var themeToggle = document.getElementById('theme-toggle');
+            var mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            var mobileMenu = document.getElementById('mobile-menu');
+            function initTheme() {
+                var saved = localStorage.getItem('theme') || 'light';
+                document.documentElement.classList.toggle('dark', saved === 'dark');
+                updateIcon(saved);
+            }
+            function updateIcon(theme) {
+                if (!themeToggle) return;
+                var icon = themeToggle.querySelector('i');
+                if (!icon) return;
+                icon.className = theme === 'dark' ? 'fas fa-sun text-yellow-500' : 'fas fa-moon text-gray-600 dark:text-gray-300';
+            }
+            function toggleTheme() {
+                var dark = document.documentElement.classList.toggle('dark');
+                var t = dark ? 'dark' : 'light';
+                localStorage.setItem('theme', t);
+                updateIcon(t);
+            }
+            initTheme();
+            if (themeToggle) themeToggle.addEventListener('click', function (e) { e.preventDefault(); toggleTheme(); });
+            if (mobileMenuBtn && mobileMenu) {
+                mobileMenuBtn.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    mobileMenu.classList.toggle('hidden');
+                    mobileMenuBtn.setAttribute('aria-expanded', (!mobileMenu.classList.contains('hidden')).toString());
+                });
+            }
+            var header = document.getElementById('header');
+            if (header) {
+                var last = 0;
+                window.addEventListener('scroll', function () {
+                    var cur = window.pageYOffset;
+                    if (cur > last && cur > 100) header.style.transform = 'translateY(-100%)';
+                    else header.style.transform = 'translateY(0)';
+                    last = cur;
+                });
+            }
+            if (mobileMenuBtn && mobileMenu) {
+                document.addEventListener('click', function (e) {
+                    if (!mobileMenuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+                        mobileMenu.classList.add('hidden');
+                        mobileMenuBtn.setAttribute('aria-expanded', 'false');
+                    }
+                });
+            }
+            var fy = document.getElementById('footer-year');
+            if (fy) fy.textContent = new Date().getFullYear();
+        }
+        if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initSiteChrome);
+        else initSiteChrome();
+    })();
+    </script>
 
     <!-- Load publications data -->
     <script src="../../js/publications-data.js"></script>
@@ -230,12 +300,6 @@
             keywords: ["digital twin", "cyber-physical", "simulation", "modeling", "infrastructure", "mixed reality"],
             specialKeywords: ["digital twin", "simulation", "modeling", "virtual", "cyber-physical"]
         };
-
-        // Mobile menu toggle
-        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
-            const mobileMenu = document.getElementById('mobile-menu');
-            mobileMenu.classList.toggle('hidden');
-        });
 
         // Global variables
         let fuse;
@@ -346,132 +410,78 @@
             renderPublications();
         }
 
-        // Render publications (unified style from dedicated publications template)
+        // Render publications (badge-style, matches homepage Selected Publications)
         function renderPublications() {
             if (!checkPublicationsData()) return;
 
-            // Use global publication order for numbering
-            const allPublicationsSorted = [...publications].sort((a, b) => b.year - a.year);
-            
-            // Create a map of publication ID to its global position for numbering
-            const globalPositionMap = new Map();
-            const typeCounts = { book: 0, journal: 0, conference: 0, patent: 0 };
-            
-            // Count total publications per type first
-            allPublicationsSorted.forEach(pub => {
-                typeCounts[pub.type]++;
-            });
-            
-            // Assign reverse numbers (newest gets highest number)
-            const reverseCounts = { book: typeCounts.book, journal: typeCounts.journal, conference: typeCounts.conference, patent: typeCounts.patent };
-            
-            allPublicationsSorted.forEach(pub => {
-                globalPositionMap.set(pub.yaml_id, reverseCounts[pub.type]);
-                reverseCounts[pub.type]--;
-            });
-            
-            publicationsList.innerHTML = filteredPublications.map((pub, index) => {
-                // Generate publication type prefix
-                let typePrefix = '';
-                let typeColor = '';
-                let typeIcon = '';
-                
-                switch(pub.type) {
-                    case 'journal':
-                        typePrefix = '📘';
-                        break;
-                    case 'conference':
-                        typePrefix = '📄';
-                        break;
-                    case 'patent':
-                        typePrefix = '⚡';
-                        break;
-                    case 'book':
-                        typePrefix = '📚';
-                        break;
-                    default:
-                        typePrefix = '📚';
+            publicationsList.innerHTML = filteredPublications.map((pub) => {
+                // Venue abbreviations for the badge
+                let venueAbbr = pub.venue;
+                if (pub.venue.includes('IEEE Transactions on Intelligent Vehicles')) {
+                    venueAbbr = 'IEEE Trans. Intelligent Vehicles';
+                } else if (pub.venue.includes('IEEE Transactions on Intelligent Transportation Systems')) {
+                    venueAbbr = 'IEEE T-ITS';
+                } else if (pub.venue.includes('IEEE Internet of Things Journal')) {
+                    venueAbbr = 'IEEE IoT Journal';
+                } else if (pub.venue.includes('IEEE Transactions on Vehicular Technology')) {
+                    venueAbbr = 'IEEE TVT';
+                } else if (pub.venue.includes('IEEE Intelligent Vehicles Symposium')) {
+                    venueAbbr = 'IEEE IV';
+                } else if (pub.venue.includes('IEEE International Conference on Intelligent Transportation Systems')) {
+                    venueAbbr = 'IEEE ITSC';
                 }
 
-                // Generate links HTML
-                let linksHtml = '';
+                // Type-aware badge text and optional secondary line (e.g., patent number)
+                const is_book_chapter = pub.venue && pub.venue.startsWith('In:');
+                let venueBadgeText;
+                let detailLine = '';
+                if (pub.type === 'patent') {
+                    venueBadgeText = pub.venue.includes('Application') ? 'US Patent Application' : 'US Patent';
+                    const patentDetail = pub.venue.replace(/^US Patent (Application )?/, '');
+                    if (patentDetail && patentDetail !== pub.venue) {
+                        detailLine = `<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">${patentDetail}</p>`;
+                    }
+                } else if (pub.type === 'book') {
+                    venueBadgeText = is_book_chapter ? 'Book Chapter' : 'Book';
+                } else {
+                    venueBadgeText = venueAbbr;
+                }
+
+                // Bold "K. Han" / "Kyungtae Han" / "Han, Kyungtae" so the author signal pops
+                const authorsBolded = (pub.authors || '').replace(
+                    /(K\.\s*Han\b|Kyungtae\s+Han\b|Han,\s*Kyungtae\b)/g,
+                    '<strong>$1</strong>'
+                );
+
+                // Inline links: View paper / View patent + PDF
+                const linkLabel = pub.type === 'patent' ? 'View patent' : 'View paper';
+                const linksParts = [];
                 if (pub.url) {
-                    const patentDataAttrs = pub.type === 'patent' ? 
-                        `data-patent-number="${pub.patent_number || ''}" data-application-number="${pub.application_number || ''}"` : '';
-                    linksHtml += `<a href="${pub.url}" target="_blank" class="inline-flex items-center gap-1 px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 rounded-full text-sm hover:bg-blue-200 dark:hover:bg-blue-800 transition-colors patent-link" ${patentDataAttrs}>
-                        <i class="fas fa-external-link-alt text-xs"></i>
-                        URL
-                    </a>`;
+                    linksParts.push(`<a href="${pub.url}" target="_blank" class="text-sm text-blue-600 dark:text-blue-400 hover:underline">${linkLabel} &rarr;</a>`);
                 }
                 if (pub.pdf) {
-                    linksHtml += `<a href="${pub.pdf}" target="_blank" class="inline-flex items-center gap-1 px-3 py-1 bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 rounded-full text-sm hover:bg-green-200 dark:hover:bg-green-800 transition-colors">
-                        <i class="fas fa-file-pdf text-xs"></i>
-                        PDF
-                    </a>`;
+                    linksParts.push(`<a href="${pub.pdf}" target="_blank" class="text-sm text-blue-600 dark:text-blue-400 hover:underline">PDF &rarr;</a>`);
                 }
+                const linksLine = linksParts.length
+                    ? `<div class="flex flex-wrap items-center gap-x-4 gap-y-1">${linksParts.join('')}</div>`
+                    : '';
 
-                // Generate reference number using global position
-                const globalPosition = globalPositionMap.get(pub.yaml_id) || 1;
-                const refNumber = `[${pub.type.charAt(0).toUpperCase()}${String(globalPosition).padStart(2, '0')}]`;
-                
-                // Determine venue label and abbreviation
-                let venueLabel = 'Venue';
-                let venueAbbr = pub.venue;
-                if (pub.type === 'journal') {
-                    venueLabel = 'Journal';
-                } else if (pub.type === 'conference') {
-                    venueLabel = 'Conference';
-                } else if (pub.type === 'patent') {
-                    venueLabel = 'Patent';
-                } else if (pub.type === 'book') {
-                    venueLabel = 'Book';
-                }
+                const yearText = pub.year_text || pub.year || '';
+                const notePill = pub.note
+                    ? `<span class="text-xs px-2 py-0.5 rounded bg-gray-100 text-gray-600 dark:bg-gray-700 dark:text-gray-400">${pub.note}</span>`
+                    : '';
 
-                // Venue abbreviations
-                if (pub.venue.includes('IEEE Transactions on Intelligent Vehicles')) {
-                    venueAbbr = 'IEEE Transactions on Intelligent Vehicles (T-IV)';
-                } else if (pub.venue.includes('IEEE Transactions on Intelligent Transportation Systems')) {
-                    venueAbbr = 'IEEE Transactions on Intelligent Transportation Systems (T-ITS)';
-                } else if (pub.venue.includes('IEEE Internet of Things Journal')) {
-                    venueAbbr = 'IEEE Internet of Things Journal (IoT-J)';
-                } else if (pub.venue.includes('IEEE Transactions on Vehicular Technology')) {
-                    venueAbbr = 'IEEE Transactions on Vehicular Technology (TVT)';
-                } else if (pub.venue.includes('IEEE Intelligent Vehicles Symposium')) {
-                    venueAbbr = 'IEEE Intelligent Vehicles Symposium (IV)';
-                } else if (pub.venue.includes('IEEE International Conference on Intelligent Transportation Systems')) {
-                    venueAbbr = 'IEEE International Conference on Intelligent Transportation Systems (ITSC)';
-                }
-
-                // Check if this is a book chapter (venue starts with "In:")
-                const is_book_chapter = pub.venue && pub.venue.startsWith('In:');
-                
                 return `
-                    <div class="publication-item bg-white dark:bg-gray-800 rounded-lg shadow-sm p-6 mb-4 hover:shadow-md transition-all duration-200 border-l-4 border-blue-500">
-                        <div class="flex items-start justify-between">
-                            <div class="flex-1">
-                                <div class="flex items-start gap-3 mb-3">
-                                    <span class="text-2xl">${typePrefix}</span>
-                                    <span class="font-mono text-sm text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded">${refNumber}</span>
-                                    <h3 class="publication-title text-lg font-semibold text-gray-900 dark:text-white flex-1 leading-tight">
-                                        ${pub.title}
-                                    </h3>
-                                </div>
-                                
-                                <div class="ml-8 text-sm text-gray-600 dark:text-gray-300 space-y-1">
-                                    <p><strong>Authors:</strong> ${pub.authors}</p>
-                                    <p><strong>${venueLabel}:</strong> ${venueAbbr}${pub.type !== 'patent' && !is_book_chapter ? `, ${pub.year_text || pub.year}` : ''}${pub.note ? ` (${pub.note})` : ''}</p>
-                                </div>
-                                
-                                <div class="ml-8 mt-3 flex flex-wrap gap-2">
-                                    ${linksHtml}
-                                    <button onclick="copyBibTeX('${pub.yaml_id}')" 
-                                            class="inline-flex items-center gap-1 px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-700 dark:text-yellow-300 rounded-full text-sm hover:bg-yellow-200 dark:hover:bg-yellow-800 transition-colors">
-                                        <i class="fas fa-code text-xs"></i>
-                                        BibTeX
-                                    </button>
-                                </div>
-                            </div>
+                    <div class="bg-white dark:bg-gray-900 rounded-lg p-6 border border-gray-200 dark:border-gray-700">
+                        <div class="flex flex-wrap items-center gap-2 mb-2">
+                            <span class="text-xs font-semibold uppercase tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">${venueBadgeText}</span>
+                            ${yearText ? `<span class="text-xs text-gray-500 dark:text-gray-400">${yearText}</span>` : ''}
+                            ${notePill}
                         </div>
+                        <p class="text-gray-900 dark:text-white font-medium mb-1 leading-snug">${pub.title}</p>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">${authorsBolded}</p>
+                        ${detailLine}
+                        ${linksLine}
                     </div>
                 `;
             }).join('');
@@ -503,133 +513,6 @@
             // Scroll to list
             const list = document.getElementById('publications-list');
             if (list) list.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-
-        // Show BibTeX popup
-        function copyBibTeX(pubId) {
-            console.log('copyBibTeX called with ID:', pubId);
-            const pub = publications.find(p => p.yaml_id === pubId);
-            console.log('Found publication:', pub);
-            if (!pub) {
-                console.error('Publication not found for yaml_id:', pubId);
-                return;
-            }
-
-            let bibtex = '';
-            switch(pub.type) {
-                case 'conference':
-                    bibtex = `@inproceedings{${pubId},
-  title={${pub.title}},
-  author={${pub.authors}},
-  booktitle={${pub.venue}},
-  year={${pub.year}}
-}`;
-                    break;
-                case 'journal':
-                    bibtex = `@article{${pubId},
-  title={${pub.title}},
-  author={${pub.authors}},
-  journal={${pub.venue}},
-  year={${pub.year}}
-}`;
-                    break;
-                case 'patent':
-                    bibtex = `@misc{${pubId},
-  title={${pub.title}},
-  author={${pub.authors}},
-  howpublished={Patent ${pub.venue}},
-  year={${pub.year}}
-}`;
-                    break;
-                case 'book':
-                    bibtex = `@book{${pubId},
-  title={${pub.title}},
-  author={${pub.authors}},
-  publisher={${pub.venue}},
-  year={${pub.year}}
-}`;
-                    break;
-                default:
-                    bibtex = `@misc{${pubId},
-  title={${pub.title}},
-  author={${pub.authors}},
-  howpublished={${pub.venue}},
-  year={${pub.year}}
-}`;
-            }
-
-            // Create and show popup modal
-            console.log('Calling showBibTeXModal with title:', pub.title, 'and bibtex:', bibtex);
-            showBibTeXModal(pub.title, bibtex);
-        }
-
-        // Show BibTeX modal popup
-        function showBibTeXModal(title, bibtex) {
-            console.log('showBibTeXModal called with title:', title);
-            // Remove existing modal if any
-            const existingModal = document.getElementById('bibtex-modal');
-            if (existingModal) {
-                existingModal.remove();
-            }
-
-            // Create modal HTML
-            const modalHTML = `
-                <div id="bibtex-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-                    <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl max-w-2xl w-full mx-4 max-h-[80vh] overflow-hidden">
-                        <div class="flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-700">
-                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">BibTeX - ${title}</h3>
-                            <button onclick="closeBibTeXModal()" class="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300">
-                                <i class="fas fa-times text-xl"></i>
-                            </button>
-                        </div>
-                        <div class="p-4 overflow-y-auto max-h-[60vh]">
-                            <pre class="bg-gray-100 dark:bg-gray-700 p-4 rounded-lg text-sm font-mono text-gray-800 dark:text-gray-200 whitespace-pre-wrap overflow-x-auto">${bibtex}</pre>
-                            <div class="flex justify-end gap-2">
-                                <button onclick="closeBibTeXModal()" class="px-4 py-2 text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 transition-colors">
-                                    Close
-                                </button>
-                                <button onclick="copyBibTeXToClipboard()" data-bibtex='${bibtex.replace(/'/g, "&apos;")}' class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
-                                    <i class="fas fa-copy mr-2"></i>Copy to Clipboard
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            `;
-
-            // Add modal to page
-            document.body.insertAdjacentHTML('beforeend', modalHTML);
-        }
-
-        // Close BibTeX modal
-        function closeBibTeXModal() {
-            const modal = document.getElementById('bibtex-modal');
-            if (modal) {
-                modal.remove();
-            }
-        }
-
-        // Copy BibTeX to clipboard
-        function copyBibTeXToClipboard() {
-            const button = event.target.closest('button');
-            const bibtex = button.getAttribute('data-bibtex');
-            
-            navigator.clipboard.writeText(bibtex).then(() => {
-                // Show success feedback
-                const originalText = button.innerHTML;
-                button.innerHTML = '<i class="fas fa-check mr-2"></i>Copied!';
-                button.classList.add('bg-green-600', 'text-white');
-                button.classList.remove('bg-blue-600');
-                
-                setTimeout(() => {
-                    button.innerHTML = originalText;
-                    button.classList.remove('bg-green-600', 'text-white');
-                    button.classList.add('bg-blue-600');
-                }, 2000);
-            }).catch(err => {
-                console.error('Failed to copy BibTeX:', err);
-                alert('Failed to copy BibTeX to clipboard');
-            });
         }
 
         // Initialize when DOM is loaded and publications data is available

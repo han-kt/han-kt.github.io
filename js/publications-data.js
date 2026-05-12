@@ -1,7 +1,7 @@
 // Modern Academic Homepage JavaScript
-// Generated on 2026-04-29 08:45:13
-// Total publications: 218
-// Breakdown: 71 conferences, 8 presentations, 20 journals, 116 patents, 3 books
+// Generated on 2026-05-12 09:27:11
+// Total publications: 219
+// Breakdown: 72 conferences, 8 presentations, 20 journals, 116 patents, 3 books
 
 // Comprehensive publications data from YAML files
 const publications = [
@@ -297,6 +297,23 @@ const publications = [
         "generative-ai",
         "connected-autonomous-vehicles",
         "artificial-intelligence"
+]
+    },
+    {
+        yaml_id: "Han2026ITSC",
+        title: "Tonic Meta-Control for Adaptive Safety-Compute Allocation via Persistent Vigilance Dynamics",
+        authors: "K. Han, Y. Chen, N. Ammar, and O. Altintas",
+        venue: "2026 IEEE 29th International Conference on Intelligent Transportation Systems (ITSC)",
+        year: 2026,
+        type: "conference",
+        type_label: "Conference"
+,
+        note: "Accepted"
+,
+        research_area: [
+        "intelligent-transportation",
+        "connected-autonomous-vehicles",
+        "edge-computing"
 ]
     },
     {
