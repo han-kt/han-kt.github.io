@@ -1,5 +1,5 @@
 // Modern Academic Homepage JavaScript
-// Generated on 2026-05-15 08:14:55
+// Generated on 2026-05-15 08:17:39
 // Total publications: 220
 // Breakdown: 73 conferences, 8 presentations, 20 journals, 116 patents, 3 books
 
@@ -308,7 +308,7 @@ const publications = [
         type: "conference",
         type_label: "Conference"
 ,
-        note: "Accepted (Paper #25002)"
+        note: "Accepted"
 ,
         research_area: [
         "edge-computing",
