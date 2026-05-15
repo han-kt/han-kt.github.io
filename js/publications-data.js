@@ -1,7 +1,7 @@
 // Modern Academic Homepage JavaScript
-// Generated on 2026-05-12 10:14:02
-// Total publications: 219
-// Breakdown: 72 conferences, 8 presentations, 20 journals, 116 patents, 3 books
+// Generated on 2026-05-15 08:14:55
+// Total publications: 220
+// Breakdown: 73 conferences, 8 presentations, 20 journals, 116 patents, 3 books
 
 // Comprehensive publications data from YAML files
 const publications = [
@@ -297,6 +297,22 @@ const publications = [
         "generative-ai",
         "connected-autonomous-vehicles",
         "artificial-intelligence"
+]
+    },
+    {
+        yaml_id: "Dimou2026VTC",
+        title: "AI/ML Assisted Precoding Matrix Compression In 5G NR: Training Strategies and Data Requirements",
+        authors: "K. Dimou, K. Han, and T. Shimizu",
+        venue: "2026 IEEE 104th Vehicular Technology Conference (VTC2026-Fall), Boston, MA, USA",
+        year: 2026,
+        type: "conference",
+        type_label: "Conference"
+,
+        note: "Accepted (Paper #25002)"
+,
+        research_area: [
+        "edge-computing",
+        "v2x-communication"
 ]
     },
     {
