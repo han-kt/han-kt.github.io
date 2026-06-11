@@ -1,10 +1,31 @@
 // Modern Academic Homepage JavaScript
-// Generated on 2026-05-15 08:18:20
-// Total publications: 220
-// Breakdown: 73 conferences, 8 presentations, 20 journals, 116 patents, 3 books
+// Generated on 2026-06-11 13:24:58
+// Total publications: 221
+// Breakdown: 73 conferences, 8 presentations, 20 journals, 117 patents, 3 books
 
 // Comprehensive publications data from YAML files
 const publications = [
+    {
+        yaml_id: "CV_151",
+        title: "Systems and Methods for Requesting Location-Specific Memory Information from Surrounding Vehicles",
+        authors: "Z. Mo, S. Avedisov, A. Moradipari, S. Mishra, K. Han, and N. Ammar",
+        venue: "U.S. Patent Appl. 19/704,946, Jun. 11, 2026",
+        year: 2026,
+        type: "patent",
+        type_label: "Patent"
+,
+        research_area: [
+        "connected-autonomous-vehicles",
+        "intelligent-transportation",
+        "generative-ai"
+]
+,
+        application_number: "19/704,946"
+,
+        patent_type: "application"
+,
+        filing_date: "2026-06-11"
+    },
     {
         yaml_id: "CV_150",
         title: "Systems and Methods for Routing a Prompt to a Learning Model Using a Graph-Based Classifier",
