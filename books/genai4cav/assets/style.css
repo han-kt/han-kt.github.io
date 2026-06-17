@@ -420,4 +420,10 @@ footer {
     }
 
     .lab-facts { grid-template-columns: 1fr 1fr; }
+
+    /* Let the structure table fit a phone: shrink type, drop fixed widths */
+    table.structure { font-size: 0.8rem; }
+    .structure .layer-cell,
+    .structure .part-cell { width: auto; }
+    table.structure td { padding: 0.45rem 0.5rem; }
 }
