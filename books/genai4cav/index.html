@@ -37,6 +37,7 @@
         <ul>
             <li><a href="#book" class="active">The Book</a></li>
             <li><a href="#labs">Labs</a></li>
+            <li><a href="#contents">Contents</a></li>
             <li><a href="#wiley">Wiley Resources</a></li>
         </ul>
     </nav>
@@ -62,6 +63,27 @@
             Jupyter notebooks that run locally on a laptop (CPU, Apple&nbsp;Silicon, or CUDA)
             using open-source tools. They are released under the MIT license, so readers and
             instructors can clone, run, and adapt them freely.</p>
+
+            <div class="lab-facts">
+                <div><strong>40+</strong> hands-on labs across the book</div>
+                <div><strong>Local-first</strong> CPU, Apple Silicon, or CUDA</div>
+                <div><strong>No API keys</strong> open-source models, no cloud</div>
+                <div><strong>MIT licensed</strong> clone, run, and adapt</div>
+            </div>
+
+            <p class="lab-build-intro">A sample of what the labs build, grounded in
+            connected and autonomous vehicle scenarios:</p>
+            <ul class="lab-list">
+                <li><span class="tag">Ch 3</span> Predict vehicle trajectories with diffusion models</li>
+                <li><span class="tag">Ch 5</span> Answer questions about a driving scene with a vision-language model</li>
+                <li><span class="tag">Ch 8</span> Build a retrieval-augmented generation pipeline for context grounding</li>
+                <li><span class="tag">Ch 9</span> Drive vehicle actions through LLM function calling</li>
+                <li><span class="tag">Ch 15</span> Negotiate a platoon maneuver between agents over the A2A protocol</li>
+                <li><span class="tag">Ch 16</span> Coordinate a work-zone scenario with MCP and A2A together</li>
+                <li><span class="tag">Ch 17</span> Fine-tune a small model on a CAV task</li>
+                <li><span class="tag">Ch 22</span> Add a runtime safety guardrail in a driving simulator</li>
+            </ul>
+
             <p class="cta-row">
                 <a class="btn btn-github"
                    href="https://github.com/han-kt/genai-for-cav-labs"
@@ -74,6 +96,143 @@ cd genai-for-cav-labs
 uv sync          # in a chosen lab directory
 uv run jupyter lab</code></pre>
             <p>Each lab's <code>README</code> covers setup and prerequisites in detail.</p>
+        </section>
+
+        <section id="contents">
+            <h2>What's Inside</h2>
+            <p>A look at the book's full scope, to help readers and instructors decide
+            whether it fits their needs. It is organized into seven parts spanning 22
+            chapters, grouped into four conceptual layers that progress from generative
+            and multimodal models, through the model interface and agentic systems, to
+            adaptation and validation. Each chapter pairs concepts with a CAV-grounded
+            application and a runnable lab. Chapters are largely self-contained, so the
+            structure below also maps the reading and teaching paths that follow.</p>
+
+            <h3 class="sub">Parts &amp; Chapters</h3>
+            <p>The seven parts and their chapters, grouped into the book's four
+            conceptual layers.</p>
+            <div class="table-wrap">
+            <table class="structure">
+                <thead>
+                    <tr><th>Layer</th><th>Part</th><th>Chapters</th></tr>
+                </thead>
+                <tbody>
+                    <tr class="layer-gen">
+                        <td rowspan="2" class="layer-cell">Generative &amp; Multimodal Models</td>
+                        <td class="part-cell"><strong>Part 1</strong><span>Foundations</span></td>
+                        <td>1. Introduction to Generative AI for CAV Systems<br>2. Large Language Models</td>
+                    </tr>
+                    <tr class="layer-gen">
+                        <td class="part-cell"><strong>Part 2</strong><span>Multimodal Representation</span></td>
+                        <td>3. Diffusion and Flow Matching<br>4. GANs, VAEs, and Autoregressive Models<br>5. Vision-Language Models<br>6. Video Large Language Models</td>
+                    </tr>
+                    <tr class="layer-interface">
+                        <td class="layer-cell">Model Interface</td>
+                        <td class="part-cell"><strong>Part 3</strong><span>Language-Based Interaction</span></td>
+                        <td>7. Prompt Engineering<br>8. Retrieval-Augmented Generation<br>9. Function Calling and Tool Use</td>
+                    </tr>
+                    <tr class="layer-agentic">
+                        <td rowspan="2" class="layer-cell">Agentic Systems &amp; Protocols</td>
+                        <td class="part-cell"><strong>Part 4</strong><span>Agentic Intelligence</span></td>
+                        <td>10. GenAI Agent Architectures<br>11. Multi-Agent Systems<br>12. Orchestration Frameworks</td>
+                    </tr>
+                    <tr class="layer-agentic">
+                        <td class="part-cell"><strong>Part 5</strong><span>Communication Protocols</span></td>
+                        <td>13. Communication Protocols<br>14. Model Context Protocol (MCP)<br>15. Agent-to-Agent (A2A) Protocols<br>16. Capability Composition with MCP and A2A</td>
+                    </tr>
+                    <tr class="layer-validation">
+                        <td rowspan="2" class="layer-cell">Adaptation &amp; Validation</td>
+                        <td class="part-cell"><strong>Part 6</strong><span>Adaptation and Deployment</span></td>
+                        <td>17. Supervised Fine-Tuning<br>18. Reinforcement Learning Fine-Tuning<br>19. Knowledge Distillation</td>
+                    </tr>
+                    <tr class="layer-validation">
+                        <td class="part-cell"><strong>Part 7</strong><span>Validation and Safety</span></td>
+                        <td>20. Simulation Platforms<br>21. Evaluation of Generative AI Systems<br>22. Ethical and Safety Considerations</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+            <p class="note">Appendices A&ndash;E (in the printed book) consolidate the
+            mathematical, probabilistic, and reinforcement learning foundations, an
+            automotive&ndash;AI concept bridge, and a glossary.</p>
+
+            <h3 class="sub">Reading Pathways</h3>
+            <p>Different readers can enter the material along different paths:</p>
+            <div class="pathways">
+                <div class="pathway">
+                    <h4>Graduate / Research</h4>
+                    <p>Read all seven parts in sequence for comprehensive theoretical
+                    and practical coverage; the best fit for coursework and research.</p>
+                </div>
+                <div class="pathway">
+                    <h4>Upper-Division Undergraduate</h4>
+                    <p>An applied LLM-systems track: Parts 1, 3, 4, and 7, with the
+                    multimodal models of Part 2 as optional enrichment.</p>
+                </div>
+                <div class="pathway">
+                    <h4>Industry Practitioner</h4>
+                    <p>Foundations, then language interaction, agentic systems and
+                    protocols, and adaptation and validation; consult Part 2 as
+                    specific applications require it.</p>
+                </div>
+            </div>
+
+            <h3 class="sub">Sample Course Schedules</h3>
+            <p>Two example one-semester (15-week) layouts. De-branded syllabus
+            templates for semester and quarter calendars, plus a professional short
+            course, are part of the instructor materials.</p>
+
+            <div class="schedules">
+                <div class="schedule-block">
+                    <h4>Graduate Seminar: Full Sequence</h4>
+                    <table class="schedule">
+                        <thead><tr><th>Wk</th><th>Topic</th><th>Ch.</th></tr></thead>
+                        <tbody>
+                            <tr><td>1</td><td>Introduction to Generative AI for CAVs</td><td>1</td></tr>
+                            <tr><td>2</td><td>Large Language Models</td><td>2</td></tr>
+                            <tr><td>3</td><td>Diffusion and Flow Matching</td><td>3</td></tr>
+                            <tr><td>4</td><td>GANs, VAEs, Autoregressive Models</td><td>4</td></tr>
+                            <tr><td>5</td><td>Vision-Language and Video Models</td><td>5&ndash;6</td></tr>
+                            <tr><td>6</td><td>Prompt Engineering</td><td>7</td></tr>
+                            <tr><td>7</td><td>Retrieval-Augmented Generation</td><td>8</td></tr>
+                            <tr><td>8</td><td>Function Calling and Tool Use</td><td>9</td></tr>
+                            <tr><td>9</td><td>GenAI Agent Architectures</td><td>10</td></tr>
+                            <tr><td>10</td><td>Multi-Agent Systems, Orchestration</td><td>11&ndash;12</td></tr>
+                            <tr><td>11</td><td>Communication Protocols, MCP</td><td>13&ndash;14</td></tr>
+                            <tr><td>12</td><td>A2A and Capability Composition</td><td>15&ndash;16</td></tr>
+                            <tr><td>13</td><td>Supervised and RL Fine-Tuning</td><td>17&ndash;18</td></tr>
+                            <tr><td>14</td><td>Knowledge Distillation, Simulation</td><td>19&ndash;20</td></tr>
+                            <tr><td>15</td><td>Evaluation and Ethics; project</td><td>21&ndash;22</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="schedule-block">
+                    <h4>Undergraduate: LLM-Systems Track</h4>
+                    <table class="schedule">
+                        <thead><tr><th>Wk</th><th>Topic</th><th>Ch.</th></tr></thead>
+                        <tbody>
+                            <tr><td>1</td><td>Introduction to Generative AI for CAVs</td><td>1</td></tr>
+                            <tr><td>2</td><td>Large Language Models</td><td>2</td></tr>
+                            <tr><td>3</td><td>How LLMs Generate</td><td>2</td></tr>
+                            <tr><td>4</td><td>Prompt Engineering</td><td>7</td></tr>
+                            <tr><td>5</td><td>Retrieval-Augmented Generation</td><td>8</td></tr>
+                            <tr><td>6</td><td>Function Calling and Tool Use</td><td>9</td></tr>
+                            <tr><td>7</td><td>Review and midterm; project kickoff</td><td>&ndash;</td></tr>
+                            <tr><td>8</td><td>GenAI Agent Architectures</td><td>10</td></tr>
+                            <tr><td>9</td><td>Multi-Agent Systems</td><td>11</td></tr>
+                            <tr><td>10</td><td>Orchestration Frameworks</td><td>12</td></tr>
+                            <tr><td>11</td><td>Connecting Agents: MCP</td><td>14</td></tr>
+                            <tr><td>12</td><td>Adapting Models: Fine-Tuning</td><td>17</td></tr>
+                            <tr><td>13</td><td>Simulation Platforms</td><td>20</td></tr>
+                            <tr><td>14</td><td>Evaluation</td><td>21</td></tr>
+                            <tr><td>15</td><td>Ethics and Safety; project</td><td>22</td></tr>
+                        </tbody>
+                    </table>
+                    <p class="note">Part 2 (Chapters 3&ndash;6) is optional enrichment
+                    for students interested in image, video, and multimodal models.</p>
+                </div>
+            </div>
         </section>
 
         <section id="wiley" class="resources">

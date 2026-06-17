@@ -31,7 +31,7 @@ header {
     background-color: var(--navy);
     color: #ffffff;
     padding: 2.25rem 0 2rem;
-    border-bottom: 4px solid var(--green);
+    border-bottom: 1px solid var(--green);
 }
 
 .header-container {
@@ -133,16 +133,73 @@ section { margin-bottom: 2.75rem; }
 
 .intro p { font-size: 1.08rem; }
 
-/* Labs — the centerpiece: lifted card with the green accent */
+/* Labs — quietly set apart with a faint fill and a hairline border */
 .feature {
     background-color: var(--bg-soft);
     border: 1px solid var(--line);
-    border-left: 5px solid var(--green);
-    border-radius: 8px;
+    border-radius: 2px;
     padding: 2rem 2rem 1.75rem;
 }
 
 .feature h2 { margin-top: 0; }
+
+/* Labs: facts strip */
+.lab-facts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.75rem;
+    margin: 1.25rem 0;
+}
+
+.lab-facts div {
+    background: #ffffff;
+    border: 1px solid var(--line);
+    border-radius: 2px;
+    padding: 0.6rem 0.75rem;
+    font-size: 0.82rem;
+    color: var(--muted);
+    line-height: 1.35;
+}
+
+.lab-facts strong {
+    display: block;
+    color: var(--navy);
+    font-size: 1.05rem;
+    margin-bottom: 0.1rem;
+}
+
+/* Labs: "what you'll build" list */
+.lab-build-intro { margin-bottom: 0.6rem; }
+
+ul.lab-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.4rem 1.25rem;
+    margin: 0 0 0.5rem;
+    padding: 0;
+}
+
+ul.lab-list li {
+    font-size: 0.88rem;
+    color: var(--ink);
+    line-height: 1.4;
+    padding: 0.1rem 0;
+}
+
+ul.lab-list .tag {
+    display: inline-block;
+    min-width: 2.9rem;
+    margin-right: 0.5rem;
+    padding: 0.05rem 0.4rem;
+    background: var(--navy);
+    color: #ffffff;
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 2px;
+    vertical-align: middle;
+}
 
 .note {
     color: var(--muted);
@@ -155,7 +212,7 @@ section { margin-bottom: 2.75rem; }
 pre.code {
     background-color: #0f1b2d;
     color: #e6edf3;
-    border-radius: 6px;
+    border-radius: 3px;
     padding: 1rem 1.25rem;
     overflow-x: auto;
     margin: 0.5rem 0 1rem;
@@ -182,16 +239,16 @@ code {
 
 .btn {
     display: inline-block;
-    padding: 0.7rem 1.4rem;
-    border-radius: 6px;
+    padding: 0.65rem 1.35rem;
+    border-radius: 2px;
     font-weight: 600;
-    font-size: 0.98rem;
+    font-size: 0.96rem;
     text-decoration: none;
-    transition: all 0.15s ease;
-    border: 2px solid transparent;
+    transition: background-color 0.15s ease, color 0.15s ease;
+    border: 1px solid transparent;
 }
 
-.btn:hover { text-decoration: none; transform: translateY(-1px); }
+.btn:hover { text-decoration: none; }
 
 .btn-primary { background-color: var(--navy); color: #ffffff; }
 .btn-primary:hover { background-color: #00284f; color: #ffffff; }
@@ -201,6 +258,121 @@ code {
 
 .btn-outline { background-color: #ffffff; color: var(--navy); border-color: var(--navy); }
 .btn-outline:hover { background-color: var(--navy); color: #ffffff; }
+
+/* Courses / reading flow */
+h3.sub {
+    color: var(--navy);
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin: 2rem 0 0.9rem;
+}
+
+/* Book structure table: Layer (merged) -> Part -> Chapters */
+.table-wrap { overflow-x: auto; margin: 0.5rem 0 1rem; }
+
+table.structure {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.88rem;
+}
+
+table.structure th {
+    text-align: left;
+    background: var(--navy);
+    color: #ffffff;
+    font-weight: 600;
+    padding: 0.45rem 0.7rem;
+}
+
+table.structure td {
+    padding: 0.55rem 0.7rem;
+    border: 1px solid var(--line);
+    vertical-align: top;
+    color: var(--ink);
+    line-height: 1.55;
+}
+
+.structure .layer-cell {
+    font-weight: 700;
+    color: var(--navy);
+    width: 9rem;
+}
+
+.structure .part-cell { width: 10rem; }
+.structure .part-cell strong { display: block; color: var(--navy); }
+.structure .part-cell span { color: var(--muted); font-size: 0.82rem; }
+
+/* Layer tints on the merged layer cell, matching the book's figure */
+.layer-gen .layer-cell        { background: #ebf2fa; }
+.layer-interface .layer-cell  { background: #ebf8f0; }
+.layer-agentic .layer-cell    { background: #faf2eb; }
+.layer-validation .layer-cell { background: #f5ebf5; }
+
+/* Reading pathways */
+.pathways {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 0.5rem 0 1rem;
+}
+
+.pathway {
+    background: #ffffff;
+    border: 1px solid var(--line);
+    border-radius: 2px;
+    padding: 1rem 1.1rem;
+}
+
+.pathway h4 {
+    color: var(--navy);
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+}
+
+.pathway p { font-size: 0.9rem; color: var(--muted); margin-bottom: 0; }
+
+/* Sample course schedule tables */
+.schedules {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.schedule-block h4 {
+    color: var(--navy);
+    font-size: 1rem;
+    margin-bottom: 0.6rem;
+}
+
+table.schedule {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.84rem;
+}
+
+table.schedule th {
+    text-align: left;
+    background: var(--navy);
+    color: #fff;
+    padding: 0.35rem 0.55rem;
+    font-weight: 600;
+}
+
+table.schedule td {
+    padding: 0.3rem 0.55rem;
+    border-bottom: 1px solid var(--line);
+    color: var(--ink);
+    vertical-align: top;
+}
+
+table.schedule tbody tr:nth-child(even) { background: var(--bg-soft); }
+
+table.schedule td:first-child,
+table.schedule th:first-child { width: 2em; color: var(--muted); }
+
+table.schedule td:last-child,
+table.schedule th:last-child { width: 3.5em; white-space: nowrap; }
 
 /* Footer */
 footer {
@@ -240,4 +412,12 @@ footer {
     .feature { padding: 1.5rem 1.25rem; }
 
     .btn { display: block; text-align: center; }
+
+    .pathways,
+    .schedules,
+    ul.lab-list {
+        grid-template-columns: 1fr;
+    }
+
+    .lab-facts { grid-template-columns: 1fr 1fr; }
 }
