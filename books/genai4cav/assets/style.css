@@ -1,4 +1,5 @@
-/* Style sheet for GenAI for CAVs Companion Website - Wiley-style design */
+/* Book landing page — Generative AI for Connected and Autonomous Vehicles */
+/* Clean, Wiley-leaning look: sans-serif, white, navy anchor + green accent. */
 
 /* Reset and base styles */
 * {
@@ -7,255 +8,236 @@
     padding: 0;
 }
 
+:root {
+    --navy: #003366;
+    --blue: #0066cc;
+    --green: #0c8242;      /* subtle Wiley-leaning accent */
+    --ink: #2a2a2a;
+    --muted: #5a6472;
+    --line: #e2e6ea;
+    --bg-soft: #f6f8fa;
+}
+
 body {
-    font-family: Georgia, "Times New Roman", Times, serif;
-    line-height: 1.6;
-    color: #333;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+    color: var(--ink);
     background-color: #ffffff;
     padding: 0;
 }
 
-/* Header and Navigation */
+/* Header */
 header {
-    background-color: #003366;
-    color: white;
-    padding: 1.5rem 0;
-    border-bottom: 3px solid #0066cc;
+    background-color: var(--navy);
+    color: #ffffff;
+    padding: 2.25rem 0 2rem;
+    border-bottom: 4px solid var(--green);
 }
 
 .header-container {
-    max-width: 1200px;
+    max-width: 960px;
     margin: 0 auto;
     padding: 0 2rem;
 }
 
 header h1 {
-    color: white;
+    color: #ffffff;
     font-size: 2rem;
-    margin-bottom: 0.5rem;
-    border-bottom: none;
-    padding-bottom: 0;
-}
-
-header .subtitle {
-    color: #e0e0e0;
-    font-size: 1.1rem;
-    font-style: italic;
-    margin-bottom: 0.25rem;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    margin-bottom: 0.6rem;
 }
 
 header .author {
-    color: #cccccc;
-    font-size: 0.95rem;
+    color: #e8edf2;
+    font-size: 1.05rem;
+    margin-bottom: 0.2rem;
 }
 
-/* Navigation Menu */
+header .isbn {
+    color: #aebccd;
+    font-size: 0.85rem;
+    letter-spacing: 0.02em;
+}
+
+/* Navigation */
 nav {
-    background-color: #f5f5f5;
-    border-bottom: 2px solid #cccccc;
-    padding: 0;
+    background-color: #ffffff;
+    border-bottom: 1px solid var(--line);
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 nav ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    max-width: 1200px;
+    max-width: 960px;
     margin: 0 auto;
     padding: 0 2rem;
 }
 
-nav li {
-    margin: 0;
-    padding: 0;
-    position: relative;
-}
-
-nav li:before {
-    content: none;
-}
+nav li:before { content: none; }
 
 nav a {
     display: block;
-    padding: 1rem 1.5rem;
-    color: #003366;
+    padding: 0.95rem 1.25rem;
+    color: var(--navy);
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 0.95rem;
     border-bottom: 3px solid transparent;
-    transition: all 0.2s ease;
+    transition: all 0.15s ease;
 }
 
-nav a:hover {
-    background-color: #e8e8e8;
-    border-bottom-color: #0066cc;
-    color: #0066cc;
-}
-
+nav a:hover,
 nav a.active {
-    border-bottom-color: #0066cc;
-    color: #0066cc;
+    border-bottom-color: var(--green);
+    color: var(--green);
 }
 
-/* Main Container */
+/* Main container */
 .container {
-    max-width: 1200px;
+    max-width: 960px;
     margin: 0 auto;
-    padding: 2rem;
-    background-color: #ffffff;
-}
-
-/* Welcome Section */
-.welcome {
-    background-color: #f9f9f9;
-    border-left: 4px solid #0066cc;
-    padding: 1.5rem 2rem;
-    margin-bottom: 2rem;
-}
-
-.welcome p {
-    font-size: 1.1rem;
-    color: #333;
-    margin: 0;
+    padding: 2.5rem 2rem 1rem;
 }
 
 /* Typography */
-h1 {
-    color: #003366;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    border-bottom: none;
-    padding-bottom: 0;
-}
-
 h2 {
-    color: #003366;
+    color: var(--navy);
     font-size: 1.5rem;
-    margin-top: 2rem;
+    font-weight: 700;
     margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid #cccccc;
-}
-
-h3 {
-    color: #0066cc;
-    font-size: 1.2rem;
-    margin-top: 1.5rem;
-    margin-bottom: 0.75rem;
+    letter-spacing: -0.01em;
 }
 
 p {
-    color: #333;
+    color: var(--ink);
     margin-bottom: 1rem;
-    font-size: 1rem;
+    font-size: 1.02rem;
 }
 
-/* Links */
 a {
-    color: #0066cc;
+    color: var(--blue);
     text-decoration: none;
-    transition: color 0.2s ease;
+    transition: color 0.15s ease;
 }
 
-a:hover {
-    color: #003366;
-    text-decoration: underline;
-}
+a:hover { color: var(--navy); text-decoration: underline; }
 
 /* Sections */
-section {
-    margin-bottom: 2.5rem;
+section { margin-bottom: 2.75rem; }
+
+.intro p { font-size: 1.08rem; }
+
+/* Labs — the centerpiece: lifted card with the green accent */
+.feature {
+    background-color: var(--bg-soft);
+    border: 1px solid var(--line);
+    border-left: 5px solid var(--green);
+    border-radius: 8px;
+    padding: 2rem 2rem 1.75rem;
 }
 
-/* Lists */
-ul {
-    list-style: none;
-    padding-left: 0;
+.feature h2 { margin-top: 0; }
+
+.note {
+    color: var(--muted);
+    font-size: 0.92rem;
+    font-style: italic;
+    margin-bottom: 1.25rem;
 }
 
-section ul li {
-    margin-bottom: 0.75rem;
-    padding-left: 1.5rem;
-    position: relative;
+/* Code block */
+pre.code {
+    background-color: #0f1b2d;
+    color: #e6edf3;
+    border-radius: 6px;
+    padding: 1rem 1.25rem;
+    overflow-x: auto;
+    margin: 0.5rem 0 1rem;
+    font-size: 0.88rem;
+    line-height: 1.5;
 }
 
-section ul li:before {
-    content: "•";
-    position: absolute;
-    left: 0;
-    color: #0066cc;
-    font-weight: bold;
-    font-size: 1.2rem;
+pre.code code {
+    font-family: "SF Mono", "Menlo", "Consolas", "Liberation Mono", monospace;
+    color: inherit;
+    background: none;
 }
 
-section ul li strong {
-    color: #003366;
+code {
+    font-family: "SF Mono", "Menlo", "Consolas", monospace;
+    font-size: 0.9em;
+    background-color: #eef1f4;
+    padding: 0.1em 0.35em;
+    border-radius: 4px;
 }
+
+/* Buttons */
+.cta-row { margin: 1.25rem 0 0.5rem; }
+
+.btn {
+    display: inline-block;
+    padding: 0.7rem 1.4rem;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.98rem;
+    text-decoration: none;
+    transition: all 0.15s ease;
+    border: 2px solid transparent;
+}
+
+.btn:hover { text-decoration: none; transform: translateY(-1px); }
+
+.btn-primary { background-color: var(--navy); color: #ffffff; }
+.btn-primary:hover { background-color: #00284f; color: #ffffff; }
+
+.btn-github { background-color: var(--green); color: #ffffff; }
+.btn-github:hover { background-color: #0a6e38; color: #ffffff; }
+
+.btn-outline { background-color: #ffffff; color: var(--navy); border-color: var(--navy); }
+.btn-outline:hover { background-color: var(--navy); color: #ffffff; }
 
 /* Footer */
 footer {
-    background-color: #f5f5f5;
-    border-top: 2px solid #cccccc;
-    margin-top: 3rem;
-    padding: 1.5rem 2rem;
+    background-color: var(--bg-soft);
+    border-top: 1px solid var(--line);
+    margin-top: 2rem;
+    padding: 1.75rem 2rem;
     text-align: center;
-    color: #666;
-    font-size: 0.9rem;
+    color: var(--muted);
+    font-size: 0.88rem;
 }
 
-/* Resource Boxes */
-.resource-box {
-    background-color: #f9f9f9;
-    border: 1px solid #e0e0e0;
-    padding: 1.5rem;
-    margin-bottom: 1rem;
-    border-left: 4px solid #0066cc;
-}
-
-.resource-box h3 {
-    margin-top: 0;
-    margin-bottom: 0.75rem;
-}
-
-.resource-box p {
-    margin-bottom: 0.5rem;
-}
-
-/* Responsive design */
+/* Responsive */
 @media (max-width: 768px) {
     .header-container,
     .container,
     nav ul {
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
     }
-    
-    header h1 {
-        font-size: 1.5rem;
-    }
-    
-    nav ul {
-        flex-direction: column;
-    }
-    
+
+    header h1 { font-size: 1.6rem; }
+
+    nav ul { flex-direction: column; }
+
     nav a {
-        border-bottom: 1px solid #cccccc;
+        border-bottom: 1px solid var(--line);
         border-left: 3px solid transparent;
     }
-    
-    nav a:hover {
-        border-left-color: #0066cc;
-        border-bottom-color: #cccccc;
+
+    nav a:hover,
+    nav a.active {
+        border-left-color: var(--green);
+        border-bottom-color: var(--line);
     }
-    
-    h1 {
-        font-size: 1.75rem;
-    }
-    
-    h2 {
-        font-size: 1.3rem;
-    }
-    
-    .welcome {
-        padding: 1rem 1.5rem;
-    }
+
+    .feature { padding: 1.5rem 1.25rem; }
+
+    .btn { display: block; text-align: center; }
 }

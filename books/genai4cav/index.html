@@ -3,27 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Generative AI for Connected and Autonomous Vehicles - Companion Website</title>
+    <title>Generative AI for Connected and Autonomous Vehicles</title>
     <link rel="stylesheet" href="assets/style.css">
-    
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GEG5GDGV8P"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
-        
+
         gtag('js', new Date());
-        
-        // Analytics enabled immediately with privacy settings
-        
-        // Respect Do Not Track
+
         if (navigator.doNotTrack == "1" || window.doNotTrack == "1" || navigator.msDoNotTrack == "1") {
             window['ga-disable-G-GEG5GDGV8P'] = true;
             gtag('consent', 'update', {
                 'analytics_storage': 'denied'
             });
         }
-        
+
         gtag('config', 'G-GEG5GDGV8P', {'anonymize_ip': true});
     </script>
 </head>
@@ -31,81 +28,69 @@
     <header>
         <div class="header-container">
             <h1>Generative AI for Connected and Autonomous Vehicles</h1>
-            <p class="subtitle">Companion Website</p>
             <p class="author">by Kyungtae Han</p>
+            <p class="isbn">ISBN 978-1-394-42668-3 &middot; Wiley</p>
         </div>
     </header>
 
     <nav>
         <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="#supplementary">Supplementary Materials</a></li>
-            <li><a href="#resources">Resources</a></li>
-            <li><a href="#instructor">Instructor Resources</a></li>
+            <li><a href="#book" class="active">The Book</a></li>
+            <li><a href="#labs">Labs</a></li>
+            <li><a href="#wiley">Wiley Resources</a></li>
         </ul>
     </nav>
 
     <div class="container">
-        <section class="welcome">
-            <p>Welcome to the companion website for <strong>Generative AI for Connected and Autonomous Vehicles</strong> by <strong>Kyungtae Han</strong>. 
-            This website provides access to supplementary materials, code examples, and instructor resources 
-            to support your learning and teaching experience.</p>
+        <section id="book" class="intro">
+            <p>This book is a practical, applications-first guide to generative AI for
+            connected and autonomous vehicle (CAV) systems, from large language models and
+            multimodal generative models through prompt engineering, retrieval, tool use,
+            agentic systems and protocols, fine-tuning, simulation, evaluation, and safety.
+            The hands-on labs are designed to run locally with open-source software and modest
+            computing resources.</p>
+            <p class="cta-row">
+                <a class="btn btn-primary"
+                   href="https://www.wiley.com/en-us/shop/general-introductory-computer-science/generative-ai-for-connected-and-autonomous-vehicles-p-9781394426683"
+                   target="_blank" rel="noopener noreferrer">Order from Wiley &rarr;</a>
+            </p>
         </section>
 
-        <section id="supplementary">
-            <h2>Supplementary Materials</h2>
-            <p>The appendices from the book are available here as supplementary materials, organized by category:</p>
-            
-            <div class="resource-box">
-                <h3>Mathematical Foundations</h3>
-                <p>Essential mathematical prerequisites (probability, distributions, softmax, cross-entropy, KL divergence)</p>
-            </div>
-            
-            <div class="resource-box">
-                <h3>Domain Background</h3>
-                <p>Essential background for automotive readers new to AI</p>
-            </div>
-            
-            <div class="resource-box">
-                <h3>Method-Specific Background</h3>
-                <p>Reinforcement learning fundamentals, Bayesian inference and variational methods</p>
-            </div>
-            
-            <div class="resource-box">
-                <h3>Reference Materials</h3>
-                <p>Enhanced glossary and representative large language models comparison</p>
-            </div>
-            
-            <div class="resource-box">
-                <h3>Specialized Topics</h3>
-                <p>Gumbel Top-K trick, Trust Region Policy Optimization (TRPO)</p>
-            </div>
-            
-            <p><em>Note: Appendices are currently being converted to web format. Links will be available soon.</em></p>
+        <section id="labs" class="feature">
+            <h2>Hands-On Labs</h2>
+            <p>The companion labs are the core of the book's hands-on track: self-contained
+            Jupyter notebooks that run locally on a laptop (CPU, Apple&nbsp;Silicon, or CUDA)
+            using open-source tools. They are released under the MIT license, so readers and
+            instructors can clone, run, and adapt them freely.</p>
+            <p class="cta-row">
+                <a class="btn btn-github"
+                   href="https://github.com/han-kt/genai-for-cav-labs"
+                   target="_blank" rel="noopener noreferrer">View Labs on GitHub &rarr;</a>
+            </p>
+            <p class="note">The labs repository becomes publicly available at publication.</p>
+            <p>Quickstart once the repository is available:</p>
+            <pre class="code"><code>git clone https://github.com/han-kt/genai-for-cav-labs.git
+cd genai-for-cav-labs
+uv sync          # in a chosen lab directory
+uv run jupyter lab</code></pre>
+            <p>Each lab's <code>README</code> covers setup and prerequisites in detail.</p>
         </section>
 
-        <section id="resources">
-            <h2>Downloadable Resources</h2>
-            <p>Access code examples used throughout the book:</p>
-            <ul>
-                <li><a href="code/">Code Examples</a> - Implementation code and scripts from the book</li>
-            </ul>
-        </section>
-
-        <section id="instructor">
-            <h2>Instructor Resources</h2>
-            <p>Instructors adopting this book can access additional teaching materials, including presentation slides, 
-            solutions, test banks, and supplementary content through Wiley's protected instructor portal.</p>
-            <p>
-                <a href="https://www.wiley.com/go/HanGENAI/instructor" target="_blank" rel="noopener noreferrer">
-                    Access Instructor Materials →
-                </a>
+        <section id="wiley" class="resources">
+            <h2>Wiley Resources</h2>
+            <p>Instructor and supplementary materials are provided through Wiley. The book's
+            Wiley page is the home for ordering information, supplementary resources, and the
+            instructor materials for adopters.</p>
+            <p class="cta-row">
+                <a class="btn btn-outline"
+                   href="https://www.wiley.com/en-us/shop/general-introductory-computer-science/generative-ai-for-connected-and-autonomous-vehicles-p-9781394426683"
+                   target="_blank" rel="noopener noreferrer">Visit the Wiley book page &rarr;</a>
             </p>
         </section>
     </div>
 
     <footer>
-        <p>&copy; 2026 Generative AI for Connected and Autonomous Vehicles by Kyungtae Han. All rights reserved.</p>
+        <p>&copy; 2026 Kyungtae Han &middot; <em>Generative AI for Connected and Autonomous Vehicles</em> &middot; ISBN 978-1-394-42668-3</p>
     </footer>
 </body>
 </html>
