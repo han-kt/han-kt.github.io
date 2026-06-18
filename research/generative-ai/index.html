@@ -455,11 +455,10 @@
                 );
 
                 // Inline links: View paper / View patent / Book webpage + PDF
-                const isBookChapter = pub.venue && pub.venue.startsWith('In:');
                 const linkLabel = pub.type === 'patent'
                     ? 'View patent'
                     : pub.type === 'book'
-                        ? (isBookChapter ? 'View chapter' : 'Book webpage')
+                        ? 'Book webpage'
                         : 'View paper';
                 const linksParts = [];
                 if (pub.url) {

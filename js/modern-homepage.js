@@ -339,11 +339,10 @@ function renderPublications() {
                         
                         <div class="ml-6 mt-2 flex flex-wrap gap-2">
                             ${pub.url ? (() => {
-                                const isBookChapter = pub.venue && pub.venue.startsWith('In:');
                                 const urlLabel = pub.type === 'patent'
                                     ? 'View patent'
                                     : pub.type === 'book'
-                                        ? (isBookChapter ? 'View chapter' : 'Book webpage')
+                                        ? 'Book webpage'
                                         : 'View paper';
                                 const resolvedUrl = pub.url;
                                 const openInNewTab = pub.url.startsWith('http');
