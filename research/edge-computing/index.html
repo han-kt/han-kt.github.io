@@ -453,11 +453,18 @@
                     '<strong>$1</strong>'
                 );
 
-                // Inline links: View paper / View patent + PDF
-                const linkLabel = pub.type === 'patent' ? 'View patent' : 'View paper';
+                // Inline links: View paper / View patent / Book webpage + PDF
+                const isBookChapter = pub.venue && pub.venue.startsWith('In:');
+                const linkLabel = pub.type === 'patent'
+                    ? 'View patent'
+                    : pub.type === 'book'
+                        ? (isBookChapter ? 'View chapter' : 'Book webpage')
+                        : 'View paper';
                 const linksParts = [];
                 if (pub.url) {
-                    linksParts.push(`<a href="${pub.url}" target="_blank" class="text-sm text-blue-600 dark:text-blue-400 hover:underline">${linkLabel} &rarr;</a>`);
+                    const resolvedUrl = pub.url;
+                    const openInNewTab = pub.url.startsWith('http');
+                    linksParts.push(`<a href="${resolvedUrl}"${openInNewTab ? ' target="_blank"' : ''} class="text-sm text-blue-600 dark:text-blue-400 hover:underline">${linkLabel} &rarr;</a>`);
                 }
                 if (pub.pdf) {
                     linksParts.push(`<a href="${pub.pdf}" target="_blank" class="text-sm text-blue-600 dark:text-blue-400 hover:underline">PDF &rarr;</a>`);

@@ -1,5 +1,5 @@
 // Modern Academic Homepage JavaScript
-// Generated on 2026-06-17 18:30:03
+// Generated on 2026-06-17 23:26:02
 // Total publications: 221
 // Breakdown: 73 conferences, 8 presentations, 20 journals, 117 patents, 3 books
 
@@ -314,7 +314,7 @@ const publications = [
 ,
         year_text: "2026 (Under contract with IEEE-Wiley Press for publication in 2026)"
 ,
-        url: "books/genai4cav/"
+        url: "/books/genai4cav/"
 ,
         research_area: [
         "generative-ai",
@@ -1047,7 +1047,7 @@ const publications = [
 ,
         url: "https://ieeexplore.ieee.org/document/10591381"
 ,
-        pdf: "publications/24_TIV/Liao2024TIV.pdf"
+        pdf: "/publications/24_TIV/Liao2024TIV.pdf"
 ,
         research_area: [
         "intelligent-transportation",
@@ -1822,7 +1822,7 @@ const publications = [
 ,
         url: "https://ieeexplore.ieee.org/document/10588561"
 ,
-        pdf: "publications/24_IV/AR_VR.pdf"
+        pdf: "/publications/24_IV/AR_VR.pdf"
 ,
         research_area: [
         "connected-autonomous-vehicles",
@@ -2584,7 +2584,7 @@ const publications = [
 ,
         url: "https://ieeexplore.ieee.org/document/10422413"
 ,
-        pdf: "publications/23_ITSC/PACC_GP_ON_IRL.pdf"
+        pdf: "/publications/23_ITSC/PACC_GP_ON_IRL.pdf"
 ,
         research_area: [
         "intelligent-transportation",
@@ -2640,7 +2640,7 @@ const publications = [
 ,
         url: "https://ieeexplore.ieee.org/document/10394260"
 ,
-        pdf: "publications/23_SMC/PACC_ON-4.pdf"
+        pdf: "/publications/23_SMC/PACC_ON-4.pdf"
 ,
         research_area: [
         "connected-autonomous-vehicles",
@@ -2712,7 +2712,7 @@ const publications = [
 ,
         url: "https://ieeexplore.ieee.org/document/10193741"
 ,
-        pdf: "publications/23_ICASSP_W/7005.pdf"
+        pdf: "/publications/23_ICASSP_W/7005.pdf"
 ,
         research_area: [
         "connected-autonomous-vehicles",
@@ -2732,7 +2732,7 @@ const publications = [
 ,
         url: "https://ieeexplore.ieee.org/document/10279417"
 ,
-        pdf: "publications/23_ICC/p960-mallik.pdf"
+        pdf: "/publications/23_ICC/p960-mallik.pdf"
 ,
         research_area: [
         "energy-efficient-computing",
@@ -2751,7 +2751,7 @@ const publications = [
 ,
         url: "https://ieeexplore.ieee.org/document/10279193"
 ,
-        pdf: "publications/23_ICC/p4044-doe.pdf"
+        pdf: "/publications/23_ICC/p4044-doe.pdf"
 ,
         research_area: [
         "connected-autonomous-vehicles",
@@ -2771,7 +2771,7 @@ const publications = [
 ,
         url: "https://ieeexplore.ieee.org/document/10278954"
 ,
-        pdf: "assets/publications/23_ICC/p3277-xue.pdf"
+        pdf: "/assets/publications/23_ICC/p3277-xue.pdf"
 ,
         research_area: [
         "edge-computing",
@@ -2790,7 +2790,7 @@ const publications = [
 ,
         url: "https://ieeexplore.ieee.org/document/10139782"
 ,
-        pdf: "publications/23_WOCC/A_Multi_Arm_Bandit_Approach_for_Adaptive_HD_Map.pdf"
+        pdf: "/publications/23_WOCC/A_Multi_Arm_Bandit_Approach_for_Adaptive_HD_Map.pdf"
 ,
         research_area: [
         "connected-autonomous-vehicles",
@@ -2809,7 +2809,7 @@ const publications = [
 ,
         url: "https://ieeexplore.ieee.org/document/10201378"
 ,
-        pdf: "assets/publications/23_TITS/2023_DSORL.pdf"
+        pdf: "/assets/publications/23_TITS/2023_DSORL.pdf"
 ,
         research_area: [
         "connected-autonomous-vehicles",
@@ -3328,7 +3328,7 @@ const publications = [
 ,
         url: "https://ieeexplore.ieee.org/document/9996947"
 ,
-        pdf: "publications/22_SEC/Poster_Enabling_High-Fidelity_and_Real-Time_Mobility_Digital_Twin_with_Edge_Computing.pdf"
+        pdf: "/publications/22_SEC/Poster_Enabling_High-Fidelity_and_Real-Time_Mobility_Digital_Twin_with_Edge_Computing.pdf"
 ,
         research_area: [
         "digital-twin",
@@ -3347,7 +3347,7 @@ const publications = [
 ,
         url: "https://ieeexplore.ieee.org/document/9922275"
 ,
-        pdf: "publications/22_ITSC/Sachdeva22ITSC.pdf"
+        pdf: "/publications/22_ITSC/Sachdeva22ITSC.pdf"
 ,
         research_area: [
         "intelligent-transportation",
@@ -3368,7 +3368,7 @@ const publications = [
 ,
         url: "https://ieeexplore.ieee.org/document/9922548"
 ,
-        pdf: "publications/22_ITSC/sheng22itsc.pdf"
+        pdf: "/publications/22_ITSC/sheng22itsc.pdf"
 ,
         research_area: [
         "intelligent-transportation",
@@ -3720,7 +3720,7 @@ const publications = [
 ,
         url: "https://ieeexplore.ieee.org/document/9540074"
 ,
-        pdf: "publications/21_DTPI/Digital_Twin_DTPI2021.pdf"
+        pdf: "/publications/21_DTPI/Digital_Twin_DTPI2021.pdf"
 ,
         note: "Best Application Award"
 ,
@@ -3741,7 +3741,7 @@ const publications = [
 ,
         url: "https://ieeexplore.ieee.org/document/9564498"
 ,
-        pdf: "publications/21_ITSC/ITSC_Published.pdf"
+        pdf: "/publications/21_ITSC/ITSC_Published.pdf"
 ,
         research_area: [
         "intelligent-transportation",
@@ -3760,7 +3760,7 @@ const publications = [
 ,
         url: "https://doi.org/10.1145/3450267.3450529"
 ,
-        pdf: "publications/21_ICCPS/Trust_Based_Route_Planning_for_Automated.pdf"
+        pdf: "/publications/21_ICCPS/Trust_Based_Route_Planning_for_Automated.pdf"
 ,
         research_area: [
         "connected-autonomous-vehicles",
@@ -3779,7 +3779,7 @@ const publications = [
 ,
         url: "https://www.google.com/url?q=https%3A%2F%2Fwww.researchgate.net%2Fpublication%2F348430322_Motion_Estimation_of_Connected_and_Automated_Vehicles_under_Communication_Delay_and_Packet_Loss_of_V2X_Communications&amp;sa=D&amp;sntz=1&amp;usg=AOvVaw2PC9CSYR_cFbVIoSCxf7Qa"
 ,
-        pdf: "publications/21_SAE_WC/2021-01-0107.pdf"
+        pdf: "/publications/21_SAE_WC/2021-01-0107.pdf"
 ,
         research_area: [
         "connected-autonomous-vehicles",
@@ -3809,7 +3809,7 @@ const publications = [
 ,
         url: "https://ieeexplore.ieee.org/document/9283462"
 ,
-        pdf: "publications/20_SMC/SMC20_Published.pdf"
+        pdf: "/publications/20_SMC/SMC20_Published.pdf"
 ,
         research_area: [
         "intelligent-transportation",
@@ -3847,7 +3847,7 @@ const publications = [
 ,
         url: "https://ieeexplore.ieee.org/document/9304587"
 ,
-        pdf: "assets/publications/20_IV/IV2020_0517_FI-2.pdf"
+        pdf: "/assets/publications/20_IV/IV2020_0517_FI-2.pdf"
 ,
         research_area: [
         "intelligent-transportation",
@@ -3866,7 +3866,7 @@ const publications = [
 ,
         url: "https://ieeexplore.ieee.org/document/9304643"
 ,
-        pdf: "assets/publications/20_IV/IV2020_0516_FI.pdf"
+        pdf: "/assets/publications/20_IV/IV2020_0516_FI.pdf"
 ,
         research_area: [
         "digital-twin",
@@ -3885,7 +3885,7 @@ const publications = [
 ,
         url: "https://ieeexplore.ieee.org/document/9128938"
 ,
-        pdf: "publications/20_VTC_Spring/VTC_Digital_Twin_Published.pdf"
+        pdf: "/publications/20_VTC_Spring/VTC_Digital_Twin_Published.pdf"
 ,
         research_area: [
         "digital-twin",
@@ -3935,7 +3935,7 @@ const publications = [
 ,
         url: "https://ieeexplore.ieee.org/document/9062782"
 ,
-        pdf: "publications/19_VNC/kan19vnc.pdf"
+        pdf: "/publications/19_VNC/kan19vnc.pdf"
 ,
         research_area: [
         "edge-computing",
@@ -3991,7 +3991,7 @@ const publications = [
 ,
         url: "https://ieeexplore.ieee.org/document/8814063"
 ,
-        pdf: "assets/publications/19_IV/jones19iv.pdf"
+        pdf: "/assets/publications/19_IV/jones19iv.pdf"
 ,
         research_area: [
         "intelligent-transportation",
@@ -4009,7 +4009,7 @@ const publications = [
 ,
         url: "https://ieeexplore.ieee.org/document/8746463"
 ,
-        pdf: "publications/19_VTC_spring/kobayashi19vtc.pdf"
+        pdf: "/publications/19_VTC_spring/kobayashi19vtc.pdf"
 ,
         research_area: [
         "connected-autonomous-vehicles",
@@ -4389,7 +4389,7 @@ const publications = [
 ,
         url: "https://ieeexplore.ieee.org/document/5413176"
 ,
-        pdf: "publications/09_ICCD/han19iccd.pdf"
+        pdf: "/publications/09_ICCD/han19iccd.pdf"
 ,
         research_area: [
         "energy-efficient-computing"
@@ -4529,7 +4529,7 @@ const publications = [
 ,
         url: "https://ieeexplore.ieee.org/document/1327041"
 ,
-        pdf: "publications/04_ICASSP/han04icassp.pdf"
+        pdf: "/publications/04_ICASSP/han04icassp.pdf"
 ,
         research_area: [
         "design-tech",
@@ -4547,7 +4547,7 @@ const publications = [
 ,
         url: "https://ieeexplore.ieee.org/document/922229"
 ,
-        pdf: "publications/01_ISCAS/iscas2001.pdf"
+        pdf: "/publications/01_ISCAS/iscas2001.pdf"
 ,
         research_area: [
         "energy-efficient-computing",
@@ -4565,7 +4565,7 @@ const publications = [
 ,
         url: "https://www.researchgate.net/publication/228932471_Bit_constraint_parameter_decision_method_for_cdma_digital_demodulator"
 ,
-        pdf: "publications/00_cic/han00cic.pdf"
+        pdf: "/publications/00_cic/han00cic.pdf"
 ,
         research_area: [
         "energy-efficient-computing",

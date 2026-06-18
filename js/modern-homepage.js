@@ -338,12 +338,20 @@ function renderPublications() {
                         </div>
                         
                         <div class="ml-6 mt-2 flex flex-wrap gap-2">
-                            ${pub.url ? `
-                                <a href="${pub.url}" target="_blank" rel="noopener noreferrer" 
+                            ${pub.url ? (() => {
+                                const isBookChapter = pub.venue && pub.venue.startsWith('In:');
+                                const urlLabel = pub.type === 'patent'
+                                    ? 'View patent'
+                                    : pub.type === 'book'
+                                        ? (isBookChapter ? 'View chapter' : 'Book webpage')
+                                        : 'View paper';
+                                const resolvedUrl = pub.url;
+                                const openInNewTab = pub.url.startsWith('http');
+                                return `<a href="${resolvedUrl}"${openInNewTab ? ' target="_blank" rel="noopener noreferrer"' : ''}
                                    class="inline-flex items-center px-2 py-1 text-xs font-medium text-blue-600 bg-blue-50 rounded hover:bg-blue-100 transition-colors">
-                                    <i class="fas fa-external-link-alt mr-1"></i>Link
-                                </a>
-                            ` : ''}
+                                    <i class="fas fa-external-link-alt mr-1"></i>${urlLabel}
+                                </a>`;
+                            })() : ''}
                             ${pub.pdf ? `
                                 <a href="${pub.pdf}" target="_blank" rel="noopener noreferrer" 
                                    class="inline-flex items-center px-2 py-1 text-xs font-medium text-green-600 bg-green-50 rounded hover:bg-green-100 transition-colors">
