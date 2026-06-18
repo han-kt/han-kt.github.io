@@ -1,5 +1,5 @@
 // Modern Academic Homepage JavaScript
-// Generated on 2026-06-17 11:54:39
+// Generated on 2026-06-17 18:30:03
 // Total publications: 221
 // Breakdown: 73 conferences, 8 presentations, 20 journals, 117 patents, 3 books
 
@@ -313,6 +313,8 @@ const publications = [
         type_label: "Book"
 ,
         year_text: "2026 (Under contract with IEEE-Wiley Press for publication in 2026)"
+,
+        url: "books/genai4cav/"
 ,
         research_area: [
         "generative-ai",
