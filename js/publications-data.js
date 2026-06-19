@@ -1,7 +1,7 @@
 // Modern Academic Homepage JavaScript
-// Generated on 2026-06-17 23:47:53
-// Total publications: 221
-// Breakdown: 73 conferences, 8 presentations, 20 journals, 117 patents, 3 books
+// Generated on 2026-06-19 13:03:59
+// Total publications: 222
+// Breakdown: 74 conferences, 8 presentations, 20 journals, 117 patents, 3 books
 
 // Comprehensive publications data from YAML files
 const publications = [
@@ -320,6 +320,27 @@ const publications = [
         "generative-ai",
         "connected-autonomous-vehicles",
         "artificial-intelligence"
+]
+    },
+    {
+        yaml_id: "Park2026ECCV",
+        title: "SIMSplat: Language-Aligned 4D Gaussian Splatting for Driving Scenario Generation",
+        authors: "S. Park, A. Lee, J. Lu, C. Cui, L. Jiang, R. Gupta, K. Han, A. Moradipari, and Z. Wang",
+        venue: "European Conference on Computer Vision (ECCV)",
+        year: 2026,
+        type: "conference",
+        type_label: "Conference"
+,
+        url: "https://arxiv.org/abs/2510.02469"
+,
+        pdf: "https://arxiv.org/pdf/2510.02469.pdf"
+,
+        note: "Accepted"
+,
+        research_area: [
+        "generative-ai",
+        "intelligent-transportation",
+        "connected-autonomous-vehicles"
 ]
     },
     {
