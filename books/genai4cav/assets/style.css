@@ -224,6 +224,7 @@ pre.code code {
     font-family: "SF Mono", "Menlo", "Consolas", "Liberation Mono", monospace;
     color: inherit;
     background: none;
+    padding: 0;
 }
 
 code {
