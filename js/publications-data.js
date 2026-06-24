@@ -1,10 +1,31 @@
 // Modern Academic Homepage JavaScript
-// Generated on 2026-06-22 13:40:38
-// Total publications: 222
-// Breakdown: 74 conferences, 8 presentations, 20 journals, 117 patents, 3 books
+// Generated on 2026-06-23 18:18:06
+// Total publications: 223
+// Breakdown: 74 conferences, 8 presentations, 20 journals, 118 patents, 3 books
 
 // Comprehensive publications data from YAML files
 const publications = [
+    {
+        yaml_id: "CV_152",
+        title: "Method and Apparatus for AI-ML Assisted CSI Compression of MIMO Channels",
+        authors: "K. Dimou, K. Han, and T. Shimizu",
+        venue: "U.S. Patent Appl. 64/088,157, Jun. 11, 2026",
+        year: 2026,
+        type: "patent",
+        type_label: "Patent"
+,
+        research_area: [
+        "edge-computing",
+        "generative-ai",
+        "v2x-communication"
+]
+,
+        application_number: "64/088,157"
+,
+        patent_type: "application"
+,
+        filing_date: "2026-06-11"
+    },
     {
         yaml_id: "CV_151",
         title: "Systems and Methods for Requesting Location-Specific Memory Information from Surrounding Vehicles",
