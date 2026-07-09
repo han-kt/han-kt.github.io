@@ -1,10 +1,51 @@
 // Modern Academic Homepage JavaScript
-// Generated on 2026-06-23 18:18:06
-// Total publications: 223
-// Breakdown: 74 conferences, 8 presentations, 20 journals, 118 patents, 3 books
+// Generated on 2026-07-08 17:25:48
+// Total publications: 225
+// Breakdown: 74 conferences, 8 presentations, 20 journals, 120 patents, 3 books
 
 // Comprehensive publications data from YAML files
 const publications = [
+    {
+        yaml_id: "CV_154",
+        title: "Multi-Agent Coordination Using Embedding-Matrix Similarity Measures",
+        authors: "A. Moradipari, T. Chen, K. Han, and N. Ammar",
+        venue: "U.S. Patent Appl. 19/735,128, Jul. 8, 2026",
+        year: 2026,
+        type: "patent",
+        type_label: "Patent"
+,
+        research_area: [
+        "generative-ai",
+        "intelligent-transportation",
+        "connected-autonomous-vehicles"
+]
+,
+        application_number: "19/735,128"
+,
+        patent_type: "application"
+,
+        filing_date: "2026-07-08"
+    },
+    {
+        yaml_id: "CV_153",
+        title: "Headlight Control According to Predicted Environment",
+        authors: "R. Gupta, S. Mishra, K. Gilleo, N. Ammar, K. Han, T. Shimizu, and O. Altintas",
+        venue: "U.S. Patent Appl. 19/718,363, Jun. 24, 2026",
+        year: 2026,
+        type: "patent",
+        type_label: "Patent"
+,
+        research_area: [
+        "intelligent-transportation",
+        "connected-autonomous-vehicles"
+]
+,
+        application_number: "19/718,363"
+,
+        patent_type: "application"
+,
+        filing_date: "2026-06-24"
+    },
     {
         yaml_id: "CV_152",
         title: "Method and Apparatus for AI-ML Assisted CSI Compression of MIMO Channels",
