@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>International Workshop on AI-Native Connected Mobility (ACM'27)</title>
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GEG5GDGV8P"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        
+        gtag('js', new Date());
+        
+        // Analytics enabled immediately with privacy settings
+        
+        // Respect Do Not Track
+        if (navigator.doNotTrack == "1" || window.doNotTrack == "1" || navigator.msDoNotTrack == "1") {
+            window['ga-disable-G-GEG5GDGV8P'] = true;
+            gtag('consent', 'update', {
+                'analytics_storage': 'denied'
+            });
+        }
+        
+        gtag('config', 'G-GEG5GDGV8P', {'anonymize_ip': true});
+    </script>
+    
+    <style>
+        body { font-family: 'Inter', system-ui, sans-serif; }
+        .dark { color-scheme: dark; }
+        
+        * {
+            transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+        }
+        
+        .nav-link {
+            @apply text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-colors;
+        }
+        
+        .mobile-nav-link {
+            @apply text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium transition-colors;
+        }
+        
+        .workshop-card {
+            @apply ccnc-card rounded-lg p-6 hover:shadow-md transition-shadow;
+        }
+        
+        .date-card {
+            @apply bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4 border border-blue-200 dark:border-blue-700;
+        }
+        
+        .organizer-card {
+            @apply bg-gray-50 dark:bg-gray-700 rounded-lg p-4 border border-gray-200 dark:border-gray-600;
+        }
+        
+        /* CCNC-style theme - dark header, light content */
+        .ccnc-header {
+            background-color: #1a1a1a;
+            color: #ffffff;
+        }
+        
+        .ccnc-content {
+            background-color: #ffffff;
+            color: #333333;
+        }
+        
+        .ccnc-card {
+            background-color: #ffffff;
+            border: 1px solid #e5e5e5;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .ccnc-section {
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+<body class="ccnc-content transition-colors duration-200">
+    <!-- Workshop Header -->
+    <header id="header" class="ccnc-header backdrop-blur-sm border-b border-gray-600">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="text-center">
+                <h1 class="text-2xl font-bold text-white">ACM'27</h1>
+                <p class="text-gray-300 mt-1">January 9, 2027 • Las Vegas, USA</p>
+                <div class="mt-3 flex flex-wrap justify-center gap-4 items-center">
+                    
+                    <a href="https://ccnc2027.ieee-ccnc.org/authors/call-workshop-proposals" target="_blank" class="text-orange-400 hover:text-orange-300 underline text-sm">
+                        📋 View Workshop Call for Papers
+                    </a>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="text-white py-16 relative overflow-hidden" style="background-color: #003366;">
+            <!-- Las Vegas Background Image -->
+            <div class="absolute inset-0 bg-black/20 z-0"></div>
+            <div class="absolute inset-0 z-0" style="background-color: #003366; opacity: 0.95;"></div>
+            <div class="absolute inset-0 z-0">
+                <img src="assets/images/las_vegas.webp" alt="Las Vegas skyline" class="w-full h-full object-cover opacity-30">
+            </div>
+            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6">International Workshop on AI-Native Connected Mobility (ACM'27)</h1>
+                    <p class="text-xl md:text-2xl mb-4 opacity-90">January 9, 2027 • Las Vegas, USA</p>
+                    
+                    <p class="text-lg md:text-xl mb-4 opacity-80">
+                        Co-located with IEEE Consumer Communications & Networking Conference (CCNC) 2027
+                    </p>
+                    <p class="text-base mb-8 opacity-70">
+                        <a href="https://ccnc2027.ieee-ccnc.org/" class="underline hover:text-orange-200" target="_blank">
+                            🌐 Visit IEEE CCNC 2026 Conference Website
+                        </a>
+                    </p>
+                    
+                    <div class="flex flex-wrap justify-center gap-4 items-center">
+                        
+                        
+                        <a href="#important-dates" class="text-white px-6 py-3 rounded-lg font-medium transition-colors flex items-center" style="background-color: #495057;" onmouseover="this.style.backgroundColor='#343a40'" onmouseout="this.style.backgroundColor='#495057'">
+                            Important Dates
+                        </a>
+                        <a href="#submission" class="text-white px-6 py-3 rounded-lg font-medium transition-colors flex items-center" style="background-color: #6c757d;" onmouseover="this.style.backgroundColor='#545b62'" onmouseout="this.style.backgroundColor='#6c757d'">
+                            Submission Guidelines
+                        </a>
+                        <a href="#organizers" class="text-white px-6 py-3 rounded-lg font-medium transition-colors flex items-center" style="background-color: #495057;" onmouseover="this.style.backgroundColor='#343a40'" onmouseout="this.style.backgroundColor='#495057'">
+                            Organizers
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Photo Credit -->
+            <div class="absolute bottom-2 right-4 z-20">
+                <p class="text-xs text-white/70 bg-black/30 px-2 py-1 rounded">
+                    Photo by Y2kcrazyjoker4, licensed under CC BY 4.0 via Wikimedia Commons
+                </p>
+            </div>
+        </section>
+
+        <!-- Workshop Description -->
+        <section class="py-16">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="workshop-card">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-900">About the Workshop</h2>
+                    <div class="prose prose-lg dark:prose-invert max-w-none">
+                        The AI-Native Connected Mobility (ACM) workshop addresses the co-design of
+artificial intelligence and communication systems for connected mobility.
+Vehicles, roadside units, and edge-cloud platforms increasingly operate as
+intelligent, cooperative agents, requiring integrated sensing,
+communication, and distributed intelligence.
+
+ACM'27 brings together researchers and practitioners at the intersection of
+AI, vehicular communication, and mobility systems. The workshop emphasizes
+practical and scalable methods for AI-native connected mobility systems.
+
+Accepted workshop papers will be published in the IEEE CCNC 2027
+Conference Proceedings and submitted to IEEE Xplore.
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Important Dates -->
+        <section id="important-dates" class="py-16 ccnc-section">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold mb-8 text-center text-gray-900">Important Dates</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    
+                    <div class="date-card">
+                        <h3 class="font-semibold text-orange-900 dark:text-orange-300 mb-2">Paper Submission Deadline</h3>
+                        <p class="text-lg font-medium text-orange-700 dark:text-orange-200">TBD</p>
+                    </div>
+                    
+                    <div class="date-card">
+                        <h3 class="font-semibold text-orange-900 dark:text-orange-300 mb-2">Acceptance Notification</h3>
+                        <p class="text-lg font-medium text-orange-700 dark:text-orange-200">TBD</p>
+                    </div>
+                    
+                    <div class="date-card">
+                        <h3 class="font-semibold text-orange-900 dark:text-orange-300 mb-2">Camera-Ready Deadline</h3>
+                        <p class="text-lg font-medium text-orange-700 dark:text-orange-200">TBD</p>
+                    </div>
+                    
+                    <div class="date-card">
+                        <h3 class="font-semibold text-orange-900 dark:text-orange-300 mb-2">Workshop Date</h3>
+                        <p class="text-lg font-medium text-orange-700 dark:text-orange-200">January 9, 2027</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Topics -->
+        <section class="py-16">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="workshop-card">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-900">Topics of Interest</h2>
+                    <p class="text-lg text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
+                        We welcome contributions that explore the design, deployment, and optimization of AI-native 
+                        systems for connected mobility, with a focus on how communication and intelligence are 
+                        co-designed to support safe, cooperative, and scalable transportation systems. Topics of 
+                        Interest include (but are not limited to):
+                    </p>
+                    <div class="space-y-8">
+                        
+                        <div>
+                            <h3 class="text-xl font-semibold text-orange-600 dark:text-orange-400 mb-4">1. AI and Foundation Models for Connected Mobility</h3>
+                            <ul class="space-y-3 ml-4">
+                                
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                    <span class="text-gray-700 dark:text-gray-300">LLMs and VLMs for connected mobility platforms</span>
+                                </li>
+                                
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                    <span class="text-gray-700 dark:text-gray-300">Semantic reasoning over V2X messages and sensor streams</span>
+                                </li>
+                                
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                    <span class="text-gray-700 dark:text-gray-300">Communication-efficient inference and split execution</span>
+                                </li>
+                                
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                    <span class="text-gray-700 dark:text-gray-300">AI for driver interaction, planning, and decision support</span>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-xl font-semibold text-orange-600 dark:text-orange-400 mb-4">2. Cooperative Perception and Networked Decision-Making</h3>
+                            <ul class="space-y-3 ml-4">
+                                
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                    <span class="text-gray-700 dark:text-gray-300">V2V, V2I, and V2N cooperative perception</span>
+                                </li>
+                                
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                    <span class="text-gray-700 dark:text-gray-300">Multimodal fusion across vehicles and infrastructure</span>
+                                </li>
+                                
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                    <span class="text-gray-700 dark:text-gray-300">Real-time sensing-communication-compute pipelines</span>
+                                </li>
+                                
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                    <span class="text-gray-700 dark:text-gray-300">Integrated sensing and communication for mobility</span>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-xl font-semibold text-orange-600 dark:text-orange-400 mb-4">3. Infrastructure and Protocols for Scalable Mobility AI</h3>
+                            <ul class="space-y-3 ml-4">
+                                
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                    <span class="text-gray-700 dark:text-gray-300">AI-native protocol and cross-layer design</span>
+                                </li>
+                                
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                    <span class="text-gray-700 dark:text-gray-300">Learning-based scheduling and resource orchestration</span>
+                                </li>
+                                
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                    <span class="text-gray-700 dark:text-gray-300">Vehicle-edge-cloud AI workload orchestration</span>
+                                </li>
+                                
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                    <span class="text-gray-700 dark:text-gray-300">6G and wide-area connectivity for mobility systems</span>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Submission Guidelines -->
+        <section id="submission" class="py-16 ccnc-section">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="workshop-card">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-900">Submission Guidelines</h2>
+                    <div class="prose prose-lg dark:prose-invert max-w-none">
+                        The ACM'27 workshop is part of IEEE CCNC 2027. Prospective authors are
+invited to submit high-quality original technical papers for presentation at
+the workshop and publication in the IEEE CCNC 2027 proceedings and IEEE
+Xplore.
+
+Submission details will follow the CCNC 2027 workshop portal on EDAS.
+Papers should follow IEEE conference format and the workshop page limits.
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Organizers -->
+        <section id="organizers" class="py-16">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold mb-8 text-center text-gray-900">Workshop Organizers</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    
+                    <div class="organizer-card">
+                        <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-2">Kyungtae Han</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-1">Toyota Motor North America, USA</p>
+                        <p class="text-orange-600 dark:text-orange-400 mb-2">General Chair</p>
+                        <a href="mailto:kt.han@toyota.com" class="text-orange-600 dark:text-orange-400 hover:underline">
+                            kt.han@toyota.com
+                        </a>
+                    </div>
+                    
+                    <div class="organizer-card">
+                        <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-2">Ming Zhao</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-1">Arizona State University, USA</p>
+                        <p class="text-orange-600 dark:text-orange-400 mb-2">Technical Program Co-Chair</p>
+                        <a href="mailto:mingzhao@asu.edu" class="text-orange-600 dark:text-orange-400 hover:underline">
+                            mingzhao@asu.edu
+                        </a>
+                    </div>
+                    
+                    <div class="organizer-card">
+                        <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-2">Haoxin Wang</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-1">Georgia State University, USA</p>
+                        <p class="text-orange-600 dark:text-orange-400 mb-2">Technical Program Co-Chair</p>
+                        <a href="mailto:haoxinwang@gsu.edu" class="text-orange-600 dark:text-orange-400 hover:underline">
+                            haoxinwang@gsu.edu
+                        </a>
+                    </div>
+                    
+                    <div class="organizer-card">
+                        <h3 class="font-semibold text-lg text-gray-900 dark:text-white mb-2">Sanjeewa Herath</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-1">Toyota Motor North America, USA</p>
+                        <p class="text-orange-600 dark:text-orange-400 mb-2">Publicity Chair</p>
+                        <a href="mailto:sanjeewa.herath@toyota.com" class="text-orange-600 dark:text-orange-400 hover:underline">
+                            sanjeewa.herath@toyota.com
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Keynote Speaker (Hidden for now) -->
+        
+
+        <!-- Program Committee -->
+        
+
+        <!-- Contact -->
+        <section class="py-16">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <div class="workshop-card">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-900">Contact</h2>
+                    <div class="space-y-4">
+                        <p class="text-lg text-gray-700 dark:text-gray-300">
+                            <i class="fas fa-envelope mr-2"></i>
+                            <a href="mailto:kt.han@toyota.com" class="text-orange-600 dark:text-orange-400 hover:underline">
+                                kt.han@toyota.com
+                            </a>
+                        </p>
+                        
+                        <p class="text-lg text-gray-700 dark:text-gray-300">
+                            <i class="fas fa-globe mr-2"></i>
+                            <a href="https://han-kt.github.io/acm2027" class="text-orange-600 dark:text-orange-400 hover:underline" target="_blank">
+                                Workshop Website
+                            </a>
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2025 Kyungtae (KT) Han. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
