@@ -1,7 +1,7 @@
 // Modern Academic Homepage JavaScript
-// Generated on 2026-08-13 20:30:34
-// Total publications: 225
-// Breakdown: 74 conferences, 8 presentations, 20 journals, 120 patents, 3 books
+// Generated on 2026-08-21 09:28:17
+// Total publications: 226
+// Breakdown: 75 conferences, 8 presentations, 20 journals, 120 patents, 3 books
 
 // Comprehensive publications data from YAML files
 const publications = [
@@ -382,6 +382,23 @@ const publications = [
         "generative-ai",
         "connected-autonomous-vehicles",
         "artificial-intelligence"
+]
+    },
+    {
+        yaml_id: "Hu2026EMNLP",
+        title: "How Do Prompt Variations Affect Energy Consumption in On-Device LLMs?",
+        authors: "W. Hu, X. Tu, D. Chen, Y. Chen, K. Han, and H. Wang",
+        venue: "2026 Conference on Empirical Methods in Natural Language Processing (EMNLP), Budapest, Hungary",
+        year: 2026,
+        type: "conference",
+        type_label: "Conference"
+,
+        note: "Accepted"
+,
+        research_area: [
+        "generative-ai",
+        "energy-efficient-computing",
+        "edge-computing"
 ]
     },
     {
