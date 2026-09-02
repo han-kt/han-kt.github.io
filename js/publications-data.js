@@ -1,5 +1,5 @@
 // Modern Academic Homepage JavaScript
-// Generated on 2026-09-01 23:09:02
+// Generated on 2026-09-02 13:09:09
 // Total publications: 226
 // Breakdown: 75 conferences, 8 presentations, 20 journals, 120 patents, 3 books
 
@@ -533,12 +533,12 @@ const publications = [
         yaml_id: "Sharma2026INFOCOM",
         title: "Using Intent Communication to Enhance Platooning: Validation with Prototype Vehicles",
         authors: "S. Sharma, A. Moradipari, S. Avedisov, M. Nour, S. Mishra, K. Han, A. Abdelraouf, T. Shimizu, and O. Altintas",
-        venue: "IEEE INFOCOM 2026",
+        venue: "IEEE INFOCOM 2026, Tokyo, Japan",
         year: 2026,
         type: "conference",
         type_label: "Conference"
 ,
-        note: "Accepted"
+        url: "https://ieeexplore.ieee.org/document/11571305"
 ,
         research_area: [
         "connected-autonomous-vehicles",
@@ -550,12 +550,14 @@ const publications = [
         yaml_id: "Chen2026IV",
         title: "Agentic AI for Trip Planning Optimization Application",
         authors: "T. Chen, A. Moradipari, K. Han, H. Wei, and N. Ammar",
-        venue: "2026 IEEE Intelligent Vehicles Symposium (IV)",
+        venue: "2026 IEEE Intelligent Vehicles Symposium (IV), Detroit, MI, USA",
         year: 2026,
         type: "conference",
         type_label: "Conference"
 ,
-        note: "Accepted"
+        url: "https://ieeexplore.ieee.org/document/11624024"
+,
+        pdf: "https://arxiv.org/pdf/2605.00276.pdf"
 ,
         research_area: [
         "intelligent-transportation",
@@ -566,12 +568,12 @@ const publications = [
         yaml_id: "Yan2026ICC",
         title: "Network-Aware Intelligent Task Distributor for Edge-Assisted Generative AI",
         authors: "J. Yan, M. Talukder, D. Chen, K. Han, and L. Xie",
-        venue: "IEEE International Conference on Communications (ICC)",
+        venue: "IEEE International Conference on Communications (ICC), Glasgow, United Kingdom",
         year: 2026,
         type: "conference",
         type_label: "Conference"
 ,
-        note: "Accepted"
+        url: "https://ieeexplore.ieee.org/document/11586849"
 ,
         research_area: [
         "edge-computing",
@@ -1032,7 +1034,7 @@ const publications = [
         type: "conference",
         type_label: "Conference"
 ,
-        url: "https://arxiv.org/abs/2510.06126"
+        url: "https://dl.acm.org/doi/10.1145/3769102.3770614"
 ,
         pdf: "https://arxiv.org/pdf/2510.06126.pdf"
 ,
@@ -1051,7 +1053,7 @@ const publications = [
         type: "conference",
         type_label: "Conference"
 ,
-        url: "https://arxiv.org/abs/2510.08993"
+        url: "https://dl.acm.org/doi/10.1145/3769102.3770622"
 ,
         pdf: "https://arxiv.org/pdf/2510.08993.pdf"
 ,
@@ -1070,7 +1072,7 @@ const publications = [
         type: "conference",
         type_label: "Conference"
 ,
-        url: "https://arxiv.org/abs/2507.10500"
+        url: "https://ieeexplore.ieee.org/document/11423751"
 ,
         pdf: "https://arxiv.org/pdf/2507.10500.pdf"
 ,
@@ -1088,6 +1090,8 @@ const publications = [
         type: "conference",
         type_label: "Conference"
 ,
+        url: "https://ieeexplore.ieee.org/document/11423796"
+,
         research_area: [
         "intelligent-transportation",
         "connected-autonomous-vehicles",
@@ -1103,9 +1107,9 @@ const publications = [
         type: "conference",
         type_label: "Conference"
 ,
-        url: "https://arxiv.org/abs/2503.12772"
+        url: "https://openaccess.thecvf.com/content/ICCV2025/html/Park_NuPlanQA_A_Large-Scale_Dataset_and_Benchmark_for_Multi-View_Driving_Scene_ICCV_2025_paper.html"
 ,
-        pdf: "https://arxiv.org/pdf/2503.12772.pdf"
+        pdf: "https://openaccess.thecvf.com/content/ICCV2025/papers/Park_NuPlanQA_A_Large-Scale_Dataset_and_Benchmark_for_Multi-View_Driving_Scene_ICCV_2025_paper.pdf"
 ,
         research_area: [
         "generative-ai",
@@ -1122,7 +1126,7 @@ const publications = [
         type: "conference",
         type_label: "Conference"
 ,
-        url: "https://arxiv.org/abs/2508.00384"
+        url: "https://ieeexplore.ieee.org/document/11246993"
 ,
         pdf: "https://arxiv.org/pdf/2508.00384v1"
 ,
