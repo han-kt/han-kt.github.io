@@ -1,10 +1,84 @@
 // Modern Academic Homepage JavaScript
-// Generated on 2026-08-21 10:33:55
+// Generated on 2026-09-01 20:55:23
 // Total publications: 226
 // Breakdown: 75 conferences, 8 presentations, 20 journals, 120 patents, 3 books
 
 // Comprehensive publications data from YAML files
 const publications = [
+    {
+        yaml_id: "CV_023",
+        title: "Edge-Assisted Occlusion Mitigation",
+        authors: "Y. Chen, D. Chen, K. Han, and O. Altintas",
+        venue: "U.S. Patent 12 715 362, Aug. 25, 2026",
+        year: 2026,
+        type: "patent",
+        type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US12715362"
+,
+        research_area: [
+        "edge-computing"
+]
+,
+        patent_number: "12715362"
+,
+        application_number: "IP-A-7249"
+,
+        patent_type: "granted"
+,
+        grant_date: "2026-08-25"
+    },
+    {
+        yaml_id: "CV_066",
+        title: "System Framework for Selecting Computing Device to Perform Vehicle Applications with Cloud and Edge Computing",
+        authors: "H. Wang, D. Chen, R. Gupta, and K. Han",
+        venue: "U.S. Patent 12 717 613, Aug. 25, 2026",
+        year: 2026,
+        type: "patent",
+        type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US12717613"
+,
+        research_area: [
+        "edge-computing",
+        "connected-autonomous-vehicles",
+        "intelligent-transportation",
+        "design-tech"
+]
+,
+        patent_number: "12717613"
+,
+        application_number: "IP-A-6290"
+,
+        patent_type: "granted"
+,
+        grant_date: "2026-08-25"
+    },
+    {
+        yaml_id: "CV_090",
+        title: "Personalized Adaptive Cruise Control Based On Steady-State Operation",
+        authors: "Z. Zhao, Z. Wang, R. Gupta, K. Han, and P. Tiwari",
+        venue: "U.S. Patent 12 715 438, Aug. 25, 2026",
+        year: 2026,
+        type: "patent",
+        type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US12715438"
+,
+        research_area: [
+        "intelligent-transportation",
+        "connected-autonomous-vehicles",
+        "digital-twin"
+]
+,
+        patent_number: "12715438"
+,
+        application_number: "IP-A-5612"
+,
+        patent_type: "granted"
+,
+        grant_date: "2026-08-25"
+    },
     {
         yaml_id: "CV_154",
         title: "Multi-Agent Coordination Using Embedding-Matrix Similarity Measures",
@@ -1396,25 +1470,6 @@ const publications = [
         grant_date: "2024-08-27"
     },
     {
-        yaml_id: "CV_023",
-        title: "Edge-Assisted Occlusion Mitigation",
-        authors: "Y. Chen, D. Chen, K. Han, and O. Altintas",
-        venue: "U.S. Patent Appl. 18/793,646, Aug. 2, 2024",
-        year: 2024,
-        type: "patent",
-        type_label: "Patent"
-,
-        research_area: [
-        "edge-computing"
-]
-,
-        application_number: "18/793,646"
-,
-        patent_type: "application"
-,
-        filing_date: "2024-08-02"
-    },
-    {
         yaml_id: "CV_024",
         title: "Student-T Process Personalized Adaptive Cruise Control",
         authors: "R. Gupta, Z. Wang, Y. Wang, K. Han, and P. Tiwari",
@@ -2496,32 +2551,6 @@ const publications = [
         grant_date: "2023-03-07"
     },
     {
-        yaml_id: "CV_066",
-        title: "System Framework for Software and Hardware Configuration Determination for Vehicle Applications with Cloud and Edge Computing",
-        authors: "H. Wang, D. Chen, R. Gupta, and K. Han",
-        venue: "U.S. Patent Appl. 18/173,867, Feb. 24, 2023",
-        year: 2023,
-        type: "patent",
-        type_label: "Patent"
-,
-        url: "https://patents.google.com/patent/US20240289165A1/en?oq=18173867"
-,
-        research_area: [
-        "edge-computing",
-        "connected-autonomous-vehicles",
-        "intelligent-transportation",
-        "design-tech"
-]
-,
-        patent_number: ""
-,
-        application_number: "18/173,867"
-,
-        patent_type: "application"
-,
-        filing_date: "2023-02-24"
-    },
-    {
         yaml_id: "CV_067",
         title: "Vehicle OTA Security Validation",
         authors: "R. Gupta, H. Wang, D. Chen, and K. Han",
@@ -3304,27 +3333,6 @@ const publications = [
         patent_type: "granted"
 ,
         grant_date: "2022-01-25"
-    },
-    {
-        yaml_id: "CV_090",
-        title: "Personalized Adaptive Cruise Control Based On Steady-State Operation",
-        authors: "Z. Zhao, Z. Wang, R. Gupta, K. Han, and P. Tiwari",
-        venue: "U.S. Patent Appl. 17/578,330, Jan. 18, 2022",
-        year: 2022,
-        type: "patent",
-        type_label: "Patent"
-,
-        research_area: [
-        "intelligent-transportation",
-        "connected-autonomous-vehicles",
-        "digital-twin"
-]
-,
-        application_number: "17/578,330"
-,
-        patent_type: "application"
-,
-        filing_date: "2022-01-18"
     },
     {
         yaml_id: "CV_091",
