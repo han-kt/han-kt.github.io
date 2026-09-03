@@ -1,5 +1,5 @@
 // Modern Academic Homepage JavaScript
-// Generated on 2026-09-02 13:09:09
+// Generated on 2026-09-03 12:53:21
 // Total publications: 226
 // Breakdown: 75 conferences, 8 presentations, 20 journals, 120 patents, 3 books
 
@@ -466,6 +466,10 @@ const publications = [
         year: 2026,
         type: "conference",
         type_label: "Conference"
+,
+        url: "https://arxiv.org/abs/2609.01798"
+,
+        pdf: "https://arxiv.org/pdf/2609.01798.pdf"
 ,
         note: "Accepted"
 ,
