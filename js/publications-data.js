@@ -1,10 +1,31 @@
 // Modern Academic Homepage JavaScript
-// Generated on 2026-09-03 12:53:21
-// Total publications: 226
-// Breakdown: 75 conferences, 8 presentations, 20 journals, 120 patents, 3 books
+// Generated on 2026-09-16 10:07:45
+// Total publications: 228
+// Breakdown: 76 conferences, 8 presentations, 20 journals, 121 patents, 3 books
 
 // Comprehensive publications data from YAML files
 const publications = [
+    {
+        yaml_id: "CV_155",
+        title: "Tonic Meta-Control for Adaptive Safety-Compute Allocation via Persistent Vigilance Dynamics",
+        authors: "K. Han, Y. Chen, N. Ammar, and O. Altintas",
+        venue: "U.S. Patent Appl. 64/154,467, Sep. 14, 2026",
+        year: 2026,
+        type: "patent",
+        type_label: "Patent"
+,
+        research_area: [
+        "intelligent-transportation",
+        "connected-autonomous-vehicles",
+        "edge-computing"
+]
+,
+        application_number: "64/154,467"
+,
+        patent_type: "application"
+,
+        filing_date: "2026-09-14"
+    },
     {
         yaml_id: "CV_023",
         title: "Edge-Assisted Occlusion Mitigation",
@@ -459,6 +480,21 @@ const publications = [
 ]
     },
     {
+        yaml_id: "Chen2026AACL",
+        title: "Detect Before You Disambiguate: Perturbation-Based Input Ambiguity Detection in LLMs",
+        authors: "T. Chen, X. Liu, A. Moradipari, M. Clifford, K. Han, Y. Chen, N. Ammar, and H. Wei",
+        venue: "Proceedings of the 5th Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics and the 15th International Joint Conference on Natural Language Processing, Hengqin, China",
+        year: 2026,
+        type: "conference",
+        type_label: "Conference"
+,
+        note: "Accepted"
+,
+        research_area: [
+        "generative-ai"
+]
+    },
+    {
         yaml_id: "Hu2026EMNLP",
         title: "How Do Prompt Variations Affect Energy Consumption in On-Device LLMs?",
         authors: "W. Hu, X. Tu, D. Chen, Y. Chen, K. Han, and H. Wang",
@@ -525,6 +561,8 @@ const publications = [
         type: "conference",
         type_label: "Conference"
 ,
+        pdf: "/publications/26_ITSC/Han2026ITSC.pdf"
+,
         note: "Accepted"
 ,
         research_area: [
@@ -532,6 +570,8 @@ const publications = [
         "connected-autonomous-vehicles",
         "edge-computing"
 ]
+,
+        project: "/projects/tonic-metacontrol/"
     },
     {
         yaml_id: "Sharma2026INFOCOM",
@@ -2908,7 +2948,7 @@ const publications = [
 ,
         url: "https://ieeexplore.ieee.org/document/10278954"
 ,
-        pdf: "/assets/publications/23_ICC/p3277-xue.pdf"
+        pdf: "/publications/23_ICC/p3277-xue.pdf"
 ,
         research_area: [
         "edge-computing",
@@ -2946,7 +2986,7 @@ const publications = [
 ,
         url: "https://ieeexplore.ieee.org/document/10201378"
 ,
-        pdf: "/assets/publications/23_TITS/2023_DSORL.pdf"
+        pdf: "/publications/23_TITS/2023_DSORL.pdf"
 ,
         research_area: [
         "connected-autonomous-vehicles",
@@ -3963,7 +4003,7 @@ const publications = [
 ,
         url: "https://ieeexplore.ieee.org/document/9304587"
 ,
-        pdf: "/assets/publications/20_IV/IV2020_0517_FI-2.pdf"
+        pdf: "/publications/20_IV/IV2020_0517_FI-2.pdf"
 ,
         research_area: [
         "intelligent-transportation",
@@ -3982,7 +4022,7 @@ const publications = [
 ,
         url: "https://ieeexplore.ieee.org/document/9304643"
 ,
-        pdf: "/assets/publications/20_IV/IV2020_0516_FI.pdf"
+        pdf: "/publications/20_IV/IV2020_0516_FI.pdf"
 ,
         research_area: [
         "digital-twin",
@@ -4107,7 +4147,7 @@ const publications = [
 ,
         url: "https://ieeexplore.ieee.org/document/8814063"
 ,
-        pdf: "/assets/publications/19_IV/jones19iv.pdf"
+        pdf: "/publications/19_IV/jones19iv.pdf"
 ,
         research_area: [
         "intelligent-transportation",
@@ -4645,7 +4685,7 @@ const publications = [
 ,
         url: "https://ieeexplore.ieee.org/document/1327041"
 ,
-        pdf: "/publications/04_ICASSP/han04icassp.pdf"
+        pdf: "/publications/04_ICASSP/icassp2004.pdf"
 ,
         research_area: [
         "design-tech",

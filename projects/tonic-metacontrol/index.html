@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tonic Meta-Control - Kyungtae Han</title>
-    <meta name="description" content="Tonic Meta-Control for Adaptive Safety-Compute Allocation via Persistent Vigilance Dynamics. Accepted at IEEE ITSC 2026.">
+    <title>Tonic Meta-Control for Adaptive Safety-Compute Allocation via Persistent Vigilance Dynamics - Kyungtae Han</title>
+    <meta name="description" content="A controller that decides when a vehicle should think hard, and how hard, instead of running expensive reasoning at every timestep. IEEE ITSC 2026.">
     <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
 
     <!-- Tailwind CSS -->
@@ -22,6 +22,8 @@
         }
     </script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <script>
@@ -36,11 +38,11 @@
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
         if (navigator.doNotTrack == "1" || window.doNotTrack == "1" || navigator.msDoNotTrack == "1") {
             window['ga-disable-G-GEG5GDGV8P'] = true;
             gtag('consent', 'update', { 'analytics_storage': 'denied' });
         }
-        gtag('js', new Date());
         gtag('config', 'G-GEG5GDGV8P', {'anonymize_ip': true});
     </script>
 
@@ -48,11 +50,6 @@
         body { font-family: 'Inter', system-ui, sans-serif; }
         .dark { color-scheme: dark; }
         * { transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease; }
-        .fade-in { animation: fadeIn 0.6s ease-in-out; }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
         .nav-link {
             @apply text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-colors;
         }
@@ -62,8 +59,8 @@
     </style>
 </head>
 <body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-200">
-    <!-- Header -->
-    <header class="fixed top-0 w-full bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-700 z-50">
+    <!-- Header (matches site nav) -->
+    <header id="header" class="fixed top-0 w-full bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-700 z-50 transition-all duration-200">
         <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="flex-shrink-0">
@@ -103,171 +100,114 @@
 
     <main class="pt-16">
         <!-- Hero -->
-        <section class="pt-20 pb-14 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800">
-            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-in">
-                <p class="text-xs font-semibold uppercase tracking-widest text-blue-600 dark:text-blue-400 mb-3">IEEE ITSC 2026</p>
-                <h1 class="text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-4 leading-tight">
-                    Tonic Meta-Control for Adaptive Safety-Compute<br class="hidden sm:inline"> Allocation via Persistent Vigilance Dynamics
-                </h1>
-                <p class="text-base text-gray-600 dark:text-gray-400 mb-6">
-                    Kyungtae Han, Yitao Chen, Nejib Ammar, Onur Altintas
-                </p>
-                <p class="text-sm text-gray-500 dark:text-gray-500 mb-8">
-                    Toyota Motor North America R&amp;D, InfoTech Labs
-                </p>
+        <section class="pt-16 pb-12 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <p class="text-xs font-semibold uppercase tracking-widest text-blue-600 dark:text-blue-400 mb-3">IEEE ITSC 2026 &middot; Accepted</p>
+                <h1 class="text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-4 leading-tight">Tonic Meta-Control for Adaptive Safety-Compute Allocation via Persistent Vigilance Dynamics</h1>
+                <p class="text-base md:text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-5 leading-relaxed">How a car decides <em>when</em> to think harder about the road ahead &mdash; and <em>how much</em> harder &mdash; instead of running expensive reasoning at every step.</p>
+                <p class="text-base text-gray-700 dark:text-gray-300 mb-2"><strong>Kyungtae Han</strong>, Yitao Chen, Nejib Ammar, Onur Altintas</p>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mb-7">Toyota Motor North America, InfoTech Labs</p>
 
-                <!-- Action buttons -->
-                <div class="flex flex-wrap justify-center gap-3 mb-6">
-                    <a href="https://arxiv.org/abs/XXXX.XXXXX" class="inline-flex items-center px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium rounded-lg transition-colors">
-                        <i class="fas fa-file-alt mr-2"></i> arXiv
-                    </a>
-                    <a href="https://arxiv.org/pdf/XXXX.XXXXX.pdf" class="inline-flex items-center px-5 py-2.5 bg-gray-800 dark:bg-gray-700 hover:bg-gray-900 dark:hover:bg-gray-600 text-white text-sm font-medium rounded-lg transition-colors">
-                        <i class="fas fa-file-pdf mr-2"></i> PDF
-                    </a>
-                </div>
+                <div class="flex flex-wrap justify-center gap-3 mb-6"><a href="../../publications/26_ITSC/Han2026ITSC.pdf" target="_blank" rel="noopener" class="inline-flex items-center px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium rounded-lg transition-colors"><i class="fas fa-file-pdf mr-2"></i> PDF</a></div>
 
-                <!-- Tags -->
-                <div class="flex flex-wrap justify-center gap-2">
-                    <span class="px-3 py-1 text-xs font-medium bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full">Autonomous Driving</span>
-                    <span class="px-3 py-1 text-xs font-medium bg-green-50 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full">Meta-Control</span>
-                    <span class="px-3 py-1 text-xs font-medium bg-purple-50 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full">System 1 / System 2</span>
-                    <span class="px-3 py-1 text-xs font-medium bg-amber-50 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300 rounded-full">Safety-Compute Allocation</span>
-                    <span class="px-3 py-1 text-xs font-medium bg-red-50 dark:bg-red-900/30 text-red-700 dark:text-red-300 rounded-full">Edge Computing</span>
-                </div>
+                <div class="flex flex-wrap justify-center gap-2"><span class="px-3 py-1 text-xs font-medium bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full">Autonomous Driving</span>
+<span class="px-3 py-1 text-xs font-medium bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full">Compute Allocation</span>
+<span class="px-3 py-1 text-xs font-medium bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full">Closed-loop Simulation</span></div>
             </div>
         </section>
 
-        <!-- TL;DR + Teaser figure -->
-        <section class="py-12 bg-gray-50 dark:bg-gray-800/50">
-            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 fade-in">
-                <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-xl p-6 mb-10">
-                    <h2 class="text-sm font-semibold uppercase tracking-wide text-blue-600 dark:text-blue-400 mb-3">TL;DR</h2>
-                    <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
-                        Autonomous vehicles need deep reasoning for safety, but compute is limited on embedded platforms. We introduce a <strong>persistent vigilance signal</strong> (tonic state) that tracks accumulated risk history and decides <em>how much</em> reasoning to allocate (System 1 vs. System 2), while a separate <strong>surprise trigger</strong> (phasic signal) decides <em>when</em> to reason at all. On synthetic benchmarks, this reduces compute 25&ndash;50% vs. phasic-only triggering. In closed-loop highway-env traffic (540 episodes), TM-C remains crash-free in dense scenarios where other methods incur 3&ndash;7% crash rates, using only 6&ndash;15 compute units per episode vs. 400&ndash;800 for static baselines.
-                    </p>
+        <!-- TL;DR + the two questions + teaser figures -->
+        <section class="py-12 bg-gray-50 dark:bg-gray-800">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-white dark:bg-gray-900 border-l-4 border-blue-600 rounded-r-lg p-6 mb-6">
+                    <p class="text-xs font-semibold uppercase tracking-widest text-blue-600 dark:text-blue-400 mb-2">In short</p>
+                    <p class="text-gray-700 dark:text-gray-300 leading-relaxed">A self-driving car usually needs only a cheap reflex: watch the gap to the car ahead and brake if it closes. Occasionally it needs something more expensive: check the next lane over, anticipate a cut-in, consider changing lanes. An onboard computer cannot afford the expensive option at every control step, so something has to decide when to spend it. This project is a small controller that makes that call. We tested it on scripted risk traces and in a closed-loop highway simulator, against rules that are always cheap, always expensive, or that react only to sudden surprise. It uses noticeably less compute on quiet driving; it is not uniformly safer in every scenario; and it will miss a hazard that builds up too gradually to look surprising.</p>
                 </div>
-
-                <!-- Architecture diagram (Figure 1) -->
-                <div class="max-w-md mx-auto mb-10">
-                    <img src="images/fig1_architecture.png" alt="System architecture: tonic (slow) and phasic (fast) pathways from risk model to policy mode"
-                         class="w-full rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 bg-white p-4">
-                    <p class="text-sm text-gray-500 dark:text-gray-400 mt-3 text-center">
-                        System architecture. The tonic pathway (slow) sets deliberation depth; the phasic pathway (fast) triggers reasoning on surprise.
-                    </p>
-                </div>
-
-                <!-- Tonic dynamics (Figure 2) -->
-                <div class="max-w-sm mx-auto">
-                    <img src="images/fig2_tonic_dynamics.png" alt="Tonic meta-control dynamics showing risk signal, surprise, tonic state, and deliberation level over time"
-                         class="w-full rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 bg-white">
-                    <p class="text-sm text-gray-500 dark:text-gray-400 mt-3 text-center">
-                        Tonic dynamics on a regime-shift scenario. The tonic state accumulates vigilance and maps risk regimes to S1/S2 levels.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Abstract (collapsible) -->
-        <section class="py-14 bg-white dark:bg-gray-900">
-            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 fade-in">
-                <button onclick="document.getElementById('full-abstract').classList.toggle('hidden'); this.querySelector('.chevron').classList.toggle('rotate-180')" class="flex items-center gap-2 text-xl font-semibold text-gray-900 dark:text-white mb-5 hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer">
-                    Abstract
-                    <svg class="chevron w-5 h-5 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                </button>
-                <div id="full-abstract" class="hidden">
-                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
-                        Autonomous driving systems that incorporate deliberative reasoning modules, such as multi-step planners or large language models, face a fundamental resource allocation problem because safety demands deep inference under risk while embedded automotive platforms impose strict compute and latency budgets. We propose <em>tonic meta-control</em>, a mechanism that maintains a persistent vigilance state (the <em>tonic</em> signal, updated every timestep) via asymmetric piecewise dynamics with dead-band hysteresis. A dead-band guarantees exact state hold during boundary oscillations, providing formal guarantees on boundedness and monotonic transitions without continuous-integrator drift, and maps risk regimes to deliberation levels that govern compute allocation when rapid prediction-error surprise (the <em>phasic</em> signal) fires. On a synthetic testbench spanning five risk scenarios and in the highway-env driving simulator, tonic meta-control achieves 25&ndash;50% compute reduction versus phasic-only triggering, scaling to 46&ndash;52% under superlinear compute cost regimes. A memoryless threshold ablation isolates the contribution of accumulated vigilance history, confirming its advantage on transient and cyclic risk patterns. While reducing computational overhead on interactive traffic, tonic meta-control supports safety-aware autonomous reasoning on resource-constrained embedded platforms.
-                    </p>
-                </div>
+                <div class="flex flex-col sm:flex-row gap-4 mb-10"><div class="flex-1 bg-white dark:bg-gray-900 rounded-lg p-5 border border-gray-200 dark:border-gray-700"><p class="text-base font-semibold text-gray-900 dark:text-white mb-1.5">Should we think harder right now?</p><p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Answered by a fast check for sudden change. If the road just got worse than expected, it flips the switch on. It only decides <em>whether</em> to act &mdash; never how much.
+</p></div><div class="flex-1 bg-white dark:bg-gray-900 rounded-lg p-5 border border-gray-200 dark:border-gray-700"><p class="text-base font-semibold text-gray-900 dark:text-white mb-1.5">How much thinking is enough?</p><p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Answered separately, by a slow running memory of how tense the last stretch of driving has been. A road that has been busy for a while earns a deeper look than one that was calm a moment ago.
+</p></div></div>
+                <div class="space-y-10"><figure class="max-w-4xl mx-auto"><a href="images/fig1_architecture.png" target="_blank" rel="noopener" aria-label="Open full-size figure in a new tab" class="block group"><img src="images/fig1_architecture.png" alt="Risk from the vehicle sensors feeds a slow memory path and a fast surprise path, which together select a cheap reactive mode or an expensive deliberative mode" class="w-full rounded-lg border border-gray-200 dark:border-gray-700 bg-white transition-shadow group-hover:shadow-md"></a><figcaption class="text-sm text-gray-500 dark:text-gray-400 mt-3 text-left max-w-3xl mx-auto leading-relaxed"><strong>What you are looking at:</strong> the risk score coming off the vehicle sensors and splitting into two paths. The left path updates a slow vigilance memory on every timestep and sets <em>how deep</em> the reasoning should go; the right path watches for a sudden jump and decides <em>whether</em> to act now. <strong>Takeaway:</strong> depth and timing are driven by two different signals. That separation is the whole idea. Two labels on the diagram are worth decoding: <em>S1</em> and <em>S2</em> are just the cheap reactive mode and the expensive deliberative mode, and the <em>EMA predictor</em> is a short running average of recent risk &mdash; the yardstick the surprise check measures against.
+</figcaption></figure><figure class="max-w-4xl mx-auto"><a href="images/fig_deadband.png" target="_blank" rel="noopener" aria-label="Open full-size figure in a new tab" class="block group"><img src="images/fig_deadband.png" alt="Update rule for the slow memory: high risk raises it, low risk lowers it, and a shaded middle band holds it exactly" class="w-full rounded-lg border border-gray-200 dark:border-gray-700 bg-white transition-shadow group-hover:shadow-md"></a><figcaption class="text-sm text-gray-500 dark:text-gray-400 mt-3 text-left max-w-3xl mx-auto leading-relaxed"><strong>What you are looking at:</strong> how much the slow memory moves for a given level of risk. High risk pushes it up, low risk lets it drift back down, and inside the shaded middle band it is held exactly where it is. The up arrow is steeper than the down arrow on purpose. <strong>Takeaway:</strong> the hold band is what stops a noisy risk score sitting near a threshold from flipping the car back and forth between modes, and the asymmetry means the system goes on alert quickly but stands down slowly.
+</figcaption></figure></div>
             </div>
         </section>
 
         <!-- Key Results -->
-        <section class="py-14 bg-gray-50 dark:bg-gray-800/50">
-            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 fade-in">
-                <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-8 text-center">Key Results</h2>
-
-                <div class="grid md:grid-cols-3 gap-6 mb-12">
-                    <div class="bg-white dark:bg-gray-800 rounded-xl p-6 border border-gray-200 dark:border-gray-700 text-center">
-                        <div class="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">25&ndash;50%</div>
-                        <div class="text-sm text-gray-600 dark:text-gray-400">Compute reduction vs. phasic-only on synthetic testbench (5 scenarios); scales to 46&ndash;52% under superlinear cost models</div>
-                    </div>
-                    <div class="bg-white dark:bg-gray-800 rounded-xl p-6 border border-gray-200 dark:border-gray-700 text-center">
-                        <div class="text-3xl font-bold text-green-600 dark:text-green-400 mb-2">6&ndash;15</div>
-                        <div class="text-sm text-gray-600 dark:text-gray-400">Total compute per episode in highway-env (vs. 400&ndash;800 for static baselines), crash-free in dense traffic where other methods incur 3&ndash;7% crash rates</div>
-                    </div>
-                    <div class="bg-white dark:bg-gray-800 rounded-xl p-6 border border-gray-200 dark:border-gray-700 text-center">
-                        <div class="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2">13.0</div>
-                        <div class="text-sm text-gray-600 dark:text-gray-400">Highest safety-efficiency ratio in merge scenario, matching best RSS violation rate (0.211) at &lt;4% of Static-S2 compute</div>
-                    </div>
+        <section class="py-12 bg-white dark:bg-gray-900">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="mb-8">
+                    <p class="text-xs font-semibold uppercase tracking-widest text-blue-600 dark:text-blue-400 mb-2">Summary</p>
+                    <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white">Problem, approach, and what we ran</h2>
                 </div>
-
-                <!-- Pareto figure -->
-                <div class="max-w-sm mx-auto">
-                    <img src="images/fig4_pareto.png" alt="Pareto frontier: compute cost vs RSS violation rate across methods"
-                         class="w-full rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 bg-white">
-                    <p class="text-sm text-gray-500 dark:text-gray-400 mt-3 text-center">
-                        Compute vs. RSS violation rate across 3 scenarios and 6 methods. TM-C (stars) achieves low compute with competitive safety.
-                    </p>
-                </div>
+                <div class="grid md:grid-cols-3 gap-4"><div class="bg-white dark:bg-gray-900 rounded-lg p-6 border border-gray-200 dark:border-gray-700"><div class="text-xs font-semibold uppercase tracking-widest text-blue-600 dark:text-blue-400 mb-2">Problem</div><p class="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">Always using the cheap reflex leaves the car under-prepared in dense traffic. Always using the expensive look-ahead burns onboard compute on an empty highway. Reacting only to sudden surprise forgets that a stretch of road has been busy for a while, and thrashes when a noisy risk score sits right on a threshold.</p></div>
+<div class="bg-white dark:bg-gray-900 rounded-lg p-6 border border-gray-200 dark:border-gray-700"><div class="text-xs font-semibold uppercase tracking-widest text-blue-600 dark:text-blue-400 mb-2">Approach</div><p class="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">Split the decision. A slow running memory of risk &mdash; we call it the <em>tonic</em> state &mdash; sets how deep the reasoning goes. A separate fast surprise check &mdash; the <em>phasic</em> signal &mdash; decides whether to run it at all. A hold band in the middle of the risk range keeps the memory steady instead of chattering.</p></div>
+<div class="bg-white dark:bg-gray-900 rounded-lg p-6 border border-gray-200 dark:border-gray-700"><div class="text-xs font-semibold uppercase tracking-widest text-blue-600 dark:text-blue-400 mb-2">What we ran</div><p class="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">Five scripted risk patterns, then a closed-loop highway simulator in sparse traffic, dense traffic, and a merge. Six allocation rules were compared, all sharing the same perception, the same risk score, and the same underlying driving controller. The only thing that differs between them is the rule that decides how to spend compute.</p></div></div>
             </div>
         </section>
 
-        <!-- Method Overview -->
-        <section class="py-14 bg-white dark:bg-gray-900">
-            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 fade-in">
-                <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-5">How It Works</h2>
-                <div class="grid md:grid-cols-2 gap-8 items-start">
-                    <div>
-                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
-                            Tonic meta-control separates the <strong>when</strong> and <strong>how much</strong> of deliberative reasoning:
-                        </p>
-                        <ul class="space-y-3 text-gray-600 dark:text-gray-300">
-                            <li class="flex items-start">
-                                <span class="inline-block w-5 h-5 bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 rounded-full text-xs font-bold flex-shrink-0 flex items-center justify-center mr-3 mt-0.5">1</span>
-                                <span><strong>Tonic state</strong> (slow signal): a persistent vigilance level updated every timestep via piecewise integration with dead-band hysteresis. Determines System 1 vs. System 2 deliberation depth.</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="inline-block w-5 h-5 bg-green-100 dark:bg-green-900/40 text-green-600 dark:text-green-400 rounded-full text-xs font-bold flex-shrink-0 flex items-center justify-center mr-3 mt-0.5">2</span>
-                                <span><strong>Phasic trigger</strong> (fast signal): fires when prediction-error surprise exceeds a threshold, after a cooldown period. Controls <em>when</em> to invoke reasoning.</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="inline-block w-5 h-5 bg-purple-100 dark:bg-purple-900/40 text-purple-600 dark:text-purple-400 rounded-full text-xs font-bold flex-shrink-0 flex items-center justify-center mr-3 mt-0.5">3</span>
-                                <span><strong>Compute allocation</strong>: when triggered, the tonic-mapped level selects S1 (reactive, cheap) or S2 (deliberative, expensive), yielding Pareto-optimal safety/compute trade-offs.</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <img src="images/fig_perception_zones.png" alt="S1 vs S2 perception zones in dense highway traffic"
-                             class="w-full rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 bg-gray-900">
-                        <p class="text-sm text-gray-500 dark:text-gray-400 mt-3 text-center">
-                            S1 vs. S2 perception zones on dense highway. S1 monitors only the longitudinal gap; S2 widens margins and enables lane-change awareness.
-                        </p>
-                    </div>
+        <!-- Method -->
+        <section class="py-12 bg-gray-50 dark:bg-gray-800">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="mb-6">
+                    <p class="text-xs font-semibold uppercase tracking-widest text-blue-600 dark:text-blue-400 mb-2">Method</p>
+                    <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white">How It Works</h2>
                 </div>
+                <div class="max-w-3xl mb-10">
+                    <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">On every timestep the controller does the same small amount of bookkeeping &mdash; update the memory, update the surprise estimate &mdash; and then either invokes the chosen mode or does nothing extra. The bookkeeping itself is a comparison and a multiply-add, so it is negligible next to the reasoning it is scheduling.</p>
+                    <ol class="space-y-3 text-gray-700 dark:text-gray-300 list-decimal list-inside"><li class="leading-relaxed pl-1"><strong>Keep a slow memory of how risky the road has been.</strong> Each timestep the current risk score nudges a single running value up, down, or not at all. Inside a middle band it is held exactly, so sensor noise near a threshold cannot flip the mode. It climbs faster than it decays &mdash; a deliberate bias toward staying alert, since it is cheaper to be over-prepared than under-prepared.</li>
+<li class="leading-relaxed pl-1"><strong>Watch separately for things getting suddenly worse.</strong> Compare the current risk against a short running average of recent risk. Fire only if the gap is large, risk is still rising, and enough time has passed since the last firing. This is purely an on/off switch &mdash; it never decides cheap versus expensive.</li>
+<li class="leading-relaxed pl-1"><strong>Put the two together.</strong> When the surprise check fires, the slow memory is what says which mode to run. In cheap mode the car watches the gap to the vehicle ahead and brakes. In expensive mode it looks further ahead and into the adjacent lane, so a cut-in is visible, and a lane change becomes available.</li></ol>
+                </div>
+                <div><figure class="max-w-4xl mx-auto"><a href="images/fig_perception_zones.png" target="_blank" rel="noopener" aria-label="Open full-size figure in a new tab" class="block group"><img src="images/fig_perception_zones.png" alt="A dense highway frame with the monitored region drawn on it: the cheap mode watches only the car ahead, the expensive mode also watches the adjacent lane" class="w-full rounded-lg border border-gray-200 dark:border-gray-700 bg-white transition-shadow group-hover:shadow-md"></a><figcaption class="text-sm text-gray-500 dark:text-gray-400 mt-3 text-left max-w-3xl mx-auto leading-relaxed"><strong>What you are looking at:</strong> a single frame of dense highway traffic with the region the car is monitoring drawn over it. The cheap mode tracks only the gap to the vehicle directly ahead. The expensive mode looks further down the road and into the neighbouring lane, where a cut-in would come from. <strong>Takeaway:</strong> &ldquo;spending more compute&rdquo; here means literally attending to more of the road, and that is what the controller is rationing. The overlay labels <em>S1</em> and <em>S2</em> are the cheap and expensive modes respectively.
+</figcaption></figure></div>
             </div>
         </section>
 
-        <!-- Highway Sim figure -->
-        <section class="py-14 bg-gray-50 dark:bg-gray-800/50">
-            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 fade-in">
-                <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-5 text-center">Simulation Results</h2>
-                <div class="max-w-sm mx-auto">
-                    <img src="images/fig8_highway_merge.png" alt="Highway merge scenario timeline showing risk, tonic state, and actions"
-                         class="w-full rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 bg-white">
-                    <p class="text-sm text-gray-500 dark:text-gray-400 mt-3 text-center">
-                        Highway merge scenario. The tonic signal rises during close interactions, escalating to S2 deliberation with wider safety margins.
-                    </p>
+        <!-- Result Figures -->
+        <section class="py-12 bg-white dark:bg-gray-900">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="mb-6">
+                    <p class="text-xs font-semibold uppercase tracking-widest text-blue-600 dark:text-blue-400 mb-2">Experiments</p>
+                    <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white">What We Measured</h2>
+                </div>
+                <div class="space-y-12"><figure class="max-w-4xl mx-auto"><a href="images/fig2_tonic_dynamics.png" target="_blank" rel="noopener" aria-label="Open full-size figure in a new tab" class="block group"><img src="images/fig2_tonic_dynamics.png" alt="Four stacked traces from a run where risk jumps partway through: risk and its running average, the surprise signal, the slow memory, and the resulting mode" class="w-full rounded-lg border border-gray-200 dark:border-gray-700 bg-white transition-shadow group-hover:shadow-md"></a><figcaption class="text-sm text-gray-500 dark:text-gray-400 mt-3 text-left max-w-3xl mx-auto leading-relaxed"><strong>What you are looking at:</strong> four stacked traces from one run in which risk jumps partway through and later falls back. Top to bottom: the risk score against its running average; the surprise signal against its firing threshold; the slow memory against the threshold that separates the two modes; and the mode the car actually ran. <strong>Takeaway:</strong> surprise fires only twice, right at the moments of change, while the slow memory keeps evolving in between. That is what lets depth be chosen from history rather than from whatever the sensor said this instant &mdash; and why the car escalates in a few steps but takes noticeably longer to relax.
+</figcaption></figure>
+<figure class="max-w-4xl mx-auto"><a href="images/fig4_pareto.png" target="_blank" rel="noopener" aria-label="Open full-size figure in a new tab" class="block group"><img src="images/fig4_pareto.png" alt="Scatter plot of compute spent per episode against safe-distance violation rate for six methods across three scenarios" class="w-full rounded-lg border border-gray-200 dark:border-gray-700 bg-white transition-shadow group-hover:shadow-md"></a><figcaption class="text-sm text-gray-500 dark:text-gray-400 mt-3 text-left max-w-3xl mx-auto leading-relaxed"><strong>What you are looking at:</strong> every marker is one method in one scenario. Horizontal axis is compute spent per episode; vertical axis is how often that run violated a standard safe-following-distance rule. Further left is cheaper, lower is safer. <strong>Takeaway:</strong> our method lands in the low-compute region in all three scenarios, and in the merge it ties the best safety score of anything we tried. In dense traffic it stayed collision-free but did not beat the always-expensive rule on the distance metric. This is a tradeoff, not a clean sweep, and the plot is here so you can see the shape of it rather than take our word for it.
+</figcaption></figure>
+<figure class="max-w-4xl mx-auto"><a href="images/fig_gradual_ramp.png" target="_blank" rel="noopener" aria-label="Open full-size figure in a new tab" class="block group"><img src="images/fig_gradual_ramp.png" alt="A slowly rising risk signal tracked closely by its running average, so the surprise signal never reaches its threshold" class="w-full rounded-lg border border-gray-200 dark:border-gray-700 bg-white transition-shadow group-hover:shadow-md"></a><figcaption class="text-sm text-gray-500 dark:text-gray-400 mt-3 text-left max-w-3xl mx-auto leading-relaxed"><strong>What you are looking at:</strong> the failure case. Risk climbs slowly and steadily instead of jumping, so the running average tracks it closely and the surprise signal stays far below its threshold. <strong>Takeaway:</strong> nothing ever fires, and no extra reasoning is invoked. This is not specific to our method &mdash; every surprise-triggered rule we compared does the same thing here. A periodic fallback check would be the obvious remedy; we did not build or evaluate one, so we are reporting this as an open limitation.
+</figcaption></figure></div>
+            </div>
+        </section>
+
+        <!-- Scope: what this is and is not -->
+        <section class="py-12 bg-gray-50 dark:bg-gray-800">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8"><div class="max-w-3xl mx-auto bg-white dark:bg-gray-900 border-l-4 border-gray-400 dark:border-gray-600 rounded-r-lg p-6"><p class="text-xs font-semibold uppercase tracking-widest text-gray-500 dark:text-gray-400 mb-2">What this is, and what it is not</p><p class="text-gray-700 dark:text-gray-300 leading-relaxed">Tonic meta-control is a compute scheduler for deliberation. It sits above the driving stack and decides when the expensive reasoning path is allowed to run, and how deep it should go when it does. It is <em>not</em> a new object detector, <em>not</em> a new risk estimator, and <em>not</em> a new driving policy &mdash; every method in the comparison uses the same perception, the same risk score and the same underlying controller, and the only thing that changes is the rule that spends compute. The evaluation is in simulation, with a hand-built risk signal and fixed parameters; validating it against a higher-fidelity simulator and a real learned reasoning module is still ahead of us.
+</p></div></div>
+        </section>
+
+        <!-- Abstract (the paper's own words) -->
+        <section class="py-12 bg-white dark:bg-gray-900">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                <button id="abstract-toggle" class="flex items-center gap-2 text-xl font-semibold text-gray-900 dark:text-white mb-2 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                    Abstract
+                    <svg id="abstract-chevron" class="w-5 h-5 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">The paper&rsquo;s own abstract, in its original technical wording.</p>
+                <div id="abstract-body" class="hidden">
+                    <p class="text-gray-700 dark:text-gray-300 leading-relaxed">Autonomous driving systems that incorporate deliberative reasoning modules, such as multi-step planners or large language models, face a fundamental resource allocation problem because safety demands deep inference under risk while embedded automotive platforms impose strict compute and latency budgets. We propose <em>tonic meta-control</em>, a mechanism that maintains a persistent vigilance state (the <em>tonic</em> signal, updated every timestep) via asymmetric piecewise dynamics with dead-band hysteresis. A dead-band guarantees exact state hold during boundary oscillations, providing formal guarantees on boundedness and monotonic transitions without continuous-integrator drift, and maps risk regimes to deliberation levels that govern compute allocation when rapid prediction-error surprise (the <em>phasic</em> signal) fires. On a synthetic testbench spanning five risk scenarios and in the highway-env driving simulator, tonic meta-control achieves 25&ndash;50% compute reduction versus phasic-only triggering, scaling to 46&ndash;52% under superlinear compute cost regimes. A memoryless threshold ablation isolates the contribution of accumulated vigilance history, confirming its advantage on transient and cyclic risk patterns. While reducing computational overhead on interactive traffic, tonic meta-control supports safety-aware autonomous reasoning on resource-constrained embedded platforms.</p>
                 </div>
             </div>
         </section>
 
         <!-- BibTeX -->
-        <section class="py-14 bg-white dark:bg-gray-900">
-            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 fade-in">
-                <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-5">Citation</h2>
+        <section class="py-12 bg-gray-50 dark:bg-gray-800">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="mb-5">
+                    <p class="text-xs font-semibold uppercase tracking-widest text-blue-600 dark:text-blue-400 mb-2">Cite</p>
+                    <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white">Citation</h2>
+                </div>
                 <div class="relative">
-                    <pre class="bg-gray-100 dark:bg-gray-800 rounded-xl p-5 text-sm text-gray-700 dark:text-gray-300 overflow-x-auto border border-gray-200 dark:border-gray-700"><code>@inproceedings{han2026tonic,
+                    <pre id="bibtex-block" class="bg-gray-100 dark:bg-gray-800 rounded-lg p-5 text-sm text-gray-700 dark:text-gray-300 overflow-x-auto border border-gray-200 dark:border-gray-700"><code>@inproceedings{han2026tonic,
   title     = {Tonic Meta-Control for Adaptive Safety-Compute
                Allocation via Persistent Vigilance Dynamics},
   author    = {Han, Kyungtae and Chen, Yitao and
@@ -276,7 +216,7 @@
                Intelligent Transportation Systems (ITSC)},
   year      = {2026}
 }</code></pre>
-                    <button onclick="navigator.clipboard.writeText(document.querySelector('pre code').textContent).then(()=>{this.innerHTML='<i class=\'fas fa-check mr-1\'></i>Copied';setTimeout(()=>{this.innerHTML='<i class=\'fas fa-copy mr-1\'></i>Copy'},2000)})" class="absolute top-3 right-3 px-3 py-1.5 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md text-xs text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors">
+                    <button id="bibtex-copy" class="absolute top-3 right-3 px-3 py-1.5 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md text-xs text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors">
                         <i class="fas fa-copy mr-1"></i>Copy
                     </button>
                 </div>
@@ -285,32 +225,70 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700 py-8">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm text-gray-500 dark:text-gray-400">
-            &copy; 2026 Kyungtae Han. All rights reserved.
+    <footer class="bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="text-sm text-center text-gray-600 dark:text-gray-400">&copy; <span id="footer-year"></span> Kyungtae Han</p>
         </div>
     </footer>
 
     <script>
+    (function () {
         // Theme toggle
-        const toggle = document.getElementById('theme-toggle');
-        toggle.addEventListener('click', () => {
-            document.documentElement.classList.toggle('dark');
-            localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
-            const icon = toggle.querySelector('i');
-            icon.className = document.documentElement.classList.contains('dark') ? 'fas fa-sun text-yellow-400' : 'fas fa-moon text-gray-600';
-        });
-        // Set initial icon
-        if (document.documentElement.classList.contains('dark')) {
-            toggle.querySelector('i').className = 'fas fa-sun text-yellow-400';
+        var themeToggle = document.getElementById('theme-toggle');
+        function updateIcon(theme) {
+            if (!themeToggle) return;
+            var icon = themeToggle.querySelector('i');
+            if (!icon) return;
+            icon.className = theme === 'dark' ? 'fas fa-sun text-yellow-500' : 'fas fa-moon text-gray-600 dark:text-gray-300';
+        }
+        var saved = localStorage.getItem('theme') || 'light';
+        document.documentElement.classList.toggle('dark', saved === 'dark');
+        updateIcon(saved);
+        if (themeToggle) {
+            themeToggle.addEventListener('click', function (e) {
+                e.preventDefault();
+                var dark = document.documentElement.classList.toggle('dark');
+                var t = dark ? 'dark' : 'light';
+                localStorage.setItem('theme', t);
+                updateIcon(t);
+            });
         }
 
-        // Mobile menu toggle
-        const menuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
+        // Mobile menu
+        var menuBtn = document.getElementById('mobile-menu-btn');
+        var menu = document.getElementById('mobile-menu');
+        if (menuBtn && menu) {
+            menuBtn.addEventListener('click', function () { menu.classList.toggle('hidden'); });
+        }
+
+        // Footer year
+        var fy = document.getElementById('footer-year');
+        if (fy) fy.textContent = new Date().getFullYear();
+
+        // Abstract toggle
+        var abstractToggle = document.getElementById('abstract-toggle');
+        var abstractBody = document.getElementById('abstract-body');
+        var abstractChevron = document.getElementById('abstract-chevron');
+        if (abstractToggle && abstractBody) {
+            abstractToggle.addEventListener('click', function () {
+                abstractBody.classList.toggle('hidden');
+                if (abstractChevron) abstractChevron.classList.toggle('rotate-180');
+            });
+        }
+
+        // BibTeX copy
+        var copyBtn = document.getElementById('bibtex-copy');
+        var bibBlock = document.getElementById('bibtex-block');
+        if (copyBtn && bibBlock) {
+            copyBtn.addEventListener('click', function () {
+                var text = bibBlock.querySelector('code').textContent;
+                navigator.clipboard.writeText(text).then(function () {
+                    copyBtn.innerHTML = '<i class="fas fa-check mr-1"></i>Copied';
+                    setTimeout(function () { copyBtn.innerHTML = '<i class="fas fa-copy mr-1"></i>Copy'; }, 2000);
+                });
+            });
+        }
+    })();
     </script>
 </body>
 </html>

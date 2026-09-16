@@ -124,6 +124,11 @@ function initPublications() {
         threshold: 0.3,
         includeScore: true
     };
+    // Fuse.js is only loaded on publications.html; the homepage includes this
+    // script but has no search UI, so degrade quietly instead of throwing.
+    if (typeof Fuse === 'undefined') {
+        return;
+    }
     fuse = new Fuse(publications, options);
     
     // Initialize filtered publications with all publications
