@@ -1,10 +1,31 @@
 // Modern Academic Homepage JavaScript
-// Generated on 2026-09-16 10:07:45
-// Total publications: 228
-// Breakdown: 76 conferences, 8 presentations, 20 journals, 121 patents, 3 books
+// Generated on 2026-09-21 22:38:38
+// Total publications: 230
+// Breakdown: 76 conferences, 8 presentations, 21 journals, 122 patents, 3 books
 
 // Comprehensive publications data from YAML files
 const publications = [
+    {
+        yaml_id: "CV_156",
+        title: "Systems and Method for Adaptive Vision-Language-Model-Based Reasoning",
+        authors: "Y. Chen, D. Chen, Q. Chen, Y. Liu, K. Han, and N. Ammar",
+        venue: "U.S. Patent Appl. 64/157,810, Sep. 18, 2026",
+        year: 2026,
+        type: "patent",
+        type_label: "Patent"
+,
+        research_area: [
+        "generative-ai",
+        "intelligent-transportation",
+        "connected-autonomous-vehicles"
+]
+,
+        application_number: "64/157,810"
+,
+        patent_type: "application"
+,
+        filing_date: "2026-09-18"
+    },
     {
         yaml_id: "CV_155",
         title: "Tonic Meta-Control for Adaptive Safety-Compute Allocation via Persistent Vigilance Dynamics",
@@ -622,6 +643,22 @@ const publications = [
         research_area: [
         "edge-computing",
         "generative-ai"
+]
+    },
+    {
+        yaml_id: "Xie2026TMC",
+        title: "REAL: A Reinforcement Learning-based Intelligent Offloading Framework for Edge-Assisted MAR",
+        authors: "L. Xie, A. Mallik, D. Chen, K. Han, and Z. Han",
+        venue: "IEEE Transactions on Mobile Computing",
+        year: 2026,
+        type: "journal",
+        type_label: "Journal"
+,
+        note: "Accepted"
+,
+        research_area: [
+        "edge-computing",
+        "digital-twin"
 ]
     },
     {
@@ -4184,6 +4221,8 @@ const publications = [
         url: "https://saemobilus.sae.org/content/12-02-02-0008/"
 ,
         pdf: "https://www.researchgate.net/publication/333300521_Cooperative_Ramp_Merging_System_Agent-Based_Modeling_and_Simulation_Using_Game_Engine"
+,
+        note: "Best Paper Award"
 ,
         research_area: [
         "connected-autonomous-vehicles",
