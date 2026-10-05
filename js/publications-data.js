@@ -1,5 +1,5 @@
 // Modern Academic Homepage JavaScript
-// Generated on 2026-09-21 22:38:38
+// Generated on 2026-10-05 08:37:23
 // Total publications: 230
 // Breakdown: 76 conferences, 8 presentations, 21 journals, 122 patents, 3 books
 
@@ -490,7 +490,7 @@ const publications = [
         type: "book",
         type_label: "Book"
 ,
-        year_text: "2026 (Under contract with IEEE-Wiley Press for publication in 2026)"
+        year_text: "November 2026"
 ,
         url: "/books/genai4cav/"
 ,
@@ -1336,7 +1336,7 @@ const publications = [
     {
         yaml_id: "CV_007",
         title: "Adaptive Road Sign Interpretation and Vehicle Response System",
-        authors: "R. Gupta, Y. Max, A. Abdelraouf, and K. Han",
+        authors: "R. Gupta, Y. Ma, A. Abdelraouf, and K. Han",
         venue: "U.S. Patent Appl. 19/004,333, Dec. 29, 2024",
         year: 2024,
         type: "patent",
@@ -1357,7 +1357,7 @@ const publications = [
     {
         yaml_id: "CV_008",
         title: "Context-Aware External Object Detection and Vehicle Guidance",
-        authors: "R. Gupta, Y. Max, A. Abdelraouf, and K. Han",
+        authors: "R. Gupta, Y. Ma, A. Abdelraouf, and K. Han",
         venue: "U.S. Patent Appl. 19/004,331, Dec. 29, 2024",
         year: 2024,
         type: "patent",
@@ -1400,7 +1400,7 @@ const publications = [
     {
         yaml_id: "CV_010",
         title: "Advanced Driver Focus Tracking for Approaching Hazard",
-        authors: "R. Gupta, Q. Chen, Y. Max, A. Abdelraouf, and K. Han",
+        authors: "R. Gupta, Q. Chen, Y. Ma, A. Abdelraouf, and K. Han",
         venue: "U.S. Patent Appl. 18/977,280, Dec. 11, 2024",
         year: 2024,
         type: "patent",
@@ -1421,7 +1421,7 @@ const publications = [
     {
         yaml_id: "CV_011",
         title: "Audio-Based Driver Assistance System for Enhanced Vehicle Safety",
-        authors: "R. Gupta, Q. Chen, Y. Max, A. Abdelraouf, and K. Han",
+        authors: "R. Gupta, Q. Chen, Y. Ma, A. Abdelraouf, and K. Han",
         venue: "U.S. Patent Appl. 18/977,353, Dec. 11, 2024",
         year: 2024,
         type: "patent",
@@ -2112,7 +2112,7 @@ const publications = [
     {
         yaml_id: "Mallik2024ICC",
         title: "Unleashing the true power of age-of-information: Service aggregation in connected and autonomous vehicles",
-        authors: "A. Mallik, D. Chen, K. Han, L. Jiang, and Z. Hang",
+        authors: "A. Mallik, D. Chen, K. Han, L. Jiang, and Z. Han",
         venue: "IEEE International Conference on Communications (ICC): Mobile and Wireless Networks Symposium, Denver, CO, USA",
         year: 2024,
         type: "conference",
@@ -2827,7 +2827,7 @@ const publications = [
     {
         yaml_id: "Liu2023MASS",
         title: "Visualization of mobility digital twin: Framework design, case study, and future challenges",
-        authors: "Y. Liu, X. Tu, D. Chen, K. Han, O. Altinas, and H. Wang",
+        authors: "Y. Liu, X. Tu, D. Chen, K. Han, O. Altintas, and H. Wang",
         venue: "IEEE International Conference on Mobile Ad Hoc and Smart Systems (MASS), Toronto, ON, Canada",
         year: 2023,
         type: "conference",
@@ -2917,9 +2917,9 @@ const publications = [
     },
     {
         yaml_id: "Chen2023ICASSP",
-        title: "Confidence-based federated distillation for vision-base lane-centering",
+        title: "Confidence-based federated distillation for vision-based lane-centering",
         authors: "Y. Chen, D. Chen, H. Wang, K. Han, and M. Zhao",
-        venue: "IEEE IEEE International Conference on Acoustics, Speech, Signal Processing (ICASSP) Workshop, Rhodes Island, Greece",
+        venue: "IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP) Workshops, Rhodes Island, Greece",
         year: 2023,
         type: "conference",
         type_label: "Conference"
@@ -4679,7 +4679,7 @@ const publications = [
     {
         yaml_id: "Han2005Asilomar",
         title: "Low-power multipliers with data wordlength reduction",
-        authors: "K. Han, B. Evans, E. Swartzlander, and Jr.",
+        authors: "K. Han, B. Evans, and E. Jr.",
         venue: "Asilomar Conference on Signals, Systems and Computers, Pacific Grove, CA, USA",
         year: 2005,
         type: "conference",
@@ -4697,7 +4697,7 @@ const publications = [
     {
         yaml_id: "Han2004SiPS",
         title: "Data wordlength reduction for low-power signal processing software",
-        authors: "K. Han, B. Evans, E. Swartzlander, and Jr.",
+        authors: "K. Han, B. Evans, and E. Jr.",
         venue: "IEEE Workshop on Signal Processing Systems (SiPS), Austin, TX, USA",
         year: 2004,
         type: "conference",
