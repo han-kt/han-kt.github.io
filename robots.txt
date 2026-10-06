@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://han-kt.github.io/sitemap.xml

@@ -1,5 +1,5 @@
 // Modern Academic Homepage JavaScript
-// Generated on 2026-10-05 08:41:06
+// Generated on 2026-10-06 08:53:57
 // Total publications: 230
 // Breakdown: 76 conferences, 8 presentations, 21 journals, 122 patents, 3 books
 
@@ -604,6 +604,8 @@ const publications = [
         type_label: "Conference"
 ,
         url: "https://ieeexplore.ieee.org/document/11571305"
+,
+        note: "Poster"
 ,
         research_area: [
         "connected-autonomous-vehicles",
@@ -1261,12 +1263,12 @@ const publications = [
         yaml_id: "Tu2025HotMobile",
         title: "GreenAuto: An Automated Platform for Sustainable AI Model Design on Edge Devices",
         authors: "X. Tu, D. Chen, K. Han, O. Altintas, and H. Wang",
-        venue: "The 26th International Workshop on Mobile Computing Systems and Applications (HotMobile), Cape Town, South Africa",
+        venue: "The 26th International Workshop on Mobile Computing Systems and Applications (HotMobile), La Quinta, CA, USA",
         year: 2025,
         type: "conference",
         type_label: "Conference"
 ,
-        url: "https://ieeexplore.ieee.org/document/10901787"
+        url: "https://dl.acm.org/doi/10.1145/3708468.3711890"
 ,
         pdf: "https://arxiv.org/pdf/2501.14995"
 ,
@@ -1482,6 +1484,32 @@ const publications = [
         filing_date: "2024-11-12"
     },
     {
+        yaml_id: "CV_018",
+        title: "Detection, Classification, and Prediction of Bacteria Colony Growth in Vehicle Passenger Cabin",
+        authors: "R. Gupta, Z. Wang, Y. Wang, K. Han, and P. Tiwari",
+        venue: "U.S. Patent 12 080 080, Sep. 3, 2024",
+        year: 2024,
+        type: "patent",
+        type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US12080080B2"
+,
+        research_area: [
+        "digital-twin",
+        "intelligent-transportation"
+]
+,
+        patent_number: "12080080"
+,
+        application_number: "17/373,050"
+,
+        patent_type: "granted"
+,
+        grant_date: "2024-09-03"
+,
+        filing_date: "2021-07-12"
+    },
+    {
         yaml_id: "CV_021",
         title: "Systems and Methods for Mixed Reality Applications with Selective Frame Transmission",
         authors: "D. Doe, D. Chen, and K. Han",
@@ -1507,29 +1535,6 @@ const publications = [
         filing_date: "2024-08-28"
     },
     {
-        yaml_id: "CV_019",
-        title: "Cannabis Impairment Detection and Safety System for Vehicles",
-        authors: "R. Gupta, H. Abdelkawy, A. Abdelraouf, and K. Han",
-        venue: "U.S. Patent 12 071 141, Aug. 27, 2024",
-        year: 2024,
-        type: "patent",
-        type_label: "Patent"
-,
-        url: "https://patents.google.com/patent/US12071141"
-,
-        research_area: [
-        "digital-twin"
-]
-,
-        patent_number: "12071141"
-,
-        application_number: ""
-,
-        patent_type: "granted"
-,
-        grant_date: "2024-08-27"
-    },
-    {
         yaml_id: "CV_020",
         title: "Rest Stop Recommendation System",
         authors: "Z. Shou, Z. Wang, K. Han, Y. Liu, and P. Tiwari",
@@ -1553,6 +1558,31 @@ const publications = [
         patent_type: "granted"
 ,
         grant_date: "2024-08-27"
+    },
+    {
+        yaml_id: "CV_088",
+        title: "Systems and Method for Predicting Driver Visual Impairment with Artificial Intelligence",
+        authors: "R. Gupta, Z. Zhao, Z. Wang, K. Han, and P. Tiwari",
+        venue: "U.S. Patent 12 071 141, Aug. 27, 2024",
+        year: 2024,
+        type: "patent",
+        type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US12071141B2/en?oq=17586593"
+,
+        research_area: [
+        "digital-twin"
+]
+,
+        patent_number: "12071141"
+,
+        application_number: "17/586,593"
+,
+        patent_type: "granted"
+,
+        grant_date: "2024-08-27"
+,
+        filing_date: "2022-01-27"
     },
     {
         yaml_id: "CV_024",
@@ -2007,30 +2037,6 @@ const publications = [
         patent_type: "application"
 ,
         filing_date: "2024-01-05"
-    },
-    {
-        yaml_id: "CV_018",
-        title: "Detection, Classification, and Prediction of Bacteria Colony Growth in Vehicle Passenger Cabin",
-        authors: "R. Gupta, Z. Wang, Y. Wang, K. Han, and P. Tiwari",
-        venue: "U.S. Patent 12 080 080, Jan. 3, 2024",
-        year: 2024,
-        type: "patent",
-        type_label: "Patent"
-,
-        url: "https://patents.google.com/patent/US12080080"
-,
-        research_area: [
-        "digital-twin",
-        "intelligent-transportation"
-]
-,
-        patent_number: "12080080"
-,
-        application_number: ""
-,
-        patent_type: "granted"
-,
-        grant_date: "2024-01-03"
     },
     {
         yaml_id: "Cao2024GLOBECOM",
@@ -2510,6 +2516,29 @@ const publications = [
         patent_type: "granted"
 ,
         grant_date: "2023-04-25"
+    },
+    {
+        yaml_id: "CV_019",
+        title: "Cannabis Impairment Detection and Safety System for Vehicles",
+        authors: "R. Gupta, H. Abdelkawy, A. Abdelraouf, and K. Han",
+        venue: "U.S. Patent Appl. 18/299,091, Apr. 12, 2023",
+        year: 2023,
+        type: "patent",
+        type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US20240346833A1/en?oq=18299091"
+,
+        research_area: [
+        "digital-twin"
+]
+,
+        patent_number: ""
+,
+        application_number: "18/299,091"
+,
+        patent_type: "application"
+,
+        filing_date: "2023-04-12"
     },
     {
         yaml_id: "CV_059",
@@ -3372,29 +3401,6 @@ const publications = [
         grant_date: "2022-02-22"
     },
     {
-        yaml_id: "CV_088",
-        title: "Systems and Method for Predicting Driver Visual Impairment with Artificial Intelligence",
-        authors: "R. Gupta, Z. Zhao, Z. Wang, K. Han, and P. Tiwari",
-        venue: "U.S. Patent Appl. 17/586,593, Jan. 27, 2022",
-        year: 2022,
-        type: "patent",
-        type_label: "Patent"
-,
-        url: "https://patents.google.com/patent/US12071141B2/en?oq=17586593"
-,
-        research_area: [
-        "digital-twin"
-]
-,
-        patent_number: ""
-,
-        application_number: "17/586,593"
-,
-        patent_type: "application"
-,
-        filing_date: "2022-01-27"
-    },
-    {
         yaml_id: "CV_089",
         title: "Digital Twin Simulation-Based Vehicular Communication Planning",
         authors: "K. Han, A. Sakr, and P. Tiwari",
@@ -3904,7 +3910,7 @@ const publications = [
     },
     {
         yaml_id: "Wang2021DTPI",
-        title: "Digital twin simulation of connected and automated vehicles with the unity game engine",
+        title: "Digital twin simulation of connected and automated vehicles with the Unity game engine",
         authors: "Z. Wang, K. Han, and P. Tiwari",
         venue: "IEEE International Conference on Digital Twin and Parallel Intelligence (DTPI), Beijing, China",
         year: 2021,
@@ -3925,7 +3931,7 @@ const publications = [
     },
     {
         yaml_id: "Wang2021ITSC",
-        title: "Personalized adaptive cruise control via gaussian process regression",
+        title: "Personalized adaptive cruise control via Gaussian process regression",
         authors: "Y. Wang, Z. Wang, K. Han, P. Tiwari, and D. Work",
         venue: "IEEE International Conference on Intelligent Transportation Systems (ITSC), Indianapolis, IN, USA",
         year: 2021,
@@ -4382,7 +4388,7 @@ const publications = [
     },
     {
         yaml_id: "Zuo2015ICCAD",
-        title: "A polyhedral-based systemc modeling and generation framework for effective low-power design space exploration",
+        title: "A polyhedral-based SystemC modeling and generation framework for effective low-power design space exploration",
         authors: "W. Zuo, W. Kemmerer, J. Lim, L. Pouchet, A. Ayupov, T. Kim, K. Han, and D. Chen",
         venue: "IEEE/ACM International Conference on Computer-Aided Design (ICCAD), Austin, TX, USA",
         year: 2015,

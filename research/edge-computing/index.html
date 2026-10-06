@@ -3,548 +3,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edge Computing Systems - Kyungtae Han</title>
-    <meta name="description" content="Research on energy-efficient edge computing platforms for real-time processing in intelligent transportation systems.">
+    <title>Vehicular Edge Computing &amp; Networking — Research — Kyungtae (KT) Han</title>
+    <meta name="description" content="Computation offloading, resource allocation, and data delivery for connected vehicles, including crowdsourced live high-definition maps, real-time cooperative perception at the edge, and information freshness in vehicular networks.">
+    <link rel="canonical" href="https://han-kt.github.io/research/edge-computing/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Kyungtae (KT) Han">
+    <meta property="og:title" content="Vehicular Edge Computing &amp; Networking — Research — Kyungtae (KT) Han">
+    <meta property="og:description" content="Computation offloading, resource allocation, and data delivery for connected vehicles, including crowdsourced live high-definition maps, real-time cooperative perception at the edge, and information freshness in vehicular networks.">
+    <meta property="og:url" content="https://han-kt.github.io/research/edge-computing/">
+    <meta property="og:image" content="https://han-kt.github.io/images/KyungtaeHan_850x850.jpg">
+    <meta name="twitter:card" content="summary">
     <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
-    
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    fontFamily: {
-                        'inter': ['Inter', 'system-ui', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="/css/site.css?v=1791302039">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
     <script>
-        try {
-            var __t = localStorage.getItem('theme');
-            if (__t === 'dark') document.documentElement.classList.add('dark');
-        } catch (e) {}
+        try { if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark'); } catch (e) {}
     </script>
-    
-    <!-- Fuse.js for search -->
-    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
-    
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GEG5GDGV8P"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
-        
         gtag('js', new Date());
-        
-        // Analytics enabled immediately with privacy settings
-        
-        // Respect Do Not Track
         if (navigator.doNotTrack == "1" || window.doNotTrack == "1" || navigator.msDoNotTrack == "1") {
             window['ga-disable-G-GEG5GDGV8P'] = true;
-            gtag('consent', 'update', {
-                'analytics_storage': 'denied'
-            });
+            gtag('consent', 'update', { 'analytics_storage': 'denied' });
         }
-        
         gtag('config', 'G-GEG5GDGV8P', {'anonymize_ip': true});
     </script>
-    
-    <!-- Custom CSS -->
-    <style>
-        body { font-family: 'Inter', system-ui, sans-serif; }
-        .dark { color-scheme: dark; }
-        
-        /* Smooth transitions for dark mode */
-        * {
-            transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
-        }
-        
-        .fade-in {
-            animation: fadeIn 0.6s ease-in-out;
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        
-        .publication-abstract {
-            transition: all 0.3s ease;
-        }
-
-        .nav-link {
-            @apply text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-colors;
-        }
-
-        .mobile-nav-link {
-            @apply text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium transition-colors;
-        }
-    </style>
 </head>
-<body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-200">
-    <header id="header" class="fixed top-0 w-full bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-700 z-50 transition-all duration-200">
-        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white">
+    <header id="header" class="fixed top-0 w-full bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-700 z-50 transition-transform duration-200">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Main">
             <div class="flex justify-between items-center h-16">
-                <div class="flex-shrink-0">
-                    <a href="../../index.html" class="text-xl font-semibold text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Kyungtae Han</a>
+                <a href="/" class="text-xl font-semibold text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Kyungtae Han</a>
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="/#research" class="px-3 py-2 rounded-md text-sm font-medium transition-colors text-blue-600 dark:text-blue-400" aria-current="page">Research</a>
+                    <a href="/publications.html" class="px-3 py-2 rounded-md text-sm font-medium transition-colors text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">Publications</a>
+                    <a href="/#teaching" class="px-3 py-2 rounded-md text-sm font-medium transition-colors text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">Teaching</a>
+                    <a href="/#service" class="px-3 py-2 rounded-md text-sm font-medium transition-colors text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">Service</a>
+                    <a href="/#news" class="px-3 py-2 rounded-md text-sm font-medium transition-colors text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">News</a>
+                    <a href="/#contact" class="px-3 py-2 rounded-md text-sm font-medium transition-colors text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">Contact</a>
                 </div>
-
-                <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-4">
-                        <a href="../../index.html#home" class="nav-link">Home</a>
-                        <a href="../../index.html#research" class="nav-link">Research</a>
-                        <a href="../../publications.html" class="nav-link">Publications</a>
-                        <a href="../../index.html#teaching" class="nav-link">Teaching</a>
-                        <a href="../../index.html#news" class="nav-link">News</a>
-                        <a href="../../index.html#contact" class="nav-link">Contact</a>
-                    </div>
-                </div>
-
-                <div class="flex items-center space-x-4">
+                <div class="flex items-center space-x-3">
                     <button id="theme-toggle" type="button" class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors" aria-label="Toggle dark mode">
-                        <i class="fas fa-moon text-gray-600 dark:text-gray-300"></i>
+                        <i class="fas fa-moon text-gray-600 dark:text-gray-300" aria-hidden="true"></i>
                     </button>
-
-                    <button id="mobile-menu-btn" type="button" class="block md:hidden p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors" aria-label="Toggle mobile menu" aria-expanded="false">
-                        <i class="fas fa-bars text-gray-600 dark:text-gray-300"></i>
+                    <button id="mobile-menu-btn" type="button" class="block md:hidden p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+                        <i class="fas fa-bars text-gray-600 dark:text-gray-300" aria-hidden="true"></i>
                     </button>
                 </div>
             </div>
-
             <div id="mobile-menu" class="hidden md:hidden">
                 <div class="px-2 pt-2 pb-3 space-y-1 bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
-                    <a href="../../index.html#home" class="mobile-nav-link">Home</a>
-                    <a href="../../index.html#research" class="mobile-nav-link">Research</a>
-                    <a href="../../publications.html" class="mobile-nav-link">Publications</a>
-                    <a href="../../index.html#teaching" class="mobile-nav-link">Teaching</a>
-                    <a href="../../index.html#news" class="mobile-nav-link">News</a>
-                    <a href="../../index.html#contact" class="mobile-nav-link">Contact</a>
+                    <a href="/#research" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">Research</a>
+                    <a href="/publications.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">Publications</a>
+                    <a href="/#teaching" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">Teaching</a>
+                    <a href="/#service" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">Service</a>
+                    <a href="/#news" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">News</a>
+                    <a href="/#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">Contact</a>
                 </div>
             </div>
         </nav>
     </header>
 
-    <!-- Main Content -->
     <main class="pt-16">
-        <!-- Hero Section -->
-        <section class="pt-20 pb-14 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center">
-                    <p class="text-xs font-semibold uppercase tracking-widest text-blue-600 dark:text-blue-400 mb-2">Research Area</p>
-                    <h1 class="text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-3">
-                        Edge Computing Systems
-                    </h1>
-                    <p class="text-base text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-8">
-                        Research on energy-efficient edge computing platforms for real-time processing in intelligent transportation systems.
-                    </p>
-                    
-                    <!-- Stats (click to filter within this page) -->
-                    <div class="flex flex-wrap justify-center gap-x-10 gap-y-4 mb-8">
-                        <button type="button" onclick="handleStatClick('book')" class="text-center hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer">
-                            <div id="books-count" class="text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-1">&ndash;</div>
-                            <div class="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400 font-medium">Books</div>
-                        </button>
-                        <button type="button" onclick="handleStatClick('journal')" class="text-center hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer">
-                            <div id="journals-count" class="text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-1">&ndash;</div>
-                            <div class="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400 font-medium">Journals</div>
-                        </button>
-                        <button type="button" onclick="handleStatClick('conference')" class="text-center hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer">
-                            <div id="conferences-count" class="text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-1">&ndash;</div>
-                            <div class="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400 font-medium">Conferences</div>
-                        </button>
-                        <button type="button" onclick="handleStatClick('patent')" class="text-center hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer">
-                            <div id="patents-count" class="text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-1">&ndash;</div>
-                            <div class="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400 font-medium">Patents</div>
-                        </button>
-                    </div>
-                    
-                    <!-- Tags -->
-                    <div class="flex flex-wrap justify-center gap-2 mb-8">
-                        <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">Edge Computing</span>
-                        <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">IoT</span>
-                        
-                    </div>
-                </div>
+        <section class="pt-14 pb-10 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <nav aria-label="Breadcrumb" class="text-sm text-gray-500 dark:text-gray-400 mb-4">
+                    <a href="/#research" class="hover:text-blue-600 dark:hover:text-blue-400">Research</a>
+                    <span aria-hidden="true"> / </span>
+                    <span>Research area</span>
+                </nav>
+                <h1 class="text-3xl md:text-4xl font-semibold text-gray-900 dark:text-white mb-4 text-balance">Vehicular Edge Computing &amp; Networking</h1>
+                <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">Automated driving produces large, time-sensitive data flows, such as maps, shared perception, and model inference, that exceed what one vehicle can compute and what networks can deliver on demand. This work asks where computation should run, which data to send, and how to keep shared information fresh. It addresses these questions with methods that divide computation and data between vehicles and edge servers under latency and bandwidth limits.</p>
             </div>
         </section>
 
-        <!-- Search and Filter Section -->
-        <section class="py-8 bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex flex-col md:flex-row gap-4 items-center justify-between">
-                    <!-- Search -->
-                    <div class="flex-1 max-w-md">
-                        <div class="relative">
-                            <input type="text" id="search-input" placeholder="Search publications..." 
-                                   class="w-full pl-10 pr-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-                            <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
-                        </div>
-                    </div>
-                    
-                    <!-- Filter -->
-                    <div class="flex gap-4">
-                        <select id="filter-select" class="px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-                            <option value="all" class="bg-white dark:bg-gray-800 text-gray-900 dark:text-white">All Publications</option>
-                            <option value="journal" class="bg-white dark:bg-gray-800 text-gray-900 dark:text-white">Journal Papers</option>
-                            <option value="conference" class="bg-white dark:bg-gray-800 text-gray-900 dark:text-white">Conference Papers</option>
-                            <option value="patent" class="bg-white dark:bg-gray-800 text-gray-900 dark:text-white">Patents</option>
-                            <option value="book" class="bg-white dark:bg-gray-800 text-gray-900 dark:text-white">Books</option>
-                        </select>
-                    </div>
-                </div>
+        <section class="py-10 bg-white dark:bg-gray-900" aria-labelledby="themes">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 id="themes" class="text-xl font-semibold text-gray-900 dark:text-white mb-6">Main themes</h2>
+                <ol class="space-y-6">
+                    <li class="pl-4 border-l-2 border-blue-600 dark:border-blue-400">
+                        <h3 class="font-semibold text-gray-900 dark:text-white">Live HD maps from vehicle and edge collaboration</h3>
+                        <p class="mt-1 text-gray-700 dark:text-gray-300">Crowdsourced live high-definition maps built by collaborative computation between vehicles and edge servers, formulated to minimize transmission and computing resource usage under end-to-end latency limits; and COMAP, proactive provisioning of crowdsourced maps.</p>
+                        <p class="mt-1 text-sm text-gray-500 dark:text-gray-400"><a href="#Yuru2024VT" class="hover:text-blue-600 dark:hover:text-blue-400" title="Crowdsourcing Live High Definition Map via Collaborative Computation in Automotive Edge Computing">Zhang et al., IEEE TVT 2024</a> · <a href="https://ieeexplore.ieee.org/document/10278954" class="hover:text-blue-600 dark:hover:text-blue-400" title="COMAP: Proactive provision for crowdsourcing map in automotive edge computing" target="_blank" rel="noopener">COMAP, IEEE ICC 2023</a></p>
+                    </li>
+                    <li class="pl-4 border-l-2 border-blue-600 dark:border-blue-400">
+                        <h3 class="font-semibold text-gray-900 dark:text-white">Real-time cooperative perception at the edge</h3>
+                        <p class="mt-1 text-gray-700 dark:text-gray-300">AdaMap adaptively selects and compresses shared point-cloud data so that cooperative perception meets latency targets for large numbers of vehicles under changing network conditions.</p>
+                        <p class="mt-1 text-sm text-gray-500 dark:text-gray-400"><a href="#Liu2023SEC" class="hover:text-blue-600 dark:hover:text-blue-400" title="AdaMap: High-scalable real-time cooperative perception at the edge">AdaMap, ACM/IEEE SEC 2023</a></p>
+                    </li>
+                    <li class="pl-4 border-l-2 border-blue-600 dark:border-blue-400">
+                        <h3 class="font-semibold text-gray-900 dark:text-white">Learning-based data delivery and offloading</h3>
+                        <p class="mt-1 text-gray-700 dark:text-gray-300">DSORL, reinforcement-learning data-source selection for HD-map delivery in vehicular named data networking; REAL, learning-based offloading for edge-assisted mobile augmented reality; and network-aware task distribution for edge-assisted generative AI.</p>
+                        <p class="mt-1 text-sm text-gray-500 dark:text-gray-400"><a href="#Doe2023TITS" class="hover:text-blue-600 dark:hover:text-blue-400" title="DSORL: Data Source Optimization with Reinforcement Learning Scheme for Vehicular Named Data Networks">DSORL, IEEE T-ITS 2023</a> · <a href="#Xie2026TMC" class="hover:text-blue-600 dark:hover:text-blue-400" title="REAL: A Reinforcement Learning-based Intelligent Offloading Framework for Edge-Assisted MAR">REAL, IEEE TMC 2026</a> · <a href="#Yan2026ICC" class="hover:text-blue-600 dark:hover:text-blue-400" title="Network-Aware Intelligent Task Distributor for Edge-Assisted Generative AI">Yan et al., IEEE ICC 2026</a></p>
+                    </li>
+                    <li class="pl-4 border-l-2 border-blue-600 dark:border-blue-400">
+                        <h3 class="font-semibold text-gray-900 dark:text-white">Vehicles as edge resources and information freshness</h3>
+                        <p class="mt-1 text-gray-700 dark:text-gray-300">CAVE, which crowdsources passing-by vehicles for reliable in-vehicle edge computing, and age-of-information-aware service aggregation for connected vehicles.</p>
+                        <p class="mt-1 text-sm text-gray-500 dark:text-gray-400"><a href="#Cao2024GLOBECOM" class="hover:text-blue-600 dark:hover:text-blue-400" title="CAVE: Crowdsourcing passing-by vehicles for reliable in-vehicle edge computing">CAVE, IEEE GLOBECOM 2024</a> · <a href="https://ieeexplore.ieee.org/document/10622247" class="hover:text-blue-600 dark:hover:text-blue-400" title="Unleashing the true power of age-of-information: Service aggregation in connected and autonomous vehicles" target="_blank" rel="noopener">Mallik et al., IEEE ICC 2024</a></p>
+                    </li>
+                </ol>
             </div>
         </section>
 
-        <!-- Publications Section -->
-        <section class="py-14 bg-gray-50 dark:bg-gray-800">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="mb-10">
-                    <p class="text-xs font-semibold uppercase tracking-widest text-blue-600 dark:text-blue-400 mb-2">Publications</p>
-                    <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white">Related Publications</h2>
-                    <p class="mt-2 text-base text-gray-600 dark:text-gray-300 max-w-3xl">Publications tagged with this research area.</p>
-                </div>
+        <section class="pb-10 bg-white dark:bg-gray-900" aria-labelledby="validation">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 id="validation" class="text-xl font-semibold text-gray-900 dark:text-white mb-5">Systems and validation</h2>
+                <ul class="space-y-3 list-disc pl-5 text-gray-800 dark:text-gray-200">
+                    <li>Evaluation with an end-to-end 5G network simulator, a 5G emulation platform driven by a 150-vehicle CARLA trace, and a CARLA/ROS 2 vehicular named-data-networking environment. <span class="text-sm text-gray-500 dark:text-gray-400">(<a href="#Yuru2024VT" class="hover:text-blue-600 dark:hover:text-blue-400" title="Crowdsourcing Live High Definition Map via Collaborative Computation in Automotive Edge Computing">Zhang et al., IEEE TVT 2024</a>; <a href="#Liu2023SEC" class="hover:text-blue-600 dark:hover:text-blue-400" title="AdaMap: High-scalable real-time cooperative perception at the edge">AdaMap, ACM/IEEE SEC 2023</a>; <a href="#Doe2023TITS" class="hover:text-blue-600 dark:hover:text-blue-400" title="DSORL: Data Source Optimization with Reinforcement Learning Scheme for Vehicular Named Data Networks">DSORL, IEEE T-ITS 2023</a>)</span></li>
+                </ul>
+            </div>
+        </section>
 
-                <!-- Publications List -->
-                <div id="publications-list" class="space-y-6">
-                    <!-- Publications will be loaded here via JavaScript -->
+        <section class="py-12 bg-gray-50 dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700" aria-labelledby="publications">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 id="publications" class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Representative publications</h2>
+                <p class="text-sm text-gray-600 dark:text-gray-400 mb-6">A curated selection. Citations above link to each paper; see the <a href="/publications.html" class="text-blue-600 dark:text-blue-400 hover:underline">full publication list</a> for all work.</p>
+                <div class="space-y-4">
+                    <div id="Yuru2024VT" class="scroll-mt-24"><article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-5 md:p-6 border border-gray-200 dark:border-gray-700">
+    <div class="flex flex-wrap items-center gap-2 mb-2">
+        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">IEEE TVT</span>
+<span class="text-xs text-gray-500 dark:text-gray-400">2024</span>    </div>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Crowdsourcing Live High Definition Map via Collaborative Computation in Automotive Edge Computing</h3>
+    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Y. Zhang, Q. Liu, H. Wang, D. Chen, and <strong>K. Han</strong></p>
+<p class="text-sm text-gray-500 dark:text-gray-400 italic mb-2">IEEE Transactions on Vehicular Technology, vol. 73, no. 9, pp. 13569–13583</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
+<a href="https://ieeexplore.ieee.org/document/10508471" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View paper &rarr;</a>    </div>
+</article></div>
+                    <div id="Liu2023SEC" class="scroll-mt-24"><article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-5 md:p-6 border border-gray-200 dark:border-gray-700">
+    <div class="flex flex-wrap items-center gap-2 mb-2">
+        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">ACM/IEEE SEC</span>
+<span class="text-xs text-gray-500 dark:text-gray-400">2023</span>    </div>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">AdaMap: High-scalable real-time cooperative perception at the edge</h3>
+    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Q. Liu, Y. Xue, Y. Zhang, D. Chen, and <strong>K. Han</strong></p>
+<p class="text-sm text-gray-500 dark:text-gray-400 italic mb-2">ACM/IEEE Symposium on Edge Computing (SEC), Wilmington, DE, USA</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
+<a href="https://ieeexplore.ieee.org/document/10419315" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View paper &rarr;</a>    </div>
+</article></div>
+                    <div id="Doe2023TITS" class="scroll-mt-24"><article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-5 md:p-6 border border-gray-200 dark:border-gray-700">
+    <div class="flex flex-wrap items-center gap-2 mb-2">
+        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">IEEE T-ITS</span>
+<span class="text-xs text-gray-500 dark:text-gray-400">2023</span>    </div>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">DSORL: Data Source Optimization with Reinforcement Learning Scheme for Vehicular Named Data Networks</h3>
+    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">D. Doe, D. Chen, <strong>K. Han</strong>, H. Wang, J. Xie, and Z. Han</p>
+<p class="text-sm text-gray-500 dark:text-gray-400 italic mb-2">IEEE Transactions on Intelligent Transportation Systems, vol. 24, no. 10, pp. 11225–11237</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
+<a href="https://ieeexplore.ieee.org/document/10201378" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View paper &rarr;</a><a href="/publications/23_TITS/2023_DSORL.pdf" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">PDF &rarr;</a>    </div>
+</article></div>
+                    <div id="Xie2026TMC" class="scroll-mt-24"><article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-5 md:p-6 border border-gray-200 dark:border-gray-700">
+    <div class="flex flex-wrap items-center gap-2 mb-2">
+        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">IEEE TMC</span>
+<span class="text-xs text-gray-500 dark:text-gray-400">2026</span><span class="text-xs px-2 py-0.5 rounded bg-gray-100 text-gray-600 dark:bg-gray-700 dark:text-gray-300">Accepted</span>    </div>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">REAL: A Reinforcement Learning-based Intelligent Offloading Framework for Edge-Assisted MAR</h3>
+    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">L. Xie, A. Mallik, D. Chen, <strong>K. Han</strong>, and Z. Han</p>
+<p class="text-sm text-gray-500 dark:text-gray-400 italic mb-2">IEEE Transactions on Mobile Computing</p></article></div>
+                    <div id="Cao2024GLOBECOM" class="scroll-mt-24"><article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-5 md:p-6 border border-gray-200 dark:border-gray-700">
+    <div class="flex flex-wrap items-center gap-2 mb-2">
+        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">IEEE GLOBECOM</span>
+<span class="text-xs text-gray-500 dark:text-gray-400">2024</span>    </div>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">CAVE: Crowdsourcing passing-by vehicles for reliable in-vehicle edge computing</h3>
+    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">J. Cao, Q. Liu, D. Chen, and <strong>K. Han</strong></p>
+<p class="text-sm text-gray-500 dark:text-gray-400 italic mb-2">IEEE Global Communications Conference: Mobile and Wireless Networks (GLOBECOM), Cape Town, South Africa</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
+<a href="https://ieeexplore.ieee.org/document/10901787" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View paper &rarr;</a><a href="https://arxiv.org/pdf/2408.00621" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">PDF &rarr;</a>    </div>
+</article></div>
+                    <div id="Yan2026ICC" class="scroll-mt-24"><article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-5 md:p-6 border border-gray-200 dark:border-gray-700">
+    <div class="flex flex-wrap items-center gap-2 mb-2">
+        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">IEEE ICC</span>
+<span class="text-xs text-gray-500 dark:text-gray-400">2026</span>    </div>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Network-Aware Intelligent Task Distributor for Edge-Assisted Generative AI</h3>
+    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">J. Yan, M. Talukder, D. Chen, <strong>K. Han</strong>, and L. Xie</p>
+<p class="text-sm text-gray-500 dark:text-gray-400 italic mb-2">IEEE International Conference on Communications (ICC), Glasgow, United Kingdom</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
+<a href="https://ieeexplore.ieee.org/document/11586849" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View paper &rarr;</a>    </div>
+</article></div>
                 </div>
+                <p class="mt-8">
+                    <a href="/publications.html" class="inline-flex items-center gap-2 px-5 py-2.5 border border-blue-600 dark:border-blue-400 text-blue-600 dark:text-blue-400 rounded-lg text-sm font-medium hover:bg-blue-600 hover:text-white dark:hover:bg-blue-500 dark:hover:text-white transition-colors">Full publication list <span aria-hidden="true">&rarr;</span></a>
+                </p>
+            </div>
+        </section>
+
+        <section class="py-10 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800" aria-labelledby="other-areas">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 id="other-areas" class="text-sm font-semibold uppercase tracking-widest text-gray-500 dark:text-gray-400 mb-4">Other research areas</h2>
+                <ul class="flex flex-wrap gap-x-6 gap-y-2">
+                    <li><a href="/research/generative-ai/" class="text-blue-600 dark:text-blue-400 hover:underline">Multimodal Scene Understanding &amp; Language-Guided Driving</a></li>
+                    <li><a href="/research/connected-autonomous-vehicles/" class="text-blue-600 dark:text-blue-400 hover:underline">Cooperative Driving Automation &amp; V2X</a></li>
+                    <li><a href="/research/digital-twin/" class="text-blue-600 dark:text-blue-400 hover:underline">Mobility &amp; Driver Digital Twins</a></li>
+                    <li><a href="/research/energy-efficient-computing/" class="text-blue-600 dark:text-blue-400 hover:underline">Energy- and Resource-Efficient Computing</a></li>
+                </ul>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 py-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <p class="text-sm text-center text-gray-600 dark:text-gray-400">&copy; <span id="footer-year"></span> Kyungtae Han</p>
+            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 text-sm text-gray-600 dark:text-gray-400">
+                <p>&copy; 2026 Kyungtae (KT) Han</p>
+                <div class="flex flex-wrap items-center gap-5">
+                    <a href="mailto:kt.han@toyota.com" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Email</a>
+                    <a href="https://scholar.google.com/citations?hl=en&amp;user=MejLLHgAAAAJ&amp;view_op=list_works&amp;sortby=pubdate" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Google Scholar</a>
+                    <a href="https://www.linkedin.com/in/kthan" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">LinkedIn</a>
+                </div>
+            </div>
         </div>
     </footer>
-
-    <script>
-    (function () {
-        function initSiteChrome() {
-            var themeToggle = document.getElementById('theme-toggle');
-            var mobileMenuBtn = document.getElementById('mobile-menu-btn');
-            var mobileMenu = document.getElementById('mobile-menu');
-            function initTheme() {
-                var saved = localStorage.getItem('theme') || 'light';
-                document.documentElement.classList.toggle('dark', saved === 'dark');
-                updateIcon(saved);
-            }
-            function updateIcon(theme) {
-                if (!themeToggle) return;
-                var icon = themeToggle.querySelector('i');
-                if (!icon) return;
-                icon.className = theme === 'dark' ? 'fas fa-sun text-yellow-500' : 'fas fa-moon text-gray-600 dark:text-gray-300';
-            }
-            function toggleTheme() {
-                var dark = document.documentElement.classList.toggle('dark');
-                var t = dark ? 'dark' : 'light';
-                localStorage.setItem('theme', t);
-                updateIcon(t);
-            }
-            initTheme();
-            if (themeToggle) themeToggle.addEventListener('click', function (e) { e.preventDefault(); toggleTheme(); });
-            if (mobileMenuBtn && mobileMenu) {
-                mobileMenuBtn.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    mobileMenu.classList.toggle('hidden');
-                    mobileMenuBtn.setAttribute('aria-expanded', (!mobileMenu.classList.contains('hidden')).toString());
-                });
-            }
-            var header = document.getElementById('header');
-            if (header) {
-                var last = 0;
-                window.addEventListener('scroll', function () {
-                    var cur = window.pageYOffset;
-                    if (cur > last && cur > 100) header.style.transform = 'translateY(-100%)';
-                    else header.style.transform = 'translateY(0)';
-                    last = cur;
-                });
-            }
-            if (mobileMenuBtn && mobileMenu) {
-                document.addEventListener('click', function (e) {
-                    if (!mobileMenuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
-                        mobileMenu.classList.add('hidden');
-                        mobileMenuBtn.setAttribute('aria-expanded', 'false');
-                    }
-                });
-            }
-            var fy = document.getElementById('footer-year');
-            if (fy) fy.textContent = new Date().getFullYear();
-        }
-        if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initSiteChrome);
-        else initSiteChrome();
-    })();
-    </script>
-
-    <!-- Load publications data -->
-    <script src="../../js/publications-data.js"></script>
-    
-    <!-- Load AI classifications -->
-    <script src="../../js/ai-classifications.js"></script>
-    
-    <!-- Research area filtering script -->
-    <script>
-        // Research area configuration
-        const researchArea = {
-            id: "edge-computing",
-            title: "Edge Computing Systems",
-            keywords: ["edge computing", "real-time", "energy-efficient", "IoT", "processing", "computation offloading", "resource optimization"],
-            specialKeywords: ["edge", "computing", "distributed", "fog", "latency", "real-time"]
-        };
-
-        // Global variables
-        let fuse;
-        let filteredPublications = [];
-        let allRelatedPublications = [];
-
-        // DOM elements
-        const searchInput = document.getElementById('search-input');
-        const filterSelect = document.getElementById('filter-select');
-        const publicationsList = document.getElementById('publications-list');
-
-        // Check if publications data is loaded
-        function checkPublicationsData() {
-            if (typeof publications === 'undefined') {
-                console.error('Publications data not loaded!');
-                return false;
-            }
-            return true;
-        }
-
-        // Filter publications for this research area using manual assignments
-        function filterPublicationsForResearchArea() {
-            console.log('filterPublicationsForResearchArea called');
-            console.log('researchArea.id:', researchArea.id);
-            if (!checkPublicationsData()) return;
-
-            const relatedConferences = [];
-            const relatedJournals = [];
-            const relatedPatents = [];
-            const relatedBooks = [];
-
-            // Filter publications based on manual research_area assignments
-            publications.forEach(pub => {
-                if (pub.research_area && pub.research_area.includes(researchArea.id)) {
-                    if (pub.type === 'patent') {
-                        relatedPatents.push(pub);
-                    } else if (pub.type === 'conference') {
-                        relatedConferences.push(pub);
-                    } else if (pub.type === 'journal') {
-                        relatedJournals.push(pub);
-                    } else if (pub.type === 'book') {
-                        relatedBooks.push(pub);
-                    }
-                }
-            });
-
-            // Update counts and show/hide based on content
-            const conferencesCountEl = document.getElementById('conferences-count');
-            const journalsCountEl = document.getElementById('journals-count');
-            const patentsCountEl = document.getElementById('patents-count');
-            const booksCountEl = document.getElementById('books-count');
-            
-            conferencesCountEl.textContent = relatedConferences.length;
-            journalsCountEl.textContent = relatedJournals.length;
-            patentsCountEl.textContent = relatedPatents.length;
-            booksCountEl.textContent = relatedBooks.length;
-            
-            // Hide count sections that are zero
-            conferencesCountEl.parentElement.style.display = relatedConferences.length > 0 ? 'block' : 'none';
-            journalsCountEl.parentElement.style.display = relatedJournals.length > 0 ? 'block' : 'none';
-            patentsCountEl.parentElement.style.display = relatedPatents.length > 0 ? 'block' : 'none';
-            booksCountEl.parentElement.style.display = relatedBooks.length > 0 ? 'block' : 'none';
-
-            // Combine all related publications
-            allRelatedPublications = [...relatedConferences, ...relatedJournals, ...relatedPatents, ...relatedBooks];
-
-            // Initialize search with filtered publications
-            initSearch();
-        }
-
-        // Initialize search
-        function initSearch() {
-            if (!checkPublicationsData()) return;
-
-            const options = {
-                keys: ['title', 'authors', 'venue'],
-                threshold: 0.3,
-                includeScore: true
-            };
-            fuse = new Fuse(allRelatedPublications, options);
-            
-            filteredPublications = [...allRelatedPublications];
-            renderPublications();
-        }
-
-        // Filter publications
-        function filterPublications() {
-            if (!checkPublicationsData()) return;
-
-            let results = allRelatedPublications;
-
-            // Apply search filter
-            if (searchInput.value.trim()) {
-                const searchResults = fuse.search(searchInput.value);
-                results = searchResults.map(result => result.item);
-            }
-
-            // Apply type filter
-            const typeFilter = filterSelect.value;
-            if (typeFilter !== 'all') {
-                results = results.filter(pub => pub.type === typeFilter);
-            }
-
-            // Sort by year (descending - newest first)
-            results.sort((a, b) => b.year - a.year);
-            
-            filteredPublications = results;
-            renderPublications();
-        }
-
-        // Render publications (badge-style, matches homepage Selected Publications)
-        function renderPublications() {
-            if (!checkPublicationsData()) return;
-
-            publicationsList.innerHTML = filteredPublications.map((pub) => {
-                // Venue abbreviations for the badge
-                let venueAbbr = pub.venue;
-                if (pub.venue.includes('IEEE Transactions on Intelligent Vehicles')) {
-                    venueAbbr = 'IEEE Trans. Intelligent Vehicles';
-                } else if (pub.venue.includes('IEEE Transactions on Intelligent Transportation Systems')) {
-                    venueAbbr = 'IEEE T-ITS';
-                } else if (pub.venue.includes('IEEE Internet of Things Journal')) {
-                    venueAbbr = 'IEEE IoT Journal';
-                } else if (pub.venue.includes('IEEE Transactions on Vehicular Technology')) {
-                    venueAbbr = 'IEEE TVT';
-                } else if (pub.venue.includes('IEEE Intelligent Vehicles Symposium')) {
-                    venueAbbr = 'IEEE IV';
-                } else if (pub.venue.includes('IEEE International Conference on Intelligent Transportation Systems')) {
-                    venueAbbr = 'IEEE ITSC';
-                }
-
-                // Type-aware badge text and optional secondary line (e.g., patent number)
-                const is_book_chapter = pub.venue && pub.venue.startsWith('In:');
-                let venueBadgeText;
-                let detailLine = '';
-                if (pub.type === 'patent') {
-                    venueBadgeText = pub.venue.includes('Application') ? 'US Patent Application' : 'US Patent';
-                    const patentDetail = pub.venue.replace(/^US Patent (Application )?/, '');
-                    if (patentDetail && patentDetail !== pub.venue) {
-                        detailLine = `<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">${patentDetail}</p>`;
-                    }
-                } else if (pub.type === 'book') {
-                    venueBadgeText = is_book_chapter ? 'Book Chapter' : 'Book';
-                } else {
-                    venueBadgeText = venueAbbr;
-                }
-
-                // Bold "K. Han" / "Kyungtae Han" / "Han, Kyungtae" so the author signal pops
-                const authorsBolded = (pub.authors || '').replace(
-                    /(K\.\s*Han\b|Kyungtae\s+Han\b|Han,\s*Kyungtae\b)/g,
-                    '<strong>$1</strong>'
-                );
-
-                // Inline links: View paper / View patent / Book webpage + PDF
-                const linkLabel = pub.type === 'patent'
-                    ? 'View patent'
-                    : pub.type === 'book'
-                        ? 'Book webpage'
-                        : 'View paper';
-                const linksParts = [];
-                if (pub.url) {
-                    const resolvedUrl = pub.url;
-                    const openInNewTab = pub.url.startsWith('http');
-                    linksParts.push(`<a href="${resolvedUrl}"${openInNewTab ? ' target="_blank"' : ''} class="text-sm text-blue-600 dark:text-blue-400 hover:underline">${linkLabel} &rarr;</a>`);
-                }
-                if (pub.pdf) {
-                    linksParts.push(`<a href="${pub.pdf}" target="_blank" class="text-sm text-blue-600 dark:text-blue-400 hover:underline">PDF &rarr;</a>`);
-                }
-                const linksLine = linksParts.length
-                    ? `<div class="flex flex-wrap items-center gap-x-4 gap-y-1">${linksParts.join('')}</div>`
-                    : '';
-
-                const yearText = pub.year_text || pub.year || '';
-                const notePill = pub.note
-                    ? `<span class="text-xs px-2 py-0.5 rounded bg-gray-100 text-gray-600 dark:bg-gray-700 dark:text-gray-400">${pub.note}</span>`
-                    : '';
-
-                return `
-                    <div class="bg-white dark:bg-gray-900 rounded-lg p-6 border border-gray-200 dark:border-gray-700">
-                        <div class="flex flex-wrap items-center gap-2 mb-2">
-                            <span class="text-xs font-semibold uppercase tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">${venueBadgeText}</span>
-                            ${yearText ? `<span class="text-xs text-gray-500 dark:text-gray-400">${yearText}</span>` : ''}
-                            ${notePill}
-                        </div>
-                        <p class="text-gray-900 dark:text-white font-medium mb-1 leading-snug">${pub.title}</p>
-                        <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">${authorsBolded}</p>
-                        ${detailLine}
-                        ${linksLine}
-                    </div>
-                `;
-            }).join('');
-        }
-
-        // Handle stat clicks: filter lists within the page
-        function handleStatClick(kind) {
-            if (!allRelatedPublications.length) return;
-            
-            let pubs = [];
-            if (kind === 'conference') {
-                pubs = allRelatedPublications.filter(p => p.type === 'conference');
-            } else if (kind === 'journal') {
-                pubs = allRelatedPublications.filter(p => p.type === 'journal');
-            } else if (kind === 'patent') {
-                pubs = allRelatedPublications.filter(p => p.type === 'patent');
-            } else if (kind === 'book') {
-                pubs = allRelatedPublications.filter(p => p.type === 'book');
-            } else {
-                pubs = allRelatedPublications;
-            }
-
-            // Update filter select
-            filterSelect.value = kind === 'all' ? 'all' : kind;
-            
-            // Apply filter
-            filterPublications();
-
-            // Scroll to list
-            const list = document.getElementById('publications-list');
-            if (list) list.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-
-        // Initialize when DOM is loaded and publications data is available
-        function initializeResearchArea() {
-            console.log('Initializing research area...');
-            console.log('Publications available:', typeof publications !== 'undefined');
-            
-            if (typeof publications !== 'undefined' && publications.length > 0) {
-                console.log('Publications data loaded, filtering publications...');
-                filterPublicationsForResearchArea();
-                
-                // Add event listeners for search and filter
-                searchInput.addEventListener('input', filterPublications);
-                filterSelect.addEventListener('change', filterPublications);
-            } else {
-                console.log('Publications data not ready, waiting...');
-                setTimeout(initializeResearchArea, 500);
-            }
-        }
-
-        // Start initialization when DOM is ready
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', initializeResearchArea);
-        } else {
-            initializeResearchArea();
-        }
-    </script>
+    <script src="/js/site.js?v=1791302039"></script>
 </body>
 </html>
