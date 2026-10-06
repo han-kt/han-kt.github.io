@@ -1,5 +1,5 @@
 // Modern Academic Homepage JavaScript
-// Generated on 2026-10-06 08:53:57
+// Generated on 2026-10-06 10:46:31
 // Total publications: 230
 // Breakdown: 76 conferences, 8 presentations, 21 journals, 122 patents, 3 books
 
@@ -584,7 +584,7 @@ const publications = [
 ,
         pdf: "/publications/26_ITSC/Han2026ITSC.pdf"
 ,
-        note: "Accepted"
+        note: "Presented"
 ,
         research_area: [
         "intelligent-transportation",
