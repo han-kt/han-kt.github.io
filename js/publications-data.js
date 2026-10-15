@@ -1,470 +1,20 @@
 // Modern Academic Homepage JavaScript
-// Generated on 2026-10-06 10:46:31
-// Total publications: 230
-// Breakdown: 76 conferences, 8 presentations, 21 journals, 122 patents, 3 books
+// Generated on 2026-10-14 22:15:01
+// Total publications: 168
+// Breakdown: 76 conferences, 8 presentations, 21 journals, 60 patents, 3 books
 
 // Comprehensive publications data from YAML files
 const publications = [
     {
-        yaml_id: "CV_156",
-        title: "Systems and Method for Adaptive Vision-Language-Model-Based Reasoning",
-        authors: "Y. Chen, D. Chen, Q. Chen, Y. Liu, K. Han, and N. Ammar",
-        venue: "U.S. Patent Appl. 64/157,810, Sep. 18, 2026",
-        year: 2026,
-        type: "patent",
-        type_label: "Patent"
-,
-        research_area: [
-        "generative-ai",
-        "intelligent-transportation",
-        "connected-autonomous-vehicles"
-]
-,
-        application_number: "64/157,810"
-,
-        patent_type: "application"
-,
-        filing_date: "2026-09-18"
-    },
-    {
-        yaml_id: "CV_155",
-        title: "Tonic Meta-Control for Adaptive Safety-Compute Allocation via Persistent Vigilance Dynamics",
-        authors: "K. Han, Y. Chen, N. Ammar, and O. Altintas",
-        venue: "U.S. Patent Appl. 64/154,467, Sep. 14, 2026",
-        year: 2026,
-        type: "patent",
-        type_label: "Patent"
-,
-        research_area: [
-        "intelligent-transportation",
-        "connected-autonomous-vehicles",
-        "edge-computing"
-]
-,
-        application_number: "64/154,467"
-,
-        patent_type: "application"
-,
-        filing_date: "2026-09-14"
-    },
-    {
-        yaml_id: "CV_023",
-        title: "Edge-Assisted Occlusion Mitigation",
-        authors: "Y. Chen, D. Chen, K. Han, and O. Altintas",
-        venue: "U.S. Patent 12 715 362, Aug. 25, 2026",
-        year: 2026,
-        type: "patent",
-        type_label: "Patent"
-,
-        url: "https://patents.google.com/patent/US12715362"
-,
-        research_area: [
-        "edge-computing"
-]
-,
-        patent_number: "12715362"
-,
-        application_number: "IP-A-7249"
-,
-        patent_type: "granted"
-,
-        grant_date: "2026-08-25"
-    },
-    {
-        yaml_id: "CV_066",
-        title: "System Framework for Selecting Computing Device to Perform Vehicle Applications with Cloud and Edge Computing",
-        authors: "H. Wang, D. Chen, R. Gupta, and K. Han",
-        venue: "U.S. Patent 12 717 613, Aug. 25, 2026",
-        year: 2026,
-        type: "patent",
-        type_label: "Patent"
-,
-        url: "https://patents.google.com/patent/US12717613"
-,
-        research_area: [
-        "edge-computing",
-        "connected-autonomous-vehicles",
-        "intelligent-transportation",
-        "design-tech"
-]
-,
-        patent_number: "12717613"
-,
-        application_number: "IP-A-6290"
-,
-        patent_type: "granted"
-,
-        grant_date: "2026-08-25"
-    },
-    {
-        yaml_id: "CV_090",
-        title: "Personalized Adaptive Cruise Control Based On Steady-State Operation",
-        authors: "Z. Zhao, Z. Wang, R. Gupta, K. Han, and P. Tiwari",
-        venue: "U.S. Patent 12 715 438, Aug. 25, 2026",
-        year: 2026,
-        type: "patent",
-        type_label: "Patent"
-,
-        url: "https://patents.google.com/patent/US12715438"
-,
-        research_area: [
-        "intelligent-transportation",
-        "connected-autonomous-vehicles",
-        "digital-twin"
-]
-,
-        patent_number: "12715438"
-,
-        application_number: "IP-A-5612"
-,
-        patent_type: "granted"
-,
-        grant_date: "2026-08-25"
-    },
-    {
-        yaml_id: "CV_154",
-        title: "Multi-Agent Coordination Using Embedding-Matrix Similarity Measures",
-        authors: "A. Moradipari, T. Chen, K. Han, and N. Ammar",
-        venue: "U.S. Patent Appl. 19/735,128, Jul. 8, 2026",
-        year: 2026,
-        type: "patent",
-        type_label: "Patent"
-,
-        research_area: [
-        "generative-ai",
-        "intelligent-transportation",
-        "connected-autonomous-vehicles"
-]
-,
-        application_number: "19/735,128"
-,
-        patent_type: "application"
-,
-        filing_date: "2026-07-08"
-    },
-    {
-        yaml_id: "CV_153",
-        title: "Headlight Control According to Predicted Environment",
-        authors: "R. Gupta, S. Mishra, K. Gilleo, N. Ammar, K. Han, T. Shimizu, and O. Altintas",
-        venue: "U.S. Patent Appl. 19/718,363, Jun. 24, 2026",
-        year: 2026,
-        type: "patent",
-        type_label: "Patent"
-,
-        research_area: [
-        "intelligent-transportation",
-        "connected-autonomous-vehicles"
-]
-,
-        application_number: "19/718,363"
-,
-        patent_type: "application"
-,
-        filing_date: "2026-06-24"
-    },
-    {
-        yaml_id: "CV_152",
-        title: "Method and Apparatus for AI-ML Assisted CSI Compression of MIMO Channels",
-        authors: "K. Dimou, K. Han, and T. Shimizu",
-        venue: "U.S. Patent Appl. 64/088,157, Jun. 11, 2026",
-        year: 2026,
-        type: "patent",
-        type_label: "Patent"
-,
-        research_area: [
-        "edge-computing",
-        "generative-ai",
-        "v2x-communication"
-]
-,
-        application_number: "64/088,157"
-,
-        patent_type: "application"
-,
-        filing_date: "2026-06-11"
-    },
-    {
-        yaml_id: "CV_151",
-        title: "Systems and Methods for Requesting Location-Specific Memory Information from Surrounding Vehicles",
-        authors: "Z. Mo, S. Avedisov, A. Moradipari, S. Mishra, K. Han, and N. Ammar",
-        venue: "U.S. Patent Appl. 19/704,946, Jun. 11, 2026",
-        year: 2026,
-        type: "patent",
-        type_label: "Patent"
-,
-        research_area: [
-        "connected-autonomous-vehicles",
-        "intelligent-transportation",
-        "generative-ai"
-]
-,
-        application_number: "19/704,946"
-,
-        patent_type: "application"
-,
-        filing_date: "2026-06-11"
-    },
-    {
-        yaml_id: "CV_150",
-        title: "Systems and Methods for Routing a Prompt to a Learning Model Using a Graph-Based Classifier",
-        authors: "T. Chen, A. Moradipari, M. Clifford, K. Han, N. Ammar, and O. Altintas",
-        venue: "U.S. Patent Appl. 19/660,373, Apr. 28, 2026",
-        year: 2026,
-        type: "patent",
-        type_label: "Patent"
-,
-        research_area: [
-        "generative-ai",
-        "edge-computing",
-        "intelligent-transportation"
-]
-,
-        application_number: "19/660,373"
-,
-        patent_type: "application"
-,
-        filing_date: "2026-04-28"
-    },
-    {
-        yaml_id: "CV_149",
-        title: "Systems and Methods for Classifying a Prompt Using Requirement Classifiers and Selecting a Learning Model",
-        authors: "T. Chen, A. Moradipari, M. Clifford, K. Han, N. Ammar, and O. Altintas",
-        venue: "U.S. Patent Appl. 19/654,705, Apr. 22, 2026",
-        year: 2026,
-        type: "patent",
-        type_label: "Patent"
-,
-        research_area: [
-        "generative-ai",
-        "edge-computing",
-        "intelligent-transportation"
-]
-,
-        application_number: "19/654,705"
-,
-        patent_type: "application"
-,
-        filing_date: "2026-04-22"
-    },
-    {
-        yaml_id: "CV_148",
-        title: "Systems and Methods for Selecting a Learning Model Using a Bag-of-Attributes Classifier",
-        authors: "T. Chen, A. Moradipari, M. Clifford, K. Han, N. Ammar, and O. Altintas",
-        venue: "U.S. Patent Appl. 16/653,727, Apr. 21, 2026",
-        year: 2026,
-        type: "patent",
-        type_label: "Patent"
-,
-        research_area: [
-        "generative-ai",
-        "edge-computing",
-        "intelligent-transportation"
-]
-,
-        application_number: "16/653,727"
-,
-        patent_type: "application"
-,
-        filing_date: "2026-04-21"
-    },
-    {
-        yaml_id: "CV_147",
-        title: "Systems and Methods for Classifying Information Using Domains and Voting, and Selecting a Learning Model",
-        authors: "T. Chen, A. Moradipari, M. Clifford, K. Han, N. Ammar, and O. Altintas",
-        venue: "U.S. Patent Appl. 19/649,545, Apr. 16, 2026",
-        year: 2026,
-        type: "patent",
-        type_label: "Patent"
-,
-        research_area: [
-        "generative-ai",
-        "edge-computing",
-        "intelligent-transportation"
-]
-,
-        application_number: "19/649,545"
-,
-        patent_type: "application"
-,
-        filing_date: "2026-04-16"
-    },
-    {
-        yaml_id: "CV_146",
-        title: "Dynamic Cooperative Vehicle Headlight Systems and Methods",
-        authors: "R. Gupta, S. Avedisov, A. Moradipari, K. Han, T. Shimizu, N. Ammar, and K. Gilleo",
-        venue: "U.S. Patent Appl. 19/640,947, Apr. 7, 2026",
-        year: 2026,
-        type: "patent",
-        type_label: "Patent"
-,
-        research_area: [
-        "intelligent-transportation",
-        "connected-autonomous-vehicles"
-]
-,
-        application_number: "19/640,947"
-,
-        patent_type: "application"
-,
-        filing_date: "2026-04-07"
-    },
-    {
-        yaml_id: "CV_145",
-        title: "Memory-Augmented Contextual Annotation Using Persistent Embedding Feedback",
-        authors: "A. Moradipari, R. Gupta, K. Han, and N. Ammar",
-        venue: "U.S. Patent Appl. 19/574,246, Mar. 20, 2026",
-        year: 2026,
-        type: "patent",
-        type_label: "Patent"
-,
-        research_area: [
-        "generative-ai",
-        "edge-computing",
-        "intelligent-transportation"
-]
-,
-        application_number: "19/574,246"
-,
-        patent_type: "application"
-,
-        filing_date: "2026-03-20"
-    },
-    {
-        yaml_id: "CV_144",
-        title: "Adaptive Temporal Windowing for Remote Processing of Vehicle Event",
-        authors: "A. Moradipari, R. Gupta, K. Han, N. Ammar, and S. Ucar",
-        venue: "U.S. Patent Appl. 19/572,796, Mar. 19, 2026",
-        year: 2026,
-        type: "patent",
-        type_label: "Patent"
-,
-        research_area: [
-        "edge-computing",
-        "intelligent-transportation",
-        "connected-autonomous-vehicles"
-]
-,
-        application_number: "19/572,796"
-,
-        patent_type: "application"
-,
-        filing_date: "2026-03-19"
-    },
-    {
-        yaml_id: "CV_143",
-        title: "Vehicle Operation Using Reward Training Without Ground Truth",
-        authors: "S. Bhupathiraju, M. Clifford, and K. Han",
-        venue: "U.S. Patent Appl. 19/571,397, Mar. 18, 2026",
-        year: 2026,
-        type: "patent",
-        type_label: "Patent"
-,
-        research_area: [
-        "generative-ai",
-        "intelligent-transportation",
-        "connected-autonomous-vehicles"
-]
-,
-        application_number: "19/571,397"
-,
-        patent_type: "application"
-,
-        filing_date: "2026-03-18"
-    },
-    {
-        yaml_id: "CV_142",
-        title: "Out-of-Distribution Awareness Through Two-Stage Prompt Adaptation in Large Language Models",
-        authors: "S. Bhupathiraju, M. Clifford, and K. Han",
-        venue: "U.S. Patent Appl. 19/571,045, Mar. 18, 2026",
-        year: 2026,
-        type: "patent",
-        type_label: "Patent"
-,
-        research_area: [
-        "generative-ai",
-        "intelligent-transportation",
-        "connected-autonomous-vehicles"
-]
-,
-        application_number: "19/571,045"
-,
-        patent_type: "application"
-,
-        filing_date: "2026-03-18"
-    },
-    {
-        yaml_id: "CV_141",
-        title: "Vehicle Operation Using Chain of Thought Reward Training",
-        authors: "S. Bhupathiraju, M. Clifford, and K. Han",
-        venue: "U.S. Patent Appl. 19/570,668, Mar. 18, 2026",
-        year: 2026,
-        type: "patent",
-        type_label: "Patent"
-,
-        research_area: [
-        "generative-ai",
-        "intelligent-transportation",
-        "connected-autonomous-vehicles"
-]
-,
-        application_number: "19/570,668"
-,
-        patent_type: "application"
-,
-        filing_date: "2026-03-18"
-    },
-    {
-        yaml_id: "CV_140",
-        title: "Systems and Methods for a Hybrid Language Model with Improved Speed and Efficiency",
-        authors: "T. Chen, A. Moradipari, M. Clifford, K. Han, N. Ammar, and O. Altintas",
-        venue: "U.S. Patent Appl. 19/557,554, Mar. 5, 2026",
-        year: 2026,
-        type: "patent",
-        type_label: "Patent"
-,
-        research_area: [
-        "generative-ai",
-        "edge-computing",
-        "connected-autonomous-vehicles"
-]
-,
-        application_number: "19/557,554"
-,
-        patent_type: "application"
-,
-        filing_date: "2026-03-05"
-    },
-    {
-        yaml_id: "CV_139",
-        title: "Systems and Methods for Language-Model-Based Path Planning in a Mobile Autonomous System",
-        authors: "M. Clifford, S. Bhupathiraju, and K. Han",
-        venue: "U.S. Patent Appl. 19/555,032, Mar. 3, 2026",
-        year: 2026,
-        type: "patent",
-        type_label: "Patent"
-,
-        research_area: [
-        "generative-ai",
-        "intelligent-transportation",
-        "connected-autonomous-vehicles"
-]
-,
-        application_number: "19/555,032"
-,
-        patent_type: "application"
-,
-        filing_date: "2026-03-03"
-    },
-    {
         yaml_id: "CV_085",
-        title: "Personalized Vehicle Lane Change Maneuver Prediction",
+        title: "Personalized vehicle lane change maneuver prediction",
         authors: "Z. Wang, K. Han, R. Gupta, and P. Tiwari",
         venue: "U.S. Patent 12 515 678, Jan. 6, 2026",
         year: 2026,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US12515678"
+        url: "https://patents.google.com/patent/US12515678B2/en"
 ,
         research_area: [
         "intelligent-transportation",
@@ -473,13 +23,9 @@ const publications = [
 ,
         patent_number: "12515678"
 ,
-        application_number: "IP-A-5746"
-,
         patent_type: "granted"
 ,
         grant_date: "2026-01-06"
-,
-        filing_date: "2022-04-06"
     },
     {
         yaml_id: "Han2026GAI",
@@ -584,7 +130,7 @@ const publications = [
 ,
         pdf: "/publications/26_ITSC/Han2026ITSC.pdf"
 ,
-        note: "Presented"
+        note: "Accepted"
 ,
         research_area: [
         "intelligent-transportation",
@@ -695,14 +241,14 @@ const publications = [
     },
     {
         yaml_id: "CV_052",
-        title: "Systems and Methods for Efficient Video Instance Segmentation for Vehicles Using Edge",
+        title: "Systems and methods for efficient video instance segmentation for vehicles using edge computing",
         authors: "Y. Chen, D. Chen, and K. Han",
         venue: "U.S. Patent 12 499 555, Dec. 16, 2025",
         year: 2025,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US12499555"
+        url: "https://patents.google.com/patent/US12499555B2/en"
 ,
         research_area: [
         "edge-computing",
@@ -712,45 +258,20 @@ const publications = [
 ,
         patent_number: "12499555"
 ,
-        application_number: "IP-A-6675"
-,
         patent_type: "granted"
 ,
         grant_date: "2025-12-16"
-,
-        filing_date: "2023-07-28"
-    },
-    {
-        yaml_id: "CV_043",
-        title: "Collaborative Vehicle Navigation Using Dynamic and Contextual Message Sets",
-        authors: "K. Han, Y. Chen, R. Gupta, S. Ucar, J. Kenney, and O. Altintas",
-        venue: "U.S. Patent Appl. 19/408,301, Dec. 3, 2025",
-        year: 2025,
-        type: "patent",
-        type_label: "Patent"
-,
-        research_area: [
-        "v2x-communication",
-        "connected-autonomous-vehicles",
-        "intelligent-transportation"
-]
-,
-        application_number: "19/408,301"
-,
-        patent_type: "application"
-,
-        filing_date: "2025-12-03"
     },
     {
         yaml_id: "CV_075",
-        title: "Method and System for Modeling Personalized Car-Following Driving Styles with Model-Free Inverse Reinforcement Learning",
+        title: "Method and system for modeling personalized car-following driving styles with model-free inverse reinforcement learning",
         authors: "Z. Wang, K. Han, and R. Gupta",
         venue: "U.S. Patent 12 485 911, Dec. 2, 2025",
         year: 2025,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US12485911"
+        url: "https://patents.google.com/patent/US12485911B2/en"
 ,
         research_area: [
         "intelligent-transportation",
@@ -759,24 +280,20 @@ const publications = [
 ,
         patent_number: "12485911"
 ,
-        application_number: "IP-A-6052"
-,
         patent_type: "granted"
 ,
         grant_date: "2025-12-02"
-,
-        filing_date: "2022-01-29"
     },
     {
         yaml_id: "CV_030",
-        title: "Trigger Event Personalized Adaptive Cruise Control (P-ACC)",
+        title: "Trigger event personalized adaptive cruise control (P-ACC)",
         authors: "R. Gupta, A. Abdelraouf, and K. Han",
         venue: "U.S. Patent 12 466 405, Nov. 11, 2025",
         year: 2025,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US12466405"
+        url: "https://patents.google.com/patent/US12466405B2/en"
 ,
         research_area: [
         "intelligent-transportation",
@@ -786,24 +303,20 @@ const publications = [
 ,
         patent_number: "12466405"
 ,
-        application_number: "IP-A-7027"
-,
         patent_type: "granted"
 ,
         grant_date: "2025-11-11"
-,
-        filing_date: "2024-02-09"
     },
     {
         yaml_id: "CV_062",
-        title: "Lane Change Assist for Inexperienced Driver",
+        title: "Lane change assist for inexperienced driver",
         authors: "R. Gupta, A. Abdelraouf, and K. Han",
         venue: "U.S. Patent 12 428 033, Sep. 30, 2025",
         year: 2025,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US12428033"
+        url: "https://patents.google.com/patent/US12428033B2/en"
 ,
         research_area: [
         "intelligent-transportation",
@@ -813,24 +326,20 @@ const publications = [
 ,
         patent_number: "12428033"
 ,
-        application_number: "IP-A-6477"
-,
         patent_type: "granted"
 ,
         grant_date: "2025-09-30"
-,
-        filing_date: "2023-03-01"
     },
     {
         yaml_id: "CV_050",
-        title: "Methods and Systems for Collision Control of Moving Vehicles Surrounded By Vehicles",
+        title: "Methods and systems for collision control of moving vehicles surrounded by vehicles",
         authors: "R. Gupta, A. Abdelraouf, and K. Han",
         venue: "U.S. Patent 12 415 545, Sep. 16, 2025",
         year: 2025,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US12415545"
+        url: "https://patents.google.com/patent/US12415545B2/en"
 ,
         research_area: [
         "connected-autonomous-vehicles",
@@ -840,24 +349,20 @@ const publications = [
 ,
         patent_number: "12415545"
 ,
-        application_number: "18/455,020"
-,
         patent_type: "granted"
 ,
         grant_date: "2025-09-16"
-,
-        filing_date: "2023-08-24"
     },
     {
         yaml_id: "CV_071",
-        title: "Systems and Method for Active Road Surface Maintenance with Cloud-Based Mobility Digital Twin",
+        title: "Systems and methods for active road surface maintenance with cloud-based mobility digital twin",
         authors: "Z. Wang, R. Gupta, and K. Han",
         venue: "U.S. Patent 12 415 539, Sep. 16, 2025",
         year: 2025,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US12415539"
+        url: "https://patents.google.com/patent/US12415539B2/en"
 ,
         research_area: [
         "digital-twin",
@@ -867,44 +372,20 @@ const publications = [
 ,
         patent_number: "12415539"
 ,
-        application_number: "17/992,364"
-,
         patent_type: "granted"
 ,
         grant_date: "2025-09-16"
-,
-        filing_date: "2022-11-22"
-    },
-    {
-        yaml_id: "CV_044",
-        title: "Driving Guidance via Context-Aware Inference Mechanism",
-        authors: "Y. Chen, D. Chen, K. Han, and O. Altintas",
-        venue: "U.S. Patent Appl. 19/314,870, Aug. 29, 2025",
-        year: 2025,
-        type: "patent",
-        type_label: "Patent"
-,
-        research_area: [
-        "generative-ai",
-        "connected-autonomous-vehicles"
-]
-,
-        application_number: "19/314,870"
-,
-        patent_type: "application"
-,
-        filing_date: "2025-08-29"
     },
     {
         yaml_id: "CV_032",
-        title: "Systems and Methods for Selecting Edge Nodes For Task Performance",
+        title: "Systems and methods for selecting edge nodes for task performance",
         authors: "D. Chen, Q. Chen, R. Gupta, and K. Han",
         venue: "U.S. Patent 12 395 411, Aug. 19, 2025",
         year: 2025,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US12395411"
+        url: "https://patents.google.com/patent/US12395411B1/en"
 ,
         research_area: [
         "edge-computing"
@@ -912,24 +393,20 @@ const publications = [
 ,
         patent_number: "12395411"
 ,
-        application_number: "IP-A-6776"
-,
         patent_type: "granted"
 ,
         grant_date: "2025-08-19"
-,
-        filing_date: "2024-02-06"
     },
     {
         yaml_id: "CV_022",
-        title: "Systems and Methods for Resource-optimized Mixed Reality Using User-Centric Adaptive Object Detection",
+        title: "Systems and methods for resource-optimized mixed reality using user-centric adaptive object detection",
         authors: "D. Doe, D. Chen, and K. Han",
         venue: "U.S. Patent 12 387 489, Aug. 12, 2025",
         year: 2025,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US12387489"
+        url: "https://patents.google.com/patent/US12387489B2/en"
 ,
         research_area: [
         "edge-computing"
@@ -937,22 +414,20 @@ const publications = [
 ,
         patent_number: "12387489"
 ,
-        application_number: "IP-A-6910"
-,
         patent_type: "granted"
 ,
         grant_date: "2025-08-12"
     },
     {
         yaml_id: "CV_058",
-        title: "Omnidirectional Collision Avoidance",
+        title: "Omnidirectional collision avoidance",
         authors: "A. Abdelraouf, R. Gupta, H. Abdelkawy, and K. Han",
         venue: "U.S. Patent 12 361 829, Jul. 15, 2025",
         year: 2025,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US12361829"
+        url: "https://patents.google.com/patent/US12361829B2/en"
 ,
         research_area: [
         "intelligent-transportation",
@@ -961,24 +436,20 @@ const publications = [
 ,
         patent_number: "12361829"
 ,
-        application_number: "18/137,959"
-,
         patent_type: "granted"
 ,
         grant_date: "2025-07-15"
-,
-        filing_date: "2023-04-21"
     },
     {
         yaml_id: "CV_001",
-        title: "Systems and Methods for Communication-Aware Federated Learning",
+        title: "Systems and methods for communication-aware federated learning",
         authors: "Y. Chan, D. Chen, H. Wang, and K. Han",
         venue: "U.S. Patent 12 337 867, Jun. 24, 2025",
         year: 2025,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US12337867"
+        url: "https://patents.google.com/patent/US12337867B2/en"
 ,
         research_area: [
         "connected-autonomous-vehicles",
@@ -987,22 +458,20 @@ const publications = [
 ,
         patent_number: "12337867"
 ,
-        application_number: ""
-,
         patent_type: "granted"
 ,
         grant_date: "2025-06-24"
     },
     {
         yaml_id: "CV_002",
-        title: "Personalized Speed Limiter",
+        title: "Personalized speed limiter",
         authors: "R. Gupta, Z. Wang, R. Du, and K. Han",
         venue: "U.S. Patent 12 337 859, Jun. 24, 2025",
         year: 2025,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US12337859"
+        url: "https://patents.google.com/patent/US12337859B2/en"
 ,
         research_area: [
         "digital-twin",
@@ -1011,43 +480,20 @@ const publications = [
 ,
         patent_number: "12337859"
 ,
-        application_number: ""
-,
         patent_type: "granted"
 ,
         grant_date: "2025-06-24"
     },
     {
-        yaml_id: "CV_003",
-        title: "Generating Artificial Intelligence (AI) Content Based on Predicted Handover Time",
-        authors: "D. Chen, Y. Chen, Q. Chen, and K. Han",
-        venue: "U.S. Patent Appl. 19/174,032, Apr. 9, 2025",
-        year: 2025,
-        type: "patent",
-        type_label: "Patent"
-,
-        research_area: [
-        "generative-ai",
-        "edge-computing",
-        "connected-autonomous-vehicles"
-]
-,
-        application_number: "19/174,032"
-,
-        patent_type: "application"
-,
-        filing_date: "2025-04-09"
-    },
-    {
         yaml_id: "CV_004",
-        title: "Medical Emergency Detection In-Vehicle Caretaker",
+        title: "Medical emergency detection in-vehicle caretaker",
         authors: "A. Ganlath, R. Gupta, P. Li, Z. Wang, K. Han, N. Ammar, and S. Nagashima",
         venue: "U.S. Patent 12 263 869, Apr. 1, 2025",
         year: 2025,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US12263869"
+        url: "https://patents.google.com/patent/US12263869B2/en"
 ,
         research_area: [
         "intelligent-transportation",
@@ -1056,43 +502,20 @@ const publications = [
 ,
         patent_number: "12263869"
 ,
-        application_number: ""
-,
         patent_type: "granted"
 ,
         grant_date: "2025-04-01"
     },
     {
-        yaml_id: "CV_005",
-        title: "Optimum Model Deployment Based on Energy Consumption",
-        authors: "D. Chen, Y. Chen, K. Han, and O. Altintas",
-        venue: "U.S. Patent Appl. 19/055,566, Feb. 18, 2025",
-        year: 2025,
-        type: "patent",
-        type_label: "Patent"
-,
-        research_area: [
-        "energy-efficient-computing",
-        "edge-computing",
-        "design-tech"
-]
-,
-        application_number: "19/055,566"
-,
-        patent_type: "application"
-,
-        filing_date: "2025-02-18"
-    },
-    {
         yaml_id: "CV_006",
-        title: "Method and System for Personalized Car Following with Transformers and RNNs",
+        title: "Method and system for personalized car following with transformers and RNNs",
         authors: "Z. Wang, K. Han, and R. Gupta",
         venue: "U.S. Patent 12 187 279, Jan. 7, 2025",
         year: 2025,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US12187279"
+        url: "https://patents.google.com/patent/US12187279B2/en"
 ,
         research_area: [
         "generative-ai",
@@ -1101,8 +524,6 @@ const publications = [
 ]
 ,
         patent_number: "12187279"
-,
-        application_number: ""
 ,
         patent_type: "granted"
 ,
@@ -1336,163 +757,60 @@ const publications = [
         type_label: "Presentation"
     },
     {
-        yaml_id: "CV_007",
-        title: "Adaptive Road Sign Interpretation and Vehicle Response System",
-        authors: "R. Gupta, Y. Ma, A. Abdelraouf, and K. Han",
-        venue: "U.S. Patent Appl. 19/004,333, Dec. 29, 2024",
+        yaml_id: "CV_014",
+        title: "Proactive message transmitter identification system",
+        authors: "H. Kobayashi and K. Han",
+        venue: "U.S. Patent 12 091 006, Sep. 17, 2024",
         year: 2024,
         type: "patent",
         type_label: "Patent"
 ,
+        url: "https://patents.google.com/patent/US12091006B2/en"
+,
         research_area: [
-        "intelligent-transportation",
         "connected-autonomous-vehicles",
+        "intelligent-transportation"
+]
+,
+        patent_number: "12091006"
+,
+        patent_type: "granted"
+,
+        grant_date: "2024-09-17"
+    },
+    {
+        yaml_id: "CV_016",
+        title: "Method and system for personalized car following with transformers",
+        authors: "Z. Wang, Z. Zhao, R. Gupta, K. Han, and P. Tiwari",
+        venue: "U.S. Patent 12 083 883, Sep. 10, 2024",
+        year: 2024,
+        type: "patent",
+        type_label: "Patent"
+,
+        url: "https://patents.google.com/patent/US12083883B2/en"
+,
+        research_area: [
+        "connected-autonomous-vehicles",
+        "intelligent-transportation",
         "digital-twin"
 ]
 ,
-        application_number: "19/004,333"
+        patent_number: "12083883"
 ,
-        patent_type: "application"
+        patent_type: "granted"
 ,
-        filing_date: "2024-12-29"
-    },
-    {
-        yaml_id: "CV_008",
-        title: "Context-Aware External Object Detection and Vehicle Guidance",
-        authors: "R. Gupta, Y. Ma, A. Abdelraouf, and K. Han",
-        venue: "U.S. Patent Appl. 19/004,331, Dec. 29, 2024",
-        year: 2024,
-        type: "patent",
-        type_label: "Patent"
-,
-        research_area: [
-        "connected-autonomous-vehicles",
-        "intelligent-transportation",
-        "digital-twin",
-        "generative-ai"
-]
-,
-        application_number: "19/004,331"
-,
-        patent_type: "application"
-,
-        filing_date: "2024-12-29"
-    },
-    {
-        yaml_id: "CV_009",
-        title: "Computing a Multi-Dimensional Personalized Adaptive Cruise Control Parameter",
-        authors: "R. Gupta, A. Moradipari, A. Abdelraouf, and K. Han",
-        venue: "U.S. Patent Appl. 18/988,587, Dec. 19, 2024",
-        year: 2024,
-        type: "patent",
-        type_label: "Patent"
-,
-        research_area: [
-        "intelligent-transportation",
-        "connected-autonomous-vehicles",
-        "digital-twin"
-]
-,
-        application_number: "18/988,587"
-,
-        patent_type: "application"
-,
-        filing_date: "2024-12-19"
-    },
-    {
-        yaml_id: "CV_010",
-        title: "Advanced Driver Focus Tracking for Approaching Hazard",
-        authors: "R. Gupta, Q. Chen, Y. Ma, A. Abdelraouf, and K. Han",
-        venue: "U.S. Patent Appl. 18/977,280, Dec. 11, 2024",
-        year: 2024,
-        type: "patent",
-        type_label: "Patent"
-,
-        research_area: [
-        "intelligent-transportation",
-        "connected-autonomous-vehicles",
-        "digital-twin"
-]
-,
-        application_number: "18/977,280"
-,
-        patent_type: "application"
-,
-        filing_date: "2024-12-11"
-    },
-    {
-        yaml_id: "CV_011",
-        title: "Audio-Based Driver Assistance System for Enhanced Vehicle Safety",
-        authors: "R. Gupta, Q. Chen, Y. Ma, A. Abdelraouf, and K. Han",
-        venue: "U.S. Patent Appl. 18/977,353, Dec. 11, 2024",
-        year: 2024,
-        type: "patent",
-        type_label: "Patent"
-,
-        research_area: [
-        "intelligent-transportation",
-        "connected-autonomous-vehicles",
-        "digital-twin"
-]
-,
-        application_number: "18/977,353"
-,
-        patent_type: "application"
-,
-        filing_date: "2024-12-11"
-    },
-    {
-        yaml_id: "CV_012",
-        title: "Real-Time Risk Reasoning",
-        authors: "A. Abdelraouf, R. Gupta, and K. Han",
-        venue: "U.S. Patent Appl. 18/964,886, Dec. 2, 2024",
-        year: 2024,
-        type: "patent",
-        type_label: "Patent"
-,
-        research_area: [
-        "intelligent-transportation",
-        "connected-autonomous-vehicles",
-        "digital-twin"
-]
-,
-        application_number: "18/964,886"
-,
-        patent_type: "application"
-,
-        filing_date: "2024-12-02"
-    },
-    {
-        yaml_id: "CV_013",
-        title: "Systems and Methods for Adaptive Cruise Control Based on Online Learning Preference",
-        authors: "A. Moradipari, R. Gupta, A. Abdelraouf, K. Han, S. Avedisov, O. Altintas, and J. Kenney",
-        venue: "U.S. Patent Appl. 18/944,774, Nov. 12, 2024",
-        year: 2024,
-        type: "patent",
-        type_label: "Patent"
-,
-        research_area: [
-        "intelligent-transportation",
-        "connected-autonomous-vehicles",
-        "digital-twin"
-]
-,
-        application_number: "18/944,774"
-,
-        patent_type: "application"
-,
-        filing_date: "2024-11-12"
+        grant_date: "2024-09-10"
     },
     {
         yaml_id: "CV_018",
-        title: "Detection, Classification, and Prediction of Bacteria Colony Growth in Vehicle Passenger Cabin",
+        title: "Detection, classification, and prediction of bacteria colony growth in vehicle passenger cabin",
         authors: "R. Gupta, Z. Wang, Y. Wang, K. Han, and P. Tiwari",
         venue: "U.S. Patent 12 080 080, Sep. 3, 2024",
         year: 2024,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US12080080B2"
+        url: "https://patents.google.com/patent/US12080080B2/en"
 ,
         research_area: [
         "digital-twin",
@@ -1501,49 +819,20 @@ const publications = [
 ,
         patent_number: "12080080"
 ,
-        application_number: "17/373,050"
-,
         patent_type: "granted"
 ,
         grant_date: "2024-09-03"
-,
-        filing_date: "2021-07-12"
-    },
-    {
-        yaml_id: "CV_021",
-        title: "Systems and Methods for Mixed Reality Applications with Selective Frame Transmission",
-        authors: "D. Doe, D. Chen, and K. Han",
-        venue: "U.S. Patent Appl. 18/818,052, Aug. 28, 2024",
-        year: 2024,
-        type: "patent",
-        type_label: "Patent"
-,
-        url: "https://patents.google.com/patent/US20250139841A1/en?oq=18818052"
-,
-        research_area: [
-        "edge-computing",
-        "connected-autonomous-vehicles",
-        "digital-twin"
-]
-,
-        patent_number: ""
-,
-        application_number: "18/818,052"
-,
-        patent_type: "application"
-,
-        filing_date: "2024-08-28"
     },
     {
         yaml_id: "CV_020",
-        title: "Rest Stop Recommendation System",
+        title: "Rest stop recommendation system",
         authors: "Z. Shou, Z. Wang, K. Han, Y. Liu, and P. Tiwari",
         venue: "U.S. Patent 12 073 332, Aug. 27, 2024",
         year: 2024,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US12073332"
+        url: "https://patents.google.com/patent/US12073332B2/en"
 ,
         research_area: [
         "intelligent-transportation",
@@ -1553,22 +842,20 @@ const publications = [
 ,
         patent_number: "12073332"
 ,
-        application_number: ""
-,
         patent_type: "granted"
 ,
         grant_date: "2024-08-27"
     },
     {
         yaml_id: "CV_088",
-        title: "Systems and Method for Predicting Driver Visual Impairment with Artificial Intelligence",
+        title: "Systems and methods for predicting driver visual impairment with artificial intelligence",
         authors: "R. Gupta, Z. Zhao, Z. Wang, K. Han, and P. Tiwari",
         venue: "U.S. Patent 12 071 141, Aug. 27, 2024",
         year: 2024,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US12071141B2/en?oq=17586593"
+        url: "https://patents.google.com/patent/US12071141B2/en"
 ,
         research_area: [
         "digital-twin"
@@ -1576,24 +863,20 @@ const publications = [
 ,
         patent_number: "12071141"
 ,
-        application_number: "17/586,593"
-,
         patent_type: "granted"
 ,
         grant_date: "2024-08-27"
-,
-        filing_date: "2022-01-27"
     },
     {
         yaml_id: "CV_024",
-        title: "Student-T Process Personalized Adaptive Cruise Control",
+        title: "Student-T process personalized adaptive cruise control",
         authors: "R. Gupta, Z. Wang, Y. Wang, K. Han, and P. Tiwari",
         venue: "U.S. Patent 12 036 987, Jul. 16, 2024",
         year: 2024,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US12036987"
+        url: "https://patents.google.com/patent/US12036987B2/en"
 ,
         research_area: [
         "intelligent-transportation",
@@ -1603,43 +886,20 @@ const publications = [
 ,
         patent_number: "12036987"
 ,
-        application_number: ""
-,
         patent_type: "granted"
 ,
         grant_date: "2024-07-16"
     },
     {
-        yaml_id: "CV_025",
-        title: "Systems and Methods for Generating Personalized Advanced Driver Assistance Systems",
-        authors: "A. Abdelraouf, R. Gupta, and K. Han",
-        venue: "U.S. Patent Appl. 18/664,946, May. 15, 2024",
-        year: 2024,
-        type: "patent",
-        type_label: "Patent"
-,
-        research_area: [
-        "intelligent-transportation",
-        "digital-twin",
-        "connected-autonomous-vehicles"
-]
-,
-        application_number: "18/664,946"
-,
-        patent_type: "application"
-,
-        filing_date: "2024-05-15"
-    },
-    {
         yaml_id: "CV_026",
-        title: "Vehicle Communication Sender Identification via Hyper-Graph Matching",
+        title: "Vehicle communication sender identification via hyper-graph matching",
         authors: "R. Guo, S. Avedisov, K. Han, H. Lu, and P. Tiwari",
         venue: "U.S. Patent 11 948 453, Apr. 2, 2024",
         year: 2024,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US11948453"
+        url: "https://patents.google.com/patent/US11948453B2/en"
 ,
         research_area: [
         "connected-autonomous-vehicles",
@@ -1650,46 +910,20 @@ const publications = [
 ,
         patent_number: "11948453"
 ,
-        application_number: ""
-,
         patent_type: "granted"
 ,
         grant_date: "2024-04-02"
     },
     {
-        yaml_id: "CV_027",
-        title: "Controlling An Adaptive Cruise Control System",
-        authors: "A. Abdelraouf, R. Gupta, K. Han, T. Matusda, N. Merkel, M. Hill, S. Nola, O. Altintas, and J. Kenney",
-        venue: "U.S. Patent Appl. 18/613,323, Mar. 22, 2024",
-        year: 2024,
-        type: "patent",
-        type_label: "Patent"
-,
-        url: "https://patents.google.com/patent/US20250121825A1/en?oq=18613323"
-,
-        research_area: [
-        "intelligent-transportation",
-        "digital-twin"
-]
-,
-        patent_number: ""
-,
-        application_number: "18/613,323"
-,
-        patent_type: "application"
-,
-        filing_date: "2024-03-22"
-    },
-    {
         yaml_id: "CV_028",
-        title: "Hybrid Deterministic Override of Probabilistic Advanced Driving Assistance Systems (ADAS)",
+        title: "Hybrid deterministic override of probabilistic advanced driving assistance systems (ADAS)",
         authors: "R. Gupta, Z. Wang, K. Han, and P. Tiwari",
         venue: "U.S. Patent 11 926 322, Mar. 12, 2024",
         year: 2024,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US11926322"
+        url: "https://patents.google.com/patent/US11926322B2/en"
 ,
         research_area: [
         "intelligent-transportation",
@@ -1699,22 +933,20 @@ const publications = [
 ,
         patent_number: "11926322"
 ,
-        application_number: ""
-,
         patent_type: "granted"
 ,
         grant_date: "2024-03-12"
     },
     {
         yaml_id: "CV_029",
-        title: "Cooperative Driving System and Method",
+        title: "Cooperative driving system and method",
         authors: "S. Avedisov, Z. Wang, A. Sakr, K. Han, R. Guo, and O. Altintas",
         venue: "U.S. Patent 11 904 855, Feb. 20, 2024",
         year: 2024,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US11904855"
+        url: "https://patents.google.com/patent/US11904855B2/en"
 ,
         research_area: [
         "intelligent-transportation",
@@ -1724,163 +956,20 @@ const publications = [
 ,
         patent_number: "11904855"
 ,
-        application_number: ""
-,
         patent_type: "granted"
 ,
         grant_date: "2024-02-20"
     },
     {
-        yaml_id: "CV_031",
-        title: "Signal-Based Auto Gap Personalized Adaptive Cruise Control",
-        authors: "R. Gupta, A. Abdelraouf, K. Han, and S. Sheng",
-        venue: "U.S. Patent Appl. 18/437,060, Feb. 8, 2024",
-        year: 2024,
-        type: "patent",
-        type_label: "Patent"
-,
-        url: "https://patents.google.com/patent/US20250256709A1/en?oq=18437060"
-,
-        research_area: [
-        "intelligent-transportation",
-        "digital-twin"
-]
-,
-        patent_number: ""
-,
-        application_number: "18/437,060"
-,
-        patent_type: "application"
-,
-        filing_date: "2024-02-08"
-    },
-    {
-        yaml_id: "CV_033",
-        title: "Edge-Assisted Personalized High-Definition Map Delivery Based on Drivers' Interests",
-        authors: "D. Chen, Q. Chen, R. Gupta, and K. Han",
-        venue: "U.S. Patent Appl. 18/432,307, Feb. 2, 2024",
-        year: 2024,
-        type: "patent",
-        type_label: "Patent"
-,
-        url: "https://patents.google.com/patent/US20250251251A1/en?oq=18432307"
-,
-        research_area: [
-        "edge-computing",
-        "intelligent-transportation",
-        "digital-twin",
-        "connected-autonomous-vehicles"
-]
-,
-        patent_number: ""
-,
-        application_number: "18/432,307"
-,
-        patent_type: "application"
-,
-        filing_date: "2024-02-02"
-    },
-    {
-        yaml_id: "CV_034",
-        title: "Edge-Assisted Energy-Aware and Communication-Aware Dynamic Computational Task Offloading Strategy",
-        authors: "D. Chen, Q. Chen, R. Gupta, and K. Han",
-        venue: "U.S. Patent Appl. 18/431,723, Feb. 2, 2024",
-        year: 2024,
-        type: "patent",
-        type_label: "Patent"
-,
-        research_area: [
-        "energy-efficient-computing",
-        "edge-computing",
-        "connected-autonomous-vehicles"
-]
-,
-        application_number: "18/431,723"
-,
-        patent_type: "application"
-,
-        filing_date: "2024-02-02"
-    },
-    {
-        yaml_id: "CV_035",
-        title: "Systems and Methods for Personalized Gap Preference Prediction",
-        authors: "A. Abdelraouf, R. Gupta, K. Han, H. Abdelkawy, and J. Knapp",
-        venue: "U.S. Patent Appl. 18/431,230, Feb. 2, 2024",
-        year: 2024,
-        type: "patent",
-        type_label: "Patent"
-,
-        url: "https://patents.google.com/patent/US20250249902A1/en?oq=18431230"
-,
-        research_area: [
-        "intelligent-transportation",
-        "digital-twin"
-]
-,
-        patent_number: ""
-,
-        application_number: "18/431,230"
-,
-        patent_type: "application"
-,
-        filing_date: "2024-02-02"
-    },
-    {
-        yaml_id: "CV_036",
-        title: "Systems and Methods for Obtaining Video Analytic Output",
-        authors: "Y. Chen, D. Chen, and K. Han",
-        venue: "U.S. Patent Appl. 18/430,242, Feb. 1, 2024",
-        year: 2024,
-        type: "patent",
-        type_label: "Patent"
-,
-        url: "https://patents.google.com/patent/US20250292588A1/en?oq=+U.S.+Patent+Appl.+18%2f430%2c242"
-,
-        research_area: [
-        "digital-twin"
-]
-,
-        patent_number: ""
-,
-        application_number: "18/430,242"
-,
-        patent_type: "application"
-,
-        filing_date: "2024-02-01"
-    },
-    {
-        yaml_id: "CV_037",
-        title: "Systems and Methods for Controlling a Vehicle Using Physiological Data of a Driver of the Vehicle",
-        authors: "R. Gupta, A. Abdelraouf, K. Han, and S. Sheng",
-        venue: "U.S. Patent Appl. 18/424,131, Jan. 26, 2024",
-        year: 2024,
-        type: "patent",
-        type_label: "Patent"
-,
-        url: "https://patents.google.com/patent/US20250242809A1/en?oq=18424131"
-,
-        research_area: [
-        "digital-twin"
-]
-,
-        patent_number: ""
-,
-        application_number: "18/424,131"
-,
-        patent_type: "application"
-,
-        filing_date: "2024-01-26"
-    },
-    {
         yaml_id: "CV_038",
-        title: "Subconscious Big Picture Macro and Split Second Micro Decisions {ADAS}",
+        title: "Subconscious big picture macro and split second micro decisions ADAS",
         authors: "R. Gupta, Z. Wang, K. Han, and P. Tiwari",
         venue: "U.S. Patent 11 878 709, Jan. 23, 2024",
         year: 2024,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US11878709"
+        url: "https://patents.google.com/patent/US11878709B2/en"
 ,
         research_area: [
         "digital-twin"
@@ -1888,46 +977,20 @@ const publications = [
 ,
         patent_number: "11878709"
 ,
-        application_number: ""
-,
         patent_type: "granted"
 ,
         grant_date: "2024-01-23"
     },
     {
-        yaml_id: "CV_014",
-        title: "Proactive Message Transmitter Identification System",
-        authors: "H. Kobayashi and K. Han",
-        venue: "U.S. Patent 12 091 006, Jan. 17, 2024",
-        year: 2024,
-        type: "patent",
-        type_label: "Patent"
-,
-        url: "https://patents.google.com/patent/US12091006"
-,
-        research_area: [
-        "connected-autonomous-vehicles",
-        "intelligent-transportation"
-]
-,
-        patent_number: "12091006"
-,
-        application_number: ""
-,
-        patent_type: "granted"
-,
-        grant_date: "2024-01-17"
-    },
-    {
         yaml_id: "CV_039",
-        title: "Determining a Setting for a Cruise Control",
+        title: "Determining a setting for a cruise control",
         authors: "K. Han, Z. Wang, P. Tiwari, J. Lenneman, E. Toshinori, M. Johnson, and C. Violetta",
         venue: "U.S. Patent 11 872 985, Jan. 16, 2024",
         year: 2024,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US11872985"
+        url: "https://patents.google.com/patent/US11872985B2/en"
 ,
         research_area: [
         "digital-twin",
@@ -1936,71 +999,20 @@ const publications = [
 ,
         patent_number: "11872985"
 ,
-        application_number: ""
-,
         patent_type: "granted"
 ,
         grant_date: "2024-01-16"
     },
     {
-        yaml_id: "CV_015",
-        title: "Systems and Methods for Computation Offloading Determination Using Multi-Modal User Input",
-        authors: "D. Doe, D. Chen, and K. Han",
-        venue: "U.S. Patent Appl. 18/883,664, Jan. 12, 2024",
-        year: 2024,
-        type: "patent",
-        type_label: "Patent"
-,
-        url: "https://patents.google.com/patent/US20250138899A1/en?oq=18883664"
-,
-        research_area: [
-        "edge-computing",
-        "connected-autonomous-vehicles"
-]
-,
-        patent_number: ""
-,
-        application_number: "18/883,664"
-,
-        patent_type: "application"
-,
-        filing_date: "2024-01-12"
-    },
-    {
-        yaml_id: "CV_016",
-        title: "Method and System for Personalized Car Following with Transformers",
-        authors: "Z. Wang, Z. Zhao, R. Gupta, K. Han, and P. Tiwari",
-        venue: "U.S. Patent 12 083 883, Jan. 10, 2024",
-        year: 2024,
-        type: "patent",
-        type_label: "Patent"
-,
-        url: "https://patents.google.com/patent/US12083883"
-,
-        research_area: [
-        "connected-autonomous-vehicles",
-        "intelligent-transportation",
-        "digital-twin"
-]
-,
-        patent_number: "12083883"
-,
-        application_number: ""
-,
-        patent_type: "granted"
-,
-        grant_date: "2024-01-10"
-    },
-    {
         yaml_id: "CV_040",
-        title: "Vehicular Topple Risk notification",
+        title: "Vehicular topple risk notification",
         authors: "R. Gupta, Z. Wang, Y. Wang, K. Han, and P. Tiwari",
         venue: "U.S. Patent 11 869 353, Jan. 9, 2024",
         year: 2024,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US11869353"
+        url: "https://patents.google.com/patent/US11869353B2/en"
 ,
         research_area: [
         "digital-twin"
@@ -2008,35 +1020,9 @@ const publications = [
 ,
         patent_number: "11869353"
 ,
-        application_number: ""
-,
         patent_type: "granted"
 ,
         grant_date: "2024-01-09"
-    },
-    {
-        yaml_id: "CV_017",
-        title: "Systems and Methods for Edge-Driven Object Detection for Resource Optimization",
-        authors: "D. Doe, D. Chen, and K. Han",
-        venue: "U.S. Patent Appl. 18/825,745, Jan. 5, 2024",
-        year: 2024,
-        type: "patent",
-        type_label: "Patent"
-,
-        url: "https://patents.google.com/patent/US20250139913A1/en?oq=18825745"
-,
-        research_area: [
-        "edge-computing",
-        "energy-efficient-computing"
-]
-,
-        patent_number: ""
-,
-        application_number: "18/825,745"
-,
-        patent_type: "application"
-,
-        filing_date: "2024-01-05"
     },
     {
         yaml_id: "Cao2024GLOBECOM",
@@ -2246,14 +1232,14 @@ const publications = [
     },
     {
         yaml_id: "CV_041",
-        title: "Systems and Methods for Protecting a Vehicle at an Intersection",
+        title: "Systems and methods for protecting a vehicle at an intersection",
         authors: "R. Gupta, Z. Wang, Y. Wang, K. Han, and P. Tiwari",
         venue: "U.S. Patent 11 851 063, Dec. 26, 2023",
         year: 2023,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US11851063"
+        url: "https://patents.google.com/patent/US11851063B2/en"
 ,
         research_area: [
         "connected-autonomous-vehicles",
@@ -2263,22 +1249,20 @@ const publications = [
 ,
         patent_number: "11851063"
 ,
-        application_number: ""
-,
         patent_type: "granted"
 ,
         grant_date: "2023-12-26"
     },
     {
         yaml_id: "CV_042",
-        title: "System and Method for Estimating Motion of an Automated Vehicle for Cooperative Driving",
+        title: "Systems and methods for estimating motion of an automated vehicle for cooperative driving",
         authors: "Z. Wang, K. Han, and P. Tiwari",
         venue: "U.S. Patent 11 827 245, Nov. 28, 2023",
         year: 2023,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US11827245"
+        url: "https://patents.google.com/patent/US11827245B2/en"
 ,
         research_area: [
         "connected-autonomous-vehicles",
@@ -2288,48 +1272,20 @@ const publications = [
 ,
         patent_number: "11827245"
 ,
-        application_number: ""
-,
         patent_type: "granted"
 ,
         grant_date: "2023-11-28"
     },
     {
-        yaml_id: "CV_047",
-        title: "Systems and Methods for Estimating Remaining Range of a Vehicle",
-        authors: "D. Chen, Q. Chen, and K. Han",
-        venue: "U.S. Patent Appl. 18/491,290, Oct. 20, 2023",
-        year: 2023,
-        type: "patent",
-        type_label: "Patent"
-,
-        url: "https://patents.google.com/patent/US20250130055A1/en?oq=18491290"
-,
-        research_area: [
-        "energy-efficient-computing",
-        "connected-autonomous-vehicles",
-        "digital-twin",
-        "intelligent-transportation"
-]
-,
-        patent_number: ""
-,
-        application_number: "18/491,290"
-,
-        patent_type: "application"
-,
-        filing_date: "2023-10-20"
-    },
-    {
         yaml_id: "CV_048",
-        title: "Systems and Methods for Personalizing Adaptive Cruise Control in a Vehicle",
+        title: "Systems and methods for personalizing adaptive cruise control in a vehicle",
         authors: "Y. Wang, Z. Wang, K. Han, R. Gupta, and P. Tiwari",
         venue: "U.S. Patent 11 787 404, Oct. 17, 2023",
         year: 2023,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US11787404"
+        url: "https://patents.google.com/patent/US11787404B2/en"
 ,
         research_area: [
         "intelligent-transportation",
@@ -2338,22 +1294,20 @@ const publications = [
 ,
         patent_number: "11787404"
 ,
-        application_number: ""
-,
         patent_type: "granted"
 ,
         grant_date: "2023-10-17"
     },
     {
         yaml_id: "CV_049",
-        title: "Driver Classification Systems and Methods for Obtaining an Insurance Rate for a Vehicle",
+        title: "Driver classification systems and methods for obtaining an insurance rate for a vehicle",
         authors: "R. Gupta, Z. Wang, K. Han, and P. Tiwari",
         venue: "U.S. Patent 11 776 064, Oct. 3, 2023",
         year: 2023,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US11776064"
+        url: "https://patents.google.com/patent/US11776064B2/en"
 ,
         research_area: [
         "intelligent-transportation",
@@ -2363,46 +1317,20 @@ const publications = [
 ,
         patent_number: "11776064"
 ,
-        application_number: ""
-,
         patent_type: "granted"
 ,
         grant_date: "2023-10-03"
     },
     {
-        yaml_id: "CV_051",
-        title: "Personalized Takeover Prediction with Driver Tactile Inputs",
-        authors: "Z. Wang, R. Gupta, K. Han, and R. Du",
-        venue: "U.S. Patent Appl. 18/363,671, Aug. 1, 2023",
-        year: 2023,
-        type: "patent",
-        type_label: "Patent"
-,
-        url: "https://patents.google.com/patent/US20250042444A1/en?oq=18363671"
-,
-        research_area: [
-        "intelligent-transportation",
-        "digital-twin"
-]
-,
-        patent_number: ""
-,
-        application_number: "18/363,671"
-,
-        patent_type: "application"
-,
-        filing_date: "2023-08-01"
-    },
-    {
         yaml_id: "CV_053",
-        title: "Systems and Methods to Reduce Audio Distraction for a Vehicle Driver",
+        title: "Systems and methods to reduce audio distraction for a vehicle driver",
         authors: "R. Gupta, Z. Wang, K. Han, and P. Tiwari",
         venue: "U.S. Patent 11 705 141, Jul. 18, 2023",
         year: 2023,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US11705141"
+        url: "https://patents.google.com/patent/US11705141B2/en"
 ,
         research_area: [
         "intelligent-transportation",
@@ -2411,22 +1339,20 @@ const publications = [
 ,
         patent_number: "11705141"
 ,
-        application_number: ""
-,
         patent_type: "granted"
 ,
         grant_date: "2023-07-18"
     },
     {
         yaml_id: "CV_054",
-        title: "Vehicle-to-everything Communication-based Lane Change Collision Avoidance Warning",
+        title: "Vehicle-to-everything communication-based lane change collision avoidance warning",
         authors: "Z. Wang, K. Han, and B. Kim",
         venue: "U.S. Patent 11 697 410, Jul. 11, 2023",
         year: 2023,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US11697410"
+        url: "https://patents.google.com/patent/US11697410B2/en"
 ,
         research_area: [
         "connected-autonomous-vehicles",
@@ -2436,47 +1362,20 @@ const publications = [
 ,
         patent_number: "11697410"
 ,
-        application_number: ""
-,
         patent_type: "granted"
 ,
         grant_date: "2023-07-11"
     },
     {
-        yaml_id: "CV_055",
-        title: "Vehicular Modifications Based on Occupant Health",
-        authors: "R. Gupta, H. Hada, and K. Han",
-        venue: "U.S. Patent Appl. 18/217,505, Jun. 30, 2023",
-        year: 2023,
-        type: "patent",
-        type_label: "Patent"
-,
-        url: "https://patents.google.com/patent/US20250002027A1/en?oq=18217505"
-,
-        research_area: [
-        "intelligent-transportation",
-        "connected-autonomous-vehicles",
-        "digital-twin"
-]
-,
-        patent_number: ""
-,
-        application_number: "18/217,505"
-,
-        patent_type: "application"
-,
-        filing_date: "2023-06-30"
-    },
-    {
         yaml_id: "CV_056",
-        title: "System and Method for Scheduling Connected Vehicles to Cross Non-Signalized Intersections",
+        title: "System and method for scheduling connected vehicles to cross non-signalized intersections",
         authors: "Z. Wang, K. Han, and P. Tiwari",
         venue: "U.S. Patent 11 661 088, May. 30, 2023",
         year: 2023,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US11661088"
+        url: "https://patents.google.com/patent/US11661088B2/en"
 ,
         research_area: [
         "connected-autonomous-vehicles",
@@ -2486,22 +1385,20 @@ const publications = [
 ,
         patent_number: "11661088"
 ,
-        application_number: ""
-,
         patent_type: "granted"
 ,
         grant_date: "2023-05-30"
     },
     {
         yaml_id: "CV_057",
-        title: "Producing, For An Autonomous Vehicle, A Route From An Origination To A Destination",
+        title: "Producing, for an autonomous vehicle, a route from an origination to a destination",
         authors: "Z. Wang, K. Han, and P. Tiwari",
         venue: "U.S. Patent 11 634 163, Apr. 25, 2023",
         year: 2023,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US11634163"
+        url: "https://patents.google.com/patent/US11634163B2/en"
 ,
         research_area: [
         "connected-autonomous-vehicles",
@@ -2511,144 +1408,20 @@ const publications = [
 ,
         patent_number: "11634163"
 ,
-        application_number: ""
-,
         patent_type: "granted"
 ,
         grant_date: "2023-04-25"
     },
     {
-        yaml_id: "CV_019",
-        title: "Cannabis Impairment Detection and Safety System for Vehicles",
-        authors: "R. Gupta, H. Abdelkawy, A. Abdelraouf, and K. Han",
-        venue: "U.S. Patent Appl. 18/299,091, Apr. 12, 2023",
-        year: 2023,
-        type: "patent",
-        type_label: "Patent"
-,
-        url: "https://patents.google.com/patent/US20240346833A1/en?oq=18299091"
-,
-        research_area: [
-        "digital-twin"
-]
-,
-        patent_number: ""
-,
-        application_number: "18/299,091"
-,
-        patent_type: "application"
-,
-        filing_date: "2023-04-12"
-    },
-    {
-        yaml_id: "CV_059",
-        title: "ADHD Detection and Safety System for Vehicles",
-        authors: "R. Gupta, H. Abdelkawy, A. Abdelraouf, and K. Han",
-        venue: "U.S. Patent Appl. 18/299,111, Apr. 12, 2023",
-        year: 2023,
-        type: "patent",
-        type_label: "Patent"
-,
-        url: "https://patents.google.com/patent/US20240343259A1/en?oq=18299111"
-,
-        research_area: [
-        "digital-twin",
-        "intelligent-transportation"
-]
-,
-        patent_number: ""
-,
-        application_number: "18/299,111"
-,
-        patent_type: "application"
-,
-        filing_date: "2023-04-12"
-    },
-    {
-        yaml_id: "CV_061",
-        title: "Remote Control of Distance Between Transports",
-        authors: "R. Gupta, A. Abdelraouf, and K. Han",
-        venue: "U.S. Patent Appl. 18/191,902, Mar. 29, 2023",
-        year: 2023,
-        type: "patent",
-        type_label: "Patent"
-,
-        url: "https://patents.google.com/patent/US20240308513A1/en?oq=18191902"
-,
-        research_area: [
-        "intelligent-transportation",
-        "connected-autonomous-vehicles",
-        "digital-twin"
-]
-,
-        patent_number: ""
-,
-        application_number: "18/191,902"
-,
-        patent_type: "application"
-,
-        filing_date: "2023-03-29"
-    },
-    {
-        yaml_id: "CV_063",
-        title: "Inverse Reinforcement Learning for Adaptive Cruise Control",
-        authors: "R. Gupta, A. Abdelraouf, and K. Han",
-        venue: "U.S. Patent Appl. 18/185,397, Mar. 17, 2023",
-        year: 2023,
-        type: "patent",
-        type_label: "Patent"
-,
-        url: "https://patents.google.com/patent/US20240308514A1/en?oq=18185397"
-,
-        research_area: [
-        "intelligent-transportation",
-        "connected-autonomous-vehicles",
-        "digital-twin"
-]
-,
-        patent_number: ""
-,
-        application_number: "18/185,397"
-,
-        patent_type: "application"
-,
-        filing_date: "2023-03-17"
-    },
-    {
-        yaml_id: "CV_064",
-        title: "Recommended Following Gap Distance Based on Context",
-        authors: "R. Gupta, A. Abdelraouf, and K. Han",
-        venue: "U.S. Patent Appl. 18/185,384, Mar. 17, 2023",
-        year: 2023,
-        type: "patent",
-        type_label: "Patent"
-,
-        url: "https://patents.google.com/patent/US20240308525A1/en?oq=18185384"
-,
-        research_area: [
-        "intelligent-transportation",
-        "connected-autonomous-vehicles",
-        "digital-twin"
-]
-,
-        patent_number: ""
-,
-        application_number: "18/185,384"
-,
-        patent_type: "application"
-,
-        filing_date: "2023-03-17"
-    },
-    {
         yaml_id: "CV_065",
-        title: "System and Method for Connected Vehicle Lane Merge",
+        title: "System and method for connected vehicle lane merge",
         authors: "Z. Wang, K. Han, and P. Tiwari",
         venue: "U.S. Patent 11 597 388, Mar. 7, 2023",
         year: 2023,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US11597388"
+        url: "https://patents.google.com/patent/US11597388B2/en"
 ,
         research_area: [
         "connected-autonomous-vehicles",
@@ -2658,36 +1431,9 @@ const publications = [
 ,
         patent_number: "11597388"
 ,
-        application_number: ""
-,
         patent_type: "granted"
 ,
         grant_date: "2023-03-07"
-    },
-    {
-        yaml_id: "CV_067",
-        title: "Vehicle OTA Security Validation",
-        authors: "R. Gupta, H. Wang, D. Chen, and K. Han",
-        venue: "U.S. Patent Appl. 18/108,553, Feb. 10, 2023",
-        year: 2023,
-        type: "patent",
-        type_label: "Patent"
-,
-        url: "https://patents.google.com/patent/US20240272892A1/en?oq=18108553"
-,
-        research_area: [
-        "connected-autonomous-vehicles",
-        "security",
-        "digital-twin"
-]
-,
-        patent_number: ""
-,
-        application_number: "18/108,553"
-,
-        patent_type: "application"
-,
-        filing_date: "2023-02-10"
     },
     {
         yaml_id: "Liao2023THVH",
@@ -3108,134 +1854,37 @@ const publications = [
         type_label: "Presentation"
     },
     {
-        yaml_id: "CV_069",
-        title: "Systems, Methods, and Non-Transitory Computer-Readable Medium For Sharing Camera Views",
-        authors: "Y. Chen, D. Chen, H. Wang, and K. Han",
-        venue: "U.S. Patent Appl. 18/073,839, Dec. 2, 2022",
+        yaml_id: "CV_076",
+        title: "Systems and methods for long-term prediction of lane change maneuver",
+        authors: "Z. Shou, Y. Liu, K. Han, Z. Wang, and P. Tiwari",
+        venue: "U.S. Patent 11 433 923, Sep. 6, 2022",
         year: 2022,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US20240187555A1/en?oq=18073839"
-,
-        research_area: [
-        "edge-computing"
-]
-,
-        patent_number: ""
-,
-        application_number: "18/073,839"
-,
-        patent_type: "application"
-,
-        filing_date: "2022-12-02"
-    },
-    {
-        yaml_id: "CV_072",
-        title: "System and Method for Controlling a Cruise Control System of a Vehicle Using the Moods of One or More Occupants",
-        authors: "R. Gupta, Z. Wang, and K. Han",
-        venue: "U.S. Patent Appl. 17/992,026, Nov. 22, 2022",
-        year: 2022,
-        type: "patent",
-        type_label: "Patent"
-,
-        url: "https://patents.google.com/patent/US20240166209A1/en?oq=17992026"
+        url: "https://patents.google.com/patent/US11433923B2/en"
 ,
         research_area: [
         "intelligent-transportation",
         "digital-twin"
 ]
 ,
-        patent_number: ""
+        patent_number: "11433923"
 ,
-        application_number: "17/992,026"
+        patent_type: "granted"
 ,
-        patent_type: "application"
-,
-        filing_date: "2022-11-22"
-    },
-    {
-        yaml_id: "CV_073",
-        title: "Systems and Methods for Contribution-Aware Federated Learning",
-        authors: "Y. Chen, H. Wang, D. Chen, and K. Han",
-        venue: "U.S. Patent Appl. 17/965,138, Oct. 13, 2022",
-        year: 2022,
-        type: "patent",
-        type_label: "Patent"
-,
-        url: "https://patents.google.com/patent/US20240127105A1/en?oq=17965138"
-,
-        research_area: [
-        "intelligent-transportation",
-        "edge-computing"
-]
-,
-        patent_number: ""
-,
-        application_number: "17/965,138"
-,
-        patent_type: "application"
-,
-        filing_date: "2022-10-13"
-    },
-    {
-        yaml_id: "CV_077",
-        title: "Methods and Systems for Distributing High Definition Map Using Edge Device",
-        authors: "D. Chen, H. Wang, and K. Han",
-        venue: "U.S. Patent Appl. 17/896,396, Aug. 26, 2022",
-        year: 2022,
-        type: "patent",
-        type_label: "Patent"
-,
-        url: "https://patents.google.com/patent/US20240068838A1/en?oq=17896396"
-,
-        research_area: [
-        "edge-computing",
-        "intelligent-transportation"
-]
-,
-        patent_number: ""
-,
-        application_number: "17/896,396"
-,
-        patent_type: "application"
-,
-        filing_date: "2022-08-26"
-    },
-    {
-        yaml_id: "CV_078",
-        title: "Methods and Systems for Delivering Edge-Assisted Attention-Aware High Definition Map",
-        authors: "D. Chen, H. Wang, and K. Han",
-        venue: "U.S. Patent Appl. 17/877,104, Jul. 29, 2022",
-        year: 2022,
-        type: "patent",
-        type_label: "Patent"
-,
-        url: "https://patents.google.com/patent/US20240035829A1/en?oq=17877104"
-,
-        research_area: [
-        "edge-computing",
-        "intelligent-transportation"
-]
-,
-        patent_number: ""
-,
-        application_number: "17/877,104"
-,
-        patent_type: "application"
-,
-        filing_date: "2022-07-29"
+        grant_date: "2022-09-06"
     },
     {
         yaml_id: "CV_079",
-        title: "Ramp Merging Assistance",
+        title: "Ramp merging assistance",
         authors: "Z. Wang, K. Han, and P. Tiwari",
         venue: "U.S. Patent 11 398 156, Jul. 26, 2022",
         year: 2022,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US11398156"
+        url: "https://patents.google.com/patent/US11398156B2/en"
 ,
         research_area: [
         "intelligent-transportation",
@@ -3245,72 +1894,20 @@ const publications = [
 ,
         patent_number: "11398156"
 ,
-        application_number: ""
-,
         patent_type: "granted"
 ,
         grant_date: "2022-07-26"
     },
     {
-        yaml_id: "CV_080",
-        title: "Software Driven User Profile Personalized Adaptive Cruise Control",
-        authors: "R. Gupta, Z. Wang, and K. Han",
-        venue: "U.S. Patent Appl. 17/872,469, Jul. 25, 2022",
-        year: 2022,
-        type: "patent",
-        type_label: "Patent"
-,
-        url: "https://patents.google.com/patent/US20240025404A1/en?oq=17872469"
-,
-        research_area: [
-        "intelligent-transportation",
-        "connected-autonomous-vehicles",
-        "digital-twin"
-]
-,
-        patent_number: ""
-,
-        application_number: "17/872,469"
-,
-        patent_type: "application"
-,
-        filing_date: "2022-07-25"
-    },
-    {
-        yaml_id: "CV_081",
-        title: "Cloud-Based Mobility Digital Twin for Human, Vehicle, and Traffic",
-        authors: "Z. Wang, R. Gupta, K. Han, and P. Tiwari",
-        venue: "U.S. Patent Appl. 17/744,452, May. 13, 2022",
-        year: 2022,
-        type: "patent",
-        type_label: "Patent"
-,
-        url: "https://patents.google.com/patent/US20230367688A1/en?oq=17744452"
-,
-        research_area: [
-        "digital-twin",
-        "connected-autonomous-vehicles",
-        "intelligent-transportation"
-]
-,
-        patent_number: ""
-,
-        application_number: "17/744,452"
-,
-        patent_type: "application"
-,
-        filing_date: "2022-05-13"
-    },
-    {
         yaml_id: "CV_082",
-        title: "Adjustable Blind Spot Monitor",
+        title: "Adjustable blind spot monitor",
         authors: "Z. Wang, K. Han, and B. Kim",
         venue: "U.S. Patent 11 328 605, May. 10, 2022",
         year: 2022,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US11328605"
+        url: "https://patents.google.com/patent/US11328605B2/en"
 ,
         research_area: [
         "intelligent-transportation",
@@ -3319,22 +1916,20 @@ const publications = [
 ,
         patent_number: "11328605"
 ,
-        application_number: ""
-,
         patent_type: "granted"
 ,
         grant_date: "2022-05-10"
     },
     {
         yaml_id: "CV_083",
-        title: "Systems and methods for Providing Driving Recommendations",
+        title: "Systems and methods for providing driving recommendations",
         authors: "J. Su, K. Han, R. Guo, and R. Melen",
         venue: "U.S. Patent 11 315 421, Apr. 26, 2022",
         year: 2022,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US11315421"
+        url: "https://patents.google.com/patent/US11315421B2/en"
 ,
         research_area: [
         "connected-autonomous-vehicles",
@@ -3344,22 +1939,20 @@ const publications = [
 ,
         patent_number: "11315421"
 ,
-        application_number: ""
-,
         patent_type: "granted"
 ,
         grant_date: "2022-04-26"
     },
     {
         yaml_id: "CV_086",
-        title: "Cloud-assisted Virtual Vehicular communication",
+        title: "Cloud-assisted virtual vehicular communication",
         authors: "K. Han, A. Sakr, and P. Tiwari",
         venue: "U.S. Patent 11 284 234, Mar. 22, 2022",
         year: 2022,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US11284234"
+        url: "https://patents.google.com/patent/US11284234B2/en"
 ,
         research_area: [
         "connected-autonomous-vehicles",
@@ -3369,22 +1962,20 @@ const publications = [
 ,
         patent_number: "11284234"
 ,
-        application_number: ""
-,
         patent_type: "granted"
 ,
         grant_date: "2022-03-22"
     },
     {
         yaml_id: "CV_087",
-        title: "XR-based Slot Reservation System for Connected Vehicles Traveling Through Intersections",
+        title: "XR-based slot reservation system for connected vehicles traveling through intersections",
         authors: "Z. Wang, K. Han, and B. Kim",
         venue: "U.S. Patent 11 257 363, Feb. 22, 2022",
         year: 2022,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US11257363"
+        url: "https://patents.google.com/patent/US11257363B2/en"
 ,
         research_area: [
         "connected-autonomous-vehicles",
@@ -3394,22 +1985,20 @@ const publications = [
 ,
         patent_number: "11257363"
 ,
-        application_number: ""
-,
         patent_type: "granted"
 ,
         grant_date: "2022-02-22"
     },
     {
         yaml_id: "CV_089",
-        title: "Digital Twin Simulation-Based Vehicular Communication Planning",
+        title: "Digital twin simulation-based vehicular communication planning",
         authors: "K. Han, A. Sakr, and P. Tiwari",
         venue: "U.S. Patent 11 234 160, Jan. 25, 2022",
         year: 2022,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US11234160"
+        url: "https://patents.google.com/patent/US11234160B2/en"
 ,
         research_area: [
         "digital-twin",
@@ -3419,22 +2008,20 @@ const publications = [
 ,
         patent_number: "11234160"
 ,
-        application_number: ""
-,
         patent_type: "granted"
 ,
         grant_date: "2022-01-25"
     },
     {
         yaml_id: "CV_091",
-        title: "Identifying a Specific Object in a Two-Dimensional Image of Objects",
+        title: "Identifying a specific object in a two-dimensional image of objects",
         authors: "Y. Liu, Z. Wang, K. Han, Z. Shou, and P. Tiwari",
         venue: "U.S. Patent 11 222 215, Jan. 11, 2022",
         year: 2022,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US11222215"
+        url: "https://patents.google.com/patent/US11222215B1/en"
 ,
         research_area: [
         "digital-twin"
@@ -3442,65 +2029,20 @@ const publications = [
 ,
         patent_number: "11222215"
 ,
-        application_number: ""
-,
         patent_type: "granted"
 ,
         grant_date: "2022-01-11"
     },
     {
-        yaml_id: "CV_092",
-        title: "Personalized Vehicle Operation for Autonomous Driving With Inverse Reinforcement Learning",
-        authors: "Z. Zhao, Z. Wang, R. Gupta, K. Han, and P. Tiwari",
-        venue: "U.S. Patent Appl. 17/572,486, Jan. 10, 2022",
-        year: 2022,
-        type: "patent",
-        type_label: "Patent"
-,
-        research_area: [
-        "digital-twin"
-]
-,
-        application_number: "17/572,486"
-,
-        patent_type: "application"
-,
-        filing_date: "2022-01-10"
-    },
-    {
-        yaml_id: "CV_076",
-        title: "Systems and Methods for Long-Term Prediction of Lane Change Maneuver",
-        authors: "Z. Shou, Y. Liu, K. Han, Z. Wang, and P. Tiwari",
-        venue: "U.S. Patent 11 433 923, Jan. 7, 2022",
-        year: 2022,
-        type: "patent",
-        type_label: "Patent"
-,
-        url: "https://patents.google.com/patent/US11433923"
-,
-        research_area: [
-        "intelligent-transportation",
-        "digital-twin"
-]
-,
-        patent_number: "11433923"
-,
-        application_number: ""
-,
-        patent_type: "granted"
-,
-        grant_date: "2022-01-07"
-    },
-    {
         yaml_id: "CV_093",
-        title: "Longitudinal Motion Control of Connected and Automated Vehicles",
+        title: "Longitudinal motion control of connected and automated vehicles",
         authors: "H. Kobayashi, K. Han, B. Kim, and R. Wang",
         venue: "U.S. Patent 11 214 253, Jan. 4, 2022",
         year: 2022,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US11214253"
+        url: "https://patents.google.com/patent/US11214253B2/en"
 ,
         research_area: [
         "connected-autonomous-vehicles",
@@ -3509,8 +2051,6 @@ const publications = [
 ]
 ,
         patent_number: "11214253"
-,
-        application_number: ""
 ,
         patent_type: "granted"
 ,
@@ -3768,14 +2308,14 @@ const publications = [
     },
     {
         yaml_id: "CV_095",
-        title: "Systems and Methods for Providing Guidance to Vehicle Drivers Regarding predicted Lane-Change Behavior of Other Vehicle Drivers",
+        title: "Systems and methods for providing guidance to vehicle drivers regarding predicted lane-change behavior of other vehicle drivers",
         authors: "Z. Shou, K. Han, Z. Wang, Y. Liu, and P. Tiwari",
         venue: "U.S. Patent 11 151 880, Oct. 19, 2021",
         year: 2021,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US11151880"
+        url: "https://patents.google.com/patent/US11151880B1/en"
 ,
         research_area: [
         "intelligent-transportation",
@@ -3785,22 +2325,20 @@ const publications = [
 ,
         patent_number: "11151880"
 ,
-        application_number: ""
-,
         patent_type: "granted"
 ,
         grant_date: "2021-10-19"
     },
     {
         yaml_id: "CV_100",
-        title: "Systems and Methods for Compensating for Driver Speed-Tracking Error",
+        title: "Systems and methods for compensating for driver speed-tracking error",
         authors: "Z. Wang, K. Han, and P. Tiwari",
         venue: "U.S. Patent 11 087 623, Aug. 10, 2021",
         year: 2021,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US11087623"
+        url: "https://patents.google.com/patent/US11087623B1/en"
 ,
         research_area: [
         "intelligent-transportation",
@@ -3810,64 +2348,20 @@ const publications = [
 ,
         patent_number: "11087623"
 ,
-        application_number: ""
-,
         patent_type: "granted"
 ,
         grant_date: "2021-08-10"
     },
     {
-        yaml_id: "CV_107",
-        title: "Methods and Systems for Rideshare Implicit Needs and Explicit Needs Personalization",
-        authors: "R. Gupta, Z. Wang, K. Han, and P. Tiwari",
-        venue: "U.S. Patent Appl. 17/217,358, Mar. 30, 2021",
-        year: 2021,
-        type: "patent",
-        type_label: "Patent"
-,
-        research_area: [
-        "intelligent-transportation",
-        "connected-autonomous-vehicles",
-        "digital-twin"
-]
-,
-        application_number: "17/217,358"
-,
-        patent_type: "application"
-,
-        filing_date: "2021-03-30"
-    },
-    {
-        yaml_id: "CV_108",
-        title: "Vehicle Guard Rail System",
-        authors: "R. Gupta, Z. Wang, K. Han, and P. Tiwari",
-        venue: "U.S. Patent Appl. 17/206,706, Mar. 19, 2021",
-        year: 2021,
-        type: "patent",
-        type_label: "Patent"
-,
-        research_area: [
-        "connected-autonomous-vehicles",
-        "digital-twin",
-        "intelligent-transportation"
-]
-,
-        application_number: "17/206,706"
-,
-        patent_type: "application"
-,
-        filing_date: "2021-03-19"
-    },
-    {
         yaml_id: "CV_111",
-        title: "Context System for Providing Cyber Security for Connected Vehicles",
+        title: "Context system for providing cyber security for connected vehicles",
         authors: "H. Kobayashi, K. Han, and X. Jiang",
         venue: "U.S. Patent 10 932 135, Feb. 23, 2021",
         year: 2021,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US10932135"
+        url: "https://patents.google.com/patent/US10932135B2/en"
 ,
         research_area: [
         "connected-autonomous-vehicles",
@@ -3877,8 +2371,6 @@ const publications = [
 ]
 ,
         patent_number: "10932135"
-,
-        application_number: ""
 ,
         patent_type: "granted"
 ,
@@ -3893,7 +2385,7 @@ const publications = [
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US10893555"
+        url: "https://patents.google.com/patent/US10893555B1/en"
 ,
         research_area: [
         "connected-autonomous-vehicles",
@@ -3901,8 +2393,6 @@ const publications = [
 ]
 ,
         patent_number: "10893555"
-,
-        application_number: ""
 ,
         patent_type: "granted"
 ,
@@ -4257,14 +2747,14 @@ const publications = [
     },
     {
         yaml_id: "CV_127",
-        title: "Techniques For Managing System Power Using Deferred Graphics Rendering",
+        title: "Techniques for managing system power using deferred graphics rendering",
         authors: "N. Jeganathan, R. Poornachandran, P. Diefenbaugh, and K. Han",
         venue: "U.S. Patent 9 269 121, Feb. 23, 2016",
         year: 2016,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US9269121"
+        url: "https://patents.google.com/patent/US9269121B2/en"
 ,
         research_area: [
         "energy-efficient-computing"
@@ -4272,30 +2762,26 @@ const publications = [
 ,
         patent_number: "9269121"
 ,
-        application_number: ""
-,
         patent_type: "granted"
 ,
         grant_date: "2016-02-23"
     },
     {
         yaml_id: "CV_128",
-        title: "Adaptive Touch Scanning",
+        title: "Adaptive touch scanning",
         authors: "K. Han, D. Hong, A. Min, Y. Park, and M. Abdelmoneum",
         venue: "U.S. Patent 9 244 551, Jan. 26, 2016",
         year: 2016,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US9244551"
+        url: "https://patents.google.com/patent/US9244551B2/en"
 ,
         research_area: [
         "energy-efficient-computing"
 ]
 ,
         patent_number: "9244551"
-,
-        application_number: ""
 ,
         patent_type: "granted"
 ,
@@ -4319,14 +2805,14 @@ const publications = [
     },
     {
         yaml_id: "CV_129",
-        title: "Data Transmission for Display Partial Update",
+        title: "Data transmission for display partial update",
         authors: "N. Jeganathan, K. Han, and P. Diefenbaugh",
         venue: "U.S. Patent 9 177 534, Nov. 3, 2015",
         year: 2015,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US9177534"
+        url: "https://patents.google.com/patent/US9177534B2/en"
 ,
         research_area: [
         "energy-efficient-computing"
@@ -4334,22 +2820,20 @@ const publications = [
 ,
         patent_number: "9177534"
 ,
-        application_number: ""
-,
         patent_type: "granted"
 ,
         grant_date: "2015-11-03"
     },
     {
         yaml_id: "CV_130",
-        title: "Polling Determination",
+        title: "Polling determination",
         authors: "K. Han, P. Diefenbaugh, and S. Sharp",
         venue: "U.S. Patent 9 058 422, Jun. 16, 2015",
         year: 2015,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US9058422"
+        url: "https://patents.google.com/patent/US9058422B2/en"
 ,
         research_area: [
         "energy-efficient-computing"
@@ -4357,30 +2841,26 @@ const publications = [
 ,
         patent_number: "9058422"
 ,
-        application_number: ""
-,
         patent_type: "granted"
 ,
         grant_date: "2015-06-16"
     },
     {
         yaml_id: "CV_131",
-        title: "Hybrid Display Frame Buffer for Display Subsystem",
+        title: "Hybrid display frame buffer for display subsystem",
         authors: "K. Han, P. Diefenbaugh, S. Abhinkar, T. Kim, and S. Jeganathan",
         venue: "U.S. Patent 9 030 482, May. 12, 2015",
         year: 2015,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US9030482"
+        url: "https://patents.google.com/patent/US9030482B2/en"
 ,
         research_area: [
         "energy-efficient-computing"
 ]
 ,
         patent_number: "9030482"
-,
-        application_number: ""
 ,
         patent_type: "granted"
 ,
@@ -4441,14 +2921,14 @@ const publications = [
     },
     {
         yaml_id: "CV_132",
-        title: "Control of Platform Power Consumption Using Coordination of Platform Power Management and Display Power Management",
+        title: "Control of platform power consumption using coordination of platform power management and display power management",
         authors: "S. Jeganathan, P. Diefenbaugh, K. Han, J. Liu, J. Bish, and P. Drews",
-        venue: "U.S. Patent 8 862 906, Feb. 4, 2014",
+        venue: "U.S. Patent 8 862 906, Oct. 14, 2014",
         year: 2014,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US8862906"
+        url: "https://patents.google.com/patent/US8862906B2/en"
 ,
         research_area: [
         "energy-efficient-computing"
@@ -4456,22 +2936,20 @@ const publications = [
 ,
         patent_number: "8862906"
 ,
-        application_number: ""
-,
         patent_type: "granted"
 ,
-        grant_date: "2014-02-04"
+        grant_date: "2014-10-14"
     },
     {
         yaml_id: "CV_133",
-        title: "Techniques for Aligning Frame Data",
+        title: "Techniques for aligning frame data",
         authors: "M. Vasquez, R. Ranganathan, S. Kwa, T. Witter, K. Han, and P. Diefenbaugh",
         venue: "U.S. Patent 8 643 658, Feb. 4, 2014",
         year: 2014,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US8643658"
+        url: "https://patents.google.com/patent/US8643658B2/en"
 ,
         research_area: [
         "energy-efficient-computing"
@@ -4479,22 +2957,20 @@ const publications = [
 ,
         patent_number: "8643658"
 ,
-        application_number: ""
-,
         patent_type: "granted"
 ,
         grant_date: "2014-02-04"
     },
     {
         yaml_id: "CV_134",
-        title: "Display Update for a Wireless Display Device",
+        title: "Display update for a wireless display device",
         authors: "K. Han, G. Li, and S. Singh",
-        venue: "U.S. Patent 8 525 844, Jan. 9, 2013",
+        venue: "U.S. Patent 8 525 844, Sep. 3, 2013",
         year: 2013,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US8525844"
+        url: "https://patents.google.com/patent/US8525844B2/en"
 ,
         research_area: [
         "energy-efficient-computing"
@@ -4502,11 +2978,9 @@ const publications = [
 ,
         patent_number: "8525844"
 ,
-        application_number: ""
-,
         patent_type: "granted"
 ,
-        grant_date: "2013-01-09"
+        grant_date: "2013-09-03"
     },
     {
         yaml_id: "Han2013ISLPED",
@@ -4527,18 +3001,16 @@ const publications = [
     },
     {
         yaml_id: "CV_135",
-        title: "Systems and Methods for Cross-Platform Radio Frequency Interference Mitigation",
+        title: "Systems and methods for cross-platform radio frequency interference mitigation",
         authors: "K. Han and K. Tinsley",
         venue: "U.S. Patent 8 290 439, Oct. 16, 2012",
         year: 2012,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US8290439"
+        url: "https://patents.google.com/patent/US8290439B2/en"
 ,
         patent_number: "8290439"
-,
-        application_number: ""
 ,
         patent_type: "granted"
 ,
@@ -4546,18 +3018,16 @@ const publications = [
     },
     {
         yaml_id: "CV_136",
-        title: "High Speed Digital Waveform Identification Using Higher Order Statistical Signal Processing",
+        title: "High speed digital waveform identification using higher order statistical signal processing",
         authors: "K. Han and K. Tinsley",
         venue: "U.S. Patent 7 734 434, Jun. 8, 2010",
         year: 2010,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US7734434"
+        url: "https://patents.google.com/patent/US7734434B2/en"
 ,
         patent_number: "7734434"
-,
-        application_number: ""
 ,
         patent_type: "granted"
 ,
@@ -4611,18 +3081,16 @@ const publications = [
     },
     {
         yaml_id: "CV_137",
-        title: "Apparatus for Searching Multipath in Spread Spectrum Communications System and Method",
+        title: "Apparatus for searching multipath in spread spectrum communications system and method thereof",
         authors: "I. Eo, K. Han, H. Jung, and K. Kim",
         venue: "U.S. Patent 7 194 018, Mar. 20, 2007",
         year: 2007,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US7194018"
+        url: "https://patents.google.com/patent/US7194018B2/en"
 ,
         patent_number: "7194018"
-,
-        application_number: ""
 ,
         patent_type: "granted"
 ,
@@ -4630,18 +3098,16 @@ const publications = [
     },
     {
         yaml_id: "CV_138",
-        title: "Apparatus and Method for Separating Carrier of Multicarrier Wireless Communication Receiver System",
+        title: "Apparatus and method for separating carrier of multicarrier wireless communication receiver system",
         authors: "K. Han, I. Lim, I. Eo, H. Seo, K. Kim, H. Jung, and H. Cho",
         venue: "U.S. Patent 7 127 012, Oct. 24, 2006",
         year: 2006,
         type: "patent",
         type_label: "Patent"
 ,
-        url: "https://patents.google.com/patent/US7127012"
+        url: "https://patents.google.com/patent/US7127012B2/en"
 ,
         patent_number: "7127012"
-,
-        application_number: ""
 ,
         patent_type: "granted"
 ,

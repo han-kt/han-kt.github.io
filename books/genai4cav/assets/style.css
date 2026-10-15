@@ -224,7 +224,6 @@ pre.code code {
     font-family: "SF Mono", "Menlo", "Consolas", "Liberation Mono", monospace;
     color: inherit;
     background: none;
-    padding: 0;
 }
 
 code {
@@ -259,9 +258,6 @@ code {
 
 .btn-outline { background-color: #ffffff; color: var(--navy); border-color: var(--navy); }
 .btn-outline:hover { background-color: var(--navy); color: #ffffff; }
-
-.btn-disabled { background-color: #9aa3ad; color: #ffffff; cursor: not-allowed; pointer-events: none; }
-.btn-disabled:hover { background-color: #9aa3ad; color: #ffffff; }
 
 /* Courses / reading flow */
 h3.sub {

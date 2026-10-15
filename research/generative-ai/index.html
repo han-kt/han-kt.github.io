@@ -3,42 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multimodal Scene Understanding &amp; Language-Guided Driving — Research — Kyungtae (KT) Han</title>
-    <meta name="description" content="Language and vision-language models that interpret multi-view driving scenes, carry out driving instructions, and converse with drivers, with benchmarks to evaluate them and methods to run them efficiently.">
+    <title>Generative and Agentic AI for Connected and Autonomous Systems — Research — Kyungtae (KT) Han</title>
+    <meta name="description" content="Benchmarks, language interfaces, and generative models for understanding driving scenes, assisting drivers, and evaluating connected and autonomous systems.">
     <link rel="canonical" href="https://han-kt.github.io/research/generative-ai/">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Kyungtae (KT) Han">
-    <meta property="og:title" content="Multimodal Scene Understanding &amp; Language-Guided Driving — Research — Kyungtae (KT) Han">
-    <meta property="og:description" content="Language and vision-language models that interpret multi-view driving scenes, carry out driving instructions, and converse with drivers, with benchmarks to evaluate them and methods to run them efficiently.">
+    <meta property="og:title" content="Generative and Agentic AI for Connected and Autonomous Systems — Research — Kyungtae (KT) Han">
+    <meta property="og:description" content="Benchmarks, language interfaces, and generative models for understanding driving scenes, assisting drivers, and evaluating connected and autonomous systems.">
     <meta property="og:url" content="https://han-kt.github.io/research/generative-ai/">
     <meta property="og:image" content="https://han-kt.github.io/images/KyungtaeHan_850x850.jpg">
     <meta name="twitter:card" content="summary">
     <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
-    <link rel="stylesheet" href="/css/site.css?v=1791308793">
+    <link rel="stylesheet" href="/css/site.css?v=1792041303">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=optional" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script>
         try { if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark'); } catch (e) {}
     </script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GEG5GDGV8P"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        if (navigator.doNotTrack == "1" || window.doNotTrack == "1" || navigator.msDoNotTrack == "1") {
-            window['ga-disable-G-GEG5GDGV8P'] = true;
-            gtag('consent', 'update', { 'analytics_storage': 'denied' });
-        }
-        gtag('config', 'G-GEG5GDGV8P', {'anonymize_ip': true});
-    </script>
+
 </head>
 <body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white">
+    <a href="#content-start" class="skip-link">Skip to content</a>
     <header id="header" class="fixed top-0 w-full bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-700 z-50 transition-transform duration-200">
         <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Main">
             <div class="flex justify-between items-center h-16">
                 <a href="/" class="text-xl font-semibold text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Kyungtae Han</a>
-                <div class="hidden md:flex items-center space-x-1">
+                <div class="hidden lg:flex items-center space-x-1">
                     <a href="/#research" class="px-3 py-2 rounded-md text-sm font-medium transition-colors text-blue-600 dark:text-blue-400" aria-current="page">Research</a>
                     <a href="/publications.html" class="px-3 py-2 rounded-md text-sm font-medium transition-colors text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">Publications</a>
                     <a href="/#teaching" class="px-3 py-2 rounded-md text-sm font-medium transition-colors text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">Teaching</a>
@@ -47,15 +38,15 @@
                     <a href="/#contact" class="px-3 py-2 rounded-md text-sm font-medium transition-colors text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">Contact</a>
                 </div>
                 <div class="flex items-center space-x-3">
-                    <button id="theme-toggle" type="button" class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors" aria-label="Toggle dark mode">
+                    <button id="theme-toggle" type="button" class="h-11 w-11 inline-flex items-center justify-center rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors" aria-label="Toggle dark mode" aria-pressed="false">
                         <i class="fas fa-moon text-gray-600 dark:text-gray-300" aria-hidden="true"></i>
                     </button>
-                    <button id="mobile-menu-btn" type="button" class="block md:hidden p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <button id="mobile-menu-btn" type="button" class="inline-flex lg:hidden h-11 w-11 items-center justify-center rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
                         <i class="fas fa-bars text-gray-600 dark:text-gray-300" aria-hidden="true"></i>
                     </button>
                 </div>
             </div>
-            <div id="mobile-menu" class="hidden md:hidden">
+            <div id="mobile-menu" class="hidden lg:hidden">
                 <div class="px-2 pt-2 pb-3 space-y-1 bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
                     <a href="/#research" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">Research</a>
                     <a href="/publications.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">Publications</a>
@@ -67,66 +58,109 @@
             </div>
         </nav>
     </header>
+    <span id="content-start" tabindex="-1" class="content-start"></span>
 
-    <main class="pt-16">
-        <section class="pt-14 pb-10 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800">
+    <main id="main-content" tabindex="-1" class="pt-16">
+        <section id="question" class="pt-14 pb-10 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 scroll-mt-16" aria-labelledby="area-heading">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 <nav aria-label="Breadcrumb" class="text-sm text-gray-500 dark:text-gray-400 mb-4">
                     <a href="/#research" class="hover:text-blue-600 dark:hover:text-blue-400">Research</a>
                     <span aria-hidden="true"> / </span>
                     <span>Research area</span>
                 </nav>
-                <h1 class="text-3xl md:text-4xl font-semibold text-gray-900 dark:text-white mb-4 text-balance">Multimodal Scene Understanding &amp; Language-Guided Driving</h1>
-                <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">Language and vision-language models can describe driving scenes and respond to natural-language requests. The open questions are how well they understand multi-view sensor data, whether they can carry out a driver&#39;s instructions through existing driving functions, and whether they can run within in-vehicle compute and latency limits. This work builds benchmarks and datasets for driving-scene understanding, connects language models to driving functions and to dialogue with the driver, and studies efficient inference and language-aligned scenario generation.</p>
+                <h1 id="area-heading" class="text-3xl md:text-4xl font-semibold text-gray-900 dark:text-white mb-6 text-balance">Generative and Agentic AI for Connected and Autonomous Systems</h1>
+                <p class="text-xs font-semibold uppercase tracking-widest text-blue-600 dark:text-blue-400 mb-2">Research question</p>
+                <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">What can multimodal and language models understand about a driving scene, and how can their outputs support useful interaction? Collaborative research develops driving-scene benchmarks, instruction-based interfaces over established driving functions, and scene-grounded dialogue. Complementary studies investigate scenario generation, traffic simulation, and selective reasoning, each with its own evaluation task.</p>
+                <nav aria-label="On this research page" class="mt-6 flex flex-wrap gap-x-5 gap-y-3 text-sm text-blue-600 dark:text-blue-400">
+                    <a href="#themes" class="hover:underline">Contributions</a>
+<a href="#research-visuals" class="hover:underline">Visual overview</a><a href="#validation" class="hover:underline">Evidence</a>                    <a href="#publications" class="hover:underline">Publications</a>
+                </nav>
             </div>
         </section>
 
         <section class="py-10 bg-white dark:bg-gray-900" aria-labelledby="themes">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 id="themes" class="text-xl font-semibold text-gray-900 dark:text-white mb-6">Main themes</h2>
+                <h2 id="themes" class="text-xl font-semibold text-gray-900 dark:text-white mb-6 scroll-mt-24">Methods &amp; contributions</h2>
                 <ol class="space-y-6">
                     <li class="pl-4 border-l-2 border-blue-600 dark:border-blue-400">
-                        <h3 class="font-semibold text-gray-900 dark:text-white">Driving-scene understanding and its evaluation</h3>
-                        <p class="mt-1 text-gray-700 dark:text-gray-300">NuPlanQA, a multi-view question-answering benchmark and a dataset of one million question-answer pairs for driving scenes; PDB-Eval, a benchmark for describing and explaining personalized driving behavior from video; and concept-bottleneck models that explain driving control decisions with human-understandable concepts.</p>
+                        <h3 class="font-semibold text-gray-900 dark:text-white">Making model capabilities testable</h3>
+                        <p class="mt-1 text-gray-700 dark:text-gray-300">NuPlanQA provides multi-view driving-scene question answering and evaluates perception and spatial reasoning. PDB-Eval tests descriptions and explanations of personalized behavior. Concept-bottleneck control studies explanations through human-understandable concepts.</p>
                         <p class="mt-1 text-sm text-gray-500 dark:text-gray-400"><a href="#Park2025ICCV" class="hover:text-blue-600 dark:hover:text-blue-400" title="NuPlanQA: A Large-Scale Dataset and Benchmark for Multi-View Driving Scene Understanding in Multi-Modal Large Language Models">NuPlanQA, ICCV 2025</a> · <a href="#Wu2025IV" class="hover:text-blue-600 dark:hover:text-blue-400" title="PDB-Eval: An Evaluation of Large Multimodal Models for Description and Explanation of Personalized Driving Behavior">PDB-Eval, IEEE IV 2025</a> · <a href="https://ieeexplore.ieee.org/document/10483611" class="hover:text-blue-600 dark:hover:text-blue-400" title="Driving through the Concept Gridlock: Unraveling Explainability Bottlenecks in Automated Driving" target="_blank" rel="noopener">Echterhoff et al., WACV 2024</a></p>
                     </li>
                     <li class="pl-4 border-l-2 border-blue-600 dark:border-blue-400">
-                        <h3 class="font-semibold text-gray-900 dark:text-white">Language-guided driving</h3>
-                        <p class="mt-1 text-gray-700 dark:text-gray-300">LaMPilot, a framework and benchmark in which language models carry out user instructions such as &#34;overtake the car ahead&#34; by writing programs over established driving functions; and LLM4AD, a review and benchmark of language models for autonomous driving with experiments on vehicle platforms.</p>
-                        <p class="mt-1 text-sm text-gray-500 dark:text-gray-400"><a href="#Ma2024CVPR" class="hover:text-blue-600 dark:hover:text-blue-400" title="LaMPilot: An Open Benchmark Dataset for Autonomous Driving with Language Model Programs">LaMPilot, CVPR 2024</a> · <a href="#Cui2026JPROC" class="hover:text-blue-600 dark:hover:text-blue-400" title="LLM4AD: Large Language Models for Autonomous Driving—Concept, Review, Benchmark, Experiments, and Future Trends">LLM4AD, Proc. IEEE 2026</a></p>
+                        <h3 class="font-semibold text-gray-900 dark:text-white">Connecting instructions to existing driving functions</h3>
+                        <p class="mt-1 text-gray-700 dark:text-gray-300">LaMPilot studies language-model programs over established driving functions. LLM4AD contributes a collaborative review, benchmark, and vehicle-platform experiments that examine language models in autonomous-driving applications.</p>
+                        <p class="mt-1 text-sm text-gray-500 dark:text-gray-400"><a href="#Ma2024CVPR" class="hover:text-blue-600 dark:hover:text-blue-400" title="LaMPilot: An Open Benchmark Dataset for Autonomous Driving with Language Model Programs">LaMPilot, CVPR 2024</a> · <a href="https://ieeexplore.ieee.org/document/11477881" class="hover:text-blue-600 dark:hover:text-blue-400" title="LLM4AD: Large Language Models for Autonomous Driving—Concept, Review, Benchmark, Experiments, and Future Trends" target="_blank" rel="noopener">LLM4AD, Proc. IEEE 2026</a></p>
                     </li>
                     <li class="pl-4 border-l-2 border-blue-600 dark:border-blue-400">
-                        <h3 class="font-semibold text-gray-900 dark:text-white">Conversational driver assistance</h3>
-                        <p class="mt-1 text-gray-700 dark:text-gray-300">Scene-Aware Conversational ADAS (SC-ADAS) uses language models, vision-to-text scene interpretation, and structured function calling for multi-turn dialogue grounded in the driving scene, and executes ADAS actions only after the driver confirms them.</p>
+                        <h3 class="font-semibold text-gray-900 dark:text-white">Scene-grounded dialogue with driver confirmation</h3>
+                        <p class="mt-1 text-gray-700 dark:text-gray-300">SC-ADAS combines scene interpretation, multi-turn dialogue, and structured function calling. Driver-confirmed requests are converted to ADAS commands; evaluation examines interaction behavior and the latency and context costs of cloud-based generative models.</p>
                         <p class="mt-1 text-sm text-gray-500 dark:text-gray-400"><a href="#Han2025ITSC" class="hover:text-blue-600 dark:hover:text-blue-400" title="Scene-Aware Conversational ADAS with Generative AI for Real-Time Driver Assistance">Han et al., IEEE ITSC 2025</a></p>
                     </li>
                     <li class="pl-4 border-l-2 border-blue-600 dark:border-blue-400">
-                        <h3 class="font-semibold text-gray-900 dark:text-white">Efficient multimodal inference</h3>
-                        <p class="mt-1 text-gray-700 dark:text-gray-300">Video token sparsification removes redundant visual tokens across consecutive frames, raising multimodal-LLM inference throughput by up to 33% and cutting memory use by up to 28% in driving visual question answering.</p>
-                        <p class="mt-1 text-sm text-gray-500 dark:text-gray-400"><a href="https://ieeexplore.ieee.org/document/11097438" class="hover:text-blue-600 dark:hover:text-blue-400" title="Video Token Sparsification for Efficient Multimodal LLMs in Driving Visual Question Answering" target="_blank" rel="noopener">Ma et al., IEEE IV 2025</a></p>
+                        <h3 class="font-semibold text-gray-900 dark:text-white">Generating scenarios and simulating traffic</h3>
+                        <p class="mt-1 text-gray-700 dark:text-gray-300">SIMSplat studies language-aligned driving-scenario generation with 4D Gaussian splatting, while NIVA studies learned closed-loop multi-agent traffic simulation.</p>
+                        <p class="mt-1 text-sm text-gray-500 dark:text-gray-400"><a href="https://arxiv.org/abs/2510.02469" class="hover:text-blue-600 dark:hover:text-blue-400" title="SIMSplat: Language-Aligned 4D Gaussian Splatting for Driving Scenario Generation" target="_blank" rel="noopener">SIMSplat, ECCV 2026</a> · <a href="#Lu2025IROS" class="hover:text-blue-600 dark:hover:text-blue-400" title="On Learning Closed-Loop Probabilistic Multi-Agent Simulator">Lu et al., IEEE/RSJ IROS 2025</a></p>
                     </li>
                     <li class="pl-4 border-l-2 border-blue-600 dark:border-blue-400">
-                        <h3 class="font-semibold text-gray-900 dark:text-white">Driving-scenario generation and simulation</h3>
-                        <p class="mt-1 text-gray-700 dark:text-gray-300">SIMSplat, language-aligned 4D Gaussian splatting for generating driving scenarios; and NIVA, a probabilistic closed-loop multi-agent traffic simulator evaluated on the Waymo Open Motion Dataset.</p>
-                        <p class="mt-1 text-sm text-gray-500 dark:text-gray-400"><a href="#Park2026ECCV" class="hover:text-blue-600 dark:hover:text-blue-400" title="SIMSplat: Language-Aligned 4D Gaussian Splatting for Driving Scenario Generation">SIMSplat, ECCV 2026</a> · <a href="https://ieeexplore.ieee.org/document/11246993" class="hover:text-blue-600 dark:hover:text-blue-400" title="On Learning Closed-Loop Probabilistic Multi-Agent Simulator" target="_blank" rel="noopener">Lu et al., IEEE/RSJ IROS 2025</a></p>
+                        <h3 class="font-semibold text-gray-900 dark:text-white">Selecting when reasoning runs</h3>
+                        <p class="mt-1 text-gray-700 dark:text-gray-300">Tonic meta-control maintains a persistent vigilance state to decide when costly reasoning modules run, evaluated with a synthetic testbench and highway driving simulation.</p>
+                        <p class="mt-1 text-sm text-gray-500 dark:text-gray-400"><a href="#Han2026ITSC" class="hover:text-blue-600 dark:hover:text-blue-400" title="Tonic Meta-Control for Adaptive Safety-Compute Allocation via Persistent Vigilance Dynamics">Han et al., IEEE ITSC 2026</a></p>
+                    </li>
+                    <li class="pl-4 border-l-2 border-blue-600 dark:border-blue-400">
+                        <h3 class="font-semibold text-gray-900 dark:text-white">Related agentic and language-system applications</h3>
+                        <p class="mt-1 text-gray-700 dark:text-gray-300">Coauthored studies explore agentic trip planning and input-ambiguity detection in language models.</p>
+                        <p class="mt-1 text-sm text-gray-500 dark:text-gray-400"><a href="https://ieeexplore.ieee.org/document/11624024" class="hover:text-blue-600 dark:hover:text-blue-400" title="Agentic AI for Trip Planning Optimization Application" target="_blank" rel="noopener">Chen et al., IEEE IV 2026</a> · <span title="Detect Before You Disambiguate: Perturbation-Based Input Ambiguity Detection in LLMs">Chen et al., IJCNLP-AACL 2026</span></p>
                     </li>
                 </ol>
             </div>
         </section>
 
+        <section class="pb-10 bg-white dark:bg-gray-900" aria-labelledby="research-visuals">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 id="research-visuals" class="text-xl font-semibold text-gray-900 dark:text-white mb-5 scroll-mt-24">Visual overview</h2>
+                <div class="space-y-6">
+                    <figure class="research-visual" data-visual-id="lampilot-framework" data-visual-type="published-figure">
+    <div class="research-visual-frame">
+        <a href="/images/research/lampilot-framework.png" target="_blank" rel="noopener" class="block" aria-label="Open full-size figure: LaMPilot framework linking driving instructions, context, and API documentation to language-model programs, simulator execution, and evaluation.">
+        <img src="/images/research/lampilot-framework.png" alt="LaMPilot framework linking driving instructions, context, and API documentation to language-model programs, simulator execution, and evaluation." width="1536" height="951" loading="lazy" decoding="async" class="research-visual-image">
+        </a>
+    </div>
+    <figcaption class="mt-3 text-xs leading-relaxed text-gray-600 dark:text-gray-400">
+        <p>LaMPilot&#39;s published framework turns language instructions into executable driving programs for evaluation in simulation.</p>
+        <p class="mt-1">Yunsheng Ma and coauthors (2024), Figure 1, arXiv:2312.04372v2. CC BY-NC-SA 4.0. Rasterized and cropped from the author preprint; labels unchanged. <a href="https://arxiv.org/abs/2312.04372v2" class="text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">Source<span class="sr-only"> for lampilot-framework</span> <span aria-hidden="true">&nearr;</span></a> <span aria-hidden="true">·</span> <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a></p>
+    </figcaption>
+</figure>
+
+                    <figure class="research-visual" data-visual-id="tonic-architecture">
+    <div class="research-visual-frame">
+        <a href="/images/research/tonic-architecture.png" target="_blank" rel="noopener" class="block" aria-label="Open full-size figure: Tonic meta-control architecture separating slow vigilance memory from a fast surprise-triggered path to select reactive or deliberative modes.">
+        <img src="/images/research/tonic-architecture.png" alt="Tonic meta-control architecture separating slow vigilance memory from a fast surprise-triggered path to select reactive or deliberative modes." width="1520" height="970" loading="lazy" decoding="async" class="research-visual-image">
+        </a>
+    </div>
+    <figcaption class="mt-3 text-xs leading-relaxed text-gray-600 dark:text-gray-400">
+        <p>Tonic&#39;s simulation-study architecture separates persistent vigilance from surprise-triggered escalation.</p>
+        <p class="mt-1">Kyungtae Han and coauthors (2026), existing public Tonic Meta-Control project, architecture figure; unchanged. <a href="https://han-kt.github.io/projects/tonic-metacontrol/" class="text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">Source<span class="sr-only"> for tonic-architecture</span> <span aria-hidden="true">&nearr;</span></a></p>
+    </figcaption>
+</figure>
+
+                </div>
+            </div>
+        </section>
+
         <section class="pb-10 bg-white dark:bg-gray-900" aria-labelledby="validation">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 id="validation" class="text-xl font-semibold text-gray-900 dark:text-white mb-5">Systems and validation</h2>
+                <h2 id="validation" class="text-xl font-semibold text-gray-900 dark:text-white mb-5 scroll-mt-24">Systems & evidence</h2>
                 <ul class="space-y-3 list-disc pl-5 text-gray-800 dark:text-gray-200">
-                    <li>Experiments on autonomous vehicle platforms comparing on-cloud and on-edge LLM deployment for personalized decision-making and motion control. <span class="text-sm text-gray-500 dark:text-gray-400">(<a href="#Cui2026JPROC" class="hover:text-blue-600 dark:hover:text-blue-400" title="LLM4AD: Large Language Models for Autonomous Driving—Concept, Review, Benchmark, Experiments, and Future Trends">LLM4AD, Proc. IEEE 2026</a>)</span></li>
-                    <li>SC-ADAS implemented in the CARLA simulator with cloud-based generative models and evaluated on scene-aware and multi-turn interactions, including the latency added by vision-based context retrieval and the token growth from accumulated dialogue history. <span class="text-sm text-gray-500 dark:text-gray-400">(<a href="#Han2025ITSC" class="hover:text-blue-600 dark:hover:text-blue-400" title="Scene-Aware Conversational ADAS with Generative AI for Real-Time Driver Assistance">Han et al., IEEE ITSC 2025</a>)</span></li>
+                    <li>NuPlanQA uses real-world driving imagery to evaluate multimodal perception and reasoning; SC-ADAS evaluates conversational assistance in CARLA with cloud-based models. <span class="text-sm text-gray-500 dark:text-gray-400">(<a href="#Park2025ICCV" class="hover:text-blue-600 dark:hover:text-blue-400" title="NuPlanQA: A Large-Scale Dataset and Benchmark for Multi-View Driving Scene Understanding in Multi-Modal Large Language Models">NuPlanQA, ICCV 2025</a>; <a href="#Han2025ITSC" class="hover:text-blue-600 dark:hover:text-blue-400" title="Scene-Aware Conversational ADAS with Generative AI for Real-Time Driver Assistance">Han et al., IEEE ITSC 2025</a>)</span></li>
+                    <li>The LLM4AD collaboration reports vehicle-platform experiments comparing cloud and edge deployment. <span class="text-sm text-gray-500 dark:text-gray-400">(<a href="https://ieeexplore.ieee.org/document/11477881" class="hover:text-blue-600 dark:hover:text-blue-400" title="LLM4AD: Large Language Models for Autonomous Driving—Concept, Review, Benchmark, Experiments, and Future Trends" target="_blank" rel="noopener">LLM4AD, Proc. IEEE 2026</a>)</span></li>
                 </ul>
             </div>
         </section>
 
         <section class="py-12 bg-gray-50 dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700" aria-labelledby="publications">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 id="publications" class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Representative publications</h2>
+                <h2 id="publications" class="text-xl font-semibold text-gray-900 dark:text-white mb-2 scroll-mt-24">Representative publications</h2>
                 <p class="text-sm text-gray-600 dark:text-gray-400 mb-6">A curated selection. Citations above link to each paper; see the <a href="/publications.html" class="text-blue-600 dark:text-blue-400 hover:underline">full publication list</a> for all work.</p>
                 <div class="space-y-4">
                     <div id="Park2025ICCV" class="scroll-mt-24"><article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-5 md:p-6 border border-gray-200 dark:border-gray-700">
@@ -147,14 +181,14 @@
 <p class="text-sm text-gray-500 dark:text-gray-400 italic mb-2">2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), Los Alamitos, CA, USA</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
 <a href="https://doi.ieeecomputersociety.org/10.1109/CVPR52733.2024.01434" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View paper &rarr;</a><a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Ma_LaMPilot_An_Open_Benchmark_Dataset_for_Autonomous_Driving_with_Language_CVPR_2024_paper.pdf" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">PDF &rarr;</a>    </div>
 </article></div>
-                    <div id="Cui2026JPROC" class="scroll-mt-24"><article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-5 md:p-6 border border-gray-200 dark:border-gray-700">
+                    <div id="Wu2025IV" class="scroll-mt-24"><article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-5 md:p-6 border border-gray-200 dark:border-gray-700">
     <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">Proc. IEEE</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2026</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">LLM4AD: Large Language Models for Autonomous Driving—Concept, Review, Benchmark, Experiments, and Future Trends</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">C. Cui, Y. Ma, S. Park, Z. Yang, Y. Zhou, P. Liu, J. Lu, J. Peng, J. Zhang, R. Zhang, L. Li, Y. Chen, J. Panchal, A. Abdelraouf, R. Gupta, <strong>K. Han</strong>, and Z. Wang</p>
-<p class="text-sm text-gray-500 dark:text-gray-400 italic mb-2">Proceedings of the IEEE, pp. 1–36</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://ieeexplore.ieee.org/document/11477881" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View paper &rarr;</a><a href="https://arxiv.org/pdf/2410.15281.pdf" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">PDF &rarr;</a>    </div>
+        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">IEEE IV</span>
+<span class="text-xs text-gray-500 dark:text-gray-400">2025</span>    </div>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">PDB-Eval: An Evaluation of Large Multimodal Models for Description and Explanation of Personalized Driving Behavior</h3>
+    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">J. Wu, J. Echterhoff, <strong>K. Han</strong>, A. Abdelraouf, R. Gupta, and J. McAuley</p>
+<p class="text-sm text-gray-500 dark:text-gray-400 italic mb-2">2025 IEEE Intelligent Vehicles Symposium (IV), Cluj-Napoca, Romania</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
+<a href="https://ieeexplore.ieee.org/document/11097582" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View paper &rarr;</a><a href="https://arxiv.org/pdf/2507.18447" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">PDF &rarr;</a>    </div>
 </article></div>
                     <div id="Han2025ITSC" class="scroll-mt-24"><article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-5 md:p-6 border border-gray-200 dark:border-gray-700">
     <div class="flex flex-wrap items-center gap-2 mb-2">
@@ -165,23 +199,23 @@
 <p class="text-sm text-gray-500 dark:text-gray-400 italic mb-2">2025 IEEE 28th International Conference on Intelligent Transportation Systems (ITSC)</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
 <a href="https://ieeexplore.ieee.org/document/11423751" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View paper &rarr;</a><a href="https://arxiv.org/pdf/2507.10500.pdf" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">PDF &rarr;</a>    </div>
 </article></div>
-                    <div id="Wu2025IV" class="scroll-mt-24"><article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-5 md:p-6 border border-gray-200 dark:border-gray-700">
+                    <div id="Lu2025IROS" class="scroll-mt-24"><article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-5 md:p-6 border border-gray-200 dark:border-gray-700">
     <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">IEEE IV</span>
+        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">IEEE/RSJ IROS</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2025</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">PDB-Eval: An Evaluation of Large Multimodal Models for Description and Explanation of Personalized Driving Behavior</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">J. Wu, J. Echterhoff, <strong>K. Han</strong>, A. Abdelraouf, R. Gupta, and J. McAuley</p>
-<p class="text-sm text-gray-500 dark:text-gray-400 italic mb-2">2025 IEEE Intelligent Vehicles Symposium (IV), Cluj-Napoca, Romania</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://ieeexplore.ieee.org/document/11097582" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View paper &rarr;</a><a href="https://arxiv.org/pdf/2507.18447" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">PDF &rarr;</a>    </div>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">On Learning Closed-Loop Probabilistic Multi-Agent Simulator</h3>
+    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">J. Lu, R. Gupta, A. Moradipari, <strong>K. Han</strong>, R. Zhang, and Z. Wang</p>
+<p class="text-sm text-gray-500 dark:text-gray-400 italic mb-2">2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
+<a href="https://ieeexplore.ieee.org/document/11246993" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View paper &rarr;</a><a href="https://arxiv.org/pdf/2508.00384v1" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">PDF &rarr;</a>    </div>
 </article></div>
-                    <div id="Park2026ECCV" class="scroll-mt-24"><article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-5 md:p-6 border border-gray-200 dark:border-gray-700">
+                    <div id="Han2026ITSC" class="scroll-mt-24"><article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-5 md:p-6 border border-gray-200 dark:border-gray-700">
     <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">ECCV</span>
+        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">IEEE ITSC</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2026</span><span class="text-xs px-2 py-0.5 rounded bg-gray-100 text-gray-600 dark:bg-gray-700 dark:text-gray-300">Accepted</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">SIMSplat: Language-Aligned 4D Gaussian Splatting for Driving Scenario Generation</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">S. Park, A. Lee, J. Lu, C. Cui, L. Jiang, R. Gupta, <strong>K. Han</strong>, A. Moradipari, and Z. Wang</p>
-<p class="text-sm text-gray-500 dark:text-gray-400 italic mb-2">European Conference on Computer Vision (ECCV)</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://arxiv.org/abs/2510.02469" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View paper &rarr;</a><a href="https://arxiv.org/pdf/2510.02469.pdf" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">PDF &rarr;</a>    </div>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Tonic Meta-Control for Adaptive Safety-Compute Allocation via Persistent Vigilance Dynamics</h3>
+    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1"><strong>K. Han</strong>, Y. Chen, N. Ammar, and O. Altintas</p>
+<p class="text-sm text-gray-500 dark:text-gray-400 italic mb-2">2026 IEEE 29th International Conference on Intelligent Transportation Systems (ITSC)</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
+<a href="/projects/tonic-metacontrol/" class="text-sm text-blue-600 dark:text-blue-400 hover:underline">Project page &rarr;</a><a href="/publications/26_ITSC/Han2026ITSC.pdf" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">PDF &rarr;</a>    </div>
 </article></div>
                 </div>
                 <p class="mt-8">
@@ -194,9 +228,9 @@
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 id="other-areas" class="text-sm font-semibold uppercase tracking-widest text-gray-500 dark:text-gray-400 mb-4">Other research areas</h2>
                 <ul class="flex flex-wrap gap-x-6 gap-y-2">
-                    <li><a href="/research/connected-autonomous-vehicles/" class="text-blue-600 dark:text-blue-400 hover:underline">Cooperative Driving Automation &amp; V2X</a></li>
-                    <li><a href="/research/edge-computing/" class="text-blue-600 dark:text-blue-400 hover:underline">Vehicular Edge Computing &amp; Networking</a></li>
-                    <li><a href="/research/digital-twin/" class="text-blue-600 dark:text-blue-400 hover:underline">Mobility &amp; Driver Digital Twins</a></li>
+                    <li><a href="/research/digital-twin/" class="text-blue-600 dark:text-blue-400 hover:underline">Digital Twins and Cooperative Mobility</a></li>
+                    <li><a href="/research/connected-autonomous-vehicles/" class="text-blue-600 dark:text-blue-400 hover:underline">Behavior Prediction and Human-Centered AI</a></li>
+                    <li><a href="/research/edge-computing/" class="text-blue-600 dark:text-blue-400 hover:underline">Edge Computing and Resource-Aware AI</a></li>
                     <li><a href="/research/energy-efficient-computing/" class="text-blue-600 dark:text-blue-400 hover:underline">Energy- and Resource-Efficient Computing</a></li>
                 </ul>
             </div>
@@ -215,6 +249,6 @@
             </div>
         </div>
     </footer>
-    <script src="/js/site.js?v=1791308793"></script>
+    <script src="/js/site.js?v=1792041303"></script>
 </body>
 </html>

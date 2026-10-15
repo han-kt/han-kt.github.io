@@ -3,42 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vehicular Edge Computing &amp; Networking — Research — Kyungtae (KT) Han</title>
-    <meta name="description" content="Computation offloading, resource allocation, and data delivery for connected vehicles, including crowdsourced live high-definition maps, real-time cooperative perception at the edge, and information freshness in vehicular networks.">
+    <title>Edge Computing and Resource-Aware AI — Research — Kyungtae (KT) Han</title>
+    <meta name="description" content="Data sharing, information freshness, computation placement, and measured AI execution costs for connected systems under latency, bandwidth, and energy constraints.">
     <link rel="canonical" href="https://han-kt.github.io/research/edge-computing/">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Kyungtae (KT) Han">
-    <meta property="og:title" content="Vehicular Edge Computing &amp; Networking — Research — Kyungtae (KT) Han">
-    <meta property="og:description" content="Computation offloading, resource allocation, and data delivery for connected vehicles, including crowdsourced live high-definition maps, real-time cooperative perception at the edge, and information freshness in vehicular networks.">
+    <meta property="og:title" content="Edge Computing and Resource-Aware AI — Research — Kyungtae (KT) Han">
+    <meta property="og:description" content="Data sharing, information freshness, computation placement, and measured AI execution costs for connected systems under latency, bandwidth, and energy constraints.">
     <meta property="og:url" content="https://han-kt.github.io/research/edge-computing/">
     <meta property="og:image" content="https://han-kt.github.io/images/KyungtaeHan_850x850.jpg">
     <meta name="twitter:card" content="summary">
     <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
-    <link rel="stylesheet" href="/css/site.css?v=1791308793">
+    <link rel="stylesheet" href="/css/site.css?v=1792041303">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=optional" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script>
         try { if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark'); } catch (e) {}
     </script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GEG5GDGV8P"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        if (navigator.doNotTrack == "1" || window.doNotTrack == "1" || navigator.msDoNotTrack == "1") {
-            window['ga-disable-G-GEG5GDGV8P'] = true;
-            gtag('consent', 'update', { 'analytics_storage': 'denied' });
-        }
-        gtag('config', 'G-GEG5GDGV8P', {'anonymize_ip': true});
-    </script>
+
 </head>
 <body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white">
+    <a href="#content-start" class="skip-link">Skip to content</a>
     <header id="header" class="fixed top-0 w-full bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-700 z-50 transition-transform duration-200">
         <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Main">
             <div class="flex justify-between items-center h-16">
                 <a href="/" class="text-xl font-semibold text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Kyungtae Han</a>
-                <div class="hidden md:flex items-center space-x-1">
+                <div class="hidden lg:flex items-center space-x-1">
                     <a href="/#research" class="px-3 py-2 rounded-md text-sm font-medium transition-colors text-blue-600 dark:text-blue-400" aria-current="page">Research</a>
                     <a href="/publications.html" class="px-3 py-2 rounded-md text-sm font-medium transition-colors text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">Publications</a>
                     <a href="/#teaching" class="px-3 py-2 rounded-md text-sm font-medium transition-colors text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">Teaching</a>
@@ -47,15 +38,15 @@
                     <a href="/#contact" class="px-3 py-2 rounded-md text-sm font-medium transition-colors text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">Contact</a>
                 </div>
                 <div class="flex items-center space-x-3">
-                    <button id="theme-toggle" type="button" class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors" aria-label="Toggle dark mode">
+                    <button id="theme-toggle" type="button" class="h-11 w-11 inline-flex items-center justify-center rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors" aria-label="Toggle dark mode" aria-pressed="false">
                         <i class="fas fa-moon text-gray-600 dark:text-gray-300" aria-hidden="true"></i>
                     </button>
-                    <button id="mobile-menu-btn" type="button" class="block md:hidden p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <button id="mobile-menu-btn" type="button" class="inline-flex lg:hidden h-11 w-11 items-center justify-center rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
                         <i class="fas fa-bars text-gray-600 dark:text-gray-300" aria-hidden="true"></i>
                     </button>
                 </div>
             </div>
-            <div id="mobile-menu" class="hidden md:hidden">
+            <div id="mobile-menu" class="hidden lg:hidden">
                 <div class="px-2 pt-2 pb-3 space-y-1 bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
                     <a href="/#research" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">Research</a>
                     <a href="/publications.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">Publications</a>
@@ -67,71 +58,111 @@
             </div>
         </nav>
     </header>
+    <span id="content-start" tabindex="-1" class="content-start"></span>
 
-    <main class="pt-16">
-        <section class="pt-14 pb-10 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800">
+    <main id="main-content" tabindex="-1" class="pt-16">
+        <section id="question" class="pt-14 pb-10 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 scroll-mt-16" aria-labelledby="area-heading">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 <nav aria-label="Breadcrumb" class="text-sm text-gray-500 dark:text-gray-400 mb-4">
                     <a href="/#research" class="hover:text-blue-600 dark:hover:text-blue-400">Research</a>
                     <span aria-hidden="true"> / </span>
                     <span>Research area</span>
                 </nav>
-                <h1 class="text-3xl md:text-4xl font-semibold text-gray-900 dark:text-white mb-4 text-balance">Vehicular Edge Computing &amp; Networking</h1>
-                <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">Automated driving produces large, time-sensitive data flows, such as maps, shared perception, and model inference, that exceed what one vehicle can compute and what networks can deliver on demand. This work asks where computation should run, which data to send, and how to keep shared information fresh. It addresses these questions with methods that divide computation and data between vehicles and edge servers under latency and bandwidth limits.</p>
+                <h1 id="area-heading" class="text-3xl md:text-4xl font-semibold text-gray-900 dark:text-white mb-6 text-balance">Edge Computing and Resource-Aware AI</h1>
+                <p class="text-xs font-semibold uppercase tracking-widest text-blue-600 dark:text-blue-400 mb-2">Research question</p>
+                <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">Which data should a connected system transmit, where should it compute, and what does AI execution cost? Collaborative research develops vehicular map and perception systems, information-centric networking, offloading methods, and measurements of on-device AI. These studies make latency, information freshness, and energy trade-offs explicit.</p>
+                <nav aria-label="On this research page" class="mt-6 flex flex-wrap gap-x-5 gap-y-3 text-sm text-blue-600 dark:text-blue-400">
+                    <a href="#themes" class="hover:underline">Contributions</a>
+<a href="#research-visuals" class="hover:underline">Visual overview</a><a href="#validation" class="hover:underline">Evidence</a>                    <a href="#publications" class="hover:underline">Publications</a>
+                </nav>
             </div>
         </section>
 
         <section class="py-10 bg-white dark:bg-gray-900" aria-labelledby="themes">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 id="themes" class="text-xl font-semibold text-gray-900 dark:text-white mb-6">Main themes</h2>
+                <h2 id="themes" class="text-xl font-semibold text-gray-900 dark:text-white mb-6 scroll-mt-24">Methods &amp; contributions</h2>
                 <ol class="space-y-6">
                     <li class="pl-4 border-l-2 border-blue-600 dark:border-blue-400">
-                        <h3 class="font-semibold text-gray-900 dark:text-white">Live HD maps from vehicle and edge collaboration</h3>
-                        <p class="mt-1 text-gray-700 dark:text-gray-300">Crowdsourced live high-definition maps built by collaborative computation between vehicles and edge servers, formulated to minimize transmission and computing resource usage under end-to-end latency limits; and COMAP, proactive provisioning of crowdsourced maps.</p>
+                        <h3 class="font-semibold text-gray-900 dark:text-white">Collaborative construction of live maps</h3>
+                        <p class="mt-1 text-gray-700 dark:text-gray-300">Live high-definition map construction divides work between vehicles and edge servers under transmission, computation, and latency constraints. COMAP studies proactive provisioning of crowdsourced maps.</p>
                         <p class="mt-1 text-sm text-gray-500 dark:text-gray-400"><a href="#Yuru2024VT" class="hover:text-blue-600 dark:hover:text-blue-400" title="Crowdsourcing Live High Definition Map via Collaborative Computation in Automotive Edge Computing">Zhang et al., IEEE TVT 2024</a> · <a href="https://ieeexplore.ieee.org/document/10278954" class="hover:text-blue-600 dark:hover:text-blue-400" title="COMAP: Proactive provision for crowdsourcing map in automotive edge computing" target="_blank" rel="noopener">COMAP, IEEE ICC 2023</a></p>
                     </li>
                     <li class="pl-4 border-l-2 border-blue-600 dark:border-blue-400">
-                        <h3 class="font-semibold text-gray-900 dark:text-white">Real-time cooperative perception at the edge</h3>
-                        <p class="mt-1 text-gray-700 dark:text-gray-300">AdaMap adaptively selects and compresses shared point-cloud data so that cooperative perception meets latency targets for large numbers of vehicles under changing network conditions.</p>
+                        <h3 class="font-semibold text-gray-900 dark:text-white">Selecting and compressing shared perception</h3>
+                        <p class="mt-1 text-gray-700 dark:text-gray-300">AdaMap combines object selection with adaptive point-cloud representation to share perception artifacts under latency constraints and changing network conditions.</p>
                         <p class="mt-1 text-sm text-gray-500 dark:text-gray-400"><a href="#Liu2023SEC" class="hover:text-blue-600 dark:hover:text-blue-400" title="AdaMap: High-scalable real-time cooperative perception at the edge">AdaMap, ACM/IEEE SEC 2023</a></p>
                     </li>
                     <li class="pl-4 border-l-2 border-blue-600 dark:border-blue-400">
-                        <h3 class="font-semibold text-gray-900 dark:text-white">Learning-based data delivery and offloading</h3>
-                        <p class="mt-1 text-gray-700 dark:text-gray-300">DSORL, reinforcement-learning data-source selection for HD-map delivery in vehicular named data networking; REAL, learning-based offloading for edge-assisted mobile augmented reality; and network-aware task distribution for edge-assisted generative AI.</p>
-                        <p class="mt-1 text-sm text-gray-500 dark:text-gray-400"><a href="#Doe2023TITS" class="hover:text-blue-600 dark:hover:text-blue-400" title="DSORL: Data Source Optimization with Reinforcement Learning Scheme for Vehicular Named Data Networks">DSORL, IEEE T-ITS 2023</a> · <a href="#Xie2026TMC" class="hover:text-blue-600 dark:hover:text-blue-400" title="REAL: A Reinforcement Learning-based Intelligent Offloading Framework for Edge-Assisted MAR">REAL, IEEE TMC 2026</a> · <a href="#Yan2026ICC" class="hover:text-blue-600 dark:hover:text-blue-400" title="Network-Aware Intelligent Task Distributor for Edge-Assisted Generative AI">Yan et al., IEEE ICC 2026</a></p>
+                        <h3 class="font-semibold text-gray-900 dark:text-white">Named data, indexing, and information freshness</h3>
+                        <p class="mt-1 text-gray-700 dark:text-gray-300">DSORL selects map-data sources in vehicular named-data networking; edge-assisted indexing separates dynamic and static mixed-reality data; age-of-information-aware aggregation accounts for delayed and out-of-sequence updates.</p>
+                        <p class="mt-1 text-sm text-gray-500 dark:text-gray-400"><a href="#Doe2023TITS" class="hover:text-blue-600 dark:hover:text-blue-400" title="DSORL: Data Source Optimization with Reinforcement Learning Scheme for Vehicular Named Data Networks">DSORL, IEEE T-ITS 2023</a> · <a href="https://ieeexplore.ieee.org/document/10601661" class="hover:text-blue-600 dark:hover:text-blue-400" title="Edge-Assisted Indexing for Highly Dynamic and Static Data in Mixed Reality Connected Autonomous Vehicles" target="_blank" rel="noopener">Doe et al., Intell. Converged Netw. 2024</a> · <a href="#Mallik2024ICC" class="hover:text-blue-600 dark:hover:text-blue-400" title="Unleashing the true power of age-of-information: Service aggregation in connected and autonomous vehicles">Mallik et al., IEEE ICC 2024</a></p>
                     </li>
                     <li class="pl-4 border-l-2 border-blue-600 dark:border-blue-400">
-                        <h3 class="font-semibold text-gray-900 dark:text-white">Vehicles as edge resources and information freshness</h3>
-                        <p class="mt-1 text-gray-700 dark:text-gray-300">CAVE, which crowdsources passing-by vehicles for reliable in-vehicle edge computing, and age-of-information-aware service aggregation for connected vehicles.</p>
-                        <p class="mt-1 text-sm text-gray-500 dark:text-gray-400"><a href="#Cao2024GLOBECOM" class="hover:text-blue-600 dark:hover:text-blue-400" title="CAVE: Crowdsourcing passing-by vehicles for reliable in-vehicle edge computing">CAVE, IEEE GLOBECOM 2024</a> · <a href="https://ieeexplore.ieee.org/document/10622247" class="hover:text-blue-600 dark:hover:text-blue-400" title="Unleashing the true power of age-of-information: Service aggregation in connected and autonomous vehicles" target="_blank" rel="noopener">Mallik et al., IEEE ICC 2024</a></p>
+                        <h3 class="font-semibold text-gray-900 dark:text-white">Computation beyond one vehicle</h3>
+                        <p class="mt-1 text-gray-700 dark:text-gray-300">CAVE studies passing vehicles as computation resources. Related work addresses reinforcement-learning offloading for mobile augmented reality and network-aware task distribution for edge-assisted generative AI.</p>
+                        <p class="mt-1 text-sm text-gray-500 dark:text-gray-400"><a href="https://ieeexplore.ieee.org/document/10901787" class="hover:text-blue-600 dark:hover:text-blue-400" title="CAVE: Crowdsourcing passing-by vehicles for reliable in-vehicle edge computing" target="_blank" rel="noopener">CAVE, IEEE GLOBECOM 2024</a> · <span title="REAL: A Reinforcement Learning-based Intelligent Offloading Framework for Edge-Assisted MAR">REAL, IEEE TMC 2026</span> · <a href="https://ieeexplore.ieee.org/document/11586849" class="hover:text-blue-600 dark:hover:text-blue-400" title="Network-Aware Intelligent Task Distributor for Edge-Assisted Generative AI" target="_blank" rel="noopener">Yan et al., IEEE ICC 2026</a></p>
+                    </li>
+                    <li class="pl-4 border-l-2 border-blue-600 dark:border-blue-400">
+                        <h3 class="font-semibold text-gray-900 dark:text-white">Measuring AI before optimizing it</h3>
+                        <p class="mt-1 text-gray-700 dark:text-gray-300">lm-Meter profiles on-device language-model latency, while related studies measure and predict deep-learning energy across edge devices and examine how prompt properties affect on-device LLM energy.</p>
+                        <p class="mt-1 text-sm text-gray-500 dark:text-gray-400"><a href="#Wang2025SEC" class="hover:text-blue-600 dark:hover:text-blue-400" title="lm-Meter: Unveiling Runtime Inference Latency for On-Device Language Models">lm-Meter, ACM/IEEE SEC 2025</a> · <a href="#Tu2023SEC" class="hover:text-blue-600 dark:hover:text-blue-400" title="Unveiling energy efficiency in deep learning: Measurement, prediction, and scoring across edge devices">Tu et al., ACM/IEEE SEC 2023</a> · <a href="https://arxiv.org/abs/2609.01798" class="hover:text-blue-600 dark:hover:text-blue-400" title="How Do Prompt Variations Affect Energy Consumption in On-Device LLMs?" target="_blank" rel="noopener">Hu et al., EMNLP 2026</a></p>
+                    </li>
+                    <li class="pl-4 border-l-2 border-blue-600 dark:border-blue-400">
+                        <h3 class="font-semibold text-gray-900 dark:text-white">Model and inference choices under resource constraints</h3>
+                        <p class="mt-1 text-gray-700 dark:text-gray-300">Energy predictors guide neural-architecture search in GreenAuto and PlatformX. Video-token sparsification reduces redundant visual input for driving question answering.</p>
+                        <p class="mt-1 text-sm text-gray-500 dark:text-gray-400"><a href="https://dl.acm.org/doi/10.1145/3708468.3711890" class="hover:text-blue-600 dark:hover:text-blue-400" title="GreenAuto: An Automated Platform for Sustainable AI Model Design on Edge Devices" target="_blank" rel="noopener">GreenAuto, ACM HotMobile 2025</a> · <a href="https://dl.acm.org/doi/10.1145/3769102.3770622" class="hover:text-blue-600 dark:hover:text-blue-400" title="PlatformX: An End-to-End Transferable Platform for Energy-Efficient Neural Architecture Search" target="_blank" rel="noopener">PlatformX, ACM/IEEE SEC 2025</a> · <a href="https://ieeexplore.ieee.org/document/11097438" class="hover:text-blue-600 dark:hover:text-blue-400" title="Video Token Sparsification for Efficient Multimodal LLMs in Driving Visual Question Answering" target="_blank" rel="noopener">Ma et al., IEEE IV 2025</a></p>
                     </li>
                 </ol>
             </div>
         </section>
 
+        <section class="pb-10 bg-white dark:bg-gray-900" aria-labelledby="research-visuals">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 id="research-visuals" class="text-xl font-semibold text-gray-900 dark:text-white mb-5 scroll-mt-24">Visual overview</h2>
+                <div class="space-y-6">
+                    <figure class="research-visual" data-visual-id="adamap-published-overview" data-visual-type="published-figure">
+    <div class="research-visual-frame">
+        <a href="/images/research/adamap-published-overview.png" target="_blank" rel="noopener" class="block" aria-label="Open full-size figure: AdaMap Figure 3: vehicle-side point-cloud localization, perspective transformation, adaptive representation and control-plane optimization connect through object descriptors to server-side decoding, object matching and a global map.">
+        <img src="/images/research/adamap-published-overview.png" alt="AdaMap Figure 3: vehicle-side point-cloud localization, perspective transformation, adaptive representation and control-plane optimization connect through object descriptors to server-side decoding, object matching and a global map." width="1494" height="684" loading="lazy" decoding="async" class="research-visual-image">
+        </a>
+    </div>
+    <figcaption class="mt-3 text-xs leading-relaxed text-gray-600 dark:text-gray-400">
+        <p>AdaMap’s published vehicle-to-edge architecture, evaluated through emulation with real computation and simulated networking.</p>
+        <p class="mt-1">Q. Liu et al., AdaMap: High-Scalable Real-Time Cooperative Perception at the Edge, SEC &#39;23 (2023), Figure 3. © 2023 owner/author(s). Publication rights licensed to ACM. Rasterized/cropped from arXiv:2309.13526v2; labels unchanged. Personal use; not for redistribution. Version of Record: DOI 10.1145/3583740.3626612. <a href="https://arxiv.org/abs/2309.13526v2" class="text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">Source<span class="sr-only"> for adamap-published-overview</span> <span aria-hidden="true">&nearr;</span></a> <span aria-hidden="true">·</span> <a href="https://authors.acm.org/author-resources/author-rights" class="text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">ACM author-reuse policy (not an open license)</a></p>
+    </figcaption>
+</figure>
+
+                    <figure class="research-visual" data-visual-id="tonic-architecture">
+    <div class="research-visual-frame">
+        <a href="/images/research/tonic-architecture.png" target="_blank" rel="noopener" class="block" aria-label="Open full-size figure: Tonic meta-control architecture separating slow vigilance memory from a fast surprise-triggered path to select reactive or deliberative modes.">
+        <img src="/images/research/tonic-architecture.png" alt="Tonic meta-control architecture separating slow vigilance memory from a fast surprise-triggered path to select reactive or deliberative modes." width="1520" height="970" loading="lazy" decoding="async" class="research-visual-image">
+        </a>
+    </div>
+    <figcaption class="mt-3 text-xs leading-relaxed text-gray-600 dark:text-gray-400">
+        <p>Tonic&#39;s simulation-study architecture separates persistent vigilance from surprise-triggered escalation.</p>
+        <p class="mt-1">Kyungtae Han and coauthors (2026), existing public Tonic Meta-Control project, architecture figure; unchanged. <a href="https://han-kt.github.io/projects/tonic-metacontrol/" class="text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">Source<span class="sr-only"> for tonic-architecture</span> <span aria-hidden="true">&nearr;</span></a></p>
+    </figcaption>
+</figure>
+
+                </div>
+            </div>
+        </section>
+
         <section class="pb-10 bg-white dark:bg-gray-900" aria-labelledby="validation">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 id="validation" class="text-xl font-semibold text-gray-900 dark:text-white mb-5">Systems and validation</h2>
+                <h2 id="validation" class="text-xl font-semibold text-gray-900 dark:text-white mb-5 scroll-mt-24">Systems & evidence</h2>
                 <ul class="space-y-3 list-disc pl-5 text-gray-800 dark:text-gray-200">
-                    <li>Evaluation with an end-to-end 5G network simulator, a 5G emulation platform driven by a 150-vehicle CARLA trace, and a CARLA/ROS 2 vehicular named-data-networking environment. <span class="text-sm text-gray-500 dark:text-gray-400">(<a href="#Yuru2024VT" class="hover:text-blue-600 dark:hover:text-blue-400" title="Crowdsourcing Live High Definition Map via Collaborative Computation in Automotive Edge Computing">Zhang et al., IEEE TVT 2024</a>; <a href="#Liu2023SEC" class="hover:text-blue-600 dark:hover:text-blue-400" title="AdaMap: High-scalable real-time cooperative perception at the edge">AdaMap, ACM/IEEE SEC 2023</a>; <a href="#Doe2023TITS" class="hover:text-blue-600 dark:hover:text-blue-400" title="DSORL: Data Source Optimization with Reinforcement Learning Scheme for Vehicular Named Data Networks">DSORL, IEEE T-ITS 2023</a>)</span></li>
+                    <li>Map and perception studies use simulated networking and emulation; the named-data-networking study uses a CARLA/ROS 2 environment. <span class="text-sm text-gray-500 dark:text-gray-400">(<a href="#Yuru2024VT" class="hover:text-blue-600 dark:hover:text-blue-400" title="Crowdsourcing Live High Definition Map via Collaborative Computation in Automotive Edge Computing">Zhang et al., IEEE TVT 2024</a>; <a href="#Liu2023SEC" class="hover:text-blue-600 dark:hover:text-blue-400" title="AdaMap: High-scalable real-time cooperative perception at the edge">AdaMap, ACM/IEEE SEC 2023</a>; <a href="#Doe2023TITS" class="hover:text-blue-600 dark:hover:text-blue-400" title="DSORL: Data Source Optimization with Reinforcement Learning Scheme for Vehicular Named Data Networks">DSORL, IEEE T-ITS 2023</a>)</span></li>
+                    <li>Runtime profiling and energy studies measure AI execution on edge and mobile devices, complementing the networked-system evaluations. <span class="text-sm text-gray-500 dark:text-gray-400">(<a href="#Wang2025SEC" class="hover:text-blue-600 dark:hover:text-blue-400" title="lm-Meter: Unveiling Runtime Inference Latency for On-Device Language Models">lm-Meter, ACM/IEEE SEC 2025</a>; <a href="#Tu2023SEC" class="hover:text-blue-600 dark:hover:text-blue-400" title="Unveiling energy efficiency in deep learning: Measurement, prediction, and scoring across edge devices">Tu et al., ACM/IEEE SEC 2023</a>; <a href="https://arxiv.org/abs/2609.01798" class="hover:text-blue-600 dark:hover:text-blue-400" title="How Do Prompt Variations Affect Energy Consumption in On-Device LLMs?" target="_blank" rel="noopener">Hu et al., EMNLP 2026</a>)</span></li>
                 </ul>
             </div>
         </section>
 
         <section class="py-12 bg-gray-50 dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700" aria-labelledby="publications">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 id="publications" class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Representative publications</h2>
+                <h2 id="publications" class="text-xl font-semibold text-gray-900 dark:text-white mb-2 scroll-mt-24">Representative publications</h2>
                 <p class="text-sm text-gray-600 dark:text-gray-400 mb-6">A curated selection. Citations above link to each paper; see the <a href="/publications.html" class="text-blue-600 dark:text-blue-400 hover:underline">full publication list</a> for all work.</p>
                 <div class="space-y-4">
-                    <div id="Yuru2024VT" class="scroll-mt-24"><article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-5 md:p-6 border border-gray-200 dark:border-gray-700">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">IEEE TVT</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2024</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Crowdsourcing Live High Definition Map via Collaborative Computation in Automotive Edge Computing</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Y. Zhang, Q. Liu, H. Wang, D. Chen, and <strong>K. Han</strong></p>
-<p class="text-sm text-gray-500 dark:text-gray-400 italic mb-2">IEEE Transactions on Vehicular Technology, vol. 73, no. 9, pp. 13569–13583</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://ieeexplore.ieee.org/document/10508471" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View paper &rarr;</a>    </div>
-</article></div>
                     <div id="Liu2023SEC" class="scroll-mt-24"><article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-5 md:p-6 border border-gray-200 dark:border-gray-700">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">ACM/IEEE SEC</span>
@@ -140,6 +171,24 @@
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Q. Liu, Y. Xue, Y. Zhang, D. Chen, and <strong>K. Han</strong></p>
 <p class="text-sm text-gray-500 dark:text-gray-400 italic mb-2">ACM/IEEE Symposium on Edge Computing (SEC), Wilmington, DE, USA</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
 <a href="https://ieeexplore.ieee.org/document/10419315" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View paper &rarr;</a>    </div>
+</article></div>
+                    <div id="Wang2025SEC" class="scroll-mt-24"><article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-5 md:p-6 border border-gray-200 dark:border-gray-700">
+    <div class="flex flex-wrap items-center gap-2 mb-2">
+        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">ACM/IEEE SEC</span>
+<span class="text-xs text-gray-500 dark:text-gray-400">2025</span>    </div>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">lm-Meter: Unveiling Runtime Inference Latency for On-Device Language Models</h3>
+    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">H. Wang, X. Tu, H. Ke, H. Chai, D. Chen, and <strong>K. Han</strong></p>
+<p class="text-sm text-gray-500 dark:text-gray-400 italic mb-2">10th Symposium on Edge Computing (SEC 2025)</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
+<a href="https://dl.acm.org/doi/10.1145/3769102.3770614" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View paper &rarr;</a><a href="https://arxiv.org/pdf/2510.06126.pdf" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">PDF &rarr;</a>    </div>
+</article></div>
+                    <div id="Yuru2024VT" class="scroll-mt-24"><article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-5 md:p-6 border border-gray-200 dark:border-gray-700">
+    <div class="flex flex-wrap items-center gap-2 mb-2">
+        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">IEEE TVT</span>
+<span class="text-xs text-gray-500 dark:text-gray-400">2024</span>    </div>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Crowdsourcing Live High Definition Map via Collaborative Computation in Automotive Edge Computing</h3>
+    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Y. Zhang, Q. Liu, H. Wang, D. Chen, and <strong>K. Han</strong></p>
+<p class="text-sm text-gray-500 dark:text-gray-400 italic mb-2">IEEE Transactions on Vehicular Technology, vol. 73, no. 9, pp. 13569–13583</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
+<a href="https://ieeexplore.ieee.org/document/10508471" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View paper &rarr;</a>    </div>
 </article></div>
                     <div id="Doe2023TITS" class="scroll-mt-24"><article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-5 md:p-6 border border-gray-200 dark:border-gray-700">
     <div class="flex flex-wrap items-center gap-2 mb-2">
@@ -150,30 +199,23 @@
 <p class="text-sm text-gray-500 dark:text-gray-400 italic mb-2">IEEE Transactions on Intelligent Transportation Systems, vol. 24, no. 10, pp. 11225–11237</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
 <a href="https://ieeexplore.ieee.org/document/10201378" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View paper &rarr;</a><a href="/publications/23_TITS/2023_DSORL.pdf" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">PDF &rarr;</a>    </div>
 </article></div>
-                    <div id="Xie2026TMC" class="scroll-mt-24"><article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-5 md:p-6 border border-gray-200 dark:border-gray-700">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">IEEE TMC</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2026</span><span class="text-xs px-2 py-0.5 rounded bg-gray-100 text-gray-600 dark:bg-gray-700 dark:text-gray-300">Accepted</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">REAL: A Reinforcement Learning-based Intelligent Offloading Framework for Edge-Assisted MAR</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">L. Xie, A. Mallik, D. Chen, <strong>K. Han</strong>, and Z. Han</p>
-<p class="text-sm text-gray-500 dark:text-gray-400 italic mb-2">IEEE Transactions on Mobile Computing</p></article></div>
-                    <div id="Cao2024GLOBECOM" class="scroll-mt-24"><article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-5 md:p-6 border border-gray-200 dark:border-gray-700">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">IEEE GLOBECOM</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2024</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">CAVE: Crowdsourcing passing-by vehicles for reliable in-vehicle edge computing</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">J. Cao, Q. Liu, D. Chen, and <strong>K. Han</strong></p>
-<p class="text-sm text-gray-500 dark:text-gray-400 italic mb-2">IEEE Global Communications Conference: Mobile and Wireless Networks (GLOBECOM), Cape Town, South Africa</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://ieeexplore.ieee.org/document/10901787" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View paper &rarr;</a><a href="https://arxiv.org/pdf/2408.00621" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">PDF &rarr;</a>    </div>
-</article></div>
-                    <div id="Yan2026ICC" class="scroll-mt-24"><article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-5 md:p-6 border border-gray-200 dark:border-gray-700">
+                    <div id="Mallik2024ICC" class="scroll-mt-24"><article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-5 md:p-6 border border-gray-200 dark:border-gray-700">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">IEEE ICC</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2026</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Network-Aware Intelligent Task Distributor for Edge-Assisted Generative AI</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">J. Yan, M. Talukder, D. Chen, <strong>K. Han</strong>, and L. Xie</p>
-<p class="text-sm text-gray-500 dark:text-gray-400 italic mb-2">IEEE International Conference on Communications (ICC), Glasgow, United Kingdom</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://ieeexplore.ieee.org/document/11586849" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View paper &rarr;</a>    </div>
+<span class="text-xs text-gray-500 dark:text-gray-400">2024</span>    </div>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Unleashing the true power of age-of-information: Service aggregation in connected and autonomous vehicles</h3>
+    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">A. Mallik, D. Chen, <strong>K. Han</strong>, L. Jiang, and Z. Han</p>
+<p class="text-sm text-gray-500 dark:text-gray-400 italic mb-2">IEEE International Conference on Communications (ICC): Mobile and Wireless Networks Symposium, Denver, CO, USA</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
+<a href="https://ieeexplore.ieee.org/document/10622247" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View paper &rarr;</a><a href="https://arxiv.org/pdf/2403.08931" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">PDF &rarr;</a>    </div>
+</article></div>
+                    <div id="Tu2023SEC" class="scroll-mt-24"><article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-5 md:p-6 border border-gray-200 dark:border-gray-700">
+    <div class="flex flex-wrap items-center gap-2 mb-2">
+        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">ACM/IEEE SEC</span>
+<span class="text-xs text-gray-500 dark:text-gray-400">2023</span>    </div>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Unveiling energy efficiency in deep learning: Measurement, prediction, and scoring across edge devices</h3>
+    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">X. Tu, A. Mallik, D. Chen, <strong>K. Han</strong>, O. Altintas, H. Wang, and J. Xie</p>
+<p class="text-sm text-gray-500 dark:text-gray-400 italic mb-2">ACM/IEEE Symposium on Edge Computing (SEC), Wilmington, DE, USA</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
+<a href="https://ieeexplore.ieee.org/document/10419248" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View paper &rarr;</a>    </div>
 </article></div>
                 </div>
                 <p class="mt-8">
@@ -186,9 +228,9 @@
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 id="other-areas" class="text-sm font-semibold uppercase tracking-widest text-gray-500 dark:text-gray-400 mb-4">Other research areas</h2>
                 <ul class="flex flex-wrap gap-x-6 gap-y-2">
-                    <li><a href="/research/generative-ai/" class="text-blue-600 dark:text-blue-400 hover:underline">Multimodal Scene Understanding &amp; Language-Guided Driving</a></li>
-                    <li><a href="/research/connected-autonomous-vehicles/" class="text-blue-600 dark:text-blue-400 hover:underline">Cooperative Driving Automation &amp; V2X</a></li>
-                    <li><a href="/research/digital-twin/" class="text-blue-600 dark:text-blue-400 hover:underline">Mobility &amp; Driver Digital Twins</a></li>
+                    <li><a href="/research/digital-twin/" class="text-blue-600 dark:text-blue-400 hover:underline">Digital Twins and Cooperative Mobility</a></li>
+                    <li><a href="/research/connected-autonomous-vehicles/" class="text-blue-600 dark:text-blue-400 hover:underline">Behavior Prediction and Human-Centered AI</a></li>
+                    <li><a href="/research/generative-ai/" class="text-blue-600 dark:text-blue-400 hover:underline">Generative and Agentic AI for Connected and Autonomous Systems</a></li>
                     <li><a href="/research/energy-efficient-computing/" class="text-blue-600 dark:text-blue-400 hover:underline">Energy- and Resource-Efficient Computing</a></li>
                 </ul>
             </div>
@@ -207,6 +249,6 @@
             </div>
         </div>
     </footer>
-    <script src="/js/site.js?v=1791308793"></script>
+    <script src="/js/site.js?v=1792041303"></script>
 </body>
 </html>

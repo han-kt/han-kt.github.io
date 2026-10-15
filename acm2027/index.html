@@ -23,26 +23,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GEG5GDGV8P"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        
-        gtag('js', new Date());
-        
-        // Analytics enabled immediately with privacy settings
-        
-        // Respect Do Not Track
-        if (navigator.doNotTrack == "1" || window.doNotTrack == "1" || navigator.msDoNotTrack == "1") {
-            window['ga-disable-G-GEG5GDGV8P'] = true;
-            gtag('consent', 'update', {
-                'analytics_storage': 'denied'
-            });
-        }
-        
-        gtag('config', 'G-GEG5GDGV8P', {'anonymize_ip': true});
-    </script>
     
     <style>
         body { font-family: 'Inter', system-ui, sans-serif; }
@@ -117,12 +97,8 @@
     <main>
         <!-- Hero Section -->
         <section class="text-white py-16 relative overflow-hidden" style="background-color: #003366;">
-            <!-- Las Vegas Background Image -->
             <div class="absolute inset-0 bg-black/20 z-0"></div>
             <div class="absolute inset-0 z-0" style="background-color: #003366; opacity: 0.95;"></div>
-            <div class="absolute inset-0 z-0">
-                <img src="assets/images/las_vegas.webp" alt="Las Vegas skyline" class="w-full h-full object-cover opacity-30">
-            </div>
             <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center">
                     <h1 class="text-4xl md:text-6xl font-bold mb-6">2nd International Workshop on AI-native Connected Mobility (ACM'27)</h1>
@@ -152,12 +128,6 @@
                         </a>
                     </div>
                 </div>
-            </div>
-            <!-- Photo Credit -->
-            <div class="absolute bottom-2 right-4 z-20">
-                <p class="text-xs text-white/70 bg-black/30 px-2 py-1 rounded">
-                    Photo by Y2kcrazyjoker4, licensed under CC BY 4.0 via Wikimedia Commons
-                </p>
             </div>
         </section>
 

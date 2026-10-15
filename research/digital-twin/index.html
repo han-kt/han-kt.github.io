@@ -3,42 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mobility &amp; Driver Digital Twins — Research — Kyungtae (KT) Han</title>
-    <meta name="description" content="Digital twins of drivers, vehicles, and traffic on a cloud–edge–device architecture, used to learn personalized driving behavior for driver assistance such as adaptive cruise control, lane-change prediction, and distraction recognition.">
+    <title>Digital Twins and Cooperative Mobility — Research — Kyungtae (KT) Han</title>
+    <meta name="description" content="Digital representations and connected systems for cooperative maneuvers, evaluated through co-simulation, prototypes, and selected controlled vehicle studies.">
     <link rel="canonical" href="https://han-kt.github.io/research/digital-twin/">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Kyungtae (KT) Han">
-    <meta property="og:title" content="Mobility &amp; Driver Digital Twins — Research — Kyungtae (KT) Han">
-    <meta property="og:description" content="Digital twins of drivers, vehicles, and traffic on a cloud–edge–device architecture, used to learn personalized driving behavior for driver assistance such as adaptive cruise control, lane-change prediction, and distraction recognition.">
+    <meta property="og:title" content="Digital Twins and Cooperative Mobility — Research — Kyungtae (KT) Han">
+    <meta property="og:description" content="Digital representations and connected systems for cooperative maneuvers, evaluated through co-simulation, prototypes, and selected controlled vehicle studies.">
     <meta property="og:url" content="https://han-kt.github.io/research/digital-twin/">
     <meta property="og:image" content="https://han-kt.github.io/images/KyungtaeHan_850x850.jpg">
     <meta name="twitter:card" content="summary">
     <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
-    <link rel="stylesheet" href="/css/site.css?v=1791308793">
+    <link rel="stylesheet" href="/css/site.css?v=1792041303">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=optional" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script>
         try { if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark'); } catch (e) {}
     </script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GEG5GDGV8P"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        if (navigator.doNotTrack == "1" || window.doNotTrack == "1" || navigator.msDoNotTrack == "1") {
-            window['ga-disable-G-GEG5GDGV8P'] = true;
-            gtag('consent', 'update', { 'analytics_storage': 'denied' });
-        }
-        gtag('config', 'G-GEG5GDGV8P', {'anonymize_ip': true});
-    </script>
+
 </head>
 <body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white">
+    <a href="#content-start" class="skip-link">Skip to content</a>
     <header id="header" class="fixed top-0 w-full bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-700 z-50 transition-transform duration-200">
         <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Main">
             <div class="flex justify-between items-center h-16">
                 <a href="/" class="text-xl font-semibold text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Kyungtae Han</a>
-                <div class="hidden md:flex items-center space-x-1">
+                <div class="hidden lg:flex items-center space-x-1">
                     <a href="/#research" class="px-3 py-2 rounded-md text-sm font-medium transition-colors text-blue-600 dark:text-blue-400" aria-current="page">Research</a>
                     <a href="/publications.html" class="px-3 py-2 rounded-md text-sm font-medium transition-colors text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">Publications</a>
                     <a href="/#teaching" class="px-3 py-2 rounded-md text-sm font-medium transition-colors text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">Teaching</a>
@@ -47,15 +38,15 @@
                     <a href="/#contact" class="px-3 py-2 rounded-md text-sm font-medium transition-colors text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">Contact</a>
                 </div>
                 <div class="flex items-center space-x-3">
-                    <button id="theme-toggle" type="button" class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors" aria-label="Toggle dark mode">
+                    <button id="theme-toggle" type="button" class="h-11 w-11 inline-flex items-center justify-center rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors" aria-label="Toggle dark mode" aria-pressed="false">
                         <i class="fas fa-moon text-gray-600 dark:text-gray-300" aria-hidden="true"></i>
                     </button>
-                    <button id="mobile-menu-btn" type="button" class="block md:hidden p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <button id="mobile-menu-btn" type="button" class="inline-flex lg:hidden h-11 w-11 items-center justify-center rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
                         <i class="fas fa-bars text-gray-600 dark:text-gray-300" aria-hidden="true"></i>
                     </button>
                 </div>
             </div>
-            <div id="mobile-menu" class="hidden md:hidden">
+            <div id="mobile-menu" class="hidden lg:hidden">
                 <div class="px-2 pt-2 pb-3 space-y-1 bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
                     <a href="/#research" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">Research</a>
                     <a href="/publications.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">Publications</a>
@@ -67,63 +58,121 @@
             </div>
         </nav>
     </header>
+    <span id="content-start" tabindex="-1" class="content-start"></span>
 
-    <main class="pt-16">
-        <section class="pt-14 pb-10 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800">
+    <main id="main-content" tabindex="-1" class="pt-16">
+        <section id="question" class="pt-14 pb-10 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 scroll-mt-16" aria-labelledby="area-heading">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 <nav aria-label="Breadcrumb" class="text-sm text-gray-500 dark:text-gray-400 mb-4">
                     <a href="/#research" class="hover:text-blue-600 dark:hover:text-blue-400">Research</a>
                     <span aria-hidden="true"> / </span>
                     <span>Research area</span>
                 </nav>
-                <h1 class="text-3xl md:text-4xl font-semibold text-gray-900 dark:text-white mb-4 text-balance">Mobility &amp; Driver Digital Twins</h1>
-                <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">Driver-assistance systems are usually tuned for an average driver, while individual drivers differ in car following, lane changes, and stop-or-go decisions. This work asks how to keep synchronized models of drivers, vehicles, and traffic, and how to use them to predict and accommodate individual behavior. It develops digital-twin frameworks on a cloud–edge–device architecture and learns personalized driver models within them.</p>
+                <h1 id="area-heading" class="text-3xl md:text-4xl font-semibold text-gray-900 dark:text-white mb-6 text-balance">Digital Twins and Cooperative Mobility</h1>
+                <p class="text-xs font-semibold uppercase tracking-widest text-blue-600 dark:text-blue-400 mb-2">Research question</p>
+                <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">How can shared digital representations help vehicles coordinate? Collaborative research connects vehicle, driver, and traffic models with vehicle-to-cloud communication, develops cooperative maneuver methods, and builds platforms for studying mixed traffic. Evaluations range from Unity–SUMO co-simulation to controlled passenger-vehicle field studies of ramp-merging advisories.</p>
+                <nav aria-label="On this research page" class="mt-6 flex flex-wrap gap-x-5 gap-y-3 text-sm text-blue-600 dark:text-blue-400">
+                    <a href="#themes" class="hover:underline">Contributions</a>
+<a href="#research-visuals" class="hover:underline">Visual overview</a><a href="#validation" class="hover:underline">Evidence</a>                    <a href="#publications" class="hover:underline">Publications</a>
+                </nav>
             </div>
         </section>
 
         <section class="py-10 bg-white dark:bg-gray-900" aria-labelledby="themes">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 id="themes" class="text-xl font-semibold text-gray-900 dark:text-white mb-6">Main themes</h2>
+                <h2 id="themes" class="text-xl font-semibold text-gray-900 dark:text-white mb-6 scroll-mt-24">Methods &amp; contributions</h2>
                 <ol class="space-y-6">
                     <li class="pl-4 border-l-2 border-blue-600 dark:border-blue-400">
-                        <h3 class="font-semibold text-gray-900 dark:text-white">Mobility Digital Twin architecture</h3>
-                        <p class="mt-1 text-gray-700 dark:text-gray-300">A data-driven cloud–edge–device architecture with human, vehicle, and traffic digital twins, demonstrated through a personalized adaptive cruise control case study.</p>
-                        <p class="mt-1 text-sm text-gray-500 dark:text-gray-400"><a href="#Wang2022IOT" class="hover:text-blue-600 dark:hover:text-blue-400" title="Mobility Digital Twin: Concept, Architecture, Case Study, and Future Challenges">Wang et al., IEEE IoT-J 2022</a></p>
+                        <h3 class="font-semibold text-gray-900 dark:text-white">Cooperative ramp merging with connected digital twins</h3>
+                        <p class="mt-1 text-gray-700 dark:text-gray-300">Vehicle and driver digital twins support ramp-merging advisories over cellular vehicle-to-cloud links. A related game-theoretic method studies mixed automated and human-driven traffic with Unity–SUMO co-simulation.</p>
+                        <p class="mt-1 text-sm text-gray-500 dark:text-gray-400"><a href="#Liao2022TITS" class="hover:text-blue-600 dark:hover:text-blue-400" title="Cooperative Ramp Merging Design and Field Implementation: A Digital Twin Approach Based on Vehicle-to-Cloud Communication">Liao et al., IEEE T-ITS 2022</a> · <a href="#Liao2022TSMCS" class="hover:text-blue-600 dark:hover:text-blue-400" title="Game Theory-Based Ramp Merging for Mixed Traffic With Unity-SUMO Co-Simulation">Liao et al., IEEE T-SMC 2022</a> · <a href="https://saemobilus.sae.org/content/12-02-02-0008/" class="hover:text-blue-600 dark:hover:text-blue-400" title="Cooperative Ramp Merging System: Agent-Based Modeling and Simulation Using Game Engine" target="_blank" rel="noopener">Wang et al., SAE JCAV 2019</a></p>
                     </li>
                     <li class="pl-4 border-l-2 border-blue-600 dark:border-blue-400">
-                        <h3 class="font-semibold text-gray-900 dark:text-white">Driver digital twins</h3>
-                        <p class="mt-1 text-gray-700 dark:text-gray-300">Online prediction of an individual driver&#39;s lane-change behavior and online recognition of distracted driving.</p>
-                        <p class="mt-1 text-sm text-gray-500 dark:text-gray-400"><a href="#Liao2023IOTJ" class="hover:text-blue-600 dark:hover:text-blue-400" title="Driver Digital Twin for Online Prediction of Personalized Lane-Change Behavior">Liao et al., IEEE IoT-J 2023</a> · <a href="#Ma2024TIV" class="hover:text-blue-600 dark:hover:text-blue-400" title="Driver Digital Twin for Online Recognition of Distracted Driving Behaviors">Ma et al., IEEE T-IV 2024</a></p>
+                        <h3 class="font-semibold text-gray-900 dark:text-white">Cooperative intersections and roundabouts</h3>
+                        <p class="mt-1 text-gray-700 dark:text-gray-300">Digital-twin-assisted methods extend cooperative-driving studies to non-signalized intersections and roundabouts. These investigate different maneuver geometries through simulation and co-simulation.</p>
+                        <p class="mt-1 text-sm text-gray-500 dark:text-gray-400"><a href="#Wang2022TIV_2" class="hover:text-blue-600 dark:hover:text-blue-400" title="Digital Twin-Assisted Cooperative Driving at Non-Signalized Intersections">Wang et al., IEEE T-IV 2022</a> · <a href="https://ieeexplore.ieee.org/document/10485543" class="hover:text-blue-600 dark:hover:text-blue-400" title="Digital Twin-Based Cooperative Driving at Roundabouts for Connected and Automated Vehicles" target="_blank" rel="noopener">Li et al., IEEE FISTS 2024</a></p>
                     </li>
                     <li class="pl-4 border-l-2 border-blue-600 dark:border-blue-400">
-                        <h3 class="font-semibold text-gray-900 dark:text-white">Personalized car following</h3>
-                        <p class="mt-1 text-gray-700 dark:text-gray-300">Gaussian-process models of individual car-following behavior learned from naturalistic driving data and combined with a predictive safety filter for personalized adaptive cruise control.</p>
-                        <p class="mt-1 text-sm text-gray-500 dark:text-gray-400"><a href="#Wang2022TITS" class="hover:text-blue-600 dark:hover:text-blue-400" title="Gaussian Process-Based Personalized Adaptive Cruise Control">Wang et al., IEEE T-ITS 2022</a> · <a href="https://ieeexplore.ieee.org/document/9564498" class="hover:text-blue-600 dark:hover:text-blue-400" title="Personalized adaptive cruise control via Gaussian process regression" target="_blank" rel="noopener">Wang et al., IEEE ITSC 2021</a></p>
+                        <h3 class="font-semibold text-gray-900 dark:text-white">Architecture and experimental platforms</h3>
+                        <p class="mt-1 text-gray-700 dark:text-gray-300">Mobility Digital Twin organizes human, vehicle, and traffic twins on a cloud–edge–device architecture. Unity and Unity–SUMO platforms support simulation and co-simulation of connected vehicles and mixed traffic.</p>
+                        <p class="mt-1 text-sm text-gray-500 dark:text-gray-400"><a href="#Wang2022IOT" class="hover:text-blue-600 dark:hover:text-blue-400" title="Mobility Digital Twin: Concept, Architecture, Case Study, and Future Challenges">Wang et al., IEEE IoT-J 2022</a> · <a href="https://ieeexplore.ieee.org/document/9540074" class="hover:text-blue-600 dark:hover:text-blue-400" title="Digital twin simulation of connected and automated vehicles with the Unity game engine" target="_blank" rel="noopener">Wang et al., IEEE DTPI 2021</a> · <a href="#Zhao2022SAE" class="hover:text-blue-600 dark:hover:text-blue-400" title="Co-Simulation Platform for Modeling and Evaluating Connected and Automated Vehicles in Mixed Traffic">Zhao et al., SAE JCAV 2022</a></p>
                     </li>
                     <li class="pl-4 border-l-2 border-blue-600 dark:border-blue-400">
-                        <h3 class="font-semibold text-gray-900 dark:text-white">Personalization and trust</h3>
-                        <p class="mt-1 text-gray-700 dark:text-gray-300">A review of personalization in driving behavior covering datasets, modeling, and validation; prediction of personalized stop-or-go decisions in dilemma zones; and planning for automated vehicles that accounts for human trust.</p>
-                        <p class="mt-1 text-sm text-gray-500 dark:text-gray-400"><a href="#Liao2024TIV" class="hover:text-blue-600 dark:hover:text-blue-400" title="A Review of Personalization in Driving Behavior: Dataset, Modeling, and Validation">Liao et al., IEEE T-IV 2025</a> · <a href="#Qin2025RAL" class="hover:text-blue-600 dark:hover:text-blue-400" title="Investigating Personalized Driving Behaviors in Dilemma Zones: Analysis and Prediction of Stop-or-Go Decisions">Qin et al., IEEE RA-L 2025</a> · <a href="https://dl.acm.org/doi/10.1145/3561059" class="hover:text-blue-600 dark:hover:text-blue-400" title="Planning for Automated Vehicles with Human Trust" target="_blank" rel="noopener">Sheng et al., ACM TCPS 2022</a></p>
+                        <h3 class="font-semibold text-gray-900 dark:text-white">Identifying senders and estimating motion over imperfect links</h3>
+                        <p class="mt-1 text-gray-700 dark:text-gray-300">V2V sender identification associates messages with surrounding vehicles, while motion estimation accounts for communication delay and packet loss.</p>
+                        <p class="mt-1 text-sm text-gray-500 dark:text-gray-400"><a href="https://ieeexplore.ieee.org/document/8746463" class="hover:text-blue-600 dark:hover:text-blue-400" title="Vehicle-to-vehicle message sender identification for co-operative driver assistance systems" target="_blank" rel="noopener">Kobayashi et al., IEEE VTC 2019</a> · <a href="https://www.google.com/url?q=https%3A%2F%2Fwww.researchgate.net%2Fpublication%2F348430322_Motion_Estimation_of_Connected_and_Automated_Vehicles_under_Communication_Delay_and_Packet_Loss_of_V2X_Communications&amp;amp;sa=D&amp;amp;sntz=1&amp;amp;usg=AOvVaw2PC9CSYR_cFbVIoSCxf7Qa" class="hover:text-blue-600 dark:hover:text-blue-400" title="Motion estimation of connected and automated vehicles under communication delay and packet loss of V2X communications" target="_blank" rel="noopener">Wang et al., SAE WCX 2021</a></p>
+                    </li>
+                    <li class="pl-4 border-l-2 border-blue-600 dark:border-blue-400">
+                        <h3 class="font-semibold text-gray-900 dark:text-white">Cooperative control and exchanged intent</h3>
+                        <p class="mt-1 text-gray-700 dark:text-gray-300">Lookup-table consensus studies longitudinal coordination, while a separate prototype-vehicle study examines platooning with communicated intent. Edge-assisted misbehavior detection investigates another vulnerability of platoon coordination.</p>
+                        <p class="mt-1 text-sm text-gray-500 dark:text-gray-400"><a href="https://ieeexplore.ieee.org/document/8815239" class="hover:text-blue-600 dark:hover:text-blue-400" title="Lookup table-based consensus algorithm for real-time longitudinal motion control of connected and automated vehicles" target="_blank" rel="noopener">Wang et al., ACC 2019</a> · <a href="#Sharma2026INFOCOM" class="hover:text-blue-600 dark:hover:text-blue-400" title="Using Intent Communication to Enhance Platooning: Validation with Prototype Vehicles">Sharma et al., IEEE INFOCOM 2026 (poster)</a> · <a href="https://ieeexplore.ieee.org/document/9062782" class="hover:text-blue-600 dark:hover:text-blue-400" title="Edge assisted misbehavior detection for platoons" target="_blank" rel="noopener">Kan et al., IEEE VNC 2019</a></p>
+                    </li>
+                    <li class="pl-4 border-l-2 border-blue-600 dark:border-blue-400">
+                        <h3 class="font-semibold text-gray-900 dark:text-white">Making connected information available to drivers</h3>
+                        <p class="mt-1 text-gray-700 dark:text-gray-300">Augmented-reality assistance explores how connected-vehicle information can be presented to a driver.</p>
+                        <p class="mt-1 text-sm text-gray-500 dark:text-gray-400"><a href="https://ieeexplore.ieee.org/document/9283462" class="hover:text-blue-600 dark:hover:text-blue-400" title="Augmented reality-based advanced driver-assistance system for connected vehicles" target="_blank" rel="noopener">Wang et al., IEEE SMC 2020</a></p>
                     </li>
                 </ol>
             </div>
         </section>
 
+        <section class="pb-10 bg-white dark:bg-gray-900" aria-labelledby="research-visuals">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 id="research-visuals" class="text-xl font-semibold text-gray-900 dark:text-white mb-5 scroll-mt-24">Visual overview</h2>
+                <div class="space-y-6">
+                    <figure class="research-visual" data-visual-id="mobility-driver-scoring-field" data-visual-type="published-figure">
+    <div class="research-visual-frame">
+        <a href="/images/research/mobility-driver-scoring-field.png" target="_blank" rel="noopener" class="block" aria-label="Open full-size figure: Published road-view demonstration of cloud-based driver scoring in Mountain View, with safety, comfort, eco, overall, trip, cloud, and speed indicators.">
+        <img src="/images/research/mobility-driver-scoring-field.png" alt="Published road-view demonstration of cloud-based driver scoring in Mountain View, with safety, comfort, eco, overall, trip, cloud, and speed indicators." width="998" height="445" loading="lazy" decoding="async" class="research-visual-image">
+        </a>
+    </div>
+    <figcaption class="mt-3 text-xs leading-relaxed text-gray-600 dark:text-gray-400">
+        <p>Mobility Digital Twin&#39;s cloud-based driver-scoring demonstration in Mountain View, California.</p>
+        <p class="mt-1">Z. Wang et al., Mobility Digital Twin: Concept, Architecture, Case Study, and Future Challenges, IEEE IoT Journal (2022), Figure 3. DOI: 10.1109/JIOT.2022.3156028. © 2022 IEEE. Extracted from author manuscript; labels unchanged. Reused for the coauthor&#39;s personal academic use; no IEEE endorsement. <a href="https://han-kt.github.io/publications/22_IoTJ/wang22iotj.pdf" class="text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">Source<span class="sr-only"> for mobility-driver-scoring-field</span> <span aria-hidden="true">&nearr;</span></a> <span aria-hidden="true">·</span> <a href="https://ecopyright.ieee.org/ECTT/popups/ieee_retainedrights.jsp" class="text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">IEEE author-retained rights (not an open license)</a></p>
+    </figcaption>
+</figure>
+
+                    <figure class="research-visual" data-visual-id="personalized-trajectory-results">
+    <div class="research-visual-frame">
+        <a href="/images/research/personalized-trajectory-results.png" target="_blank" rel="noopener" class="block" aria-label="Open full-size figure: Original paper chart comparing generic and personalized GCN-LSTM trajectory prediction RMSE over prediction horizons from 0.5 to 5 seconds.">
+        <img src="/images/research/personalized-trajectory-results.png" alt="Original paper chart comparing generic and personalized GCN-LSTM trajectory prediction RMSE over prediction horizons from 0.5 to 5 seconds." width="996" height="576" loading="lazy" decoding="async" class="research-visual-image">
+        </a>
+    </div>
+    <figcaption class="mt-3 text-xs leading-relaxed text-gray-600 dark:text-gray-400">
+        <p>Generic and personalized GCN-LSTM trajectory prediction compared on human-in-the-loop simulation data.</p>
+        <p class="mt-1">Amr Abdelraouf, Rohit Gupta, and Kyungtae Han (2023), Figure 4, arXiv:2308.07439v2. CC BY 4.0. Rasterized and cropped from the author preprint; data and labels unchanged. <a href="https://arxiv.org/abs/2308.07439v2" class="text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">Source<span class="sr-only"> for personalized-trajectory-results</span> <span aria-hidden="true">&nearr;</span></a> <span aria-hidden="true">·</span> <a href="https://creativecommons.org/licenses/by/4.0/" class="text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">CC BY 4.0</a></p>
+    </figcaption>
+</figure>
+
+                </div>
+            </div>
+        </section>
+
         <section class="pb-10 bg-white dark:bg-gray-900" aria-labelledby="validation">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 id="validation" class="text-xl font-semibold text-gray-900 dark:text-white mb-5">Systems and validation</h2>
+                <h2 id="validation" class="text-xl font-semibold text-gray-900 dark:text-white mb-5 scroll-mt-24">Systems & evidence</h2>
                 <ul class="space-y-3 list-disc pl-5 text-gray-800 dark:text-gray-200">
-                    <li>Learning-based models of driver speed-tracking error for advisory speed assistance, tested with 17 drivers on a Unity game-engine driving simulator and further validated in a field implementation. <span class="text-sm text-gray-500 dark:text-gray-400">(<a href="https://ieeexplore.ieee.org/document/9084240" class="hover:text-blue-600 dark:hover:text-blue-400" title="Driver Behavior Modeling Using Game Engine and Real Vehicle: A Learning-Based Approach" target="_blank" rel="noopener">Wang et al., IEEE T-IV 2020</a>)</span></li>
-                    <li>Digital-twin simulation of connected and automated vehicles with the Unity game engine (Best Application Award). <span class="text-sm text-gray-500 dark:text-gray-400">(<a href="https://ieeexplore.ieee.org/document/9540074" class="hover:text-blue-600 dark:hover:text-blue-400" title="Digital twin simulation of connected and automated vehicles with the Unity game engine" target="_blank" rel="noopener">Wang et al., IEEE DTPI 2021</a>)</span></li>
+                    <li>Cooperative ramp merging was implemented with passenger vehicles over a cellular vehicle-to-cloud link in a controlled field study. <span class="text-sm text-gray-500 dark:text-gray-400">(<a href="#Liao2022TITS" class="hover:text-blue-600 dark:hover:text-blue-400" title="Cooperative Ramp Merging Design and Field Implementation: A Digital Twin Approach Based on Vehicle-to-Cloud Communication">Liao et al., IEEE T-ITS 2022</a>)</span></li>
+                    <li>Intent-enabled platooning was evaluated with prototype vehicles; digital-twin-assisted intersection work reports a separate simulation study. <span class="text-sm text-gray-500 dark:text-gray-400">(<a href="#Sharma2026INFOCOM" class="hover:text-blue-600 dark:hover:text-blue-400" title="Using Intent Communication to Enhance Platooning: Validation with Prototype Vehicles">Sharma et al., IEEE INFOCOM 2026 (poster)</a>; <a href="#Wang2022TIV_2" class="hover:text-blue-600 dark:hover:text-blue-400" title="Digital Twin-Assisted Cooperative Driving at Non-Signalized Intersections">Wang et al., IEEE T-IV 2022</a>)</span></li>
+                    <li>The Mobility Digital Twin architecture uses personalized ACC as a case study connecting human, vehicle, and traffic representations with assistance. <span class="text-sm text-gray-500 dark:text-gray-400">(<a href="#Wang2022IOT" class="hover:text-blue-600 dark:hover:text-blue-400" title="Mobility Digital Twin: Concept, Architecture, Case Study, and Future Challenges">Wang et al., IEEE IoT-J 2022</a>)</span></li>
                 </ul>
             </div>
         </section>
 
         <section class="py-12 bg-gray-50 dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700" aria-labelledby="publications">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 id="publications" class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Representative publications</h2>
+                <h2 id="publications" class="text-xl font-semibold text-gray-900 dark:text-white mb-2 scroll-mt-24">Representative publications</h2>
                 <p class="text-sm text-gray-600 dark:text-gray-400 mb-6">A curated selection. Citations above link to each paper; see the <a href="/publications.html" class="text-blue-600 dark:text-blue-400 hover:underline">full publication list</a> for all work.</p>
                 <div class="space-y-4">
+                    <div id="Liao2022TITS" class="scroll-mt-24"><article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-5 md:p-6 border border-gray-200 dark:border-gray-700">
+    <div class="flex flex-wrap items-center gap-2 mb-2">
+        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">IEEE T-ITS</span>
+<span class="text-xs text-gray-500 dark:text-gray-400">2022</span>    </div>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Cooperative Ramp Merging Design and Field Implementation: A Digital Twin Approach Based on Vehicle-to-Cloud Communication</h3>
+    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">X. Liao, Z. Wang, X. Zhao, <strong>K. Han</strong>, P. Tiwari, M. Barth, and G. Wu</p>
+<p class="text-sm text-gray-500 dark:text-gray-400 italic mb-2">IEEE Transactions on Intelligent Transportation Systems, vol. 23, no. 5, pp. 4490–4500</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
+<a href="https://ieeexplore.ieee.org/document/9502522" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View paper &rarr;</a><a href="https://www.researchgate.net/publication/346693247_Cooperative_Ramp_Merging_Design_and_Field_Implementation_A_Digital_Twin_Approach_Based_on_Vehicle-to-Cloud_Communication" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">PDF &rarr;</a>    </div>
+</article></div>
                     <div id="Wang2022IOT" class="scroll-mt-24"><article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-5 md:p-6 border border-gray-200 dark:border-gray-700">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">IEEE IoT-J</span>
@@ -133,50 +182,41 @@
 <p class="text-sm text-gray-500 dark:text-gray-400 italic mb-2">IEEE Internet of Things Journal, vol. 9, no. 18, pp. 17452–17467</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
 <a href="https://ieeexplore.ieee.org/document/9724183" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View paper &rarr;</a><a href="https://www.researchgate.net/publication/358970927_Mobility_Digital_Twin_Concept_Architecture_Case_Study_and_Future_Challenges" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">PDF &rarr;</a>    </div>
 </article></div>
-                    <div id="Liao2023IOTJ" class="scroll-mt-24"><article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-5 md:p-6 border border-gray-200 dark:border-gray-700">
+                    <div id="Liao2022TSMCS" class="scroll-mt-24"><article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-5 md:p-6 border border-gray-200 dark:border-gray-700">
     <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">IEEE IoT-J</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2023</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Driver Digital Twin for Online Prediction of Personalized Lane-Change Behavior</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">X. Liao, X. Zhao, Z. Wang, Z. Zhao, <strong>K. Han</strong>, R. Gupta, M. Barth, and G. Wu</p>
-<p class="text-sm text-gray-500 dark:text-gray-400 italic mb-2">IEEE Internet of Things Journal, vol. 10, no. 15, pp. 13235–13246</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://arxiv.org/abs/2211.01294" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View paper &rarr;</a><a href="https://arxiv.org/pdf/2211.01294.pdf" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">PDF &rarr;</a>    </div>
-</article></div>
-                    <div id="Ma2024TIV" class="scroll-mt-24"><article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-5 md:p-6 border border-gray-200 dark:border-gray-700">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">IEEE T-IV</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2024</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Driver Digital Twin for Online Recognition of Distracted Driving Behaviors</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Y. Ma, R. Du, A. Abdelraouf, <strong>K. Han</strong>, R. Gupta, and Z. Wang</p>
-<p class="text-sm text-gray-500 dark:text-gray-400 italic mb-2">IEEE Transactions on Intelligent Vehicles, vol. 9, no. 2, pp. 3168–3180</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://ieeexplore.ieee.org/document/10398504" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View paper &rarr;</a>    </div>
-</article></div>
-                    <div id="Wang2022TITS" class="scroll-mt-24"><article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-5 md:p-6 border border-gray-200 dark:border-gray-700">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">IEEE T-ITS</span>
+        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">IEEE T-SMC</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2022</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Gaussian Process-Based Personalized Adaptive Cruise Control</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Y. Wang, Z. Wang, <strong>K. Han</strong>, P. Tiwari, and D. Work</p>
-<p class="text-sm text-gray-500 dark:text-gray-400 italic mb-2">IEEE Transactions on Intelligent Transportation Systems, vol. 23, no. 11, pp. 21178–21189</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://ieeexplore.ieee.org/document/9774935" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View paper &rarr;</a><a href="https://www.researchgate.net/publication/360584831_Gaussian_Process-Based_Personalized_Adaptive_Cruise_Control" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">PDF &rarr;</a>    </div>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Game Theory-Based Ramp Merging for Mixed Traffic With Unity-SUMO Co-Simulation</h3>
+    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">X. Liao, X. Zhao, Z. Wang, <strong>K. Han</strong>, P. Tiwari, M. Barth, and G. Wu</p>
+<p class="text-sm text-gray-500 dark:text-gray-400 italic mb-2">IEEE Transactions on Systems, Man, and Cybernetics: Systems, vol. 52, no. 9, pp. 5746–5757</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
+<a href="https://ieeexplore.ieee.org/document/9646262" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View paper &rarr;</a><a href="https://www.researchgate.net/publication/348137663_Game_Theory-Based_Ramp_Merging_for_Mixed_Traffic_With_Unity-SUMO_Co-Simulation" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">PDF &rarr;</a>    </div>
 </article></div>
-                    <div id="Liao2024TIV" class="scroll-mt-24"><article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-5 md:p-6 border border-gray-200 dark:border-gray-700">
+                    <div id="Wang2022TIV_2" class="scroll-mt-24"><article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-5 md:p-6 border border-gray-200 dark:border-gray-700">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">IEEE T-IV</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2025</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">A Review of Personalization in Driving Behavior: Dataset, Modeling, and Validation</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">X. Liao, Z. Zhao, M. Barth, A. Abdelraouf, R. Gupta, <strong>K. Han</strong>, J. Ma, and G. Wu</p>
-<p class="text-sm text-gray-500 dark:text-gray-400 italic mb-2">IEEE Transactions on Intelligent Vehicles, vol. 10, no. 2, pp. 1241–1262</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://ieeexplore.ieee.org/document/10591381" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View paper &rarr;</a><a href="/publications/24_TIV/Liao2024TIV.pdf" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">PDF &rarr;</a>    </div>
+<span class="text-xs text-gray-500 dark:text-gray-400">2022</span>    </div>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Digital Twin-Assisted Cooperative Driving at Non-Signalized Intersections</h3>
+    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Z. Wang, <strong>K. Han</strong>, and P. Tiwari</p>
+<p class="text-sm text-gray-500 dark:text-gray-400 italic mb-2">IEEE Transactions on Intelligent Vehicles, vol. 7, no. 2, pp. 198--209</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
+<a href="https://ieeexplore.ieee.org/document/9497693" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View paper &rarr;</a><a href="https://www.researchgate.net/publication/351076216_Digital_Twin-Assisted_Cooperative_Driving_at_Non-Signalized_Intersections" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">PDF &rarr;</a>    </div>
 </article></div>
-                    <div id="Qin2025RAL" class="scroll-mt-24"><article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-5 md:p-6 border border-gray-200 dark:border-gray-700">
+                    <div id="Zhao2022SAE" class="scroll-mt-24"><article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-5 md:p-6 border border-gray-200 dark:border-gray-700">
     <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">IEEE RA-L</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2025</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Investigating Personalized Driving Behaviors in Dilemma Zones: Analysis and Prediction of Stop-or-Go Decisions</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Z. Qin, S. Li, C. Wei, G. Wu, M. Barth, A. Abdelraouf, R. Gupta, and <strong>K. Han</strong></p>
-<p class="text-sm text-gray-500 dark:text-gray-400 italic mb-2">IEEE Robotics and Automation Letters, vol. 10, no. 10, pp. 10035–10042</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://ieeexplore.ieee.org/document/11122292" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View paper &rarr;</a><a href="https://arxiv.org/pdf/2405.03873.pdf" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">PDF &rarr;</a>    </div>
+        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">SAE JCAV</span>
+<span class="text-xs text-gray-500 dark:text-gray-400">2022</span>    </div>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Co-Simulation Platform for Modeling and Evaluating Connected and Automated Vehicles in Mixed Traffic</h3>
+    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">X. Zhao, X. Liao, G. Wu, M. Barth, Z. Wang, <strong>K. Han</strong>, and P. Tiwari</p>
+<p class="text-sm text-gray-500 dark:text-gray-400 italic mb-2">SAE International Journal of Connected and Automated Vehicles, vol. 5, no. 4, pp. 313--326</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
+<a href="https://saemobilus.sae.org/content/12-05-04-0025/" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View paper &rarr;</a><a href="https://www.researchgate.net/publication/356325538_Co-Simulation_Platform_for_Modeling_and_Evaluating_Connected_and_Automated_Vehicles_and_Human_Behavior_in_Mixed_Traffic" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">PDF &rarr;</a>    </div>
+</article></div>
+                    <div id="Sharma2026INFOCOM" class="scroll-mt-24"><article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-5 md:p-6 border border-gray-200 dark:border-gray-700">
+    <div class="flex flex-wrap items-center gap-2 mb-2">
+        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">IEEE INFOCOM</span>
+<span class="text-xs text-gray-500 dark:text-gray-400">2026</span><span class="text-xs px-2 py-0.5 rounded bg-gray-100 text-gray-600 dark:bg-gray-700 dark:text-gray-300">Poster</span>    </div>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Using Intent Communication to Enhance Platooning: Validation with Prototype Vehicles</h3>
+    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">S. Sharma, A. Moradipari, S. Avedisov, M. Nour, S. Mishra, <strong>K. Han</strong>, A. Abdelraouf, T. Shimizu, and O. Altintas</p>
+<p class="text-sm text-gray-500 dark:text-gray-400 italic mb-2">IEEE INFOCOM 2026, Tokyo, Japan</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
+<a href="https://ieeexplore.ieee.org/document/11571305" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View paper &rarr;</a>    </div>
 </article></div>
                 </div>
                 <p class="mt-8">
@@ -189,9 +229,9 @@
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 id="other-areas" class="text-sm font-semibold uppercase tracking-widest text-gray-500 dark:text-gray-400 mb-4">Other research areas</h2>
                 <ul class="flex flex-wrap gap-x-6 gap-y-2">
-                    <li><a href="/research/generative-ai/" class="text-blue-600 dark:text-blue-400 hover:underline">Multimodal Scene Understanding &amp; Language-Guided Driving</a></li>
-                    <li><a href="/research/connected-autonomous-vehicles/" class="text-blue-600 dark:text-blue-400 hover:underline">Cooperative Driving Automation &amp; V2X</a></li>
-                    <li><a href="/research/edge-computing/" class="text-blue-600 dark:text-blue-400 hover:underline">Vehicular Edge Computing &amp; Networking</a></li>
+                    <li><a href="/research/connected-autonomous-vehicles/" class="text-blue-600 dark:text-blue-400 hover:underline">Behavior Prediction and Human-Centered AI</a></li>
+                    <li><a href="/research/generative-ai/" class="text-blue-600 dark:text-blue-400 hover:underline">Generative and Agentic AI for Connected and Autonomous Systems</a></li>
+                    <li><a href="/research/edge-computing/" class="text-blue-600 dark:text-blue-400 hover:underline">Edge Computing and Resource-Aware AI</a></li>
                     <li><a href="/research/energy-efficient-computing/" class="text-blue-600 dark:text-blue-400 hover:underline">Energy- and Resource-Efficient Computing</a></li>
                 </ul>
             </div>
@@ -210,6 +250,6 @@
             </div>
         </div>
     </footer>
-    <script src="/js/site.js?v=1791308793"></script>
+    <script src="/js/site.js?v=1792041303"></script>
 </body>
 </html>

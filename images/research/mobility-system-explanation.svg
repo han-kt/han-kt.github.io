@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="880" viewBox="0 0 760 880" role="img" aria-labelledby="title desc">
+  <title id="title">Mobility digital twin: observations and guidance</title>
+  <desc id="desc">Original explanatory diagram based on Wang and colleagues, Mobility Digital Twin, 2022. Observations from people, vehicles, and traffic enter the cloud and edge digital space. Human, vehicle, and traffic digital counterparts support storage, modeling, learning, simulation, and prediction. Digital services return guidance and assistance to the physical space. This is a conceptual data loop, not an experimental result.</desc>
+  <defs>
+    <marker id="data-arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0 10 5 0 10Z" fill="#087f8c"/>
+    </marker>
+    <marker id="guidance-arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0 12 6 0 12Z" fill="#aa570a"/>
+    </marker>
+  </defs>
+  <rect width="760" height="880" rx="24" fill="#f6f8fc"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#142d4e">
+    <text x="48" y="62" font-size="40" font-weight="700">Mobility digital twin</text>
+    <text x="48" y="104" font-size="30" fill="#425570">A connected data–guidance loop</text>
+
+    <rect x="48" y="150" width="616" height="112" rx="18" fill="#fff" stroke="#142d4e" stroke-width="3"/>
+    <text x="76" y="188" font-size="28" fill="#425570">PHYSICAL SPACE</text>
+    <text x="76" y="234" font-size="34" font-weight="700">People · Vehicles · Traffic</text>
+
+    <path d="M356 264V350" fill="none" stroke="#087f8c" stroke-width="5" marker-end="url(#data-arrow)"/>
+    <text x="380" y="316" font-size="32" fill="#076773">Observations</text>
+
+    <rect x="48" y="364" width="616" height="300" rx="22" fill="#eaf0fa" stroke="#42638e" stroke-width="3"/>
+    <text x="76" y="414" font-size="34" font-weight="700">Cloud / edge digital space</text>
+    <g fill="#fff" stroke="#42638e" stroke-width="2">
+      <path d="M76 468Q76 451 166 451Q256 451 256 468V505Q256 522 166 522Q76 522 76 505Z"/>
+      <path d="M266 468Q266 451 356 451Q446 451 446 468V505Q446 522 356 522Q266 522 266 505Z"/>
+      <path d="M456 468Q456 451 546 451Q636 451 636 468V505Q636 522 546 522Q456 522 456 505Z"/>
+    </g>
+    <g font-size="32" font-weight="700" text-anchor="middle">
+      <text x="166" y="497">Human</text>
+      <text x="356" y="497">Vehicle</text>
+      <text x="546" y="497">Traffic</text>
+    </g>
+    <text x="356" y="560" text-anchor="middle" font-size="30" fill="#425570">Digital counterparts</text>
+    <path d="M76 580H636" stroke="#a8b9d3" stroke-width="2"/>
+    <text x="356" y="613" text-anchor="middle" font-size="30">Storage · models · learning</text>
+    <text x="356" y="648" text-anchor="middle" font-size="30">Simulation · prediction</text>
+
+    <path d="M356 666V738" fill="none" stroke="#aa570a" stroke-width="5" marker-end="url(#guidance-arrow)"/>
+    <text x="382" y="715" font-size="30" fill="#914800">Services</text>
+    <rect x="48" y="752" width="616" height="80" rx="18" fill="#fff2dc" stroke="#aa570a" stroke-width="3"/>
+    <text x="356" y="803" text-anchor="middle" font-size="34" font-weight="700" fill="#834200">Guidance &amp; assistance</text>
+    <path d="M665 792H710V206H671" fill="none" stroke="#aa570a" stroke-width="5" stroke-linejoin="round" marker-end="url(#guidance-arrow)"/>
+  </g>
+</svg>

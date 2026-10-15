@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>document.documentElement.classList.add('publication-filters');</script>
     <title>Publications — Kyungtae (KT) Han</title>
     <meta name="description" content="Journal articles, conference papers, books, presentations, and patents by Kyungtae (KT) Han on connected and automated vehicles, multimodal AI for driving, vehicular edge computing, digital twins, and energy-efficient computing.">
     <link rel="canonical" href="https://han-kt.github.io/publications.html">
@@ -14,31 +15,22 @@
     <meta property="og:image" content="https://han-kt.github.io/images/KyungtaeHan_850x850.jpg">
     <meta name="twitter:card" content="summary">
     <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
-    <link rel="stylesheet" href="/css/site.css?v=1791308793">
+    <link rel="stylesheet" href="/css/site.css?v=1792041303">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=optional" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script>
         try { if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark'); } catch (e) {}
     </script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GEG5GDGV8P"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        if (navigator.doNotTrack == "1" || window.doNotTrack == "1" || navigator.msDoNotTrack == "1") {
-            window['ga-disable-G-GEG5GDGV8P'] = true;
-            gtag('consent', 'update', { 'analytics_storage': 'denied' });
-        }
-        gtag('config', 'G-GEG5GDGV8P', {'anonymize_ip': true});
-    </script>
+
 </head>
 <body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white">
+    <a href="#content-start" class="skip-link">Skip to content</a>
     <header id="header" class="fixed top-0 w-full bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-700 z-50 transition-transform duration-200">
         <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Main">
             <div class="flex justify-between items-center h-16">
                 <a href="/" class="text-xl font-semibold text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Kyungtae Han</a>
-                <div class="hidden md:flex items-center space-x-1">
+                <div class="hidden lg:flex items-center space-x-1">
                     <a href="/#research" class="px-3 py-2 rounded-md text-sm font-medium transition-colors text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">Research</a>
                     <a href="/publications.html" class="px-3 py-2 rounded-md text-sm font-medium transition-colors text-blue-600 dark:text-blue-400" aria-current="page">Publications</a>
                     <a href="/#teaching" class="px-3 py-2 rounded-md text-sm font-medium transition-colors text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">Teaching</a>
@@ -47,15 +39,15 @@
                     <a href="/#contact" class="px-3 py-2 rounded-md text-sm font-medium transition-colors text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">Contact</a>
                 </div>
                 <div class="flex items-center space-x-3">
-                    <button id="theme-toggle" type="button" class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors" aria-label="Toggle dark mode">
+                    <button id="theme-toggle" type="button" class="h-11 w-11 inline-flex items-center justify-center rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors" aria-label="Toggle dark mode" aria-pressed="false">
                         <i class="fas fa-moon text-gray-600 dark:text-gray-300" aria-hidden="true"></i>
                     </button>
-                    <button id="mobile-menu-btn" type="button" class="block md:hidden p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <button id="mobile-menu-btn" type="button" class="inline-flex lg:hidden h-11 w-11 items-center justify-center rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
                         <i class="fas fa-bars text-gray-600 dark:text-gray-300" aria-hidden="true"></i>
                     </button>
                 </div>
             </div>
-            <div id="mobile-menu" class="hidden md:hidden">
+            <div id="mobile-menu" class="hidden lg:hidden">
                 <div class="px-2 pt-2 pb-3 space-y-1 bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
                     <a href="/#research" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">Research</a>
                     <a href="/publications.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">Publications</a>
@@ -67,6 +59,7 @@
             </div>
         </nav>
     </header>
+    <span id="content-start" tabindex="-1" class="content-start"></span>
 
     <main class="pt-16">
         <section class="pt-14 pb-8 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800">
@@ -80,7 +73,7 @@
                     <a href="#presentations" class="hover:text-blue-600 dark:hover:text-blue-400">8 conference presentations</a>
                 </p>
                 <p class="text-sm text-gray-600 dark:text-gray-400">
-                    Patents (listed <a href="#patents" class="text-blue-600 dark:text-blue-400 hover:underline">separately</a>): 63 granted U.S. patents and 59 U.S. patent applications.
+                    Patents (listed <a href="#patents" class="text-blue-600 dark:text-blue-400 hover:underline">separately</a>): 60 granted U.S. patents and 0 U.S. patent applications.
                     Also on <a href="https://scholar.google.com/citations?hl=en&amp;user=MejLLHgAAAAJ&amp;view_op=list_works&amp;sortby=pubdate" class="text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">Google Scholar</a>.
                 </p>
             </div>
@@ -369,7 +362,7 @@
                         <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="Han2026ITSC" data-type="conference" data-year="2026" data-search="tonic meta-control for adaptive safety-compute allocation via persistent vigilance dynamics k. han, y. chen, n. ammar, and o. altintas 2026 ieee 29th international conference on intelligent transportation systems (itsc) 2026">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">IEEE ITSC</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2026</span><span class="text-xs px-2 py-0.5 rounded bg-gray-100 text-gray-600 dark:bg-gray-700 dark:text-gray-300">Presented</span>    </div>
+<span class="text-xs text-gray-500 dark:text-gray-400">2026</span><span class="text-xs px-2 py-0.5 rounded bg-gray-100 text-gray-600 dark:bg-gray-700 dark:text-gray-300">Accepted</span>    </div>
     <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Tonic Meta-Control for Adaptive Safety-Compute Allocation via Persistent Vigilance Dynamics</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1"><strong>K. Han</strong>, Y. Chen, N. Ammar, and O. Altintas</p>
 <p class="text-sm text-gray-500 dark:text-gray-400 italic mb-2">2026 IEEE 29th International Conference on Intelligent Transportation Systems (ITSC)</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
@@ -1197,459 +1190,432 @@
                 <details class="pub-details group/details">
                     <summary class="cursor-pointer list-none">
                         <h2 id="patents-h" class="inline text-2xl font-semibold text-gray-900 dark:text-white">Patents</h2>
-                        <span class="ml-2 text-sm text-gray-500 dark:text-gray-400">(122) &middot; <span class="text-blue-600 dark:text-blue-400">show / hide</span></span>
+                        <span class="ml-2 text-sm text-gray-500 dark:text-gray-400">(60) &middot; <span class="text-blue-600 dark:text-blue-400">show / hide</span></span>
                     </summary>
 <p class="mt-3 text-sm text-gray-600 dark:text-gray-400">Granted U.S. patents and U.S. patent applications, listed separately.</p>                <div class="pub-subgroup mt-6">
-<h3 class="text-sm font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400 mb-3">Granted U.S. patents (63)</h3>                    <div class="space-y-3">
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_023" data-type="patent" data-year="2026" data-search="edge-assisted occlusion mitigation y. chen, d. chen, k. han, and o. altintas u.s. patent 12 715 362, aug. 25, 2026 2026">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2026</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Edge-Assisted Occlusion Mitigation</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Y. Chen, D. Chen, <strong>K. Han</strong>, and O. Altintas</p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 12 715 362, Aug. 25, 2026</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US12715362" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
-</article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_066" data-type="patent" data-year="2026" data-search="system framework for selecting computing device to perform vehicle applications with cloud and edge computing h. wang, d. chen, r. gupta, and k. han u.s. patent 12 717 613, aug. 25, 2026 2026">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2026</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">System Framework for Selecting Computing Device to Perform Vehicle Applications with Cloud and Edge Computing</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">H. Wang, D. Chen, R. Gupta, and <strong>K. Han</strong></p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 12 717 613, Aug. 25, 2026</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US12717613" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
-</article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_090" data-type="patent" data-year="2026" data-search="personalized adaptive cruise control based on steady-state operation z. zhao, z. wang, r. gupta, k. han, and p. tiwari u.s. patent 12 715 438, aug. 25, 2026 2026">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2026</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Personalized Adaptive Cruise Control Based On Steady-State Operation</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Z. Zhao, Z. Wang, R. Gupta, <strong>K. Han</strong>, and P. Tiwari</p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 12 715 438, Aug. 25, 2026</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US12715438" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
-</article>
+<h3 class="text-sm font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400 mb-3">Granted U.S. patents (60)</h3>                    <div class="space-y-3">
                         <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_085" data-type="patent" data-year="2026" data-search="personalized vehicle lane change maneuver prediction z. wang, k. han, r. gupta, and p. tiwari u.s. patent 12 515 678, jan. 6, 2026 2026">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2026</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Personalized Vehicle Lane Change Maneuver Prediction</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Personalized vehicle lane change maneuver prediction</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Z. Wang, <strong>K. Han</strong>, R. Gupta, and P. Tiwari</p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 12 515 678, Jan. 6, 2026</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US12515678" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US12515678B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_052" data-type="patent" data-year="2025" data-search="systems and methods for efficient video instance segmentation for vehicles using edge y. chen, d. chen, and k. han u.s. patent 12 499 555, dec. 16, 2025 2025">
+                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_052" data-type="patent" data-year="2025" data-search="systems and methods for efficient video instance segmentation for vehicles using edge computing y. chen, d. chen, and k. han u.s. patent 12 499 555, dec. 16, 2025 2025">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2025</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Systems and Methods for Efficient Video Instance Segmentation for Vehicles Using Edge</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Systems and methods for efficient video instance segmentation for vehicles using edge computing</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Y. Chen, D. Chen, and <strong>K. Han</strong></p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 12 499 555, Dec. 16, 2025</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US12499555" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US12499555B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
                         <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_075" data-type="patent" data-year="2025" data-search="method and system for modeling personalized car-following driving styles with model-free inverse reinforcement learning z. wang, k. han, and r. gupta u.s. patent 12 485 911, dec. 2, 2025 2025">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2025</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Method and System for Modeling Personalized Car-Following Driving Styles with Model-Free Inverse Reinforcement Learning</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Method and system for modeling personalized car-following driving styles with model-free inverse reinforcement learning</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Z. Wang, <strong>K. Han</strong>, and R. Gupta</p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 12 485 911, Dec. 2, 2025</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US12485911" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US12485911B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
                         <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_030" data-type="patent" data-year="2025" data-search="trigger event personalized adaptive cruise control (p-acc) r. gupta, a. abdelraouf, and k. han u.s. patent 12 466 405, nov. 11, 2025 2025">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2025</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Trigger Event Personalized Adaptive Cruise Control (P-ACC)</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Trigger event personalized adaptive cruise control (P-ACC)</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">R. Gupta, A. Abdelraouf, and <strong>K. Han</strong></p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 12 466 405, Nov. 11, 2025</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US12466405" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US12466405B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
                         <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_062" data-type="patent" data-year="2025" data-search="lane change assist for inexperienced driver r. gupta, a. abdelraouf, and k. han u.s. patent 12 428 033, sep. 30, 2025 2025">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2025</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Lane Change Assist for Inexperienced Driver</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Lane change assist for inexperienced driver</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">R. Gupta, A. Abdelraouf, and <strong>K. Han</strong></p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 12 428 033, Sep. 30, 2025</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US12428033" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US12428033B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
                         <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_050" data-type="patent" data-year="2025" data-search="methods and systems for collision control of moving vehicles surrounded by vehicles r. gupta, a. abdelraouf, and k. han u.s. patent 12 415 545, sep. 16, 2025 2025">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2025</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Methods and Systems for Collision Control of Moving Vehicles Surrounded By Vehicles</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Methods and systems for collision control of moving vehicles surrounded by vehicles</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">R. Gupta, A. Abdelraouf, and <strong>K. Han</strong></p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 12 415 545, Sep. 16, 2025</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US12415545" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US12415545B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_071" data-type="patent" data-year="2025" data-search="systems and method for active road surface maintenance with cloud-based mobility digital twin z. wang, r. gupta, and k. han u.s. patent 12 415 539, sep. 16, 2025 2025">
+                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_071" data-type="patent" data-year="2025" data-search="systems and methods for active road surface maintenance with cloud-based mobility digital twin z. wang, r. gupta, and k. han u.s. patent 12 415 539, sep. 16, 2025 2025">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2025</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Systems and Method for Active Road Surface Maintenance with Cloud-Based Mobility Digital Twin</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Systems and methods for active road surface maintenance with cloud-based mobility digital twin</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Z. Wang, R. Gupta, and <strong>K. Han</strong></p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 12 415 539, Sep. 16, 2025</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US12415539" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US12415539B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
                         <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_032" data-type="patent" data-year="2025" data-search="systems and methods for selecting edge nodes for task performance d. chen, q. chen, r. gupta, and k. han u.s. patent 12 395 411, aug. 19, 2025 2025">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2025</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Systems and Methods for Selecting Edge Nodes For Task Performance</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Systems and methods for selecting edge nodes for task performance</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">D. Chen, Q. Chen, R. Gupta, and <strong>K. Han</strong></p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 12 395 411, Aug. 19, 2025</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US12395411" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US12395411B1/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
                         <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_022" data-type="patent" data-year="2025" data-search="systems and methods for resource-optimized mixed reality using user-centric adaptive object detection d. doe, d. chen, and k. han u.s. patent 12 387 489, aug. 12, 2025 2025">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2025</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Systems and Methods for Resource-optimized Mixed Reality Using User-Centric Adaptive Object Detection</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Systems and methods for resource-optimized mixed reality using user-centric adaptive object detection</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">D. Doe, D. Chen, and <strong>K. Han</strong></p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 12 387 489, Aug. 12, 2025</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US12387489" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US12387489B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
                         <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_058" data-type="patent" data-year="2025" data-search="omnidirectional collision avoidance a. abdelraouf, r. gupta, h. abdelkawy, and k. han u.s. patent 12 361 829, jul. 15, 2025 2025">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2025</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Omnidirectional Collision Avoidance</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Omnidirectional collision avoidance</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">A. Abdelraouf, R. Gupta, H. Abdelkawy, and <strong>K. Han</strong></p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 12 361 829, Jul. 15, 2025</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US12361829" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US12361829B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
                         <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_001" data-type="patent" data-year="2025" data-search="systems and methods for communication-aware federated learning y. chan, d. chen, h. wang, and k. han u.s. patent 12 337 867, jun. 24, 2025 2025">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2025</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Systems and Methods for Communication-Aware Federated Learning</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Systems and methods for communication-aware federated learning</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Y. Chan, D. Chen, H. Wang, and <strong>K. Han</strong></p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 12 337 867, Jun. 24, 2025</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US12337867" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US12337867B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
                         <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_002" data-type="patent" data-year="2025" data-search="personalized speed limiter r. gupta, z. wang, r. du, and k. han u.s. patent 12 337 859, jun. 24, 2025 2025">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2025</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Personalized Speed Limiter</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Personalized speed limiter</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">R. Gupta, Z. Wang, R. Du, and <strong>K. Han</strong></p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 12 337 859, Jun. 24, 2025</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US12337859" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US12337859B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
                         <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_004" data-type="patent" data-year="2025" data-search="medical emergency detection in-vehicle caretaker a. ganlath, r. gupta, p. li, z. wang, k. han, n. ammar, and s. nagashima u.s. patent 12 263 869, apr. 1, 2025 2025">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2025</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Medical Emergency Detection In-Vehicle Caretaker</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Medical emergency detection in-vehicle caretaker</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">A. Ganlath, R. Gupta, P. Li, Z. Wang, <strong>K. Han</strong>, N. Ammar, and S. Nagashima</p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 12 263 869, Apr. 1, 2025</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US12263869" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US12263869B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
                         <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_006" data-type="patent" data-year="2025" data-search="method and system for personalized car following with transformers and rnns z. wang, k. han, and r. gupta u.s. patent 12 187 279, jan. 7, 2025 2025">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2025</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Method and System for Personalized Car Following with Transformers and RNNs</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Method and system for personalized car following with transformers and RNNs</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Z. Wang, <strong>K. Han</strong>, and R. Gupta</p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 12 187 279, Jan. 7, 2025</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US12187279" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US12187279B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+</article>
+                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_014" data-type="patent" data-year="2024" data-search="proactive message transmitter identification system h. kobayashi and k. han u.s. patent 12 091 006, sep. 17, 2024 2024">
+    <div class="flex flex-wrap items-center gap-2 mb-2">
+        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
+<span class="text-xs text-gray-500 dark:text-gray-400">2024</span>    </div>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Proactive message transmitter identification system</h3>
+    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">H. Kobayashi and <strong>K. Han</strong></p>
+<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 12 091 006, Sep. 17, 2024</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
+<a href="https://patents.google.com/patent/US12091006B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+</article>
+                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_016" data-type="patent" data-year="2024" data-search="method and system for personalized car following with transformers z. wang, z. zhao, r. gupta, k. han, and p. tiwari u.s. patent 12 083 883, sep. 10, 2024 2024">
+    <div class="flex flex-wrap items-center gap-2 mb-2">
+        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
+<span class="text-xs text-gray-500 dark:text-gray-400">2024</span>    </div>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Method and system for personalized car following with transformers</h3>
+    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Z. Wang, Z. Zhao, R. Gupta, <strong>K. Han</strong>, and P. Tiwari</p>
+<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 12 083 883, Sep. 10, 2024</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
+<a href="https://patents.google.com/patent/US12083883B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
                         <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_018" data-type="patent" data-year="2024" data-search="detection, classification, and prediction of bacteria colony growth in vehicle passenger cabin r. gupta, z. wang, y. wang, k. han, and p. tiwari u.s. patent 12 080 080, sep. 3, 2024 2024">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2024</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Detection, Classification, and Prediction of Bacteria Colony Growth in Vehicle Passenger Cabin</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Detection, classification, and prediction of bacteria colony growth in vehicle passenger cabin</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">R. Gupta, Z. Wang, Y. Wang, <strong>K. Han</strong>, and P. Tiwari</p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 12 080 080, Sep. 3, 2024</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US12080080B2" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US12080080B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
                         <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_020" data-type="patent" data-year="2024" data-search="rest stop recommendation system z. shou, z. wang, k. han, y. liu, and p. tiwari u.s. patent 12 073 332, aug. 27, 2024 2024">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2024</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Rest Stop Recommendation System</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Rest stop recommendation system</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Z. Shou, Z. Wang, <strong>K. Han</strong>, Y. Liu, and P. Tiwari</p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 12 073 332, Aug. 27, 2024</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US12073332" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US12073332B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_088" data-type="patent" data-year="2024" data-search="systems and method for predicting driver visual impairment with artificial intelligence r. gupta, z. zhao, z. wang, k. han, and p. tiwari u.s. patent 12 071 141, aug. 27, 2024 2024">
+                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_088" data-type="patent" data-year="2024" data-search="systems and methods for predicting driver visual impairment with artificial intelligence r. gupta, z. zhao, z. wang, k. han, and p. tiwari u.s. patent 12 071 141, aug. 27, 2024 2024">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2024</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Systems and Method for Predicting Driver Visual Impairment with Artificial Intelligence</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Systems and methods for predicting driver visual impairment with artificial intelligence</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">R. Gupta, Z. Zhao, Z. Wang, <strong>K. Han</strong>, and P. Tiwari</p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 12 071 141, Aug. 27, 2024</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US12071141B2/en?oq=17586593" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US12071141B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
                         <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_024" data-type="patent" data-year="2024" data-search="student-t process personalized adaptive cruise control r. gupta, z. wang, y. wang, k. han, and p. tiwari u.s. patent 12 036 987, jul. 16, 2024 2024">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2024</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Student-T Process Personalized Adaptive Cruise Control</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Student-T process personalized adaptive cruise control</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">R. Gupta, Z. Wang, Y. Wang, <strong>K. Han</strong>, and P. Tiwari</p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 12 036 987, Jul. 16, 2024</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US12036987" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US12036987B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
                         <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_026" data-type="patent" data-year="2024" data-search="vehicle communication sender identification via hyper-graph matching r. guo, s. avedisov, k. han, h. lu, and p. tiwari u.s. patent 11 948 453, apr. 2, 2024 2024">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2024</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Vehicle Communication Sender Identification via Hyper-Graph Matching</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Vehicle communication sender identification via hyper-graph matching</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">R. Guo, S. Avedisov, <strong>K. Han</strong>, H. Lu, and P. Tiwari</p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 11 948 453, Apr. 2, 2024</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US11948453" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US11948453B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
                         <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_028" data-type="patent" data-year="2024" data-search="hybrid deterministic override of probabilistic advanced driving assistance systems (adas) r. gupta, z. wang, k. han, and p. tiwari u.s. patent 11 926 322, mar. 12, 2024 2024">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2024</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Hybrid Deterministic Override of Probabilistic Advanced Driving Assistance Systems (ADAS)</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Hybrid deterministic override of probabilistic advanced driving assistance systems (ADAS)</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">R. Gupta, Z. Wang, <strong>K. Han</strong>, and P. Tiwari</p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 11 926 322, Mar. 12, 2024</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US11926322" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US11926322B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
                         <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_029" data-type="patent" data-year="2024" data-search="cooperative driving system and method s. avedisov, z. wang, a. sakr, k. han, r. guo, and o. altintas u.s. patent 11 904 855, feb. 20, 2024 2024">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2024</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Cooperative Driving System and Method</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Cooperative driving system and method</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">S. Avedisov, Z. Wang, A. Sakr, <strong>K. Han</strong>, R. Guo, and O. Altintas</p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 11 904 855, Feb. 20, 2024</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US11904855" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US11904855B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_038" data-type="patent" data-year="2024" data-search="subconscious big picture macro and split second micro decisions {adas} r. gupta, z. wang, k. han, and p. tiwari u.s. patent 11 878 709, jan. 23, 2024 2024">
+                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_038" data-type="patent" data-year="2024" data-search="subconscious big picture macro and split second micro decisions adas r. gupta, z. wang, k. han, and p. tiwari u.s. patent 11 878 709, jan. 23, 2024 2024">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2024</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Subconscious Big Picture Macro and Split Second Micro Decisions {ADAS}</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Subconscious big picture macro and split second micro decisions ADAS</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">R. Gupta, Z. Wang, <strong>K. Han</strong>, and P. Tiwari</p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 11 878 709, Jan. 23, 2024</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US11878709" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
-</article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_014" data-type="patent" data-year="2024" data-search="proactive message transmitter identification system h. kobayashi and k. han u.s. patent 12 091 006, jan. 17, 2024 2024">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2024</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Proactive Message Transmitter Identification System</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">H. Kobayashi and <strong>K. Han</strong></p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 12 091 006, Jan. 17, 2024</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US12091006" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US11878709B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
                         <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_039" data-type="patent" data-year="2024" data-search="determining a setting for a cruise control k. han, z. wang, p. tiwari, j. lenneman, e. toshinori, m. johnson, and c. violetta u.s. patent 11 872 985, jan. 16, 2024 2024">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2024</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Determining a Setting for a Cruise Control</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Determining a setting for a cruise control</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1"><strong>K. Han</strong>, Z. Wang, P. Tiwari, J. Lenneman, E. Toshinori, M. Johnson, and C. Violetta</p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 11 872 985, Jan. 16, 2024</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US11872985" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
-</article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_016" data-type="patent" data-year="2024" data-search="method and system for personalized car following with transformers z. wang, z. zhao, r. gupta, k. han, and p. tiwari u.s. patent 12 083 883, jan. 10, 2024 2024">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2024</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Method and System for Personalized Car Following with Transformers</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Z. Wang, Z. Zhao, R. Gupta, <strong>K. Han</strong>, and P. Tiwari</p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 12 083 883, Jan. 10, 2024</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US12083883" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US11872985B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
                         <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_040" data-type="patent" data-year="2024" data-search="vehicular topple risk notification r. gupta, z. wang, y. wang, k. han, and p. tiwari u.s. patent 11 869 353, jan. 9, 2024 2024">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2024</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Vehicular Topple Risk notification</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Vehicular topple risk notification</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">R. Gupta, Z. Wang, Y. Wang, <strong>K. Han</strong>, and P. Tiwari</p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 11 869 353, Jan. 9, 2024</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US11869353" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US11869353B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
                         <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_041" data-type="patent" data-year="2023" data-search="systems and methods for protecting a vehicle at an intersection r. gupta, z. wang, y. wang, k. han, and p. tiwari u.s. patent 11 851 063, dec. 26, 2023 2023">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2023</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Systems and Methods for Protecting a Vehicle at an Intersection</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Systems and methods for protecting a vehicle at an intersection</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">R. Gupta, Z. Wang, Y. Wang, <strong>K. Han</strong>, and P. Tiwari</p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 11 851 063, Dec. 26, 2023</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US11851063" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US11851063B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_042" data-type="patent" data-year="2023" data-search="system and method for estimating motion of an automated vehicle for cooperative driving z. wang, k. han, and p. tiwari u.s. patent 11 827 245, nov. 28, 2023 2023">
+                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_042" data-type="patent" data-year="2023" data-search="systems and methods for estimating motion of an automated vehicle for cooperative driving z. wang, k. han, and p. tiwari u.s. patent 11 827 245, nov. 28, 2023 2023">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2023</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">System and Method for Estimating Motion of an Automated Vehicle for Cooperative Driving</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Systems and methods for estimating motion of an automated vehicle for cooperative driving</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Z. Wang, <strong>K. Han</strong>, and P. Tiwari</p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 11 827 245, Nov. 28, 2023</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US11827245" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US11827245B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
                         <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_048" data-type="patent" data-year="2023" data-search="systems and methods for personalizing adaptive cruise control in a vehicle y. wang, z. wang, k. han, r. gupta, and p. tiwari u.s. patent 11 787 404, oct. 17, 2023 2023">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2023</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Systems and Methods for Personalizing Adaptive Cruise Control in a Vehicle</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Systems and methods for personalizing adaptive cruise control in a vehicle</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Y. Wang, Z. Wang, <strong>K. Han</strong>, R. Gupta, and P. Tiwari</p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 11 787 404, Oct. 17, 2023</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US11787404" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US11787404B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
                         <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_049" data-type="patent" data-year="2023" data-search="driver classification systems and methods for obtaining an insurance rate for a vehicle r. gupta, z. wang, k. han, and p. tiwari u.s. patent 11 776 064, oct. 3, 2023 2023">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2023</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Driver Classification Systems and Methods for Obtaining an Insurance Rate for a Vehicle</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Driver classification systems and methods for obtaining an insurance rate for a vehicle</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">R. Gupta, Z. Wang, <strong>K. Han</strong>, and P. Tiwari</p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 11 776 064, Oct. 3, 2023</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US11776064" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US11776064B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
                         <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_053" data-type="patent" data-year="2023" data-search="systems and methods to reduce audio distraction for a vehicle driver r. gupta, z. wang, k. han, and p. tiwari u.s. patent 11 705 141, jul. 18, 2023 2023">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2023</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Systems and Methods to Reduce Audio Distraction for a Vehicle Driver</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Systems and methods to reduce audio distraction for a vehicle driver</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">R. Gupta, Z. Wang, <strong>K. Han</strong>, and P. Tiwari</p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 11 705 141, Jul. 18, 2023</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US11705141" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US11705141B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
                         <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_054" data-type="patent" data-year="2023" data-search="vehicle-to-everything communication-based lane change collision avoidance warning z. wang, k. han, and b. kim u.s. patent 11 697 410, jul. 11, 2023 2023">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2023</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Vehicle-to-everything Communication-based Lane Change Collision Avoidance Warning</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Vehicle-to-everything communication-based lane change collision avoidance warning</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Z. Wang, <strong>K. Han</strong>, and B. Kim</p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 11 697 410, Jul. 11, 2023</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US11697410" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US11697410B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
                         <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_056" data-type="patent" data-year="2023" data-search="system and method for scheduling connected vehicles to cross non-signalized intersections z. wang, k. han, and p. tiwari u.s. patent 11 661 088, may. 30, 2023 2023">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2023</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">System and Method for Scheduling Connected Vehicles to Cross Non-Signalized Intersections</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">System and method for scheduling connected vehicles to cross non-signalized intersections</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Z. Wang, <strong>K. Han</strong>, and P. Tiwari</p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 11 661 088, May. 30, 2023</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US11661088" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US11661088B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
                         <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_057" data-type="patent" data-year="2023" data-search="producing, for an autonomous vehicle, a route from an origination to a destination z. wang, k. han, and p. tiwari u.s. patent 11 634 163, apr. 25, 2023 2023">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2023</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Producing, For An Autonomous Vehicle, A Route From An Origination To A Destination</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Producing, for an autonomous vehicle, a route from an origination to a destination</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Z. Wang, <strong>K. Han</strong>, and P. Tiwari</p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 11 634 163, Apr. 25, 2023</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US11634163" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US11634163B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
                         <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_065" data-type="patent" data-year="2023" data-search="system and method for connected vehicle lane merge z. wang, k. han, and p. tiwari u.s. patent 11 597 388, mar. 7, 2023 2023">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2023</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">System and Method for Connected Vehicle Lane Merge</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">System and method for connected vehicle lane merge</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Z. Wang, <strong>K. Han</strong>, and P. Tiwari</p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 11 597 388, Mar. 7, 2023</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US11597388" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US11597388B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+</article>
+                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_076" data-type="patent" data-year="2022" data-search="systems and methods for long-term prediction of lane change maneuver z. shou, y. liu, k. han, z. wang, and p. tiwari u.s. patent 11 433 923, sep. 6, 2022 2022">
+    <div class="flex flex-wrap items-center gap-2 mb-2">
+        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
+<span class="text-xs text-gray-500 dark:text-gray-400">2022</span>    </div>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Systems and methods for long-term prediction of lane change maneuver</h3>
+    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Z. Shou, Y. Liu, <strong>K. Han</strong>, Z. Wang, and P. Tiwari</p>
+<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 11 433 923, Sep. 6, 2022</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
+<a href="https://patents.google.com/patent/US11433923B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
                         <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_079" data-type="patent" data-year="2022" data-search="ramp merging assistance z. wang, k. han, and p. tiwari u.s. patent 11 398 156, jul. 26, 2022 2022">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2022</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Ramp Merging Assistance</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Ramp merging assistance</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Z. Wang, <strong>K. Han</strong>, and P. Tiwari</p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 11 398 156, Jul. 26, 2022</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US11398156" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US11398156B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
                         <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_082" data-type="patent" data-year="2022" data-search="adjustable blind spot monitor z. wang, k. han, and b. kim u.s. patent 11 328 605, may. 10, 2022 2022">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2022</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Adjustable Blind Spot Monitor</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Adjustable blind spot monitor</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Z. Wang, <strong>K. Han</strong>, and B. Kim</p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 11 328 605, May. 10, 2022</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US11328605" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US11328605B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
                         <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_083" data-type="patent" data-year="2022" data-search="systems and methods for providing driving recommendations j. su, k. han, r. guo, and r. melen u.s. patent 11 315 421, apr. 26, 2022 2022">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2022</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Systems and methods for Providing Driving Recommendations</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Systems and methods for providing driving recommendations</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">J. Su, <strong>K. Han</strong>, R. Guo, and R. Melen</p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 11 315 421, Apr. 26, 2022</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US11315421" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US11315421B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
                         <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_086" data-type="patent" data-year="2022" data-search="cloud-assisted virtual vehicular communication k. han, a. sakr, and p. tiwari u.s. patent 11 284 234, mar. 22, 2022 2022">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2022</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Cloud-assisted Virtual Vehicular communication</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Cloud-assisted virtual vehicular communication</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1"><strong>K. Han</strong>, A. Sakr, and P. Tiwari</p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 11 284 234, Mar. 22, 2022</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US11284234" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US11284234B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
                         <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_087" data-type="patent" data-year="2022" data-search="xr-based slot reservation system for connected vehicles traveling through intersections z. wang, k. han, and b. kim u.s. patent 11 257 363, feb. 22, 2022 2022">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2022</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">XR-based Slot Reservation System for Connected Vehicles Traveling Through Intersections</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">XR-based slot reservation system for connected vehicles traveling through intersections</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Z. Wang, <strong>K. Han</strong>, and B. Kim</p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 11 257 363, Feb. 22, 2022</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US11257363" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US11257363B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
                         <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_089" data-type="patent" data-year="2022" data-search="digital twin simulation-based vehicular communication planning k. han, a. sakr, and p. tiwari u.s. patent 11 234 160, jan. 25, 2022 2022">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2022</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Digital Twin Simulation-Based Vehicular Communication Planning</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Digital twin simulation-based vehicular communication planning</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1"><strong>K. Han</strong>, A. Sakr, and P. Tiwari</p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 11 234 160, Jan. 25, 2022</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US11234160" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US11234160B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
                         <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_091" data-type="patent" data-year="2022" data-search="identifying a specific object in a two-dimensional image of objects y. liu, z. wang, k. han, z. shou, and p. tiwari u.s. patent 11 222 215, jan. 11, 2022 2022">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2022</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Identifying a Specific Object in a Two-Dimensional Image of Objects</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Identifying a specific object in a two-dimensional image of objects</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Y. Liu, Z. Wang, <strong>K. Han</strong>, Z. Shou, and P. Tiwari</p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 11 222 215, Jan. 11, 2022</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US11222215" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
-</article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_076" data-type="patent" data-year="2022" data-search="systems and methods for long-term prediction of lane change maneuver z. shou, y. liu, k. han, z. wang, and p. tiwari u.s. patent 11 433 923, jan. 7, 2022 2022">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2022</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Systems and Methods for Long-Term Prediction of Lane Change Maneuver</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Z. Shou, Y. Liu, <strong>K. Han</strong>, Z. Wang, and P. Tiwari</p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 11 433 923, Jan. 7, 2022</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US11433923" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US11222215B1/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
                         <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_093" data-type="patent" data-year="2022" data-search="longitudinal motion control of connected and automated vehicles h. kobayashi, k. han, b. kim, and r. wang u.s. patent 11 214 253, jan. 4, 2022 2022">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2022</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Longitudinal Motion Control of Connected and Automated Vehicles</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Longitudinal motion control of connected and automated vehicles</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">H. Kobayashi, <strong>K. Han</strong>, B. Kim, and R. Wang</p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 11 214 253, Jan. 4, 2022</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US11214253" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US11214253B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
                         <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_095" data-type="patent" data-year="2021" data-search="systems and methods for providing guidance to vehicle drivers regarding predicted lane-change behavior of other vehicle drivers z. shou, k. han, z. wang, y. liu, and p. tiwari u.s. patent 11 151 880, oct. 19, 2021 2021">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2021</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Systems and Methods for Providing Guidance to Vehicle Drivers Regarding predicted Lane-Change Behavior of Other Vehicle Drivers</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Systems and methods for providing guidance to vehicle drivers regarding predicted lane-change behavior of other vehicle drivers</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Z. Shou, <strong>K. Han</strong>, Z. Wang, Y. Liu, and P. Tiwari</p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 11 151 880, Oct. 19, 2021</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US11151880" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US11151880B1/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
                         <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_100" data-type="patent" data-year="2021" data-search="systems and methods for compensating for driver speed-tracking error z. wang, k. han, and p. tiwari u.s. patent 11 087 623, aug. 10, 2021 2021">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2021</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Systems and Methods for Compensating for Driver Speed-Tracking Error</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Systems and methods for compensating for driver speed-tracking error</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Z. Wang, <strong>K. Han</strong>, and P. Tiwari</p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 11 087 623, Aug. 10, 2021</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US11087623" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US11087623B1/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
                         <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_111" data-type="patent" data-year="2021" data-search="context system for providing cyber security for connected vehicles h. kobayashi, k. han, and x. jiang u.s. patent 10 932 135, feb. 23, 2021 2021">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2021</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Context System for Providing Cyber Security for Connected Vehicles</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Context system for providing cyber security for connected vehicles</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">H. Kobayashi, <strong>K. Han</strong>, and X. Jiang</p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 10 932 135, Feb. 23, 2021</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US10932135" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US10932135B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
                         <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_114" data-type="patent" data-year="2021" data-search="vehicles and methods identifying a service device in communication with a vehicle k. han and k. nagata u.s. patent 10 893 555, jan. 12, 2021 2021">
     <div class="flex flex-wrap items-center gap-2 mb-2">
@@ -1658,583 +1624,116 @@
     <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Vehicles and methods identifying a service device in communication with a vehicle</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1"><strong>K. Han</strong> and K. Nagata</p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 10 893 555, Jan. 12, 2021</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US10893555" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US10893555B1/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
                         <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_127" data-type="patent" data-year="2016" data-search="techniques for managing system power using deferred graphics rendering n. jeganathan, r. poornachandran, p. diefenbaugh, and k. han u.s. patent 9 269 121, feb. 23, 2016 2016">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2016</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Techniques For Managing System Power Using Deferred Graphics Rendering</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Techniques for managing system power using deferred graphics rendering</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">N. Jeganathan, R. Poornachandran, P. Diefenbaugh, and <strong>K. Han</strong></p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 9 269 121, Feb. 23, 2016</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US9269121" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US9269121B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
                         <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_128" data-type="patent" data-year="2016" data-search="adaptive touch scanning k. han, d. hong, a. min, y. park, and m. abdelmoneum u.s. patent 9 244 551, jan. 26, 2016 2016">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2016</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Adaptive Touch Scanning</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Adaptive touch scanning</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1"><strong>K. Han</strong>, D. Hong, A. Min, Y. Park, and M. Abdelmoneum</p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 9 244 551, Jan. 26, 2016</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US9244551" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US9244551B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
                         <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_129" data-type="patent" data-year="2015" data-search="data transmission for display partial update n. jeganathan, k. han, and p. diefenbaugh u.s. patent 9 177 534, nov. 3, 2015 2015">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2015</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Data Transmission for Display Partial Update</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Data transmission for display partial update</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">N. Jeganathan, <strong>K. Han</strong>, and P. Diefenbaugh</p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 9 177 534, Nov. 3, 2015</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US9177534" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US9177534B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
                         <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_130" data-type="patent" data-year="2015" data-search="polling determination k. han, p. diefenbaugh, and s. sharp u.s. patent 9 058 422, jun. 16, 2015 2015">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2015</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Polling Determination</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Polling determination</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1"><strong>K. Han</strong>, P. Diefenbaugh, and S. Sharp</p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 9 058 422, Jun. 16, 2015</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US9058422" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US9058422B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
                         <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_131" data-type="patent" data-year="2015" data-search="hybrid display frame buffer for display subsystem k. han, p. diefenbaugh, s. abhinkar, t. kim, and s. jeganathan u.s. patent 9 030 482, may. 12, 2015 2015">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2015</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Hybrid Display Frame Buffer for Display Subsystem</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Hybrid display frame buffer for display subsystem</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1"><strong>K. Han</strong>, P. Diefenbaugh, S. Abhinkar, T. Kim, and S. Jeganathan</p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 9 030 482, May. 12, 2015</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US9030482" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US9030482B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_132" data-type="patent" data-year="2014" data-search="control of platform power consumption using coordination of platform power management and display power management s. jeganathan, p. diefenbaugh, k. han, j. liu, j. bish, and p. drews u.s. patent 8 862 906, feb. 4, 2014 2014">
+                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_132" data-type="patent" data-year="2014" data-search="control of platform power consumption using coordination of platform power management and display power management s. jeganathan, p. diefenbaugh, k. han, j. liu, j. bish, and p. drews u.s. patent 8 862 906, oct. 14, 2014 2014">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2014</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Control of Platform Power Consumption Using Coordination of Platform Power Management and Display Power Management</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Control of platform power consumption using coordination of platform power management and display power management</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">S. Jeganathan, P. Diefenbaugh, <strong>K. Han</strong>, J. Liu, J. Bish, and P. Drews</p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 8 862 906, Feb. 4, 2014</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US8862906" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 8 862 906, Oct. 14, 2014</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
+<a href="https://patents.google.com/patent/US8862906B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
                         <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_133" data-type="patent" data-year="2014" data-search="techniques for aligning frame data m. vasquez, r. ranganathan, s. kwa, t. witter, k. han, and p. diefenbaugh u.s. patent 8 643 658, feb. 4, 2014 2014">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2014</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Techniques for Aligning Frame Data</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Techniques for aligning frame data</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">M. Vasquez, R. Ranganathan, S. Kwa, T. Witter, <strong>K. Han</strong>, and P. Diefenbaugh</p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 8 643 658, Feb. 4, 2014</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US8643658" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US8643658B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_134" data-type="patent" data-year="2013" data-search="display update for a wireless display device k. han, g. li, and s. singh u.s. patent 8 525 844, jan. 9, 2013 2013">
+                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_134" data-type="patent" data-year="2013" data-search="display update for a wireless display device k. han, g. li, and s. singh u.s. patent 8 525 844, sep. 3, 2013 2013">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2013</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Display Update for a Wireless Display Device</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Display update for a wireless display device</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1"><strong>K. Han</strong>, G. Li, and S. Singh</p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 8 525 844, Jan. 9, 2013</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US8525844" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 8 525 844, Sep. 3, 2013</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
+<a href="https://patents.google.com/patent/US8525844B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
                         <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_135" data-type="patent" data-year="2012" data-search="systems and methods for cross-platform radio frequency interference mitigation k. han and k. tinsley u.s. patent 8 290 439, oct. 16, 2012 2012">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2012</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Systems and Methods for Cross-Platform Radio Frequency Interference Mitigation</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Systems and methods for cross-platform radio frequency interference mitigation</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1"><strong>K. Han</strong> and K. Tinsley</p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 8 290 439, Oct. 16, 2012</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US8290439" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US8290439B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
                         <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_136" data-type="patent" data-year="2010" data-search="high speed digital waveform identification using higher order statistical signal processing k. han and k. tinsley u.s. patent 7 734 434, jun. 8, 2010 2010">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2010</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">High Speed Digital Waveform Identification Using Higher Order Statistical Signal Processing</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">High speed digital waveform identification using higher order statistical signal processing</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1"><strong>K. Han</strong> and K. Tinsley</p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 7 734 434, Jun. 8, 2010</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US7734434" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US7734434B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_137" data-type="patent" data-year="2007" data-search="apparatus for searching multipath in spread spectrum communications system and method i. eo, k. han, h. jung, and k. kim u.s. patent 7 194 018, mar. 20, 2007 2007">
+                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_137" data-type="patent" data-year="2007" data-search="apparatus for searching multipath in spread spectrum communications system and method thereof i. eo, k. han, h. jung, and k. kim u.s. patent 7 194 018, mar. 20, 2007 2007">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2007</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Apparatus for Searching Multipath in Spread Spectrum Communications System and Method</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Apparatus for searching multipath in spread spectrum communications system and method thereof</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">I. Eo, <strong>K. Han</strong>, H. Jung, and K. Kim</p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 7 194 018, Mar. 20, 2007</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US7194018" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US7194018B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
                         <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_138" data-type="patent" data-year="2006" data-search="apparatus and method for separating carrier of multicarrier wireless communication receiver system k. han, i. lim, i. eo, h. seo, k. kim, h. jung, and h. cho u.s. patent 7 127 012, oct. 24, 2006 2006">
     <div class="flex flex-wrap items-center gap-2 mb-2">
         <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent</span>
 <span class="text-xs text-gray-500 dark:text-gray-400">2006</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Apparatus and Method for Separating Carrier of Multicarrier Wireless Communication Receiver System</h3>
+    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Apparatus and method for separating carrier of multicarrier wireless communication receiver system</h3>
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-1"><strong>K. Han</strong>, I. Lim, I. Eo, H. Seo, K. Kim, H. Jung, and H. Cho</p>
 <p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent 7 127 012, Oct. 24, 2006</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US7127012" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
+<a href="https://patents.google.com/patent/US7127012B2/en" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
 </article>
-                    </div>
-                </div>
-                <div class="pub-subgroup mt-6">
-<h3 class="text-sm font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400 mb-3">U.S. patent applications (59)</h3>                    <div class="space-y-3">
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_156" data-type="patent" data-year="2026" data-search="systems and method for adaptive vision-language-model-based reasoning y. chen, d. chen, q. chen, y. liu, k. han, and n. ammar u.s. patent appl. 64/157,810, sep. 18, 2026 2026">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2026</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Systems and Method for Adaptive Vision-Language-Model-Based Reasoning</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Y. Chen, D. Chen, Q. Chen, Y. Liu, <strong>K. Han</strong>, and N. Ammar</p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 64/157,810, Sep. 18, 2026</p></article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_155" data-type="patent" data-year="2026" data-search="tonic meta-control for adaptive safety-compute allocation via persistent vigilance dynamics k. han, y. chen, n. ammar, and o. altintas u.s. patent appl. 64/154,467, sep. 14, 2026 2026">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2026</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Tonic Meta-Control for Adaptive Safety-Compute Allocation via Persistent Vigilance Dynamics</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1"><strong>K. Han</strong>, Y. Chen, N. Ammar, and O. Altintas</p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 64/154,467, Sep. 14, 2026</p></article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_154" data-type="patent" data-year="2026" data-search="multi-agent coordination using embedding-matrix similarity measures a. moradipari, t. chen, k. han, and n. ammar u.s. patent appl. 19/735,128, jul. 8, 2026 2026">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2026</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Multi-Agent Coordination Using Embedding-Matrix Similarity Measures</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">A. Moradipari, T. Chen, <strong>K. Han</strong>, and N. Ammar</p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 19/735,128, Jul. 8, 2026</p></article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_153" data-type="patent" data-year="2026" data-search="headlight control according to predicted environment r. gupta, s. mishra, k. gilleo, n. ammar, k. han, t. shimizu, and o. altintas u.s. patent appl. 19/718,363, jun. 24, 2026 2026">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2026</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Headlight Control According to Predicted Environment</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">R. Gupta, S. Mishra, K. Gilleo, N. Ammar, <strong>K. Han</strong>, T. Shimizu, and O. Altintas</p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 19/718,363, Jun. 24, 2026</p></article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_152" data-type="patent" data-year="2026" data-search="method and apparatus for ai-ml assisted csi compression of mimo channels k. dimou, k. han, and t. shimizu u.s. patent appl. 64/088,157, jun. 11, 2026 2026">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2026</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Method and Apparatus for AI-ML Assisted CSI Compression of MIMO Channels</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">K. Dimou, <strong>K. Han</strong>, and T. Shimizu</p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 64/088,157, Jun. 11, 2026</p></article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_151" data-type="patent" data-year="2026" data-search="systems and methods for requesting location-specific memory information from surrounding vehicles z. mo, s. avedisov, a. moradipari, s. mishra, k. han, and n. ammar u.s. patent appl. 19/704,946, jun. 11, 2026 2026">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2026</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Systems and Methods for Requesting Location-Specific Memory Information from Surrounding Vehicles</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Z. Mo, S. Avedisov, A. Moradipari, S. Mishra, <strong>K. Han</strong>, and N. Ammar</p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 19/704,946, Jun. 11, 2026</p></article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_150" data-type="patent" data-year="2026" data-search="systems and methods for routing a prompt to a learning model using a graph-based classifier t. chen, a. moradipari, m. clifford, k. han, n. ammar, and o. altintas u.s. patent appl. 19/660,373, apr. 28, 2026 2026">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2026</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Systems and Methods for Routing a Prompt to a Learning Model Using a Graph-Based Classifier</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">T. Chen, A. Moradipari, M. Clifford, <strong>K. Han</strong>, N. Ammar, and O. Altintas</p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 19/660,373, Apr. 28, 2026</p></article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_149" data-type="patent" data-year="2026" data-search="systems and methods for classifying a prompt using requirement classifiers and selecting a learning model t. chen, a. moradipari, m. clifford, k. han, n. ammar, and o. altintas u.s. patent appl. 19/654,705, apr. 22, 2026 2026">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2026</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Systems and Methods for Classifying a Prompt Using Requirement Classifiers and Selecting a Learning Model</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">T. Chen, A. Moradipari, M. Clifford, <strong>K. Han</strong>, N. Ammar, and O. Altintas</p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 19/654,705, Apr. 22, 2026</p></article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_148" data-type="patent" data-year="2026" data-search="systems and methods for selecting a learning model using a bag-of-attributes classifier t. chen, a. moradipari, m. clifford, k. han, n. ammar, and o. altintas u.s. patent appl. 16/653,727, apr. 21, 2026 2026">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2026</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Systems and Methods for Selecting a Learning Model Using a Bag-of-Attributes Classifier</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">T. Chen, A. Moradipari, M. Clifford, <strong>K. Han</strong>, N. Ammar, and O. Altintas</p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 16/653,727, Apr. 21, 2026</p></article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_147" data-type="patent" data-year="2026" data-search="systems and methods for classifying information using domains and voting, and selecting a learning model t. chen, a. moradipari, m. clifford, k. han, n. ammar, and o. altintas u.s. patent appl. 19/649,545, apr. 16, 2026 2026">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2026</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Systems and Methods for Classifying Information Using Domains and Voting, and Selecting a Learning Model</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">T. Chen, A. Moradipari, M. Clifford, <strong>K. Han</strong>, N. Ammar, and O. Altintas</p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 19/649,545, Apr. 16, 2026</p></article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_146" data-type="patent" data-year="2026" data-search="dynamic cooperative vehicle headlight systems and methods r. gupta, s. avedisov, a. moradipari, k. han, t. shimizu, n. ammar, and k. gilleo u.s. patent appl. 19/640,947, apr. 7, 2026 2026">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2026</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Dynamic Cooperative Vehicle Headlight Systems and Methods</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">R. Gupta, S. Avedisov, A. Moradipari, <strong>K. Han</strong>, T. Shimizu, N. Ammar, and K. Gilleo</p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 19/640,947, Apr. 7, 2026</p></article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_145" data-type="patent" data-year="2026" data-search="memory-augmented contextual annotation using persistent embedding feedback a. moradipari, r. gupta, k. han, and n. ammar u.s. patent appl. 19/574,246, mar. 20, 2026 2026">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2026</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Memory-Augmented Contextual Annotation Using Persistent Embedding Feedback</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">A. Moradipari, R. Gupta, <strong>K. Han</strong>, and N. Ammar</p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 19/574,246, Mar. 20, 2026</p></article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_144" data-type="patent" data-year="2026" data-search="adaptive temporal windowing for remote processing of vehicle event a. moradipari, r. gupta, k. han, n. ammar, and s. ucar u.s. patent appl. 19/572,796, mar. 19, 2026 2026">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2026</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Adaptive Temporal Windowing for Remote Processing of Vehicle Event</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">A. Moradipari, R. Gupta, <strong>K. Han</strong>, N. Ammar, and S. Ucar</p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 19/572,796, Mar. 19, 2026</p></article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_143" data-type="patent" data-year="2026" data-search="vehicle operation using reward training without ground truth s. bhupathiraju, m. clifford, and k. han u.s. patent appl. 19/571,397, mar. 18, 2026 2026">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2026</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Vehicle Operation Using Reward Training Without Ground Truth</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">S. Bhupathiraju, M. Clifford, and <strong>K. Han</strong></p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 19/571,397, Mar. 18, 2026</p></article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_142" data-type="patent" data-year="2026" data-search="out-of-distribution awareness through two-stage prompt adaptation in large language models s. bhupathiraju, m. clifford, and k. han u.s. patent appl. 19/571,045, mar. 18, 2026 2026">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2026</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Out-of-Distribution Awareness Through Two-Stage Prompt Adaptation in Large Language Models</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">S. Bhupathiraju, M. Clifford, and <strong>K. Han</strong></p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 19/571,045, Mar. 18, 2026</p></article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_141" data-type="patent" data-year="2026" data-search="vehicle operation using chain of thought reward training s. bhupathiraju, m. clifford, and k. han u.s. patent appl. 19/570,668, mar. 18, 2026 2026">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2026</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Vehicle Operation Using Chain of Thought Reward Training</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">S. Bhupathiraju, M. Clifford, and <strong>K. Han</strong></p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 19/570,668, Mar. 18, 2026</p></article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_140" data-type="patent" data-year="2026" data-search="systems and methods for a hybrid language model with improved speed and efficiency t. chen, a. moradipari, m. clifford, k. han, n. ammar, and o. altintas u.s. patent appl. 19/557,554, mar. 5, 2026 2026">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2026</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Systems and Methods for a Hybrid Language Model with Improved Speed and Efficiency</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">T. Chen, A. Moradipari, M. Clifford, <strong>K. Han</strong>, N. Ammar, and O. Altintas</p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 19/557,554, Mar. 5, 2026</p></article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_139" data-type="patent" data-year="2026" data-search="systems and methods for language-model-based path planning in a mobile autonomous system m. clifford, s. bhupathiraju, and k. han u.s. patent appl. 19/555,032, mar. 3, 2026 2026">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2026</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Systems and Methods for Language-Model-Based Path Planning in a Mobile Autonomous System</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">M. Clifford, S. Bhupathiraju, and <strong>K. Han</strong></p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 19/555,032, Mar. 3, 2026</p></article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_043" data-type="patent" data-year="2025" data-search="collaborative vehicle navigation using dynamic and contextual message sets k. han, y. chen, r. gupta, s. ucar, j. kenney, and o. altintas u.s. patent appl. 19/408,301, dec. 3, 2025 2025">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2025</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Collaborative Vehicle Navigation Using Dynamic and Contextual Message Sets</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1"><strong>K. Han</strong>, Y. Chen, R. Gupta, S. Ucar, J. Kenney, and O. Altintas</p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 19/408,301, Dec. 3, 2025</p></article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_044" data-type="patent" data-year="2025" data-search="driving guidance via context-aware inference mechanism y. chen, d. chen, k. han, and o. altintas u.s. patent appl. 19/314,870, aug. 29, 2025 2025">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2025</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Driving Guidance via Context-Aware Inference Mechanism</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Y. Chen, D. Chen, <strong>K. Han</strong>, and O. Altintas</p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 19/314,870, Aug. 29, 2025</p></article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_003" data-type="patent" data-year="2025" data-search="generating artificial intelligence (ai) content based on predicted handover time d. chen, y. chen, q. chen, and k. han u.s. patent appl. 19/174,032, apr. 9, 2025 2025">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2025</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Generating Artificial Intelligence (AI) Content Based on Predicted Handover Time</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">D. Chen, Y. Chen, Q. Chen, and <strong>K. Han</strong></p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 19/174,032, Apr. 9, 2025</p></article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_005" data-type="patent" data-year="2025" data-search="optimum model deployment based on energy consumption d. chen, y. chen, k. han, and o. altintas u.s. patent appl. 19/055,566, feb. 18, 2025 2025">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2025</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Optimum Model Deployment Based on Energy Consumption</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">D. Chen, Y. Chen, <strong>K. Han</strong>, and O. Altintas</p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 19/055,566, Feb. 18, 2025</p></article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_007" data-type="patent" data-year="2024" data-search="adaptive road sign interpretation and vehicle response system r. gupta, y. ma, a. abdelraouf, and k. han u.s. patent appl. 19/004,333, dec. 29, 2024 2024">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2024</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Adaptive Road Sign Interpretation and Vehicle Response System</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">R. Gupta, Y. Ma, A. Abdelraouf, and <strong>K. Han</strong></p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 19/004,333, Dec. 29, 2024</p></article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_008" data-type="patent" data-year="2024" data-search="context-aware external object detection and vehicle guidance r. gupta, y. ma, a. abdelraouf, and k. han u.s. patent appl. 19/004,331, dec. 29, 2024 2024">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2024</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Context-Aware External Object Detection and Vehicle Guidance</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">R. Gupta, Y. Ma, A. Abdelraouf, and <strong>K. Han</strong></p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 19/004,331, Dec. 29, 2024</p></article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_009" data-type="patent" data-year="2024" data-search="computing a multi-dimensional personalized adaptive cruise control parameter r. gupta, a. moradipari, a. abdelraouf, and k. han u.s. patent appl. 18/988,587, dec. 19, 2024 2024">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2024</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Computing a Multi-Dimensional Personalized Adaptive Cruise Control Parameter</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">R. Gupta, A. Moradipari, A. Abdelraouf, and <strong>K. Han</strong></p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 18/988,587, Dec. 19, 2024</p></article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_010" data-type="patent" data-year="2024" data-search="advanced driver focus tracking for approaching hazard r. gupta, q. chen, y. ma, a. abdelraouf, and k. han u.s. patent appl. 18/977,280, dec. 11, 2024 2024">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2024</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Advanced Driver Focus Tracking for Approaching Hazard</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">R. Gupta, Q. Chen, Y. Ma, A. Abdelraouf, and <strong>K. Han</strong></p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 18/977,280, Dec. 11, 2024</p></article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_011" data-type="patent" data-year="2024" data-search="audio-based driver assistance system for enhanced vehicle safety r. gupta, q. chen, y. ma, a. abdelraouf, and k. han u.s. patent appl. 18/977,353, dec. 11, 2024 2024">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2024</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Audio-Based Driver Assistance System for Enhanced Vehicle Safety</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">R. Gupta, Q. Chen, Y. Ma, A. Abdelraouf, and <strong>K. Han</strong></p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 18/977,353, Dec. 11, 2024</p></article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_012" data-type="patent" data-year="2024" data-search="real-time risk reasoning a. abdelraouf, r. gupta, and k. han u.s. patent appl. 18/964,886, dec. 2, 2024 2024">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2024</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Real-Time Risk Reasoning</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">A. Abdelraouf, R. Gupta, and <strong>K. Han</strong></p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 18/964,886, Dec. 2, 2024</p></article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_013" data-type="patent" data-year="2024" data-search="systems and methods for adaptive cruise control based on online learning preference a. moradipari, r. gupta, a. abdelraouf, k. han, s. avedisov, o. altintas, and j. kenney u.s. patent appl. 18/944,774, nov. 12, 2024 2024">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2024</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Systems and Methods for Adaptive Cruise Control Based on Online Learning Preference</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">A. Moradipari, R. Gupta, A. Abdelraouf, <strong>K. Han</strong>, S. Avedisov, O. Altintas, and J. Kenney</p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 18/944,774, Nov. 12, 2024</p></article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_021" data-type="patent" data-year="2024" data-search="systems and methods for mixed reality applications with selective frame transmission d. doe, d. chen, and k. han u.s. patent appl. 18/818,052, aug. 28, 2024 2024">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2024</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Systems and Methods for Mixed Reality Applications with Selective Frame Transmission</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">D. Doe, D. Chen, and <strong>K. Han</strong></p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 18/818,052, Aug. 28, 2024</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US20250139841A1/en?oq=18818052" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
-</article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_025" data-type="patent" data-year="2024" data-search="systems and methods for generating personalized advanced driver assistance systems a. abdelraouf, r. gupta, and k. han u.s. patent appl. 18/664,946, may. 15, 2024 2024">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2024</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Systems and Methods for Generating Personalized Advanced Driver Assistance Systems</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">A. Abdelraouf, R. Gupta, and <strong>K. Han</strong></p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 18/664,946, May. 15, 2024</p></article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_027" data-type="patent" data-year="2024" data-search="controlling an adaptive cruise control system a. abdelraouf, r. gupta, k. han, t. matusda, n. merkel, m. hill, s. nola, o. altintas, and j. kenney u.s. patent appl. 18/613,323, mar. 22, 2024 2024">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2024</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Controlling An Adaptive Cruise Control System</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">A. Abdelraouf, R. Gupta, <strong>K. Han</strong>, T. Matusda, N. Merkel, M. Hill, S. Nola, O. Altintas, and J. Kenney</p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 18/613,323, Mar. 22, 2024</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US20250121825A1/en?oq=18613323" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
-</article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_031" data-type="patent" data-year="2024" data-search="signal-based auto gap personalized adaptive cruise control r. gupta, a. abdelraouf, k. han, and s. sheng u.s. patent appl. 18/437,060, feb. 8, 2024 2024">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2024</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Signal-Based Auto Gap Personalized Adaptive Cruise Control</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">R. Gupta, A. Abdelraouf, <strong>K. Han</strong>, and S. Sheng</p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 18/437,060, Feb. 8, 2024</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US20250256709A1/en?oq=18437060" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
-</article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_033" data-type="patent" data-year="2024" data-search="edge-assisted personalized high-definition map delivery based on drivers&#39; interests d. chen, q. chen, r. gupta, and k. han u.s. patent appl. 18/432,307, feb. 2, 2024 2024">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2024</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Edge-Assisted Personalized High-Definition Map Delivery Based on Drivers&#39; Interests</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">D. Chen, Q. Chen, R. Gupta, and <strong>K. Han</strong></p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 18/432,307, Feb. 2, 2024</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US20250251251A1/en?oq=18432307" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
-</article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_034" data-type="patent" data-year="2024" data-search="edge-assisted energy-aware and communication-aware dynamic computational task offloading strategy d. chen, q. chen, r. gupta, and k. han u.s. patent appl. 18/431,723, feb. 2, 2024 2024">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2024</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Edge-Assisted Energy-Aware and Communication-Aware Dynamic Computational Task Offloading Strategy</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">D. Chen, Q. Chen, R. Gupta, and <strong>K. Han</strong></p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 18/431,723, Feb. 2, 2024</p></article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_035" data-type="patent" data-year="2024" data-search="systems and methods for personalized gap preference prediction a. abdelraouf, r. gupta, k. han, h. abdelkawy, and j. knapp u.s. patent appl. 18/431,230, feb. 2, 2024 2024">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2024</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Systems and Methods for Personalized Gap Preference Prediction</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">A. Abdelraouf, R. Gupta, <strong>K. Han</strong>, H. Abdelkawy, and J. Knapp</p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 18/431,230, Feb. 2, 2024</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US20250249902A1/en?oq=18431230" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
-</article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_036" data-type="patent" data-year="2024" data-search="systems and methods for obtaining video analytic output y. chen, d. chen, and k. han u.s. patent appl. 18/430,242, feb. 1, 2024 2024">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2024</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Systems and Methods for Obtaining Video Analytic Output</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Y. Chen, D. Chen, and <strong>K. Han</strong></p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 18/430,242, Feb. 1, 2024</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US20250292588A1/en?oq=+U.S.+Patent+Appl.+18%2f430%2c242" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
-</article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_037" data-type="patent" data-year="2024" data-search="systems and methods for controlling a vehicle using physiological data of a driver of the vehicle r. gupta, a. abdelraouf, k. han, and s. sheng u.s. patent appl. 18/424,131, jan. 26, 2024 2024">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2024</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Systems and Methods for Controlling a Vehicle Using Physiological Data of a Driver of the Vehicle</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">R. Gupta, A. Abdelraouf, <strong>K. Han</strong>, and S. Sheng</p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 18/424,131, Jan. 26, 2024</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US20250242809A1/en?oq=18424131" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
-</article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_015" data-type="patent" data-year="2024" data-search="systems and methods for computation offloading determination using multi-modal user input d. doe, d. chen, and k. han u.s. patent appl. 18/883,664, jan. 12, 2024 2024">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2024</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Systems and Methods for Computation Offloading Determination Using Multi-Modal User Input</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">D. Doe, D. Chen, and <strong>K. Han</strong></p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 18/883,664, Jan. 12, 2024</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US20250138899A1/en?oq=18883664" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
-</article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_017" data-type="patent" data-year="2024" data-search="systems and methods for edge-driven object detection for resource optimization d. doe, d. chen, and k. han u.s. patent appl. 18/825,745, jan. 5, 2024 2024">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2024</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Systems and Methods for Edge-Driven Object Detection for Resource Optimization</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">D. Doe, D. Chen, and <strong>K. Han</strong></p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 18/825,745, Jan. 5, 2024</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US20250139913A1/en?oq=18825745" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
-</article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_047" data-type="patent" data-year="2023" data-search="systems and methods for estimating remaining range of a vehicle d. chen, q. chen, and k. han u.s. patent appl. 18/491,290, oct. 20, 2023 2023">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2023</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Systems and Methods for Estimating Remaining Range of a Vehicle</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">D. Chen, Q. Chen, and <strong>K. Han</strong></p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 18/491,290, Oct. 20, 2023</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US20250130055A1/en?oq=18491290" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
-</article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_051" data-type="patent" data-year="2023" data-search="personalized takeover prediction with driver tactile inputs z. wang, r. gupta, k. han, and r. du u.s. patent appl. 18/363,671, aug. 1, 2023 2023">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2023</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Personalized Takeover Prediction with Driver Tactile Inputs</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Z. Wang, R. Gupta, <strong>K. Han</strong>, and R. Du</p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 18/363,671, Aug. 1, 2023</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US20250042444A1/en?oq=18363671" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
-</article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_055" data-type="patent" data-year="2023" data-search="vehicular modifications based on occupant health r. gupta, h. hada, and k. han u.s. patent appl. 18/217,505, jun. 30, 2023 2023">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2023</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Vehicular Modifications Based on Occupant Health</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">R. Gupta, H. Hada, and <strong>K. Han</strong></p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 18/217,505, Jun. 30, 2023</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US20250002027A1/en?oq=18217505" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
-</article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_019" data-type="patent" data-year="2023" data-search="cannabis impairment detection and safety system for vehicles r. gupta, h. abdelkawy, a. abdelraouf, and k. han u.s. patent appl. 18/299,091, apr. 12, 2023 2023">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2023</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Cannabis Impairment Detection and Safety System for Vehicles</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">R. Gupta, H. Abdelkawy, A. Abdelraouf, and <strong>K. Han</strong></p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 18/299,091, Apr. 12, 2023</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US20240346833A1/en?oq=18299091" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
-</article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_059" data-type="patent" data-year="2023" data-search="adhd detection and safety system for vehicles r. gupta, h. abdelkawy, a. abdelraouf, and k. han u.s. patent appl. 18/299,111, apr. 12, 2023 2023">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2023</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">ADHD Detection and Safety System for Vehicles</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">R. Gupta, H. Abdelkawy, A. Abdelraouf, and <strong>K. Han</strong></p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 18/299,111, Apr. 12, 2023</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US20240343259A1/en?oq=18299111" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
-</article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_061" data-type="patent" data-year="2023" data-search="remote control of distance between transports r. gupta, a. abdelraouf, and k. han u.s. patent appl. 18/191,902, mar. 29, 2023 2023">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2023</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Remote Control of Distance Between Transports</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">R. Gupta, A. Abdelraouf, and <strong>K. Han</strong></p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 18/191,902, Mar. 29, 2023</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US20240308513A1/en?oq=18191902" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
-</article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_063" data-type="patent" data-year="2023" data-search="inverse reinforcement learning for adaptive cruise control r. gupta, a. abdelraouf, and k. han u.s. patent appl. 18/185,397, mar. 17, 2023 2023">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2023</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Inverse Reinforcement Learning for Adaptive Cruise Control</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">R. Gupta, A. Abdelraouf, and <strong>K. Han</strong></p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 18/185,397, Mar. 17, 2023</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US20240308514A1/en?oq=18185397" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
-</article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_064" data-type="patent" data-year="2023" data-search="recommended following gap distance based on context r. gupta, a. abdelraouf, and k. han u.s. patent appl. 18/185,384, mar. 17, 2023 2023">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2023</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Recommended Following Gap Distance Based on Context</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">R. Gupta, A. Abdelraouf, and <strong>K. Han</strong></p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 18/185,384, Mar. 17, 2023</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US20240308525A1/en?oq=18185384" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
-</article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_067" data-type="patent" data-year="2023" data-search="vehicle ota security validation r. gupta, h. wang, d. chen, and k. han u.s. patent appl. 18/108,553, feb. 10, 2023 2023">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2023</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Vehicle OTA Security Validation</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">R. Gupta, H. Wang, D. Chen, and <strong>K. Han</strong></p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 18/108,553, Feb. 10, 2023</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US20240272892A1/en?oq=18108553" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
-</article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_069" data-type="patent" data-year="2022" data-search="systems, methods, and non-transitory computer-readable medium for sharing camera views y. chen, d. chen, h. wang, and k. han u.s. patent appl. 18/073,839, dec. 2, 2022 2022">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2022</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Systems, Methods, and Non-Transitory Computer-Readable Medium For Sharing Camera Views</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Y. Chen, D. Chen, H. Wang, and <strong>K. Han</strong></p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 18/073,839, Dec. 2, 2022</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US20240187555A1/en?oq=18073839" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
-</article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_072" data-type="patent" data-year="2022" data-search="system and method for controlling a cruise control system of a vehicle using the moods of one or more occupants r. gupta, z. wang, and k. han u.s. patent appl. 17/992,026, nov. 22, 2022 2022">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2022</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">System and Method for Controlling a Cruise Control System of a Vehicle Using the Moods of One or More Occupants</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">R. Gupta, Z. Wang, and <strong>K. Han</strong></p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 17/992,026, Nov. 22, 2022</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US20240166209A1/en?oq=17992026" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
-</article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_073" data-type="patent" data-year="2022" data-search="systems and methods for contribution-aware federated learning y. chen, h. wang, d. chen, and k. han u.s. patent appl. 17/965,138, oct. 13, 2022 2022">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2022</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Systems and Methods for Contribution-Aware Federated Learning</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Y. Chen, H. Wang, D. Chen, and <strong>K. Han</strong></p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 17/965,138, Oct. 13, 2022</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US20240127105A1/en?oq=17965138" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
-</article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_077" data-type="patent" data-year="2022" data-search="methods and systems for distributing high definition map using edge device d. chen, h. wang, and k. han u.s. patent appl. 17/896,396, aug. 26, 2022 2022">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2022</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Methods and Systems for Distributing High Definition Map Using Edge Device</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">D. Chen, H. Wang, and <strong>K. Han</strong></p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 17/896,396, Aug. 26, 2022</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US20240068838A1/en?oq=17896396" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
-</article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_078" data-type="patent" data-year="2022" data-search="methods and systems for delivering edge-assisted attention-aware high definition map d. chen, h. wang, and k. han u.s. patent appl. 17/877,104, jul. 29, 2022 2022">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2022</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Methods and Systems for Delivering Edge-Assisted Attention-Aware High Definition Map</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">D. Chen, H. Wang, and <strong>K. Han</strong></p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 17/877,104, Jul. 29, 2022</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US20240035829A1/en?oq=17877104" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
-</article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_080" data-type="patent" data-year="2022" data-search="software driven user profile personalized adaptive cruise control r. gupta, z. wang, and k. han u.s. patent appl. 17/872,469, jul. 25, 2022 2022">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2022</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Software Driven User Profile Personalized Adaptive Cruise Control</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">R. Gupta, Z. Wang, and <strong>K. Han</strong></p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 17/872,469, Jul. 25, 2022</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US20240025404A1/en?oq=17872469" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
-</article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_081" data-type="patent" data-year="2022" data-search="cloud-based mobility digital twin for human, vehicle, and traffic z. wang, r. gupta, k. han, and p. tiwari u.s. patent appl. 17/744,452, may. 13, 2022 2022">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2022</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Cloud-Based Mobility Digital Twin for Human, Vehicle, and Traffic</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Z. Wang, R. Gupta, <strong>K. Han</strong>, and P. Tiwari</p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 17/744,452, May. 13, 2022</p>    <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
-<a href="https://patents.google.com/patent/US20230367688A1/en?oq=17744452" class="text-sm text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener">View patent &rarr;</a>    </div>
-</article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_092" data-type="patent" data-year="2022" data-search="personalized vehicle operation for autonomous driving with inverse reinforcement learning z. zhao, z. wang, r. gupta, k. han, and p. tiwari u.s. patent appl. 17/572,486, jan. 10, 2022 2022">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2022</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Personalized Vehicle Operation for Autonomous Driving With Inverse Reinforcement Learning</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Z. Zhao, Z. Wang, R. Gupta, <strong>K. Han</strong>, and P. Tiwari</p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 17/572,486, Jan. 10, 2022</p></article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_107" data-type="patent" data-year="2021" data-search="methods and systems for rideshare implicit needs and explicit needs personalization r. gupta, z. wang, k. han, and p. tiwari u.s. patent appl. 17/217,358, mar. 30, 2021 2021">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2021</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Methods and Systems for Rideshare Implicit Needs and Explicit Needs Personalization</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">R. Gupta, Z. Wang, <strong>K. Han</strong>, and P. Tiwari</p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 17/217,358, Mar. 30, 2021</p></article>
-                        <article class="pub-card bg-white dark:bg-gray-900 rounded-lg p-4 border border-gray-200 dark:border-gray-700" data-pub-id="CV_108" data-type="patent" data-year="2021" data-search="vehicle guard rail system r. gupta, z. wang, k. han, and p. tiwari u.s. patent appl. 17/206,706, mar. 19, 2021 2021">
-    <div class="flex flex-wrap items-center gap-2 mb-2">
-        <span class="text-xs font-semibold tracking-wide px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">U.S. Patent Application</span>
-<span class="text-xs text-gray-500 dark:text-gray-400">2021</span>    </div>
-    <h3 class="text-gray-900 dark:text-white font-medium mb-1 leading-snug text-base">Vehicle Guard Rail System</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">R. Gupta, Z. Wang, <strong>K. Han</strong>, and P. Tiwari</p>
-<p class="text-xs text-gray-500 dark:text-gray-400 mb-2">U.S. Patent Appl. 17/206,706, Mar. 19, 2021</p></article>
                     </div>
                 </div>
                 </details>
@@ -2255,7 +1754,7 @@
             </div>
         </div>
     </footer>
-    <script src="/js/site.js?v=1791308793"></script>
+    <script src="/js/site.js?v=1792041303"></script>
     <script>
     // Progressive enhancement: filter the statically rendered list in place.
     (function () {

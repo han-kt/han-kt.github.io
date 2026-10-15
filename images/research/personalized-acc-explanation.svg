@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="900" viewBox="0 0 760 900" role="img" aria-labelledby="title desc">
+  <title id="title">Learning a driver's car-following preferences</title>
+  <desc id="desc">Original explanatory diagram based on Wang and colleagues, Personalized Adaptive Cruise Control via Gaussian Process Regression, ITSC 2021. Recorded car-following states and acceleration train a driver-specific Gaussian process using nonlinear output-error training. At inference, space gap, ego speed, and lead speed are inputs; the acceleration output updates the car-following dynamics, and the updated gap and ego speed feed back into the controller. The source evaluates numerical and driving-simulator data.</desc>
+  <defs>
+    <marker id="model-arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0 12 6 0 12Z" fill="#087f8c"/>
+    </marker>
+    <marker id="state-arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0 12 6 0 12Z" fill="#aa570a"/>
+    </marker>
+  </defs>
+  <rect width="760" height="900" rx="24" fill="#f6f8fc"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#142d4e">
+    <text x="48" y="62" font-size="38" font-weight="700">Personalized car-following</text>
+    <text x="48" y="104" font-size="30" fill="#425570">Gaussian-process adaptive cruise control</text>
+
+    <path d="M48 158H632L664 190V270H48Z" fill="#fff" stroke="#42638e" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M632 158V190H664" fill="none" stroke="#42638e" stroke-width="3"/>
+    <text x="76" y="204" font-size="34" font-weight="700">Recorded driving</text>
+    <text x="76" y="248" font-size="30">Gap · speeds · acceleration</text>
+
+    <path d="M356 272V375" fill="none" stroke="#087f8c" stroke-width="5" stroke-dasharray="9 8" marker-end="url(#model-arrow)"/>
+    <text x="380" y="325" font-size="30" fill="#076773">GP-NOE</text>
+    <text x="380" y="361" font-size="30" fill="#076773">training</text>
+
+    <rect x="48" y="390" width="616" height="136" rx="22" fill="#eaf0fa" stroke="#42638e" stroke-width="3"/>
+    <text x="76" y="442" font-size="36" font-weight="700">Driver-specific GP</text>
+    <text x="76" y="490" font-size="30">Gap · ego speed · lead speed</text>
+
+    <path d="M356 528V632" fill="none" stroke="#087f8c" stroke-width="5" marker-end="url(#model-arrow)"/>
+    <text x="380" y="590" font-size="32" fill="#076773">Acceleration</text>
+
+    <rect x="48" y="648" width="616" height="112" rx="22" fill="#fff" stroke="#142d4e" stroke-width="3"/>
+    <text x="76" y="696" font-size="34" font-weight="700">Car-following dynamics</text>
+    <text x="76" y="738" font-size="30">Update speed and gap</text>
+
+    <path d="M665 704H710V458H671" fill="none" stroke="#aa570a" stroke-width="5" stroke-linejoin="round" marker-end="url(#state-arrow)"/>
+    <path d="M76 815H130" fill="none" stroke="#aa570a" stroke-width="5" marker-end="url(#state-arrow)"/>
+    <text x="148" y="825" font-size="30" fill="#914800">State feedback: gap + ego speed</text>
+    <text x="48" y="872" font-size="28" fill="#425570">Method overview · simulation study</text>
+  </g>
+</svg>

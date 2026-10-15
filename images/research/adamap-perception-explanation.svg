@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="1040" viewBox="0 0 760 1040" role="img" aria-labelledby="title desc">
+  <title id="title">AdaMap: adaptive sharing of object point clouds</title>
+  <desc id="desc">Original explanatory diagram based on Liu and colleagues, AdaMap, SEC 2023. Each vehicle localizes objects in LiDAR point clouds and transforms them to global coordinates. Network-aware control selects objects and the representation factor for encoding. Object descriptors carry the selected objects to an edge server, which decodes their point clouds and matches and updates objects in a global map. Periodic broadcasts update vehicle-local maps. This is a method explanation, not a performance result or an HD-map construction claim.</desc>
+  <defs>
+    <marker id="flow-arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0 12 6 0 12Z" fill="#087f8c"/>
+    </marker>
+  </defs>
+  <rect width="760" height="1040" rx="24" fill="#f6f8fc"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#142d4e">
+    <text x="48" y="62" font-size="40" font-weight="700">AdaMap</text>
+    <text x="48" y="104" font-size="30" fill="#425570">Adaptive cooperative perception</text>
+
+    <path d="M48 166V148H712V166" fill="none" stroke="#42638e" stroke-width="3"/>
+    <text x="76" y="197" font-size="30" font-weight="700" fill="#425570">ON EACH VEHICLE · LiDAR points</text>
+    <path d="M80 226V348" fill="none" stroke="#42638e" stroke-width="4"/>
+    <circle cx="80" cy="238" r="9" fill="#42638e"/>
+    <circle cx="80" cy="315" r="9" fill="#42638e"/>
+    <text x="108" y="249" font-size="34" font-weight="700">Localize objects</text>
+    <text x="108" y="326" font-size="32">Global coordinates</text>
+
+    <rect x="48" y="362" width="664" height="128" rx="20" fill="#fff2dc" stroke="#aa570a" stroke-width="3"/>
+    <text x="76" y="412" font-size="34" font-weight="700" fill="#834200">Select objects + encode</text>
+    <text x="76" y="457" font-size="30" fill="#914800">Network-adaptive selection &amp; detail</text>
+
+    <path d="M380 492V620" fill="none" stroke="#087f8c" stroke-width="5" marker-end="url(#flow-arrow)"/>
+    <rect x="70" y="524" width="620" height="62" rx="15" fill="#f6f8fc"/>
+    <text x="380" y="565" text-anchor="middle" font-size="34" font-weight="700" fill="#076773">Object descriptors</text>
+
+    <rect x="48" y="636" width="664" height="200" rx="22" fill="#eaf0fa" stroke="#42638e" stroke-width="3"/>
+    <text x="76" y="679" font-size="30" font-weight="700" fill="#425570">AT THE EDGE SERVER</text>
+    <path d="M80 706V798" fill="none" stroke="#42638e" stroke-width="4"/>
+    <circle cx="80" cy="718" r="9" fill="#42638e"/>
+    <circle cx="80" cy="790" r="9" fill="#42638e"/>
+    <text x="108" y="730" font-size="34" font-weight="700">Decode object points</text>
+    <text x="108" y="801" font-size="32">Match + update global map</text>
+
+    <path d="M380 838V943" fill="none" stroke="#087f8c" stroke-width="5" marker-end="url(#flow-arrow)"/>
+    <text x="402" y="883" font-size="30" fill="#076773">Broadcast</text>
+    <text x="402" y="919" font-size="30" fill="#076773">updates</text>
+    <rect x="48" y="958" width="664" height="62" rx="18" fill="#e1f3f3" stroke="#087f8c" stroke-width="3"/>
+    <text x="380" y="1000" text-anchor="middle" font-size="34" font-weight="700">Local maps in vehicles</text>
+  </g>
+</svg>
