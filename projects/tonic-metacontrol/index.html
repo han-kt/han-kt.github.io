@@ -33,6 +33,23 @@
         } catch (e) {}
     </script>
 
+    <script>
+    (function () {
+        if (['localhost', '127.0.0.1', '[::1]', '::1'].indexOf(location.hostname) !== -1) return;
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-GEG5GDGV8P';
+        document.head.appendChild(script);
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        if (navigator.doNotTrack == "1" || window.doNotTrack == "1" || navigator.msDoNotTrack == "1") {
+            window['ga-disable-G-GEG5GDGV8P'] = true;
+            gtag('consent', 'update', { 'analytics_storage': 'denied' });
+        }
+        gtag('config', 'G-GEG5GDGV8P', {"anonymize_ip": true});
+    })();
+    </script>
 
 
     <style>
