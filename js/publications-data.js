@@ -1,5 +1,5 @@
 // Modern Academic Homepage JavaScript
-// Generated on 2026-11-11 13:54:44
+// Generated on 2026-11-11 14:00:21
 // Total publications: 233
 // Breakdown: 78 conferences, 8 presentations, 21 journals, 123 patents, 3 books
 
@@ -814,6 +814,8 @@ const publications = [
         year: 2026,
         type: "journal",
         type_label: "Journal"
+,
+        url: "https://ieeexplore.ieee.org/document/11714292/"
 ,
         note: "Accepted"
 ,
